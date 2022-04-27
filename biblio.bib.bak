@@ -1,0 +1,76 @@
+@InProceedings{Wettel2011,
+  author    = {Wettel, Richard and Lanza, Michele and Robbes, Romain},
+  booktitle = {2011 33rd International Conference on Software Engineering (ICSE)},
+  title     = {Software systems as cities: a controlled experiment},
+  year      = {2011},
+  pages     = {551-560},
+  doi       = {10.1145/1985793.1985868},
+}
+
+@INPROCEEDINGS{4658085,  author={Boccuzzo, Sandro and Gall, Harald C.},  booktitle={2008 IEEE International Conference on Software Maintenance},   title={Software visualization with audio supported cognitive glyphs},   year={2008},  volume={},  number={},  pages={366-375},  doi={10.1109/ICSM.2008.4658085}}
+
+@inproceedings{10.1145/1056018.1056027,
+author = {Pinzger, Martin and Gall, Harald and Fischer, Michael and Lanza, Michele},
+title = {Visualizing Multiple Evolution Metrics},
+year = {2005},
+isbn = {1595930736},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1056018.1056027},
+doi = {10.1145/1056018.1056027},
+abstract = {Observing the evolution of very large software systems needs the analysis of large complex data models and visualization of condensed views on the system. For visualization software metrics have been used to compute such condensed views. However, current techniques concentrate on visualizing data of one particular release providing only insufficient support for visualizing data of several releases.In this paper we present the RelVis visualization approach that concentrates on providing integrated condensed graphical views on source code and release history data of up to n releases. Measures of metrics of source code entities and relationships are composed in Kiviat diagrams as annual rings. Diagrams highlight the good and bad times of an entity and facilitate the identification of entities and relationships with critical trends. They represent potential refactoring candidates that should be addressed first before further evolving the system. The paper provides needed background information and evaluation of the approach with a large open source software project.},
+booktitle = {Proceedings of the 2005 ACM Symposium on Software Visualization},
+pages = {67–75},
+numpages = {9},
+keywords = {evolution metrics, software evolution analysis, Kiviat, software visualization},
+location = {St. Louis, Missouri},
+series = {SoftVis '05}
+}
+
+@INPROCEEDINGS{8900965,
+  author={Alexandru, Carol V. and Proksch, Sebastian and Behnamghader, Pooyan and Gall, Harald C.},
+  booktitle={2019 Working Conference on Software Visualization (VISSOFT)}, 
+  title={Evo-Clocks: Software Evolution at a Glance}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={12-22},
+  doi={10.1109/VISSOFT.2019.00010}}
+
+  
+  
+  
+  
+  
+  
+  
+  @INPROCEEDINGS{7329727,
+  author={Kapec, P. and Brndiarová, G. and Gloger, M. and Marák, J.},
+  booktitle={2015 IEEE 19th International Conference on Intelligent Engineering Systems (INES)}, 
+  title={Visual analysis of software systems in virtual and augmented reality}, 
+  year={2015},
+  volume={},
+  number={},
+  pages={307-312},
+  doi={10.1109/INES.2015.7329727}}
+
+  
+  @INPROCEEDINGS{7780168,
+  author={Schneider, Teseo and Tymchuk, Yuriy and Salgado, Ronie and Bergel, Alexandre},
+  booktitle={2016 IEEE Working Conference on Software Visualization (VISSOFT)}, 
+  title={CuboidMatrix: Exploring Dynamic Structural Connections in Software Components Using Space-Time Cube}, 
+  year={2016},
+  volume={},
+  number={},
+  pages={116-125},
+  doi={10.1109/VISSOFT.2016.17}}
+
+@InProceedings{Merino2018,
+  author = {Merino, Leonel and Bergel, Alexandre and Nierstrasz, Oscar},
+  title  = {Overcoming Issues of 3D Software Visualization through Immersive Augmented Reality},
+  year   = {2018},
+  month  = {09},
+  doi    = {10.1109/VISSOFT.2018.00014},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
