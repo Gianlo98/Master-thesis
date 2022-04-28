@@ -1,9 +1,41 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Chuah and Eick(1998)]{Chuah1998}
+M.C. Chuah and S.G. Eick.
+\newblock Information rich glyphs for software management data.
+\newblock \emph{IEEE Computer Graphics and Applications}, 18\penalty0
+  (4):\penalty0 24--29, 1998.
+\newblock \doi{10.1109/38.689658}.
+
+\bibitem[Fekete et~al.(2008)Fekete, van Wijk, Stasko, and North]{Stasko2008}
+Jean-Daniel Fekete, Jarke van Wijk, John Stasko, and Chris North.
+\newblock \emph{The Value of Information Visualization}, volume 4950, pages
+  1--18.
+\newblock 07 2008.
+\newblock ISBN 978-3-540-70955-8.
+\newblock \doi{10.1007/978-3-540-70956-5_1}.
+
+\bibitem[Lanza(2001)]{Lanza2001}
+Michele Lanza.
+\newblock The evolution matrix: Recovering software evolution using software
+  visualization techniques.
+\newblock In \emph{Proceedings of the 4th International Workshop on Principles
+  of Software Evolution}, IWPSE '01, page 37–42, New York, NY, USA, 2001.
+  Association for Computing Machinery.
+\newblock ISBN 1581135084.
+\newblock \doi{10.1145/602461.602467}.
+\newblock URL \url{https://doi.org/10.1145/602461.602467}.
+
+\bibitem[Von~Mayrhauser and Vans(1995)]{VonMayrhauser1995}
+A.~Von~Mayrhauser and A.M. Vans.
+\newblock Program comprehension during software maintenance and evolution.
+\newblock \emph{Computer}, 28\penalty0 (8):\penalty0 44--55, 1995.
+\newblock \doi{10.1109/2.402076}.
 
 \bibitem[Wettel et~al.(2011)Wettel, Lanza, and Robbes]{Wettel2011}
 Richard Wettel, Michele Lanza, and Romain Robbes.

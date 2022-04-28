@@ -419,4 +419,102 @@ Package: fp-basic 1996/05/13
 Package: fp-addons 1995/03/15
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-snap.sty
-Pac
+Package: fp-snap 1995/04/05
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count287
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks25
+\@dtl@tmpcount=\count288
+\dtl@tmplength=\skip65
+\dtl@sortresult=\count289
+\@dtl@numgrpsepcount=\count290
+\@dtl@datatype=\count291
+\dtl@codeA=\count292
+\dtl@codeB=\count293
+\@dtl@foreach@level=\count294
+)
+\dtlcolumnnum=\count295
+\dtlrownum=\count296
+\@dtl@before=\toks26
+\@dtl@after=\toks27
+\@dtl@colhead=\toks28
+\dtlcurrentrow=\toks29
+\dtlbeforerow=\toks30
+\dtlafterrow=\toks31
+\dtlforeachlevel=\count297
+\c@DTLrowi=\count298
+\c@DTLrowii=\count299
+\c@DTLrowiii=\count300
+\c@DTLrow=\count301
+\dtl@rowi=\count302
+\dtl@rowii=\count303
+\dtl@rowiii=\count304
+\@dtl@curi=\toks32
+\@dtl@previ=\toks33
+\@dtl@nexti=\toks34
+\@dtl@curii=\toks35
+\@dtl@previi=\toks36
+\@dtl@nextii=\toks37
+\@dtl@curiii=\toks38
+\@dtl@previii=\toks39
+\@dtl@nextiii=\toks40
+\@dtl@elements=\count305
+\@dtl@list=\toks41
+\@dtl@rowa=\toks42
+\@dtl@rowb=\toks43
+\@dtl@toksA=\toks44
+\@dtl@toksB=\toks45
+\@dtl@write=\write3
+\@dtl@read=\read2
+\dtl@entrycr=\count306
+\dtl@omitlines=\count307
+)
+
+./usiinfthesis.cls:144: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.144 ...\ifthenelse{\equal{#1}{!blank!}}{}{#1\ }}
+                                                  
+? 
+./usiinfthesis.cls:144: Emergency stop.
+ ...                                              
+                                                  
+l.144 ...\ifthenelse{\equal{#1}{!blank!}}{}{#1\ }}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+ 
+Here is how much of TeX's memory you used:
+ 6988 strings out of 478994
+ 99206 string characters out of 5858184
+ 414660 words of memory out of 5000000
+ 24401 multiletter control sequences out of 15000+600000
+ 406259 words of font info for 29 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 102i,0n,117p,342b,103s stack positions out of 5000i,500n,10000p,200000b,80000s
+./usiinfthesis.cls:144:  ==> Fatal error occurred, no output PDF file produced!
+
