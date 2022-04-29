@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TeXtidote analysis</title>
+<style type="text/css">
+body {
+  font-family: sans-serif;
+}
+.highlight, .highlight-sh, .highlight-spelling {
+  padding: 2pt;
+  border-radius: 4pt;
+  cursor: help;
+  opacity: 0.7;
+  border: dashed 1px;
+}
+.highlight {
+  background-color: orange;
+  color: black;
+}
+.highlight-sh {
+  background-color: yellow;
+  color: black;
+}
+.highlight-spelling {
+  background-color: red;
+  color: white;
+}
+div.original-file {
+  font-family: monospace;
+  font-size: 11pt;
+  background-color: #f8f8ff;
+  padding: 20pt;
+  border-radius: 6pt;
+}
+.textidote {
+  	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiICAgd2lkdGg9IjEwMC4wOTEwNW1tIiAgIGhlaWdodD0iMTguMjA5MDk5bW0iICAgdmlld0JveD0iMCAwIDEwMC4wOTEwNSAxOC4yMDkwOTkiICAgdmVyc2lvbj0iMS4xIiAgIGlkPSJzdmc4IiAgIGlua3NjYXBlOnZlcnNpb249IjAuOTEgcjEzNzI1IiAgIHNvZGlwb2RpOmRvY25hbWU9InRleHRpZG90ZS5zdmciPiAgPGRlZnMgICAgIGlkPSJkZWZzMiIgLz4gIDxzb2RpcG9kaTpuYW1lZHZpZXcgICAgIGlkPSJiYXNlIiAgICAgcGFnZWNvbG9yPSIjZmZmZmZmIiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiICAgICBib3JkZXJvcGFjaXR5PSIxLjAiICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIgICAgIGlua3NjYXBlOnpvb209IjEiICAgICBpbmtzY2FwZTpjeD0iLTI1NC4yNTMwOSIgICAgIGlua3NjYXBlOmN5PSItMjc4LjM3NTkxIiAgICAgaW5rc2NhcGU6ZG9jdW1lbnQtdW5pdHM9Im1tIiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIiAgICAgc2hvd2dyaWQ9ImZhbHNlIiAgICAgZml0LW1hcmdpbi10b3A9IjAiICAgICBmaXQtbWFyZ2luLWxlZnQ9IjAiICAgICBmaXQtbWFyZ2luLXJpZ2h0PSIwIiAgICAgZml0LW1hcmdpbi1ib3R0b209IjAiICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjE5MjAiICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSIxMDIxIiAgICAgaW5rc2NhcGU6d2luZG93LXg9IjAiICAgICBpbmtzY2FwZTp3aW5kb3cteT0iMjY1IiAgICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMSIgLz4gIDxtZXRhZGF0YSAgICAgaWQ9Im1ldGFkYXRhNSI+ICAgIDxyZGY6UkRGPiAgICAgIDxjYzpXb3JrICAgICAgICAgcmRmOmFib3V0PSIiPiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+ICAgICAgICA8ZGM6dHlwZSAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz4gICAgICAgIDxkYzp0aXRsZSAvPiAgICAgIDwvY2M6V29yaz4gICAgPC9yZGY6UkRGPiAgPC9tZXRhZGF0YT4gIDxnICAgICBpbmtzY2FwZTpsYWJlbD0iTGF5ZXIgMSIgICAgIGlua3NjYXBlOmdyb3VwbW9kZT0ibGF5ZXIiICAgICBpZD0ibGF5ZXIxIiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI5LjczODA5NSwtNzAuNTc3NzUxKSI+ICAgIDxnICAgICAgIHN0eWxlPSJmb250LXN0eWxlOm5vcm1hbDtmb250LXdlaWdodDpub3JtYWw7Zm9udC1zaXplOjIwLjkyODk0NTU0cHg7bGluZS1oZWlnaHQ6MS4yNTtmb250LWZhbWlseTpzYW5zLXNlcmlmO2xldHRlci1zcGFjaW5nOjBweDt3b3JkLXNwYWNpbmc6MHB4O2ZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6MTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MS45Nzc1MzgyMztzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZSIgICAgICAgaWQ9InRleHQ4MzYiPiAgICAgIDxwYXRoICAgICAgICAgZD0ibSAzMC43MjY4NjQsNzEuNTY2NTIgNS4yMzIyMzYsMCAwLDQuMjA5MDQ0IDUuODEzNTk2LDAgMCwzLjYwNDQyOSAtNS44MTM1OTYsMCAwLDQuODEzNjU4IDUuODEzNTk2LDAgMCwzLjYwNDQyOSAtMTEuMDQ1ODMyLDAgMCwtMTYuMjMxNTYgeiIgICAgICAgICBzdHlsZT0iZm9udC1zdHlsZTpub3JtYWw7Zm9udC12YXJpYW50Om5vcm1hbDtmb250LXdlaWdodDpub3JtYWw7Zm9udC1zdHJldGNoOm5vcm1hbDtmb250LWZhbWlseTpUdXRvcjstaW5rc2NhcGUtZm9udC1zcGVjaWZpY2F0aW9uOlR1dG9yO2ZpbGw6I2ZmZmZmZjtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MS45Nzc1MzgyMztzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZSIgICAgICAgICBpZD0icGF0aDMzODYiIC8+ICAgICAgPHBhdGggICAgICAgICBkPSJtIDQyLjMzNTg4OCw3NS43NzU1NjQgMTEuMDQ1ODMyLDAgMCw3LjgxMzQ3MyAtNS44MTM1OTYsMCAwLDAuNjA0NjE0IDUuODEzNTk2LDAgMCwzLjYwNDQyOSAtMTEuMDQ1ODMyLDAgMCwtMTIuMDIyNTE2IHogbSA1LjIzMjIzNiw0LjIwOTA0MyAwLjU4MTM2LDAgMCwtMC42MDQ2MTQgLTAuNTgxMzYsMCAwLDAuNjA0NjE0IHoiICAgICAgICAgc3R5bGU9ImZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7Zm9udC1mYW1pbHk6VHV0b3I7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpUdXRvcjtmaWxsOiNmZmZmZmY7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEuOTc3NTM4MjM7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmUiICAgICAgICAgaWQ9InBhdGgzMzg4IiAvPiAgICAgIDxwYXRoICAgICAgICAgZD0ibSA1My45NDQ5MTIsNzUuNzc1NTY0IDUuMjMyMjM2LDAgMCwzLjYwNDQyOSAtNS4yMzIyMzYsMCAwLC0zLjYwNDQyOSB6IG0gNS44MTM1OTYsMCA1LjIzMjIzNiwwIDAsMy42MDQ0MjkgLTUuMjMyMjM2LDAgMCwtMy42MDQ0MjkgeiBtIC01LjgxMzU5Niw4LjQxODA4NyA1LjIzMjIzNiwwIDAsMy42MDQ0MjkgLTUuMjMyMjM2LDAgMCwtMy42MDQ0MjkgeiBtIDUuODEzNTk2LDAgNS4yMzIyMzYsMCAwLDMuNjA0NDI5IC01LjIzMjIzNiwwIDAsLTMuNjA0NDI5IHoiICAgICAgICAgc3R5bGU9ImZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7Zm9udC1mYW1pbHk6VHV0b3I7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpUdXRvcjtmaWxsOiNmZmZmZmY7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEuOTc3NTM4MjM7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmUiICAgICAgICAgaWQ9InBhdGgzMzkwIiAvPiAgICAgIDxwYXRoICAgICAgICAgZD0ibSA2NS41NTM5MzYsNzEuNTY2NTIgNS4yMzIyMzYsMCAwLDQuMjA5MDQ0IDUuODEzNTk2LDAgMCwzLjYwNDQyOSAtNS44MTM1OTYsMCAwLDQuODEzNjU4IDUuODEzNTk2LDAgMCwzLjYwNDQyOSAtMTEuMDQ1ODMyLDAgMCwtMTYuMjMxNTYgeiIgICAgICAgICBzdHlsZT0iZm9udC1zdHlsZTpub3JtYWw7Zm9udC12YXJpYW50Om5vcm1hbDtmb250LXdlaWdodDpub3JtYWw7Zm9udC1zdHJldGNoOm5vcm1hbDtmb250LWZhbWlseTpUdXRvcjstaW5rc2NhcGUtZm9udC1zcGVjaWZpY2F0aW9uOlR1dG9yO2ZpbGw6I2ZmZmZmZjtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MS45Nzc1MzgyMztzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZSIgICAgICAgICBpZD0icGF0aDMzOTIiIC8+ICAgICAgPHBhdGggICAgICAgICBkPSJtIDc3LjE2Mjk2LDc1Ljc3NTU2NCA1LjIzMjIzNiwwIDAsMTIuMDIyNTE2IC01LjIzMjIzNiwwIDAsLTEyLjAyMjUxNiB6IG0gMCwtNC4yMDkwNDQgNS4yMzIyMzYsMCAwLDMuNjA0NDMgLTUuMjMyMjM2LDAgMCwtMy42MDQ0MyB6IiAgICAgICAgIHN0eWxlPSJmb250LXN0eWxlOm5vcm1hbDtmb250LXZhcmlhbnQ6bm9ybWFsO2ZvbnQtd2VpZ2h0Om5vcm1hbDtmb250LXN0cmV0Y2g6bm9ybWFsO2ZvbnQtZmFtaWx5OlR1dG9yOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246VHV0b3I7ZmlsbDojZmZmZmZmO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxLjk3NzUzODIzO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lIiAgICAgICAgIGlkPSJwYXRoMzM5NCIgLz4gICAgICA8cGF0aCAgICAgICAgIGQ9Im0gODIuOTY3NDcyLDc1Ljc3NTU2NCA1LjgxMzU5NiwwIDAsLTQuMjA5MDQ0IDUuMjMyMjM2LDAgMCwxNi4yMzE1NiAtMTEuMDQ1ODMyLDAgMCwtMTIuMDIyNTE2IHogbSA1LjIzMjIzNiw4LjQxODA4NyAwLjU4MTM2LDAgMCwtNC44MTM2NTggLTAuNTgxMzYsMCAwLDQuODEzNjU4IHoiICAgICAgICAgc3R5bGU9ImZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7Zm9udC1mYW1pbHk6VHV0b3I7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpUdXRvcjtmaWxsOiNmZmZmZmY7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEuOTc3NTM4MjM7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmUiICAgICAgICAgaWQ9InBhdGgzMzk2IiAvPiAgICAgIDxwYXRoICAgICAgICAgZD0ibSA5NC41NzY0OTYsNzUuNzc1NTY0IDExLjA0NTgzNCwwIDAsMTIuMDIyNTE2IC0xMS4wNDU4MzQsMCAwLC0xMi4wMjI1MTYgeiBtIDUuMjMyMjM3LDguNDE4MDg3IDAuNTgxMzU3LDAgMCwtNC44MTM2NTggLTAuNTgxMzU3LDAgMCw0LjgxMzY1OCB6IiAgICAgICAgIHN0eWxlPSJmb250LXN0eWxlOm5vcm1hbDtmb250LXZhcmlhbnQ6bm9ybWFsO2ZvbnQtd2VpZ2h0Om5vcm1hbDtmb250LXN0cmV0Y2g6bm9ybWFsO2ZvbnQtZmFtaWx5OlR1dG9yOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246VHV0b3I7ZmlsbDojZmZmZmZmO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxLjk3NzUzODIzO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lIiAgICAgICAgIGlkPSJwYXRoMzM5OCIgLz4gICAgICA8cGF0aCAgICAgICAgIGQ9Im0gMTA2LjE4NTUyLDcxLjU2NjUyIDUuMjMyMjQsMCAwLDQuMjA5MDQ0IDUuODEzNTksMCAwLDMuNjA0NDI5IC01LjgxMzU5LDAgMCw0LjgxMzY1OCA1LjgxMzU5LDAgMCwzLjYwNDQyOSAtMTEuMDQ1ODMsMCAwLC0xNi4yMzE1NiB6IiAgICAgICAgIHN0eWxlPSJmb250LXN0eWxlOm5vcm1hbDtmb250LXZhcmlhbnQ6bm9ybWFsO2ZvbnQtd2VpZ2h0Om5vcm1hbDtmb250LXN0cmV0Y2g6bm9ybWFsO2ZvbnQtZmFtaWx5OlR1dG9yOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246VHV0b3I7ZmlsbDojZmZmZmZmO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxLjk3NzUzODIzO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lIiAgICAgICAgIGlkPSJwYXRoMzQwMCIgLz4gICAgICA8cGF0aCAgICAgICAgIGQ9Im0gMTE3Ljc5NDU0LDc1Ljc3NTU2NCAxMS4wNDU4NCwwIDAsNy44MTM0NzMgLTUuODEzNiwwIDAsMC42MDQ2MTQgNS44MTM2LDAgMCwzLjYwNDQyOSAtMTEuMDQ1ODQsMCAwLC0xMi4wMjI1MTYgeiBtIDUuMjMyMjQsNC4yMDkwNDMgMC41ODEzNiwwIDAsLTAuNjA0NjE0IC0wLjU4MTM2LDAgMCwwLjYwNDYxNCB6IiAgICAgICAgIHN0eWxlPSJmb250LXN0eWxlOm5vcm1hbDtmb250LXZhcmlhbnQ6bm9ybWFsO2ZvbnQtd2VpZ2h0Om5vcm1hbDtmb250LXN0cmV0Y2g6bm9ybWFsO2ZvbnQtZmFtaWx5OlR1dG9yOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246VHV0b3I7ZmlsbDojZmZmZmZmO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxLjk3NzUzODIzO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lIiAgICAgICAgIGlkPSJwYXRoMzQwMiIgLz4gICAgPC9nPiAgPC9nPjwvc3ZnPg==);
+}
+h2.filename {
+  font-family: monospace;
+}
+h1.textidote {
+  width: 378px;
+  height: 68px;
+  display: block;
+}
+.keyword1 {
+  font-weight: bold;
+  color: green;
+}
+.keyword2 {
+  font-weight: bold;
+  color: darkblue;
+}
+.comment, .comment * {
+  color: darkred;
+  font-weight: normal;
+}
+.linenb {
+  font-style: italic;
+  color: lightgrey;
+  width: 30pt;
+  float: left;
+  margin-top: 1pt;
+  margin-bottom: 1pt;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.codeline {
+  margin-left: -30pt;
+  padding-left: 60pt;
+  margin-top: 1pt;
+  margin-bottom: 1pt;
+}
+.no-text {
+  display: none;
+}
+.clear {
+  clear: both;
+}
+</style>
+</head>
+<body>
+<a href="https://sylvainhalle.github.io/textidote"><h1 class="textidote"><span class="no-text">Results of TeXtidote analysis</span></h1></a>
+<p>Here is the result of analyzing your file(s) with TeXtidote. Hover the mouse over highlighted portions of the document to read a tooltip that gives you some writing advice.</p>
+<h2 class="filename">Introduction.tex</h2>
+
+<p>Found 1 warning(s)</p>
+<div class="original-file">
+<div class="linenb">&nbsp;1</div><div class="codeline">\<span class="highlight-sh" title="This section is very short (about 114 words). You should consider merging it with another section or make it longer. [sh:seclen]">chapter</span>{Introduction}</div><div class="clear"></div>
+<div class="linenb">&nbsp;2</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">&nbsp;3</div><div class="codeline">In 1971 Dijkstra, made an analogy between computer programming an art. </div><div class="clear"></div>
+<div class="linenb">&nbsp;4</div><div class="codeline">It stated that is not important to learn how to compose a software, but instead, it is important to develop its own style and what will be their implications. </div><div class="clear"></div>
+<div class="linenb">&nbsp;5</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">&nbsp;6</div><div class="codeline">Software Understanding </div><div class="clear"></div>
+<div class="linenb">&nbsp;7</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">&nbsp;8</div><div class="codeline">- Section [Challenges of software understanding]</div><div class="clear"></div>
+<div class="linenb">&nbsp;9</div><div class="codeline">- Section [Challenges of software maintainability]</div><div class="clear"></div>
+<div class="linenb">10</div><div class="codeline">- Section [Software comprehension]</div><div class="clear"></div>
+<div class="linenb">11</div><div class="codeline">- Section [Our approach]</div><div class="clear"></div>
+<div class="linenb">12</div><div class="codeline">We present an ap- proach, based on the concept of synesthesia (the production of a sense impression relating to one sense by stimulation of another sense), which represents the evolutionary process through an interactive visual depiction of the evolving software artifacts complemented by an auditive portrayal of the evolution.</div><div class="clear"></div>
+</div>
+<h2 class="filename">SYN.tex</h2>
+
+<p>Found 4 warning(s)</p>
+<div class="original-file">
+<div class="linenb">&nbsp;1</div><div class="codeline"><span class="keyword1">\documentclass</span>[mscthesis]{usiinfthesis}</div><div class="clear"></div>
+<div class="linenb">&nbsp;2</div><div class="codeline"><span class="keyword1">\usepackage</span>{lipsum}</div><div class="clear"></div>
+<div class="linenb">&nbsp;3</div><div class="codeline"><span class="keyword1">\usepackage</span>{float}</div><div class="clear"></div>
+<div class="linenb">&nbsp;4</div><div class="codeline"><span class="keyword1">\usepackage</span>{listings}</div><div class="clear"></div>
+<div class="linenb">&nbsp;5</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">&nbsp;6</div><div class="codeline">\lstdefinelanguage{algebra}</div><div class="clear"></div>
+<div class="linenb">&nbsp;7</div><div class="codeline">{morekeywords={import,sort,constructors,observers,transformers,axioms,if,</div><div class="clear"></div>
+<div class="linenb">&nbsp;8</div><div class="codeline">else,end},</div><div class="clear"></div>
+<div class="linenb">&nbsp;9</div><div class="codeline">sensitive=false,</div><div class="clear"></div>
+<div class="linenb">10</div><div class="codeline">morecomment=[l]{//s},</div><div class="clear"></div>
+<div class="linenb">11</div><div class="codeline">}</div><div class="clear"></div>
+<div class="linenb">12</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">13</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">14</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">15</div><div class="codeline"><span class="keyword1">\title</span>{Sensorial software evolution comprehension} <span class="comment">%compulsory</span></div><div class="clear"></div>
+<div class="linenb">16</div><div class="codeline">\specialization{Dependable Distributed Systems}<span class="comment">%optional</span></div><div class="clear"></div>
+<div class="linenb">17</div><div class="codeline">\subtitle{Subtitle: Reinventing the World} <span class="comment">%optional </span></div><div class="clear"></div>
+<div class="linenb">18</div><div class="codeline">\author{Gianlorenzo Occhipinti} <span class="comment">%compulsory</span></div><div class="clear"></div>
+<div class="linenb">19</div><div class="codeline"><span class="keyword2">\begin{committee}</span></div><div class="clear"></div>
+<div class="linenb">20</div><div class="codeline">\advisor{Prof.}{Student's}{Advisor} <span class="comment">%compulsory</span></div><div class="clear"></div>
+<div class="linenb">21</div><div class="codeline">\coadvisor{Prof.}{Student's}{Co-Advisor}{} <span class="comment">%optional</span></div><div class="clear"></div>
+<div class="linenb">22</div><div class="codeline"><span class="keyword2">\end{committee}</span></div><div class="clear"></div>
+<div class="linenb">23</div><div class="codeline">\Day{Yesterday} <span class="comment">%compulsory</span></div><div class="clear"></div>
+<div class="linenb">24</div><div class="codeline">\Month{July} <span class="comment">%compulsory</span></div><div class="clear"></div>
+<div class="linenb">25</div><div class="codeline">\Year{2022} <span class="comment">%compulsory, put only the year</span></div><div class="clear"></div>
+<div class="linenb">26</div><div class="codeline">\place{Lugano} <span class="comment">%compulsoyr</span></div><div class="clear"></div>
+<div class="linenb">27</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">28</div><div class="codeline">\dedication{To my beloved} <span class="comment">%optional</span></div><div class="clear"></div>
+<div class="linenb">29</div><div class="codeline">\openepigraph{Someone said \dots}{Someone} <span class="comment">%optional</span></div><div class="clear"></div>
+<div class="linenb">30</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">31</div><div class="codeline"><span class="comment"><span class="comment">%\makeindex %optional, also comment out \theindex at the end</span></span></div><div class="clear"></div>
+<div class="linenb">32</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">33</div><div class="codeline"><span class="keyword2">\begin{document}</span></div><div class="clear"></div>
+<div class="linenb">34</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">35</div><div class="codeline"><span class="keyword1">\maketitle</span> <span class="comment">%generates the titlepage, this is FIXED</span></div><div class="clear"></div>
+<div class="linenb">36</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">37</div><div class="codeline">\frontmatter <span class="comment">%generates the frontmatter, this is FIXED</span></div><div class="clear"></div>
+<div class="linenb">38</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">39</div><div class="codeline">\input{Abstract}</div><div class="clear"></div>
+<div class="linenb">40</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">41</div><div class="codeline">\input{Acknowledgements}</div><div class="clear"></div>
+<div class="linenb">42</div><div class="codeline">\setcitestyle{numbers}</div><div class="clear"></div>
+<div class="linenb">43</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">44</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">45</div><div class="codeline">\tableofcontents </div><div class="clear"></div>
+<div class="linenb">46</div><div class="codeline">\listoffigures <span class="comment">%optional</span></div><div class="clear"></div>
+<div class="linenb">47</div><div class="codeline">\listoftables <span class="comment">%optional</span></div><div class="clear"></div>
+<div class="linenb">48</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">49</div><div class="codeline">\mainmatter</div><div class="clear"></div>
+<div class="linenb">50</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">51</div><div class="codeline">\input{Introduction}</div><div class="clear"></div>
+<div class="linenb">52</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">53</div><div class="codeline">\input{StateOfArt}</div><div class="clear"></div>
+<div class="linenb">54</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">55</div><div class="codeline">\appendix <span class="comment">%optional, use only if you have an appendix</span></div><div class="clear"></div>
+<div class="linenb">56</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">57</div><div class="codeline">\<span class="highlight-sh" title="If a section has sub-sections, it should have more than one such sub-section. [sh:nsubdiv]"><span class="highlight-sh" title="This section is very short (about 1 words). You should consider merging it with another section or make it longer. [sh:seclen]">chapter</span></span>{Some retarded material}</div><div class="clear"></div>
+<div class="linenb">58</div><div class="codeline">\<span class="highlight-sh" title="This section is very short (about 11 words). You should consider merging it with another section or make it longer. [sh:seclen]"><span class="highlight-sh" title="Avoid stacked headings, i.e. consecutive headings without text in between. [sh:stacked]">section</span></span>{It's over\dots}</div><div class="clear"></div>
+<div class="linenb">59</div><div class="codeline">\lipsum </div><div class="clear"></div>
+<div class="linenb">60</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">61</div><div class="codeline">\backmatter</div><div class="clear"></div>
+<div class="linenb">62</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">63</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">64</div><div class="codeline"><span class="comment"><span class="comment">%\bibliographystyle{alpha}</span></span></div><div class="clear"></div>
+<div class="linenb">65</div><div class="codeline"><span class="comment"><span class="comment">%\bibliographystyle{dcu}</span></span></div><div class="clear"></div>
+<div class="linenb">66</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">67</div><div class="codeline">\bibliographystyle{plainnat}</div><div class="clear"></div>
+<div class="linenb">68</div><div class="codeline">\bibliography{biblio}</div><div class="clear"></div>
+<div class="linenb">69</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">70</div><div class="codeline"><span class="comment"><span class="comment">%\cleardoublepage</span></span></div><div class="clear"></div>
+<div class="linenb">71</div><div class="codeline"><span class="comment"><span class="comment">%\theindex %optional, use only if you have an index, must use</span></span></div><div class="clear"></div>
+<div class="linenb">72</div><div class="codeline">	  <span class="comment">%\makeindex in the preamble</span></div><div class="clear"></div>
+<div class="linenb">73</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">74</div><div class="codeline"><span class="keyword2">\end{document}</span></div><div class="clear"></div>
+</div>
+<h2 class="filename">Abstract.tex</h2>
+
+<p>Found 0 warning(s)</p>
+<div class="original-file">
+<div class="linenb">1</div><div class="codeline"><span class="keyword2">\begin{abstract}</span></div><div class="clear"></div>
+<div class="linenb">2</div><div class="codeline">The comprehension of software evolution is essential for the understandability and maintainability of systems.</div><div class="clear"></div>
+<div class="linenb">3</div><div class="codeline">However, the sheer quantity and complexity of the information generated during systems development make the comprehension process challenging.</div><div class="clear"></div>
+<div class="linenb">4</div><div class="codeline">We present an approach, based on the concept of synesthesia (the production of a sense impression relating to one sense by stimulation of another sense), which represents the evolutionary process through an interactive visual depiction of the evolving software artifacts complemented by an auditive portrayal of the evolution.</div><div class="clear"></div>
+<div class="linenb">5</div><div class="codeline">The approach is exemplified in SYN, a web application, which enables sensorial software evolution comprehension.</div><div class="clear"></div>
+<div class="linenb">6</div><div class="codeline">We applied SYN on real-life systems and presented several insights and reflections. </div><div class="clear"></div>
+<div class="linenb">7</div><div class="codeline"><span class="keyword2">\end{abstract}</span></div><div class="clear"></div>
+</div>
+<h2 class="filename">StateOfArt.tex</h2>
+
+<p>Found 11 warning(s)</p>
+<div class="original-file">
+<div class="linenb">&nbsp;1</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">&nbsp;2</div><div class="codeline">\chapter[Related Works]{State of the art}</div><div class="clear"></div>
+<div class="linenb">&nbsp;3</div><div class="codeline">\graphicspath{ {images/stateOfArt} }</div><div class="clear"></div>
+<div class="linenb">&nbsp;4</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">&nbsp;5</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">&nbsp;6</div><div class="codeline">Essential parts of software lifecycles are software maintenance and software evolution. Both activities require the comprehension of the system by the developer. Mayrhauser \cite{VonMayrhauser1995} defined program comprehension as a process that uses knowledge to acquire new knowledge. Generally, programmers possess two types of knowledge: general knowledge and software-specific knowledge, which represent their level of understanding of that software. Software comprehension aims to increase this specific knowledge of the system, and, to do that, it can leverage some software visualization techniques. Software visualization supports the understanding of software systems because it enables the visualization of the system's information (architecture, source code, behavior) with a 2D or 3D representation. Stasko et al.\cite{Stasko2008} conducted a study in 1998 that shows how visualization arguments human memory since it works as external cognitive aid and thus, improves thinking and analysis capabilities. <span class="highlight-sh" title="You should not break lines manually in a paragraph. Either start a new paragraph or stay in the current one. [sh:nobreak]">\</span>\</div><div class="clear"></div>
+<div class="linenb">&nbsp;7</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">&nbsp;8</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">&nbsp;9</div><div class="codeline"><span class="keyword1">\section</span>{Software visualization}</div><div class="clear"></div>
+<div class="linenb">10</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">11</div><div class="codeline">The earliest form of software visualizations were diagrams.</div><div class="clear"></div>
+<div class="linenb">12</div><div class="codeline">- A program to draw multilevel flow charts.  1958</div><div class="clear"></div>
+<div class="linenb">13</div><div class="codeline">- In 1963, Knuth flowchart</div><div class="clear"></div>
+<div class="linenb">14</div><div class="codeline">- Nassi- Schneiderman diagrams appeared in 1973</div><div class="clear"></div>
+<div class="linenb">15</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">16</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">17</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">18</div><div class="codeline"><span class="highlight-sh" title="If you are writing a research paper, do not force page breaks. [sh:nonp]"></span>\newpage</div><div class="clear"></div>
+<div class="linenb">19</div><div class="codeline">In the same year, Chuah and Erick \cite{Chuah1998} proposed three different techniques to visualize project data. They exploited the concept of glyphs, a graphical object that represents data through visual parameters. The first technique was the Timewhell glyph, used to visualize time-oriented information (number of lines of code, number of errors, number of added lines). The second technique was the 3D wheel glyph; it encoded the same attributes of the time wheel, and additionally, it used the height to encode time. Infobug glyph was the last technique, where each glyph was composed of four parts, each representing essential data of the system (time, code size, number of lines of code added/deleted/modified). \newline</div><div class="clear"></div>
+<div class="linenb">20</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">21</div><div class="codeline"><span class="keyword2">\begin{figure}</span>[H]</div><div class="clear"></div>
+<div class="linenb">22</div><div class="codeline">\minipage{0.32\textwidth}</div><div class="clear"></div>
+<div class="linenb">23</div><div class="codeline">  <span class="keyword1">\includegraphics</span>[width=\linewidth]{Chuan1.png}</div><div class="clear"></div>
+<div class="linenb">24</div><div class="codeline">  <span class="highlight-sh" title="A caption should end with a period [sh:capperiod]"><span class="keyword1">\caption</span>{Timewhell</span>}</div><div class="clear"></div>
+<div class="linenb">25</div><div class="codeline">\endminipage\hfill</div><div class="clear"></div>
+<div class="linenb">26</div><div class="codeline">\minipage{0.32\textwidth}</div><div class="clear"></div>
+<div class="linenb">27</div><div class="codeline">  <span class="keyword1">\includegraphics</span>[width=\linewidth]{Chuan2.png}</div><div class="clear"></div>
+<div class="linenb">28</div><div class="codeline">  <span class="highlight-sh" title="A caption should end with a period [sh:capperiod]"><span class="keyword1">\caption</span>{3D wheel</span>}</div><div class="clear"></div>
+<div class="linenb">29</div><div class="codeline">\endminipage\hfill</div><div class="clear"></div>
+<div class="linenb">30</div><div class="codeline">\minipage{0.32\textwidth}<span class="comment">%</span></div><div class="clear"></div>
+<div class="linenb">31</div><div class="codeline">  <span class="keyword1">\includegraphics</span>[width=\linewidth]{Chuan3.png}</div><div class="clear"></div>
+<div class="linenb">32</div><div class="codeline">  <span class="highlight-sh" title="A caption should end with a period [sh:capperiod]"><span class="keyword1">\caption</span>{Infobug</span>}</div><div class="clear"></div>
+<div class="linenb">33</div><div class="codeline">\endminipage</div><div class="clear"></div>
+<div class="linenb">34</div><div class="codeline"><span class="highlight-sh" title="This figure is missing a label [sh:figref]">\</span>end{figure}</div><div class="clear"></div>
+<div class="linenb">35</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">36</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">37</div><div class="codeline">In 2001 Lanza \cite{Lanza2001} introduced the concept of the Evolution Matrix. It was a way to visualize the evolution of software without dealing with a large amount of complex data. Furthermore, that approach was agnostic to any particular programming language. The Evolution Matrix aimed to display the evolution of classes in object-oriented software systems. Each column represented a version of the software, and each row represented a different version of the same class. The cells were filled with boxes whose size depended on two different metrics. Thanks to this approach, he was able to infer some evolution information by just looking at the shape of the matrix</div><div class="clear"></div>
+<div class="linenb">38</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">39</div><div class="codeline"><span class="keyword2">\begin{figure}</span>[H]</div><div class="clear"></div>
+<div class="linenb">40</div><div class="codeline">\minipage{0.49\textwidth}</div><div class="clear"></div>
+<div class="linenb">41</div><div class="codeline">  <span class="keyword1">\includegraphics</span>[width=\linewidth]{EvolutionMatrix1.png}</div><div class="clear"></div>
+<div class="linenb">42</div><div class="codeline">  <span class="highlight-sh" title="A caption should end with a period [sh:capperiod]"><span class="keyword1">\caption</span>{A schematic display of the Evolution Matrix</span>}</div><div class="clear"></div>
+<div class="linenb">43</div><div class="codeline">\endminipage\hfill</div><div class="clear"></div>
+<div class="linenb">44</div><div class="codeline">\minipage{0.49\textwidth}</div><div class="clear"></div>
+<div class="linenb">45</div><div class="codeline">  <span class="keyword1">\includegraphics</span>[width=\linewidth]{EvolutionMatrix2.png}</div><div class="clear"></div>
+<div class="linenb">46</div><div class="codeline">  <span class="highlight-sh" title="A caption should end with a period [sh:capperiod]"><span class="keyword1">\caption</span>{Some characteristics of the Evolution Matrix</span>}</div><div class="clear"></div>
+<div class="linenb">47</div><div class="codeline">\endminipage\hfill</div><div class="clear"></div>
+<div class="linenb">48</div><div class="codeline"><span class="highlight-sh" title="This figure is missing a label [sh:figref]">\</span>end{figure}</div><div class="clear"></div>
+<div class="linenb">49</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">50</div><div class="codeline"><span class="highlight-sh" title="If you are writing a research paper, do not force page breaks. [sh:nonp]"></span>\newpage</div><div class="clear"></div>
+<div class="linenb">51</div><div class="codeline">&nbsp;</div><div class="clear"></div>
+<div class="linenb">52</div><div class="codeline">Wettel in his thesis \cite{Wettel2011}, defined a city metaphor for software visualization that represents software as cities. His work represents packages as districts and classes as buildings. This metaphor was applied in different contexts related to reverse engineering (program comprehension, software evolution, software quality) to demonstrate metaphor's versatility. As a result, he found evidence that his approach works. However, he claims that city metaphor brings visual and layout limitations (not all visualization techniques fit well with it). Under those circumstances, he preferred simplicity over the accuracy, so he obtained a simple visual language that facilitates comprehension of data. He conducted an experiment of the evidence that the city metaphor enables the creation of efficient software visualizations. His approach was implemented by a software visualization tool called CodeCity that supports the city metaphor. </div><div class="clear"></div>
+<div class="linenb">53</div><div class="codeline"><span class="highlight-sh" title="You should not break lines manually in a paragraph. Either start a new paragraph or stay in the current one. [sh:nobreak]">\</span>\</div><div class="clear"></div>
+<div class="linenb">54</div><div class="codeline"><span class="keyword1">\includegraphics</span>[width=\textwidth]{CodeCity.png}</div><div class="clear"></div>
+</div>
+<h2 class="filename">Acknowledgements.tex</h2>
+
+<p>Found 0 warning(s)</p>
+<div class="original-file">
+<div class="linenb">1</div><div class="codeline"><span class="keyword2">\begin{acknowledgements}</span></div><div class="clear"></div>
+<div class="linenb">2</div><div class="codeline">ACK</div><div class="clear"></div>
+<div class="linenb">3</div><div class="codeline"><span class="keyword2">\end{acknowledgements}</span></div><div class="clear"></div>
+</div>
+<hr/>
+Output produced by TeXtidote v0.8.2, &copy; 2018-2020 Sylvain Hall&eacute; - All rights reserved.<br/>
+See the <a href="https://sylvainhalle.github.io/textidote">TeXtidote website</a> for more information.
+</body>
+</html>
