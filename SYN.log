@@ -1,18 +1,16 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.28)  28 APR 2022 20:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.28)  29 APR 2022 20:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**SYN.tex
-(./SYN.tex
+**/Users/gianlo/Develop/thesis/SYN.tex
+(/Users/gianlo/Develop/thesis/SYN.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18> (./usiinfthesis.cls
-Document Class: usiinfthesis 2010/04/14 v. 1.1.2 USI Informatics Doctoral Disse
-rtation class
+L3 programming layer <2021-02-18> (/Users/gianlo/Develop/thesis/usiinfthesis.cls
+Document Class: usiinfthesis 2010/04/14 v. 1.1.2 USI Informatics Doctoral Dissertation class
 (/usr/local/texlive/2021/texmf-dist/tex/latex/xifthen/xifthen.sty
 Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/tools/calc.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count179
 \calc@Bcount=\count180
@@ -24,11 +22,9 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count181
 \calc@Cskip=\skip49
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 ))
 *** Please report bugs, comments, suggestions, and improvements to: 
@@ -51,26 +47,18 @@ File: bk10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \abovecaptionskip=\skip50
 \belowcaptionskip=\skip51
 \bibindent=\dimen140
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mathdesign.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mathdesign.sty
 Package: mathdesign 2013/08/29 v2.31 Math Design Project
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/mdbch.cfg)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/mdbch.sty
-Package: mdbch 2013/08/29 v2.31 bitstream bitstream charter + mdbch (Math Desig
-n Project)
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdfont.def
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/mdbch.cfg) (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/mdbch.sty
+Package: mdbch 2013/08/29 v2.31 bitstream bitstream charter + mdbch (Math Design Project)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdfont.def
 File: mdfont.def 2013/08/29 v2.31 (Math Design Project)
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdsffont.def
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdsffont.def
 File: mdsffont.def 2013/08/29 v2.31 (Math Design Project)
 
 
@@ -206,22 +194,17 @@ LaTeX Font Info:    Overwriting symbol font `lettersupright' in version `bold'
 LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 145.
 LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `normal'
 (Font)                  OMS/mdbch/m/n --> OMS/mdbch/m/n on input line 167.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
-
-(/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks16
 \XKV@tempa@toks=\toks17
 )
 \XKV@depth=\count191
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-LaTeX Font Info:    Trying to load font information for T1+mdbch on input line 
-186.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/t1mdbch.fd
+LaTeX Font Info:    Trying to load font information for T1+mdbch on input line 186.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/t1mdbch.fd
 File: t1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for T1/mdbch.
 )
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
@@ -242,16 +225,12 @@ LaTeX Font Info:    Overwriting symbol font `mathdesignB' in version `bold'
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 532.
 LaTeX Font Info:    Redeclaring math accent \widehat on input line 533.
 \rulethickness=\skip52
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
-))
-(/usr/local/texlive/2021/texmf-dist/tex/latex/bera/beramono.sty
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/bera/beramono.sty
 Package: beramono 2004/01/31 (WaS)
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/sectsty/sectsty.sty
-Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
-les
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
 
 
 LaTeX Warning: Command \underbar  has changed.
@@ -263,11 +242,9 @@ LaTeX Warning: Command \underline  has changed.
 
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-(/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
 \Gm@cnth=\count192
@@ -282,10 +259,8 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layouthoffset=\dimen147
 \Gm@layoutvoffset=\dimen148
 \Gm@dimlist=\toks19
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
-rs
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip53
 \f@nch@O@elh=\skip54
 \f@nch@O@erh=\skip55
@@ -295,11 +270,9 @@ rs
 \f@nch@O@erf=\skip59
 \f@nch@O@olf=\skip60
 \f@nch@O@orf=\skip61
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \captionmargin=\dimen149
 \captionmargin@=\dimen150
@@ -312,42 +285,33 @@ Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count195
 \c@continuedfloat=\count196
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/datatool/datatool.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/datatool/datatool.sty
 Package: datatool 2019/09/27 v2.32 (NLCT)
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/xfor/xfor.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/xfor/xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/substr/substr.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
 \c@su@anzahl=\count197
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count198
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/datatool/datatool-base.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/datatool/datatool-base.sty
 Package: datatool-base 2019/09/27 v2.32 (NLCT)
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip62
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
 \ex@=\dimen156
-))
-(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen157
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count199
@@ -387,19 +351,14 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/datatool/datatool-fp.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2019/09/27 v2.32 (NLCT)
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp.sty
 Package: fp 1995/04/02
-
-`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
-(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/defpattern.sty
+ `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
 \actioncount=\count277
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-basic.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
 \FP@xs=\count278
 \FP@xia=\count279
@@ -410,33 +369,24 @@ Package: fp-basic 1996/05/13
 \FP@regb=\count284
 \FP@regs=\count285
 \FP@times=\count286
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-addons.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-snap.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-snap.sty
 Package: fp-snap 1995/04/05
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-exp.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-exp.sty
 Package: fp-exp 1995/04/03
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-trigo.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-trigo.sty
 Package: fp-trigo 1995/04/14
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-pas.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-pas.sty
 Package: fp-pas 1994/08/29
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-random.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
 \FPseed=\count287
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-eqn.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-upn.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-upn.sty
 Package: fp-upn 1996/10/21
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-eval.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks25
@@ -489,19 +439,16 @@ Package: fp-eval 1995/04/03
 \c@coadvisors=\count309
 \c@internalmembers=\count310
 \c@externalmembers=\count311
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/epigraph/epigraph.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/epigraph/epigraph.sty
 Package: epigraph 2020/01/02 v1.5e typesetting epigraphs
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/nextpage/nextpage.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/nextpage/nextpage.sty
 Package: nextpage 2009/09/03 v1.1a additional page commands
 )
 \beforeepigraphskip=\skip66
 \afterepigraphskip=\skip67
 \epigraphwidth=\skip68
 \epigraphrule=\skip69
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/booktabs/booktabs.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen165
 \lightrulewidth=\dimen166
@@ -520,100 +467,75 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count314
 \@lastruleclass=\count315
 \@thisrulewidth=\dimen177
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen178
 \Gin@req@width=\dimen179
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/url/url.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/natbib/natbib.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip70
 \bibsep=\skip71
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count316
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
-
-(/usr/local/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-)
-(/usr/local/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/local/texlive/2021/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/local/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)
-(/usr/local/texlive/2021/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(/usr/local/texlive/2021/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/hycolor/hycolor.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/auxhook/auxhook.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen180
 \Hy@linkcounter=\count317
 \Hy@pagecounter=\count318
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
-File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
-nguages
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel languages
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-)
-(/usr/local/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count319
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -632,13 +554,10 @@ Package hyperref Info: Bookmarks ON on input line 4445.
 \c@Hy@tempcnt=\count320
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen181
-
-(/usr/local/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(/usr/local/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count321
 \Field@Width=\dimen182
@@ -652,10 +571,8 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6100.
 Package hyperref Info: PDF/A mode OFF on input line 6105.
 LaTeX Info: Redefining \ref on input line 6145.
 LaTeX Info: Redefining \pageref on input line 6149.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
-ge
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi package
 with kernel methods
 )
 \Hy@abspage=\count322
@@ -663,58 +580,42 @@ with kernel methods
 \c@Hfootnote=\count324
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hpdftex.def
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
-e
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery package
 with kernel methods
 )
 \Fld@listcount=\count325
 \c@bookmark@seq@number=\count326
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
-
-(/usr/local/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-86.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
 \Hy@SectionHShift=\skip72
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/oberdiek/hypcap.sty
 Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
-))
-(/usr/local/texlive/2021/texmf-dist/tex/latex/lipsum/lipsum.sty
-(/usr/local/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2021-02-18 L3 programming layer (loader) 
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count327
 \l__pdf_internal_box=\box49
-))
-(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-
-01.sty
-(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.
-tex)))
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-01.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex)))
 Package: lipsum 2021-03-03 v2.3 150 paragraphs of Lorem Ipsum dummy text
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 File: lipsum.ltd.tex 2021-03-03 v2.3 The Lorem ipsum dummy text
-))
-(/usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count328
 \float@exts=\toks46
 \float@box=\box50
 \@float@everytoks=\toks47
 \@floatcapt=\box51
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count329
 \lst@gtempboxa=\box52
 \lst@token=\toks48
@@ -727,57 +628,60 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \lst@newlines=\count333
 \lst@lineno=\count334
 \lst@maxwidth=\dimen187
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count335
 \lst@skipnumbers=\count336
 \lst@framebox=\box53
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
-\dtldb@committee=\toks49
-\dtlkeys@committee=\toks50
-\dtlrows@committee=\count337
-\dtlcols@committee=\count338
-
-(./SYN.aux)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen188
+\WF@size=\dimen189
+\c@WF@wrappedlines=\count337
+\WF@box=\box54
+\WF@everypar=\toks49
+Package: wrapfig 2003/01/31  v 3.6
+)
+\dtldb@committee=\toks50
+\dtlkeys@committee=\toks51
+\dtlrows@committee=\count338
+\dtlcols@committee=\count339
+ (/Users/gianlo/Develop/thesis/SYN.aux)
 \openout1 = `SYN.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 33.
-LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 3
-3.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 34.
+LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 34.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdacmr.fd
 File: mdacmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 33.
-LaTeX Font Info:    Trying to load font information for MDB+cmr on input line 3
-3.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbcmr.fd
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 34.
+LaTeX Font Info:    Trying to load font information for MDB+cmr on input line 34.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbcmr.fd
 File: mdbcmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -819,165 +723,146 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: hypcap package is loaded.
 Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count339
-\scratchdimen=\dimen188
-\scratchbox=\box54
-\nofMPsegments=\count340
-\nofMParguments=\count341
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count342
-\MPscratchDim=\dimen189
-\MPnumerator=\count343
-\makeMPintoPDFobject=\count344
-\everyMPtoPDFconversion=\toks52
+\scratchcounter=\count340
+\scratchdimen=\dimen190
+\scratchbox=\box55
+\nofMPsegments=\count341
+\nofMParguments=\count342
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count343
+\MPscratchDim=\dimen191
+\MPnumerator=\count344
+\makeMPintoPDFobject=\count345
+\everyMPtoPDFconversion=\toks53
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 33.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
+Package hyperref Info: Link coloring OFF on input line 34.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
-ty
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count345
+\c@section@level=\count346
 )
-LaTeX Info: Redefining \ref on input line 33.
-LaTeX Info: Redefining \pageref on input line 33.
-LaTeX Info: Redefining \nameref on input line 33.
- (./SYN.out) (./SYN.out)
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
+ (/Users/gianlo/Develop/thesis/SYN.out) (/Users/gianlo/Develop/thesis/SYN.out)
 \@outlinefile=\write4
 \openout4 = `SYN.out'.
 
-\c@lstlisting=\count346
+\c@lstlisting=\count347
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 16.58891pt on input line 36.
+(Font)              scaled to size 16.58891pt on input line 37.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 16.58891pt on input line 36.
-LaTeX Font Info:    Trying to load font information for T1+uop on input line 36
-.
-LaTeX Font Info:    No file T1uop.fd. on input line 36.
+(Font)              scaled to size 16.58891pt on input line 37.
+LaTeX Font Info:    Trying to load font information for T1+uop on input line 37.
+LaTeX Font Info:    No file T1uop.fd. on input line 37.
 
 
 LaTeX Font Warning: Font shape `T1/uop/b/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 36.
+(Font)              using `T1/cmr/m/n' instead on input line 37.
 
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 36.
+(Font)              scaled to size 11.52008pt on input line 37.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 11.52008pt on input line 36.
+(Font)              scaled to size 11.52008pt on input line 37.
 LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
-(Font)              scaled to size 9.60007pt on input line 36.
+(Font)              scaled to size 9.60007pt on input line 37.
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 13.82408pt on input line 36.
+(Font)              scaled to size 13.82408pt on input line 37.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 13.82408pt on input line 36.
+(Font)              scaled to size 13.82408pt on input line 37.
 [0
 
 
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[1
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
 
  []
 
-LaTeX Font Info:    Trying to load font information for OT1+mdbch on input line
- 37.
+LaTeX Font Info:    Trying to load font information for OT1+mdbch on input line 38.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/ot1mdbch.fd
 File: ot1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OT1/mdbch.
 )
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 37.
+(Font)              scaled to size 9.60007pt on input line 38.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 37.
+(Font)              scaled to size 6.72005pt on input line 38.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 37.
-LaTeX Font Info:    Trying to load font information for OML+mdbch on input line
- 37.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/omlmdbch.fd
+(Font)              scaled to size 4.80003pt on input line 38.
+LaTeX Font Info:    Trying to load font information for OML+mdbch on input line 38.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/omlmdbch.fd
 File: omlmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OML/mdbch.
 )
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 9.60007pt on input line 37.
+(Font)              scaled to size 9.60007pt on input line 38.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 6.72005pt on input line 37.
+(Font)              scaled to size 6.72005pt on input line 38.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 4.80003pt on input line 37.
-LaTeX Font Info:    Trying to load font information for OMS+mdbch on input line
- 37.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/omsmdbch.fd
+(Font)              scaled to size 4.80003pt on input line 38.
+LaTeX Font Info:    Trying to load font information for OMS+mdbch on input line 38.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/omsmdbch.fd
 File: omsmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMS/mdbch.
 )
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 37.
+(Font)              scaled to size 9.60007pt on input line 38.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 37.
+(Font)              scaled to size 6.72005pt on input line 38.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 37.
-LaTeX Font Info:    Trying to load font information for OMX+mdbch on input line
- 37.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/omxmdbch.fd
+(Font)              scaled to size 4.80003pt on input line 38.
+LaTeX Font Info:    Trying to load font information for OMX+mdbch on input line 38.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/omxmdbch.fd
 File: omxmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMX/mdbch.
 )
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 37.
+(Font)              scaled to size 9.60007pt on input line 38.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 37.
+(Font)              scaled to size 6.72005pt on input line 38.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 37.
+(Font)              scaled to size 4.80003pt on input line 38.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 37.
+(Font)              scaled to size 9.60007pt on input line 38.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 37.
+(Font)              scaled to size 6.72005pt on input line 38.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 37.
-LaTeX Font Info:    Trying to load font information for MDA+mdbch on input line
- 37.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/mdamdbch.fd
+(Font)              scaled to size 4.80003pt on input line 38.
+LaTeX Font Info:    Trying to load font information for MDA+mdbch on input line 38.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/mdamdbch.fd
 File: mdamdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDA/mdbch.
 )
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 37.
+(Font)              scaled to size 9.60007pt on input line 38.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 37.
+(Font)              scaled to size 6.72005pt on input line 38.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 37.
-LaTeX Font Info:    Trying to load font information for MDB+mdbch on input line
- 37.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/mdbmdbch.fd
+(Font)              scaled to size 4.80003pt on input line 38.
+LaTeX Font Info:    Trying to load font information for MDB+mdbch on input line 38.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/mdbmdbch.fd
 File: mdbmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDB/mdbch.
 )
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 37.
+(Font)              scaled to size 9.60007pt on input line 38.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 37.
+(Font)              scaled to size 6.72005pt on input line 38.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 37.
+(Font)              scaled to size 4.80003pt on input line 38.
 
 
 LaTeX Font Warning: Font shape `T1/uop/m/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 37.
+(Font)              using `T1/cmr/m/n' instead on input line 38.
 
 [1
 
@@ -986,57 +871,56 @@ LaTeX Font Warning: Font shape `T1/uop/m/n' undefined
 
 ]
 LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
-(Font)              scaled to size 13.82408pt on input line 37.
+(Font)              scaled to size 13.82408pt on input line 38.
  [3] [4
 
 ]
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 37.
+(Font)              scaled to size 8.64006pt on input line 38.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 37.
+(Font)              scaled to size 8.64006pt on input line 38.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 37.
+(Font)              scaled to size 5.76004pt on input line 38.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 8.64006pt on input line 37.
+(Font)              scaled to size 8.64006pt on input line 38.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 5.76004pt on input line 37.
+(Font)              scaled to size 5.76004pt on input line 38.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 37.
+(Font)              scaled to size 8.64006pt on input line 38.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 37.
+(Font)              scaled to size 5.76004pt on input line 38.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 37.
+(Font)              scaled to size 8.64006pt on input line 38.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 37.
+(Font)              scaled to size 5.76004pt on input line 38.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 37.
+(Font)              scaled to size 8.64006pt on input line 38.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 37.
+(Font)              scaled to size 5.76004pt on input line 38.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 37.
+(Font)              scaled to size 8.64006pt on input line 38.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 37.
+(Font)              scaled to size 5.76004pt on input line 38.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 37.
+(Font)              scaled to size 8.64006pt on input line 38.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 37.
+(Font)              scaled to size 5.76004pt on input line 38.
  [5] [6
 
 ]
-\c@oldpage=\count347
- (./Abstract.tex
+\c@oldpage=\count348
+ (/Users/gianlo/Develop/thesis/Abstract.tex
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
 (Font)              scaled to size 23.88496pt on input line 2.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 (Font)              scaled to size 23.88496pt on input line 2.
-) (./Acknowledgements.tex [7
+) (/Users/gianlo/Develop/thesis/Acknowledgements.tex [7
 
 ] [8
 
-]
-[9] [10
+] [9] [10
 
-]) (./SYN.toc
+]) (/Users/gianlo/Develop/thesis/SYN.toc
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 (Font)              scaled to size 9.60007pt on input line 1.
 )
@@ -1047,7 +931,7 @@ LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 
 ] [12
 
-] (./SYN.lof)
+] (/Users/gianlo/Develop/thesis/SYN.lof)
 \tf@lof=\write6
 \openout6 = `SYN.lof'.
 
@@ -1055,7 +939,7 @@ LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 
 ] [14
 
-] (./SYN.lot)
+] (/Users/gianlo/Develop/thesis/SYN.lot)
 \tf@lot=\write7
 \openout7 = `SYN.lot'.
 
@@ -1063,113 +947,116 @@ LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 
 ] [16
 
-]
-(./Introduction.tex
+] (/Users/gianlo/Develop/thesis/Introduction.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
 (Font)              scaled to size 19.91054pt on input line 1.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 (Font)              scaled to size 19.91054pt on input line 1.
-) [1
+) (/Users/gianlo/Develop/thesis/StateOfArt.tex [1
 
-] (./StateOfArt.tex [2]
+] [2
+
+]
 Chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
+Underfull \hbox (badness 10000) in paragraph at lines 6--13
 
  []
 
-[3
+<images/stateOfArt/Haibt1959_Flowchart.png, id=166, 450.68375pt x 1260.71pt>
+File: images/stateOfArt/Haibt1959_Flowchart.png Graphic file (type png)
+<use images/stateOfArt/Haibt1959_Flowchart.png>
+Package pdftex.def Info: images/stateOfArt/Haibt1959_Flowchart.png  used on input line 18.
+(pdftex.def)             Requested size: 106.47684pt x 297.84431pt.
+[3 </Users/gianlo/Develop/thesis/images/stateOfArt/Haibt1959_Flowchart.png>]
+<images/stateOfArt/Nassi1973_NSD.png, id=182, 851.18pt x 1072.005pt>
+File: images/stateOfArt/Nassi1973_NSD.png Graphic file (type png)
+<use images/stateOfArt/Nassi1973_NSD.png>
+Package pdftex.def Info: images/stateOfArt/Nassi1973_NSD.png  used on input line 36.
+(pdftex.def)             Requested size: 157.74054pt x 198.66133pt.
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
+Underfull \hbox (badness 1231) in paragraph at lines 43--48
+\T1/mdbch/m/n/10 ber of lines of code, num-ber of er-rors, num-ber of added
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 43--48
+\T1/mdbch/m/n/10 four parts, each rep-re-sent-ing es-sen-tial data of the sys-tem
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--48
 
  []
 
-<images/stateOfArt/Chuan1.png, id=172, 1001.7425pt x 716.6775pt>
+<images/stateOfArt/Chuan1.png, id=184, 1001.7425pt x 716.6775pt>
 File: images/stateOfArt/Chuan1.png Graphic file (type png)
 <use images/stateOfArt/Chuan1.png>
-Package pdftex.def Info: images/stateOfArt/Chuan1.png  used on input line 17.
+Package pdftex.def Info: images/stateOfArt/Chuan1.png  used on input line 51.
 (pdftex.def)             Requested size: 126.19724pt x 90.28435pt.
-<images/stateOfArt/Chuan2.png, id=174, 982.67125pt x 654.445pt>
+<images/stateOfArt/Chuan2.png, id=185, 982.67125pt x 654.445pt>
 File: images/stateOfArt/Chuan2.png Graphic file (type png)
 <use images/stateOfArt/Chuan2.png>
-Package pdftex.def Info: images/stateOfArt/Chuan2.png  used on input line 21.
+Package pdftex.def Info: images/stateOfArt/Chuan2.png  used on input line 55.
 (pdftex.def)             Requested size: 126.19724pt x 84.04228pt.
-<images/stateOfArt/Chuan3.png, id=175, 981.6675pt x 850.17625pt>
+<images/stateOfArt/Chuan3.png, id=186, 981.6675pt x 850.17625pt>
 File: images/stateOfArt/Chuan3.png Graphic file (type png)
 <use images/stateOfArt/Chuan3.png>
-Package pdftex.def Info: images/stateOfArt/Chuan3.png  used on input line 25.
+Package pdftex.def Info: images/stateOfArt/Chuan3.png  used on input line 59.
 (pdftex.def)             Requested size: 126.19724pt x 109.28142pt.
-<images/stateOfArt/EvolutionMatrix1.png, id=177, 653.44125pt x 437.635pt>
+[4 </Users/gianlo/Develop/thesis/images/stateOfArt/Nassi1973_NSD.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Chuan1.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Chuan2.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Chuan3.png>]
+<images/stateOfArt/EvolutionMatrix1.png, id=198, 653.44125pt x 437.635pt>
 File: images/stateOfArt/EvolutionMatrix1.png Graphic file (type png)
 <use images/stateOfArt/EvolutionMatrix1.png>
-Package pdftex.def Info: images/stateOfArt/EvolutionMatrix1.png  used on input 
-line 35.
+Package pdftex.def Info: images/stateOfArt/EvolutionMatrix1.png  used on input line 72.
 (pdftex.def)             Requested size: 193.23727pt x 129.41505pt.
-<images/stateOfArt/EvolutionMatrix2.png, id=178, 653.44125pt x 437.635pt>
+<images/stateOfArt/EvolutionMatrix2.png, id=199, 653.44125pt x 437.635pt>
 File: images/stateOfArt/EvolutionMatrix2.png Graphic file (type png)
 <use images/stateOfArt/EvolutionMatrix2.png>
-Package pdftex.def Info: images/stateOfArt/EvolutionMatrix2.png  used on input 
-line 39.
+Package pdftex.def Info: images/stateOfArt/EvolutionMatrix2.png  used on input line 76.
 (pdftex.def)             Requested size: 193.23727pt x 129.41505pt.
-[4 <./images/stateOfArt/Chuan1.png> <./images/stateOfArt/Chuan2.png> <./images/
-stateOfArt/Chuan3.png> <./images/stateOfArt/EvolutionMatrix1.png> <./images/sta
-teOfArt/EvolutionMatrix2.png>]
-<images/stateOfArt/CodeCity.png, id=191, 2098.84125pt x 1173.38374pt>
+ [5 </Users/gianlo/Develop/thesis/images/stateOfArt/EvolutionMatrix1.png> </Users/gianlo/Develop/thesis/images/stateOfArt/EvolutionMatrix2.png>]
+<images/stateOfArt/CodeCity.png, id=207, 2098.84125pt x 1173.38374pt>
 File: images/stateOfArt/CodeCity.png Graphic file (type png)
 <use images/stateOfArt/CodeCity.png>
-Package pdftex.def Info: images/stateOfArt/CodeCity.png  used on input line 48.
-
+Package pdftex.def Info: images/stateOfArt/CodeCity.png  used on input line 84.
 (pdftex.def)             Requested size: 394.35738pt x 220.45651pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 46--54
+Underfull \hbox (badness 10000) in paragraph at lines 83--55
 
  []
 
-[5 <./images/stateOfArt/CodeCity.png>] [6
-
-]
+[6 </Users/gianlo/Develop/thesis/images/stateOfArt/CodeCity.png>]
 Appendix A.
-[7] [8] (./SYN.bbl
+[7
+
+] [8] (/Users/gianlo/Develop/thesis/SYN.bbl
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.43994pt on input line 32.
+(Font)              scaled to size 8.43994pt on input line 31.
 ) [9
 
 
-] (./SYN.aux)
+] (/Users/gianlo/Develop/thesis/SYN.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `SYN.out' has not changed.
-(rerunfilecheck)             Checksum: 4510951197C9956D8E2C692D05F6881E;1147.
+(rerunfilecheck)             Checksum: 8D2D84BF106C8F76B3DD8FF4F2DC6A39;1086.
  ) 
 Here is how much of TeX's memory you used:
- 16877 strings out of 478994
- 249634 string characters out of 5858184
- 835228 words of memory out of 5000000
- 33948 multiletter control sequences out of 15000+600000
+ 16964 strings out of 478994
+ 252059 string characters out of 5858184
+ 838978 words of memory out of 5000000
+ 34023 multiletter control sequences out of 15000+600000
  460092 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,11n,131p,1404b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
-exlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/tex
-live/2021/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/local/texlive/2021/
-texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local/texlive/2021/tex
-mf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive/2021/texmf-
-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/local/texlive/2021/texmf-di
-st/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts
-/type1/public/mathdesign/mdbch/md-chr8t.pfb></usr/local/texlive/2021/texmf-dist
-/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/f
-onts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-dist/fon
-ts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2021/texmf-dist/fonts
-/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texmf-dist/fonts/t
-ype1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2021/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm2488.pfb>
-Output written on SYN.pdf (27 pages, 1520473 bytes).
+ 117i,11n,131p,1020b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr8t.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb>
+Output written on /Users/gianlo/Develop/thesis/SYN.pdf (27 pages, 1741326 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 290 PDF objects out of 1000 (max. 8388607)
+ 231 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
