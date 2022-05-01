@@ -1,9 +1,17 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{16}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Brown(1988)]{Brown1988}
+Marc~H. Brown.
+\newblock Exploring algorithms using balsa-ii.
+\newblock \emph{Computer}, 21\penalty0 (5):\penalty0 14–36, may 1988.
+\newblock ISSN 0018-9162.
+\newblock \doi{10.1109/2.56}.
+\newblock URL \url{https://doi.org/10.1109/2.56}.
 
 \bibitem[Chuah and Eick(1998)]{Chuah1998}
 M.C. Chuah and S.G. Eick.
@@ -11,6 +19,27 @@ M.C. Chuah and S.G. Eick.
 \newblock \emph{IEEE Computer Graphics and Applications}, 18\penalty0
   (4):\penalty0 24--29, 1998.
 \newblock \doi{10.1109/38.689658}.
+
+\bibitem[De~Pauw et~al.(1993)De~Pauw, Helm, Kimelman, and
+  Vlissides]{DePauw1993}
+Wim De~Pauw, Richard Helm, Doug Kimelman, and John Vlissides.
+\newblock Visualizing the behavior of object-oriented systems.
+\newblock In \emph{Proceedings of the Eighth Annual Conference on
+  Object-Oriented Programming Systems, Languages, and Applications}, OOPSLA
+  '93, page 326–337, New York, NY, USA, 1993. Association for Computing
+  Machinery.
+\newblock ISBN 0897915879.
+\newblock \doi{10.1145/165854.165919}.
+\newblock URL \url{https://doi.org/10.1145/165854.165919}.
+
+\bibitem[Eick et~al.(1992)Eick, Steffen, and Sumner]{Eick1992}
+Stephen~G. Eick, Joseph~L. Steffen, and Eric~E. Sumner.
+\newblock Seesoft-a tool for visualizing line oriented software statistics.
+\newblock \emph{IEEE Trans. Softw. Eng.}, 18\penalty0 (11):\penalty0 957–968,
+  nov 1992.
+\newblock ISSN 0098-5589.
+\newblock \doi{10.1109/32.177365}.
+\newblock URL \url{https://doi.org/10.1109/32.177365}.
 
 \bibitem[Fekete et~al.(2008)Fekete, van Wijk, Stasko, and North]{Stasko2008}
 Jean-Daniel Fekete, Jarke van Wijk, John Stasko, and Chris North.
@@ -29,6 +58,20 @@ Lois~M. Haibt.
 \newblock ISBN 9781450378659.
 \newblock \doi{10.1145/1457838.1457861}.
 \newblock URL \url{https://doi.org/10.1145/1457838.1457861}.
+
+\bibitem[Hueras and Ledgard(1977)]{Hueras1977}
+Jon Hueras and Henry Ledgard.
+\newblock An automatic formatting program for pascal.
+\newblock \emph{SIGPLAN Not.}, 12\penalty0 (7):\penalty0 82–84, jul 1977.
+\newblock ISSN 0362-1340.
+\newblock \doi{10.1145/954639.954645}.
+\newblock URL \url{https://doi.org/10.1145/954639.954645}.
+
+\bibitem[Jacobson et~al.(1999)Jacobson, Booch, and Rumbaugh]{Jacobson1999}
+Ivar Jacobson, Grady Booch, and James Rumbaugh.
+\newblock \emph{The Unified Software Development Process}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., USA, 1999.
+\newblock ISBN 0201571692.
 
 \bibitem[Knuth(1963)]{Knuth1963}
 Donald~E. Knuth.
@@ -49,6 +92,14 @@ Michele Lanza.
 \newblock \doi{10.1145/602461.602467}.
 \newblock URL \url{https://doi.org/10.1145/602461.602467}.
 
+\bibitem[M\"{u}ller and Klashinsky(1988)]{Mueller1988}
+H.~A. M\"{u}ller and K.~Klashinsky.
+\newblock Rigi-a system for programming-in-the-large.
+\newblock In \emph{Proceedings of the 10th International Conference on Software
+  Engineering}, ICSE '88, page 80–86, Washington, DC, USA, 1988. IEEE
+  Computer Society Press.
+\newblock ISBN 0897912586.
+
 \bibitem[Nassi and Shneiderman(1973)]{Nassi1973}
 I.~Nassi and B.~Shneiderman.
 \newblock Flowchart techniques for structured programming.
@@ -63,11 +114,27 @@ A.~Von~Mayrhauser and A.M. Vans.
 \newblock \emph{Computer}, 28\penalty0 (8):\penalty0 44--55, 1995.
 \newblock \doi{10.1109/2.402076}.
 
+\bibitem[Waters(1983)]{Waters1983}
+Richard~C. Waters.
+\newblock User format control in a lisp prettyprinter.
+\newblock \emph{ACM Trans. Program. Lang. Syst.}, 5\penalty0 (4):\penalty0
+  513–531, oct 1983.
+\newblock ISSN 0164-0925.
+\newblock \doi{10.1145/69575.357225}.
+\newblock URL \url{https://doi.org/10.1145/69575.357225}.
+
 \bibitem[Wettel et~al.(2011)Wettel, Lanza, and Robbes]{Wettel2011}
 Richard Wettel, Michele Lanza, and Romain Robbes.
 \newblock Software systems as cities: a controlled experiment.
 \newblock In \emph{2011 33rd International Conference on Software Engineering
   (ICSE)}, pages 551--560, 2011.
 \newblock \doi{10.1145/1985793.1985868}.
+
+\bibitem[Young and Munro(1998)]{Young1998}
+P.~Young and M.~Munro.
+\newblock Visualising software in virtual reality.
+\newblock In \emph{Proceedings. 6th International Workshop on Program
+  Comprehension. IWPC'98 (Cat. No.98TB100242)}, pages 19--26, 1998.
+\newblock \doi{10.1109/WPC.1998.693276}.
 
 \end{thebibliography}
