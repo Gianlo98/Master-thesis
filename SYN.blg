@@ -4,45 +4,45 @@ The top-level auxiliary file: SYN.aux
 The style file: plainnat.bst
 Database file #1: biblio.bib
 Warning--empty publisher in Stasko2008
-You've used 8 entries,
+You've used 16 entries,
             2773 wiz_defined-function locations,
-            675 strings with 6509 characters,
-and the built_in function-call counts, 4209 in all, are:
-= -- 421
-> -- 162
-< -- 11
-+ -- 56
-- -- 48
-* -- 312
-:= -- 616
-add.period$ -- 43
-call.type$ -- 8
-change.case$ -- 39
-chr.to.int$ -- 8
-cite$ -- 17
-duplicate$ -- 220
-empty$ -- 351
-format.name$ -- 62
-if$ -- 942
+            754 strings with 8201 characters,
+and the built_in function-call counts, 8405 in all, are:
+= -- 841
+> -- 344
+< -- 19
++ -- 118
+- -- 102
+* -- 636
+:= -- 1236
+add.period$ -- 87
+call.type$ -- 16
+change.case$ -- 80
+chr.to.int$ -- 16
+cite$ -- 33
+duplicate$ -- 433
+empty$ -- 694
+format.name$ -- 130
+if$ -- 1874
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 9
-newline$ -- 65
-num.names$ -- 32
-pop$ -- 69
+missing$ -- 18
+newline$ -- 123
+num.names$ -- 64
+pop$ -- 136
 preamble$ -- 1
-purify$ -- 32
+purify$ -- 66
 quote$ -- 0
-skip$ -- 179
+skip$ -- 350
 stack$ -- 0
-substring$ -- 169
-swap$ -- 61
-text.length$ -- 5
+substring$ -- 333
+swap$ -- 115
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 83
+type$ -- 166
 warning$ -- 1
-while$ -- 34
+while$ -- 66
 width$ -- 0
-write$ -- 151
+write$ -- 297
 (There was 1 warning)
