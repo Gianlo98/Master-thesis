@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{27}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -20,6 +20,25 @@ M.C. Chuah and S.G. Eick.
   (4):\penalty0 24--29, 1998.
 \newblock \doi{10.1109/38.689658}.
 
+\bibitem[D'Ambros and Lanza(2006)]{DAmbros2006}
+M.~D'Ambros and M.~Lanza.
+\newblock Software bugs and evolution: a visual approach to uncover their
+  relationship.
+\newblock In \emph{Conference on Software Maintenance and Reengineering
+  (CSMR'06)}, pages 10 pp.--238, 2006.
+\newblock \doi{10.1109/CSMR.2006.51}.
+
+\bibitem[D'Ambros et~al.(2006)D'Ambros, Lanza, and Lungu]{DAmbros2006a}
+Marco D'Ambros, Michele Lanza, and Mircea Lungu.
+\newblock The evolution radar: Visualizing integrated logical coupling
+  information.
+\newblock In \emph{Proceedings of the 2006 International Workshop on Mining
+  Software Repositories}, MSR '06, page 26–32, New York, NY, USA, 2006.
+  Association for Computing Machinery.
+\newblock ISBN 1595933972.
+\newblock \doi{10.1145/1137983.1137992}.
+\newblock URL \url{https://doi.org/10.1145/1137983.1137992}.
+
 \bibitem[De~Pauw et~al.(1993)De~Pauw, Helm, Kimelman, and
   Vlissides]{DePauw1993}
 Wim De~Pauw, Richard Helm, Doug Kimelman, and John Vlissides.
@@ -40,6 +59,15 @@ Stephen~G. Eick, Joseph~L. Steffen, and Eric~E. Sumner.
 \newblock ISSN 0098-5589.
 \newblock \doi{10.1109/32.177365}.
 \newblock URL \url{https://doi.org/10.1109/32.177365}.
+
+\bibitem[Ens et~al.(2014)Ens, Rea, Shpaner, Hemmati, Young, and Irani]{Ens2014}
+Barrett Ens, Daniel Rea, Roiy Shpaner, Hadi Hemmati, James~E. Young, and
+  Pourang Irani.
+\newblock Chronotwigger: A visual analytics tool for understanding source and
+  test co-evolution.
+\newblock In \emph{2014 Second IEEE Working Conference on Software
+  Visualization}, pages 117--126, 2014.
+\newblock \doi{10.1109/VISSOFT.2014.28}.
 
 \bibitem[Fekete et~al.(2008)Fekete, van Wijk, Stasko, and North]{Stasko2008}
 Jean-Daniel Fekete, Jarke van Wijk, John Stasko, and Chris North.
@@ -73,6 +101,21 @@ Ivar Jacobson, Grady Booch, and James Rumbaugh.
 \newblock Addison-Wesley Longman Publishing Co., Inc., USA, 1999.
 \newblock ISBN 0201571692.
 
+\bibitem[Kapec et~al.(2015)Kapec, Brndiarová, Gloger, and Marák]{Kapec2015}
+P.~Kapec, G.~Brndiarová, M.~Gloger, and J.~Marák.
+\newblock Visual analysis of software systems in virtual and augmented reality.
+\newblock In \emph{2015 IEEE 19th International Conference on Intelligent
+  Engineering Systems (INES)}, pages 307--312, 2015.
+\newblock \doi{10.1109/INES.2015.7329727}.
+
+\bibitem[Knight and Munro(2000)]{Knight2000}
+C.~Knight and M.~Munro.
+\newblock Virtual but visible software.
+\newblock In \emph{2000 IEEE Conference on Information Visualization. An
+  International Conference on Computer Visualization and Graphics}, pages
+  198--205, 2000.
+\newblock \doi{10.1109/IV.2000.859756}.
+
 \bibitem[Knuth(1963)]{Knuth1963}
 Donald~E. Knuth.
 \newblock Computer-drawn flowcharts.
@@ -80,6 +123,17 @@ Donald~E. Knuth.
 \newblock ISSN 0001-0782.
 \newblock \doi{10.1145/367593.367620}.
 \newblock URL \url{https://doi.org/10.1145/367593.367620}.
+
+\bibitem[Langelier et~al.(2005)Langelier, Sahraoui, and Poulin]{Langelier2005}
+Guillaume Langelier, Houari Sahraoui, and Pierre Poulin.
+\newblock Visualization-based analysis of quality for large-scale software
+  systems.
+\newblock In \emph{Proceedings of the 20th IEEE/ACM International Conference on
+  Automated Software Engineering}, ASE '05, page 214–223, New York, NY, USA,
+  2005. Association for Computing Machinery.
+\newblock ISBN 1581139934.
+\newblock \doi{10.1145/1101908.1101941}.
+\newblock URL \url{https://doi.org/10.1145/1101908.1101941}.
 
 \bibitem[Lanza(2001)]{Lanza2001}
 Michele Lanza.
@@ -107,6 +161,50 @@ I.~Nassi and B.~Shneiderman.
 \newblock ISSN 0362-1340.
 \newblock \doi{10.1145/953349.953350}.
 \newblock URL \url{https://doi.org/10.1145/953349.953350}.
+
+\bibitem[Pinzger et~al.(2005)Pinzger, Gall, Fischer, and Lanza]{Pinzger2005}
+Martin Pinzger, Harald Gall, Michael Fischer, and Michele Lanza.
+\newblock Visualizing multiple evolution metrics.
+\newblock In \emph{Proceedings of the 2005 ACM Symposium on Software
+  Visualization}, SoftVis '05, page 67–75, New York, NY, USA, 2005.
+  Association for Computing Machinery.
+\newblock ISBN 1595930736.
+\newblock \doi{10.1145/1056018.1056027}.
+\newblock URL \url{https://doi.org/10.1145/1056018.1056027}.
+
+\bibitem[Ratzinger et~al.(2005)Ratzinger, Fischer, and Gall]{Ratzinger2005}
+J.~Ratzinger, M.~Fischer, and H.~Gall.
+\newblock Evolens: lens-view visualizations of evolution data.
+\newblock In \emph{Eighth International Workshop on Principles of Software
+  Evolution (IWPSE'05)}, pages 103--112, 2005.
+\newblock \doi{10.1109/IWPSE.2005.16}.
+
+\bibitem[Schneider et~al.(2016)Schneider, Tymchuk, Salgado, and
+  Bergel]{Schneider2016}
+Teseo Schneider, Yuriy Tymchuk, Ronie Salgado, and Alexandre Bergel.
+\newblock Cuboidmatrix: Exploring dynamic structural connections in software
+  components using space-time cube.
+\newblock In \emph{2016 IEEE Working Conference on Software Visualization
+  (VISSOFT)}, pages 116--125, 2016.
+\newblock \doi{10.1109/VISSOFT.2016.17}.
+
+\bibitem[Steinbr\"{u}ckner and Lewerentz(2010)]{Steinbrueckner2010}
+Frank Steinbr\"{u}ckner and Claus Lewerentz.
+\newblock Representing development history in software cities.
+\newblock In \emph{Proceedings of the 5th International Symposium on Software
+  Visualization}, SOFTVIS '10, page 193–202, New York, NY, USA, 2010.
+  Association for Computing Machinery.
+\newblock ISBN 9781450300285.
+\newblock \doi{10.1145/1879211.1879239}.
+\newblock URL \url{https://doi.org/10.1145/1879211.1879239}.
+
+\bibitem[Taylor and Munro(2002)]{Taylor2002}
+Christopher M.~B. Taylor and Malcolm Munro.
+\newblock Revision towers.
+\newblock In \emph{Proceedings of the 1st International Workshop on Visualizing
+  Software for Understanding and Analysis}, VISSOFT '02, page~43, USA, 2002.
+  IEEE Computer Society.
+\newblock ISBN 0769516629.
 
 \bibitem[Von~Mayrhauser and Vans(1995)]{VonMayrhauser1995}
 A.~Von~Mayrhauser and A.M. Vans.
