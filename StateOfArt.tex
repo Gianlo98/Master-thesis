@@ -7,13 +7,13 @@
 \section{Software visualization}
 
 
-\begin{wrapfigure}{r}{0.3\textwidth}
+% \begin{wrapfigure}{r}{0.3\textwidth}
 
-  \includegraphics[width=0.9\linewidth]{Haibt1959_Flowchart.png} 
-  \caption{Flowchart presented by Haibt in 1959}
-  \label{fig:Haibt1959_Flowchart}
+%   \includegraphics[width=0.9\linewidth]{Haibt1959_Flowchart.png} 
+%   \caption{Flowchart presented by Haibt in 1959}
+%   \label{fig:Haibt1959_Flowchart}
 
-\end{wrapfigure}
+% \end{wrapfigure}
 
 Essential parts of software lifecycles are software maintenance and software evolution. 
 Both activities require the comprehension of the system by the developer. 
@@ -42,54 +42,54 @@ The 80s registered two main directions of software visualization. The first was 
 Hueras \cite{Hueras1977}, and Waters \cite{Waters1983} developed two techniques to format the source code with a prettyprinter. 
 The second direction was the program behavior, used mainly for educational purposes. One of the most prominent visualization systems of that period was Balsa-II \cite{Brown1988}.
 Around the end of the 80s, Müller et al. \cite{Mueller1988} released Rigi, a tool able to visualize large programs.
-It exploited graph model, argumented with an abstraction mechanisms, to represent systems components and their relationships. 
+It exploited the graph model, argumented with abstraction mechanisms, to represent systems components and their relationships. 
 
-\begin{figure}[H]
-  \minipage{0.33\textwidth}
-    \includegraphics[width=0.8\linewidth]{Nassi1973_NSD.png}
-    \label{fig:Nassi1973_NSD}
-    \caption{NSD of the factorial function.}
-  \endminipage\hfill
-  \minipage{0.33\textwidth}
-    \includegraphics[width=\linewidth]{Brown1988_BalsaII.png}
-    \caption{Balsa-II}
-  \endminipage\hfill
-  \minipage{0.33\textwidth}
-  \includegraphics[width=\linewidth]{Mueller1988_Rigi.png}
-  \caption{Rigi}
-\endminipage\hfill
-  \end{figure}
+% \begin{figure}[H]
+%   \minipage{0.33\textwidth}
+%     \includegraphics[width=0.8\linewidth]{Nassi1973_NSD.png}
+%     \label{fig:Nassi1973_NSD}
+%     \caption{NSD of the factorial function.}
+%   \endminipage\hfill
+%   \minipage{0.33\textwidth}
+%     \includegraphics[width=\linewidth]{Brown1988_BalsaII.png}
+%     \caption{Balsa-II}
+%   \endminipage\hfill
+%   \minipage{0.33\textwidth}
+%   \includegraphics[width=\linewidth]{Mueller1988_Rigi.png}
+%   \caption{Rigi}
+% \endminipage\hfill
+%   \end{figure}
 
 
   % The growing number of object-oriented programming languages emerging in the mainstream raised 
   % the interest in understanding not only the structure, but also the behavior of systems written according to this paradigm. 
   % Kleyn et al. proposed GraphTrace [KG88], a tool using concurrently animated views to visualize dynamic information,
-  % Myers’s taxonomy of program visualization systems
+  % Myers's taxonomy of program visualization systems
   % Price et al. proposed a more detailed taxonomy
 
 
 The 1990s recorded more interest in the field of software visualization. 
-In 1992 Erik et al \cite{Eick1992} introduced a new technique to visualize line oriented statistics. 
-It was enboded in Seesoft, a software visualization system that allowed to analyze and visualize up to 50,000 lines of code simultaneously. 
+In 1992 Erik et al \cite{Eick1992} introduced a new technique to visualize line-oriented statistics. 
+It was embodied in Seesoft, a software visualization system that allowed to analyze and visualize up to 50,000 lines of code simultaneously. 
 On their visualization, each line was mapped to a thin row. Each row was associated with a color that described a statistic of interest.
 One year later, De pauw et al. \cite{DePauw1993} introduced Jinsight, a tool able to provide animated views of the behavior of object-oriented systems. 
 
-\begin{figure}[H]
-  \minipage{0.5\textwidth}
-    \includegraphics[width=0.8\linewidth]{Eick1992_Seesoft.png}
-    \caption{Seesoft}
-  \endminipage\hfill
-  \minipage{0.5\textwidth}
-    \includegraphics[width=0.8\linewidth]{DePauw1993_Jinsight.png}
-    \caption{Jinsight}
-  \endminipage\hfill
-\end{figure}
+% \begin{figure}[H]
+%   \minipage{0.5\textwidth}
+%     \includegraphics[width=0.8\linewidth]{Eick1992_Seesoft.png}
+%     \caption{Seesoft}
+%   \endminipage\hfill
+%   \minipage{0.5\textwidth}
+%     \includegraphics[width=0.8\linewidth]{DePauw1993_Jinsight.png}
+%     \caption{Jinsight}
+%   \endminipage\hfill
+% \end{figure}
 
 % he first contributors to software evolution visualization were Holt and Pak in 1996, who used their tool called GASE [HP96]
 % 		GASE: visualizing software evolution-in-the-large 
 
-That period was favorable also for experimenting novel research directions for visualization, 
-such as 3D visualization and Virtal Reality. 
+That period was favorable also for experimenting with novel research directions for visualization, 
+such as 3D visualization and Virtual Reality. 
 % In 1995, Reiss presented a configurable engine for building 3D visualization of programs called PLUM
 In 1998, Chuah and Erick \cite{Chuah1998} proposed three different techniques to visualize project data. 
 They exploited the concept of glyphs, a graphical object that represents data through visual parameters. 
@@ -97,23 +97,23 @@ The first technique was the Timewhell glyph, used to visualize time-oriented inf
 The second technique was the 3D wheel glyph; it encoded the same attributes of the time wheel, and additionally, it used the height to encode time. 
 Infobug glyph was the last technique, where each glyph was composed of four parts, each representing essential data of the system (time, code size, number of lines of code added/deleted/modified). \newline
 
-\begin{figure}[H]
-\minipage{0.32\textwidth}
-  \includegraphics[width=\linewidth]{Chuan1.png}
-  \caption{Timewhell}
-\endminipage\hfill
-\minipage{0.32\textwidth}
-  \includegraphics[width=\linewidth]{Chuan2.png}
-  \caption{3D wheel}
-\endminipage\hfill
-\minipage{0.32\textwidth}%
-  \includegraphics[width=\linewidth]{Chuan3.png}
-  \caption{Infobug}
-\endminipage
-\end{figure}
+% \begin{figure}[H]
+% \minipage{0.32\textwidth}
+%   \includegraphics[width=\linewidth]{Chuan1.png}
+%   \caption{Timewhell}
+% \endminipage\hfill
+% \minipage{0.32\textwidth}
+%   \includegraphics[width=\linewidth]{Chuan2.png}
+%   \caption{3D wheel}
+% \endminipage\hfill
+% \minipage{0.32\textwidth}%
+%   \includegraphics[width=\linewidth]{Chuan3.png}
+%   \caption{Infobug}
+% \endminipage
+% \end{figure}
 
 In the same year, Young and Munro \cite{Young1998} explored representations of software for program comprehension in VR. 
-Finally in 1999, Jacobson et al. \cite{Jacobson1999} introduced what we now know as de facto the standard language to visualize the design on a system: UML. 
+Finally, in 1999, Jacobson et al. \cite{Jacobson1999} introduced what we now know as de facto the standard language to visualize the design on a system: UML. 
 
 
 % Edward Tufte has influenced the entire field of information visualization, including software visualization.
@@ -122,37 +122,99 @@ Finally in 1999, Jacobson et al. \cite{Jacobson1999} introduced what we now know
 % 	[Tuf01] Edward Tufte. The Visual Display of Quantitative Information. Graphics Press, 2nd edition, 2001.
 
 \subsection{Software evolution visualization}
-Before the beginning of the 21st century, visualize the evolution of a system was an unfeasible task due to the lack of data. 
-However, tanks to the spread of version control systems and of the open-souce movement, these information became publicy accessible.
-As a result, may researchers focused their work on software evolution visualization.
+%https://www.inf.usi.ch/faculty/lanza/Downloads/Gall2006a.pdf
+Before the beginning of the 21st century, visualizing the evolution of a system was an unfeasible task due to the lack of data. 
+However, thanks to the spread of version control systems and of the open-source movement, this information became publicly accessible.
+As a result, many researchers focused their work on software evolution visualization.
 
 In 2001 Lanza \cite{Lanza2001} introduced the concept of the Evolution Matrix. It was a way to visualize the evolution of software without dealing with a large amount of complex data. 
 Furthermore, that approach was agnostic to any particular programming language. The Evolution Matrix aimed to display the evolution of classes in object-oriented software systems. 
-Each column represented a version of the software, and each row represented a different version of the same class. The cells were filled with boxes whose size depended on two different metrics. 
-Thanks to this approach, he was able to infer some evolution information by just looking at the shape of the matrix
+Each column represented a version of the software; each row represented a different version of the same class. Cells were filled with boxes whose size depended on evolutionary measurements. 
+Thanks to this approach, he was able to infer some evolution patterns by just looking at the shape of the matrix
 
-\begin{figure}[H]
-\minipage{0.49\textwidth}
-  \includegraphics[width=\linewidth]{EvolutionMatrix1.png}
-  \caption{A schematic display of the Evolution Matrix}
-\endminipage\hfill
-\minipage{0.49\textwidth}
-  \includegraphics[width=\linewidth]{EvolutionMatrix2.png}
-  \caption{Some characteristics of the Evolution Matrix}
-\endminipage\hfill
-\end{figure}
+% \begin{figure}[H]
+% \minipage{0.49\textwidth}
+%   \includegraphics[width=\linewidth]{EvolutionMatrix1.png}
+%   \caption{A schematic display of the Evolution Matrix}
+% \endminipage\hfill
+% \minipage{0.49\textwidth}
+%   \includegraphics[width=\linewidth]{EvolutionMatrix2.png}
+%   \caption{Some characteristics of the Evolution Matrix}
+% \endminipage\hfill
+% \end{figure}
 
-\newpage
 
-Wettel, in his thesis \cite{Wettel2011}, defined a city metaphor for software visualization that represents software as cities.
- His work represents packages as districts and classes as buildings.
-  This metaphor was applied in different contexts related to reverse engineering (program comprehension, software evolution, software quality)
-   to demonstrate metaphor's versatility. As a result, he found evidence that his approach works.
-    However, he claims that city metaphor brings visual and layout limitations 
-    (not all visualization techniques fit well with it). Under those circumstances, he preferred simplicity over the accuracy,
-     so he obtained a simple visual language that facilitates comprehension of data. He conducted an experiment of the evidence that the city
-      metaphor enables the creation of efficient software visualizations. His approach was implemented by a software visualization tool 
-      called CodeCity that supports the city metaphor. 
-\includegraphics[width=\textwidth]{CodeCity.png}
+Taylor and Munro \cite{Taylor2002} in 2002 demonstrated that it is possible to use the data contained in a version control repository to visualize the evolution of a system.
+They also engineered Revision Tower, a tool that showed change information at the file level. 
+In 2005 Pinzger et al. \cite{Pinzger2005} visualized the evolution of a software system through Kivat diagrams.
+RelVis, their tool, was able to depict a multivariate visualization of the evolution of a system.
+During the same year, Ratzinger et al. presented EvoLens \cite{Ratzinger2005}, a visualization approach and tool to 
+explore evolutionary data through structural and temporal views.  
+During the same year, Langelier et al. \cite{Langelier2005} investigated the interpretation of a city metaphor 
+\cite{Knight2000} to add a new level of knowledge to the visual analysis.
+In 2006, D’Ambros and Lanza \cite{DAmbros2006} introduced Discrete Time Figure,
+ a visualization technique that embeds both historical and structural data in a simple figure. 
+ Furthermore, they defined an approach based on the application of this visualization technique to study the evolution of a software system. 
+As a result, they were able to depict relationships between the histories of a system and bugs. 
+They also presented the Evolution Radar \cite{DAmbros2006a}, a novel approach to visualize module-level and file-level logical coupling information.
+
+% \begin{figure}[H]
+%   \minipage{0.33\textwidth}
+%     \includegraphics[width=\linewidth]{Pinzger2005_RelVis.png}
+%     \caption{RelVis}
+%   \endminipage\hfill
+%   \minipage{0.33\textwidth}
+%     \includegraphics[width=\linewidth]{DAmbros2006.png}
+%     \caption{Tree of Discrete Time Figures}
+%   \endminipage\hfill
+%   \minipage{0.33\textwidth}
+%   \includegraphics[width=\linewidth]{DAmbros2006a_EvoRadar.png}
+%   \caption{Evolution Radar}
+% \endminipage\hfill
+%   \end{figure}
+  
+
+In 2010 Steinbrückner and Lewerentz \cite{Steinbrueckner2010} described a tree-staged visualization approach to visualize large software systems. 
+The visualization was supported by a tool called Evo-Streets. 
+Each stage of their approach was responsible represent a different aspect of the system with the city metaphor. 
+
+
+% \begin{wrapfigure}{r}{0.3\textwidth}
+%   \includegraphics[width=0.9\linewidth]{Steinbrueckner2010.png} 
+%   \caption{Evo-Streets}
+% \end{wrapfigure}
+
+Wettel, in his thesis \cite{Wettel2011}, revised the city metaphor to represent metrics meaningfully. 
+In his work, he represented packages as districts and classes as buildings.
+This metaphor was applied in different contexts related to reverse engineering (program comprehension, software evolution, software quality)
+to demonstrate metaphor's versatility. As a result, he found evidence that his approach works.
+However, he claims that city metaphor brings visual and layout limitations 
+(not all visualization techniques fit well with it). Under those circumstances, he preferred simplicity over the accuracy,
+so he obtained a simple visual language that facilitates data comprehension. He conducted an experiment of the evidence that the city
+metaphor enables the creation of efficient software visualizations. His approach was implemented by a software visualization tool 
+called CodeCity that supports the city metaphor. 
+
+
+% \includegraphics[width=0.8\textwidth]{CodeCity.png}
+
+
+
+% ChronoTwigger 2014 https://ieeexplore.ieee.org/abstract/document/6980223
+Ens et al. \cite{Ens2014} applied visual analytics methodologies to software repositoies with the goal to helps 
+users comprehend co-evolution informaiton. It enabled to visulize, over time, how source and test fiels were developer together. 
+
+% NN 2015 https://ieeexplore.ieee.org/document/7329727
+Kapec et al. \cite{Kapec2015} studied if it is possible to ease the graph analysis with argumented reality. 
+They made a prototype of a tool that provided a graph-based visualization of a software and them, 
+they studied some interaction methods to control it with argumented reality. 
+
+% CuboidMatrix 2016 https://ieeexplore.ieee.org/document/7780168
+Schneider et al. \cite{Schneider2016} presented a tool, CuboidMatrix, that employed a space-time cube metaphor to visualize a software system. 
+Space-time cube is wll-known 3D representation of an evolving dynamic graph. 
+
+% CityVR 2017 https://ieeexplore.ieee.org/abstract/document/8094470
+% Code Park 2017 https://ieeexplore.ieee.org/abstract/document/8091185
+% Evo-Clocks 2019 https://ieeexplore.ieee.org/document/8900965
+% Memory Cities 2020 https://ieeexplore.ieee.org/document/9240497/figures#figures
 
 
