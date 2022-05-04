@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{40}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -12,6 +12,13 @@ Carol~V. Alexandru, Sebastian Proksch, Pooyan Behnamghader, and Harald~C. Gall.
 \newblock In \emph{2019 Working Conference on Software Visualization
   (VISSOFT)}, pages 12--22, 2019.
 \newblock \doi{10.1109/VISSOFT.2019.00010}.
+
+\bibitem[Boccuzzo and Gall(2009)]{Boccuzzo2009}
+Sandro Boccuzzo and Harald~C. Gall.
+\newblock Cocoviz with ambient audio software exploration.
+\newblock In \emph{2009 IEEE 31st International Conference on Software
+  Engineering}, pages 571--574, 2009.
+\newblock \doi{10.1109/ICSE.2009.5070558}.
 
 \bibitem[Brown(1988)]{Brown1988}
 Marc~H. Brown.
@@ -58,6 +65,17 @@ Wim De~Pauw, Richard Helm, Doug Kimelman, and John Vlissides.
 \newblock ISBN 0897915879.
 \newblock \doi{10.1145/165854.165919}.
 \newblock URL \url{https://doi.org/10.1145/165854.165919}.
+
+\bibitem[DiGiano et~al.(1993)DiGiano, Baecker, and Owen]{DiGiano1993}
+Christopher~J. DiGiano, Ronald~M. Baecker, and Russell~N. Owen.
+\newblock Logomedia: A sound-enhanced programming environment for monitoring
+  program behavior.
+\newblock In \emph{Proceedings of the INTERACT '93 and CHI '93 Conference on
+  Human Factors in Computing Systems}, CHI '93, page 301–302, New York, NY,
+  USA, 1993. Association for Computing Machinery.
+\newblock ISBN 0897915755.
+\newblock \doi{10.1145/169059.169229}.
+\newblock URL \url{https://doi.org/10.1145/169059.169229}.
 
 \bibitem[Eick et~al.(1992)Eick, Steffen, and Sumner]{Eick1992}
 Stephen~G. Eick, Joseph~L. Steffen, and Eric~E. Sumner.
@@ -108,6 +126,25 @@ Ivar Jacobson, Grady Booch, and James Rumbaugh.
 \newblock \emph{The Unified Software Development Process}.
 \newblock Addison-Wesley Longman Publishing Co., Inc., USA, 1999.
 \newblock ISBN 0201571692.
+
+\bibitem[Jameson(1994)]{Jameson1994}
+David~H Jameson.
+\newblock Sonnet: Audio-enhanced monitoring and debugging.
+\newblock In \emph{SANTA FE INSTITUTE STUDIES IN THE SCIENCES OF
+  COMPLEXITY-PROCEEDINGS VOLUME-}, volume~18, pages 253--253. ADDISON-WESLEY
+  PUBLISHING CO, 1994.
+
+\bibitem[Kalliamvakou et~al.(2014)Kalliamvakou, Gousios, Blincoe, Singer,
+  German, and Damian]{Kalliamvakou2014}
+Eirini Kalliamvakou, Georgios Gousios, Kelly Blincoe, Leif Singer, Daniel~M.
+  German, and Daniela Damian.
+\newblock The promises and perils of mining github.
+\newblock In \emph{Proceedings of the 11th Working Conference on Mining
+  Software Repositories}, MSR 2014, page 92–101, New York, NY, USA, 2014.
+  Association for Computing Machinery.
+\newblock ISBN 9781450328630.
+\newblock \doi{10.1145/2597073.2597074}.
+\newblock URL \url{https://doi.org/10.1145/2597073.2597074}.
 
 \bibitem[Kapec et~al.(2015)Kapec, Brndiarová, Gloger, and Marák]{Kapec2015}
 P.~Kapec, G.~Brndiarová, M.~Gloger, and J.~Marák.
@@ -163,6 +200,22 @@ Michele Lanza.
 \newblock \doi{10.1145/602461.602467}.
 \newblock URL \url{https://doi.org/10.1145/602461.602467}.
 
+\bibitem[Mancino and Scanniello(2017)]{Mancino2017}
+Andrea Mancino and Giuseppe Scanniello.
+\newblock Software musification.
+\newblock In \emph{2017 21st International Conference Information Visualisation
+  (IV)}, pages 127--132, 2017.
+\newblock \doi{10.1109/iV.2017.28}.
+
+\bibitem[McIntosh et~al.(2014)McIntosh, Legere, and Hassan]{McIntosh2014}
+Shane McIntosh, Katie Legere, and Ahmed~E. Hassan.
+\newblock Orchestrating change: An artistic representation of software
+  evolution.
+\newblock In \emph{2014 Software Evolution Week - IEEE Conference on Software
+  Maintenance, Reengineering, and Reverse Engineering (CSMR-WCRE)}, pages
+  348--352, 2014.
+\newblock \doi{10.1109/CSMR-WCRE.2014.6747192}.
+
 \bibitem[Merino et~al.(2017)Merino, Ghafari, Anslow, and
   Nierstrasz]{Merino2017}
 Leonel Merino, Mohammad Ghafari, Craig Anslow, and Oscar Nierstrasz.
@@ -213,6 +266,25 @@ Teseo Schneider, Yuriy Tymchuk, Ronie Salgado, and Alexandre Bergel.
   (VISSOFT)}, pages 116--125, 2016.
 \newblock \doi{10.1109/VISSOFT.2016.17}.
 
+\bibitem[Sonnenwald et~al.(1990)Sonnenwald, Gopinath, Haberman, Keese, and
+  Myers]{Sonnenwald1990}
+D.H. Sonnenwald, B.~Gopinath, G.O. Haberman, W.M. Keese, and J.S. Myers.
+\newblock Infosound: an audio aid to program comprehension.
+\newblock In \emph{Twenty-Third Annual Hawaii International Conference on
+  System Sciences}, volume~2, pages 541--546 vol.2, 1990.
+\newblock \doi{10.1109/HICSS.1990.205229}.
+
+\bibitem[Spadini et~al.(2018)Spadini, Aniche, and Bacchelli]{Spadini2018}
+Davide Spadini, Maur\'{\i}cio Aniche, and Alberto Bacchelli.
+\newblock Pydriller: Python framework for mining software repositories.
+\newblock In \emph{Proceedings of the 2018 26th ACM Joint Meeting on European
+  Software Engineering Conference and Symposium on the Foundations of Software
+  Engineering}, ESEC/FSE 2018, page 908–911, New York, NY, USA, 2018.
+  Association for Computing Machinery.
+\newblock ISBN 9781450355735.
+\newblock \doi{10.1145/3236024.3264598}.
+\newblock URL \url{https://doi.org/10.1145/3236024.3264598}.
+
 \bibitem[Steinbr\"{u}ckner and Lewerentz(2010)]{Steinbrueckner2010}
 Frank Steinbr\"{u}ckner and Claus Lewerentz.
 \newblock Representing development history in software cities.
@@ -230,6 +302,20 @@ Christopher M.~B. Taylor and Malcolm Munro.
   Software for Understanding and Analysis}, VISSOFT '02, page~43, USA, 2002.
   IEEE Computer Society.
 \newblock ISBN 0769516629.
+
+\bibitem[Vickers(2004)]{Vickers2004}
+Paul Vickers.
+\newblock External auditory representations of programs: Past, present, and
+  future an aesthetic perspective.
+\newblock 01 2004.
+
+\bibitem[Vickers and Alty(2003)]{Vickers2003}
+Paul Vickers and James~L. Alty.
+\newblock Siren songs and swan songs debugging with music.
+\newblock \emph{Commun. ACM}, 46\penalty0 (7):\penalty0 86–93, jul 2003.
+\newblock ISSN 0001-0782.
+\newblock \doi{10.1145/792704.792734}.
+\newblock URL \url{https://doi.org/10.1145/792704.792734}.
 
 \bibitem[Von~Mayrhauser and Vans(1995)]{VonMayrhauser1995}
 A.~Von~Mayrhauser and A.M. Vans.
