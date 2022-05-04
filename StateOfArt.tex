@@ -226,4 +226,65 @@ Khaloo et al. \cite{Khaloo2017} revised the idea of gamification with a 3D park-
 Alexandru et al. \cite{Alexandru2019} proposed a method to visualize software structure and evolution simultaneously, 
 with reduced accuracy and a fine-grained highlighting of changes in individual components. 
 
+\newpage
 
+\section{Mining software repositories}
+
+Software repositories contain historical data about the evolution of a software system. 
+Thanks to the spread of the git protocol, and consequently of GitHub, the largest code hosting website, 
+Mining software repositories (MSR) became a popular research field. 
+
+% The promises and perils of mining GitHub  https://dl.acm.org/doi/abs/10.1145/2597073.2597074
+In 2022, the number of GitHub repositories lays around 200 million.
+Even if it seems a promising source of data, Kalliamvakou et al. \cite{Kalliamvakou2014} raised some issues with its mining.
+They evidenced that a repository doens't always match with a project. 
+A reason of this can be found in the fact that most repositories had had very few commits before becoming inactive.
+When they made their research, over the 70 percent of the GitHub projects were personal, and some of them weren't used for software development. 
+Finally, the last perils that they raise, were related to GitHub features that are not properly used by software developers.
+To find actively developed repositories, they considered only projects with a good balance between number of commits, 
+number of pull requests and number of contributors. 
+
+
+% PyDriller https://dl.acm.org/doi/abs/10.1145/3236024.3264598
+Spadini et al. \cite{Spadini2018} developed a Python framework, called PyDriller, that enables users to mine software repositories. 
+They showed that their tool can be used to extract information about the evolution of a software system from any git repository.  
+
+\newpage
+
+\section{Data sonification}
+
+External auditory representations of programs (known as program auralisation) is a researching field that 
+is getting even more interest in the recent years.
+
+% InfoSound https://ieeexplore.ieee.org/document/205229
+One of the first attempts at program was described by Sonnenwald et al \cite{Sonnenwald1990}
+They tried tp enhance the comprehension of complex applications by plating music and special sound effects. 
+The prototype system that supported this approach was called InfoSound.
+This first approach, seen its adoption for the understanding of the program's behavior. 
+
+This approach was followed by many other researchers. To cite some of them, DiGiano and Baecker \cite{DiGiano1993} made LogoMedia, a tool to associate non-speech audio with program events while the code is being developed. 
+Jameson \cite{Jameson1994}] developed Sonnet, an audio-enhanced monitoring and debugging tool.  
+Alty and Vickers \cite{Vickers2003} had a similar idea: using a structured musical framework, they was able to map the execution behavior of a program to locate and diagnose software errors. 
+
+% EXTERNAL AUDITORY REPRESENTATIONS OF PROGRAMS https://smartech.gatech.edu/bitstream/handle/1853/50854/Vickers2004a.pdf?sequence=1&
+Despite the usefulness of these tools, the adoption of a simple mapping lead them to have a limited musicality representations.  
+Vickerts \cite{Vickers2004} evidenced the necessity of a multi-threaded environment to enhance the comprehension given by the musical representation. 
+He proposed the adoption of an orchestral model of families of timbres, to enable programmers to distinguish between different activities of different threads.
+
+
+The size and the complexity of systems can be a problem for the effectiveness of a visual representation of a software system.
+Having a large number of visual information, observers might find difficulty to focus only on the relevant aspects. 
+% CocoViz https://ieeexplore.ieee.org/document/5070558
+Boccuzzo and Gall \cite{Boccuzzo2009} supported software visualization with sonification. 
+They used audio melodies to improve navigation and comprehension of their tool, CocoViz.
+Their ambient audio software exploration approach, exploited audio to intuitively describe the position of an entity in the space. 
+Thanks to the adoption of surround sound techniques, the observers perceived the origin of an audio source so, it could adjust his navigation in the visualization.
+Each kind of entity played a different sound, based on a mapping criteria.
+
+
+% Orchestrating change: An artistic representation of software evolution https://ieeexplore.ieee.org/document/6747192 
+McIntosh et al. \cite{McIntosh2014} explored the use of a parameter-based sonification, to produce a musical interpretation of the evolution of a software system.
+They technique mapped musical rests to inactive period of development and consonance and dissonance to interersting phenomena (like co-changing of components).
+
+% Software Musification https://ieeexplore.ieee.org/document/8107958
+Mancino and Scanniello \cite{Mancino2017} presented an approach to transform source code metrics in a musical score that can be both visualized and played. 

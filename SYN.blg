@@ -4,45 +4,46 @@ The top-level auxiliary file: SYN.aux
 The style file: plainnat.bst
 Database file #1: biblio.bib
 Warning--empty publisher in Stasko2008
-You've used 30 entries,
+Warning--empty booktitle in Vickers2004
+You've used 40 entries,
             2773 wiz_defined-function locations,
-            876 strings with 11935 characters,
-and the built_in function-call counts, 17607 in all, are:
-= -- 1738
-> -- 818
-< -- 37
-+ -- 276
-- -- 246
-* -- 1300
-:= -- 2503
-add.period$ -- 156
-call.type$ -- 30
-change.case$ -- 170
-chr.to.int$ -- 30
-cite$ -- 61
-duplicate$ -- 921
-empty$ -- 1410
-format.name$ -- 296
-if$ -- 4000
+            960 strings with 14504 characters,
+and the built_in function-call counts, 23749 in all, are:
+= -- 2349
+> -- 1096
+< -- 52
++ -- 370
+- -- 330
+* -- 1734
+:= -- 3348
+add.period$ -- 206
+call.type$ -- 40
+change.case$ -- 228
+chr.to.int$ -- 40
+cite$ -- 82
+duplicate$ -- 1252
+empty$ -- 1907
+format.name$ -- 396
+if$ -- 5415
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 32
-newline$ -- 215
-num.names$ -- 120
-pop$ -- 326
+missing$ -- 42
+newline$ -- 281
+num.names$ -- 160
+pop$ -- 447
 preamble$ -- 1
-purify$ -- 142
+purify$ -- 190
 quote$ -- 0
-skip$ -- 791
+skip$ -- 1083
 stack$ -- 0
-substring$ -- 680
-swap$ -- 294
-text.length$ -- 22
+substring$ -- 935
+swap$ -- 413
+text.length$ -- 32
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 320
-warning$ -- 1
-while$ -- 131
+type$ -- 430
+warning$ -- 2
+while$ -- 176
 width$ -- 0
-write$ -- 538
-(There was 1 warning)
+write$ -- 710
+(There were 2 warnings)
