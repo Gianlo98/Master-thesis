@@ -17,32 +17,32 @@
 
 Essential parts of software lifecycles are software maintenance and software evolution. 
 Both activities require the comprehension of the system by the developer. 
-Mayrhauser \cite{VonMayrhauser1995} defined program comprehension as a process that uses knowledge to acquire new knowledge. 
+Mayrhauser \cite{VonMayrhauser1995} defined {\it program comprehension} as a process that uses knowledge to acquire new knowledge. 
 Generally, programmers possess two types of knowledge: general knowledge and software-specific knowledge, which represent their level of understanding of that software. 
 Software comprehension aims to increase this specific knowledge of the system, and, to do that, it can leverage some software visualization techniques. 
 Software visualization supports the understanding of software systems because it enables the visualization of the system's information (architecture, source code, behavior) with a 2D or 3D representation. 
 Stasko et al.\cite{Stasko2008} conducted a study in 1998 that shows how visualization arguments human memory since it works as external cognitive aid and thus, improves thinking and analysis capabilities. \\
 
-\subsection*{History of software visualization}
+% \subsection*{History of software visualization}
 
 
 
 The earliest form of software visualization found in the literature was in the form of 2D diagrams. 
-Haibt \cite{Haibt1959} in 1959, was one of the first to use them to visualize software systems. 
+Haibt \cite{Haibt1959}, in 1959, was one of the first to use them to visualize software systems. 
 He provided a graphical outline of a program and its behavior with flowcharts. As shown in Figure \ref{fig:Haibt1959_Flowchart}, they 
 were 2D diagrams that described the execution of a program. He wrapped each statement in a box, representing the control flow with arrows.
 Ten years later, the effectiveness of flowcharts was confirmed by Knuth \cite{Knuth1963}. 
 Unfortunately, at that time, most of the programs were affected by a lack of readability since they were not well documented. 
-So, it introduced a tool to automatically generate visualizations from the software documentation. 
+Therefore, it introduced a tool to generate visualizations from the software documentation automatically. 
 Nassi and Schneiderman\cite{Nassi1973}, in 1973, introduced the Nassi–Shneiderman diagram (NSD), able to represent the structure of a program. 
 The diagram was divided into multiple sub-block, each with a given semantic based on its shape and position. 
 
 
 The 80s registered two main directions of software visualization. The first was the source code presentation.
-Hueras \cite{Hueras1977}, and Waters \cite{Waters1983} developed two techniques to format the source code with a prettyprinter. 
-The second direction was the program behavior, used mainly for educational purposes. One of the most prominent visualization systems of that period was Balsa-II \cite{Brown1988}.
-Around the end of the 80s, Müller et al. \cite{Mueller1988} released Rigi, a tool able to visualize large programs.
-It exploited the graph model, argumented with abstraction mechanisms, to represent systems components and their relationships. 
+Hueras \cite{Hueras1977} and Waters \cite{Waters1983} developed two techniques to format the source code with a prettyprinter. 
+The second direction was the program behavior, used mainly for educational purposes. One of that period's most prominent visualization system was Balsa-II \cite{Brown1988}.
+Around the end of the 80s, Müller et al. \cite{Mueller1988} released Rigi, a tool used to visualize large programs.
+It exploited the graph model, argumented with abstraction mechanisms, to represent systems components and relationships. 
 
 % \begin{figure}[H]
 %   \minipage{0.33\textwidth}
@@ -69,7 +69,7 @@ It exploited the graph model, argumented with abstraction mechanisms, to represe
 
 
 The 1990s recorded more interest in the field of software visualization. 
-In 1992 Erik et al \cite{Eick1992} introduced a new technique to visualize line-oriented statistics. 
+In 1992 Erik et al. \cite{Eick1992} introduced a new technique to visualize line-oriented statistics. 
 It was embodied in Seesoft, a software visualization system that allowed to analyze and visualize up to 50,000 lines of code simultaneously. 
 On their visualization, each line was mapped to a thin row. Each row was associated with a color that described a statistic of interest.
 One year later, De pauw et al. \cite{DePauw1993} introduced Jinsight, a tool able to provide animated views of the behavior of object-oriented systems. 
@@ -113,7 +113,7 @@ Infobug glyph was the last technique, where each glyph was composed of four part
 % \end{figure}
 
 In the same year, Young and Munro \cite{Young1998} explored representations of software for program comprehension in VR. 
-Finally, in 1999, Jacobson et al. \cite{Jacobson1999} introduced what we now know as de facto the standard language to visualize the design on a system: UML. 
+Finally, in 1999, Jacobson et al. \cite{Jacobson1999} introduced what we now know as de facto the standard language to visualize the design of a system: UML. 
 
 
 % Edward Tufte has influenced the entire field of information visualization, including software visualization.
@@ -121,16 +121,16 @@ Finally, in 1999, Jacobson et al. \cite{Jacobson1999} introduced what we now kno
 % 	[Tuf97] Edward Tufte. Visual Explanations. Graphics Press, 1997.
 % 	[Tuf01] Edward Tufte. The Visual Display of Quantitative Information. Graphics Press, 2nd edition, 2001.
 
-\subsection{Software evolution visualization}
+% \subsection{Software evolution visualization}
 %https://www.inf.usi.ch/faculty/lanza/Downloads/Gall2006a.pdf
 Before the beginning of the 21st century, visualizing the evolution of a system was an unfeasible task due to the lack of data. 
-However, thanks to the spread of version control systems and of the open-source movement, this information became publicly accessible.
+However, thanks to the spread of version control systems and the open-source movement, this information became publicly accessible.
 As a result, many researchers focused their work on software evolution visualization.
 
-In 2001 Lanza \cite{Lanza2001} introduced the concept of the Evolution Matrix. It was a way to visualize the evolution of software without dealing with a large amount of complex data. 
+Lanza \cite{Lanza2001} introduced the concept of the Evolution Matrix. It was a way to visualize the evolution of software without dealing with a large amount of complex data. 
 Furthermore, that approach was agnostic to any particular programming language. The Evolution Matrix aimed to display the evolution of classes in object-oriented software systems. 
 Each column represented a version of the software; each row represented a different version of the same class. Cells were filled with boxes whose size depended on evolutionary measurements. 
-Thanks to this approach, he was able to infer some evolution patterns by just looking at the shape of the matrix
+Thanks to this approach, he was able to infer some evolution patterns by just looking at the shape of the matrix.
 
 % \begin{figure}[H]
 % \minipage{0.49\textwidth}
@@ -144,18 +144,18 @@ Thanks to this approach, he was able to infer some evolution patterns by just lo
 % \end{figure}
 
 
-Taylor and Munro \cite{Taylor2002} in 2002 demonstrated that it is possible to use the data contained in a version control repository to visualize the evolution of a system.
+Taylor and Munro \cite{Taylor2002},  demonstrated that it is possible to use the data contained in a version control repository to visualize the evolution of a system.
 They also engineered Revision Tower, a tool that showed change information at the file level. 
-In 2005 Pinzger et al. \cite{Pinzger2005} visualized the evolution of a software system through Kivat diagrams.
+Pinzger et al. \cite{Pinzger2005} visualized the evolution of a software system through Kivat diagrams.
 RelVis, their tool, was able to depict a multivariate visualization of the evolution of a system.
 During the same year, Ratzinger et al. presented EvoLens \cite{Ratzinger2005}, a visualization approach and tool to 
 explore evolutionary data through structural and temporal views.  
 During the same year, Langelier et al. \cite{Langelier2005} investigated the interpretation of a city metaphor 
 \cite{Knight2000} to add a new level of knowledge to the visual analysis.
-In 2006, D’Ambros and Lanza \cite{DAmbros2006} introduced Discrete Time Figure,
- a visualization technique that embeds both historical and structural data in a simple figure. 
- Furthermore, they defined an approach based on the application of this visualization technique to study the evolution of a software system. 
-As a result, they were able to depict relationships between the histories of a system and bugs. 
+
+D’Ambros and Lanza \cite{DAmbros2006} introduced the concept of Discrete Time Figure. It was a 
+ visualization technique that embeded both historical and structural data in a simple figure. 
+Furthermore, they defined an approach based on this technique. As a result, they were able to depict relationships between the histories of a system and bugs. 
 They also presented the Evolution Radar \cite{DAmbros2006a}, a novel approach to visualize module-level and file-level logical coupling information.
 
 % \begin{figure}[H]
@@ -174,9 +174,9 @@ They also presented the Evolution Radar \cite{DAmbros2006a}, a novel approach to
 %   \end{figure}
   
 
-In 2010 Steinbrückner and Lewerentz \cite{Steinbrueckner2010} described a tree-staged visualization approach to visualize large software systems. 
+Steinbrückner and Lewerentz \cite{Steinbrueckner2010} described a three-staged visualization approach to visualize large software systems. 
 The visualization was supported by a tool called Evo-Streets. 
-Each stage of their approach was responsible represent a different aspect of the system with the city metaphor. 
+Each stage of their approach was responsible for representing a different aspect of the system with the city metaphor. 
 
 
 % \begin{wrapfigure}{r}{0.3\textwidth}
@@ -187,9 +187,9 @@ Each stage of their approach was responsible represent a different aspect of the
 Wettel, in his thesis \cite{Wettel2011}, revised the city metaphor to represent metrics meaningfully. 
 In his work, he represented packages as districts and classes as buildings.
 This metaphor was applied in different contexts related to reverse engineering (program comprehension, software evolution, software quality)
-to demonstrate metaphor's versatility. As a result, he found evidence that his approach works.
-However, he claims that city metaphor brings visual and layout limitations 
-(not all visualization techniques fit well with it). Under those circumstances, he preferred simplicity over the accuracy,
+to demonstrate the metaphor's versatility. As a result, he found evidence that his approach works.
+However, he claims that the city metaphor brings visual and layout limitations 
+(not all visualization techniques fit well with it). Under those circumstances, he preferred simplicity over accuracy,
 so he obtained a simple visual language that facilitates data comprehension. He conducted an experiment of the evidence that the city
 metaphor enables the creation of efficient software visualizations. His approach was implemented by a software visualization tool 
 called CodeCity that supports the city metaphor. 
@@ -200,21 +200,30 @@ called CodeCity that supports the city metaphor.
 
 
 % ChronoTwigger 2014 https://ieeexplore.ieee.org/abstract/document/6980223
-Ens et al. \cite{Ens2014} applied visual analytics methodologies to software repositoies with the goal to helps 
-users comprehend co-evolution informaiton. It enabled to visulize, over time, how source and test fiels were developer together. 
+Ens et al. \cite{Ens2014} applied visual analytics methodologies to software repositories to help
+users comprehend co-evolution information. It enabled us to visulize, over time, how source and test files were developed together. 
 
 % NN 2015 https://ieeexplore.ieee.org/document/7329727
-Kapec et al. \cite{Kapec2015} studied if it is possible to ease the graph analysis with argumented reality. 
-They made a prototype of a tool that provided a graph-based visualization of a software and them, 
-they studied some interaction methods to control it with argumented reality. 
+Kapec et al. \cite{Kapec2015} studied if it could ease the graph analysis with argumented reality. 
+They made a prototype of a tool that provided a graph-based visualization of software, and then they studied some interaction methods to control it with augmented reality.
 
 % CuboidMatrix 2016 https://ieeexplore.ieee.org/document/7780168
 Schneider et al. \cite{Schneider2016} presented a tool, CuboidMatrix, that employed a space-time cube metaphor to visualize a software system. 
-Space-time cube is wll-known 3D representation of an evolving dynamic graph. 
+A Space-time cube is a well-known 3D representation of an evolving dynamic graph. 
 
 % CityVR 2017 https://ieeexplore.ieee.org/abstract/document/8094470
+
+Merino et al. \cite{Merino2017} aimed to augment software visualization with gamification. 
+They introduced CityVR, a tool that displays a software system through the city metaphor with a 3D environment. 
+Working with virtual reality, they scaled the city visualization to the physically available space in the room. 
+Therefore, developers, to navigate the system, needed to walk. 
+
 % Code Park 2017 https://ieeexplore.ieee.org/abstract/document/8091185
+Khaloo et al. \cite{Khaloo2017} revised the idea of gamification with a 3D park-like environment.
+ They mapped each class in the codebase with a facility. The wall structure depends on constituent parts of the class (like methods and signatues). 
+
 % Evo-Clocks 2019 https://ieeexplore.ieee.org/document/8900965
-% Memory Cities 2020 https://ieeexplore.ieee.org/document/9240497/figures#figures
+Alexandru et al. \cite{Alexandru2019} proposed a method to visualize software structure and evolution simultaneously, 
+with reduced accuracy and a fine-grained highlighting of changes in individual components. 
 
 
