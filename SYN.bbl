@@ -1,9 +1,17 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{30}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alexandru et~al.(2019)Alexandru, Proksch, Behnamghader, and
+  Gall]{Alexandru2019}
+Carol~V. Alexandru, Sebastian Proksch, Pooyan Behnamghader, and Harald~C. Gall.
+\newblock Evo-clocks: Software evolution at a glance.
+\newblock In \emph{2019 Working Conference on Software Visualization
+  (VISSOFT)}, pages 12--22, 2019.
+\newblock \doi{10.1109/VISSOFT.2019.00010}.
 
 \bibitem[Brown(1988)]{Brown1988}
 Marc~H. Brown.
@@ -108,6 +116,15 @@ P.~Kapec, G.~Brndiarová, M.~Gloger, and J.~Marák.
   Engineering Systems (INES)}, pages 307--312, 2015.
 \newblock \doi{10.1109/INES.2015.7329727}.
 
+\bibitem[Khaloo et~al.(2017)Khaloo, Maghoumi, Taranta, Bettner, and
+  Laviola]{Khaloo2017}
+Pooya Khaloo, Mehran Maghoumi, Eugene Taranta, David Bettner, and Joseph
+  Laviola.
+\newblock Code park: A new 3d code visualization tool.
+\newblock In \emph{2017 IEEE Working Conference on Software Visualization
+  (VISSOFT)}, pages 43--53, 2017.
+\newblock \doi{10.1109/VISSOFT.2017.10}.
+
 \bibitem[Knight and Munro(2000)]{Knight2000}
 C.~Knight and M.~Munro.
 \newblock Virtual but visible software.
@@ -145,6 +162,14 @@ Michele Lanza.
 \newblock ISBN 1581135084.
 \newblock \doi{10.1145/602461.602467}.
 \newblock URL \url{https://doi.org/10.1145/602461.602467}.
+
+\bibitem[Merino et~al.(2017)Merino, Ghafari, Anslow, and
+  Nierstrasz]{Merino2017}
+Leonel Merino, Mohammad Ghafari, Craig Anslow, and Oscar Nierstrasz.
+\newblock Cityvr: Gameful software visualization.
+\newblock In \emph{2017 IEEE International Conference on Software Maintenance
+  and Evolution (ICSME)}, pages 633--637, 2017.
+\newblock \doi{10.1109/ICSME.2017.70}.
 
 \bibitem[M\"{u}ller and Klashinsky(1988)]{Mueller1988}
 H.~A. M\"{u}ller and K.~Klashinsky.
