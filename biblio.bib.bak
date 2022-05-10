@@ -605,4 +605,31 @@ series = {SoftVis '05}
   month  = {01},
 }
 
+@InProceedings{Boccuzzo2009,
+  author    = {Boccuzzo, Sandro and Gall, Harald C.},
+  booktitle = {2009 IEEE 31st International Conference on Software Engineering},
+  title     = {CocoViz with ambient audio software exploration},
+  year      = {2009},
+  pages     = {571-574},
+  doi       = {10.1109/ICSE.2009.5070558},
+}
+
+@InProceedings{McIntosh2014,
+  author    = {McIntosh, Shane and Legere, Katie and Hassan, Ahmed E.},
+  booktitle = {2014 Software Evolution Week - IEEE Conference on Software Maintenance, Reengineering, and Reverse Engineering (CSMR-WCRE)},
+  title     = {Orchestrating change: An artistic representation of software evolution},
+  year      = {2014},
+  pages     = {348-352},
+  doi       = {10.1109/CSMR-WCRE.2014.6747192},
+}
+
+@InProceedings{Mancino2017,
+  author    = {Mancino, Andrea and Scanniello, Giuseppe},
+  booktitle = {2017 21st International Conference Information Visualisation (IV)},
+  title     = {Software Musification},
+  year      = {2017},
+  pages     = {127-132},
+  doi       = {10.1109/iV.2017.28},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
