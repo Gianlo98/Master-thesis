@@ -1,0 +1,31 @@
+
+\chapter[Approach]{Approach}
+\graphicspath{ {images/approach} }
+
+In this chapter we will present an approach that produce a visual and auditive depiction of the evolution of a system. 
+Our approach consists of two parts: 
+In the first part we modelled the evolution of the software artifacts, and we enginereed a tool that implement it.
+In the second part, we used the concept of synesthesia (the production of a sense impression relating to one sense by stimulation of another sense) 
+to enhance the effectiveness of the visualization. 
+
+\section{Evolutionary model}
+Analyzing the evolution of a systems requires to consider numerous aspects. 
+In our approach we focus on systems that resides on git repositories. 
+We made this choiche because git is the most common repository management system and it also track all the changes made to the system.
+As a consequence we can use it to reconstruct the history of a system.\\
+
+In our approach, we model the evolution of repository files, therefore we model its history. 
+To do that, we considered all the information that can be extracted from a git repository: files and commits.
+
+Git uses commit to record changes on a repository. So, each commit is a snapshot of the repository at a particular point in time.
+Git has the possibility to inspect every commit of a repository by using the command \texttt{git checkout}. 
+In this way, we can navigate through the history of a repository, track all the files and their metrics.\\
+
+A commit operation contains also other meta-information such as the author, the date, the message and the list of files that were updated. 
+In our approach a commit is represented with a Project Version, and a file is represented with a FileHistory. 
+Both a FileHistory and a ProjectVersion contains a list of FileVersions, wich represents a file at a particular point in time.
+
+For example, if we have a file A.java that is being modified in commit c1 and c3, we will have a FileHistory A.java with 
+2 FileVersions: the fileVersion of c1 and the fileVersion of c2. 
+With the same fashion, ProjectVersions c1 and c3 will have the same FileVersions referred to the FileHistory A.java.
+
