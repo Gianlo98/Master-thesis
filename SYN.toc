@@ -8,11 +8,12 @@
 \contentsline {section}{\numberline {2.3}Data sonification}{10}{section.2.3}%
 \contentsline {chapter}{\numberline {3}Approach}{13}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Evolutionary model}{13}{section.3.1}%
-\contentsline {chapter}{\numberline {4}Implementation}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Platform overview}{15}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}SYN CLI}{15}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}SYN Analyzer}{15}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}SYN Server}{16}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}SYN Debugger}{16}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}SYN Sonic}{16}{subsection.4.1.5}%
-\contentsline {chapter}{Bibliography}{17}{section*.20}%
+\contentsline {section}{\numberline {3.2}Visualization model}{16}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Implementation}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Platform overview}{19}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}SYN CLI}{19}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}SYN Analyzer}{19}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}SYN Server}{20}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}SYN Debugger}{20}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}SYN Sonic}{20}{subsection.4.1.5}%
+\contentsline {chapter}{Bibliography}{21}{section*.23}%

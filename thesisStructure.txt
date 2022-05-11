@@ -1,8 +1,7 @@
 Approach
-    - SYN Evolution Model
-    	- Metrics
+    - SYN Evolution Model 
     - Visualization 
-	- Mappers
+	- Mappers 
 	- Bucketing 
     - Sonification
 
@@ -11,6 +10,7 @@ Implementation
  - Platform overview
  - The mining process
  - The analysis process
+    	- Metrics
 	- Join Analysis algorithms
  - The visualization process
 	- SYN debugger
