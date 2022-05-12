@@ -116,7 +116,38 @@ In our approach we use the following visual aspects to trigger involountarly ass
     \item \textbf{Height}: we use the height of the entity to describe the value of a representative metric, used to compare entities.
 \end{itemize}
 
-Entities are displayed with an outward spiral layout to emphatize their order on the evolution matrix. 
+Entities are displayed with an outward spiral layout to emphatize their order on the evolution matrix. \\
+
+There are several ways to traverse the history of a repository. 
+The visualization needs to start from the first moment and then go forward until the end. The question is, how we should go forward in time?
+We came up with two strategies: 
+\begin{itemize}
+    \item We can display \texttt{n} version at time, so we are traversing the history as it was written. 
+    A limitation of this approach is that we lose the concept of time. 
+    We cannot have any idea about how much time was passed between two commit, thus we cannot distinguish active development phases from unactive development phases. 
+
+    \item We can group version by their timestamp. So, all the commit made in the sime time period, will be displayed at the same time. 
+    This strategy works very well if we need to comphrend how the system evolved and at which speed in time. 
+\end{itemize}
+
+We conchretized our strategies witht the concept of \textbf{moment}. A moment is a group of version that will be displayed at the same time. 
+
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.9\linewidth]{Moments.jpg} 
+        \caption{Example of two different strategies to identity moments. 
+        On the first strategy, we mapped one commit with one moment, so the total number of moments will be equals to the total number of commit.  
+        Alternatively, on the second strategy, we created a moment every day.
+        As a result, we have some moments with many commits, and some without anyone.
+        With this strategy, the number of moments will be the same as the number of days that have passed between the first and the last commit. 
+        }
+        \label{fig:moment}
+    \end{center}
+\end{figure}
+
+Figure \ref{fig:moment} highlights the difference between the two strategies mentioned above. 
+
 
 \subsection*{Color}
 
@@ -124,7 +155,7 @@ Entities are displayed with an outward spiral layout to emphatize their order on
 \begin{wrapfigure}{r}{0.3\textwidth}
     \begin{center}
         \includegraphics[width=0.7\linewidth]{ColorAssociation.png} 
-        \caption{Flowchart presented by Haibt in 1959}
+        \caption{Color association}
         \label{fig:ColorAssociation}
     \end{center}
 \end{wrapfigure}
@@ -134,7 +165,18 @@ Nonetheless each person has its own perception, we can not assume that this colo
 To remedy this issue, users can customize the color palette as they wish. \\
 
 Moreover, we decided to put another information on the color of the entity: the \textbf{aging}. 
-We define the aging of an entity as the number of version since the last modification of that entity happened.
+We define the aging of an entity as the number of moments since the last modification of that entity happened.
 To do that, we mapped the age of an entity with the darkness of its color. 
 As a result, older entities will be displayed with a darker color. 
 In this way, users can immediately recognize the last action and the amount of time passed since the entity was modified.
+
+
+\subsection*{Shape}
+The shape of the entity defines the type of the entity itself. 
+It should be something fully customizable by the user, so it can chose on which entity he can focus on. 
+
+\subsection*{Height}
+The height of an entity should represent the value of a metric.
+
+
+\section{Auditive model}
