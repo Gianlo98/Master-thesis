@@ -632,4 +632,48 @@ series = {SoftVis '05}
   doi       = {10.1109/iV.2017.28},
 }
 
+@Book{SoftwareEvolution,
+  publisher = {Springer},
+  title     = {Software evolution},
+  year      = {2008},
+  address   = {Berlin},
+  isbn      = {9783540764397},
+  abstract  = {Software has become omnipresent and vital in our information-based society, so all software producers should assume responsibility for its reliability. While 'reliable' originally assumed implementations that were effective and mainly error-free, additional issues like adaptability and maintainability have gained equal importance recently. For example, the 2004 ACM/IEEE Software Engineering Curriculum Guidelines list software evolution as one of ten key areas of software engineering education. Mens and Demeyer, both international authorities in the field of software evolution, together with the invited contributors, focus on novel trends in software evolution research and its relations with other emerging disciplines such as model-driven software engineering, service-oriented software development, and aspect-oriented software development. They do not restrict themselves to the evolution of source code but also address the evolution of other, equally important software artifacts such as databases and database schemas, design models, software architectures, and process management. The contributing authors provide broad overviews of related work, and they also contribute to a comprehensive glossary, a list of acronyms, and a list of books, journals, websites, standards and conferences that together represent the community's body of knowledge. Combining all these features, this book is the indispensable source for researchers and professionals looking for an introduction and comprehensive overview of the state of the art. In addition, it is an ideal basis for an advanced course on software evolution.},
+  keywords  = {Logiciels},
+  language  = {eng},
+}
+
+@Article{Salis2019,
+  author   = {Vitalis Salis and Diomidis Spinellis},
+  journal  = {SoftwareX},
+  title    = {RepoFS: File system view of Git repositories},
+  year     = {2019},
+  issn     = {2352-7110},
+  pages    = {288-292},
+  volume   = {9},
+  abstract = {Empirical software engineering work often involves studying revision control system repositories maintained using the popular Git system. Checking out each revision one wants to study is inefficient. On the other hand the examination of directories and files of past revisions using Git’s commands suffers from a usability perspective. We introduce repofs, a tool that exposes a Git repository as a virtual user-level file system. Commits, branches, and tags appear as separate directory trees allowing them to be efficiently processed through command-line tools and file explorers. We illustrate these points through motivating examples and discuss the advantages and drawbacks of the proposed approach.},
+  doi      = {https://doi.org/10.1016/j.softx.2019.03.007},
+  keywords = {Git, Virtual file system, Mining software repositories, Unix shell},
+  url      = {https://www.sciencedirect.com/science/article/pii/S2352711018300712},
+}
+
+@Article{Clem2021,
+  author     = {Clem, Timothy and Thomson, Patrick},
+  journal    = {Queue},
+  title      = {Static Analysis at GitHub: An Experience Report},
+  year       = {2021},
+  issn       = {1542-7730},
+  month      = {aug},
+  number     = {4},
+  pages      = {42–67},
+  volume     = {19},
+  abstract   = {The Semantic Code team at GitHub builds and operates a suite of technologies that power symbolic code navigation on github.com. We learned that scale is about adoption, user behavior, incremental improvement, and utility. Static analysis in particular is difficult to scale with respect to human behavior; we often think of complex analysis tools working to find potentially problematic patterns in code and then trying to convince the humans to fix them. Our approach took a different tack: use basic analysis techniques to quickly put information that augments our ability to understand programs in front of everyone reading code on GitHub with zero configuration required and almost immediate availability after code changes.},
+  address    = {New York, NY, USA},
+  doi        = {10.1145/3487019.3487022},
+  issue_date = {July-August 2021},
+  numpages   = {26},
+  publisher  = {Association for Computing Machinery},
+  url        = {https://doi.org/10.1145/3487019.3487022},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
