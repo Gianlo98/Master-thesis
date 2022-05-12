@@ -1,9 +1,14 @@
-\begin{thebibliography}{40}
+\begin{thebibliography}{43}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Sof(2008)]{SoftwareEvolution}
+\emph{Software evolution}.
+\newblock Springer, Berlin, 2008.
+\newblock ISBN 9783540764397.
 
 \bibitem[Alexandru et~al.(2019)Alexandru, Proksch, Behnamghader, and
   Gall]{Alexandru2019}
@@ -34,6 +39,14 @@ M.C. Chuah and S.G. Eick.
 \newblock \emph{IEEE Computer Graphics and Applications}, 18\penalty0
   (4):\penalty0 24--29, 1998.
 \newblock \doi{10.1109/38.689658}.
+
+\bibitem[Clem and Thomson(2021)]{Clem2021}
+Timothy Clem and Patrick Thomson.
+\newblock Static analysis at github: An experience report.
+\newblock \emph{Queue}, 19\penalty0 (4):\penalty0 42–67, aug 2021.
+\newblock ISSN 1542-7730.
+\newblock \doi{10.1145/3487019.3487022}.
+\newblock URL \url{https://doi.org/10.1145/3487019.3487022}.
 
 \bibitem[D'Ambros and Lanza(2006)]{DAmbros2006}
 M.~D'Ambros and M.~Lanza.
@@ -256,6 +269,15 @@ J.~Ratzinger, M.~Fischer, and H.~Gall.
 \newblock In \emph{Eighth International Workshop on Principles of Software
   Evolution (IWPSE'05)}, pages 103--112, 2005.
 \newblock \doi{10.1109/IWPSE.2005.16}.
+
+\bibitem[Salis and Spinellis(2019)]{Salis2019}
+Vitalis Salis and Diomidis Spinellis.
+\newblock Repofs: File system view of git repositories.
+\newblock \emph{SoftwareX}, 9:\penalty0 288--292, 2019.
+\newblock ISSN 2352-7110.
+\newblock \doi{https://doi.org/10.1016/j.softx.2019.03.007}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S2352711018300712}.
 
 \bibitem[Schneider et~al.(2016)Schneider, Tymchuk, Salgado, and
   Bergel]{Schneider2016}

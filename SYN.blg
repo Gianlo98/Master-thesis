@@ -3,47 +3,49 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: SYN.aux
 The style file: plainnat.bst
 Database file #1: biblio.bib
+Warning--to sort, need author, editor, or key in SoftwareEvolution
+Warning--empty author and editor in SoftwareEvolution
 Warning--empty publisher in Stasko2008
 Warning--empty booktitle in Vickers2004
-You've used 40 entries,
+You've used 43 entries,
             2773 wiz_defined-function locations,
-            960 strings with 14504 characters,
-and the built_in function-call counts, 23749 in all, are:
-= -- 2349
-> -- 1096
-< -- 52
-+ -- 370
-- -- 330
-* -- 1734
-:= -- 3348
-add.period$ -- 206
-call.type$ -- 40
-change.case$ -- 228
-chr.to.int$ -- 40
-cite$ -- 82
-duplicate$ -- 1252
-empty$ -- 1907
-format.name$ -- 396
-if$ -- 5415
+            986 strings with 15002 characters,
+and the built_in function-call counts, 24986 in all, are:
+= -- 2472
+> -- 1138
+< -- 54
++ -- 385
+- -- 342
+* -- 1836
+:= -- 3528
+add.period$ -- 221
+call.type$ -- 43
+change.case$ -- 240
+chr.to.int$ -- 43
+cite$ -- 91
+duplicate$ -- 1314
+empty$ -- 2026
+format.name$ -- 414
+if$ -- 5687
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 42
-newline$ -- 281
-num.names$ -- 160
-pop$ -- 447
+missing$ -- 45
+newline$ -- 302
+num.names$ -- 168
+pop$ -- 468
 preamble$ -- 1
-purify$ -- 190
+purify$ -- 200
 quote$ -- 0
-skip$ -- 1083
+skip$ -- 1126
 stack$ -- 0
-substring$ -- 935
-swap$ -- 413
+substring$ -- 984
+swap$ -- 417
 text.length$ -- 32
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 430
-warning$ -- 2
-while$ -- 176
+type$ -- 458
+warning$ -- 4
+while$ -- 184
 width$ -- 0
-write$ -- 710
-(There were 2 warnings)
+write$ -- 761
+(There were 4 warnings)
