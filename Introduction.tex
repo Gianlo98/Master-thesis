@@ -1,12 +1,81 @@
 \chapter{Introduction}
 
-In 1971 Dijkstra, made an analogy between computer programming an art. 
-It stated that is not important to learn how to compose a software, but instead, it is important to develop its own style and what will be their implications. 
+In 1971 Dijkstra, made an analogy between computer programming and art. It stated that is not important to learn how to compose software, but instead, it is important to develop its own style and what will be their implications. 
+During the lifetime of a software system, many developers work on it, each one with its own style. This is one of the multiple reasons behind software complexity. 
+Today's software systems are characterized by sheer size and complexity. Software maintenance takes up the most part of a software system's cost. 
+It is hard to quantify the impact of software maintenance on the global cost of the software. 
+However, Researchers, in 1995-96, estimated it to be between 50\% and 75\% \cite{Davis1995} \cite{Sommerville1995}, and more recent studies have seen it reaching the peak of 90\%.  \cite{Erlikh2000} \cite{seacord2003}. There are many factors that influence the cost of maintenance Among these, the understanding activity, needed to perform maintenance tasks, takes up to 50-60\% of the maintenance time \cite{Corbi1989}. 
 
-Software Understanding 
 
-- Section [Challenges of software understanding]
-- Section [Challenges of software maintainability]
-- Section [Software comprehension]
-- Section [Our approach]
-We present an ap- proach, based on the concept of synesthesia (the production of a sense impression relating to one sense by stimulation of another sense), which represents the evolutionary process through an interactive visual depiction of the evolving software artifacts complemented by an auditive portrayal of the evolution.
+\section{Software comprehension}
+The comprehension of software evolution is essential for the understandability and maintainability of systems.
+However, the sheer quantity and complexity of the information generated during systems development make the comprehension process challenging.
+
+Lehman and Belady in 1985, were the first to observe that maintaining a software system becomes a more complex activity over time. \cite{Lehman1985}
+The term "software evolution" was used for the first time by them in their set of laws. 
+One of the goals of software evolution analysis is to identify potential defects in the system's logic or architecture. 
+Software evolution analysis is often supported by software evolution visualization.
+Software evolution visualization is software visualization applied to evolutionary information.
+
+
+
+\section{Visualization}
+Software visualization is a specialization of information visualization with a focus on software \cite{Lanza2003}
+Software Visualization techniques are used to support complex software systems analysis. 
+This analysis usually produces a sheer quantity of multivariate data. To support their analysis, several tools have been proposed in the literature \cite{Merino2018a}.
+There are cases when software visualization can be used to aid the analysis activity. For example, when programmers need to comprehend the architecture of a system \cite{Panas2007}, when researchers analyze version control repositories \cite{Greene2017}, or to support developers' activity \cite{LopezHerrejon2018}. \\
+\\
+According to Butler et. al. \cite{Butler1993} there are three categories of visualization:
+\begin{itemize}
+	 \item Descriptive visualization. Widely used for education purposes, the visualization is used to present data to other people. 
+	 \item Explorative visualziation. Used to discover the nature of the data being analyzed. With this visualization, the user usually does not know what he/she is looking for. 
+	 \item Analytical visualization. Adapted when we need to find something known in the available data. 
+\end{itemize}
+	
+All the software visualization approaches vary with respect to two dimensions: the level of abstraction and the visualized data.
+According to the type of the data, we can classify visualization as:
+\begin{itemize}
+	\item Evolutionary visualizations. Used to present information extracted from the history of a system. Mainly used to find the cause of problems in software. 
+	\item Static visualizations. Used to present information extracted with static analysis of the software. It provides information about the structure of the system.
+	\item Dynamic visualizations. Used to present information extracted with dynamic instrumentation of the software execution. It provides information about the behavior of the system.
+\end{itemize}
+
+The level of abstraction can be classified as:
+\begin{itemize}
+	\item Code-level visualization. Used to visualize fine granted sourcecode information, such as the lines of code. 
+	\item Design-level visualization. Used to visualize self-contained pieces of code, such as classes in object-oriented systems. 
+	\item Architectural-level visualization. Used to visualize the system architecture and the relationships among its components. 
+\end{itemize}
+
+
+In this work, our focus is an explorative visualization, that depicts the evolution of a system. To do that, we created an approach with an evolutionary design-level visualization aimed to facilitate the comprehension of the system's history. 
+
+\section{Sonification}
+Lehman and Belady in 1985, were the first to observe that maintaining a software system becomes a more complex activity over time. [LB85] 
+The term "software evolution" was used for the first time by them in their set of laws. 
+One of the goals of software evolution analysis is to identify potential defects in the system's logic or architecture. 
+Often, this process is supported by software visualization as it is one of the means to represent software systems. 
+For this purpose, software visualization techniques are applied to software evolutionary data. 
+
+\section{Our approach}
+We present an approach, based on the concept of synesthesia (the production of a sense impression relating to one sense by stimulation of another sense), which represents the evolutionary process through an interactive visual depiction of the evolving software artifacts complemented by an auditive portrayal of the evolution.
+
+\section{Contribution}
+We can summarize the main contribution of this work as:
+\begin{itemize}
+ \item We proposed an approach to model the history of a git repository.
+ \item We proposed an approach,  based on the concept of synesthesia, which represents the evolutionary process through an interactive visual depiction of the evolving software artifacts complemented by an auditive portrayal of the evolution.
+ \item We engineered a tool, SYN, which supports our approach as an interactive web application
+ \item We applied SYN to real-life systems and presented several insights and reflections. 
+\end{itemize}
+
+\section{Structure of the document}
+This document is organized as follows
+\begin{itemize}
+ \item {Chapter 1}
+ \item {Chapter 2}
+ \item {Chapter 3}
+ \item {Chapter 4}
+ \item {Chapter 5}
+
+\end{itemize}

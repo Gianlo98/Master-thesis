@@ -1,31 +1,31 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Flowchart presented by Haibt in 1959\relax }}{3}{figure.2.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces NSD of the factorial function.\relax }}{4}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Balsa-II\relax }}{4}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Rigi\relax }}{4}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Seesoft\relax }}{5}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Jinsight\relax }}{5}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Timewhell\relax }}{5}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces 3D wheel\relax }}{5}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Infobug\relax }}{5}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces A schematic display of the Evolution Matrix\relax }}{6}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Some characteristics of the Evolution Matrix\relax }}{6}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces RelVis\relax }}{7}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Tree of Discrete Time Figures\relax }}{7}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Evolution Radar\relax }}{7}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Evo-Streets\relax }}{7}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces CodeCity\relax }}{8}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.17}{\ignorespaces CityVR\relax }}{8}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.18}{\ignorespaces ChronoTwigger\relax }}{8}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.19}{\ignorespaces CuboidMatrix\relax }}{8}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Evo-Clock\relax }}{9}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.21}{\ignorespaces RHDB\relax }}{10}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.22}{\ignorespaces RepoFS\relax }}{10}{figure.caption.19}%
-\contentsline {figure}{\numberline {2.23}{\ignorespaces CocoViz\relax }}{12}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Flowchart presented by Haibt in 1959\relax }}{5}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces NSD of the factorial function.\relax }}{6}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Balsa-II\relax }}{6}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Rigi\relax }}{6}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Seesoft\relax }}{7}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Jinsight\relax }}{7}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Timewhell\relax }}{7}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces 3D wheel\relax }}{7}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Infobug\relax }}{7}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces A schematic display of the Evolution Matrix\relax }}{8}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Some characteristics of the Evolution Matrix\relax }}{8}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces RelVis\relax }}{9}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Tree of Discrete Time Figures\relax }}{9}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Evolution Radar\relax }}{9}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Evo-Streets\relax }}{9}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces CodeCity\relax }}{10}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.17}{\ignorespaces CityVR\relax }}{10}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces ChronoTwigger\relax }}{10}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.19}{\ignorespaces CuboidMatrix\relax }}{10}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Evo-Clock\relax }}{11}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.21}{\ignorespaces RHDB\relax }}{12}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.22}{\ignorespaces RepoFS\relax }}{12}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.23}{\ignorespaces CocoViz\relax }}{14}{figure.caption.20}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Evolution matrix of a repository\relax }}{16}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Evolution matrix of a repository\relax }}{17}{figure.caption.22}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of two different strategies to identity moments. On the first strategy, we mapped one commit with one moment, so the total number of moments will be equals to the total number of commit. Alternatively, on the second strategy, we created a moment every day. As a result, we have some moments with many commits, and some without anyone. With this strategy, the number of moments will be the same as the number of days that have passed between the first and the last commit. \relax }}{19}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Color association\relax }}{19}{figure.3.4}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Evolution matrix of a repository\relax }}{18}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Evolution matrix of a repository\relax }}{19}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of two different strategies to identity moments. On the first strategy, we mapped one commit with one moment, so the total number of moments will be equals to the total number of commit. Alternatively, on the second strategy, we created a moment every day. As a result, we have some moments with many commits, and some without anyone. With this strategy, the number of moments will be the same as the number of days that have passed between the first and the last commit. \relax }}{21}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Color association\relax }}{21}{figure.3.4}%
 \addvspace {10\p@ }
