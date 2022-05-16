@@ -1,4 +1,4 @@
-\begin{thebibliography}{55}
+\begin{thebibliography}{56}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -17,6 +17,12 @@ Carol~V. Alexandru, Sebastian Proksch, Pooyan Behnamghader, and Harald~C. Gall.
 \newblock In \emph{2019 Working Conference on Software Visualization
   (VISSOFT)}, pages 12--22, 2019.
 \newblock \doi{10.1109/VISSOFT.2019.00010}.
+
+\bibitem[Alty(1995)]{Alty1995}
+James~L Alty.
+\newblock Computer-human communication?
+\newblock In \emph{People and Computers X: Proceedings of the HCI'95
+  Conference}, volume~10, page 409. Cambridge University Press, 1995.
 
 \bibitem[Boccuzzo and Gall(2009)]{Boccuzzo2009}
 Sandro Boccuzzo and Harald~C. Gall.
