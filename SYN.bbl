@@ -1,4 +1,4 @@
-\begin{thebibliography}{43}
+\begin{thebibliography}{55}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -33,6 +33,15 @@ Marc~H. Brown.
 \newblock \doi{10.1109/2.56}.
 \newblock URL \url{https://doi.org/10.1109/2.56}.
 
+\bibitem[Butler et~al.(1993)Butler, Almond, Bergeron, Brodlie, and
+  Haber]{Butler1993}
+David~M. Butler, James~C. Almond, R.~Daniel Bergeron, Ken~W. Brodlie, and
+  Robert~B. Haber.
+\newblock Visualization reference models.
+\newblock In \emph{Proceedings of the 4th Conference on Visualization '93}, VIS
+  '93, page 337–342, USA, 1993. IEEE Computer Society.
+\newblock ISBN 0818639407.
+
 \bibitem[Chuah and Eick(1998)]{Chuah1998}
 M.C. Chuah and S.G. Eick.
 \newblock Information rich glyphs for software management data.
@@ -47,6 +56,12 @@ Timothy Clem and Patrick Thomson.
 \newblock ISSN 1542-7730.
 \newblock \doi{10.1145/3487019.3487022}.
 \newblock URL \url{https://doi.org/10.1145/3487019.3487022}.
+
+\bibitem[Corbi(1989)]{Corbi1989}
+T.~A. Corbi.
+\newblock Program understanding: Challenge for the 1990s.
+\newblock \emph{IBM Systems Journal}, 28\penalty0 (2):\penalty0 294--306, 1989.
+\newblock \doi{10.1147/sj.282.0294}.
 
 \bibitem[D'Ambros and Lanza(2006)]{DAmbros2006}
 M.~D'Ambros and M.~Lanza.
@@ -66,6 +81,12 @@ Marco D'Ambros, Michele Lanza, and Mircea Lungu.
 \newblock ISBN 1595933972.
 \newblock \doi{10.1145/1137983.1137992}.
 \newblock URL \url{https://doi.org/10.1145/1137983.1137992}.
+
+\bibitem[Davis(1995)]{Davis1995}
+Alan~M. Davis.
+\newblock \emph{201 Principles of Software Development}.
+\newblock McGraw-Hill, Inc., USA, 1995.
+\newblock ISBN 0070158401.
 
 \bibitem[De~Pauw et~al.(1993)De~Pauw, Helm, Kimelman, and
   Vlissides]{DePauw1993}
@@ -108,6 +129,12 @@ Barrett Ens, Daniel Rea, Roiy Shpaner, Hadi Hemmati, James~E. Young, and
   Visualization}, pages 117--126, 2014.
 \newblock \doi{10.1109/VISSOFT.2014.28}.
 
+\bibitem[Erlikh(2000)]{Erlikh2000}
+L.~Erlikh.
+\newblock Leveraging legacy system dollars for e-business.
+\newblock \emph{IT Professional}, 2\penalty0 (3):\penalty0 17--23, 2000.
+\newblock \doi{10.1109/6294.846201}.
+
 \bibitem[Fekete et~al.(2008)Fekete, van Wijk, Stasko, and North]{Stasko2008}
 Jean-Daniel Fekete, Jarke van Wijk, John Stasko, and Chris North.
 \newblock \emph{The Value of Information Visualization}, volume 4950, pages
@@ -115,6 +142,13 @@ Jean-Daniel Fekete, Jarke van Wijk, John Stasko, and Chris North.
 \newblock 07 2008.
 \newblock ISBN 978-3-540-70955-8.
 \newblock \doi{10.1007/978-3-540-70956-5_1}.
+
+\bibitem[Greene et~al.(2017)Greene, Esterhuizen, and Fischer]{Greene2017}
+Gillian~J Greene, Marvin Esterhuizen, and Bernd Fischer.
+\newblock Visualizing and exploring software version control repositories using
+  interactive tag clouds over formal concept lattices.
+\newblock \emph{Information and Software Technology}, 87:\penalty0 223--241,
+  2017.
 
 \bibitem[Haibt(1959)]{Haibt1959}
 Lois~M. Haibt.
@@ -213,6 +247,26 @@ Michele Lanza.
 \newblock \doi{10.1145/602461.602467}.
 \newblock URL \url{https://doi.org/10.1145/602461.602467}.
 
+\bibitem[Lanza(2003)]{Lanza2003}
+Michele Lanza.
+\newblock Object-oriented reverse engineering —- coarse-grained,
+  fine-grained, and evolutionary software visualization.
+\newblock 2003.
+
+\bibitem[Lehman and Belady(1985)]{Lehman1985}
+M.~M. Lehman and L.~A. Belady.
+\newblock \emph{Program Evolution: Processes of Software Change}.
+\newblock Academic Press Professional, Inc., USA, 1985.
+\newblock ISBN 0124424406.
+
+\bibitem[Lopez-Herrejon et~al.(2018)Lopez-Herrejon, Illescas, and
+  Egyed]{LopezHerrejon2018}
+Roberto~Erick Lopez-Herrejon, Sheny Illescas, and Alexander Egyed.
+\newblock A systematic mapping study of information visualization for software
+  product line engineering.
+\newblock \emph{Journal of software: evolution and process}, 30\penalty0
+  (2):\penalty0 e1912, 2018.
+
 \bibitem[Mancino and Scanniello(2017)]{Mancino2017}
 Andrea Mancino and Giuseppe Scanniello.
 \newblock Software musification.
@@ -228,6 +282,16 @@ Shane McIntosh, Katie Legere, and Ahmed~E. Hassan.
   Maintenance, Reengineering, and Reverse Engineering (CSMR-WCRE)}, pages
   348--352, 2014.
 \newblock \doi{10.1109/CSMR-WCRE.2014.6747192}.
+
+\bibitem[Merino et~al.(2018)Merino, Ghafari, Anslow, and
+  Nierstrasz]{Merino2018a}
+L.~Merino, M.~Ghafari, C.~Anslow, and O.~Nierstrasz.
+\newblock A systematic literature review of software visualization evaluation.
+\newblock \emph{Journal of Systems and Software}, 144:\penalty0 165--180, 2018.
+\newblock ISSN 0164-1212.
+\newblock \doi{https://doi.org/10.1016/j.jss.2018.06.027}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0164121218301237}.
 
 \bibitem[Merino et~al.(2017)Merino, Ghafari, Anslow, and
   Nierstrasz]{Merino2017}
@@ -252,6 +316,15 @@ I.~Nassi and B.~Shneiderman.
 \newblock ISSN 0362-1340.
 \newblock \doi{10.1145/953349.953350}.
 \newblock URL \url{https://doi.org/10.1145/953349.953350}.
+
+\bibitem[Panas et~al.(2007)Panas, Epperly, Quinlan, Saebjornsen, and
+  Vuduc]{Panas2007}
+Thomas Panas, Thomas Epperly, Daniel Quinlan, Andreas Saebjornsen, and Richard
+  Vuduc.
+\newblock Communicating software architecture using a unified single-view
+  visualization.
+\newblock In \emph{12th IEEE International Conference on Engineering Complex
+  Computer Systems (ICECCS 2007)}, pages 217--228. IEEE, 2007.
 
 \bibitem[Pinzger et~al.(2005)Pinzger, Gall, Fischer, and Lanza]{Pinzger2005}
 Martin Pinzger, Harald Gall, Michael Fischer, and Michele Lanza.
@@ -287,6 +360,19 @@ Teseo Schneider, Yuriy Tymchuk, Ronie Salgado, and Alexandre Bergel.
 \newblock In \emph{2016 IEEE Working Conference on Software Visualization
   (VISSOFT)}, pages 116--125, 2016.
 \newblock \doi{10.1109/VISSOFT.2016.17}.
+
+\bibitem[seacord et~al.(2003)seacord, Plakosh, and Lewis]{seacord2003}
+Robert~C. seacord, Daniel Plakosh, and Grace~A. Lewis.
+\newblock \emph{Modernizing Legacy Systems: Software Technologies, Engineering
+  Process and Business Practices}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., USA, 2003.
+\newblock ISBN 0321118847.
+
+\bibitem[Sommerville(1995)]{Sommerville1995}
+Ian Sommerville.
+\newblock \emph{Software Engineering (5th Ed.)}.
+\newblock Addison Wesley Longman Publishing Co., Inc., USA, 1995.
+\newblock ISBN 0201427656.
 
 \bibitem[Sonnenwald et~al.(1990)Sonnenwald, Gopinath, Haberman, Keese, and
   Myers]{Sonnenwald1990}
