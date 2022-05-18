@@ -6,47 +6,48 @@ Database file #1: biblio.bib
 Warning--to sort, need author, editor, or key in SoftwareEvolution
 Warning--empty author and editor in SoftwareEvolution
 Warning--empty publisher in Stasko2008
+Warning--empty booktitle in Girba2005
 Warning--empty booktitle in Lanza2003
 Warning--empty booktitle in Vickers2004
-You've used 56 entries,
+You've used 57 entries,
             2773 wiz_defined-function locations,
-            1077 strings with 17408 characters,
-and the built_in function-call counts, 30994 in all, are:
-= -- 3019
-> -- 1444
-< -- 65
-+ -- 491
-- -- 435
-* -- 2285
-:= -- 4444
-add.period$ -- 273
-call.type$ -- 56
-change.case$ -- 306
-chr.to.int$ -- 56
-cite$ -- 118
-duplicate$ -- 1626
-empty$ -- 2537
-format.name$ -- 522
-if$ -- 6987
+            1081 strings with 17490 characters,
+and the built_in function-call counts, 31314 in all, are:
+= -- 3044
+> -- 1454
+< -- 66
++ -- 495
+- -- 438
+* -- 2300
+:= -- 4492
+add.period$ -- 276
+call.type$ -- 57
+change.case$ -- 310
+chr.to.int$ -- 57
+cite$ -- 121
+duplicate$ -- 1648
+empty$ -- 2575
+format.name$ -- 526
+if$ -- 7056
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 62
-newline$ -- 377
-num.names$ -- 220
-pop$ -- 614
+missing$ -- 63
+newline$ -- 382
+num.names$ -- 224
+pop$ -- 628
 preamble$ -- 1
-purify$ -- 257
+purify$ -- 260
 quote$ -- 0
-skip$ -- 1356
+skip$ -- 1369
 stack$ -- 0
-substring$ -- 1163
-swap$ -- 468
+substring$ -- 1165
+swap$ -- 469
 text.length$ -- 36
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 581
-warning$ -- 5
-while$ -- 234
+type$ -- 592
+warning$ -- 6
+while$ -- 237
 width$ -- 0
-write$ -- 954
-(There were 5 warnings)
+write$ -- 965
+(There were 6 warnings)
