@@ -26,8 +26,9 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Evolutionary Model\relax }}{18}{figure.caption.21}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Rebuilding history example\relax }}{20}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Evolution matrix of a repository\relax }}{21}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Evolution matrix of a repository\relax }}{22}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Example of two different strategies to identity moments. On the first strategy, we mapped one commit with one moment, so the total number of moments will be equals to the total number of commit. Alternatively, on the second strategy, we created a moment every day. As a result, we have some moments with many commits, and some without anyone. With this strategy, the number of moments will be the same as the number of days that have passed between the first and the last commit. \relax }}{24}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Color association\relax }}{24}{figure.3.6}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Partial history example\relax }}{21}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Evolution matrix of a repository\relax }}{22}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Evolution matrix of a repository\relax }}{23}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Example of two different strategies to identity moments. On the first strategy, we mapped one commit with one moment, so the total number of moments will be equals to the total number of commit. Alternatively, on the second strategy, we created a moment every day. As a result, we have some moments with many commits, and some without anyone. With this strategy, the number of moments will be the same as the number of days that have passed between the first and the last commit. \relax }}{25}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Color association\relax }}{25}{figure.3.7}%
 \addvspace {10\p@ }

@@ -131,12 +131,51 @@ After that, we start to traverse the repository's commit tree.
 As we can notice, for each commit we create a new ProjectVersion. It represents a new version of the system in our model. 
 Therefore, we inspect the commit's changelist and we create a new ProjectVersion for each entry of the list.
 With this operation, we can discover if a file has been added to the system, because on that case the change should represent an ADD operation and thus we can create a new FileHistory. 
-At version 1, three new files were added to the repository (A, B, B) and, as we can see, three new FileHistories were created. 
-Each chage was mapped to a FileVersion (FV), then we added them to the Respective FileHistory and ProjectVersion. 
+At version 1, three new files were added to the repository (A, B, C) and, as we can see, three new FileHistories were created.
+Each chage was mapped to a FileVersion (FV) and consequently added to the respective FileHistory and to the respective ProjectVersion. 
+We did the same thing for the ProjectVersion 2 and 3. 
 
- 
+\subsection*{Partial historical representation}
+One of the goal that be had when we developed this approach, was the possibility to analyze large repository in an acceptable amount of time. 
+In other words, our approach needs to be scalable.
+GitHub host the code of some notorious open source sytems, such as LibraOffice, Elastisearch and Linux.
+All of them have more than 500,000 commints in each and thus, we cannot aim to reconstruct their histories with a singe analyzer, it will take too much time.  
+To prove that, just consider the worse case: Linux. 
+When this thesis was redacted, the repository of Linux has 1,090,563 commits. 
+To move from one commit to another, we can assume that git needs one seconds. 
+As a result, just to navigate through the whole history of Linux, we would need 11 days.
+Moreover, in this simple estimation we are omitting the huge amount of time that the analyzer needs to extract metrics form every sigle file on each version. 
+
+We present a scalable approach, based on the concept of a "partial history". 
+A partial history is an entity that holds information about a specific range of time of the ProjectHistory. 
+So, it can be seen as a subset of a ProjetHistory. 
+We can split the whole repository's history into multiple chunks, each one represented by a partial history, 
+and then when all the analysis are completed, we can merge them to reconstruct the whole story of the repository.
 
 
+\begin{figure}
+    \includegraphics[width=0.6\textwidth]{PartialHistory.png}
+    \caption{Partial history example}
+    \label{fig:PartialHistory}
+\end{figure}
+
+Figure \ref{fig:PartialHistory} shows an example of PartialHistory representation. 
+We split the commit-tree into multiple chunks, and then we can run an analysis on each chunck. 
+This analysis can be done parallelaly since these chunks are independent from each other. 
+At the end, the final history will be represented by a merge of all the PartialHistories. \\
+\\
+Nonetheless we can build PartialHistories in parallel, we cannot do the same for the final History. 
+In fact, the final merge needs to be done sequentially. The sequence needs to follow the order of the commit tree. 
+In figure \ref{fig:PartialHistory}, for example
+PartialHistory1 represent the history from commit 1 to commit 10, 
+PartialHistory 2 represents the history from commit 11 to commit 20, and finally 
+PartialHistory 3 represents the history from commit 21 to commit 30.
+Therefore, the commit order is respected if we merge them in this order: 1, 2, 3. 
+\\
+Obviously, the result of a single analysis and the result of a parallel analysis must be identical. 
+To ensure that, we need to pay attention to the merge operations of our analysis.
+When we merge the history of a repository with a partialhistory, we need to preserve the characteristics of our model. 
+In particual, if FileHistory is already present in our history, we don't have to duplicate it, but instead, we need to update it. 
 
 \section{Visualization}
 
@@ -151,8 +190,6 @@ A file version represents a file in a particular point of time. The difference b
 As a consequence, our new model, depicts every File in the system, as an holder of a set of FileVersions. 
 The File entity, named to be consistent with its scope as FileHistory, is stored on another entity called ProjectHistory, that follows the same logic. 
 In fact a ProjectHistory is no less than a holder of two sets: one for the FileHistories and one for the Versions. 
-
-
 
 
 \begin{itemize}
@@ -294,6 +331,9 @@ Usually, in a repository, there are many file types, so we cannot aim to have a 
 Therefore, we have defined a taxonomy
 
 \subsection*{Height}
+MAPPERS 
+
+
 The height of an entity should represent the value of a metric.
 
 
