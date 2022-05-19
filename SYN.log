@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.28)  18 MAY 2022 14:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.28)  19 MAY 2022 15:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -929,13 +929,16 @@ LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 
 ] [12
 
-] (/Users/gianlo/Develop/thesis/SYN.lof)
-\tf@lof=\write6
-\openout6 = `SYN.lof'.
+] (/Users/gianlo/Develop/thesis/SYN.lof
+Underfull \vbox (badness 1596) has occurred while \output is active []
 
  [13
 
-] [14] (/Users/gianlo/Develop/thesis/SYN.lot)
+])
+\tf@lof=\write6
+\openout6 = `SYN.lof'.
+
+ [14] (/Users/gianlo/Develop/thesis/SYN.lot)
 \tf@lot=\write7
 \openout7 = `SYN.lot'.
 
@@ -968,7 +971,7 @@ LaTeX Font Info:    Font shape `TS1/mdbch/m/n' will be
 
 ]
 Chapter 2.
-<images/stateOfArt/Haibt1959_Flowchart.png, id=332, 450.68375pt x 1260.71pt>
+<images/stateOfArt/Haibt1959_Flowchart.png, id=334, 450.68375pt x 1260.71pt>
 File: images/stateOfArt/Haibt1959_Flowchart.png Graphic file (type png)
 <use images/stateOfArt/Haibt1959_Flowchart.png>
 Package pdftex.def Info: images/stateOfArt/Haibt1959_Flowchart.png  used on input line 12.
@@ -979,27 +982,27 @@ Underfull \hbox (badness 2310) in paragraph at lines 43--45
  []
 
 [5 </Users/gianlo/Develop/thesis/images/stateOfArt/Haibt1959_Flowchart.png>]
-<images/stateOfArt/Nassi1973_NSD.png, id=353, 851.18pt x 1072.005pt>
+<images/stateOfArt/Nassi1973_NSD.png, id=355, 851.18pt x 1072.005pt>
 File: images/stateOfArt/Nassi1973_NSD.png Graphic file (type png)
 <use images/stateOfArt/Nassi1973_NSD.png>
 Package pdftex.def Info: images/stateOfArt/Nassi1973_NSD.png  used on input line 63.
 (pdftex.def)             Requested size: 104.1113pt x 131.12138pt.
-<images/stateOfArt/Brown1988_BalsaII.png, id=354, 574.145pt x 379.4175pt>
+<images/stateOfArt/Brown1988_BalsaII.png, id=356, 574.145pt x 379.4175pt>
 File: images/stateOfArt/Brown1988_BalsaII.png Graphic file (type png)
 <use images/stateOfArt/Brown1988_BalsaII.png>
 Package pdftex.def Info: images/stateOfArt/Brown1988_BalsaII.png  used on input line 68.
 (pdftex.def)             Requested size: 130.13864pt x 85.99629pt.
-<images/stateOfArt/Mueller1988_Rigi.png, id=355, 719.68875pt x 503.8825pt>
+<images/stateOfArt/Mueller1988_Rigi.png, id=357, 719.68875pt x 503.8825pt>
 File: images/stateOfArt/Mueller1988_Rigi.png Graphic file (type png)
 <use images/stateOfArt/Mueller1988_Rigi.png>
 Package pdftex.def Info: images/stateOfArt/Mueller1988_Rigi.png  used on input line 72.
 (pdftex.def)             Requested size: 130.13864pt x 91.11012pt.
-<images/stateOfArt/Eick1992_Seesoft.png, id=358, 501.875pt x 405.515pt>
+<images/stateOfArt/Eick1992_Seesoft.png, id=360, 501.875pt x 405.515pt>
 File: images/stateOfArt/Eick1992_Seesoft.png Graphic file (type png)
 <use images/stateOfArt/Eick1992_Seesoft.png>
 Package pdftex.def Info: images/stateOfArt/Eick1992_Seesoft.png  used on input line 95.
 (pdftex.def)             Requested size: 157.74355pt x 127.45944pt.
-<images/stateOfArt/DePauw1993_Jinsight.png, id=359, 844.15375pt x 717.68124pt>
+<images/stateOfArt/DePauw1993_Jinsight.png, id=361, 844.15375pt x 717.68124pt>
 File: images/stateOfArt/DePauw1993_Jinsight.png Graphic file (type png)
 <use images/stateOfArt/DePauw1993_Jinsight.png>
 Package pdftex.def Info: images/stateOfArt/DePauw1993_Jinsight.png  used on input line 99.
@@ -1012,43 +1015,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--118
 
  []
 
-<images/stateOfArt/Chuan1.png, id=375, 1001.7425pt x 716.6775pt>
+<images/stateOfArt/Chuan1.png, id=377, 1001.7425pt x 716.6775pt>
 File: images/stateOfArt/Chuan1.png Graphic file (type png)
 <use images/stateOfArt/Chuan1.png>
 Package pdftex.def Info: images/stateOfArt/Chuan1.png  used on input line 121.
 (pdftex.def)             Requested size: 126.19724pt x 90.28435pt.
-<images/stateOfArt/Chuan2.png, id=376, 982.67125pt x 654.445pt>
+<images/stateOfArt/Chuan2.png, id=378, 982.67125pt x 654.445pt>
 File: images/stateOfArt/Chuan2.png Graphic file (type png)
 <use images/stateOfArt/Chuan2.png>
 Package pdftex.def Info: images/stateOfArt/Chuan2.png  used on input line 125.
 (pdftex.def)             Requested size: 126.19724pt x 84.04228pt.
-<images/stateOfArt/Chuan3.png, id=377, 981.6675pt x 850.17625pt>
+<images/stateOfArt/Chuan3.png, id=379, 981.6675pt x 850.17625pt>
 File: images/stateOfArt/Chuan3.png Graphic file (type png)
 <use images/stateOfArt/Chuan3.png>
 Package pdftex.def Info: images/stateOfArt/Chuan3.png  used on input line 129.
 (pdftex.def)             Requested size: 126.19724pt x 109.28142pt.
 [7 </Users/gianlo/Develop/thesis/images/stateOfArt/Eick1992_Seesoft.png> </Users/gianlo/Develop/thesis/images/stateOfArt/DePauw1993_Jinsight.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Chuan1.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Chuan2.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Chuan3.png>]
-<images/stateOfArt/EvolutionMatrix1.png, id=394, 653.44125pt x 437.635pt>
+<images/stateOfArt/EvolutionMatrix1.png, id=396, 653.44125pt x 437.635pt>
 File: images/stateOfArt/EvolutionMatrix1.png Graphic file (type png)
 <use images/stateOfArt/EvolutionMatrix1.png>
 Package pdftex.def Info: images/stateOfArt/EvolutionMatrix1.png  used on input line 164.
 (pdftex.def)             Requested size: 193.23727pt x 129.41505pt.
-<images/stateOfArt/EvolutionMatrix2.png, id=395, 653.44125pt x 437.635pt>
+<images/stateOfArt/EvolutionMatrix2.png, id=397, 653.44125pt x 437.635pt>
 File: images/stateOfArt/EvolutionMatrix2.png Graphic file (type png)
 <use images/stateOfArt/EvolutionMatrix2.png>
 Package pdftex.def Info: images/stateOfArt/EvolutionMatrix2.png  used on input line 168.
 (pdftex.def)             Requested size: 193.23727pt x 129.41505pt.
-<images/stateOfArt/Pinzger2005_RelVis.png, id=403, 605.26125pt x 484.81125pt>
+<images/stateOfArt/Pinzger2005_RelVis.png, id=405, 605.26125pt x 484.81125pt>
 File: images/stateOfArt/Pinzger2005_RelVis.png Graphic file (type png)
 <use images/stateOfArt/Pinzger2005_RelVis.png>
 Package pdftex.def Info: images/stateOfArt/Pinzger2005_RelVis.png  used on input line 194.
 (pdftex.def)             Requested size: 130.13864pt x 104.23978pt.
-<images/stateOfArt/DAmbros2006.png, id=404, 636.3775pt x 561.09625pt>
+<images/stateOfArt/DAmbros2006.png, id=406, 636.3775pt x 561.09625pt>
 File: images/stateOfArt/DAmbros2006.png Graphic file (type png)
 <use images/stateOfArt/DAmbros2006.png>
 Package pdftex.def Info: images/stateOfArt/DAmbros2006.png  used on input line 198.
 (pdftex.def)             Requested size: 130.13864pt x 114.74294pt.
-<images/stateOfArt/DAmbros2006a_EvoRadar.png, id=405, 636.3775pt x 561.09625pt>
+<images/stateOfArt/DAmbros2006a_EvoRadar.png, id=407, 636.3775pt x 561.09625pt>
 File: images/stateOfArt/DAmbros2006a_EvoRadar.png Graphic file (type png)
 <use images/stateOfArt/DAmbros2006a_EvoRadar.png>
 Package pdftex.def Info: images/stateOfArt/DAmbros2006a_EvoRadar.png  used on input line 202.
@@ -1057,51 +1060,51 @@ Package pdftex.def Info: images/stateOfArt/DAmbros2006a_EvoRadar.png  used on in
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8 </Users/gianlo/Develop/thesis/images/stateOfArt/EvolutionMatrix1.png> </Users/gianlo/Develop/thesis/images/stateOfArt/EvolutionMatrix2.png>]
-<images/stateOfArt/Steinbrueckner2010.png, id=421, 1060.96375pt x 730.73pt>
+<images/stateOfArt/Steinbrueckner2010.png, id=423, 1060.96375pt x 730.73pt>
 File: images/stateOfArt/Steinbrueckner2010.png Graphic file (type png)
 <use images/stateOfArt/Steinbrueckner2010.png>
 Package pdftex.def Info: images/stateOfArt/Steinbrueckner2010.png  used on input line 214.
 (pdftex.def)             Requested size: 354.91922pt x 244.44205pt.
-<images/stateOfArt/CodeCity.png, id=423, 2098.84125pt x 1173.38374pt>
+<images/stateOfArt/CodeCity.png, id=425, 2098.84125pt x 1173.38374pt>
 File: images/stateOfArt/CodeCity.png Graphic file (type png)
 <use images/stateOfArt/CodeCity.png>
 Package pdftex.def Info: images/stateOfArt/CodeCity.png  used on input line 229.
 (pdftex.def)             Requested size: 354.91922pt x 198.41623pt.
  [9 </Users/gianlo/Develop/thesis/images/stateOfArt/Pinzger2005_RelVis.png> </Users/gianlo/Develop/thesis/images/stateOfArt/DAmbros2006.png> </Users/gianlo/Develop/thesis/images/stateOfArt/DAmbros2006a_EvoRadar.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Steinbrueckner2010.png>]
-<images/stateOfArt/CityVR.png, id=438, 1123.19624pt x 598.235pt>
+<images/stateOfArt/CityVR.png, id=440, 1123.19624pt x 598.235pt>
 File: images/stateOfArt/CityVR.png Graphic file (type png)
 <use images/stateOfArt/CityVR.png>
 Package pdftex.def Info: images/stateOfArt/CityVR.png  used on input line 260.
 (pdftex.def)             Requested size: 126.19724pt x 67.2118pt.
-<images/stateOfArt/ChronoTwigger.png, id=439, 1126.2075pt x 737.75626pt>
+<images/stateOfArt/ChronoTwigger.png, id=441, 1126.2075pt x 737.75626pt>
 File: images/stateOfArt/ChronoTwigger.png Graphic file (type png)
 <use images/stateOfArt/ChronoTwigger.png>
 Package pdftex.def Info: images/stateOfArt/ChronoTwigger.png  used on input line 264.
 (pdftex.def)             Requested size: 126.19724pt x 82.6619pt.
-<images/stateOfArt/CuboidMatrix.png, id=440, 1233.60875pt x 927.465pt>
+<images/stateOfArt/CuboidMatrix.png, id=442, 1233.60875pt x 927.465pt>
 File: images/stateOfArt/CuboidMatrix.png Graphic file (type png)
 <use images/stateOfArt/CuboidMatrix.png>
 Package pdftex.def Info: images/stateOfArt/CuboidMatrix.png  used on input line 268.
 (pdftex.def)             Requested size: 126.19724pt x 94.87473pt.
  [10 </Users/gianlo/Develop/thesis/images/stateOfArt/CodeCity.png> </Users/gianlo/Develop/thesis/images/stateOfArt/CityVR.png> </Users/gianlo/Develop/thesis/images/stateOfArt/ChronoTwigger.png> </Users/gianlo/Develop/thesis/images/stateOfArt/CuboidMatrix.png>]
-<images/stateOfArt/Alexandru_EvoClock.png, id=456, 2201.22375pt x 1152.305pt>
+<images/stateOfArt/Alexandru_EvoClock.png, id=458, 2201.22375pt x 1152.305pt>
 File: images/stateOfArt/Alexandru_EvoClock.png Graphic file (type png)
 <use images/stateOfArt/Alexandru_EvoClock.png>
 Package pdftex.def Info: images/stateOfArt/Alexandru_EvoClock.png  used on input line 285.
 (pdftex.def)             Requested size: 354.91922pt x 185.79677pt.
-<images/stateOfArt/RHDB.png, id=458, 667.49374pt x 281.05pt>
+<images/stateOfArt/RHDB.png, id=460, 667.49374pt x 281.05pt>
 File: images/stateOfArt/RHDB.png Graphic file (type png)
 <use images/stateOfArt/RHDB.png>
 Package pdftex.def Info: images/stateOfArt/RHDB.png  used on input line 311.
 (pdftex.def)             Requested size: 354.91922pt x 149.44467pt.
  [11 </Users/gianlo/Develop/thesis/images/stateOfArt/Alexandru_EvoClock.png>]
-<images/stateOfArt/Salis2019.png, id=470, 873.2625pt x 233.87375pt>
+<images/stateOfArt/Salis2019.png, id=472, 873.2625pt x 233.87375pt>
 File: images/stateOfArt/Salis2019.png Graphic file (type png)
 <use images/stateOfArt/Salis2019.png>
 Package pdftex.def Info: images/stateOfArt/Salis2019.png  used on input line 342.
 (pdftex.def)             Requested size: 354.91922pt x 95.05379pt.
  [12 </Users/gianlo/Develop/thesis/images/stateOfArt/RHDB.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Salis2019.png>]
-<images/stateOfArt/CocoViz.png, id=488, 2400.97pt x 1356.06625pt>
+<images/stateOfArt/CocoViz.png, id=490, 2400.97pt x 1356.06625pt>
 File: images/stateOfArt/CocoViz.png Graphic file (type png)
 <use images/stateOfArt/CocoViz.png>
 Package pdftex.def Info: images/stateOfArt/CocoViz.png  used on input line 396.
@@ -1153,7 +1156,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
  []
 
 [17]
-<images/approach/EvolutionaryModel.jpg, id=524, 941.5175pt x 565.11125pt>
+<images/approach/EvolutionaryModel.jpg, id=526, 941.5175pt x 565.11125pt>
 File: images/approach/EvolutionaryModel.jpg Graphic file (type jpg)
 <use images/approach/EvolutionaryModel.jpg>
 Package pdftex.def Info: images/approach/EvolutionaryModel.jpg  used on input line 51.
@@ -1181,62 +1184,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--121
 
  []
 
-<images/approach/ApproachExample.png, id=539, 1226.5825pt x 779.91376pt>
+<images/approach/ApproachExample.png, id=541, 1226.5825pt x 779.91376pt>
 File: images/approach/ApproachExample.png Graphic file (type png)
 <use images/approach/ApproachExample.png>
 Package pdftex.def Info: images/approach/ApproachExample.png  used on input line 123.
 (pdftex.def)             Requested size: 236.61682pt x 150.44624pt.
 [20 </Users/gianlo/Develop/thesis/images/approach/ApproachExample.png>]
-<images/approach/ApproachMatrix.jpg, id=547, 1003.75pt x 784.9325pt>
-File: images/approach/ApproachMatrix.jpg Graphic file (type jpg)
-<use images/approach/ApproachMatrix.jpg>
-Package pdftex.def Info: images/approach/ApproachMatrix.jpg  used on input line 176.
-(pdftex.def)             Requested size: 236.61682pt x 185.03406pt.
+<images/approach/PartialHistory.png, id=549, 1096.095pt x 891.33pt>
+File: images/approach/PartialHistory.png Graphic file (type png)
+<use images/approach/PartialHistory.png>
+Package pdftex.def Info: images/approach/PartialHistory.png  used on input line 157.
+(pdftex.def)             Requested size: 236.61682pt x 192.40744pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--184
-
- []
-
-[21 </Users/gianlo/Develop/thesis/images/approach/ApproachMatrix.jpg>]
-<images/approach/ApproachMatrix2.png, id=555, 1460.45625pt x 978.65625pt>
-File: images/approach/ApproachMatrix2.png Graphic file (type png)
-<use images/approach/ApproachMatrix2.png>
-Package pdftex.def Info: images/approach/ApproachMatrix2.png  used on input line 203.
-(pdftex.def)             Requested size: 394.35738pt x 264.25565pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--227
+Underfull \hbox (badness 10000) in paragraph at lines 162--179
 
  []
 
-[22 </Users/gianlo/Develop/thesis/images/approach/ApproachMatrix2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 233--238
-
- []
-
-<images/approach/Moments.jpg, id=562, 941.5175pt x 565.11125pt>
-File: images/approach/Moments.jpg Graphic file (type jpg)
-<use images/approach/Moments.jpg>
-Package pdftex.def Info: images/approach/Moments.jpg  used on input line 252.
-(pdftex.def)             Requested size: 354.91922pt x 213.02855pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23]
-<images/approach/ColorAssociation.png, id=569, 155.58125pt x 297.11pt>
-File: images/approach/ColorAssociation.png Graphic file (type png)
-<use images/approach/ColorAssociation.png>
-Package pdftex.def Info: images/approach/ColorAssociation.png  used on input line 271.
-(pdftex.def)             Requested size: 82.81552pt x 158.1521pt.
+ [21 </Users/gianlo/Develop/thesis/images/approach/PartialHistory.png>]
+<images/approach/ApproachMatrix.jpg, id=557, 1003.75pt x 784.9325pt>
+File: images/approach/ApproachMatrix.jpg Graphic file (type jpg)
+<use images/approach/ApproachMatrix.jpg>
+Package pdftex.def Info: images/approach/ApproachMatrix.jpg  used on input line 213.
+(pdftex.def)             Requested size: 236.61682pt x 185.03406pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--286
+Underfull \hbox (badness 10000) in paragraph at lines 210--221
 
  []
 
-[24 </Users/gianlo/Develop/thesis/images/approach/Moments.jpg> </Users/gianlo/Develop/thesis/images/approach/ColorAssociation.png>]) (/Users/gianlo/Develop/thesis/Implementation.tex [25] [26
+[22 </Users/gianlo/Develop/thesis/images/approach/ApproachMatrix.jpg>]
+<images/approach/ApproachMatrix2.png, id=566, 1460.45625pt x 978.65625pt>
+File: images/approach/ApproachMatrix2.png Graphic file (type png)
+<use images/approach/ApproachMatrix2.png>
+Package pdftex.def Info: images/approach/ApproachMatrix2.png  used on input line 240.
+(pdftex.def)             Requested size: 394.35738pt x 264.25565pt.
+ [23 </Users/gianlo/Develop/thesis/images/approach/ApproachMatrix2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 255--264
 
-]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--275
+
+ []
+
+<images/approach/Moments.jpg, id=573, 941.5175pt x 565.11125pt>
+File: images/approach/Moments.jpg Graphic file (type jpg)
+<use images/approach/Moments.jpg>
+Package pdftex.def Info: images/approach/Moments.jpg  used on input line 289.
+(pdftex.def)             Requested size: 354.91922pt x 213.02855pt.
+[24]
+<images/approach/ColorAssociation.png, id=580, 155.58125pt x 297.11pt>
+File: images/approach/ColorAssociation.png Graphic file (type png)
+<use images/approach/ColorAssociation.png>
+Package pdftex.def Info: images/approach/ColorAssociation.png  used on input line 308.
+(pdftex.def)             Requested size: 82.81552pt x 158.1521pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--323
+
+ []
+
+[25 </Users/gianlo/Develop/thesis/images/approach/Moments.jpg> </Users/gianlo/Develop/thesis/images/approach/ColorAssociation.png>]) (/Users/gianlo/Develop/thesis/Implementation.tex [26]
 Chapter 4.
-[27]) [28] (/Users/gianlo/Develop/thesis/SYN.bbl
+[27
+
+]) [28] (/Users/gianlo/Develop/thesis/SYN.bbl
 LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10> not available
 (Font)              Font shape `T1/fvm/m/sl' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
@@ -1249,21 +1263,21 @@ LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `SYN.out' has not changed.
-(rerunfilecheck)             Checksum: 17FAEDD1EC1D6940F758A038FFA87246;3397.
+(rerunfilecheck)             Checksum: 43F4C88BD422680BBABF717169A7308E;3397.
  ) 
 Here is how much of TeX's memory you used:
- 17419 strings out of 478994
- 262027 string characters out of 5858184
+ 17428 strings out of 478994
+ 262282 string characters out of 5858184
  734379 words of memory out of 5000000
- 34325 multiletter control sequences out of 15000+600000
+ 34331 multiletter control sequences out of 15000+600000
  461310 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,11n,131p,670b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/bera/fvmro8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr8t.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri8t.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb>
-Output written on /Users/gianlo/Develop/thesis/SYN.pdf (51 pages, 10520202 bytes).
+Output written on /Users/gianlo/Develop/thesis/SYN.pdf (51 pages, 10571107 bytes).
 PDF statistics:
- 742 PDF objects out of 1000 (max. 8388607)
- 614 compressed objects within 7 object streams
- 176 named destinations out of 1000 (max. 500000)
- 362 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 749 PDF objects out of 1000 (max. 8388607)
+ 619 compressed objects within 7 object streams
+ 178 named destinations out of 1000 (max. 500000)
+ 367 words of extra memory for PDF output out of 10000 (max. 10000000)
 
