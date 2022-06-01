@@ -1,4 +1,4 @@
-\begin{thebibliography}{57}
+\begin{thebibliography}{58}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -116,6 +116,11 @@ Christopher~J. DiGiano, Ronald~M. Baecker, and Russell~N. Owen.
 \newblock ISBN 0897915755.
 \newblock \doi{10.1145/169059.169229}.
 \newblock URL \url{https://doi.org/10.1145/169059.169229}.
+
+\bibitem[Dijkstra(1971)]{Dijkstra1971a}
+Edsger~Wybe Dijkstra.
+\newblock \emph{Ewd316: A short introduction to the art of programming}.
+\newblock Technische Hogeschool, 1971.
 
 \bibitem[Eick et~al.(1992)Eick, Steffen, and Sumner]{Eick1992}
 Stephen~G. Eick, Joseph~L. Steffen, and Eric~E. Sumner.
