@@ -1,12 +1,14 @@
 ## Approach [Analysis]
  - [X] History representation
  - [X] Partial history concept
+ - [X] Metrics
 
  ## Approach [Visualization]
- - [ ] 2D approach matrix
- - [ ] 3D approach
- - [ ] Layout
- - [ ] Color
+ - [X] 2D approach matrix
+ - [X] 3D approach
+ - [X] Layout
+ - [X] Moment
+ - [X] Color
  - [ ] Shape
  - [ ] Height
 
