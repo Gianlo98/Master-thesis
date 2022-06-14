@@ -34,3 +34,8 @@
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Example of two different strategies to identity moments. In the first strategy, we mapped one commit with one moment, so the number of moments will equal the number of commits. Alternatively, in the second strategy, we created a moment every day. As a result, we have moments with many commits and some without anyone. With this strategy, the number of moments will be the same as the number of days between the first and the last commit. \relax }}{25}{figure.caption.36}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Color association\relax }}{25}{figure.3.9}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Architecture of SYN\relax }}{30}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Model: Project entities\relax }}{31}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Model: History entities\relax }}{31}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Model: Change entities\relax }}{32}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Partition of the commit tree with 3 workers.\relax }}{37}{figure.caption.48}%
