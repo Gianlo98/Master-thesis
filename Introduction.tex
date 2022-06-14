@@ -21,7 +21,7 @@ a complex software system's analysis.
 Usually, a massive quantity of multivariate evolutionary data needs to be depicted. Several tools have been proposed in the literature to do that \cite{Merino2018a}.
 
 Moreover, numerous techniques have been presented in the literature to facilitate program comprehension. 
-The main challenge that each visualization technique has to deal with, is to identify the relevant aspects to be depicted and effectively present them. 
+The main challenge that each visualization technique has to deal with is to identify the relevant aspects to be depicted and effectively present them. 
 The effectiveness of a software visualization technique could be enhanced by combining it with audio. 
 The term "program auralization" was coined for this reason, and it aims to communicate information about the program in an auditory way.
 Several studies were done to measure the advantages given by audio as a communication medium \cite{Alty1995}. 
@@ -34,22 +34,19 @@ Our technique models and mines efficiently large git repositories. We also offer
 which represents the evolutionary process through an interactive visual depiction of the evolving software artifacts complemented by an auditive portrayal of the evolution. 
 
 \section{Contribution}
-We can summarize the main contribution of this work as follows:
+We can summarize the main contributions of this work as follows:
 \begin{itemize}
- \item We proposed an approach to model the history of a large git repository.
- \item We proposed an approach to mine large git repositories.
- \item We proposed an approach based on synesthesia, which represents the evolutionary process through an interactive visual depiction of the evolving software artifacts complemented by an auditive portrayal of the evolution.
- \item We engineered a tool, SYN, which supports our approach as an interactive web application
- \item We applied SYN to real-life systems and presented several insights and reflections. 
+ \item an approach and an implementation to model the history of a large git repository.
+ \item an approach and an implementation to represent the evolutionary process through an interactive visual depiction of the evolving software artifacts.
+ \item an approach and an implementation to auralize evolutionary information. 
 \end{itemize}
 
 \section{Structure of the document}
 This document is organized as follows
 \begin{itemize}
- \item {Chapter 1}
- \item {Chapter 2}
- \item {Chapter 3}
- \item {Chapter 4}
- \item {Chapter 5}
-
-\end{itemize}
+ \item In Chapter 2, we describe the state of the art in the field of software visualization, repository mining, and software auralization. We look at evolution models, 2D and 3D visualizations. 
+ \item In Chapter 3, we describe three approaches. One to mine and model the history of large git repositories, one to visualize evolutionary information of software systems and one to produce an auditive model of the evolution. 
+ \item In Chapter 4, we present SYN, a software platform that implements our approach. 
+ \item In Chapter 5, we validate our approach by analyzing three open-source software systems and we present the results. 
+ \item In Chapter 6, we conclude the thesis with a summary and possible directions for future work.
+ \end{itemize}

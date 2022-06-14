@@ -25,6 +25,7 @@ Our approach is composed of three parts: \begin{itemize}
 
 
 \section{Evolution Model}
+\label{s:EvolutionModel}
 
 \begin{figure}[H]
     \includegraphics[width=0.6\textwidth]{EvolutionaryModel.jpg}
@@ -115,6 +116,7 @@ At version 1, three new files were added to the repository (A, B, C), and, as we
 Each change was mapped to a FileVersion (FV) and consequently added to the respective FileHistory and ProjectVersion. 
 We did the same thing for ProjectVersion 2 and 3. 
 
+\label{s:partialHistoricalRepr}
 \subsection*{Partial historical representation}
 One of the goals that we had when we developed this approach was the possibility of analyzing a large repository in an acceptable amount of time. 
 In other words, our approach needs to be scalable.
@@ -156,6 +158,7 @@ To ensure that, we need to pay attention to the merge operations of our analysis
 When we merge the history of a repository with a partial history, we need to preserve the characteristics of our model. 
 In particular, if FileHistory is already present in our history, we don't have to duplicate it, but instead, we need to update it. 
 
+\label{s:evolutionaryMetrics}
 \subsection*{Evolutionary metrics}
 Every version of the system holds a set of files. 
 As we said, each file is represented by a FileVersion, which is part of a FileHistory. 
@@ -262,6 +265,7 @@ So, each time we need to display a ProjectVersion, we have to take all its FileV
 
 
 \subsection*{3D representation}
+\label{s:3DRepr}
 
 Software systems are hard to understand due to the complexity and the sheer size of the data to be analyzed.
 Our 3D representation aims to make the analysis of a system easier for engineers by exploiting the human senses.
