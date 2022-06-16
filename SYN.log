@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.28)  14 JUN 2022 18:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.28)  16 JUN 2022 19:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -983,7 +983,7 @@ LaTeX Font Info:    Font shape `TS1/mdbch/m/n' will be
 (Font)              scaled to size 9.60007pt on input line 39.
 ) (/Users/gianlo/Develop/thesis/StateOfArt.tex [2]
 Chapter 2.
-<images/stateOfArt/Haibt1959_Flowchart.png, id=318, 450.68375pt x 1260.71pt>
+<images/stateOfArt/Haibt1959_Flowchart.png, id=328, 450.68375pt x 1260.71pt>
 File: images/stateOfArt/Haibt1959_Flowchart.png Graphic file (type png)
 <use images/stateOfArt/Haibt1959_Flowchart.png>
 Package pdftex.def Info: images/stateOfArt/Haibt1959_Flowchart.png  used on input line 12.
@@ -996,28 +996,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--32
 [3
 
  </Users/gianlo/Develop/thesis/images/stateOfArt/Haibt1959_Flowchart.png>]
-<images/stateOfArt/Nassi1973_NSD.png, id=345, 851.18pt x 1072.005pt>
+<images/stateOfArt/Nassi1973_NSD.png, id=355, 851.18pt x 1072.005pt>
 File: images/stateOfArt/Nassi1973_NSD.png Graphic file (type png)
 <use images/stateOfArt/Nassi1973_NSD.png>
 Package pdftex.def Info: images/stateOfArt/Nassi1973_NSD.png  used on input line 90.
 (pdftex.def)             Requested size: 104.1113pt x 131.12138pt.
-<images/stateOfArt/Brown1988_BalsaII.png, id=346, 574.145pt x 379.4175pt>
+<images/stateOfArt/Brown1988_BalsaII.png, id=356, 574.145pt x 379.4175pt>
 File: images/stateOfArt/Brown1988_BalsaII.png Graphic file (type png)
 <use images/stateOfArt/Brown1988_BalsaII.png>
 Package pdftex.def Info: images/stateOfArt/Brown1988_BalsaII.png  used on input line 95.
 (pdftex.def)             Requested size: 130.13864pt x 85.99629pt.
-<images/stateOfArt/Mueller1988_Rigi.png, id=347, 719.68875pt x 503.8825pt>
+<images/stateOfArt/Mueller1988_Rigi.png, id=357, 719.68875pt x 503.8825pt>
 File: images/stateOfArt/Mueller1988_Rigi.png Graphic file (type png)
 <use images/stateOfArt/Mueller1988_Rigi.png>
 Package pdftex.def Info: images/stateOfArt/Mueller1988_Rigi.png  used on input line 99.
 (pdftex.def)             Requested size: 130.13864pt x 91.11012pt.
  [4]
-<images/stateOfArt/Eick1992_Seesoft.png, id=360, 501.875pt x 405.515pt>
+<images/stateOfArt/Eick1992_Seesoft.png, id=370, 501.875pt x 405.515pt>
 File: images/stateOfArt/Eick1992_Seesoft.png Graphic file (type png)
 <use images/stateOfArt/Eick1992_Seesoft.png>
 Package pdftex.def Info: images/stateOfArt/Eick1992_Seesoft.png  used on input line 122.
 (pdftex.def)             Requested size: 157.74355pt x 127.45944pt.
-<images/stateOfArt/DePauw1993_Jinsight.png, id=361, 844.15375pt x 717.68124pt>
+<images/stateOfArt/DePauw1993_Jinsight.png, id=371, 844.15375pt x 717.68124pt>
 File: images/stateOfArt/DePauw1993_Jinsight.png Graphic file (type png)
 <use images/stateOfArt/DePauw1993_Jinsight.png>
 Package pdftex.def Info: images/stateOfArt/DePauw1993_Jinsight.png  used on input line 126.
@@ -1028,27 +1028,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--145
  []
 
 [5 </Users/gianlo/Develop/thesis/images/stateOfArt/Nassi1973_NSD.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Brown1988_BalsaII.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Mueller1988_Rigi.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Eick1992_Seesoft.png> </Users/gianlo/Develop/thesis/images/stateOfArt/DePauw1993_Jinsight.png>]
-<images/stateOfArt/Chuan1.png, id=376, 1001.7425pt x 716.6775pt>
+<images/stateOfArt/Chuan1.png, id=386, 1001.7425pt x 716.6775pt>
 File: images/stateOfArt/Chuan1.png Graphic file (type png)
 <use images/stateOfArt/Chuan1.png>
 Package pdftex.def Info: images/stateOfArt/Chuan1.png  used on input line 148.
 (pdftex.def)             Requested size: 126.19724pt x 90.28435pt.
-<images/stateOfArt/Chuan2.png, id=377, 982.67125pt x 654.445pt>
+<images/stateOfArt/Chuan2.png, id=387, 982.67125pt x 654.445pt>
 File: images/stateOfArt/Chuan2.png Graphic file (type png)
 <use images/stateOfArt/Chuan2.png>
 Package pdftex.def Info: images/stateOfArt/Chuan2.png  used on input line 152.
 (pdftex.def)             Requested size: 126.19724pt x 84.04228pt.
-<images/stateOfArt/Chuan3.png, id=378, 981.6675pt x 850.17625pt>
+<images/stateOfArt/Chuan3.png, id=388, 981.6675pt x 850.17625pt>
 File: images/stateOfArt/Chuan3.png Graphic file (type png)
 <use images/stateOfArt/Chuan3.png>
 Package pdftex.def Info: images/stateOfArt/Chuan3.png  used on input line 156.
 (pdftex.def)             Requested size: 126.19724pt x 109.28142pt.
-<images/stateOfArt/EvolutionMatrix1.png, id=382, 653.44125pt x 437.635pt>
+<images/stateOfArt/EvolutionMatrix1.png, id=392, 653.44125pt x 437.635pt>
 File: images/stateOfArt/EvolutionMatrix1.png Graphic file (type png)
 <use images/stateOfArt/EvolutionMatrix1.png>
 Package pdftex.def Info: images/stateOfArt/EvolutionMatrix1.png  used on input line 191.
 (pdftex.def)             Requested size: 193.23727pt x 129.41505pt.
-<images/stateOfArt/EvolutionMatrix2.png, id=383, 653.44125pt x 437.635pt>
+<images/stateOfArt/EvolutionMatrix2.png, id=393, 653.44125pt x 437.635pt>
 File: images/stateOfArt/EvolutionMatrix2.png Graphic file (type png)
 <use images/stateOfArt/EvolutionMatrix2.png>
 Package pdftex.def Info: images/stateOfArt/EvolutionMatrix2.png  used on input line 195.
@@ -1057,28 +1057,28 @@ Package pdftex.def Info: images/stateOfArt/EvolutionMatrix2.png  used on input l
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6 </Users/gianlo/Develop/thesis/images/stateOfArt/Chuan1.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Chuan2.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Chuan3.png>]
-<images/stateOfArt/Pinzger2005_RelVis.png, id=401, 605.26125pt x 484.81125pt>
+<images/stateOfArt/Pinzger2005_RelVis.png, id=411, 605.26125pt x 484.81125pt>
 File: images/stateOfArt/Pinzger2005_RelVis.png Graphic file (type png)
 <use images/stateOfArt/Pinzger2005_RelVis.png>
 Package pdftex.def Info: images/stateOfArt/Pinzger2005_RelVis.png  used on input line 221.
 (pdftex.def)             Requested size: 130.13864pt x 104.23978pt.
-<images/stateOfArt/DAmbros2006.png, id=402, 636.3775pt x 561.09625pt>
+<images/stateOfArt/DAmbros2006.png, id=412, 636.3775pt x 561.09625pt>
 File: images/stateOfArt/DAmbros2006.png Graphic file (type png)
 <use images/stateOfArt/DAmbros2006.png>
 Package pdftex.def Info: images/stateOfArt/DAmbros2006.png  used on input line 225.
 (pdftex.def)             Requested size: 130.13864pt x 114.74294pt.
-<images/stateOfArt/DAmbros2006a_EvoRadar.png, id=403, 636.3775pt x 561.09625pt>
+<images/stateOfArt/DAmbros2006a_EvoRadar.png, id=413, 636.3775pt x 561.09625pt>
 File: images/stateOfArt/DAmbros2006a_EvoRadar.png Graphic file (type png)
 <use images/stateOfArt/DAmbros2006a_EvoRadar.png>
 Package pdftex.def Info: images/stateOfArt/DAmbros2006a_EvoRadar.png  used on input line 229.
 (pdftex.def)             Requested size: 130.13864pt x 114.74294pt.
-<images/stateOfArt/Steinbrueckner2010.png, id=405, 1060.96375pt x 730.73pt>
+<images/stateOfArt/Steinbrueckner2010.png, id=415, 1060.96375pt x 730.73pt>
 File: images/stateOfArt/Steinbrueckner2010.png Graphic file (type png)
 <use images/stateOfArt/Steinbrueckner2010.png>
 Package pdftex.def Info: images/stateOfArt/Steinbrueckner2010.png  used on input line 241.
 (pdftex.def)             Requested size: 354.91922pt x 244.44205pt.
  [7 </Users/gianlo/Develop/thesis/images/stateOfArt/EvolutionMatrix1.png> </Users/gianlo/Develop/thesis/images/stateOfArt/EvolutionMatrix2.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Pinzger2005_RelVis.png> </Users/gianlo/Develop/thesis/images/stateOfArt/DAmbros2006.png> </Users/gianlo/Develop/thesis/images/stateOfArt/DAmbros2006a_EvoRadar.png>]
-<images/stateOfArt/CodeCity.png, id=425, 2098.84125pt x 1173.38374pt>
+<images/stateOfArt/CodeCity.png, id=435, 2098.84125pt x 1173.38374pt>
 File: images/stateOfArt/CodeCity.png Graphic file (type png)
 <use images/stateOfArt/CodeCity.png>
 Package pdftex.def Info: images/stateOfArt/CodeCity.png  used on input line 256.
@@ -1087,40 +1087,40 @@ Package pdftex.def Info: images/stateOfArt/CodeCity.png  used on input line 256.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8 </Users/gianlo/Develop/thesis/images/stateOfArt/Steinbrueckner2010.png>]
-<images/stateOfArt/CityVR.png, id=436, 1123.19624pt x 598.235pt>
+<images/stateOfArt/CityVR.png, id=446, 1123.19624pt x 598.235pt>
 File: images/stateOfArt/CityVR.png Graphic file (type png)
 <use images/stateOfArt/CityVR.png>
 Package pdftex.def Info: images/stateOfArt/CityVR.png  used on input line 287.
 (pdftex.def)             Requested size: 126.19724pt x 67.2118pt.
-<images/stateOfArt/ChronoTwigger.png, id=437, 1126.2075pt x 737.75626pt>
+<images/stateOfArt/ChronoTwigger.png, id=447, 1126.2075pt x 737.75626pt>
 File: images/stateOfArt/ChronoTwigger.png Graphic file (type png)
 <use images/stateOfArt/ChronoTwigger.png>
 Package pdftex.def Info: images/stateOfArt/ChronoTwigger.png  used on input line 291.
 (pdftex.def)             Requested size: 126.19724pt x 82.6619pt.
-<images/stateOfArt/CuboidMatrix.png, id=438, 1233.60875pt x 927.465pt>
+<images/stateOfArt/CuboidMatrix.png, id=448, 1233.60875pt x 927.465pt>
 File: images/stateOfArt/CuboidMatrix.png Graphic file (type png)
 <use images/stateOfArt/CuboidMatrix.png>
 Package pdftex.def Info: images/stateOfArt/CuboidMatrix.png  used on input line 295.
 (pdftex.def)             Requested size: 126.19724pt x 94.87473pt.
  [9 </Users/gianlo/Develop/thesis/images/stateOfArt/CodeCity.png> </Users/gianlo/Develop/thesis/images/stateOfArt/CityVR.png> </Users/gianlo/Develop/thesis/images/stateOfArt/ChronoTwigger.png> </Users/gianlo/Develop/thesis/images/stateOfArt/CuboidMatrix.png>]
-<images/stateOfArt/Alexandru_EvoClock.png, id=454, 2201.22375pt x 1152.305pt>
+<images/stateOfArt/Alexandru_EvoClock.png, id=464, 2201.22375pt x 1152.305pt>
 File: images/stateOfArt/Alexandru_EvoClock.png Graphic file (type png)
 <use images/stateOfArt/Alexandru_EvoClock.png>
 Package pdftex.def Info: images/stateOfArt/Alexandru_EvoClock.png  used on input line 312.
 (pdftex.def)             Requested size: 354.91922pt x 185.79677pt.
-<images/stateOfArt/RHDB.png, id=456, 667.49374pt x 281.05pt>
+<images/stateOfArt/RHDB.png, id=466, 667.49374pt x 281.05pt>
 File: images/stateOfArt/RHDB.png Graphic file (type png)
 <use images/stateOfArt/RHDB.png>
 Package pdftex.def Info: images/stateOfArt/RHDB.png  used on input line 338.
 (pdftex.def)             Requested size: 354.91922pt x 149.44467pt.
  [10 </Users/gianlo/Develop/thesis/images/stateOfArt/Alexandru_EvoClock.png>]
-<images/stateOfArt/Salis2019.png, id=468, 873.2625pt x 233.87375pt>
+<images/stateOfArt/Salis2019.png, id=478, 873.2625pt x 233.87375pt>
 File: images/stateOfArt/Salis2019.png Graphic file (type png)
 <use images/stateOfArt/Salis2019.png>
 Package pdftex.def Info: images/stateOfArt/Salis2019.png  used on input line 369.
 (pdftex.def)             Requested size: 354.91922pt x 95.05379pt.
  [11 </Users/gianlo/Develop/thesis/images/stateOfArt/RHDB.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Salis2019.png>]
-<images/stateOfArt/CocoViz.png, id=486, 2400.97pt x 1356.06625pt>
+<images/stateOfArt/CocoViz.png, id=496, 2400.97pt x 1356.06625pt>
 File: images/stateOfArt/CocoViz.png Graphic file (type png)
 <use images/stateOfArt/CocoViz.png>
 Package pdftex.def Info: images/stateOfArt/CocoViz.png  used on input line 423.
@@ -1147,7 +1147,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 440--459
 
 [13 </Users/gianlo/Develop/thesis/images/stateOfArt/CocoViz.png>]) (/Users/gianlo/Develop/thesis/Approach.tex [14]
 Chapter 3.
-<images/approach/EvolutionaryModel.jpg, id=513, 941.5175pt x 565.11125pt>
+<images/approach/EvolutionaryModel.jpg, id=523, 941.5175pt x 565.11125pt>
 File: images/approach/EvolutionaryModel.jpg Graphic file (type jpg)
 <use images/approach/EvolutionaryModel.jpg>
 Package pdftex.def Info: images/approach/EvolutionaryModel.jpg  used on input line 31.
@@ -1180,13 +1180,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--102
 
  []
 
-<images/approach/ApproachExample.png, id=531, 1226.5825pt x 779.91376pt>
+<images/approach/ApproachExample.png, id=541, 1226.5825pt x 779.91376pt>
 File: images/approach/ApproachExample.png Graphic file (type png)
 <use images/approach/ApproachExample.png>
 Package pdftex.def Info: images/approach/ApproachExample.png  used on input line 104.
 (pdftex.def)             Requested size: 236.61682pt x 150.44624pt.
 [18 </Users/gianlo/Develop/thesis/images/approach/ApproachExample.png>]
-<images/approach/PartialHistory.png, id=539, 1096.095pt x 891.33pt>
+<images/approach/PartialHistory.png, id=549, 1096.095pt x 891.33pt>
 File: images/approach/PartialHistory.png Graphic file (type png)
 <use images/approach/PartialHistory.png>
 Package pdftex.def Info: images/approach/PartialHistory.png  used on input line 138.
@@ -1212,7 +1212,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--172
  []
 
 [19 </Users/gianlo/Develop/thesis/images/approach/PartialHistory.png>]
-<images/approach/Taxonomy.jpg, id=548, 678.535pt x 194.7275pt>
+<images/approach/Taxonomy.jpg, id=558, 678.535pt x 194.7275pt>
 File: images/approach/Taxonomy.jpg Graphic file (type jpg)
 <use images/approach/Taxonomy.jpg>
 Package pdftex.def Info: images/approach/Taxonomy.jpg  used on input line 176.
@@ -1228,7 +1228,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--212
  []
 
 [20 </Users/gianlo/Develop/thesis/images/approach/Taxonomy.jpg>]
-<images/approach/ApproachMatrix.jpg, id=558, 1003.75pt x 784.9325pt>
+<images/approach/ApproachMatrix.jpg, id=568, 1003.75pt x 784.9325pt>
 File: images/approach/ApproachMatrix.jpg Graphic file (type jpg)
 <use images/approach/ApproachMatrix.jpg>
 Package pdftex.def Info: images/approach/ApproachMatrix.jpg  used on input line 227.
@@ -1239,7 +1239,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 231--235
  []
 
 [21 </Users/gianlo/Develop/thesis/images/approach/ApproachMatrix.jpg>]
-<images/approach/ApproachMatrix2.png, id=566, 1460.45625pt x 978.65625pt>
+<images/approach/ApproachMatrix2.png, id=576, 1460.45625pt x 978.65625pt>
 File: images/approach/ApproachMatrix2.png Graphic file (type png)
 <use images/approach/ApproachMatrix2.png>
 Package pdftex.def Info: images/approach/ApproachMatrix2.png  used on input line 252.
@@ -1250,7 +1250,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 270--279
  []
 
 [22 </Users/gianlo/Develop/thesis/images/approach/ApproachMatrix2.png>]
-<images/approach/Layout.png, id=573, 669.50125pt x 671.50874pt>
+<images/approach/Layout.png, id=583, 669.50125pt x 671.50874pt>
 File: images/approach/Layout.png Graphic file (type png)
 <use images/approach/Layout.png>
 Package pdftex.def Info: images/approach/Layout.png  used on input line 296.
@@ -1263,12 +1263,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 304--307
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 8.43994pt on input line 311.
 [23] [24 </Users/gianlo/Develop/thesis/images/approach/Layout.png>]
-<images/approach/Moments.jpg, id=587, 941.5175pt x 565.11125pt>
+<images/approach/Moments.jpg, id=597, 941.5175pt x 565.11125pt>
 File: images/approach/Moments.jpg Graphic file (type jpg)
 <use images/approach/Moments.jpg>
 Package pdftex.def Info: images/approach/Moments.jpg  used on input line 326.
 (pdftex.def)             Requested size: 354.91922pt x 213.02855pt.
-<images/approach/ColorAssociation.png, id=589, 155.58125pt x 297.11pt>
+<images/approach/ColorAssociation.png, id=599, 155.58125pt x 297.11pt>
 File: images/approach/ColorAssociation.png Graphic file (type png)
 <use images/approach/ColorAssociation.png>
 Package pdftex.def Info: images/approach/ColorAssociation.png  used on input line 343.
@@ -1312,222 +1312,269 @@ Underfull \hbox (badness 10000) in paragraph at lines 371--376
 
 ]
 Chapter 4.
-<images/implementation/SYNArchitecture.jpg, id=616, 1088.065pt x 569.12625pt>
+[29]
+<images/implementation/SYNArchitecture.jpg, id=630, 1089.06876pt x 616.3025pt>
 File: images/implementation/SYNArchitecture.jpg Graphic file (type jpg)
 <use images/implementation/SYNArchitecture.jpg>
-Package pdftex.def Info: images/implementation/SYNArchitecture.jpg  used on input line 33.
-(pdftex.def)             Requested size: 394.35738pt x 206.27475pt.
-[29] [30 </Users/gianlo/Develop/thesis/images/implementation/SYNArchitecture.jpg>]
-<images/implementation/UMLProject.png, id=629, 318.18875pt x 449.68pt>
+Package pdftex.def Info: images/implementation/SYNArchitecture.jpg  used on input line 41.
+(pdftex.def)             Requested size: 394.35738pt x 223.16647pt.
+ [30 </Users/gianlo/Develop/thesis/images/implementation/SYNArchitecture.jpg>]
+<images/implementation/UMLProject.png, id=639, 318.18875pt x 449.68pt>
 File: images/implementation/UMLProject.png Graphic file (type png)
 <use images/implementation/UMLProject.png>
-Package pdftex.def Info: images/implementation/UMLProject.png  used on input line 63.
+Package pdftex.def Info: images/implementation/UMLProject.png  used on input line 70.
 (pdftex.def)             Requested size: 78.87027pt x 111.45909pt.
-<images/implementation/UMLHistory.png, id=630, 1020.81375pt x 668.4975pt>
+<images/implementation/UMLHistory.png, id=640, 1020.81375pt x 668.4975pt>
 File: images/implementation/UMLHistory.png Graphic file (type png)
 <use images/implementation/UMLHistory.png>
-Package pdftex.def Info: images/implementation/UMLHistory.png  used on input line 72.
+Package pdftex.def Info: images/implementation/UMLHistory.png  used on input line 79.
 (pdftex.def)             Requested size: 78.87027pt x 51.6448pt.
  [31 </Users/gianlo/Develop/thesis/images/implementation/UMLProject.png> </Users/gianlo/Develop/thesis/images/implementation/UMLHistory.png>]
-<images/implementation/UMLChanges.png, id=640, 938.50626pt x 284.06125pt>
+<images/implementation/UMLChanges.png, id=650, 938.50626pt x 284.06125pt>
 File: images/implementation/UMLChanges.png Graphic file (type png)
 <use images/implementation/UMLChanges.png>
-Package pdftex.def Info: images/implementation/UMLChanges.png  used on input line 108.
+Package pdftex.def Info: images/implementation/UMLChanges.png  used on input line 115.
 (pdftex.def)             Requested size: 197.17868pt x 59.68062pt.
  [32 </Users/gianlo/Develop/thesis/images/implementation/UMLChanges.png>] [33] [34]
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 202.
+(textcomp)             Default family used instead on input line 209.
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 202.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 202.
-
-Underfull \hbox (badness 10000) in paragraph at lines 202--207
-
- []
-
+(textcomp)             Default family used instead on input line 209.
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family mdbch in TS1 encoding.
 (textcomp)             Default family used instead on input line 209.
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--212
+Underfull \hbox (badness 10000) in paragraph at lines 209--214
 
  []
 
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 214.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 214.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 215.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 215.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 215.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 223.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 223.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 224.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 224.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 231.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 231.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 231.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 231.
+(textcomp)             Default family used instead on input line 216.
 
-Overfull \hbox (23.16211pt too wide) in paragraph at lines 231--235
+Underfull \hbox (badness 10000) in paragraph at lines 216--219
+
+ []
+
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 221.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 221.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 222.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 222.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 222.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 230.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 230.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 231.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 231.
+[35]
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 238.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 238.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 238.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 238.
+
+Overfull \hbox (23.16211pt too wide) in paragraph at lines 238--242
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--235
+Underfull \hbox (badness 10000) in paragraph at lines 238--242
 
  []
 
-[35]
-Underfull \hbox (badness 10000) in paragraph at lines 240--243
 
- []
-
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 245.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 245.
-
-Underfull \hbox (badness 10000) in paragraph at lines 245--248
+Underfull \hbox (badness 10000) in paragraph at lines 247--250
 
  []
 
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 250.
+(textcomp)             Default family used instead on input line 252.
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 253.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 253.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 253.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 253.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 253.
+(textcomp)             Default family used instead on input line 252.
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--254
+Underfull \hbox (badness 10000) in paragraph at lines 252--255
 
- []
-
-
-Overfull \hbox (3.31787pt too wide) in paragraph at lines 250--254
-\T1/mdbch/m/n/10 To do so, it ex-ploits the out-put the com-mand "[][][][][][][][][][][][][][]",
  []
 
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 256.
+(textcomp)             Default family used instead on input line 257.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 260.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 260.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 260.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 260.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 260.
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--259
+Underfull \hbox (badness 10000) in paragraph at lines 257--261
 
  []
 
-<images/implementation/HistorySplit.jpg, id=673, 1537.745pt x 1183.42125pt>
+
+Overfull \hbox (13.36914pt too wide) in paragraph at lines 257--261
+\T1/mdbch/m/n/10 To do so, it ex-ploits the out-put of the com-mand "[][][][][][][][][][][][][][]",
+ []
+
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family mdbch in TS1 encoding.
+(textcomp)             Default family used instead on input line 263.
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--266
+
+ []
+
+<images/implementation/HistorySplit.jpg, id=680, 1537.745pt x 1183.42125pt>
 File: images/implementation/HistorySplit.jpg Graphic file (type jpg)
 <use images/implementation/HistorySplit.jpg>
-Package pdftex.def Info: images/implementation/HistorySplit.jpg  used on input line 273.
+Package pdftex.def Info: images/implementation/HistorySplit.jpg  used on input line 280.
 (pdftex.def)             Requested size: 394.35738pt x 303.49292pt.
-[36] [37 </Users/gianlo/Develop/thesis/images/implementation/HistorySplit.jpg>] [38]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 335.
+[36] [37 </Users/gianlo/Develop/thesis/images/implementation/HistorySplit.jpg>]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 342.
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 337.
+(Font)              scaled to size 7.68005pt on input line 344.
 LaTeX Font Info:    Font shape `T1/mdbch/m/fsc' will be
-(Font)              scaled to size 9.60007pt on input line 337.
- [39]
-Overfull \hbox (8.44972pt too wide) in paragraph at lines 386--389
+(Font)              scaled to size 9.60007pt on input line 344.
+ [38] [39]
+Overfull \hbox (8.44972pt too wide) in paragraph at lines 393--396
 []\T1/mdbch/m/n/10 => \T1/fvm/m/n/10 createProject(projectName: String!, projectLocation: String!): Project
  []
 
 
-Overfull \hbox (82.99916pt too wide) in paragraph at lines 400--404
+Overfull \hbox (82.99916pt too wide) in paragraph at lines 407--411
 []\T1/fvm/m/n/10 partialView(projectId: Int!, viewSpecification: ViewSpecificationInput!, viewAnimationId:
  []
 
 
-Overfull \hbox (23.09882pt too wide) in paragraph at lines 400--404
-\T1/mdbch/m/n/10 returns a view with only the next 100 an-i-ma-tion start-ing from the one iden-ti-fied by \T1/fvm/m/n/10 viewAnimationId\T1/mdbch/m/n/10 .
+Overfull \hbox (26.93883pt too wide) in paragraph at lines 407--411
+\T1/mdbch/m/n/10 returns a view with only the next 100 an-i-ma-tions start-ing from the one iden-ti-fied by \T1/fvm/m/n/10 viewAnimationId\T1/mdbch/m/n/10 .
  []
 
 
-Overfull \hbox (32.19075pt too wide) in paragraph at lines 408--410
+Overfull \hbox (32.19075pt too wide) in paragraph at lines 415--417
 []\T1/fvm/m/n/10 projectVersions(projectId: Int!, projectVersionsId: [Int]!): [ProjectVersion]! 
  []
 
 
-Overfull \hbox (22.02907pt too wide) in paragraph at lines 411--413
+Overfull \hbox (22.02907pt too wide) in paragraph at lines 418--420
 []\T1/fvm/m/n/10 groupingPreview(projectId: Int!, viewSpecification: ViewSpecificationInput!):
  []
 
 [40]
-Overfull \hbox (37.27159pt too wide) in paragraph at lines 417--419
+Overfull \hbox (37.27159pt too wide) in paragraph at lines 424--426
 []\T1/fvm/m/n/10 fileTypeMetrics(projectId: Int!, fileTypeFilter: [String]): [FileTypeMetrics!]! 
  []
 
-) [41] [42
+[41]
+<images/implementation/SYNUI-settings1.png, id=729, 1896.08376pt x 910.40125pt>
+File: images/implementation/SYNUI-settings1.png Graphic file (type png)
+<use images/implementation/SYNUI-settings1.png>
+Package pdftex.def Info: images/implementation/SYNUI-settings1.png  used on input line 463.
+(pdftex.def)             Requested size: 394.35738pt x 189.34232pt.
+<images/implementation/SYNUI-settings2.png, id=732, 1896.08376pt x 910.40125pt>
+File: images/implementation/SYNUI-settings2.png Graphic file (type png)
+<use images/implementation/SYNUI-settings2.png>
+Package pdftex.def Info: images/implementation/SYNUI-settings2.png  used on input line 481.
+(pdftex.def)             Requested size: 394.35738pt x 189.34232pt.
+ [42 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings1.png>]
+<images/implementation/SYNUI-settings3.png, id=742, 1896.08376pt x 1067.99pt>
+File: images/implementation/SYNUI-settings3.png Graphic file (type png)
+<use images/implementation/SYNUI-settings3.png>
+Package pdftex.def Info: images/implementation/SYNUI-settings3.png  used on input line 511.
+(pdftex.def)             Requested size: 394.35738pt x 222.11713pt.
+ [43 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings2.png>]
+<images/implementation/SYNUI-settings4.png, id=751, 1896.08376pt x 910.40125pt>
+File: images/implementation/SYNUI-settings4.png Graphic file (type png)
+<use images/implementation/SYNUI-settings4.png>
+Package pdftex.def Info: images/implementation/SYNUI-settings4.png  used on input line 527.
+(pdftex.def)             Requested size: 394.35738pt x 189.34232pt.
+<images/implementation/SYNUI-settings5.png, id=753, 1896.08376pt x 1067.99pt>
+File: images/implementation/SYNUI-settings5.png Graphic file (type png)
+<use images/implementation/SYNUI-settings5.png>
+Package pdftex.def Info: images/implementation/SYNUI-settings5.png  used on input line 546.
+(pdftex.def)             Requested size: 394.35738pt x 222.11713pt.
+ [44 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings3.png>] [45 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings4.png> </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings5.png>]
 
-] (/Users/gianlo/Develop/thesis/SYN.bbl
+LaTeX Warning: Reference `fig:SYNUIsimple' on page 46 undefined on input line 561.
+
+[46]
+<images/implementation/SYNUI-fileHistory.png, id=772, 1896.08376pt x 1191.45125pt>
+File: images/implementation/SYNUI-fileHistory.png Graphic file (type png)
+<use images/implementation/SYNUI-fileHistory.png>
+Package pdftex.def Info: images/implementation/SYNUI-fileHistory.png  used on input line 589.
+(pdftex.def)             Requested size: 394.35738pt x 247.79419pt.
+<images/implementation/SYNUI-deletedshadow.png, id=773, 1896.08376pt x 1191.45125pt>
+File: images/implementation/SYNUI-deletedshadow.png Graphic file (type png)
+<use images/implementation/SYNUI-deletedshadow.png>
+Package pdftex.def Info: images/implementation/SYNUI-deletedshadow.png  used on input line 596.
+(pdftex.def)             Requested size: 394.35738pt x 247.79419pt.
+) [47 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-fileHistory.png>] [48 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-deletedshadow.png>] (/Users/gianlo/Develop/thesis/SYN.bbl
 LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10> not available
 (Font)              Font shape `T1/fvm/m/sl' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
 (Font)              scaled to size 8.43994pt on input line 40.
- [43
+ [49
 
-] [44] [45] [46]) [47] (/Users/gianlo/Develop/thesis/SYN.aux)
+
+] [50] [51] [52]) [53] (/Users/gianlo/Develop/thesis/SYN.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `SYN.out' has not changed.
-(rerunfilecheck)             Checksum: E3D903702A71DD51715D83820E8C5FC5;2939.
+(rerunfilecheck)             Checksum: 6341710A839BA4D4236155B7EFFFD58C;2836.
  ) 
 Here is how much of TeX's memory you used:
- 18353 strings out of 478994
- 274814 string characters out of 5858184
- 739379 words of memory out of 5000000
- 35187 multiletter control sequences out of 15000+600000
+ 18422 strings out of 478994
+ 276933 string characters out of 5858184
+ 738379 words of memory out of 5000000
+ 35230 multiletter control sequences out of 15000+600000
  468831 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,11n,131p,767b,1078s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/bera/fvmro8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7t.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr8t.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri7m.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri8t.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb>
-Output written on /Users/gianlo/Develop/thesis/SYN.pdf (65 pages, 10954951 bytes).
+Output written on /Users/gianlo/Develop/thesis/SYN.pdf (71 pages, 11390601 bytes).
 PDF statistics:
- 885 PDF objects out of 1000 (max. 8388607)
- 726 compressed objects within 8 object streams
- 221 named destinations out of 1000 (max. 500000)
- 378 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 950 PDF objects out of 1000 (max. 8388607)
+ 771 compressed objects within 8 object streams
+ 240 named destinations out of 1000 (max. 500000)
+ 405 words of extra memory for PDF output out of 10000 (max. 10000000)
 

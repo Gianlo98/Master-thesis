@@ -20,5 +20,4 @@
 \contentsline {section}{\numberline {4.4}SYN Analyzer}{36}{section.4.4}%
 \contentsline {section}{\numberline {4.5}SYN Server}{40}{section.4.5}%
 \contentsline {section}{\numberline {4.6}SYN Debugger}{41}{section.4.6}%
-\contentsline {section}{\numberline {4.7}SYN Sonic}{41}{section.4.7}%
-\contentsline {chapter}{Bibliography}{43}{section*.51}%
+\contentsline {chapter}{Bibliography}{49}{section*.65}%

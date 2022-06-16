@@ -1,10 +1,11 @@
 
 \chapter[Implementation]{Implementation}
 \graphicspath{ {images/implementation} }
-In this chapter, we present how we designed and implemented SYN, a tool that implements the software evolution comprehension approach 
+In this chapter, we present how we designed and implemented SYN, a tool that supports the software evolution comprehension approach 
 defined in section \ref{s:EvolutionModel} and \ref{s:3DRepr}. 
-In section x we provide an overview of our platform by looking at all the modules that compose the architecture. 
-In section x we present the user interface of the tool and finally in section x we detail how we implemented the auditory part. 
+
+% In section x we provide an overview of our platform by looking at all the modules that compose the architecture. 
+% In section x we present the user interface of the tool and finally in section x we detail how we implemented the auditory part. 
 
 
 \section{Platform overview}
@@ -12,20 +13,27 @@ In section x we present the user interface of the tool and finally in section x 
 SYN is a platform tool that allows developers to have a visual and auditive depiction of an evolving system. 
 It was designed to be extensible and efficient, therefore, we created a set of modules each one with its own responsibility:
 \begin{itemize}
-    \item \textbf{SYN Core}: this is the core module, required by other modules. It holds the core concepts of SYN, such as ProjectHistories, ProjectVersions, and so on. It also provides some abstract concepts that are open to any kind of implementation to achieve the extensibility goal.
-    \item \textbf{SYN CLI}: this module is responsible to provide a Command Line Interface to the user.
-    \item \textbf{SYN Analyzer}: this module implements the analysis approach described in section \ref{s:EvolutionModel}. 
-    \item \textbf{SYN Server}: this module provides some GraphQL endpoints to retrieve data from SYN and display them in a user interface. 
-    \item \textbf{SYN Debugger}: this is the user interface of SYN developed to debug and visually depict the information retrieved during the analysis. 
+    \item \textbf{SYN Core}: the core module, required by other modules. It holds the core concepts of SYN, such as ProjectHistories, ProjectVersions, and so on. It also provides some abstract concepts that are open to any kind of implementation to achieve the extensibility goal.
+    \item \textbf{SYN CLI}: responsible to provide a Command Line Interface interaction to users.
+    \item \textbf{SYN Analyzer}: implements the analysis approach described in section \ref{s:EvolutionModel}. 
+    \item \textbf{SYN Server}: provides GraphQL endpoints to retrieve data from SYN and display them in a user interface. 
+    \item \textbf{SYN Debugger}: the user interface of SYN developed to debug and visually depict information collected during the analysis. 
 \end{itemize}
 
-All the modules of SYN are written in Java with the exception of SYN Debugger which is written in TypeScript. 
+All the modules of SYN are written in Java with the exception of SYN Debugger which is written with React and TypeScript. 
 
-The modular architecture of syn allows the user to interact with the tool in two different ways: through the console with the commands provided by SYN CLI or through a web application embedded inside SYN Debugger. \\
-It can be used to explore analysis made on any kind of system since it is language agnostic. Figure \ref{fig:architecture} provides an high-level overview of the architecture. 
-The backend enclosed inside SYN Server is written in Java and built using SpringBoot, an open-source framework used to create production-ready microservices.  
+The modular architecture of SYN allows the user to interact with the tool in two different ways: through the console with the commands provided by the SYN CLI module 
+or through a web application embedded inside the SYN Debugger module. \\
+Figure \ref{fig:architecture} provides an high-level overview of the architecture. Each row represents the dependencies between modules.
+The heart of the system is the SYN Core module. 
+It specifies concepts described in out approach and it also standardize how modules should interact with it.
+It holds a View Generator used by other components to create views over the collected repository's data. 
+This collection is done by the SYN Analyzer module, internally, it has classes that act as a repository explorer to retrieve data from the repositotory history. 
+Moreover, metrics are extracted with the metrics extractor component and put inside the internal historical representation trought the history builder component. 
+Since we wanted to provide a direct access to the analysis capabilities of SYN, the SYN CLI priovides commands that directly calls functions defined inside SYN Analyzer. 
+This is the reason why it has both SYN Core and SYN Analyzer as dependencies. 
 
-...... Explain img modules
+SYN Debugger holds the GUI of SYN to graphically represent a view. Information are retrived through endpoints specified by the GraphQL server of the SYN Server module, that, in turn, retrieves view data from the SYN Core module. 
 
 
 \begin{figure}
@@ -35,8 +43,7 @@ The backend enclosed inside SYN Server is written in Java and built using Spring
     \label{fig:architecture}
 \end{figure}
 
-
-In our platform, the goal of extensibility is achieved because a developer could easily implement a new analysis approach by developing a new module. 
+Having reached a low coupling between modules, the extennsibility of SYN is preserved. In fact, modules such as the server or the analysis implementation could be changed without altering the codebase of other modules. 
 
 \section{SYN Core}
 SYN Core is a module that holds all the entities that we have introduced in section \ref{s:EvolutionModel}. 
@@ -424,11 +431,169 @@ SYN Debugger is a web application that allows developers to interact with SYN. I
 The aim of this application is to have a visual depiction of the view generated by the server, plus some additional information. 
 For example, it allows you to ckick on an entity and sees the information that is related to it. 
 The visualization is based on Babylon.js, a popular 3D library. 
-SYN Debugger provides a different kind of customizations to the view, such as the shape and the colors of the entities. 
+SYN Debugger provides a different kinds of customizations to the view, such as the shape and the colors of the entities. 
 All these customizations are sent to the back-end server, through a \it{view specification} file. 
 
-The main purpose of this application is to debug the view and explore all the possible visualization combinations of a system. 
+The main purpose of this application is to debug the view and explore all the possible visualization combinations of a system.
+The main page of the visualization is a list of project.
 
-\section{SYN Sonic}
+\subsection*{Project setup}
+Once a project is selected, the UI searches in the local storage of the web browser a view specification. 
+If it is not present, the first view loaded is the project setup.
+The project setup is a view that allows the user to express preferences about how the UI should be rendered. 
+There are five steps that composes this view:
+\begin{itemize}
+    \item Component selection: where the user can express which kind of FileType must be considered in the viewSpecification. 
+    To ease the choice, for each FileType a counter representing how many FileHistories have that FiltType is shown. 
+    \item Grouping version strategy: enables the user to chose how moments should be created.
+    \item Figure settings: to customize shape, metrics and opacity of each FileType. Moreover, with this view the user can chose the mapping strategy for the height of entities. 
+    \item View color: to customize the color of each change and how aging must act. 
+    \item View settings: to customize some general settings such as the speed of the visualization, shadows or wether deleted entities should be kept. 
+\end{itemize}
 
-....
+\subsubsection*{Component selection}
+The first step of the setup, shown in figure \ref{fig:SYNUIsettings1}, shows a list of cards, each one representing a FileType. 
+We can break the visualization area into two parts: on the top one, there are two cartds to represent binary files and text files. 
+The sum of this two counters represent the total number of FileHistories present in the system because each file must be textual or binary. 
+On the bottom area there are all the cards whose type is extracted by the extension of the FileHistory. For example, is a file is named "foo.java" it is represented by the JAVA card in this area. 
+Cards are sorted in a descending order by their counter. This views considers all the FileType present in the system, to show the complete list users has to click on the button "show more".
+
+\begin{figure}
+    \center
+    \includegraphics[width=\textwidth]{SYNUI-settings1.png}
+    \caption{Project setup: component selection}
+    \label{fig:SYNUIsettings1}
+\end{figure}
+
+
+\subsubsection*{Grouping strategy}
+The second step of the setup, shown in figure \ref{fig:SYNUIsettings2}, allows the user to chose how SYN groups ProjectVersions. 
+Following what we have presented in the visual approach section \ref{s:3DRepr}, we provide two strategies to group ProjectVersions:
+\begin{itemize}
+    \item by commits: we create a moment every $n$ commits. 
+    \item by timestamp: we create a moment every $n$ seconds. 
+\end{itemize}
+
+To ease the selection of the timestamp strategy, instead of manually compute the width of the time window, the user has only to specify an amount and its time measure (hour, day, week, month, year) and the UI automatically does the rest. 
+Moreover, the UI shows a preview of the grouping strategy to give an idea on how many animations are created with the selected settings. 
+\begin{figure}
+    \center
+    \includegraphics[width=\textwidth]{SYNUI-settings2.png}
+    \caption{Project setup: grouping strategy}
+    \label{fig:SYNUIsettings2}
+\end{figure}
+
+\subsubsection*{Figure settings}
+The third step of the setup, shown in figure \ref{fig:SYNUIsettings3}, allows the user to express graphical preferences. 
+For each FileType selected in the step "Component selection", a card is created in this view. 
+On each card user can customize:
+\begin{itemize}
+    \item which metrics should be considered by the visualization. These metrics are displayed when an entity is selected.
+    \item the shape of the entity in the visualization. In our visualization we implemented five kinds of shapes: BOX, TRIANGULAR, CONE, SPHERE and CYLINDER. 
+    \item the opacity of each FileType. 
+\end{itemize}
+
+Moreover, the user can also express their preferences to chose which mapper strategies SYN has to use to compute the height of entities, which metric must be used by the mapper and the maximum height of the entities. 
+The list of available metrics for the mapper, is composed by the metrics selected for each FileType.
+As a consequence, the UI has a checkbox to specify wether FileHistories that do not have the selected metric, should be rendered or not. 
+\bigbreak
+With all the settings available on this page the user has the full control about how FileHistories are rendered. 
+There are a lot of possible combinations, each one with its own purpose. For example, if we want a visualization that has a focus only on Java files, we can use the following settings:
+\begin{itemize}
+    \item BINARY metrics: none, shape: SPHERE, opacity: 0.3
+    \item TEXT metrics: none, shape: SPHERE, opacity: 0.3
+    \item JAVA metrics: SLOC, shape: BOX, opacity: 1
+\end{itemize}
+and for the mapper use the LinearBucketValueStrategy, with the SLOC metric and a maximum height of 20. 
+
+\begin{figure}
+    \center
+    \includegraphics[width=\textwidth]{SYNUI-settings3.png}
+    \caption{Project setup: figure settings}
+    \label{fig:SYNUIsettings3}
+\end{figure}
+
+\subsubsection*{View color}
+The fourth step of the setup, shown in figure \ref{fig:SYNUIsettings4}, allows the user to express preferences about the color mapping of entities. 
+
+The user has the full control over the way how aging is computed. 
+As with grouping versions, aging can be done following two possible strategies: one by timestamp and one by commits. 
+The color transition is linear, therefore the user can choose the number of steps between the original color of the entity and the base color. 
+
+Finally, each action has a distinct original color, that can be customized by the user. 
+
+\begin{figure}
+    \center
+    \includegraphics[width=\textwidth]{SYNUI-settings4.png}
+    \caption{Project setup: view color}
+    \label{fig:SYNUIsettings4}
+\end{figure}
+
+\subsubsection*{View settings}
+The last step of the setup, shown in figure \ref{fig:SYNUIsettings5}, allows the user to express general preferences about the behaviour of the UI.
+
+\begin{itemize}
+    \item Show VR Button: if the UI should enable the full immersion experience that must be played with a VR headset. 
+    \item Keep deleted entities: if the UI should keep deleted entities in the visualization. By default these are not displayed. 
+    \item Show debug layer: if the debugger of the 3D engine should be visibile. 
+    \item Auto screenshot: if a screenshot of the UI should be automatically done once the UI was rendered.
+    \item Shadows: if the UI should compute and render shadows. 
+    \item Animation switching speed: the amount of time between the render of one animation and another if the autoplay button is pressed. 
+\end{itemize}
+
+\begin{figure}
+    \center
+    \includegraphics[width=\textwidth]{SYNUI-settings5.png}
+    \caption{Project setup: view settings}
+    \label{fig:SYNUIsettings5}
+\end{figure}
+
+\subsection*{Project visualization}
+After having specified all the visualization preferences with the initial setup, all of them are stored in the local storage of the web browser. 
+Therefore, the UI can retrieve, given the project id and the view specification, a view from the backend server. 
+
+Initially it calls the partialView query provided by the SYN-Server module. Once it got the response, the visualization of the first AnimationFrame is automatically loaded. 
+Since the partialView query returns only the first 100 AnimationFrames, to maximize the experience a prefetcher mechanisms was also implemented. 
+Simply, once the half of the retrieved AnimationFrames have been displayed, it lazily requests a new partialView containing all the following AnimationFrames of the currently displayed view. 
+In this way, the jump between a partialView and another is not subjected to network timing issues becuase the partial view was already prefetched before. 
+\bigbreak
+
+The initial display of the view is represented in figure \ref{fig:SYNUIsimple}. The visualization settings of this view are:
+\begin{itemize}
+    \item Version grouping strategy: timestamp, 3 weeks
+    \item Color palette: default
+    \item Aging: timestamp, 3 weeks with 10 steps
+    \item Height mapper: BucketValueStrategy on SLOC
+    \item Deleted entities are not shown
+    \item All the entities have the same shape and opacity
+    \item All the available metrics are selected for each FileType. 
+\end{itemize}
+
+The main visualization area can be broken down into four parts: 
+In the box A we have a 3D environment displays FileHistories on a virtual plane. The camera is not fixed and with the mouse the view angle and the zoom level can be controlled. 
+In the box B we have a card that depict the information about what the visualization is showing to the user. 
+This card includes the tile of the project, the animation number displayed, the range of dates that this animationFrame has, a list of commits included inside this animation frame, a slider that shows the overall progress of the display, and two buttons to jump to the next or the previous animation, and finally one button to automatically jump to the next animation with the time interval previously set. 
+Moreover, all the preferences specified during the project setup can be changed clicking on the three dots in the top right corner.
+In the box C we have a card to inform the user on the number of entities that are rendered by the UI. 
+And finally, box D appears only when an entity is selected with the mouse. 
+It has: 
+\begin{itemize}
+    \item the name and the current path of the entity. The current path is the path of the entity on the last commit included in the displayed animation frame. 
+    \item a table filled with all the metrics retrieved on the last commit of the displayed animation frame. The list of metrics is filtered with the one selected during the project setup. 
+    \item a table filled with all the FileVersions associated to the selected FileHistory. Of each FileVersion the commit hash (clickable, it automatically redirects to github) and the action made on that commit is shown. Moreover, if with the mouse you hover on an action, a tooltip with commit information appears.
+    \item a contextual menu shown if you right click on the card. With this contextual menu you can jump on github to see the raw file on the last commit of the current displayed animation. 
+\end{itemize}
+
+\begin{figure}
+    \center
+    \includegraphics[width=\textwidth]{SYNUI-fileHistory.png}
+    \caption{Visualization of JetUML with the default settings.}
+    \label{fig:fileHistories}
+\end{figure}
+
+\begin{figure}
+    \center
+    \includegraphics[width=\textwidth]{SYNUI-deletedshadow.png}
+    \caption{Visualization of JetUML with shadows, deleted entities and custom shapes for non-java files.}
+    \label{fig:deletedshadow}
+\end{figure}
