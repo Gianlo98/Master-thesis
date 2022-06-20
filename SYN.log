@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.28)  20 JUN 2022 16:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.28)  20 JUN 2022 17:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,468 +6,183 @@ entering extended mode
 **/Users/gianlo/Develop/thesis/SYN.tex
 (/Users/gianlo/Develop/thesis/SYN.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18> (/Users/gianlo/Develop/thesis/usiinfthesis.cls
-Document Class: usiinfthesis 2010/04/14 v. 1.1.2 USI Informatics Doctoral Dissertation class
-(/usr/local/texlive/2021/texmf-dist/tex/latex/xifthen/xifthen.sty
+L3 programming layer <2021-02-18> (/Users/gianlo/Develop/thesis/auxiliary/si-msc-thesis.cls
+
+LaTeX Warning: You have requested document class `auxiliary/si-msc-thesis',
+               but the document class provides `MastersDoctoralThesis'.
+
+Document Class: MastersDoctoralThesis May 16 2019 Software Institute MSc Thesis Template
+(/usr/local/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count179
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count180
+\l__pdf_internal_box=\box47
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-01.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/xifthen/xifthen.sty
 Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
  (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count179
-\calc@Bcount=\count180
+\calc@Acount=\count181
+\calc@Bcount=\count182
 \calc@Adimen=\dimen138
 \calc@Bdimen=\dimen139
 \calc@Askip=\skip47
 \calc@Bskip=\skip48
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count181
+\calc@Ccount=\count183
 \calc@Cskip=\skip49
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
-))
-*** Please report bugs, comments, suggestions, and improvements to: 
-*** Domenico Bianculli <domenico.bianculli@usi.ch>
-*** Jochen Wuttke <wuttkej@usi.ch>
-(/usr/local/texlive/2021/texmf-dist/tex/latex/base/book.cls
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
-(/usr/local/texlive/2021/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/bk11.clo
+File: bk11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count182
-\c@chapter=\count183
-\c@section=\count184
-\c@subsection=\count185
-\c@subsubsection=\count186
-\c@paragraph=\count187
-\c@subparagraph=\count188
-\c@figure=\count189
-\c@table=\count190
+\c@part=\count184
+\c@chapter=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
 \abovecaptionskip=\skip50
 \belowcaptionskip=\skip51
 \bibindent=\dimen140
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mathdesign.sty
-Package: mathdesign 2013/08/29 v2.31 Math Design Project
- (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2021/03/24 3.56 The Babel package
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2021/03/24 3.56 Babel common definitions
+\babel@savecnt=\count193
+\U@D=\dimen141
+\l@babelnohyphens=\language87
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count194
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language21) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language21) on input line 108.
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2021/03/17 v3.33 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2021/03/17 v3.33 KOMA-Script package (file load hooks)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2021/03/17 v3.33 KOMA-Script package (using LaTeX hooks)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2021/03/17 v3.33 KOMA-Script package (logo)
+))) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/mdbch.cfg) (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/mdbch.sty
-Package: mdbch 2013/08/29 v2.31 bitstream bitstream charter + mdbch (Math Design Project)
- (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdfont.def
-File: mdfont.def 2013/08/29 v2.31 (Math Design Project)
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdsffont.def
-File: mdsffont.def 2013/08/29 v2.31 (Math Design Project)
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 53.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 56.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 59.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 79.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 102.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 105.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 108.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 128.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 259.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 262.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 265.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 268.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 313.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 316.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 319.
-
-
-LaTeX Warning: Font shape declaration has incorrect series value `mc'.
-               It should not contain an `m'! Please correct it.
-               Found on input line 322.
-
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdttfont.def
-File: mdttfont.def 2013/08/29 v2.31 (Math Design Project)
 )
-\symmdcal=\mathgroup4
-LaTeX Font Info:    Overwriting symbol font `mdcal' in version `bold'
-(Font)                  OMS/mdbch/m/n --> OMS/mdbch/b/n on input line 97.
-\symmdscr=\mathgroup5
-LaTeX Font Info:    Overwriting symbol font `mdscr' in version `bold'
-(Font)                  OMS/mdbch/m/n --> OMS/mdbch/b/n on input line 103.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/xmdeuf/m/n --> U/xmdeuf/b/n on input line 110.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/mdbch/m/n on input line 121.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/mdbch/m/it on input line 122.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/mdbch/m/n on input line 123.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/mdbch/m/n on input line 124.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/mdbch/b/n on input line 126.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/mdbch/b/it on input line 127.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/mdbch/b/n on input line 128.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/mdbch/b/n on input line 129.
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/mdbch/m/n --> T1/mdbch/m/n on input line 131.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/mdbch/b/n on input line 132.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/mdbch/m/it on input line 133.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 134.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 135.
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/mdbch/b/n --> T1/mdbch/b/n on input line 137.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/mdbch/b/n on input line 138.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/mdbch/b/it on input line 139.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/b/n on input line 140.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/b/n on input line 141.
-\symlettersupright=\mathgroup6
-LaTeX Font Info:    Overwriting symbol font `lettersupright' in version `bold'
-(Font)                  OML/mdbch/m/n --> OML/mdbch/b/n on input line 144.
-LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 145.
-LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `normal'
-(Font)                  OMS/mdbch/m/n --> OMS/mdbch/m/n on input line 167.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
- (/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks16
-\XKV@tempa@toks=\toks17
+Skipping: [2021/05/01] Usage of raw option list on input line 252.
+Applying: [0000/00/00] compatibility for LaTeX before 2021/05/01 on input line 337.
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrhack.sty
+Package: scrhack 2021/03/17 v3.33 KOMA-Script package (hacking other packages)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2021/03/17 v3.33 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/xpatch/xpatch.sty
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
 )
-\XKV@depth=\count191
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-LaTeX Font Info:    Trying to load font information for T1+mdbch on input line 186.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/t1mdbch.fd
-File: t1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for T1/mdbch.
-)
-LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 186.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 449.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 450.
-Now handling font encoding MDA ...
-... no UTF-8 mapping file for font encoding MDA
-\symmathdesignA=\mathgroup7
-LaTeX Font Info:    Overwriting symbol font `mathdesignA' in version `bold'
-(Font)                  MDA/mdbch/m/n --> MDA/mdbch/b/n on input line 491.
-Now handling font encoding MDB ...
-... no UTF-8 mapping file for font encoding MDB
-\symmathdesignB=\mathgroup8
-LaTeX Font Info:    Overwriting symbol font `mathdesignB' in version `bold'
-(Font)                  MDB/mdbch/m/n --> MDB/mdbch/b/n on input line 498.
-\@emptytoks=\toks18
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 532.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 533.
-\rulethickness=\skip52
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
-)) (/usr/local/texlive/2021/texmf-dist/tex/latex/bera/beramono.sty
-Package: beramono 2004/01/31 (WaS)
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/sectsty/sectsty.sty
-Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
-
-
-LaTeX Warning: Command \underbar  has changed.
-               Check if current package is valid.
-
-
-LaTeX Warning: Command \underline  has changed.
-               Check if current package is valid.
-
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
- (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
-))
-\Gm@cnth=\count192
-\Gm@cntv=\count193
-\c@Gm@tempcnt=\count194
-\Gm@bindingoffset=\dimen141
-\Gm@wd@mp=\dimen142
-\Gm@odd@mp=\dimen143
-\Gm@even@mp=\dimen144
-\Gm@layoutwidth=\dimen145
-\Gm@layoutheight=\dimen146
-\Gm@layouthoffset=\dimen147
-\Gm@layoutvoffset=\dimen148
-\Gm@dimlist=\toks19
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip53
-\f@nch@O@elh=\skip54
-\f@nch@O@erh=\skip55
-\f@nch@O@olh=\skip56
-\f@nch@O@orh=\skip57
-\f@nch@O@elf=\skip58
-\f@nch@O@erf=\skip59
-\f@nch@O@olf=\skip60
-\f@nch@O@orf=\skip61
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/10/26 v3.5g Customizing captions (AR)
- (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen149
-\captionmargin@=\dimen150
-\captionwidth=\dimen151
-\caption@tempdima=\dimen152
-\caption@indent=\dimen153
-\caption@parindent=\dimen154
-\caption@hangindent=\dimen155
-Package caption Info: Standard document class detected.
-)
-\c@caption@flags=\count195
-\c@continuedfloat=\count196
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/datatool/datatool.sty
-Package: datatool 2019/09/27 v2.32 (NLCT)
- (/usr/local/texlive/2021/texmf-dist/tex/latex/xfor/xfor.sty
-Package: xfor 2009/02/05 v1.05 (NLCT)
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/substr/substr.sty
-Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count197
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count198
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/datatool/datatool-base.sty
-Package: datatool-base 2019/09/27 v2.32 (NLCT)
- (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2020/09/23 v2.17i AMS math features
-\@mathmargin=\skip62
-
-For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+Package scrhack Info: loading setspace hack on input line 198.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/setspace.hak
+File: setspace.hak 2021/03/17 v3.33 KOMA-Script scrhack part (hacking package setspace)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip52
+\LTright=\skip53
+\LTpre=\skip54
+\LTpost=\skip55
+\LTchunksize=\count195
+\LTcapwidth=\dimen142
+\LT@head=\box48
+\LT@firsthead=\box49
+\LT@foot=\box50
+\LT@lastfoot=\box51
+\LT@cols=\count196
+\LT@rows=\count197
+\c@LT@tables=\count198
+\c@LT@chunks=\count199
+\LT@p@ftn=\toks16
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2020/02/25 v2.8b A comprehensive (SI) units package
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks20
-\ex@=\dimen156
-)) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen157
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
+\@emptytoks=\toks17
+\ex@=\dimen143
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen144
+\ar@mcellbox=\box52
+\extrarowheight=\dimen145
+\NC@list=\toks18
+\extratabsurround=\skip56
+\backup@length=\skip57
+\ar@cellbox=\box53
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2021-03-12 LaTeX2e option processing using LaTeX3 keys
 )
-\inf@bad=\count199
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count266
-\leftroot@=\count267
-LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count268
-\DOTSCASE@=\count269
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box47
-\strutbox@=\box48
-\big@size=\dimen158
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count270
-\c@MaxMatrixCols=\count271
-\dotsspace@=\muskip16
-\c@parentequation=\count272
-\dspbrk@lvl=\count273
-\tag@help=\toks21
-\row@=\count274
-\column@=\count275
-\maxfields@=\count276
-\andhelp@=\toks22
-\eqnshift@=\dimen159
-\alignsep@=\dimen160
-\tagshift@=\dimen161
-\tagwidth@=\dimen162
-\totwidth@=\dimen163
-\lineht@=\dimen164
-\@envbody=\toks23
-\multlinegap=\skip63
-\multlinetaggap=\skip64
-\mathdisplay@stack=\toks24
-LaTeX Info: Redefining \[ on input line 2923.
-LaTeX Info: Redefining \] on input line 2924.
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/datatool/datatool-fp.sty
-Package: datatool-fp 2019/09/27 v2.32 (NLCT)
- (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp.sty
-Package: fp 1995/04/02
- `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/defpattern.sty
-Package: defpattern 1994/10/12
-\actioncount=\count277
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-basic.sty
-Package: fp-basic 1996/05/13
-\FP@xs=\count278
-\FP@xia=\count279
-\FP@xib=\count280
-\FP@xfa=\count281
-\FP@xfb=\count282
-\FP@rega=\count283
-\FP@regb=\count284
-\FP@regs=\count285
-\FP@times=\count286
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-addons.sty
-Package: fp-addons 1995/03/15
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-snap.sty
-Package: fp-snap 1995/04/05
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-exp.sty
-Package: fp-exp 1995/04/03
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-trigo.sty
-Package: fp-trigo 1995/04/14
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-pas.sty
-Package: fp-pas 1994/08/29
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-random.sty
-Package: fp-random 1995/02/23
-\FPseed=\count287
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-eqn.sty
-Package: fp-eqn 1995/04/03
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-upn.sty
-Package: fp-upn 1996/10/21
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-eval.sty
-Package: fp-eval 1995/04/03
-)))
-\@dtl@toks=\toks25
-\@dtl@tmpcount=\count288
-\dtl@tmplength=\skip65
-\dtl@sortresult=\count289
-\@dtl@numgrpsepcount=\count290
-\@dtl@datatype=\count291
-\dtl@codeA=\count292
-\dtl@codeB=\count293
-\@dtl@foreach@level=\count294
-)
-\dtlcolumnnum=\count295
-\dtlrownum=\count296
-\@dtl@before=\toks26
-\@dtl@after=\toks27
-\@dtl@colhead=\toks28
-\dtlcurrentrow=\toks29
-\dtlbeforerow=\toks30
-\dtlafterrow=\toks31
-\dtlforeachlevel=\count297
-\c@DTLrowi=\count298
-\c@DTLrowii=\count299
-\c@DTLrowiii=\count300
-\c@DTLrow=\count301
-\dtl@rowi=\count302
-\dtl@rowii=\count303
-\dtl@rowiii=\count304
-\@dtl@curi=\toks32
-\@dtl@previ=\toks33
-\@dtl@nexti=\toks34
-\@dtl@curii=\toks35
-\@dtl@previi=\toks36
-\@dtl@nextii=\toks37
-\@dtl@curiii=\toks38
-\@dtl@previii=\toks39
-\@dtl@nextiii=\toks40
-\@dtl@elements=\count305
-\@dtl@list=\toks41
-\@dtl@rowa=\toks42
-\@dtl@rowb=\toks43
-\@dtl@toksA=\toks44
-\@dtl@toksB=\toks45
-\@dtl@write=\write3
-\@dtl@read=\read2
-\dtl@entrycr=\count306
-\dtl@omitlines=\count307
-)
-\c@advisors=\count308
-\c@coadvisors=\count309
-\c@internalmembers=\count310
-\c@externalmembers=\count311
- (/usr/local/texlive/2021/texmf-dist/tex/latex/epigraph/epigraph.sty
-Package: epigraph 2020/01/02 v1.5e typesetting epigraphs
- (/usr/local/texlive/2021/texmf-dist/tex/latex/nextpage/nextpage.sty
-Package: nextpage 2009/09/03 v1.1a additional page commands
-)
-\beforeepigraphskip=\skip66
-\afterepigraphskip=\skip67
-\epigraphwidth=\skip68
-\epigraphrule=\skip69
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen165
-\lightrulewidth=\dimen166
-\cmidrulewidth=\dimen167
-\belowrulesep=\dimen168
-\belowbottomsep=\dimen169
-\aboverulesep=\dimen170
-\abovetopsep=\dimen171
-\cmidrulesep=\dimen172
-\cmidrulekern=\dimen173
-\defaultaddspace=\dimen174
-\@cmidla=\count312
-\@cmidlb=\count313
-\@aboverulesep=\dimen175
-\@belowrulesep=\dimen176
-\@thisruleclass=\count314
-\@lastruleclass=\count315
-\@thisrulewidth=\dimen177
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+\l__siunitx_tmp_box=\box54
+\l__siunitx_tmp_dim=\dimen146
+\l__siunitx_tmp_int=\count266
+\l__siunitx_number_mantissa_length_int=\count267
+\l__siunitx_number_uncert_length_int=\count268
+\l__siunitx_round_int=\count269
+\l__siunitx_process_decimal_int=\count270
+\l__siunitx_process_uncertainty_int=\count271
+\l__siunitx_process_fixed_int=\count272
+\l__siunitx_process_integer_min_int=\count273
+\l__siunitx_process_precision_int=\count274
+\l__siunitx_group_min_int=\count275
+\l__siunitx_angle_marker_box=\box55
+\l__siunitx_angle_unit_box=\box56
+\l__siunitx_angle_marker_dim=\dimen147
+\l__siunitx_angle_unit_dim=\dimen148
+\l__siunitx_unit_int=\count276
+\l__siunitx_unit_denominator_int=\count277
+\l__siunitx_unit_numerator_int=\count278
+\l__siunitx_unit_prefix_int=\count279
+\l__siunitx_unit_prefix_base_int=\count280
+\l__siunitx_unit_prefix_gram_int=\count281
+\l__siunitx_number_product_int=\count282
+\c__siunitx_one_fill_skip=\skip58
+\l__siunitx_table_unit_align_skip=\skip59
+\l__siunitx_table_exponent_dim=\dimen149
+\l__siunitx_table_integer_dim=\dimen150
+\l__siunitx_table_mantissa_dim=\dimen151
+\l__siunitx_table_marker_dim=\dimen152
+\l__siunitx_table_result_dim=\dimen153
+\l__siunitx_table_uncert_dim=\dimen154
+\l__siunitx_table_fill_pre_dim=\dimen155
+\l__siunitx_table_fill_post_dim=\dimen156
+\l__siunitx_table_fill_mid_dim=\dimen157
+\l__siunitx_table_pre_box=\box57
+\l__siunitx_table_post_box=\box58
+\l__siunitx_table_mantissa_box=\box59
+\l__siunitx_table_result_box=\box60
+\l__siunitx_table_number_align_skip=\skip60
+\l__siunitx_table_text_align_skip=\skip61
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator.sty
+Package: translator 2020-08-03 v1.12c Easy translation of strings in LaTeX
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
  (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
@@ -480,19 +195,192 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen178
-\Gin@req@width=\dimen179
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip70
-\bibsep=\skip71
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count316
+\Gin@req@height=\dimen158
+\Gin@req@width=\dimen159
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen160
+\lightrulewidth=\dimen161
+\cmidrulewidth=\dimen162
+\belowrulesep=\dimen163
+\belowbottomsep=\dimen164
+\aboverulesep=\dimen165
+\abovetopsep=\dimen166
+\cmidrulesep=\dimen167
+\cmidrulekern=\dimen168
+\defaultaddspace=\dimen169
+\@cmidla=\count283
+\@cmidlb=\count284
+\@aboverulesep=\dimen170
+\@belowrulesep=\dimen171
+\@thisruleclass=\count285
+\@lastruleclass=\count286
+\@thisrulewidth=\dimen172
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen173
+\captionmargin@=\dimen174
+\captionwidth=\dimen175
+\caption@tempdima=\dimen176
+\caption@indent=\dimen177
+\caption@parindent=\dimen178
+\caption@hangindent=\dimen179
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count287
+\c@continuedfloat=\count288
+Package caption Info: longtable package is loaded.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count289
+\Gm@cntv=\count290
+\c@Gm@tempcnt=\count291
+\Gm@bindingoffset=\dimen180
+\Gm@wd@mp=\dimen181
+\Gm@odd@mp=\dimen182
+\Gm@even@mp=\dimen183
+\Gm@layoutwidth=\dimen184
+\Gm@layoutheight=\dimen185
+\Gm@layouthoffset=\dimen186
+\Gm@layoutvoffset=\dimen187
+\Gm@dimlist=\toks19
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
+Package: scrlayer-scrpage 2021/03/17 v3.33 KOMA-Script package (end user interface for scrlayer)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrlayer.sty
+Package: scrlayer 2021/03/17 v3.33 KOMA-Script package (defining layers and page styles)
+\footheight=\skip62
+Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 2162.
+)
+Package scrbase Info: Unknown processing state.
+(scrbase)             Processing option `markcase=used'
+(scrbase)             of member `.scrlayer-scrpage.sty' of family
+(scrbase)             `KOMA' doesn't set
+(scrbase)             a valid state. This will be interpreted
+(scrbase)             as \FamilyKeyStateProcessed on input line 636.
+)
+Package scrlayer-scrpage Info: auto-selection of `pagestyleset=standard'.
+
+1: chapter
+1: chapter
+1: section
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2021-03-03 v2.3 150 paragraphs of Lorem Ipsum dummy text
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
+File: lipsum.ltd.tex 2021-03-03 v2.3 The Lorem ipsum dummy text
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/mathpazo.sty
+Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count292
+\float@exts=\toks22
+\float@box=\box61
+\@float@everytoks=\toks23
+\@floatcapt=\box62
+)
+Package scrhack Info: loading float hack on input line 12.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/float.hak
+File: float.hak 2021/03/17 v3.33 KOMA-Script scrhack part (hacking package float)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2021/03/17 v3.33 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip63
+\scr@dte@tocline@numbox=\box63
+)
+Package scrhack Info: redefining \newfloat on input line 163.
+Package scrhack Info: redefining \listof on input line 163.
+Package scrhack Info: undefining \float@addtolists on input line 163.
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count293
+\lst@gtempboxa=\box64
+\lst@token=\toks24
+\lst@length=\count294
+\lst@currlwidth=\dimen188
+\lst@column=\count295
+\lst@pos=\count296
+\lst@lostspace=\dimen189
+\lst@width=\dimen190
+\lst@newlines=\count297
+\lst@lineno=\count298
+\lst@maxwidth=\dimen191
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count299
+\lst@skipnumbers=\count300
+\lst@framebox=\box65
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package scrhack Info: loading listings hack on input line 13.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/listings.hak
+File: listings.hak 2021/03/17 v3.33 KOMA-Script scrhack part (hacking package listings)
+Package tocbasic Info: setting babel extension for `lol' on input line 143.
+Package scrhack Info: redefining \lstlistoflistings on input line 143.
+)
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen192
+\WF@size=\dimen193
+\c@WF@wrappedlines=\count301
+\WF@box=\box66
+\WF@everypar=\toks25
+Package: wrapfig 2003/01/31  v 3.6
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+Package tocbasic Info: setting babel extension for `loa' on input line 95.
+\@float@every@algorithm=\toks26
+\c@algorithm=\count302
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count303
+\c@ALG@rem=\count304
+\c@ALG@nested=\count305
+\ALG@tlm=\skip64
+\ALG@thistlm=\skip65
+\c@ALG@Lnr=\count306
+\c@ALG@blocknr=\count307
+\c@ALG@storecount=\count308
+\c@ALG@tmpcounter=\count309
+\ALG@tmplength=\skip66
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count310
+\c@subtable=\count311
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
  (/usr/local/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
@@ -520,9 +408,9 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen180
-\Hy@linkcounter=\count317
-\Hy@pagecounter=\count318
+\@linkdim=\dimen194
+\Hy@linkcounter=\count312
+\Hy@pagecounter=\count313
  (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -534,16 +422,12 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count319
+\Hy@SavedSpaceFactor=\count314
  (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `unicode' set `true' on input line 4073.
-Package hyperref Info: Option `plainpages' set `false' on input line 4073.
-Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4073.
-Package hyperref Info: Option `breaklinks' set `true' on input line 4073.
 Package hyperref Info: Hyper figures OFF on input line 4192.
 Package hyperref Info: Link nesting OFF on input line 4197.
 Package hyperref Info: Hyper index ON on input line 4200.
@@ -551,17 +435,21 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count320
+\c@Hy@tempcnt=\count315
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen181
+\XeTeXLinkMargin=\dimen195
  (/usr/local/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/local/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count321
-\Field@Width=\dimen182
-\Fld@charsize=\dimen183
+\Fld@menulength=\count316
+\Field@Width=\dimen196
+\Fld@charsize=\dimen197
 Package hyperref Info: Hyper figures OFF on input line 6075.
 Package hyperref Info: Link nesting OFF on input line 6080.
 Package hyperref Info: Hyper index ON on input line 6083.
@@ -575,10 +463,13 @@ LaTeX Info: Redefining \pageref on input line 6149.
 Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi package
 with kernel methods
 )
-\Hy@abspage=\count322
-\c@Item=\count323
-\c@Hfootnote=\count324
+\Hy@abspage=\count317
+\c@Item=\count318
+\c@Hfootnote=\count319
 )
+Package scrhack Info: hyperref hack deactivated because of
+(scrhack)             detection of hyperref version, that doesn't
+(scrhack)             need that hack, on input line 63.
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
@@ -586,8 +477,8 @@ File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery package
 with kernel methods
 )
-\Fld@listcount=\count325
-\c@bookmark@seq@number=\count326
+\Fld@listcount=\count320
+\c@bookmark@seq@number=\count321
  (/usr/local/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (/usr/local/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -595,123 +486,71 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
-\Hy@SectionHShift=\skip72
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/oberdiek/hypcap.sty
-Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
-)) (/usr/local/texlive/2021/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2021-02-18 L3 programming layer (loader) 
- (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count327
-\l__pdf_internal_box=\box49
-)) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-01.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex)))
-Package: lipsum 2021-03-03 v2.3 150 paragraphs of Lorem Ipsum dummy text
- (/usr/local/texlive/2021/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
-File: lipsum.ltd.tex 2021-03-03 v2.3 The Lorem ipsum dummy text
-)) (/usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count328
-\float@exts=\toks46
-\float@box=\box50
-\@float@everytoks=\toks47
-\@floatcapt=\box51
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count329
-\lst@gtempboxa=\box52
-\lst@token=\toks48
-\lst@length=\count330
-\lst@currlwidth=\dimen184
-\lst@column=\count331
-\lst@pos=\count332
-\lst@lostspace=\dimen185
-\lst@width=\dimen186
-\lst@newlines=\count333
-\lst@lineno=\count334
-\lst@maxwidth=\dimen187
- (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count335
-\lst@skipnumbers=\count336
-\lst@framebox=\box53
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2020/03/24 1.8d listings configuration
-))
-Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (/usr/local/texlive/2021/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen188
-\WF@size=\dimen189
-\c@WF@wrappedlines=\count337
-\WF@box=\box54
-\WF@everypar=\toks49
-Package: wrapfig 2003/01/31  v 3.6
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithm.sty
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
-\@float@every@algorithm=\toks50
-\c@algorithm=\count338
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
-Package: algpseudocode 
- (/usr/local/texlive/2021/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
-Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
-
-Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count339
-\c@ALG@rem=\count340
-\c@ALG@nested=\count341
-\ALG@tlm=\skip73
-\ALG@thistlm=\skip74
-\c@ALG@Lnr=\count342
-\c@ALG@blocknr=\count343
-\c@ALG@storecount=\count344
-\c@ALG@tmpcounter=\count345
-\ALG@tmplength=\skip75
+\Hy@SectionHShift=\skip67
 )
-Document Style - pseudocode environments for use with the `algorithmicx' style
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
-\c@subfigure=\count346
-\c@subtable=\count347
-)
-\dtldb@committee=\toks51
-\dtlkeys@committee=\toks52
-\dtlrows@committee=\count348
-\dtlcols@committee=\count349
- (/Users/gianlo/Develop/thesis/SYN.aux
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 63.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 63.
+Package hyperref Info: Option `colorlinks' set `true' on input line 63.
+Package hyperref Info: Option `unicode' set `true' on input line 63.
+Package hyperref Info: Option `breaklinks' set `true' on input line 63.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 63.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+) (/Users/gianlo/Develop/thesis/SYN.aux
 
 LaTeX Warning: Label `fig:JetUML_V0E0' multiply defined.
 
 )
 \openout1 = `SYN.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 40.
-LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 40.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdacmr.fd
-File: mdacmr.fd 
-)
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 40.
-LaTeX Font Info:    Trying to load font information for MDB+cmr on input line 40.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbcmr.fd
-File: mdbcmr.fd 
-)
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+) (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count322
+\scratchdimen=\dimen198
+\scratchbox=\box67
+\nofMPsegments=\count323
+\nofMParguments=\count324
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count325
+\MPscratchDim=\dimen199
+\MPnumerator=\count326
+\makeMPintoPDFobject=\count327
+\everyMPtoPDFconversion=\toks28
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package scrbase Info: activating english \byname on input line 63.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -720,419 +559,381 @@ LaTeX Font Info:    ... okay on input line 40.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* hratio: 1:1
-* modes: twoside asymmetric 
-* h-part:(L,W,R)=(101.57524pt, 394.35738pt, 101.57526pt)
-* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* modes: includehead includefoot twoside 
+* h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
+* v-part:(T,H,B)=(42.67912pt, 725.54538pt, 76.82234pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=394.35738pt
-* \textheight=591.5302pt
-* \oddsidemargin=29.30525pt
-* \evensidemargin=29.30525pt
-* \topmargin=-0.93083pt
-* \headheight=15.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=115.0pt
+* \textwidth=512.14963pt
+* \textheight=675.32025pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-29.59087pt
+* \headheight=11.38109pt
+* \headsep=11.38109pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=116.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
 * \@twosidetrue
-* \@mparswitchfalse
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: float package is loaded.
-Package caption Info: hyperref package is loaded.
-Package caption Info: hypcap package is loaded.
-Package caption Info: listings package is loaded.
-Package caption Info: wrapfig package is loaded.
-Package caption Info: End \AtBeginDocument code.
-(/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count350
-\scratchdimen=\dimen190
-\scratchbox=\box55
-\nofMPsegments=\count351
-\nofMParguments=\count352
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count353
-\MPscratchDim=\dimen191
-\MPnumerator=\count354
-\makeMPintoPDFobject=\count355
-\everyMPtoPDFconversion=\toks54
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))
-Package hyperref Info: Link coloring OFF on input line 40.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
+Package scrlayer Info: Setting magic \footheight to \baselineskip while
+(scrlayer)             \begin{document} on input line 63.
+
+Package scrlayer-scrpage Warning: Very small head height detected!
+(scrlayer-scrpage)                Using scrlayer-scrpage the head height
+(scrlayer-scrpage)                should be at least \baselineskip, which is
+(scrlayer-scrpage)                13.6pt currently.
+(scrlayer-scrpage)                But head height is currently 11.38109pt only.
+(scrlayer-scrpage)                You may use
+(scrlayer-scrpage)                geometry option `head=13.6pt'
+(scrlayer-scrpage)                to avoid this warning.
+
+\big@size=\dimen256
+\c@lstlisting=\count328
+Package scrhack Info: undefining \float@addtolists on input line 63.
+Package hyperref Info: Link coloring ON on input line 63.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count356
+\c@section@level=\count329
 )
-LaTeX Info: Redefining \ref on input line 40.
-LaTeX Info: Redefining \pageref on input line 40.
-LaTeX Info: Redefining \nameref on input line 40.
+LaTeX Info: Redefining \ref on input line 63.
+LaTeX Info: Redefining \pageref on input line 63.
+LaTeX Info: Redefining \nameref on input line 63.
  (/Users/gianlo/Develop/thesis/SYN.out) (/Users/gianlo/Develop/thesis/SYN.out)
-\@outlinefile=\write4
-\openout4 = `SYN.out'.
+\@outlinefile=\write3
+\openout3 = `SYN.out'.
 
-\c@lstlisting=\count357
-LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 16.58891pt on input line 43.
-LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 16.58891pt on input line 43.
-LaTeX Font Info:    Trying to load font information for T1+uop on input line 43.
-LaTeX Font Info:    No file T1uop.fd. on input line 43.
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 63.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 63.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 63.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 63.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 63.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+1: section
+(/Users/gianlo/Develop/thesis/auxiliary/titlepage.tex
+<auxiliary/Grid-System-USI-Software.pdf, id=92, 185.0925pt x 85.3579pt>
+File: auxiliary/Grid-System-USI-Software.pdf Graphic file (type pdf)
+<use auxiliary/Grid-System-USI-Software.pdf>
+Package pdftex.def Info: auxiliary/Grid-System-USI-Software.pdf  used on input line 7.
+(pdftex.def)             Requested size: 184.9429pt x 85.29515pt.
 
-
-LaTeX Font Warning: Font shape `T1/uop/b/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 43.
-
-LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
-(Font)              scaled to size 9.60007pt on input line 43.
-LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 13.82408pt on input line 43.
-LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 13.82408pt on input line 43.
-LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 43.
-[0
-
-
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
-
+Underfull \hbox (badness 4899) in paragraph at lines 10--10
+[]\T1/ppl/b/sc/20.74 Sensorial soft-ware evo-lu-tion
  []
-
-LaTeX Font Info:    Trying to load font information for OT1+mdbch on input line 44.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/ot1mdbch.fd
-File: ot1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OT1/mdbch.
-)
-LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 44.
-LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 44.
-LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 44.
-LaTeX Font Info:    Trying to load font information for OML+mdbch on input line 44.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/omlmdbch.fd
-File: omlmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OML/mdbch.
-)
-LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 9.60007pt on input line 44.
-LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 6.72005pt on input line 44.
-LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 4.80003pt on input line 44.
-LaTeX Font Info:    Trying to load font information for OMS+mdbch on input line 44.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/omsmdbch.fd
-File: omsmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMS/mdbch.
-)
-LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 44.
-LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 44.
-LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 44.
-LaTeX Font Info:    Trying to load font information for OMX+mdbch on input line 44.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/omxmdbch.fd
-File: omxmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMX/mdbch.
-)
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 44.
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 44.
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 44.
-LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 44.
-LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 44.
-LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 44.
-LaTeX Font Info:    Trying to load font information for MDA+mdbch on input line 44.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/mdamdbch.fd
-File: mdamdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDA/mdbch.
-)
-LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 44.
-LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 44.
-LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 44.
-LaTeX Font Info:    Trying to load font information for MDB+mdbch on input line 44.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/mdbmdbch.fd
-File: mdbmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDB/mdbch.
-)
-LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 44.
-LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 44.
-LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 44.
-
-
-LaTeX Font Warning: Font shape `T1/uop/m/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 44.
 
 [1
 
-] [2
 
 
-]
-LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
-(Font)              scaled to size 13.82408pt on input line 44.
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/gianlo/Develop/thesis/auxiliary/Grid-System-USI-Software.pdf>]) (/Users/gianlo/Develop/thesis/Abstract.tex [2
+
+]) (/Users/gianlo/Develop/thesis/ded-acks.tex
+1: section
+
+Package scrlayer-scrpage Warning: \headheight to low.
+(scrlayer-scrpage)                At least 13.59999pt needed,
+(scrlayer-scrpage)                but only 11.38109pt found.
+(scrlayer-scrpage)                I'll enlarge \headheight, for further
+(scrlayer-scrpage)                processing, but you should do this yourself,
+(scrlayer-scrpage)                e.g., setting geometry's option
+(scrlayer-scrpage)                `head=13.59999pt'.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 2.
+
+
+Overfull \vbox (2.2189pt too high) has occurred while \output is active []
+
  [3] [4
 
 ]
-LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 44.
-LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 44.
-LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 44.
-LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 8.64006pt on input line 44.
-LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 5.76004pt on input line 44.
-LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 44.
-LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 44.
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 44.
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 44.
-LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 44.
-LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 44.
-LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 44.
-LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 44.
-LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 44.
-LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 44.
- [5] [6
-
-]
-\c@oldpage=\count358
- (/Users/gianlo/Develop/thesis/Abstract.tex
-LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 23.88496pt on input line 2.
-LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 23.88496pt on input line 2.
-) (/Users/gianlo/Develop/thesis/Acknowledgements.tex [7
-
-] [8
-
-] [9] [10
-
-]) (/Users/gianlo/Develop/thesis/SYN.toc
-LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 9.60007pt on input line 1.
-)
-\tf@toc=\write5
-\openout5 = `SYN.toc'.
-
- [11
-
-] [12
-
-] (/Users/gianlo/Develop/thesis/SYN.lof [13
+--------------------
+ Dedicatory
+--------------------
+--------------------
+ Acknowledgements
+--------------------
+[5] [6
 
 ])
-\tf@lof=\write6
-\openout6 = `SYN.lof'.
+1: section
+[7] [8
 
- [14] (/Users/gianlo/Develop/thesis/SYN.lot)
-\tf@lot=\write7
-\openout7 = `SYN.lot'.
-
- [15
+] (/Users/gianlo/Develop/thesis/SYN.toc)
+\tf@toc=\write4
+\openout4 = `SYN.toc'.
 
 
-] [16
+1: section
+[9] [10
 
-] (/Users/gianlo/Develop/thesis/Introduction.tex
-Chapter 1.
-LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 19.91054pt on input line 1.
-LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 19.91054pt on input line 1.
-[1
+] (/Users/gianlo/Develop/thesis/SYN.lof
+1: section
+[11])
+\tf@lof=\write5
+\openout5 = `SYN.lof'.
+
+ [12] (/Users/gianlo/Develop/thesis/SYN.lot)
+\tf@lot=\write6
+\openout6 = `SYN.lot'.
+
+
+1: section
+[13
+
+] [14
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+mdbch on input line 39.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/mathdesign/mdbch/ts1mdbch.fd
-File: ts1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for TS1/mdbch.
+1: section
+(/Users/gianlo/Develop/thesis/Introduction.tex
+Chapter 1.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 39.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-LaTeX Font Info:    Font shape `TS1/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 39.
-) (/Users/gianlo/Develop/thesis/StateOfArt.tex [2]
+1: section
+[1
+
+]) (/Users/gianlo/Develop/thesis/StateOfArt.tex [2]
 Chapter 2.
-<images/stateOfArt/Haibt1959_Flowchart.png, id=359, 450.68375pt x 1260.71pt>
+<images/stateOfArt/Haibt1959_Flowchart.png, id=332, 450.68375pt x 1260.71pt>
 File: images/stateOfArt/Haibt1959_Flowchart.png Graphic file (type png)
 <use images/stateOfArt/Haibt1959_Flowchart.png>
 Package pdftex.def Info: images/stateOfArt/Haibt1959_Flowchart.png  used on input line 12.
-(pdftex.def)             Requested size: 106.47684pt x 297.84431pt.
+(pdftex.def)             Requested size: 138.28085pt x 386.8148pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 29--32
 
  []
 
+1: section
 [3
 
  </Users/gianlo/Develop/thesis/images/stateOfArt/Haibt1959_Flowchart.png>]
-<images/stateOfArt/Nassi1973_NSD.png, id=386, 851.18pt x 1072.005pt>
+Overfull \hbox (3.64459pt too wide) in paragraph at lines 43--44
+[]\T1/ppl/m/n/10.95 Dynamic vi-su-al-iza-tions. Used to present in-for-ma-tion ex-tracted with
+ []
+
+<images/stateOfArt/Nassi1973_NSD.png, id=359, 851.18pt x 1072.005pt>
 File: images/stateOfArt/Nassi1973_NSD.png Graphic file (type png)
 <use images/stateOfArt/Nassi1973_NSD.png>
 Package pdftex.def Info: images/stateOfArt/Nassi1973_NSD.png  used on input line 90.
-(pdftex.def)             Requested size: 104.1113pt x 131.12138pt.
-<images/stateOfArt/Brown1988_BalsaII.png, id=387, 574.145pt x 379.4175pt>
+(pdftex.def)             Requested size: 135.20876pt x 170.28113pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+ []\T1/ppl/m/sc/10 Figure 2.2: 
+ []
+
+<images/stateOfArt/Brown1988_BalsaII.png, id=360, 574.145pt x 379.4175pt>
 File: images/stateOfArt/Brown1988_BalsaII.png Graphic file (type png)
 <use images/stateOfArt/Brown1988_BalsaII.png>
 Package pdftex.def Info: images/stateOfArt/Brown1988_BalsaII.png  used on input line 95.
-(pdftex.def)             Requested size: 130.13864pt x 85.99629pt.
-<images/stateOfArt/Mueller1988_Rigi.png, id=388, 719.68875pt x 503.8825pt>
+(pdftex.def)             Requested size: 169.0103pt x 111.68402pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+ []\T1/ppl/m/sc/10 Figure 2.3: 
+ []
+
+<images/stateOfArt/Mueller1988_Rigi.png, id=361, 719.68875pt x 503.8825pt>
 File: images/stateOfArt/Mueller1988_Rigi.png Graphic file (type png)
 <use images/stateOfArt/Mueller1988_Rigi.png>
 Package pdftex.def Info: images/stateOfArt/Mueller1988_Rigi.png  used on input line 99.
-(pdftex.def)             Requested size: 130.13864pt x 91.11012pt.
- [4]
-<images/stateOfArt/Eick1992_Seesoft.png, id=401, 501.875pt x 405.515pt>
+(pdftex.def)             Requested size: 169.0103pt x 118.32782pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+ []\T1/ppl/m/sc/10 Figure 2.4: 
+ []
+
+[4]
+<images/stateOfArt/Eick1992_Seesoft.png, id=375, 501.875pt x 405.515pt>
 File: images/stateOfArt/Eick1992_Seesoft.png Graphic file (type png)
 <use images/stateOfArt/Eick1992_Seesoft.png>
 Package pdftex.def Info: images/stateOfArt/Eick1992_Seesoft.png  used on input line 122.
-(pdftex.def)             Requested size: 157.74355pt x 127.45944pt.
-<images/stateOfArt/DePauw1993_Jinsight.png, id=402, 844.15375pt x 717.68124pt>
+(pdftex.def)             Requested size: 204.86063pt x 165.53207pt.
+<images/stateOfArt/DePauw1993_Jinsight.png, id=376, 844.15375pt x 717.68124pt>
 File: images/stateOfArt/DePauw1993_Jinsight.png Graphic file (type png)
 <use images/stateOfArt/DePauw1993_Jinsight.png>
 Package pdftex.def Info: images/stateOfArt/DePauw1993_Jinsight.png  used on input line 126.
-(pdftex.def)             Requested size: 157.74355pt x 134.10497pt.
+(pdftex.def)             Requested size: 204.86063pt x 174.16342pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 140--145
 
  []
 
-[5 </Users/gianlo/Develop/thesis/images/stateOfArt/Nassi1973_NSD.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Brown1988_BalsaII.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Mueller1988_Rigi.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Eick1992_Seesoft.png> </Users/gianlo/Develop/thesis/images/stateOfArt/DePauw1993_Jinsight.png>]
-<images/stateOfArt/Chuan1.png, id=417, 1001.7425pt x 716.6775pt>
+<images/stateOfArt/Chuan1.png, id=378, 1001.7425pt x 716.6775pt>
 File: images/stateOfArt/Chuan1.png Graphic file (type png)
 <use images/stateOfArt/Chuan1.png>
 Package pdftex.def Info: images/stateOfArt/Chuan1.png  used on input line 148.
-(pdftex.def)             Requested size: 126.19724pt x 90.28435pt.
-<images/stateOfArt/Chuan2.png, id=418, 982.67125pt x 654.445pt>
+(pdftex.def)             Requested size: 163.89162pt x 117.25154pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+ []\T1/ppl/m/sc/10 Figure 2.7: 
+ []
+
+<images/stateOfArt/Chuan2.png, id=379, 982.67125pt x 654.445pt>
 File: images/stateOfArt/Chuan2.png Graphic file (type png)
 <use images/stateOfArt/Chuan2.png>
 Package pdftex.def Info: images/stateOfArt/Chuan2.png  used on input line 152.
-(pdftex.def)             Requested size: 126.19724pt x 84.04228pt.
-<images/stateOfArt/Chuan3.png, id=419, 981.6675pt x 850.17625pt>
+(pdftex.def)             Requested size: 163.89162pt x 109.14713pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--153
+ []\T1/ppl/m/sc/10 Figure 2.8: 
+ []
+
+<images/stateOfArt/Chuan3.png, id=380, 981.6675pt x 850.17625pt>
 File: images/stateOfArt/Chuan3.png Graphic file (type png)
 <use images/stateOfArt/Chuan3.png>
 Package pdftex.def Info: images/stateOfArt/Chuan3.png  used on input line 156.
-(pdftex.def)             Requested size: 126.19724pt x 109.28142pt.
-<images/stateOfArt/EvolutionMatrix1.png, id=423, 653.44125pt x 437.635pt>
+(pdftex.def)             Requested size: 163.89162pt x 141.93352pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
+ []\T1/ppl/m/sc/10 Figure 2.9: 
+ []
+
+[5 </Users/gianlo/Develop/thesis/images/stateOfArt/Nassi1973_NSD.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Brown1988_BalsaII.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Mueller1988_Rigi.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Eick1992_Seesoft.png> </Users/gianlo/Develop/thesis/images/stateOfArt/DePauw1993_Jinsight.png>]
+<images/stateOfArt/EvolutionMatrix1.png, id=397, 653.44125pt x 437.635pt>
 File: images/stateOfArt/EvolutionMatrix1.png Graphic file (type png)
 <use images/stateOfArt/EvolutionMatrix1.png>
 Package pdftex.def Info: images/stateOfArt/EvolutionMatrix1.png  used on input line 191.
-(pdftex.def)             Requested size: 193.23727pt x 129.41505pt.
-<images/stateOfArt/EvolutionMatrix2.png, id=424, 653.44125pt x 437.635pt>
+(pdftex.def)             Requested size: 250.95612pt x 168.07263pt.
+<images/stateOfArt/EvolutionMatrix2.png, id=398, 653.44125pt x 437.635pt>
 File: images/stateOfArt/EvolutionMatrix2.png Graphic file (type png)
 <use images/stateOfArt/EvolutionMatrix2.png>
 Package pdftex.def Info: images/stateOfArt/EvolutionMatrix2.png  used on input line 195.
-(pdftex.def)             Requested size: 193.23727pt x 129.41505pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 </Users/gianlo/Develop/thesis/images/stateOfArt/Chuan1.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Chuan2.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Chuan3.png>]
-<images/stateOfArt/Pinzger2005_RelVis.png, id=442, 605.26125pt x 484.81125pt>
+(pdftex.def)             Requested size: 250.95612pt x 168.07263pt.
+ [6 </Users/gianlo/Develop/thesis/images/stateOfArt/Chuan1.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Chuan2.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Chuan3.png> </Users/gianlo/Develop/thesis/images/stateOfArt/EvolutionMatrix1.png> </Users/gianlo/Develop/thesis/images/stateOfArt/EvolutionMatrix2.png>]
+<images/stateOfArt/Pinzger2005_RelVis.png, id=418, 605.26125pt x 484.81125pt>
 File: images/stateOfArt/Pinzger2005_RelVis.png Graphic file (type png)
 <use images/stateOfArt/Pinzger2005_RelVis.png>
 Package pdftex.def Info: images/stateOfArt/Pinzger2005_RelVis.png  used on input line 221.
-(pdftex.def)             Requested size: 130.13864pt x 104.23978pt.
-<images/stateOfArt/DAmbros2006.png, id=443, 636.3775pt x 561.09625pt>
+(pdftex.def)             Requested size: 169.0103pt x 135.37634pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--222
+ []\T1/ppl/m/sc/10 Figure 2.12: 
+ []
+
+<images/stateOfArt/DAmbros2006.png, id=419, 636.3775pt x 561.09625pt>
 File: images/stateOfArt/DAmbros2006.png Graphic file (type png)
 <use images/stateOfArt/DAmbros2006.png>
 Package pdftex.def Info: images/stateOfArt/DAmbros2006.png  used on input line 225.
-(pdftex.def)             Requested size: 130.13864pt x 114.74294pt.
-<images/stateOfArt/DAmbros2006a_EvoRadar.png, id=444, 636.3775pt x 561.09625pt>
+(pdftex.def)             Requested size: 169.0103pt x 149.01514pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
+ []\T1/ppl/m/sc/10 Figure 2.13: 
+ []
+
+<images/stateOfArt/DAmbros2006a_EvoRadar.png, id=420, 636.3775pt x 561.09625pt>
 File: images/stateOfArt/DAmbros2006a_EvoRadar.png Graphic file (type png)
 <use images/stateOfArt/DAmbros2006a_EvoRadar.png>
 Package pdftex.def Info: images/stateOfArt/DAmbros2006a_EvoRadar.png  used on input line 229.
-(pdftex.def)             Requested size: 130.13864pt x 114.74294pt.
-<images/stateOfArt/Steinbrueckner2010.png, id=446, 1060.96375pt x 730.73pt>
+(pdftex.def)             Requested size: 169.0103pt x 149.01514pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--230
+ []\T1/ppl/m/sc/10 Figure 2.14: 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--230
+ |\T1/ppl/m/n/10 Evo-lu-tion 
+ []
+
+<images/stateOfArt/Steinbrueckner2010.png, id=422, 1060.96375pt x 730.73pt>
 File: images/stateOfArt/Steinbrueckner2010.png Graphic file (type png)
 <use images/stateOfArt/Steinbrueckner2010.png>
 Package pdftex.def Info: images/stateOfArt/Steinbrueckner2010.png  used on input line 241.
-(pdftex.def)             Requested size: 354.91922pt x 244.44205pt.
- [7 </Users/gianlo/Develop/thesis/images/stateOfArt/EvolutionMatrix1.png> </Users/gianlo/Develop/thesis/images/stateOfArt/EvolutionMatrix2.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Pinzger2005_RelVis.png> </Users/gianlo/Develop/thesis/images/stateOfArt/DAmbros2006.png> </Users/gianlo/Develop/thesis/images/stateOfArt/DAmbros2006a_EvoRadar.png>]
-<images/stateOfArt/CodeCity.png, id=466, 2098.84125pt x 1173.38374pt>
+(pdftex.def)             Requested size: 460.93153pt x 317.46358pt.
+[7 </Users/gianlo/Develop/thesis/images/stateOfArt/Pinzger2005_RelVis.png> </Users/gianlo/Develop/thesis/images/stateOfArt/DAmbros2006.png> </Users/gianlo/Develop/thesis/images/stateOfArt/DAmbros2006a_EvoRadar.png>]
+<images/stateOfArt/CodeCity.png, id=439, 2098.84125pt x 1173.38374pt>
 File: images/stateOfArt/CodeCity.png Graphic file (type png)
 <use images/stateOfArt/CodeCity.png>
 Package pdftex.def Info: images/stateOfArt/CodeCity.png  used on input line 256.
-(pdftex.def)             Requested size: 354.91922pt x 198.41623pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+(pdftex.def)             Requested size: 460.93153pt x 257.6797pt.
  [8 </Users/gianlo/Develop/thesis/images/stateOfArt/Steinbrueckner2010.png>]
-<images/stateOfArt/CityVR.png, id=477, 1123.19624pt x 598.235pt>
+<images/stateOfArt/CityVR.png, id=450, 1123.19624pt x 598.235pt>
 File: images/stateOfArt/CityVR.png Graphic file (type png)
 <use images/stateOfArt/CityVR.png>
 Package pdftex.def Info: images/stateOfArt/CityVR.png  used on input line 287.
-(pdftex.def)             Requested size: 126.19724pt x 67.2118pt.
-<images/stateOfArt/ChronoTwigger.png, id=478, 1126.2075pt x 737.75626pt>
+(pdftex.def)             Requested size: 163.89162pt x 87.28499pt.
+
+Underfull \hbox (badness 3930) in paragraph at lines 288--288
+ []\T1/ppl/m/sc/10 Figure 2.17: 
+ []
+
+<images/stateOfArt/ChronoTwigger.png, id=451, 1126.2075pt x 737.75626pt>
 File: images/stateOfArt/ChronoTwigger.png Graphic file (type png)
 <use images/stateOfArt/ChronoTwigger.png>
 Package pdftex.def Info: images/stateOfArt/ChronoTwigger.png  used on input line 291.
-(pdftex.def)             Requested size: 126.19724pt x 82.6619pt.
-<images/stateOfArt/CuboidMatrix.png, id=479, 1233.60875pt x 927.465pt>
+(pdftex.def)             Requested size: 163.89162pt x 107.36029pt.
+
+Underfull \hbox (badness 3930) in paragraph at lines 292--292
+ []\T1/ppl/m/sc/10 Figure 2.18: 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--292
+ |\T1/ppl/m/n/10 ChronoTwig- 
+ []
+
+<images/stateOfArt/CuboidMatrix.png, id=452, 1233.60875pt x 927.465pt>
 File: images/stateOfArt/CuboidMatrix.png Graphic file (type png)
 <use images/stateOfArt/CuboidMatrix.png>
 Package pdftex.def Info: images/stateOfArt/CuboidMatrix.png  used on input line 295.
-(pdftex.def)             Requested size: 126.19724pt x 94.87473pt.
- [9 </Users/gianlo/Develop/thesis/images/stateOfArt/CodeCity.png> </Users/gianlo/Develop/thesis/images/stateOfArt/CityVR.png> </Users/gianlo/Develop/thesis/images/stateOfArt/ChronoTwigger.png> </Users/gianlo/Develop/thesis/images/stateOfArt/CuboidMatrix.png>]
-<images/stateOfArt/Alexandru_EvoClock.png, id=495, 2201.22375pt x 1152.305pt>
+(pdftex.def)             Requested size: 163.89162pt x 123.20694pt.
+
+Underfull \hbox (badness 3930) in paragraph at lines 296--296
+ []\T1/ppl/m/sc/10 Figure 2.19: 
+ []
+
+[9 </Users/gianlo/Develop/thesis/images/stateOfArt/CodeCity.png> </Users/gianlo/Develop/thesis/images/stateOfArt/CityVR.png> </Users/gianlo/Develop/thesis/images/stateOfArt/ChronoTwigger.png> </Users/gianlo/Develop/thesis/images/stateOfArt/CuboidMatrix.png>]
+<images/stateOfArt/Alexandru_EvoClock.png, id=467, 2201.22375pt x 1152.305pt>
 File: images/stateOfArt/Alexandru_EvoClock.png Graphic file (type png)
 <use images/stateOfArt/Alexandru_EvoClock.png>
 Package pdftex.def Info: images/stateOfArt/Alexandru_EvoClock.png  used on input line 312.
-(pdftex.def)             Requested size: 354.91922pt x 185.79677pt.
-<images/stateOfArt/RHDB.png, id=497, 667.49374pt x 281.05pt>
+(pdftex.def)             Requested size: 460.93153pt x 241.28787pt.
+<images/stateOfArt/RHDB.png, id=469, 667.49374pt x 281.05pt>
 File: images/stateOfArt/RHDB.png Graphic file (type png)
 <use images/stateOfArt/RHDB.png>
 Package pdftex.def Info: images/stateOfArt/RHDB.png  used on input line 338.
-(pdftex.def)             Requested size: 354.91922pt x 149.44467pt.
+(pdftex.def)             Requested size: 460.93153pt x 194.07909pt.
  [10 </Users/gianlo/Develop/thesis/images/stateOfArt/Alexandru_EvoClock.png>]
-<images/stateOfArt/Salis2019.png, id=510, 873.2625pt x 233.87375pt>
+<images/stateOfArt/Salis2019.png, id=482, 873.2625pt x 233.87375pt>
 File: images/stateOfArt/Salis2019.png Graphic file (type png)
 <use images/stateOfArt/Salis2019.png>
 Package pdftex.def Info: images/stateOfArt/Salis2019.png  used on input line 369.
-(pdftex.def)             Requested size: 354.91922pt x 95.05379pt.
+(pdftex.def)             Requested size: 460.93153pt x 123.44574pt.
  [11 </Users/gianlo/Develop/thesis/images/stateOfArt/RHDB.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Salis2019.png>]
-<images/stateOfArt/CocoViz.png, id=528, 2400.97pt x 1356.06625pt>
+<images/stateOfArt/CocoViz.png, id=501, 2400.97pt x 1356.06625pt>
 File: images/stateOfArt/CocoViz.png Graphic file (type png)
 <use images/stateOfArt/CocoViz.png>
 Package pdftex.def Info: images/stateOfArt/CocoViz.png  used on input line 423.
-(pdftex.def)             Requested size: 354.91922pt x 200.44221pt.
+(pdftex.def)             Requested size: 460.93153pt x 260.32451pt.
  [12]
 Underfull \hbox (badness 10000) in paragraph at lines 440--459
 
@@ -1155,25 +956,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 440--459
 
 [13 </Users/gianlo/Develop/thesis/images/stateOfArt/CocoViz.png>]) (/Users/gianlo/Develop/thesis/Approach.tex [14]
 Chapter 3.
-<images/approach/EvolutionaryModel.jpg, id=554, 806.01125pt x 263.98625pt>
+<images/approach/EvolutionaryModel.jpg, id=527, 806.01125pt x 263.98625pt>
 File: images/approach/EvolutionaryModel.jpg Graphic file (type jpg)
 <use images/approach/EvolutionaryModel.jpg>
 Package pdftex.def Info: images/approach/EvolutionaryModel.jpg  used on input line 33.
-(pdftex.def)             Requested size: 236.61682pt x 77.49661pt.
+(pdftex.def)             Requested size: 307.2929pt x 100.64612pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 39--49
 
  []
 
-[16 </Users/gianlo/Develop/thesis/images/approach/EvolutionaryModel.jpg>]
-LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 11.52008pt on input line 72.
+1: section
+[15
 
+ </Users/gianlo/Develop/thesis/images/approach/EvolutionaryModel.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
@@ -1183,23 +979,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--90
 
  []
 
-
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 100--105
 
  []
 
-[17]
-<images/approach/RebuildingHistory.jpg, id=572, 1207.51125pt x 675.52374pt>
+<images/approach/RebuildingHistory.jpg, id=540, 1207.51125pt x 675.52374pt>
 File: images/approach/RebuildingHistory.jpg Graphic file (type jpg)
 <use images/approach/RebuildingHistory.jpg>
 Package pdftex.def Info: images/approach/RebuildingHistory.jpg  used on input line 108.
-(pdftex.def)             Requested size: 315.48709pt x 176.48756pt.
- [18 </Users/gianlo/Develop/thesis/images/approach/RebuildingHistory.jpg>]
-<images/approach/PartialHistory.png, id=579, 1096.095pt x 891.33pt>
+(pdftex.def)             Requested size: 409.72125pt x 229.21118pt.
+[17]
+<images/approach/PartialHistory.png, id=548, 1096.095pt x 891.33pt>
 File: images/approach/PartialHistory.png Graphic file (type png)
 <use images/approach/PartialHistory.png>
 Package pdftex.def Info: images/approach/PartialHistory.png  used on input line 144.
-(pdftex.def)             Requested size: 236.61682pt x 192.40744pt.
+(pdftex.def)             Requested size: 307.2929pt x 249.88351pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 150--167
 
@@ -1210,7 +1005,7 @@ Package caption Warning: \label without proper reference on input line 204.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:taxonomyApproach' on page 19 undefined on input line 179.
+LaTeX Warning: Reference `tab:taxonomyApproach' on page 18 undefined on input line 179.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 170--181
@@ -1222,15 +1017,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--181
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19 </Users/gianlo/Develop/thesis/images/approach/PartialHistory.png>]
-<images/approach/Taxonomy.jpg, id=590, 678.535pt x 194.7275pt>
+[18 </Users/gianlo/Develop/thesis/images/approach/RebuildingHistory.jpg>]
+<images/approach/Taxonomy.jpg, id=558, 678.535pt x 194.7275pt>
 File: images/approach/Taxonomy.jpg Graphic file (type jpg)
 <use images/approach/Taxonomy.jpg>
 Package pdftex.def Info: images/approach/Taxonomy.jpg  used on input line 184.
-(pdftex.def)             Requested size: 236.61682pt x 67.90308pt.
+(pdftex.def)             Requested size: 307.2929pt x 88.18515pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 190.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 209--212
 
@@ -1241,78 +1038,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--212
 
  []
 
-
-Underfull \vbox (badness 1057) has occurred while \output is active []
-
- [20 </Users/gianlo/Develop/thesis/images/approach/Taxonomy.jpg>]
-<images/approach/ApproachMatrix.jpg, id=598, 1003.75pt x 784.9325pt>
+[19 </Users/gianlo/Develop/thesis/images/approach/PartialHistory.png> </Users/gianlo/Develop/thesis/images/approach/Taxonomy.jpg>]
+<images/approach/ApproachMatrix.jpg, id=566, 1003.75pt x 784.9325pt>
 File: images/approach/ApproachMatrix.jpg Graphic file (type jpg)
 <use images/approach/ApproachMatrix.jpg>
 Package pdftex.def Info: images/approach/ApproachMatrix.jpg  used on input line 239.
-(pdftex.def)             Requested size: 236.61682pt x 185.03406pt.
+(pdftex.def)             Requested size: 307.2929pt x 240.30833pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 243--247
 
  []
 
-[21 </Users/gianlo/Develop/thesis/images/approach/ApproachMatrix.jpg>]
-<images/approach/ApproachMatrix2.png, id=607, 1460.45625pt x 978.65625pt>
+[20 </Users/gianlo/Develop/thesis/images/approach/ApproachMatrix.jpg>]
+<images/approach/ApproachMatrix2.png, id=575, 1460.45625pt x 978.65625pt>
 File: images/approach/ApproachMatrix2.png Graphic file (type png)
 <use images/approach/ApproachMatrix2.png>
 Package pdftex.def Info: images/approach/ApproachMatrix2.png  used on input line 264.
-(pdftex.def)             Requested size: 394.35738pt x 264.25565pt.
-
+(pdftex.def)             Requested size: 512.14963pt x 343.19188pt.
+ [21 </Users/gianlo/Develop/thesis/images/approach/ApproachMatrix2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 282--291
 
  []
 
-[22 </Users/gianlo/Develop/thesis/images/approach/ApproachMatrix2.png>]
-<images/approach/Layout.png, id=614, 669.50125pt x 671.50874pt>
+<images/approach/Layout.png, id=582, 669.50125pt x 671.50874pt>
 File: images/approach/Layout.png Graphic file (type png)
 <use images/approach/Layout.png>
 Package pdftex.def Info: images/approach/Layout.png  used on input line 308.
-(pdftex.def)             Requested size: 394.35738pt x 395.55145pt.
+(pdftex.def)             Requested size: 512.14963pt x 513.72302pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 316--319
 
  []
 
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.43994pt on input line 323.
-[23] [24 </Users/gianlo/Develop/thesis/images/approach/Layout.png>]
-<images/approach/Moments.jpg, id=628, 941.5175pt x 565.11125pt>
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 323.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [22] [23 </Users/gianlo/Develop/thesis/images/approach/Layout.png>]
+<images/approach/Moments.jpg, id=597, 941.5175pt x 565.11125pt>
 File: images/approach/Moments.jpg Graphic file (type jpg)
 <use images/approach/Moments.jpg>
 Package pdftex.def Info: images/approach/Moments.jpg  used on input line 338.
-(pdftex.def)             Requested size: 354.91922pt x 213.02855pt.
-<images/approach/ColorAssociation.png, id=630, 155.58125pt x 297.11pt>
+(pdftex.def)             Requested size: 460.93153pt x 276.65686pt.
+<images/approach/ColorAssociation.png, id=599, 155.58125pt x 297.11pt>
 File: images/approach/ColorAssociation.png Graphic file (type png)
 <use images/approach/ColorAssociation.png>
 Package pdftex.def Info: images/approach/ColorAssociation.png  used on input line 354.
-(pdftex.def)             Requested size: 82.81552pt x 158.1521pt.
+(pdftex.def)             Requested size: 107.55203pt x 205.39146pt.
 
-Underfull \hbox (badness 2689) in paragraph at lines 360--369
-\T1/mdbch/m/n/10 en-tity. To achieve this pur-pose, we used the color as-
- []
-
-
-Underfull \hbox (badness 1590) in paragraph at lines 360--369
-\T1/mdbch/m/n/10 so-ci-a-tion de-scribed in fig-ure []3.9[]. Nonethe-less, each per-
- []
-
-
-Underfull \hbox (badness 3364) in paragraph at lines 360--369
-\T1/mdbch/m/n/10 son has their per-cep-tion of col-ors. Thus, we can not
- []
-
-
-Underfull \hbox (badness 5175) in paragraph at lines 360--369
-\T1/mdbch/m/n/10 as-sume that this color will work sim-i-larly for all peo-
- []
-
-
-Underfull \hbox (badness 1092) in paragraph at lines 360--369
-\T1/mdbch/m/n/10 ple. To rem-edy this is-sue, users can cus-tomize the color
+Underfull \hbox (badness 1205) in paragraph at lines 360--369
+\T1/ppl/m/n/10.95 fig-ure [][]3.9[][]. Nonethe-less, each per-son has their per-cep-tion of col-
  []
 
 
@@ -1320,104 +1094,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 360--369
 
  []
 
-[25 </Users/gianlo/Develop/thesis/images/approach/Moments.jpg> </Users/gianlo/Develop/thesis/images/approach/ColorAssociation.png>]
+[24 </Users/gianlo/Develop/thesis/images/approach/Moments.jpg> </Users/gianlo/Develop/thesis/images/approach/ColorAssociation.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 382--387
 
  []
 
-[26]) (/Users/gianlo/Develop/thesis/Implementation.tex [27] [28
+) (/Users/gianlo/Develop/thesis/Implementation.tex [25] [26
 
 ]
 Chapter 4.
-[29]
-<images/implementation/SYNArchitecture.jpg, id=662, 1089.06876pt x 616.3025pt>
+<images/implementation/SYNArchitecture.jpg, id=621, 1089.06876pt x 616.3025pt>
 File: images/implementation/SYNArchitecture.jpg Graphic file (type jpg)
 <use images/implementation/SYNArchitecture.jpg>
 Package pdftex.def Info: images/implementation/SYNArchitecture.jpg  used on input line 41.
-(pdftex.def)             Requested size: 394.35738pt x 223.16647pt.
- [30 </Users/gianlo/Develop/thesis/images/implementation/SYNArchitecture.jpg>]
-<images/implementation/UMLProject.png, id=670, 318.18875pt x 449.68pt>
+(pdftex.def)             Requested size: 512.14963pt x 289.82208pt.
+1: section
+[27] [28 </Users/gianlo/Develop/thesis/images/implementation/SYNArchitecture.jpg>]
+<images/implementation/UMLProject.png, id=634, 318.18875pt x 449.68pt>
 File: images/implementation/UMLProject.png Graphic file (type png)
 <use images/implementation/UMLProject.png>
 Package pdftex.def Info: images/implementation/UMLProject.png  used on input line 70.
-(pdftex.def)             Requested size: 78.87027pt x 111.45909pt.
-<images/implementation/UMLHistory.png, id=671, 1020.81375pt x 668.4975pt>
+(pdftex.def)             Requested size: 102.42836pt x 144.75136pt.
+<images/implementation/UMLHistory.png, id=635, 1020.81375pt x 668.4975pt>
 File: images/implementation/UMLHistory.png Graphic file (type png)
 <use images/implementation/UMLHistory.png>
 Package pdftex.def Info: images/implementation/UMLHistory.png  used on input line 79.
-(pdftex.def)             Requested size: 78.87027pt x 51.6448pt.
- [31 </Users/gianlo/Develop/thesis/images/implementation/UMLProject.png> </Users/gianlo/Develop/thesis/images/implementation/UMLHistory.png>]
-<images/implementation/UMLChanges.png, id=681, 938.50626pt x 284.06125pt>
+(pdftex.def)             Requested size: 102.42836pt x 67.06787pt.
+ [29 </Users/gianlo/Develop/thesis/images/implementation/UMLProject.png> </Users/gianlo/Develop/thesis/images/implementation/UMLHistory.png>]
+<images/implementation/UMLChanges.png, id=645, 938.50626pt x 284.06125pt>
 File: images/implementation/UMLChanges.png Graphic file (type png)
 <use images/implementation/UMLChanges.png>
 Package pdftex.def Info: images/implementation/UMLChanges.png  used on input line 115.
-(pdftex.def)             Requested size: 197.17868pt x 59.68062pt.
- [32 </Users/gianlo/Develop/thesis/images/implementation/UMLChanges.png>] [33] [34]
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 209.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 209.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 209.
-
+(pdftex.def)             Requested size: 256.07481pt x 77.50375pt.
+ [30 </Users/gianlo/Develop/thesis/images/implementation/UMLChanges.png>] [31]
 Underfull \hbox (badness 10000) in paragraph at lines 209--214
 
  []
 
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 216.
-
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 216--219
 
- []
-
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 221.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 221.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 222.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 222.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 222.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 230.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 230.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 231.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 231.
-[35]
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 238.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 238.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 238.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 238.
-
-Overfull \hbox (23.16211pt too wide) in paragraph at lines 238--242
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
@@ -1430,291 +1146,260 @@ Underfull \hbox (badness 10000) in paragraph at lines 247--250
 
  []
 
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 252.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 252.
 
 Underfull \hbox (badness 10000) in paragraph at lines 252--255
 
  []
 
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 257.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 260.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 260.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 260.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 260.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 260.
 
 Underfull \hbox (badness 10000) in paragraph at lines 257--261
 
  []
 
 
-Overfull \hbox (13.36914pt too wide) in paragraph at lines 257--261
-\T1/mdbch/m/n/10 To do so, it ex-ploits the out-put of the com-mand "[][][][][][][][][][][][][][]",
- []
-
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family mdbch in TS1 encoding.
-(textcomp)             Default family used instead on input line 263.
-
 Underfull \hbox (badness 10000) in paragraph at lines 263--266
 
  []
 
-<images/implementation/HistorySplit.jpg, id=711, 1537.745pt x 1183.42125pt>
+[33]
+<images/implementation/HistorySplit.jpg, id=677, 1537.745pt x 1183.42125pt>
 File: images/implementation/HistorySplit.jpg Graphic file (type jpg)
 <use images/implementation/HistorySplit.jpg>
 Package pdftex.def Info: images/implementation/HistorySplit.jpg  used on input line 280.
-(pdftex.def)             Requested size: 394.35738pt x 303.49292pt.
-[36] [37 </Users/gianlo/Develop/thesis/images/implementation/HistorySplit.jpg>]
+(pdftex.def)             Requested size: 512.14963pt x 394.14172pt.
+ [34 </Users/gianlo/Develop/thesis/images/implementation/HistorySplit.jpg>]
+Overfull \hbox (37.66869pt too wide) in paragraph at lines 321--324
+[]\T1/ppl/m/n/10.95 Therefore, the al-go-rithm takes as in-put a list of al-ready dis-cov-ered File-His-to-ries and an \T1/cmtt/m/n/10.95 ProjectAnalysisResult
+ []
+
+[35]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 342.
-LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 344.
-LaTeX Font Info:    Font shape `T1/mdbch/m/fsc' will be
-(Font)              scaled to size 9.60007pt on input line 344.
- [38] [39]
-Overfull \hbox (8.44972pt too wide) in paragraph at lines 393--396
-[]\T1/mdbch/m/n/10 => \T1/fvm/m/n/10 createProject(projectName: String!, projectLocation: String!): Project
+ [36]
+Overfull \hbox (19.76213pt too wide) in paragraph at lines 407--411
+[]\T1/cmtt/m/n/10.95 partialView(projectId: Int!, viewSpecification: ViewSpecificationInput!, viewAnimationId:
  []
 
-
-Overfull \hbox (82.99916pt too wide) in paragraph at lines 407--411
-[]\T1/fvm/m/n/10 partialView(projectId: Int!, viewSpecification: ViewSpecificationInput!, viewAnimationId:
- []
-
-
-Overfull \hbox (26.93883pt too wide) in paragraph at lines 407--411
-\T1/mdbch/m/n/10 returns a view with only the next 100 an-i-ma-tions start-ing from the one iden-ti-fied by \T1/fvm/m/n/10 viewAnimationId\T1/mdbch/m/n/10 .
- []
-
-
-Overfull \hbox (32.19075pt too wide) in paragraph at lines 415--417
-[]\T1/fvm/m/n/10 projectVersions(projectId: Int!, projectVersionsId: [Int]!): [ProjectVersion]! 
- []
-
-
-Overfull \hbox (22.02907pt too wide) in paragraph at lines 418--420
-[]\T1/fvm/m/n/10 groupingPreview(projectId: Int!, viewSpecification: ViewSpecificationInput!):
- []
-
-[40]
-Overfull \hbox (37.27159pt too wide) in paragraph at lines 424--426
-[]\T1/fvm/m/n/10 fileTypeMetrics(projectId: Int!, fileTypeFilter: [String]): [FileTypeMetrics!]! 
- []
-
-[41]
-<images/implementation/SYNUI-settings1.png, id=761, 1896.08376pt x 910.40125pt>
+[37]
+<images/implementation/SYNUI-settings1.png, id=714, 1896.08376pt x 910.40125pt>
 File: images/implementation/SYNUI-settings1.png Graphic file (type png)
 <use images/implementation/SYNUI-settings1.png>
 Package pdftex.def Info: images/implementation/SYNUI-settings1.png  used on input line 463.
-(pdftex.def)             Requested size: 394.35738pt x 189.34232pt.
-<images/implementation/SYNUI-settings2.png, id=764, 1896.08376pt x 910.40125pt>
+(pdftex.def)             Requested size: 512.14963pt x 245.90886pt.
+<images/implementation/SYNUI-settings2.png, id=717, 1896.08376pt x 910.40125pt>
 File: images/implementation/SYNUI-settings2.png Graphic file (type png)
 <use images/implementation/SYNUI-settings2.png>
 Package pdftex.def Info: images/implementation/SYNUI-settings2.png  used on input line 481.
-(pdftex.def)             Requested size: 394.35738pt x 189.34232pt.
- [42 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings1.png>]
-<images/implementation/SYNUI-settings3.png, id=774, 1896.08376pt x 1067.99pt>
+(pdftex.def)             Requested size: 512.14963pt x 245.90886pt.
+ [38] [39 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings1.png> </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings2.png>]
+<images/implementation/SYNUI-settings3.png, id=732, 1896.08376pt x 1067.99pt>
 File: images/implementation/SYNUI-settings3.png Graphic file (type png)
 <use images/implementation/SYNUI-settings3.png>
 Package pdftex.def Info: images/implementation/SYNUI-settings3.png  used on input line 511.
-(pdftex.def)             Requested size: 394.35738pt x 222.11713pt.
- [43 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings2.png>]
-<images/implementation/SYNUI-settings4.png, id=783, 1896.08376pt x 910.40125pt>
+(pdftex.def)             Requested size: 512.14963pt x 288.47523pt.
+<images/implementation/SYNUI-settings4.png, id=734, 1896.08376pt x 910.40125pt>
 File: images/implementation/SYNUI-settings4.png Graphic file (type png)
 <use images/implementation/SYNUI-settings4.png>
 Package pdftex.def Info: images/implementation/SYNUI-settings4.png  used on input line 527.
-(pdftex.def)             Requested size: 394.35738pt x 189.34232pt.
-<images/implementation/SYNUI-settings5.png, id=785, 1896.08376pt x 1067.99pt>
+(pdftex.def)             Requested size: 512.14963pt x 245.90886pt.
+ [40] [41 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings3.png> </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings4.png>]
+<images/implementation/SYNUI-settings5.png, id=751, 1896.08376pt x 1067.99pt>
 File: images/implementation/SYNUI-settings5.png Graphic file (type png)
 <use images/implementation/SYNUI-settings5.png>
 Package pdftex.def Info: images/implementation/SYNUI-settings5.png  used on input line 546.
-(pdftex.def)             Requested size: 394.35738pt x 222.11713pt.
- [44 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings3.png>] [45 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings4.png> </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings5.png>]
+(pdftex.def)             Requested size: 512.14963pt x 288.47523pt.
 
-LaTeX Warning: Reference `fig:SYNUIsimple' on page 46 undefined on input line 561.
 
-[46]
-<images/implementation/SYNUI-fileHistory.png, id=803, 1896.08376pt x 1191.45125pt>
+LaTeX Warning: Reference `fig:SYNUIsimple' on page 42 undefined on input line 561.
+
+[42 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings5.png>]
+<images/implementation/SYNUI-fileHistory.png, id=758, 1896.08376pt x 1191.45125pt>
 File: images/implementation/SYNUI-fileHistory.png Graphic file (type png)
 <use images/implementation/SYNUI-fileHistory.png>
 Package pdftex.def Info: images/implementation/SYNUI-fileHistory.png  used on input line 589.
-(pdftex.def)             Requested size: 394.35738pt x 247.79419pt.
-<images/implementation/SYNUI-deletedshadow.png, id=804, 1896.08376pt x 1191.45125pt>
+(pdftex.def)             Requested size: 512.14963pt x 321.8234pt.
+<images/implementation/SYNUI-deletedshadow.png, id=759, 1896.08376pt x 1191.45125pt>
 File: images/implementation/SYNUI-deletedshadow.png Graphic file (type png)
 <use images/implementation/SYNUI-deletedshadow.png>
 Package pdftex.def Info: images/implementation/SYNUI-deletedshadow.png  used on input line 596.
-(pdftex.def)             Requested size: 394.35738pt x 247.79419pt.
-) (/Users/gianlo/Develop/thesis/Casestudies.tex [47 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-fileHistory.png>] [48 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-deletedshadow.png>]
-Chapter 5.
-
-LaTeX Warning: Reference `tab:casestudies' on page 49 undefined on input line 7.
-
-[49
+(pdftex.def)             Requested size: 512.14963pt x 321.8234pt.
+) (/Users/gianlo/Develop/thesis/Casestudies.tex [43] [44 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-fileHistory.png>] [45 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-deletedshadow.png>] [46
 
 ]
-<images/casestudies/JetUML_V0E0.png, id=821, 745.78625pt x 765.86125pt>
+Chapter 5.
+
+LaTeX Warning: Reference `tab:casestudies' on page 47 undefined on input line 7.
+
+1: section
+[47]
+<images/casestudies/JetUML_V0E0.png, id=784, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0E0.png Graphic file (type png)
 <use images/casestudies/JetUML_V0E0.png>
 Package pdftex.def Info: images/casestudies/JetUML_V0E0.png  used on input line 35.
-(pdftex.def)             Requested size: 165.62936pt x 170.0793pt.
-<images/casestudies/JetUML_V0E1.png, id=822, 745.78625pt x 765.86125pt>
+(pdftex.def)             Requested size: 215.1019pt x 220.8904pt.
+<images/casestudies/JetUML_V0E1.png, id=785, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0E1.png Graphic file (type png)
 <use images/casestudies/JetUML_V0E1.png>
 Package pdftex.def Info: images/casestudies/JetUML_V0E1.png  used on input line 40.
-(pdftex.def)             Requested size: 165.62936pt x 170.0793pt.
-LaTeX Font Info:    Font shape `T1/mdbch/b/it' will be
-(Font)              scaled to size 9.60007pt on input line 47.
-LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10> not available
-(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 56.
-LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
-(Font)              scaled to size 8.43994pt on input line 56.
- [50 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0E0.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0E1.png>]
-<images/casestudies/JetUML_V0S1.png, id=835, 745.78625pt x 765.86125pt>
+(pdftex.def)             Requested size: 215.1019pt x 220.8904pt.
+ [48 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0E0.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0E1.png>]
+<images/casestudies/JetUML_V0S1.png, id=794, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0S1.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S1.png>
 Package pdftex.def Info: images/casestudies/JetUML_V0S1.png  used on input line 77.
-(pdftex.def)             Requested size: 165.62936pt x 170.0793pt.
-<images/casestudies/JetUML_V0S1_1.png, id=836, 719.68875pt x 640.3925pt>
+(pdftex.def)             Requested size: 215.1019pt x 220.8904pt.
+<images/casestudies/JetUML_V0S1_1.png, id=795, 719.68875pt x 640.3925pt>
 File: images/casestudies/JetUML_V0S1_1.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S1_1.png>
 Package pdftex.def Info: images/casestudies/JetUML_V0S1_1.png  used on input line 83.
-(pdftex.def)             Requested size: 165.62936pt x 147.37512pt.
- [51 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S1.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S1_1.png>]
+(pdftex.def)             Requested size: 215.1019pt x 191.39613pt.
+ [49 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S1.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S1_1.png>]
 File: images/casestudies/JetUML_V0S1.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S1.png>
 Package pdftex.def Info: images/casestudies/JetUML_V0S1.png  used on input line 125.
-(pdftex.def)             Requested size: 126.19724pt x 129.587pt.
-<images/casestudies/JetUML_V0S2.png, id=852, 745.78625pt x 765.86125pt>
+(pdftex.def)             Requested size: 163.89162pt x 168.30301pt.
+<images/casestudies/JetUML_V0S2.png, id=811, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0S2.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S2.png>
 Package pdftex.def Info: images/casestudies/JetUML_V0S2.png  used on input line 130.
-(pdftex.def)             Requested size: 126.19724pt x 129.587pt.
-<images/casestudies/JetUML_V0S3.png, id=853, 745.78625pt x 765.86125pt>
+(pdftex.def)             Requested size: 163.89162pt x 168.30301pt.
+<images/casestudies/JetUML_V0S3.png, id=812, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0S3.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S3.png>
 Package pdftex.def Info: images/casestudies/JetUML_V0S3.png  used on input line 135.
-(pdftex.def)             Requested size: 126.19724pt x 129.587pt.
-<images/casestudies/JetUML_V0S4.png, id=854, 745.78625pt x 765.86125pt>
+(pdftex.def)             Requested size: 163.89162pt x 168.30301pt.
+<images/casestudies/JetUML_V0S4.png, id=813, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0S4.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S4.png>
 Package pdftex.def Info: images/casestudies/JetUML_V0S4.png  used on input line 141.
-(pdftex.def)             Requested size: 126.19724pt x 129.587pt.
-<images/casestudies/JetUML_V0S5.png, id=855, 745.78625pt x 765.86125pt>
+(pdftex.def)             Requested size: 163.89162pt x 168.30301pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
+ []\T1/ppl/m/sc/9 (d) |\T1/ppl/m/n/9 10 Jan 2015 
+ []
+
+<images/casestudies/JetUML_V0S5.png, id=814, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0S5.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S5.png>
 Package pdftex.def Info: images/casestudies/JetUML_V0S5.png  used on input line 147.
-(pdftex.def)             Requested size: 126.19724pt x 129.587pt.
-<images/casestudies/JetUML_V0S6.png, id=856, 745.78625pt x 765.86125pt>
+(pdftex.def)             Requested size: 163.89162pt x 168.30301pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+ []\T1/ppl/m/sc/9 (e) |\T1/ppl/m/n/9 22 Jan 2015 
+ []
+
+<images/casestudies/JetUML_V0S6.png, id=815, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0S6.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S6.png>
 Package pdftex.def Info: images/casestudies/JetUML_V0S6.png  used on input line 153.
-(pdftex.def)             Requested size: 126.19724pt x 129.587pt.
-<images/casestudies/JetUML_V0S7.png, id=857, 745.78625pt x 765.86125pt>
+(pdftex.def)             Requested size: 163.89162pt x 168.30301pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+ []\T1/ppl/m/sc/9 (f) |\T1/ppl/m/n/9 16 Oct 2015 
+ []
+
+<images/casestudies/JetUML_V0S7.png, id=816, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0S7.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S7.png>
 Package pdftex.def Info: images/casestudies/JetUML_V0S7.png  used on input line 160.
-(pdftex.def)             Requested size: 126.19724pt x 129.587pt.
-<images/casestudies/JetUML_V0S8.png, id=858, 745.78625pt x 765.86125pt>
+(pdftex.def)             Requested size: 163.89162pt x 168.30301pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
+ []\T1/ppl/m/sc/9 (g) |\T1/ppl/m/n/9 17 Jan 2016 
+ []
+
+<images/casestudies/JetUML_V0S8.png, id=817, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0S8.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S8.png>
 Package pdftex.def Info: images/casestudies/JetUML_V0S8.png  used on input line 166.
-(pdftex.def)             Requested size: 126.19724pt x 129.587pt.
-<images/casestudies/JetUML_V0S9.png, id=859, 745.78625pt x 765.86125pt>
+(pdftex.def)             Requested size: 163.89162pt x 168.30301pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
+ []\T1/ppl/m/sc/9 (h) |\T1/ppl/m/n/9 26 Nov 2017 
+ []
+
+<images/casestudies/JetUML_V0S9.png, id=818, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0S9.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S9.png>
 Package pdftex.def Info: images/casestudies/JetUML_V0S9.png  used on input line 172.
-(pdftex.def)             Requested size: 126.19724pt x 129.587pt.
- [52]
-<images/casestudies/JetUML_V1S1.png, id=886, 637.38126pt x 555.07375pt>
+(pdftex.def)             Requested size: 163.89162pt x 168.30301pt.
+
+LaTeX Warning: Float too large for page by 15.58878pt on input line 180.
+
+[50]
+<images/casestudies/JetUML_V1S1.png, id=845, 637.38126pt x 555.07375pt>
 File: images/casestudies/JetUML_V1S1.png Graphic file (type png)
 <use images/casestudies/JetUML_V1S1.png>
 Package pdftex.def Info: images/casestudies/JetUML_V1S1.png  used on input line 225.
-(pdftex.def)             Requested size: 189.28984pt x 164.84639pt.
-<images/casestudies/JetUML_V1S2.png, id=887, 637.38126pt x 555.07375pt>
+(pdftex.def)             Requested size: 245.82962pt x 214.08095pt.
+<images/casestudies/JetUML_V1S2.png, id=846, 637.38126pt x 555.07375pt>
 File: images/casestudies/JetUML_V1S2.png Graphic file (type png)
 <use images/casestudies/JetUML_V1S2.png>
 Package pdftex.def Info: images/casestudies/JetUML_V1S2.png  used on input line 229.
-(pdftex.def)             Requested size: 189.28984pt x 164.84639pt.
-<images/casestudies/JetUML_V1S3.png, id=888, 637.38126pt x 555.07375pt>
+(pdftex.def)             Requested size: 245.82962pt x 214.08095pt.
+<images/casestudies/JetUML_V1S3.png, id=847, 637.38126pt x 555.07375pt>
 File: images/casestudies/JetUML_V1S3.png Graphic file (type png)
 <use images/casestudies/JetUML_V1S3.png>
 Package pdftex.def Info: images/casestudies/JetUML_V1S3.png  used on input line 235.
-(pdftex.def)             Requested size: 189.28984pt x 164.84639pt.
-<images/casestudies/JetUML_V1S4.png, id=889, 637.38126pt x 555.07375pt>
+(pdftex.def)             Requested size: 245.82962pt x 214.08095pt.
+<images/casestudies/JetUML_V1S4.png, id=848, 637.38126pt x 555.07375pt>
 File: images/casestudies/JetUML_V1S4.png Graphic file (type png)
 <use images/casestudies/JetUML_V1S4.png>
 Package pdftex.def Info: images/casestudies/JetUML_V1S4.png  used on input line 239.
-(pdftex.def)             Requested size: 189.28984pt x 164.84639pt.
-<images/casestudies/JetUML_V1S5.png, id=890, 637.38126pt x 555.07375pt>
+(pdftex.def)             Requested size: 245.82962pt x 214.08095pt.
+<images/casestudies/JetUML_V1S5.png, id=849, 637.38126pt x 555.07375pt>
 File: images/casestudies/JetUML_V1S5.png Graphic file (type png)
 <use images/casestudies/JetUML_V1S5.png>
 Package pdftex.def Info: images/casestudies/JetUML_V1S5.png  used on input line 245.
-(pdftex.def)             Requested size: 189.28984pt x 164.84639pt.
-<images/casestudies/JetUML_V1S6.png, id=891, 637.38126pt x 555.07375pt>
+(pdftex.def)             Requested size: 245.82962pt x 214.08095pt.
+<images/casestudies/JetUML_V1S6.png, id=850, 637.38126pt x 555.07375pt>
 File: images/casestudies/JetUML_V1S6.png Graphic file (type png)
 <use images/casestudies/JetUML_V1S6.png>
 Package pdftex.def Info: images/casestudies/JetUML_V1S6.png  used on input line 249.
-(pdftex.def)             Requested size: 189.28984pt x 164.84639pt.
- [53]
-<images/casestudies/JetUML_V2S1.png, id=898, 881.2925pt x 883.3pt>
+(pdftex.def)             Requested size: 245.82962pt x 214.08095pt.
+
+
+LaTeX Warning: Float too large for page by 53.92259pt on input line 255.
+
+[51]
+<images/casestudies/JetUML_V2S1.png, id=858, 881.2925pt x 883.3pt>
 File: images/casestudies/JetUML_V2S1.png Graphic file (type png)
 <use images/casestudies/JetUML_V2S1.png>
 Package pdftex.def Info: images/casestudies/JetUML_V2S1.png  used on input line 288.
-(pdftex.def)             Requested size: 189.28984pt x 189.7171pt.
-<images/casestudies/JetUML_V2S2.png, id=899, 881.2925pt x 883.3pt>
+(pdftex.def)             Requested size: 245.82962pt x 246.37885pt.
+<images/casestudies/JetUML_V2S2.png, id=859, 881.2925pt x 883.3pt>
 File: images/casestudies/JetUML_V2S2.png Graphic file (type png)
 <use images/casestudies/JetUML_V2S2.png>
 Package pdftex.def Info: images/casestudies/JetUML_V2S2.png  used on input line 292.
-(pdftex.def)             Requested size: 189.28984pt x 189.7171pt.
-<images/casestudies/JetUML_V2S3.png, id=900, 881.2925pt x 883.3pt>
+(pdftex.def)             Requested size: 245.82962pt x 246.37885pt.
+<images/casestudies/JetUML_V2S3.png, id=860, 881.2925pt x 883.3pt>
 File: images/casestudies/JetUML_V2S3.png Graphic file (type png)
 <use images/casestudies/JetUML_V2S3.png>
 Package pdftex.def Info: images/casestudies/JetUML_V2S3.png  used on input line 298.
-(pdftex.def)             Requested size: 189.28984pt x 189.7171pt.
-<images/casestudies/JetUML_V2S4.png, id=901, 881.2925pt x 883.3pt>
+(pdftex.def)             Requested size: 245.82962pt x 246.37885pt.
+<images/casestudies/JetUML_V2S4.png, id=861, 881.2925pt x 883.3pt>
 File: images/casestudies/JetUML_V2S4.png Graphic file (type png)
 <use images/casestudies/JetUML_V2S4.png>
 Package pdftex.def Info: images/casestudies/JetUML_V2S4.png  used on input line 302.
-(pdftex.def)             Requested size: 189.28984pt x 189.7171pt.
-<images/casestudies/JetUML_V2S5.png, id=902, 881.2925pt x 883.3pt>
+(pdftex.def)             Requested size: 245.82962pt x 246.37885pt.
+<images/casestudies/JetUML_V2S5.png, id=862, 881.2925pt x 883.3pt>
 File: images/casestudies/JetUML_V2S5.png Graphic file (type png)
 <use images/casestudies/JetUML_V2S5.png>
 Package pdftex.def Info: images/casestudies/JetUML_V2S5.png  used on input line 308.
-(pdftex.def)             Requested size: 189.28984pt x 189.7171pt.
-<images/casestudies/JetUML_V2S6.png, id=903, 881.2925pt x 883.3pt>
+(pdftex.def)             Requested size: 245.82962pt x 246.37885pt.
+<images/casestudies/JetUML_V2S6.png, id=863, 881.2925pt x 883.3pt>
 File: images/casestudies/JetUML_V2S6.png Graphic file (type png)
 <use images/casestudies/JetUML_V2S6.png>
 Package pdftex.def Info: images/casestudies/JetUML_V2S6.png  used on input line 312.
-(pdftex.def)             Requested size: 189.28984pt x 189.7171pt.
+(pdftex.def)             Requested size: 245.82962pt x 246.37885pt.
 
 
-LaTeX Warning: Float too large for page by 66.87119pt on input line 318.
+LaTeX Warning: Float too large for page by 150.81628pt on input line 318.
 
-) [54] [55 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S2.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S3.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S4.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S5.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S6.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S7.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S8.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S9.png>] [56 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S1.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S2.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S3.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S4.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S5.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S6.png>] [57 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V2S1.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V2S2.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V2S3.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V2S4.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V2S5.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V2S6.png>] [58
+) [52] (/Users/gianlo/Develop/thesis/SYN.bbl [53 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S2.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S3.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S4.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S5.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S6.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S7.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S8.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S9.png>] [54 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S1.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S2.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S3.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S4.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S5.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S6.png>] [55 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V2S1.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V2S2.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V2S3.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V2S4.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V2S5.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V2S6.png>] [56
 
-] (/Users/gianlo/Develop/thesis/SYN.bbl [59
-
-] [60] [61] [62]) [63] (/Users/gianlo/Develop/thesis/SYN.aux)
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
+]
+1: section
+[57] [58] [59]) [60] (/Users/gianlo/Develop/thesis/SYN.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1722,21 +1407,21 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `SYN.out' has not changed.
-(rerunfilecheck)             Checksum: A812C6EF3C02B980373D4B1D7E195C3A;2943.
+(rerunfilecheck)             Checksum: 467688C8D02F6D486FAA4C20D0F21481;2716.
  ) 
 Here is how much of TeX's memory you used:
- 18720 strings out of 478994
- 284502 string characters out of 5858184
- 739379 words of memory out of 5000000
- 35474 multiletter control sequences out of 15000+600000
- 472742 words of font info for 113 fonts, out of 8000000 for 9000
+ 22260 strings out of 478994
+ 460149 string characters out of 5858184
+ 1039686 words of memory out of 5000000
+ 39056 multiletter control sequences out of 15000+600000
+ 445104 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,11n,131p,837b,1078s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/bitstrea/charter/bchbi8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/bera/fvmro8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7t.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr8t.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri7m.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri8t.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb>
-Output written on /Users/gianlo/Develop/thesis/SYN.pdf (81 pages, 14253900 bytes).
+ 98i,20n,102p,838b,995s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on /Users/gianlo/Develop/thesis/SYN.pdf (74 pages, 14198199 bytes).
 PDF statistics:
- 1123 PDF objects out of 1200 (max. 8388607)
- 875 compressed objects within 9 object streams
- 260 named destinations out of 1000 (max. 500000)
- 533 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1010 PDF objects out of 1200 (max. 8388607)
+ 776 compressed objects within 8 object streams
+ 245 named destinations out of 1000 (max. 500000)
+ 522 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -18,7 +18,7 @@ The characteristics of these systems are described in Table \ref{tab:casestudies
 
 \bigbreak
 There are many possible combinations to create a view specification; we provide multiple visualizations for each project. 
-Each visualization has its purpose. For example, we can create a visualization to see the evolution of only JAVA files navigating the history 
+Each visualization has its purpose. For example, we can create a visualization to see the evolution of only Java files navigating the history 
 month by month and understanding how many days ago the entity was modified. 
 
 The time windows for the timestamp grouping strategy of commits must be taken conscientiously. 
@@ -123,54 +123,54 @@ With this grouping strategy, it was hard to understand the regularity and the sp
 \begin{figure}[t!]
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S1.png}
-        \caption{07 Jan 2015, 18:59 \newline Initial commit} \label{fig:JetUML_V0S1_3}
+        \caption{07 Jan 2015, 18:59 \linebreak Initial commit} \label{fig:JetUML_V0S1_3}
     \end{subfigure}
     \hspace*{\fill}
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S2.png}
-        \caption{07 Jan 2015, 19:14 \newline Initial Revision} \label{fig:JetUML_V0S2}
+        \caption{07 Jan 2015, 19:14 \linebreak  Initial Revision} \label{fig:JetUML_V0S2}
     \end{subfigure}
     \hspace*{\fill}
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S3.png}
-        \caption{07 Jan 2015, 19:57 \newline \#1 Move all fields} \label{fig:JetUML_V0S3}
+        \caption{07 Jan 2015, 19:57 \linebreak  \#1 Move all fields} \label{fig:JetUML_V0S3}
     \end{subfigure}
     \hspace*{\fill}
     \medskip
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S4.png}
-        \caption{10 Jan 2015 \newline \#8 Moved to a dedicated ...} 
+        \caption{10 Jan 2015 \linebreak  \#8 Moved to a dedicated ...} 
         \label{fig:JetUML_V0S4}
     \end{subfigure}
     \hspace*{\fill}
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S5.png}
-        \caption{22 Jan 2015 \newline \#27 Renamed the packages} 
+        \caption{22 Jan 2015 \linebreak  \#27 Renamed the packages} 
         \label{fig:JetUML_V0S5}
     \end{subfigure}
     \hspace*{\fill}
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S6.png}
-        \caption{16 Oct 2015 \newline \#3 New copyright block on ...} 
+        \caption{16 Oct 2015 \linebreak  \#3 New copyright block on ...} 
         \label{fig:JetUML_V0S6}
     \end{subfigure}
     \hspace*{\fill}
     \medskip
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S7.png}
-        \caption{17 Jan 2016 \newline \#146 Updated the copyright ...}
+        \caption{17 Jan 2016 \linebreak  \#146 Updated the copyright ...}
          \label{fig:JetUML_V0S7}
     \end{subfigure}
     \hspace*{\fill}
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S8.png}
-        \caption{26 Nov 2017 \newline \#212 Remove stg from name} 
-        \label{fig:JetUML_V0S8}
+        \caption{26 Nov 2017 \linebreak  \#212 Remove stg from name} 
+    \label{fig:JetUML_V0S8}
     \end{subfigure}
     \hspace*{\fill}
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S9.png}
-        \caption{22 Jul 2020 \newline \#374 Fix copyrights} \label{fig:JetUML_V0S9}
+        \caption{22 Jul 2020 \linebreak  \#374 Fix copyrights} \label{fig:JetUML_V0S9}
     \end{subfigure}
     \hspace*{\fill}
     \medskip
@@ -209,11 +209,11 @@ To summarize, the view specification of this visualization is the following:
 \textbf{Results}
 Figure \ref{fig:JetUML_V1} shows the first 6 month of evoluition of JetUML. 
 We can infer many things by looking at these figures. In figure \ref{fig:JetUML_V1S1} 7 entities have been moved. 
-Most of them are files with the extension ".properties" and perhaps they were involved in a refactoring activity since their path changed from
-"src/ca/mcgill/cs/stg/jetuml/..." to "src/ca/mcgill/cs/stg/jetuml/diagrams/...". 
+Most of them are files with the extension \texttt{.properties} and perhaps they were involved in a refactoring activity since their path changed from
+\texttt{src/ca/mcgill/cs/stg/jetuml/...} to \texttt{src/ca/mcgill/cs/stg/jetuml/diagrams/...}. 
 At the end of their first month of activity, they had 135 files and made 127 commits. 
 We can see many files are still green. This means that they were added but never touched after. 
-An issue with this visualization is that we cannot distinguish JAVA files from others. 
+An issue with this visualization is that we cannot distinguish Java files from others. 
 These added files are images. Therefore it is not a surprise that once added; they are never modified in the future. 
 In figure \ref{fig:JetUML_V1S2} where the second month is represented, we can see that some entities have a darker color. 
 This means that during the second month, they were not touched. 
@@ -258,9 +258,9 @@ They were added and updated in the first month of activity (this is the reason w
 
 \subsubsection*{View 2}
 \textbf{Goal of this visualization}
-We want to achieve the same goal as the first visualization, but this time we want to highlight our attention on JAVA files. 
-To do that, we map JAVA files to entities represented by boxes and all the others to spheres with low opacity. 
-To map the height of entities, we chose the SLOC metric since it is available only for JAVA files, so only they have a height. 
+We want to achieve the same goal as the first visualization, but this time we want to highlight our attention on Java files. 
+To do that, we map Java files to entities represented by boxes and all the others to spheres with low opacity. 
+To map the height of entities, we chose the SLOC metric since it is available only for Java files, so only they have a height. 
 
 \begin{itemize}
     \item \texttt{versionGroupingStrategy}: timestamp.
@@ -273,14 +273,14 @@ To map the height of entities, we chose the SLOC metric since it is available on
     \item \texttt{mapperStrategyOptions}: max height of 20.
     \item \texttt{mapperMetricName}: SLOC. 
     \item \texttt{showUnmappedEntities}: true.
-    \item \texttt{fileTypeShape}: JAVA -> BOX, OTHERS -> SPHERE. 
-    \item \texttt{fileTypeOpacity}: JAVA -> BOX, OTHERS -> 0.3. 
+    \item \texttt{fileTypeShape}: Java -> BOX, OTHERS -> SPHERE. 
+    \item \texttt{fileTypeOpacity}: Java -> BOX, OTHERS -> 0.3. 
     \item \texttt{showDeletedEntities}: false.
 \end{itemize}
 
 \textbf{Results}
 Figure \ref{fig:JetUML_V2} shows the evoluition of JetUML from month 6 until the last month. 
-Comparing this visualization to the previous one, JAVA files are much more highlighted end easy to spot. 
+Comparing this visualization to the previous one, Java files are much more highlighted end easy to spot. 
 
 
 \begin{figure}[t!]
