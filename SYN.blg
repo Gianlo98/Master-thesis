@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: SYN.aux
-The style file: plainnat.bst
+The style file: abbrv.bst
 Database file #1: biblio.bib
 Warning--to sort, need author, editor, or key in SoftwareEvolution
 Warning--empty author and editor in SoftwareEvolution
@@ -10,44 +10,44 @@ Warning--empty booktitle in Girba2005
 Warning--empty booktitle in Lanza2003
 Warning--empty booktitle in Vickers2004
 You've used 58 entries,
-            2773 wiz_defined-function locations,
-            1087 strings with 17616 characters,
-and the built_in function-call counts, 31606 in all, are:
-= -- 3066
-> -- 1464
-< -- 67
-+ -- 499
-- -- 441
-* -- 2315
-:= -- 4540
-add.period$ -- 279
+            2118 wiz_defined-function locations,
+            903 strings with 14472 characters,
+and the built_in function-call counts, 23006 in all, are:
+= -- 2322
+> -- 892
+< -- 36
++ -- 361
+- -- 294
+* -- 1390
+:= -- 3429
+add.period$ -- 189
 call.type$ -- 58
 change.case$ -- 313
-chr.to.int$ -- 58
-cite$ -- 123
-duplicate$ -- 1668
-empty$ -- 2607
-format.name$ -- 530
-if$ -- 7117
-int.to.chr$ -- 1
-int.to.str$ -- 1
+chr.to.int$ -- 0
+cite$ -- 64
+duplicate$ -- 1127
+empty$ -- 1879
+format.name$ -- 294
+if$ -- 5246
+int.to.chr$ -- 0
+int.to.str$ -- 58
 missing$ -- 65
-newline$ -- 387
-num.names$ -- 228
-pop$ -- 640
+newline$ -- 292
+num.names$ -- 114
+pop$ -- 396
 preamble$ -- 1
 purify$ -- 263
 quote$ -- 0
-skip$ -- 1381
+skip$ -- 937
 stack$ -- 0
-substring$ -- 1167
-swap$ -- 470
+substring$ -- 1349
+swap$ -- 460
 text.length$ -- 36
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 598
+type$ -- 216
 warning$ -- 6
-while$ -- 240
-width$ -- 0
-write$ -- 977
+while$ -- 183
+width$ -- 60
+write$ -- 676
 (There were 6 warnings)

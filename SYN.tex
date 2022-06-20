@@ -1,4 +1,12 @@
-\documentclass[mscthesis]{usiinfthesis}
+\documentclass[11pt,twoside,english,singlespacing,headsepline,consistentlayout]{auxiliary/si-msc-thesis}
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage{lipsum}
+\usepackage{mathpazo}
+\usepackage{setspace}
+
 \usepackage{lipsum}
 \usepackage{float}
 \usepackage{listings}
@@ -16,44 +24,82 @@ sensitive=false,
 morecomment=[l]{//s},
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%	MARGIN SETTINGS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\geometry{paper=a4paper, inner=1.5cm, outer=1.5cm, bindingoffset=0cm, top=1.5cm, bottom=2.7cm, 
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%	THESIS INFORMATION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\title{Sensorial software evolution comprehension} %compulsory
-\specialization{Software Development}%optional
-% \subtitle{Subtitle: Reinventing the World} %optional 
-\author{Gianlorenzo Occhipinti} %compulsory
-\begin{committee}
-\advisor{Prof.}{Michele}{Lanza} %compulsory
-\coadvisor{Dr.}{Roberto}{Minelli}{} %optional
-\coadvisor{Dr.}{Csaba}{Nagy}{} %optional
-\end{committee}
-\Day{Yesterday} %compulsory
-\Month{July} %compulsory
-\Year{2022} %compulsory, put only the year
-\place{Lugano} %compulsoyr
+\thesistitle{Sensorial software evolution comprehension}
 
-\dedication{To my beloved} %optional
-\openepigraph{Someone said \dots}{Someone} %optional
 
-%\makeindex %optional, also comment out \theindex at the end
+
+%comment to not have subtitle
+% \thesissubtitle{Coarse-grained, Fine-grained, and Evolutionary\\ Software Visualization} 
+
+\author{Gianlorenzo Occhipinti}
+
+\monthyear{July 2022}
+
+\supervisor{Prof. Dr. Michele Lanza}
+
+% if you need to add or remove co-supervisors go into titlepage.tex and comment correspondingly
+
+\cosupervisorone{Dr. Csaba Nagy}
+\cosupervisortwo{Dr. Roberto Minelli}
+% \cosupervisorthree{Dr. Aspiring Professor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%	FRONT MATTER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
-\maketitle %generates the titlepage, this is FIXED
+\frontmatter
+\pagestyle{plain}
 
-\frontmatter %generates the frontmatter, this is FIXED
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%	TITLE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{auxiliary/titlepage}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%	ABSTRACT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{Abstract}
 
-\input{Acknowledgements}
-\setcitestyle{numbers}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%	DEDICATION & ACKNOWLEDGEMENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\input{ded-acks}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%	PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \tableofcontents 
-\listoffigures %optional
-\listoftables %optional
+\listoffigures 
+\listoftables
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%	MAIN MATTER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \mainmatter
+ 
+\pagestyle{thesis} 
 
 \input{Introduction}
 
@@ -62,23 +108,20 @@ morecomment=[l]{//s},
 \input{Approach.tex}
 \input{Implementation.tex}
 \input{Casestudies.tex}
-% \appendix %optional, use only if you have an appendix
-
-% \chapter{Some retarded material}
-% \section{It's over\dots}
-% \lipsum 
-
-\backmatter
 
 
-%\bibliographystyle{alpha}
-%\bibliographystyle{dcu}
+% \appendix
 
-\bibliographystyle{plainnat}
+% \input{appendix1}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%	BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\bibliographystyle{abbrv}
+% \bibliographystyle{plainnat}
 \bibliography{biblio}
-
-%\cleardoublepage
-%\theindex %optional, use only if you have an index, must use
-	  %\makeindex in the preamble
 
 \end{document}

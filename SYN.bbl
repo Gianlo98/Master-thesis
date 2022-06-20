@@ -1,473 +1,356 @@
-\begin{thebibliography}{58}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\begin{thebibliography}{10}
 
-\bibitem[Sof(2008)]{SoftwareEvolution}
-\emph{Software evolution}.
+\bibitem{SoftwareEvolution}
+{\em Software evolution}.
 \newblock Springer, Berlin, 2008.
-\newblock ISBN 9783540764397.
 
-\bibitem[Alexandru et~al.(2019)Alexandru, Proksch, Behnamghader, and
-  Gall]{Alexandru2019}
-Carol~V. Alexandru, Sebastian Proksch, Pooyan Behnamghader, and Harald~C. Gall.
+\bibitem{Alexandru2019}
+C.~V. Alexandru, S.~Proksch, P.~Behnamghader, and H.~C. Gall.
 \newblock Evo-clocks: Software evolution at a glance.
-\newblock In \emph{2019 Working Conference on Software Visualization
-  (VISSOFT)}, pages 12--22, 2019.
-\newblock \doi{10.1109/VISSOFT.2019.00010}.
+\newblock In {\em 2019 Working Conference on Software Visualization (VISSOFT)},
+  pages 12--22, 2019.
 
-\bibitem[Alty(1995)]{Alty1995}
-James~L Alty.
+\bibitem{Alty1995}
+J.~L. Alty.
 \newblock Computer-human communication?
-\newblock In \emph{People and Computers X: Proceedings of the HCI'95
+\newblock In {\em People and Computers X: Proceedings of the HCI'95
   Conference}, volume~10, page 409. Cambridge University Press, 1995.
 
-\bibitem[Boccuzzo and Gall(2009)]{Boccuzzo2009}
-Sandro Boccuzzo and Harald~C. Gall.
+\bibitem{Boccuzzo2009}
+S.~Boccuzzo and H.~C. Gall.
 \newblock Cocoviz with ambient audio software exploration.
-\newblock In \emph{2009 IEEE 31st International Conference on Software
+\newblock In {\em 2009 IEEE 31st International Conference on Software
   Engineering}, pages 571--574, 2009.
-\newblock \doi{10.1109/ICSE.2009.5070558}.
 
-\bibitem[Brown(1988)]{Brown1988}
-Marc~H. Brown.
+\bibitem{Brown1988}
+M.~H. Brown.
 \newblock Exploring algorithms using balsa-ii.
-\newblock \emph{Computer}, 21\penalty0 (5):\penalty0 14–36, may 1988.
-\newblock ISSN 0018-9162.
-\newblock \doi{10.1109/2.56}.
-\newblock URL \url{https://doi.org/10.1109/2.56}.
+\newblock {\em Computer}, 21(5):14–36, may 1988.
 
-\bibitem[Butler et~al.(1993)Butler, Almond, Bergeron, Brodlie, and
-  Haber]{Butler1993}
-David~M. Butler, James~C. Almond, R.~Daniel Bergeron, Ken~W. Brodlie, and
-  Robert~B. Haber.
+\bibitem{Butler1993}
+D.~M. Butler, J.~C. Almond, R.~D. Bergeron, K.~W. Brodlie, and R.~B. Haber.
 \newblock Visualization reference models.
-\newblock In \emph{Proceedings of the 4th Conference on Visualization '93}, VIS
+\newblock In {\em Proceedings of the 4th Conference on Visualization '93}, VIS
   '93, page 337–342, USA, 1993. IEEE Computer Society.
-\newblock ISBN 0818639407.
 
-\bibitem[Chuah and Eick(1998)]{Chuah1998}
-M.C. Chuah and S.G. Eick.
+\bibitem{Chuah1998}
+M.~Chuah and S.~Eick.
 \newblock Information rich glyphs for software management data.
-\newblock \emph{IEEE Computer Graphics and Applications}, 18\penalty0
-  (4):\penalty0 24--29, 1998.
-\newblock \doi{10.1109/38.689658}.
+\newblock {\em IEEE Computer Graphics and Applications}, 18(4):24--29, 1998.
 
-\bibitem[Clem and Thomson(2021)]{Clem2021}
-Timothy Clem and Patrick Thomson.
+\bibitem{Clem2021}
+T.~Clem and P.~Thomson.
 \newblock Static analysis at github: An experience report.
-\newblock \emph{Queue}, 19\penalty0 (4):\penalty0 42–67, aug 2021.
-\newblock ISSN 1542-7730.
-\newblock \doi{10.1145/3487019.3487022}.
-\newblock URL \url{https://doi.org/10.1145/3487019.3487022}.
+\newblock {\em Queue}, 19(4):42–67, aug 2021.
 
-\bibitem[Corbi(1989)]{Corbi1989}
+\bibitem{Corbi1989}
 T.~A. Corbi.
 \newblock Program understanding: Challenge for the 1990s.
-\newblock \emph{IBM Systems Journal}, 28\penalty0 (2):\penalty0 294--306, 1989.
-\newblock \doi{10.1147/sj.282.0294}.
+\newblock {\em IBM Systems Journal}, 28(2):294--306, 1989.
 
-\bibitem[D'Ambros and Lanza(2006)]{DAmbros2006}
+\bibitem{DAmbros2006}
 M.~D'Ambros and M.~Lanza.
 \newblock Software bugs and evolution: a visual approach to uncover their
   relationship.
-\newblock In \emph{Conference on Software Maintenance and Reengineering
+\newblock In {\em Conference on Software Maintenance and Reengineering
   (CSMR'06)}, pages 10 pp.--238, 2006.
-\newblock \doi{10.1109/CSMR.2006.51}.
 
-\bibitem[D'Ambros et~al.(2006)D'Ambros, Lanza, and Lungu]{DAmbros2006a}
-Marco D'Ambros, Michele Lanza, and Mircea Lungu.
+\bibitem{DAmbros2006a}
+M.~D'Ambros, M.~Lanza, and M.~Lungu.
 \newblock The evolution radar: Visualizing integrated logical coupling
   information.
-\newblock In \emph{Proceedings of the 2006 International Workshop on Mining
+\newblock In {\em Proceedings of the 2006 International Workshop on Mining
   Software Repositories}, MSR '06, page 26–32, New York, NY, USA, 2006.
   Association for Computing Machinery.
-\newblock ISBN 1595933972.
-\newblock \doi{10.1145/1137983.1137992}.
-\newblock URL \url{https://doi.org/10.1145/1137983.1137992}.
 
-\bibitem[Davis(1995)]{Davis1995}
-Alan~M. Davis.
-\newblock \emph{201 Principles of Software Development}.
+\bibitem{Davis1995}
+A.~M. Davis.
+\newblock {\em 201 Principles of Software Development}.
 \newblock McGraw-Hill, Inc., USA, 1995.
-\newblock ISBN 0070158401.
 
-\bibitem[De~Pauw et~al.(1993)De~Pauw, Helm, Kimelman, and
-  Vlissides]{DePauw1993}
-Wim De~Pauw, Richard Helm, Doug Kimelman, and John Vlissides.
+\bibitem{DePauw1993}
+W.~De~Pauw, R.~Helm, D.~Kimelman, and J.~Vlissides.
 \newblock Visualizing the behavior of object-oriented systems.
-\newblock In \emph{Proceedings of the Eighth Annual Conference on
+\newblock In {\em Proceedings of the Eighth Annual Conference on
   Object-Oriented Programming Systems, Languages, and Applications}, OOPSLA
   '93, page 326–337, New York, NY, USA, 1993. Association for Computing
   Machinery.
-\newblock ISBN 0897915879.
-\newblock \doi{10.1145/165854.165919}.
-\newblock URL \url{https://doi.org/10.1145/165854.165919}.
 
-\bibitem[DiGiano et~al.(1993)DiGiano, Baecker, and Owen]{DiGiano1993}
-Christopher~J. DiGiano, Ronald~M. Baecker, and Russell~N. Owen.
+\bibitem{DiGiano1993}
+C.~J. DiGiano, R.~M. Baecker, and R.~N. Owen.
 \newblock Logomedia: A sound-enhanced programming environment for monitoring
   program behavior.
-\newblock In \emph{Proceedings of the INTERACT '93 and CHI '93 Conference on
+\newblock In {\em Proceedings of the INTERACT '93 and CHI '93 Conference on
   Human Factors in Computing Systems}, CHI '93, page 301–302, New York, NY,
   USA, 1993. Association for Computing Machinery.
-\newblock ISBN 0897915755.
-\newblock \doi{10.1145/169059.169229}.
-\newblock URL \url{https://doi.org/10.1145/169059.169229}.
 
-\bibitem[Dijkstra(1971)]{Dijkstra1971a}
-Edsger~Wybe Dijkstra.
-\newblock \emph{Ewd316: A short introduction to the art of programming}.
+\bibitem{Dijkstra1971a}
+E.~W. Dijkstra.
+\newblock {\em Ewd316: A short introduction to the art of programming}.
 \newblock Technische Hogeschool, 1971.
 
-\bibitem[Eick et~al.(1992)Eick, Steffen, and Sumner]{Eick1992}
-Stephen~G. Eick, Joseph~L. Steffen, and Eric~E. Sumner.
+\bibitem{Eick1992}
+S.~G. Eick, J.~L. Steffen, and E.~E. Sumner.
 \newblock Seesoft-a tool for visualizing line oriented software statistics.
-\newblock \emph{IEEE Trans. Softw. Eng.}, 18\penalty0 (11):\penalty0 957–968,
-  nov 1992.
-\newblock ISSN 0098-5589.
-\newblock \doi{10.1109/32.177365}.
-\newblock URL \url{https://doi.org/10.1109/32.177365}.
+\newblock {\em IEEE Trans. Softw. Eng.}, 18(11):957–968, nov 1992.
 
-\bibitem[Ens et~al.(2014)Ens, Rea, Shpaner, Hemmati, Young, and Irani]{Ens2014}
-Barrett Ens, Daniel Rea, Roiy Shpaner, Hadi Hemmati, James~E. Young, and
-  Pourang Irani.
+\bibitem{Ens2014}
+B.~Ens, D.~Rea, R.~Shpaner, H.~Hemmati, J.~E. Young, and P.~Irani.
 \newblock Chronotwigger: A visual analytics tool for understanding source and
   test co-evolution.
-\newblock In \emph{2014 Second IEEE Working Conference on Software
+\newblock In {\em 2014 Second IEEE Working Conference on Software
   Visualization}, pages 117--126, 2014.
-\newblock \doi{10.1109/VISSOFT.2014.28}.
 
-\bibitem[Erlikh(2000)]{Erlikh2000}
+\bibitem{Erlikh2000}
 L.~Erlikh.
 \newblock Leveraging legacy system dollars for e-business.
-\newblock \emph{IT Professional}, 2\penalty0 (3):\penalty0 17--23, 2000.
-\newblock \doi{10.1109/6294.846201}.
+\newblock {\em IT Professional}, 2(3):17--23, 2000.
 
-\bibitem[Fekete et~al.(2008)Fekete, van Wijk, Stasko, and North]{Stasko2008}
-Jean-Daniel Fekete, Jarke van Wijk, John Stasko, and Chris North.
-\newblock \emph{The Value of Information Visualization}, volume 4950, pages
+\bibitem{Stasko2008}
+J.-D. Fekete, J.~van Wijk, J.~Stasko, and C.~North.
+\newblock {\em The Value of Information Visualization}, volume 4950, pages
   1--18.
 \newblock 07 2008.
-\newblock ISBN 978-3-540-70955-8.
-\newblock \doi{10.1007/978-3-540-70956-5_1}.
 
-\bibitem[G{\^i}rba(2005)]{Girba2005}
-Tudor G{\^i}rba.
+\bibitem{Girba2005}
+T.~G{\^i}rba.
 \newblock Modeling history to understand software evolution.
 \newblock 2005.
 
-\bibitem[Greene et~al.(2017)Greene, Esterhuizen, and Fischer]{Greene2017}
-Gillian~J Greene, Marvin Esterhuizen, and Bernd Fischer.
+\bibitem{Greene2017}
+G.~J. Greene, M.~Esterhuizen, and B.~Fischer.
 \newblock Visualizing and exploring software version control repositories using
   interactive tag clouds over formal concept lattices.
-\newblock \emph{Information and Software Technology}, 87:\penalty0 223--241,
-  2017.
+\newblock {\em Information and Software Technology}, 87:223--241, 2017.
 
-\bibitem[Haibt(1959)]{Haibt1959}
-Lois~M. Haibt.
+\bibitem{Haibt1959}
+L.~M. Haibt.
 \newblock A program to draw multilevel flow charts.
-\newblock In \emph{Papers Presented at the the March 3-5, 1959, Western Joint
+\newblock In {\em Papers Presented at the the March 3-5, 1959, Western Joint
   Computer Conference}, IRE-AIEE-ACM '59 (Western), page 131–137, New York,
   NY, USA, 1959. Association for Computing Machinery.
-\newblock ISBN 9781450378659.
-\newblock \doi{10.1145/1457838.1457861}.
-\newblock URL \url{https://doi.org/10.1145/1457838.1457861}.
 
-\bibitem[Hueras and Ledgard(1977)]{Hueras1977}
-Jon Hueras and Henry Ledgard.
+\bibitem{Hueras1977}
+J.~Hueras and H.~Ledgard.
 \newblock An automatic formatting program for pascal.
-\newblock \emph{SIGPLAN Not.}, 12\penalty0 (7):\penalty0 82–84, jul 1977.
-\newblock ISSN 0362-1340.
-\newblock \doi{10.1145/954639.954645}.
-\newblock URL \url{https://doi.org/10.1145/954639.954645}.
+\newblock {\em SIGPLAN Not.}, 12(7):82–84, jul 1977.
 
-\bibitem[Jacobson et~al.(1999)Jacobson, Booch, and Rumbaugh]{Jacobson1999}
-Ivar Jacobson, Grady Booch, and James Rumbaugh.
-\newblock \emph{The Unified Software Development Process}.
+\bibitem{Jacobson1999}
+I.~Jacobson, G.~Booch, and J.~Rumbaugh.
+\newblock {\em The Unified Software Development Process}.
 \newblock Addison-Wesley Longman Publishing Co., Inc., USA, 1999.
-\newblock ISBN 0201571692.
 
-\bibitem[Jameson(1994)]{Jameson1994}
-David~H Jameson.
+\bibitem{Jameson1994}
+D.~H. Jameson.
 \newblock Sonnet: Audio-enhanced monitoring and debugging.
-\newblock In \emph{SANTA FE INSTITUTE STUDIES IN THE SCIENCES OF
+\newblock In {\em SANTA FE INSTITUTE STUDIES IN THE SCIENCES OF
   COMPLEXITY-PROCEEDINGS VOLUME-}, volume~18, pages 253--253. ADDISON-WESLEY
   PUBLISHING CO, 1994.
 
-\bibitem[Kalliamvakou et~al.(2014)Kalliamvakou, Gousios, Blincoe, Singer,
-  German, and Damian]{Kalliamvakou2014}
-Eirini Kalliamvakou, Georgios Gousios, Kelly Blincoe, Leif Singer, Daniel~M.
-  German, and Daniela Damian.
+\bibitem{Kalliamvakou2014}
+E.~Kalliamvakou, G.~Gousios, K.~Blincoe, L.~Singer, D.~M. German, and
+  D.~Damian.
 \newblock The promises and perils of mining github.
-\newblock In \emph{Proceedings of the 11th Working Conference on Mining
-  Software Repositories}, MSR 2014, page 92–101, New York, NY, USA, 2014.
-  Association for Computing Machinery.
-\newblock ISBN 9781450328630.
-\newblock \doi{10.1145/2597073.2597074}.
-\newblock URL \url{https://doi.org/10.1145/2597073.2597074}.
+\newblock In {\em Proceedings of the 11th Working Conference on Mining Software
+  Repositories}, MSR 2014, page 92–101, New York, NY, USA, 2014. Association
+  for Computing Machinery.
 
-\bibitem[Kapec et~al.(2015)Kapec, Brndiarová, Gloger, and Marák]{Kapec2015}
+\bibitem{Kapec2015}
 P.~Kapec, G.~Brndiarová, M.~Gloger, and J.~Marák.
 \newblock Visual analysis of software systems in virtual and augmented reality.
-\newblock In \emph{2015 IEEE 19th International Conference on Intelligent
+\newblock In {\em 2015 IEEE 19th International Conference on Intelligent
   Engineering Systems (INES)}, pages 307--312, 2015.
-\newblock \doi{10.1109/INES.2015.7329727}.
 
-\bibitem[Khaloo et~al.(2017)Khaloo, Maghoumi, Taranta, Bettner, and
-  Laviola]{Khaloo2017}
-Pooya Khaloo, Mehran Maghoumi, Eugene Taranta, David Bettner, and Joseph
-  Laviola.
+\bibitem{Khaloo2017}
+P.~Khaloo, M.~Maghoumi, E.~Taranta, D.~Bettner, and J.~Laviola.
 \newblock Code park: A new 3d code visualization tool.
-\newblock In \emph{2017 IEEE Working Conference on Software Visualization
+\newblock In {\em 2017 IEEE Working Conference on Software Visualization
   (VISSOFT)}, pages 43--53, 2017.
-\newblock \doi{10.1109/VISSOFT.2017.10}.
 
-\bibitem[Knight and Munro(2000)]{Knight2000}
+\bibitem{Knight2000}
 C.~Knight and M.~Munro.
 \newblock Virtual but visible software.
-\newblock In \emph{2000 IEEE Conference on Information Visualization. An
+\newblock In {\em 2000 IEEE Conference on Information Visualization. An
   International Conference on Computer Visualization and Graphics}, pages
   198--205, 2000.
-\newblock \doi{10.1109/IV.2000.859756}.
 
-\bibitem[Knuth(1963)]{Knuth1963}
-Donald~E. Knuth.
+\bibitem{Knuth1963}
+D.~E. Knuth.
 \newblock Computer-drawn flowcharts.
-\newblock \emph{Commun. ACM}, 6\penalty0 (9):\penalty0 555–563, sep 1963.
-\newblock ISSN 0001-0782.
-\newblock \doi{10.1145/367593.367620}.
-\newblock URL \url{https://doi.org/10.1145/367593.367620}.
+\newblock {\em Commun. ACM}, 6(9):555–563, sep 1963.
 
-\bibitem[Langelier et~al.(2005)Langelier, Sahraoui, and Poulin]{Langelier2005}
-Guillaume Langelier, Houari Sahraoui, and Pierre Poulin.
+\bibitem{Langelier2005}
+G.~Langelier, H.~Sahraoui, and P.~Poulin.
 \newblock Visualization-based analysis of quality for large-scale software
   systems.
-\newblock In \emph{Proceedings of the 20th IEEE/ACM International Conference on
+\newblock In {\em Proceedings of the 20th IEEE/ACM International Conference on
   Automated Software Engineering}, ASE '05, page 214–223, New York, NY, USA,
   2005. Association for Computing Machinery.
-\newblock ISBN 1581139934.
-\newblock \doi{10.1145/1101908.1101941}.
-\newblock URL \url{https://doi.org/10.1145/1101908.1101941}.
 
-\bibitem[Lanza(2001)]{Lanza2001}
-Michele Lanza.
+\bibitem{Lanza2001}
+M.~Lanza.
 \newblock The evolution matrix: Recovering software evolution using software
   visualization techniques.
-\newblock In \emph{Proceedings of the 4th International Workshop on Principles
+\newblock In {\em Proceedings of the 4th International Workshop on Principles
   of Software Evolution}, IWPSE '01, page 37–42, New York, NY, USA, 2001.
   Association for Computing Machinery.
-\newblock ISBN 1581135084.
-\newblock \doi{10.1145/602461.602467}.
-\newblock URL \url{https://doi.org/10.1145/602461.602467}.
 
-\bibitem[Lanza(2003)]{Lanza2003}
-Michele Lanza.
+\bibitem{Lanza2003}
+M.~Lanza.
 \newblock Object-oriented reverse engineering —- coarse-grained,
   fine-grained, and evolutionary software visualization.
 \newblock 2003.
 
-\bibitem[Lehman and Belady(1985)]{Lehman1985}
+\bibitem{Lehman1985}
 M.~M. Lehman and L.~A. Belady.
-\newblock \emph{Program Evolution: Processes of Software Change}.
+\newblock {\em Program Evolution: Processes of Software Change}.
 \newblock Academic Press Professional, Inc., USA, 1985.
-\newblock ISBN 0124424406.
 
-\bibitem[Lopez-Herrejon et~al.(2018)Lopez-Herrejon, Illescas, and
-  Egyed]{LopezHerrejon2018}
-Roberto~Erick Lopez-Herrejon, Sheny Illescas, and Alexander Egyed.
+\bibitem{LopezHerrejon2018}
+R.~E. Lopez-Herrejon, S.~Illescas, and A.~Egyed.
 \newblock A systematic mapping study of information visualization for software
   product line engineering.
-\newblock \emph{Journal of software: evolution and process}, 30\penalty0
-  (2):\penalty0 e1912, 2018.
+\newblock {\em Journal of software: evolution and process}, 30(2):e1912, 2018.
 
-\bibitem[Mancino and Scanniello(2017)]{Mancino2017}
-Andrea Mancino and Giuseppe Scanniello.
+\bibitem{Mancino2017}
+A.~Mancino and G.~Scanniello.
 \newblock Software musification.
-\newblock In \emph{2017 21st International Conference Information Visualisation
+\newblock In {\em 2017 21st International Conference Information Visualisation
   (IV)}, pages 127--132, 2017.
-\newblock \doi{10.1109/iV.2017.28}.
 
-\bibitem[McIntosh et~al.(2014)McIntosh, Legere, and Hassan]{McIntosh2014}
-Shane McIntosh, Katie Legere, and Ahmed~E. Hassan.
+\bibitem{McIntosh2014}
+S.~McIntosh, K.~Legere, and A.~E. Hassan.
 \newblock Orchestrating change: An artistic representation of software
   evolution.
-\newblock In \emph{2014 Software Evolution Week - IEEE Conference on Software
+\newblock In {\em 2014 Software Evolution Week - IEEE Conference on Software
   Maintenance, Reengineering, and Reverse Engineering (CSMR-WCRE)}, pages
   348--352, 2014.
-\newblock \doi{10.1109/CSMR-WCRE.2014.6747192}.
 
-\bibitem[Merino et~al.(2018)Merino, Ghafari, Anslow, and
-  Nierstrasz]{Merino2018a}
+\bibitem{Merino2017}
+L.~Merino, M.~Ghafari, C.~Anslow, and O.~Nierstrasz.
+\newblock Cityvr: Gameful software visualization.
+\newblock In {\em 2017 IEEE International Conference on Software Maintenance
+  and Evolution (ICSME)}, pages 633--637, 2017.
+
+\bibitem{Merino2018a}
 L.~Merino, M.~Ghafari, C.~Anslow, and O.~Nierstrasz.
 \newblock A systematic literature review of software visualization evaluation.
-\newblock \emph{Journal of Systems and Software}, 144:\penalty0 165--180, 2018.
-\newblock ISSN 0164-1212.
-\newblock \doi{https://doi.org/10.1016/j.jss.2018.06.027}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0164121218301237}.
+\newblock {\em Journal of Systems and Software}, 144:165--180, 2018.
 
-\bibitem[Merino et~al.(2017)Merino, Ghafari, Anslow, and
-  Nierstrasz]{Merino2017}
-Leonel Merino, Mohammad Ghafari, Craig Anslow, and Oscar Nierstrasz.
-\newblock Cityvr: Gameful software visualization.
-\newblock In \emph{2017 IEEE International Conference on Software Maintenance
-  and Evolution (ICSME)}, pages 633--637, 2017.
-\newblock \doi{10.1109/ICSME.2017.70}.
-
-\bibitem[M\"{u}ller and Klashinsky(1988)]{Mueller1988}
+\bibitem{Mueller1988}
 H.~A. M\"{u}ller and K.~Klashinsky.
 \newblock Rigi-a system for programming-in-the-large.
-\newblock In \emph{Proceedings of the 10th International Conference on Software
+\newblock In {\em Proceedings of the 10th International Conference on Software
   Engineering}, ICSE '88, page 80–86, Washington, DC, USA, 1988. IEEE
   Computer Society Press.
-\newblock ISBN 0897912586.
 
-\bibitem[Nassi and Shneiderman(1973)]{Nassi1973}
+\bibitem{Nassi1973}
 I.~Nassi and B.~Shneiderman.
 \newblock Flowchart techniques for structured programming.
-\newblock \emph{SIGPLAN Not.}, 8\penalty0 (8):\penalty0 12–26, aug 1973.
-\newblock ISSN 0362-1340.
-\newblock \doi{10.1145/953349.953350}.
-\newblock URL \url{https://doi.org/10.1145/953349.953350}.
+\newblock {\em SIGPLAN Not.}, 8(8):12–26, aug 1973.
 
-\bibitem[Panas et~al.(2007)Panas, Epperly, Quinlan, Saebjornsen, and
-  Vuduc]{Panas2007}
-Thomas Panas, Thomas Epperly, Daniel Quinlan, Andreas Saebjornsen, and Richard
-  Vuduc.
+\bibitem{Panas2007}
+T.~Panas, T.~Epperly, D.~Quinlan, A.~Saebjornsen, and R.~Vuduc.
 \newblock Communicating software architecture using a unified single-view
   visualization.
-\newblock In \emph{12th IEEE International Conference on Engineering Complex
+\newblock In {\em 12th IEEE International Conference on Engineering Complex
   Computer Systems (ICECCS 2007)}, pages 217--228. IEEE, 2007.
 
-\bibitem[Pinzger et~al.(2005)Pinzger, Gall, Fischer, and Lanza]{Pinzger2005}
-Martin Pinzger, Harald Gall, Michael Fischer, and Michele Lanza.
+\bibitem{Pinzger2005}
+M.~Pinzger, H.~Gall, M.~Fischer, and M.~Lanza.
 \newblock Visualizing multiple evolution metrics.
-\newblock In \emph{Proceedings of the 2005 ACM Symposium on Software
+\newblock In {\em Proceedings of the 2005 ACM Symposium on Software
   Visualization}, SoftVis '05, page 67–75, New York, NY, USA, 2005.
   Association for Computing Machinery.
-\newblock ISBN 1595930736.
-\newblock \doi{10.1145/1056018.1056027}.
-\newblock URL \url{https://doi.org/10.1145/1056018.1056027}.
 
-\bibitem[Ratzinger et~al.(2005)Ratzinger, Fischer, and Gall]{Ratzinger2005}
+\bibitem{Ratzinger2005}
 J.~Ratzinger, M.~Fischer, and H.~Gall.
 \newblock Evolens: lens-view visualizations of evolution data.
-\newblock In \emph{Eighth International Workshop on Principles of Software
+\newblock In {\em Eighth International Workshop on Principles of Software
   Evolution (IWPSE'05)}, pages 103--112, 2005.
-\newblock \doi{10.1109/IWPSE.2005.16}.
 
-\bibitem[Salis and Spinellis(2019)]{Salis2019}
-Vitalis Salis and Diomidis Spinellis.
+\bibitem{Salis2019}
+V.~Salis and D.~Spinellis.
 \newblock Repofs: File system view of git repositories.
-\newblock \emph{SoftwareX}, 9:\penalty0 288--292, 2019.
-\newblock ISSN 2352-7110.
-\newblock \doi{https://doi.org/10.1016/j.softx.2019.03.007}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S2352711018300712}.
+\newblock {\em SoftwareX}, 9:288--292, 2019.
 
-\bibitem[Schneider et~al.(2016)Schneider, Tymchuk, Salgado, and
-  Bergel]{Schneider2016}
-Teseo Schneider, Yuriy Tymchuk, Ronie Salgado, and Alexandre Bergel.
+\bibitem{Schneider2016}
+T.~Schneider, Y.~Tymchuk, R.~Salgado, and A.~Bergel.
 \newblock Cuboidmatrix: Exploring dynamic structural connections in software
   components using space-time cube.
-\newblock In \emph{2016 IEEE Working Conference on Software Visualization
+\newblock In {\em 2016 IEEE Working Conference on Software Visualization
   (VISSOFT)}, pages 116--125, 2016.
-\newblock \doi{10.1109/VISSOFT.2016.17}.
 
-\bibitem[seacord et~al.(2003)seacord, Plakosh, and Lewis]{seacord2003}
-Robert~C. seacord, Daniel Plakosh, and Grace~A. Lewis.
-\newblock \emph{Modernizing Legacy Systems: Software Technologies, Engineering
+\bibitem{seacord2003}
+R.~C. seacord, D.~Plakosh, and G.~A. Lewis.
+\newblock {\em Modernizing Legacy Systems: Software Technologies, Engineering
   Process and Business Practices}.
 \newblock Addison-Wesley Longman Publishing Co., Inc., USA, 2003.
-\newblock ISBN 0321118847.
 
-\bibitem[Sommerville(1995)]{Sommerville1995}
-Ian Sommerville.
-\newblock \emph{Software Engineering (5th Ed.)}.
+\bibitem{Sommerville1995}
+I.~Sommerville.
+\newblock {\em Software Engineering (5th Ed.)}.
 \newblock Addison Wesley Longman Publishing Co., Inc., USA, 1995.
-\newblock ISBN 0201427656.
 
-\bibitem[Sonnenwald et~al.(1990)Sonnenwald, Gopinath, Haberman, Keese, and
-  Myers]{Sonnenwald1990}
-D.H. Sonnenwald, B.~Gopinath, G.O. Haberman, W.M. Keese, and J.S. Myers.
+\bibitem{Sonnenwald1990}
+D.~Sonnenwald, B.~Gopinath, G.~Haberman, W.~Keese, and J.~Myers.
 \newblock Infosound: an audio aid to program comprehension.
-\newblock In \emph{Twenty-Third Annual Hawaii International Conference on
-  System Sciences}, volume~2, pages 541--546 vol.2, 1990.
-\newblock \doi{10.1109/HICSS.1990.205229}.
+\newblock In {\em Twenty-Third Annual Hawaii International Conference on System
+  Sciences}, volume~2, pages 541--546 vol.2, 1990.
 
-\bibitem[Spadini et~al.(2018)Spadini, Aniche, and Bacchelli]{Spadini2018}
-Davide Spadini, Maur\'{\i}cio Aniche, and Alberto Bacchelli.
+\bibitem{Spadini2018}
+D.~Spadini, M.~Aniche, and A.~Bacchelli.
 \newblock Pydriller: Python framework for mining software repositories.
-\newblock In \emph{Proceedings of the 2018 26th ACM Joint Meeting on European
+\newblock In {\em Proceedings of the 2018 26th ACM Joint Meeting on European
   Software Engineering Conference and Symposium on the Foundations of Software
   Engineering}, ESEC/FSE 2018, page 908–911, New York, NY, USA, 2018.
   Association for Computing Machinery.
-\newblock ISBN 9781450355735.
-\newblock \doi{10.1145/3236024.3264598}.
-\newblock URL \url{https://doi.org/10.1145/3236024.3264598}.
 
-\bibitem[Steinbr\"{u}ckner and Lewerentz(2010)]{Steinbrueckner2010}
-Frank Steinbr\"{u}ckner and Claus Lewerentz.
+\bibitem{Steinbrueckner2010}
+F.~Steinbr\"{u}ckner and C.~Lewerentz.
 \newblock Representing development history in software cities.
-\newblock In \emph{Proceedings of the 5th International Symposium on Software
+\newblock In {\em Proceedings of the 5th International Symposium on Software
   Visualization}, SOFTVIS '10, page 193–202, New York, NY, USA, 2010.
   Association for Computing Machinery.
-\newblock ISBN 9781450300285.
-\newblock \doi{10.1145/1879211.1879239}.
-\newblock URL \url{https://doi.org/10.1145/1879211.1879239}.
 
-\bibitem[Taylor and Munro(2002)]{Taylor2002}
-Christopher M.~B. Taylor and Malcolm Munro.
+\bibitem{Taylor2002}
+C.~M.~B. Taylor and M.~Munro.
 \newblock Revision towers.
-\newblock In \emph{Proceedings of the 1st International Workshop on Visualizing
+\newblock In {\em Proceedings of the 1st International Workshop on Visualizing
   Software for Understanding and Analysis}, VISSOFT '02, page~43, USA, 2002.
   IEEE Computer Society.
-\newblock ISBN 0769516629.
 
-\bibitem[Vickers(2004)]{Vickers2004}
-Paul Vickers.
+\bibitem{Vickers2004}
+P.~Vickers.
 \newblock External auditory representations of programs: Past, present, and
   future an aesthetic perspective.
 \newblock 01 2004.
 
-\bibitem[Vickers and Alty(2003)]{Vickers2003}
-Paul Vickers and James~L. Alty.
+\bibitem{Vickers2003}
+P.~Vickers and J.~L. Alty.
 \newblock Siren songs and swan songs debugging with music.
-\newblock \emph{Commun. ACM}, 46\penalty0 (7):\penalty0 86–93, jul 2003.
-\newblock ISSN 0001-0782.
-\newblock \doi{10.1145/792704.792734}.
-\newblock URL \url{https://doi.org/10.1145/792704.792734}.
+\newblock {\em Commun. ACM}, 46(7):86–93, jul 2003.
 
-\bibitem[Von~Mayrhauser and Vans(1995)]{VonMayrhauser1995}
-A.~Von~Mayrhauser and A.M. Vans.
+\bibitem{VonMayrhauser1995}
+A.~Von~Mayrhauser and A.~Vans.
 \newblock Program comprehension during software maintenance and evolution.
-\newblock \emph{Computer}, 28\penalty0 (8):\penalty0 44--55, 1995.
-\newblock \doi{10.1109/2.402076}.
+\newblock {\em Computer}, 28(8):44--55, 1995.
 
-\bibitem[Waters(1983)]{Waters1983}
-Richard~C. Waters.
+\bibitem{Waters1983}
+R.~C. Waters.
 \newblock User format control in a lisp prettyprinter.
-\newblock \emph{ACM Trans. Program. Lang. Syst.}, 5\penalty0 (4):\penalty0
-  513–531, oct 1983.
-\newblock ISSN 0164-0925.
-\newblock \doi{10.1145/69575.357225}.
-\newblock URL \url{https://doi.org/10.1145/69575.357225}.
+\newblock {\em ACM Trans. Program. Lang. Syst.}, 5(4):513–531, oct 1983.
 
-\bibitem[Wettel et~al.(2011)Wettel, Lanza, and Robbes]{Wettel2011}
-Richard Wettel, Michele Lanza, and Romain Robbes.
+\bibitem{Wettel2011}
+R.~Wettel, M.~Lanza, and R.~Robbes.
 \newblock Software systems as cities: a controlled experiment.
-\newblock In \emph{2011 33rd International Conference on Software Engineering
+\newblock In {\em 2011 33rd International Conference on Software Engineering
   (ICSE)}, pages 551--560, 2011.
-\newblock \doi{10.1145/1985793.1985868}.
 
-\bibitem[Young and Munro(1998)]{Young1998}
+\bibitem{Young1998}
 P.~Young and M.~Munro.
 \newblock Visualising software in virtual reality.
-\newblock In \emph{Proceedings. 6th International Workshop on Program
+\newblock In {\em Proceedings. 6th International Workshop on Program
   Comprehension. IWPC'98 (Cat. No.98TB100242)}, pages 19--26, 1998.
-\newblock \doi{10.1109/WPC.1998.693276}.
 
 \end{thebibliography}

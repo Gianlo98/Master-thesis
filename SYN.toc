@@ -1,24 +1,23 @@
-\contentsline {chapter}{Contents}{xi}{section*.3}%
-\contentsline {chapter}{List of Figures}{xiii}{section*.5}%
-\contentsline {chapter}{List of Tables}{xv}{section*.7}%
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Contribution}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Structure of the document}{2}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Related Works}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Software visualization}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Analysis of software evolution}{10}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Data sonification}{12}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Conclusion}{13}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Approach}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Evolution Model}{16}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Visualization}{20}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Auditive model}{26}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Implementation}{29}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Platform overview}{29}{section.4.1}%
-\contentsline {section}{\numberline {4.2}SYN Core}{30}{section.4.2}%
-\contentsline {section}{\numberline {4.3}SYN CLI}{35}{section.4.3}%
-\contentsline {section}{\numberline {4.4}SYN Analyzer}{36}{section.4.4}%
-\contentsline {section}{\numberline {4.5}SYN Server}{40}{section.4.5}%
-\contentsline {section}{\numberline {4.6}SYN Debugger}{41}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Case studies}{49}{chapter.5}%
-\contentsline {chapter}{Bibliography}{59}{section*.74}%
+\babel@toc {english}{}
+\contentsline {chapter}{Abstract}{iii}{chapter*.1}%
+\contentsline {chapter}{Acknowledgements}{vii}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.7}%
+\contentsline {section}{\numberline {1.1}Contribution}{1}{section.8}%
+\contentsline {section}{\numberline {1.2}Structure of the document}{2}{section.9}%
+\contentsline {chapter}{\numberline {2}Related Works}{3}{chapter.10}%
+\contentsline {section}{\numberline {2.1}Software visualization}{3}{section.11}%
+\contentsline {section}{\numberline {2.2}Analysis of software evolution}{10}{section.22}%
+\contentsline {section}{\numberline {2.3}Data sonification}{12}{section.25}%
+\contentsline {section}{\numberline {2.4}Conclusion}{13}{section.27}%
+\contentsline {chapter}{\numberline {3}Approach}{15}{chapter.28}%
+\contentsline {section}{\numberline {3.1}Evolution Model}{15}{section.29}%
+\contentsline {section}{\numberline {3.2}Visualization}{19}{section.38}%
+\contentsline {section}{\numberline {3.3}Auditive model}{25}{section.51}%
+\contentsline {chapter}{\numberline {4}Implementation}{27}{chapter.52}%
+\contentsline {section}{\numberline {4.1}Platform overview}{27}{section.53}%
+\contentsline {section}{\numberline {4.2}SYN Core}{28}{section.55}%
+\contentsline {section}{\numberline {4.3}SYN CLI}{32}{section.63}%
+\contentsline {section}{\numberline {4.4}SYN Analyzer}{34}{section.70}%
+\contentsline {section}{\numberline {4.5}SYN Server}{36}{section.85}%
+\contentsline {section}{\numberline {4.6}SYN Debugger}{37}{section.87}%
+\contentsline {chapter}{\numberline {5}Case studies}{47}{chapter.102}%
