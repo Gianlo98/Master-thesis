@@ -46,3 +46,9 @@
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Project setup: view settings\relax }}{45}{figure.caption.60}%
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Visualization of JetUML with the default settings.\relax }}{47}{figure.caption.62}%
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Visualization of JetUML with shadows, deleted entities and custom shapes for non-java files.\relax }}{48}{figure.caption.63}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Comparison of comits with a low and an hight activity\relax }}{50}{figure.caption.66}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces First commit of JetUML made on Wed, 07 Jan 2015, 18:59. Three entities have been added; they are depicted with the green color. The entity in the middle represents the license file, taller because its size is bigger than other files.\relax }}{51}{figure.caption.67}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Subset of the biggest commits in JetUML. Figure \ref {fig:JetUML_V0S1_3} represent the first commit. In Figure \ref {fig:JetUML_V0S2} they pushed the code of Violetta. Figure \ref {fig:JetUML_V0S3} depicts their first refactoring. In Figure \ref {fig:JetUML_V0S4} they moved some classes from Violet to Violetta. In Figure \ref {fig:JetUML_V0S5} they moved most of them under JetUML. In Figure \ref {fig:JetUML_V0S6}, \ref {fig:JetUML_V0S7} and \ref {fig:JetUML_V0S9} are depicted three refactoring activities to fix copyrights. In Figure \ref {fig:JetUML_V0S8} most of the entities are painted with blue because they changed their path.\relax }}{55}{figure.caption.68}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Monthly view of JetUML\relax }}{56}{figure.caption.70}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Monthly view of JetUML\relax }}{57}{figure.caption.72}%
