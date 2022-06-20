@@ -17,10 +17,11 @@ In this chapter, we present our approach for visualizing a software system using
 To fulfill this purpose, we have chosen to leverage the phenomenon of Synesthesia, the production of a sense impression relating to one sense by stimulation of another sense.
 Moreover, we also present how we reconstruct and model the history of a repository. 
 \bigbreak
-Our approach is composed of three parts: \begin{itemize}
-\item in the first part, we model the evolution of a system; 
-\item in the second part, we present two ways to visualize the system 
-\item in the last part, we show how music can be used to communicate evolutionary information. 
+Our approach is composed of three parts: 
+\begin{itemize}
+    \item in the first section, we model the evolution of a system; 
+    \item in the second section, we present two ways to visualize the system 
+    \item in the third section, we show how music can be used to communicate evolutionary information. 
 \end{itemize}
 
 
@@ -28,21 +29,23 @@ Our approach is composed of three parts: \begin{itemize}
 \label{s:EvolutionModel}
 
 \begin{figure}[H]
-    \includegraphics[width=0.6\textwidth]{EvolutionaryModel.jpg}
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{EvolutionaryModel.jpg}
+    \end{center}
     \caption{Evolutionary Model}
-    \label{fig:EvolutionaryModel1}
+    \label{fig:EvolutionaryModel}
 \end{figure}
 
-To model the evolution of software systems, we developed the model, 
-showed in figure \ref{fig:EvolutionaryModel1}, based on Hismo, a solution presented by Tudor Girba \cite{Girba2005}.\\
+To model the evolution of software systems, we developed the model 
+shown in figure \ref{fig:EvolutionaryModel}. It is based on Hismo, a solution presented by Tudor Girba \cite{Girba2005}.\\
 \\
 The need to develop a novel evolutionary model comes from the fact that Hismo was designed to work with another versioning system: Subversion (SVN). 
 There are several differences between SVN and git. In terms of design, the most important is how they keep track of changes. 
-SVN works with the concept of "snapshot" while git works with the concept of"commits." 
+SVN works with the concept of "snapshot" while git works with the concept of "commits".
 In SVN, when a file has been changed, a new revision of the whole system is created, and consequently, the number of revisions is incremented. 
 In contrast, in git, only the modified files would get committed, and thus we don't have every time a new snapshot of the system. 
 Therefore, we took Hismo as the starting point of our model and we adapted it to make it work with the git protocol. 
-Initially, the model was based on three concepts:
+Initially, the Hismo model was based on three concepts:
 \begin{itemize}
     \item Snapshot. A representation of the entity whose evolution is studied.
     \item Version. An entity that adds the notion of time to a Snapshot by relating it to History. 
@@ -94,24 +97,26 @@ Git can recognize the following actions made on a file:
     \item \textbf{MOVE}. A file was moved from one location to another, so the file path changed. This action detected whether the filename remained the same. 
 \end{itemize}
 
-From a commit, we could also extract additional information such as the name of the file being modified, the parent directory, the number of lines added and removed, the path of the file before and after the changes, and many more.
+From a commit, we could also extract additional information such as the name of the file being modified, the action made on a file, the number of lines added and removed, the path of the file before and after the changes, and many more.
 We used the commit's information to track all the paths of an entity. We can update the entity path when it was renamed or moved to follow it during its lifecycle. \\
 \linebreak
 When we reconstruct the history of a repository, each FileHistory starts with a FileVersion representing an ADD action. Then, in the middle of the FileVersion set, we can find only three kinds of actions: MODIFY, RENAME, and MOVE. 
 An entity might be deleted in some cases, so the last FileVersion held by a FileHistory will represent a DELETE action. 
 
 \begin{figure}
-    \includegraphics[width=0.6\textwidth]{ApproachExample.png}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{RebuildingHistory.jpg}
+    \end{center}
     \caption{Rebuilding history example}
-    \label{fig:ApproachExample}
+    \label{fig:RebuildingHistory}
 \end{figure}
 
-Figure \ref{fig:ApproachExample} shows an example of how history is rebuilt. 
-First, we create a ProjectHistory that holds a set of ProjectVersions and a set of FileHistories. 
+Figure \ref{fig:RebuildingHistory} shows an example of how history is rebuilt.
+First, we create a ProjectHistory that holds a set of ProjectVersions and a set of FileHistories.
 After that, we start to traverse the repository's commit-tree.
 As we can notice, for each commit, we create a new ProjectVersion. It represents a new version of the system in our model. 
-Therefore, we inspect the commit's channels and create a new ProjectVersion for each list entry.
-With this operation, we can discover if a file has been added to the system because, in that case, the change should represent an ADD operation, and thus we can create a new FileHistory. 
+Therefore, we inspect the commit's changelog and create a new ProjectVersion for each list entry.
+In this way, every time we encour an added file into the changelog, we create a new FileHistory. 
 At version 1, three new files were added to the repository (A, B, C), and, as we can see, three new FileHistories were created.
 Each change was mapped to a FileVersion (FV) and consequently added to the respective FileHistory and ProjectVersion. 
 We did the same thing for ProjectVersion 2 and 3. 
@@ -128,14 +133,16 @@ To move from one commit to another, we could assume that git needs one second.
 As a result, just to navigate through the whole history of Linux, we would need 11 days.
 Moreover, in this simple estimation, we are omitting the vast amount of time that the analyzer needs to extract metrics from every single file on each version. 
 
-We present a scalable approach based on the concept of "partial history" 
-A partial history is an entity that holds information about a specific range of time of the ProjectHistory. 
+We present a scalable approach based on the concept of partial history.
+A partial history is an object that holds information about a specific range of time of the ProjectHistory. 
 It can be seen as a subset of a ProjetHistory. 
 We can split the repository's history into multiple parts, each represented by a partial record. Then when all the analyses are completed, we merge them to reconstruct the whole story of the repository.
 
 
 \begin{figure}
-    \includegraphics[width=0.6\textwidth]{PartialHistory.png}
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{PartialHistory.png}
+    \end{center}
     \caption{Partial history example}
     \label{fig:PartialHistory}
 \end{figure}
@@ -162,14 +169,15 @@ In particular, if FileHistory is already present in our history, we don't have t
 \subsection*{Evolutionary metrics}
 Every version of the system holds a set of files. 
 As we said, each file is represented by a FileVersion, which is part of a FileHistory. 
-To understand all the differences between FileVersions of a FileHistory,
-we decided to collect metrics to represent the state of a file in a version.\\
+To understand differences among all the FileVersions of a FileHistory,
+we decided to collect some metrics to represent the state of a file within a version.\\
 \\
 Since we aim to have a language-agnostic approach, we have selected only language-agnostic metrics. 
+However, the set of metrics of this approach can be easy extended.
 We have defined a taxonomy to classify and categorize all the files present in a system. 
-Each category is then mapped to a set of metrics. Moreover, metrics can be inherited by parent categories. \\
+Each category is then mapped to a set of metrics. Moreover, metrics can be inherited by parent categories. 
+Figure \ref{fig:taxonomy} shows an example of a possible taxonomy definition. Table \ref{tab:taxonomyApproach} shows the final set of metrics associated with each FileType. For each FileType, we compute the metric SIZE since it is inherited from the root FileType of our taxonomy. Moreover, the Textual FileType defines a set of metrics inherited by the Java FileType. 
 \\
-
 
 \begin{figure}
     \center
@@ -178,26 +186,32 @@ Each category is then mapped to a set of metrics. Moreover, metrics can be inher
     \label{fig:taxonomy}
 \end{figure}
 
-We mapped in the following way.
 
 \begin{table}[]
-    \begin{tabular}{ll}
-    File    & SIZE      \\
-    Textual & LOC, LinesAdded, LinesRemoved \\
-    Binary  &           \\
-    Java    & SLOC
-    \end{tabular}
-    \caption[]{aaaa}
+    \begin{center}
+        \begin{tabular}{|l|l|}
+            \hline
+            FileType & Metrics \\
+            \hline 
+            File    & SIZE      \\
+            Textual & LOC, LinesAdded, LinesRemoved + SIZE \\
+            Binary  & SIZE         \\
+            Java    & SLOC + LOC, LinesAdded, LinesRemoved + SIZE \\
+            JPEG    & SIZE \\
+            \hline 
+        \end{tabular}
+    \end{center}
+    \label{tab:taxonomyApproach}
+    \caption[]{Example of metrics collected and inherited for each FileType}
 \end{table}
 
-So, for each file, we compute the metric SIZE, and then, based on the type of the file, if it is a textual file, we also calculate the Lines Of Code (LOC) and the number of lines added and removed. 
-In addition, if a file is also a Java file, we compute the Source Lines of Code (SLOC). \\
-\\
+
 Our approach can be extended in multiple ways. 
-For example, we can define some object-oriented metrics defined only for a particular kind of file, or also, we can introduce a new category (e.g., Object Oriented or Functional). 
+For example, we can define some object-oriented metrics defined only for a particular kind of file, or also, we can introduce a new category (e.g., Object Oriented or Functional). \\
+\\
 
 \section{Visualization}
-The approach that we have defined can be applied to different contexts. 
+% The approach that we have defined can be applied to different contexts. 
 We can represent a ProjectHistory with two kinds of visualization: a 2D visualization,
  that uses a matrix and works better with small systems, and it is easier to be implemented,
   and a 3D environment that can exploit human perception as a vector of information. 
@@ -209,7 +223,6 @@ This visualization is based on the EvolutionMatrix approach defined by Lanza \ci
 We said that a ProjectHistory is a holder of ProjectVersions and FileHistories. 
 A ProjectVersion represents a commit or a version of the system, whereas a FileHistory represents the history of a file. 
 The connection between these two entities is a FileVersion that describes the state of a file in a system's version. \\
-\bigbreak
 We can represent a ProjectHistory through a matrix with the following properties: 
 \begin{itemize}
     \item Each column of the matrix represents ProjectVersion, so a version of a commit of the repository. 
@@ -218,8 +231,7 @@ We can represent a ProjectHistory through a matrix with the following properties
 \end{itemize}
 
 Since we built our model on the top of git, we don't track snapshots of a system but only change. 
-As a consequence, the difference between our matrix and the one defined by Lanza \cite{Lanza2001} is that we can have holes in the row of an entity.
-A FileHistory was not modified in a ProjectVersion; this event will be represented by an empty cell.
+An empty cell represent a FileHistory (row) that was not modified in a ProjectVersion (column). 
 This concept was not present in the Evolution Matrix of Lanza because its model worked with SVN, and thus, it worked with the idea of incremental snapshots.  
 
 \begin{figure}
@@ -335,7 +347,6 @@ We define a moment as a group of versions that will be displayed simultaneously.
 \end{figure}
 
 Figure \ref{fig:moment} highlights the difference between the two strategies mentioned above. 
-
 
 \subsection*{Color}
 \begin{wrapfigure}{r}{0.3\textwidth}
