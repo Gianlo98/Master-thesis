@@ -186,25 +186,19 @@ Figure \ref{fig:taxonomy} shows an example of a possible taxonomy definition. Ta
     \label{fig:taxonomy}
 \end{figure}
 
-
-\begin{table}[]
-    \begin{center}
-        \begin{tabular}{|l|l|}
-            \hline
-            FileType & Metrics \\
-            \hline 
-            File    & SIZE      \\
-            Textual & LOC, LinesAdded, LinesRemoved + SIZE \\
-            Binary  & SIZE         \\
-            Java    & SLOC + LOC, LinesAdded, LinesRemoved + SIZE \\
-            JPEG    & SIZE \\
-            \hline 
-        \end{tabular}
-    \end{center}
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{lcr} \hline
+    {\bf FileType} & {\bf Metrics}\\ \hline
+    File    & SIZE      \\
+    Textual & LOC, LinesAdded, LinesRemoved + SIZE \\
+    Binary  & SIZE         \\
+    Java    & SLOC + LOC, LinesAdded, LinesRemoved + SIZE \\
+    JPEG    & SIZE \\
+    \end{tabular}
     \label{tab:taxonomyApproach}
     \caption[]{Example of metrics collected and inherited for each FileType}
 \end{table}
-
 
 Our approach can be extended in multiple ways. 
 For example, we can define some object-oriented metrics defined only for a particular kind of file, or also, we can introduce a new category (e.g., Object Oriented or Functional). \\
