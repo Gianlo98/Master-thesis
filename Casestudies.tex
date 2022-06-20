@@ -4,31 +4,32 @@
 
 This chapter presents an actual case use scenario of SYN applied to open-source software systems. 
 We use SYN to analyze the evolution of JetUML, the test project on which we relied during the development phase of the platform, ArgoUML, Elasticsearch, and Linux. 
-The characteristics of these systems are described in Table \ref{tab:casestudies}
+The characteristics of these systems are described in \autoref{tab:casestudies}
 
-% \begin{table}[]
-%     \begin{tabular}{|l|l|l|l|}
-%         Name & First Analyzed Commit & Last Analyzed Commit & Commits &  \\
-%         JetUML & Wed Jan 07 2015 &  Thu May 12 2022  &  2152  & 
-%     \end{tabular}
-%     \caption{aaa}
-%     \label{tab:casestudies}
-% \end{table}
-
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{lcrr} 
+        \hline
+        {\bf Name} & {\bf First Analyzed Commit} & {\bf Last Analyzed Commit} & {\bf \# of commits}\\ 
+        \hline
+        JetUML & Wed Jan 07 2015 &  Thu May 12 2022  &  2152  
+    \end{tabular}
+    \caption{List of analyzed projects}
+    \label{tab:casestudies}
+\end{table}
 
 \bigbreak
 There are many possible combinations to create a view specification; we provide multiple visualizations for each project. 
-Each visualization has its purpose. For example, we can create a visualization to see the evolution of only Java files navigating the history 
-month by month and understanding how many days ago the entity was modified. 
+Each visualization has its purpose. For example, we can create a visualization to see the evolution of only Java files or we can create a visualization that navigates the history month by month or we can do both in a single visualization. 
 
-The time windows for the timestamp grouping strategy of commits must be taken conscientiously. 
+However not all the combinations might have sense. For example, if we chose a timestamp grouping strategy, the time window must be chosen conscientiously. 
 A comprehensive time window might hide some exciting aspects of the analysis. In contrast, a short time window could cause a massive number of AnimationFrames, undermining the understandability of the view. 
 
 
 \subsection*{JetUML}
 This section analyzes JetUML, an open-source desktop application to work with UML diagrams.
 The main development branch is composed of 2152 commits of 24 contributors. 
-\newpage
+
 \subsubsection*{View 1}
 \begin{figure}[t!]
     \begin{subfigure}{0.42\textwidth}
@@ -123,17 +124,20 @@ With this grouping strategy, it was hard to understand the regularity and the sp
 \begin{figure}[t!]
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S1.png}
-        \caption{07 Jan 2015, 18:59 \linebreak Initial commit} \label{fig:JetUML_V0S1_3}
+        \caption{07 Jan 2015, 18:59 \linebreak Initial commit} 
+        \label{fig:JetUML_V0S1_3}
     \end{subfigure}
     \hspace*{\fill}
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S2.png}
-        \caption{07 Jan 2015, 19:14 \linebreak  Initial Revision} \label{fig:JetUML_V0S2}
+        \caption{07 Jan 2015, 19:14 \linebreak  Initial Revision} 
+        \label{fig:JetUML_V0S2}
     \end{subfigure}
     \hspace*{\fill}
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S3.png}
-        \caption{07 Jan 2015, 19:57 \linebreak  \#1 Move all fields} \label{fig:JetUML_V0S3}
+        \caption{07 Jan 2015, 19:57 \linebreak  \#1 Move all fields} 
+        \label{fig:JetUML_V0S3}
     \end{subfigure}
     \hspace*{\fill}
     \medskip
@@ -165,12 +169,13 @@ With this grouping strategy, it was hard to understand the regularity and the sp
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S8.png}
         \caption{26 Nov 2017 \linebreak  \#212 Remove stg from name} 
-    \label{fig:JetUML_V0S8}
+        \label{fig:JetUML_V0S8}
     \end{subfigure}
     \hspace*{\fill}
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S9.png}
-        \caption{22 Jul 2020 \linebreak  \#374 Fix copyrights} \label{fig:JetUML_V0S9}
+        \caption{22 Jul 2020 \linebreak  \#374 Fix copyrights} 
+        \label{fig:JetUML_V0S9}
     \end{subfigure}
     \hspace*{\fill}
     \medskip
