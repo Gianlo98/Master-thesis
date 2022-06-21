@@ -200,9 +200,8 @@ Figure \ref{fig:taxonomy} shows an example of a possible taxonomy definition. Ta
     \caption[]{Example of metrics collected and inherited for each FileType}
 \end{table}
 
-Our approach can be extended in multiple ways. 
-For example, we can define some object-oriented metrics defined only for a particular kind of file, or also, we can introduce a new category (e.g., Object Oriented or Functional). \\
-\\
+We have defined a small set of metrics composed by the ones shown in \autoref{tab:taxonomyApproach}. We are aware that this set is too small and of course not perfect. However, the focus of our approach is not on the metrics collected, but on how they are represented. Most important, our set of metrics can be easily extended by any developer.
+
 
 \section{Visualization}
 % The approach that we have defined can be applied to different contexts. 
@@ -211,7 +210,7 @@ We can represent a ProjectHistory with two kinds of visualization: a 2D visualiz
   and a 3D environment that can exploit human perception as a vector of information. 
 
 
-\subsection*{2D representation}
+\subsection{2D representation}
 This visualization is based on the EvolutionMatrix approach defined by Lanza \cite{Lanza2001}. 
 
 We said that a ProjectHistory is a holder of ProjectVersions and FileHistories. 
@@ -270,32 +269,72 @@ So, each time we need to display a ProjectVersion, we have to take all its FileV
 
 
 
-\subsection*{3D representation}
+\subsection{3D representation}
 \label{s:3DRepr}
 
 Software systems are hard to understand due to the complexity and the sheer size of the data to be analyzed.
-Our 3D representation aims to make the analysis of a system easier for engineers by exploiting the human senses.
-This is why we have chosen to leverage the phenomenon of Synesthesia.
-The phenomenon of synesthesia occurs when stimulation of a sense or a cognitive pathway leads to the involuntary stimulation of another reason or a cognitive path.
-We experience synesthesia when two or more things are perceived as the same. 
+In our approach, we aim to make an interactive 3D representation to ease the comprehension task of the developer. 
+\bigbreak
+
+There are some piece of knowledge that cannot be extracted by a metric or by a non interactive graph. This is normal because both of them are responsible to represent only one piece of information at the same time. For example, if we look at the graph of a repository code frequency, we can never understand which file was modified; because we have only two dimensions: the time and the code. The main advantage of our approach is the possibility to have multiple source of information at the same time. Our 3D representation aims to make the analysis of a system easier for engineers by exploiting the human senses.
+To do that, we have chosen to leverage the phenomenon of \textbf{synesthesia}. The phenomenon of synesthesia occurs when stimulation of a sense or a cognitive pathway leads to the involuntary stimulation of another reason or a cognitive path. We experience synesthesia when two or more things are perceived as the same. 
 For example, synesthetic people might associate the red color with the letter D or the green color with the letter A. 
-There are many forms of synesthesia, each one representing a different type of perception, such as visual forms, auditory, tactile, etc.\\
-\\
-In our approach, we use the following visual aspects to trigger involuntary associations:
+There are many forms of synesthesia, each one representing a different type of perception, such as visual forms, auditory, tactile, etc.
+\bigbreak
+To visualize a project we introduce the concept of \textbf{view}. We define a view as a way to illustrate the evolution of a project given a set of specification. This set of specifications determines how the view must be built. For example, if we want to traverse the repository history by year, this information is part of the specification. A view holds a set of frames, called \textbf{AnimationFrame}, each one representing the whole state of the repository during a specific moment of its evolution. Therefore, the whole history of the repository is displayed by rendering these AnimationFrames consequently, like in a movie. 
+\bigbreak
+Each repository has an unique history. There are young repositories whose history is 1 year long and old repository with more than 10 year of development activity. It is not guaranteed that the number of commits is proportional to the age of a repository. Many repositories are dead on github wheras others might have a vast amount of contributors rising the total number of commits every day. Therefore, we cannot provide a static approach to traverse the history of a repository. 
+Every visualization has its own goal and its own way to traverse time. For this reason, we provide two visualization strategies to group commits into AnimationFrames. Both of them traverse the whole history from the beginning until the end.
 \begin{itemize}
-    \item \textbf{Color}: we use the color to describe actions made on an entity (ADD, MODIFY, RENAME, MOVE, DELETE). 
-    Ideally, when an entity is deleted, it should be removed from the visualization. This decision is up to the user.  
-    \item \textbf{Shape}: we use the shape of the entity to describe the category of the entity. 
-    We have defined a taxonomy to categorize entities, and these categories are also mapped. 
-    For example, a java file could be represented by a cube, whereas a sphere could represent a binary file.
-    \item \textbf{Height}: we use the height of the entity to describe the value of a metric. The decision of which metric is up to the user.
+    \item{Grouping by commits}: the user specifies a number of commits \texttt{n} and then one AnimationFrame is created every \texttt{n} commits. With this strategy the concept of time is lost because we consider only the position of the commit in the commit tree. Therefore developement phases cannot be indentified. 
+    \item{Grouping by timestamp}: the user specifies a timestamp window \texttt{ts} and then one AnimationFrame is created every \texttt{ts} seconds. All the commits inside the time window are part of the AnimationFrame. Therefore, we might have empty AnimationFrames if on that time window were not made any commits. 
 \end{itemize}
 
+When an AnimatioFrame is created, if on a file multiple commits were mede, only the most recent one is considered. 
+\autoref{fig:TimeWindowExamples} shows the an example of three different strategies applied over the same history. As we can notice, in \autoref{fig:TimeWindow1} we made an AnimationFrame every 3 commits; as a result, the notion of time is lost. With a commit grouping strategy we can never have an empty AnimationFrame. With  \autoref{fig:TimeWindow2} and \autoref{fig:TimeWindow3} the thing is different. Here we have empty AnimationFrames and moreover, with these examples we highlight the importance of a well designed time window. Each project has its own length of the history. Therefore, with this example we can underline our neeed to left to the user the choice of the time window lenght. To avoid the case of a view with too many AnimationFrames, younger repositories might have a daily time window wheras for older repository it might be better to have weekily, monthly or yearly views. 
+
+In any case, if we pick 2 repositories born on the same time, the number of AnimationFrames is always the same because it does not depends upon the number of commits made. 
+
+
+\begin{figure}
+    \begin{center}
+        \begin{subfigure}{1\textwidth}
+            \includegraphics[width=\linewidth]{TimeWindow1.jpg}
+            \caption{Grouping every 3 commits.} 
+            \label{fig:TimeWindow1}
+        \end{subfigure}
+        \begin{subfigure}{1\textwidth}
+            \includegraphics[width=\linewidth]{TimeWindow2.jpg}
+            \caption{Grouping every year.} 
+            \label{fig:TimeWindow2}
+        \end{subfigure}
+        \begin{subfigure}{1\textwidth}
+            \includegraphics[width=\linewidth]{TimeWindow3.jpg}
+            \caption{Grouping every month.}
+            \label{fig:TimeWindow3}
+        \end{subfigure}
+        \caption[xample of three different grouping strategies]{Example of three different grouping strategies applied over a system whose history is 10 years long and it has 57 commits}
+        \label{fig:TimeWindowExamples}
+    \end{center}
+\end{figure}
+
+
+
+To represent the state of the system, an AnimationFrame holds a set of \textbf{ViewFigure}, each one representing a file part of the system.
+\bigbreak
+A ViewFigure holds a set of properties used by the render process to draw a glyph that represents a file. They represent abstract concepts, therefore being understood by any 3D engine, our visualization approach can be reproduced by anyone. 
+
 \subsection*{Layout}
-We developed our visualization approach to visualize the evolution of a system incrementally. 
-We cannot track hierarchical relationships with a language-agnostic approach, such as classes belonging to a package. 
-So, we have adopted a simple representation that takes care of the creation order of entities.
-To layout FileHiistories, we use an outward spiral layout, where the center of the spiral is the first entity added to the system. 
+Lots of tool have been proposed in literature to depict the evolution of a software with different layout strategies. 
+One of the most famous approach is the city metaphor \cite{Wettel2007}, presented by Lanza, where the position of the file depends upon the package that holds it. 
+Nonetheless it works very well with small and medium systems, with large systems the interactivity and navigability can be substantially slowed down.
+\bigbreak
+Therefore, the main goal of our visualization strategy are two: scalability and incrementability. The visualization needs to scale, even with very large repository and it must visualize the evolution of the system incrementally. Therefore, the user is always able to immediately distinguish older entities from newer one.
+\bigbreak
+Under those circumstances, we adopted a spiral layout with an outward direction. Older entities are positioned on the center of this spiral whereas newer entities are always close to borders. 
+\autoref{fig:layout} shows an example of how ViewFigure are laid out with an outward spiral layout.
+\bigbreak
+Hence, each ViewFigure has a \textit{position} to describe its position inside the 3D environment. 
 
 \begin{figure}
     \center
@@ -304,80 +343,73 @@ To layout FileHiistories, we use an outward spiral layout, where the center of t
     \label{fig:layout}
 \end{figure}
 
+\subsection*{Color}
 
-\subsection*{Time traversal}
-
-Histories are definer over real human time. Some repositories have been developed for more than ten years. 
-Consequently, there are several ways to traverse the history of an entity. 
-We can consider the human time or just view the commits made. \\
+As we said synesthesia occurs when we experience an involuntary stimulation of a cognitive path during the stimulation of another sense. Here we present how we used color to automatically trigger the action made on a file and how much time passed since the action was made. 
+As a result, we dediced to map each git action with a color. \autoref{fig:ColorAssociation} shows how we mapped them in out approach. However, since each people has its own perception and its own way to reason, this mapping must be customizable by the user. Consequently another property that a ViewFigure holds is \textit{color}.
 \bigbreak
-The visualization needs to start from the first moment and go forward until the end. 
-In our approach, we define two strategies to traverse the history of a repository:
-\begin{itemize}
-    \item{Strategy 1} We can display \texttt{n} version at the time, so we are traversing the history as it was written. 
-    A limitation of this approach is that we lose the concept of time. 
-    We cannot have any idea about how much time was passed between the two commits, 
-    thus we cannot distinguish active development phases from unactive development phases. 
+In addition to the color, each ViewFigure has another property: the \textit{age}. We define the age of a file as the amount of time elapsed between the last action made on a file. Also there we defined two strategy to compute the age of an entity:
 
-    \item{Strategy 2} We can group versions by timestamp. 
-    So, all the commits made in the same period will be displayed simultaneously. 
-    This strategy works very well if we need to comprehend how the system evolved and at which speed in time. 
+\begin{itemize}
+    \item{Aging by commits}: the user specifies a number of commits \texttt{n} and then after \texttt{n} commits the age of a file is incremented by one. 
+    \item{Aging by timestamp}:  the user specifies a timestamp window \texttt{ts} and then after \texttt{ts} seconds the age of a file is incremented by one.
 \end{itemize}
 
-In both our strategies, we might need to aggregate more versions into a single entity: a \textbf{moment}. 
-We define a moment as a group of versions that will be displayed simultaneously. 
+When an action is made on a file its age is set to zero. 
+\bigbreak
+The maximum age is also specified by the user. When it is reached the color of the entity must be equal to the \texttt{base color}, chosen by the user. 
+We initially set the base color equals to grey. \autoref{fig:Aging} shows an example of how aging works with an file whose last action was an ADD and the maximum age is 10. 
+\bigbreak
+All the files shared the same criteria to compute the age. The main purpose of the aging is to immediately distinguish files modified recently from files modified in past AnimationFrames.
 
-\begin{figure}[H]
-    \begin{center}
-        \includegraphics[width=0.9\linewidth]{Moments.jpg} 
-        \caption{Example of two different strategies to identity moments. 
-        In the first strategy, we mapped one commit with one moment, so the number of moments will equal the number of commits.  
-        Alternatively, in the second strategy, we created a moment every day.
-        As a result, we have moments with many commits and some without anyone.
-        With this strategy, the number of moments will be the same as the number of days between the first and the last commit. 
-        }
-        \label{fig:moment}
-    \end{center}
-\end{figure}
-
-Figure \ref{fig:moment} highlights the difference between the two strategies mentioned above. 
-
-\subsection*{Color}
-\begin{wrapfigure}{r}{0.3\textwidth}
+\begin{figure}
     \begin{center}
         \includegraphics[width=0.7\linewidth]{ColorAssociation.png} 
         \caption{Color association}
         \label{fig:ColorAssociation}
     \end{center}
-\end{wrapfigure}
+\end{figure}
 
-The entity's color should recall the last action made on that entity. To achieve this purpose, we used the color association described in figure \ref{fig:ColorAssociation}.
-Nonetheless, each person has their perception of colors. Thus, we can not assume that this color will work similarly for all people.
-To remedy this issue, users can customize the color palette. \\
-\\
-We decided to put another piece of information on the color of the entity: the \textbf{aging}. 
-We define the aging of an entity as the number of moments since the last modification of that entity happened.
-We mapped the age of an entity with the darkness of its color to do that. 
-As a result, older entities will be displayed with a darker color. 
-This way, users can immediately recognize the last action and the time passed since the entity was modified.
+\begin{figure}
+    \center
+    \includegraphics[width=\textwidth]{Aging.jpg}
+    \caption{Aging process of an entity whose last action was an ADD and the maximum age is 10. }
+    \label{fig:Aging}
+\end{figure}
 
 
-\subsection*{Shape}
-We have chosen to play with the entity's shape to distinguish them based on their type. 
-Our visualization layout works with an outward spiral that always adds a new entity at the tail. 
-If a commit involves lots of entities, it would be helpful to know immediately which kinds of entities are modified. 
-For this reason, we mapped the entity's shape to the file type of the entity itself.
-Usually, there are many file types in a repository, so we cannot aim to have an exhaustive set of shapes to represent each file type individually. 
+
+\subsection*{Shape and opacity}
+To easily distinguish the type of the files we added two properties to a ViewFigure: \textit{shape} and \textit{opacity}. 
+In this way the user can immediately understand the type of the file looking at its shape. The way of how FileTpes should be mapped to shapes must be part of the view specification, because each engine works with different components. 
+\bigbreak
+Moreover, we added the opacity to allow the highlight of a FileType over the others. 
 
 \subsection*{Height}
-As we said, the height of an entity must represent the value of a chosen metric. 
-Entities without the selected metric would not be represented in our approach. 
+The last information that we want to represent is the value of a metric. Since SYN has an extensible set of metrics, we decided to give to the user the freedom to decided wich metric should be used to represent the height of a file and how this height must be computed. 
+To do that, we defined a mapper: a function that takes as input a metric and returns a double representing the ViewFigure height. The metric used by this mapper are the metric obtained from each file during the analysis. The set of mapper function is extensible by the user. \bigbreak
+This information is given to the render process through the \textit{height} property of a ViewFigure.
+\bigbreak
+According to the mapping that we have presented so far, depiced in \autoref{fig:ApproachMapping}, the creation date of a file is mapped to the position of a ViewFigure, the last action made on a file determines the color and the age of an entity, a chosen metric is used to compute the rendered height of the ViewFigure and finally the type of the file is used to establish its shape and opacity. 
 
-To extract the value of the height from a metric, we used to map it with a \textbf{mapper}.
-A mapper is defined as a function that returns its height given an entity and a metric.\\
-\\
-This mapping function might be defined in several ways, such as with a linear process whose maximum value is predefined and its minimum value is 0. 
-The choice of which strategy should be used is up to the user. 
+% \begin{itemize}
+%     \item \textbf{Color}: to describe actions made on an entity (ADD, MODIFY, RENAME, MOVE, DELETE). 
+%     \item \textbf{Shape}: to describe the type of the file. 
+%     \item \textbf{Height}: to describe the value of a metric. The choiche of the metric is up to the user because it changes from project to project. 
+% \end{itemize}
+
+\begin{figure}
+    \center
+    \includegraphics[width=\textwidth]{ApproachMapping.jpg}
+    \caption{How properies are mapped in our approach}
+    \label{fig:ApproachMapping}
+\end{figure}
+
+
+
+
+
+
 
 
 
