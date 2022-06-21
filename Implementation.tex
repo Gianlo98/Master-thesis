@@ -190,12 +190,21 @@ All the views are generated from a \texttt{ViewSpecification} instance. The list
     \item \texttt{withGround}: wether the view should include a ground element.
 \end{itemize}
 
-Moreover, we defined an abstract class \textbf{PositionLayout} whose implementation specifies how entities should be laid out and a class \textbf{MapperStrategy} whose implementation specifies how the height of the entity is computed. With SYN we ship five possible mapperStrategy:
+Moreover, we defined an abstract class \textbf{PositionLayout} whose implementation specifies how entities should be laid out and a class \textbf{MapperStrategy} whose implementation specifies how the height of the entity is computed. The set of mapping function is extensible. To implement a strategy a developer needs to implement an interface that defines two methods: \texttt{void generateStrategy(final List<String> values)} and \texttt{double mapValue(final String value)}. The mapping process is composed of two phases:
 \begin{itemize}
-    \item BucketCountStrategy: where the height of the entity is computed after performing a bucketing on the selected metric's values. 
-    \item LinearBucketValueStrategy: where the height of the entity is computed after performing first a bucketing and then a linear mapping on the selected metric's values. 
-    \item LinearMapperStrategy: where the height of the entity is computed after performing a linear mapping on the selected metric's values. 
-    \item NormalizerMapperStrategy: where the height of the entity is computed after performing a normalization on the selected metric's values. 
+    \item Generation phase: when the view is created, the method \texttt{generateStrategy} is called with all the values of the chosen metric. 
+    \item Retrieve phase: when a new ViewFigure is created, the value of its height is set as the return value of the function \texttt{mapValue} given as argument the value of the chosen metric for that file on that AnimationFrame. 
+\end{itemize}
+
+In our initial implementation, we provided 5 different mapping strategies:
+\begin{itemize}
+    \item LinearMapperStrategy: this strategy adopt internally a linear function to retrieve the height of a ViewFigure. 
+    \item NormalizerMapperStrategy: during the generation phases all the values are normalized in an interval between zero and one.
+
+    \item BucketCountStrategy: during the generation phases all the values are partitioned into buckets. The value returned by this function is the number of the bucket where the value was put in. This strategy allows the customization of the number of buckes that are created. By default this value is set to 100. 
+    \item BucketValueStrategy: relies on the BucketCountStrategy. During the generation phases duplicate values are removed to equally distribute buckets over the range of values recorded by the chosen metric. 
+
+    \item LinearBucketValueStrategy: relies on the BucketValueStrategy. During the generation phase the maximum  value of each bucket is recorded. Therefore, during the retrieve phase it is used to make a liner proportion of the value and add them to the bucket numer. For example, assuming that values $100, 200, 500$ are mapped to the bucket $3$; therefore the value of $100$ is computed as $3 + 100/500 = 3.2$, the value of $200$ is $3 + 200/500 = 3.4$ and finally the value of $500$ is $4$.
 \end{itemize}
 
 

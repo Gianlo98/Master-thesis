@@ -341,6 +341,12 @@ R.~C. Waters.
 \newblock User format control in a lisp prettyprinter.
 \newblock {\em ACM Trans. Program. Lang. Syst.}, 5(4):513–531, oct 1983.
 
+\bibitem{Wettel2007}
+R.~Wettel and M.~Lanza.
+\newblock Visualizing software systems as cities.
+\newblock In {\em 2007 4th IEEE International Workshop on Visualizing Software
+  for Understanding and Analysis}, pages 92--99, 2007.
+
 \bibitem{Wettel2011}
 R.~Wettel, M.~Lanza, and R.~Robbes.
 \newblock Software systems as cities: a controlled experiment.
