@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.28)  21 JUN 2022 19:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.28)  22 JUN 2022 16:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -500,6 +500,9 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 
 LaTeX Warning: Label `fig:JetUML_V0E0' multiply defined.
 
+
+LaTeX Warning: Label `fig:JetUML_V3' multiply defined.
+
 )
 \openout1 = `SYN.aux'.
 
@@ -640,7 +643,7 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 1: section
 (/Users/gianlo/Develop/thesis/auxiliary/titlepage.tex
-<auxiliary/Grid-System-USI-Software.pdf, id=100, 185.0925pt x 85.3579pt>
+<auxiliary/Grid-System-USI-Software.pdf, id=116, 185.0925pt x 85.3579pt>
 File: auxiliary/Grid-System-USI-Software.pdf Graphic file (type pdf)
 <use auxiliary/Grid-System-USI-Software.pdf>
 Package pdftex.def Info: auxiliary/Grid-System-USI-Software.pdf  used on input line 7.
@@ -723,7 +726,7 @@ File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 
 ]) (/Users/gianlo/Develop/thesis/StateOfArt.tex [2]
 Chapter 2.
-<images/stateOfArt/Haibt1959_Flowchart.png, id=344, 450.68375pt x 1260.71pt>
+<images/stateOfArt/Haibt1959_Flowchart.png, id=366, 450.68375pt x 1260.71pt>
 File: images/stateOfArt/Haibt1959_Flowchart.png Graphic file (type png)
 <use images/stateOfArt/Haibt1959_Flowchart.png>
 Package pdftex.def Info: images/stateOfArt/Haibt1959_Flowchart.png  used on input line 12.
@@ -741,7 +744,7 @@ Overfull \hbox (3.64459pt too wide) in paragraph at lines 43--44
 []\T1/ppl/m/n/10.95 Dynamic vi-su-al-iza-tions. Used to present in-for-ma-tion ex-tracted with
  []
 
-<images/stateOfArt/Nassi1973_NSD.png, id=371, 851.18pt x 1072.005pt>
+<images/stateOfArt/Nassi1973_NSD.png, id=393, 851.18pt x 1072.005pt>
 File: images/stateOfArt/Nassi1973_NSD.png Graphic file (type png)
 <use images/stateOfArt/Nassi1973_NSD.png>
 Package pdftex.def Info: images/stateOfArt/Nassi1973_NSD.png  used on input line 90.
@@ -751,7 +754,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--92
  []\T1/ppl/m/sc/10 Figure 2.2: 
  []
 
-<images/stateOfArt/Brown1988_BalsaII.png, id=372, 574.145pt x 379.4175pt>
+<images/stateOfArt/Brown1988_BalsaII.png, id=394, 574.145pt x 379.4175pt>
 File: images/stateOfArt/Brown1988_BalsaII.png Graphic file (type png)
 <use images/stateOfArt/Brown1988_BalsaII.png>
 Package pdftex.def Info: images/stateOfArt/Brown1988_BalsaII.png  used on input line 95.
@@ -761,7 +764,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--96
  []\T1/ppl/m/sc/10 Figure 2.3: 
  []
 
-<images/stateOfArt/Mueller1988_Rigi.png, id=373, 719.68875pt x 503.8825pt>
+<images/stateOfArt/Mueller1988_Rigi.png, id=395, 719.68875pt x 503.8825pt>
 File: images/stateOfArt/Mueller1988_Rigi.png Graphic file (type png)
 <use images/stateOfArt/Mueller1988_Rigi.png>
 Package pdftex.def Info: images/stateOfArt/Mueller1988_Rigi.png  used on input line 99.
@@ -772,12 +775,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--100
  []
 
 [4]
-<images/stateOfArt/Eick1992_Seesoft.png, id=387, 501.875pt x 405.515pt>
+<images/stateOfArt/Eick1992_Seesoft.png, id=409, 501.875pt x 405.515pt>
 File: images/stateOfArt/Eick1992_Seesoft.png Graphic file (type png)
 <use images/stateOfArt/Eick1992_Seesoft.png>
 Package pdftex.def Info: images/stateOfArt/Eick1992_Seesoft.png  used on input line 122.
 (pdftex.def)             Requested size: 204.86063pt x 165.53207pt.
-<images/stateOfArt/DePauw1993_Jinsight.png, id=388, 844.15375pt x 717.68124pt>
+<images/stateOfArt/DePauw1993_Jinsight.png, id=410, 844.15375pt x 717.68124pt>
 File: images/stateOfArt/DePauw1993_Jinsight.png Graphic file (type png)
 <use images/stateOfArt/DePauw1993_Jinsight.png>
 Package pdftex.def Info: images/stateOfArt/DePauw1993_Jinsight.png  used on input line 126.
@@ -787,7 +790,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--145
 
  []
 
-<images/stateOfArt/Chuan1.png, id=390, 1001.7425pt x 716.6775pt>
+<images/stateOfArt/Chuan1.png, id=412, 1001.7425pt x 716.6775pt>
 File: images/stateOfArt/Chuan1.png Graphic file (type png)
 <use images/stateOfArt/Chuan1.png>
 Package pdftex.def Info: images/stateOfArt/Chuan1.png  used on input line 148.
@@ -797,7 +800,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--149
  []\T1/ppl/m/sc/10 Figure 2.7: 
  []
 
-<images/stateOfArt/Chuan2.png, id=391, 982.67125pt x 654.445pt>
+<images/stateOfArt/Chuan2.png, id=413, 982.67125pt x 654.445pt>
 File: images/stateOfArt/Chuan2.png Graphic file (type png)
 <use images/stateOfArt/Chuan2.png>
 Package pdftex.def Info: images/stateOfArt/Chuan2.png  used on input line 152.
@@ -807,7 +810,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--153
  []\T1/ppl/m/sc/10 Figure 2.8: 
  []
 
-<images/stateOfArt/Chuan3.png, id=392, 981.6675pt x 850.17625pt>
+<images/stateOfArt/Chuan3.png, id=414, 981.6675pt x 850.17625pt>
 File: images/stateOfArt/Chuan3.png Graphic file (type png)
 <use images/stateOfArt/Chuan3.png>
 Package pdftex.def Info: images/stateOfArt/Chuan3.png  used on input line 156.
@@ -818,18 +821,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--157
  []
 
 [5 </Users/gianlo/Develop/thesis/images/stateOfArt/Nassi1973_NSD.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Brown1988_BalsaII.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Mueller1988_Rigi.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Eick1992_Seesoft.png> </Users/gianlo/Develop/thesis/images/stateOfArt/DePauw1993_Jinsight.png>]
-<images/stateOfArt/EvolutionMatrix1.png, id=409, 653.44125pt x 437.635pt>
+<images/stateOfArt/EvolutionMatrix1.png, id=431, 653.44125pt x 437.635pt>
 File: images/stateOfArt/EvolutionMatrix1.png Graphic file (type png)
 <use images/stateOfArt/EvolutionMatrix1.png>
 Package pdftex.def Info: images/stateOfArt/EvolutionMatrix1.png  used on input line 191.
 (pdftex.def)             Requested size: 250.95612pt x 168.07263pt.
-<images/stateOfArt/EvolutionMatrix2.png, id=410, 653.44125pt x 437.635pt>
+<images/stateOfArt/EvolutionMatrix2.png, id=432, 653.44125pt x 437.635pt>
 File: images/stateOfArt/EvolutionMatrix2.png Graphic file (type png)
 <use images/stateOfArt/EvolutionMatrix2.png>
 Package pdftex.def Info: images/stateOfArt/EvolutionMatrix2.png  used on input line 195.
 (pdftex.def)             Requested size: 250.95612pt x 168.07263pt.
  [6 </Users/gianlo/Develop/thesis/images/stateOfArt/Chuan1.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Chuan2.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Chuan3.png> </Users/gianlo/Develop/thesis/images/stateOfArt/EvolutionMatrix1.png> </Users/gianlo/Develop/thesis/images/stateOfArt/EvolutionMatrix2.png>]
-<images/stateOfArt/Pinzger2005_RelVis.png, id=430, 605.26125pt x 484.81125pt>
+<images/stateOfArt/Pinzger2005_RelVis.png, id=452, 605.26125pt x 484.81125pt>
 File: images/stateOfArt/Pinzger2005_RelVis.png Graphic file (type png)
 <use images/stateOfArt/Pinzger2005_RelVis.png>
 Package pdftex.def Info: images/stateOfArt/Pinzger2005_RelVis.png  used on input line 221.
@@ -839,7 +842,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 222--222
  []\T1/ppl/m/sc/10 Figure 2.12: 
  []
 
-<images/stateOfArt/DAmbros2006.png, id=431, 636.3775pt x 561.09625pt>
+<images/stateOfArt/DAmbros2006.png, id=453, 636.3775pt x 561.09625pt>
 File: images/stateOfArt/DAmbros2006.png Graphic file (type png)
 <use images/stateOfArt/DAmbros2006.png>
 Package pdftex.def Info: images/stateOfArt/DAmbros2006.png  used on input line 225.
@@ -849,7 +852,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 226--226
  []\T1/ppl/m/sc/10 Figure 2.13: 
  []
 
-<images/stateOfArt/DAmbros2006a_EvoRadar.png, id=432, 636.3775pt x 561.09625pt>
+<images/stateOfArt/DAmbros2006a_EvoRadar.png, id=454, 636.3775pt x 561.09625pt>
 File: images/stateOfArt/DAmbros2006a_EvoRadar.png Graphic file (type png)
 <use images/stateOfArt/DAmbros2006a_EvoRadar.png>
 Package pdftex.def Info: images/stateOfArt/DAmbros2006a_EvoRadar.png  used on input line 229.
@@ -864,19 +867,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 230--230
  |\T1/ppl/m/n/10 Evo-lu-tion 
  []
 
-<images/stateOfArt/Steinbrueckner2010.png, id=434, 1060.96375pt x 730.73pt>
+<images/stateOfArt/Steinbrueckner2010.png, id=456, 1060.96375pt x 730.73pt>
 File: images/stateOfArt/Steinbrueckner2010.png Graphic file (type png)
 <use images/stateOfArt/Steinbrueckner2010.png>
 Package pdftex.def Info: images/stateOfArt/Steinbrueckner2010.png  used on input line 241.
 (pdftex.def)             Requested size: 460.93153pt x 317.46358pt.
 [7 </Users/gianlo/Develop/thesis/images/stateOfArt/Pinzger2005_RelVis.png> </Users/gianlo/Develop/thesis/images/stateOfArt/DAmbros2006.png> </Users/gianlo/Develop/thesis/images/stateOfArt/DAmbros2006a_EvoRadar.png>]
-<images/stateOfArt/CodeCity.png, id=451, 2098.84125pt x 1173.38374pt>
+<images/stateOfArt/CodeCity.png, id=473, 2098.84125pt x 1173.38374pt>
 File: images/stateOfArt/CodeCity.png Graphic file (type png)
 <use images/stateOfArt/CodeCity.png>
 Package pdftex.def Info: images/stateOfArt/CodeCity.png  used on input line 256.
 (pdftex.def)             Requested size: 460.93153pt x 257.6797pt.
  [8 </Users/gianlo/Develop/thesis/images/stateOfArt/Steinbrueckner2010.png>]
-<images/stateOfArt/CityVR.png, id=462, 1123.19624pt x 598.235pt>
+<images/stateOfArt/CityVR.png, id=484, 1123.19624pt x 598.235pt>
 File: images/stateOfArt/CityVR.png Graphic file (type png)
 <use images/stateOfArt/CityVR.png>
 Package pdftex.def Info: images/stateOfArt/CityVR.png  used on input line 287.
@@ -886,7 +889,7 @@ Underfull \hbox (badness 3930) in paragraph at lines 288--288
  []\T1/ppl/m/sc/10 Figure 2.17: 
  []
 
-<images/stateOfArt/ChronoTwigger.png, id=463, 1126.2075pt x 737.75626pt>
+<images/stateOfArt/ChronoTwigger.png, id=485, 1126.2075pt x 737.75626pt>
 File: images/stateOfArt/ChronoTwigger.png Graphic file (type png)
 <use images/stateOfArt/ChronoTwigger.png>
 Package pdftex.def Info: images/stateOfArt/ChronoTwigger.png  used on input line 291.
@@ -901,7 +904,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 292--292
  |\T1/ppl/m/n/10 ChronoTwig- 
  []
 
-<images/stateOfArt/CuboidMatrix.png, id=464, 1233.60875pt x 927.465pt>
+<images/stateOfArt/CuboidMatrix.png, id=486, 1233.60875pt x 927.465pt>
 File: images/stateOfArt/CuboidMatrix.png Graphic file (type png)
 <use images/stateOfArt/CuboidMatrix.png>
 Package pdftex.def Info: images/stateOfArt/CuboidMatrix.png  used on input line 295.
@@ -912,24 +915,24 @@ Underfull \hbox (badness 3930) in paragraph at lines 296--296
  []
 
 [9 </Users/gianlo/Develop/thesis/images/stateOfArt/CodeCity.png> </Users/gianlo/Develop/thesis/images/stateOfArt/CityVR.png> </Users/gianlo/Develop/thesis/images/stateOfArt/ChronoTwigger.png> </Users/gianlo/Develop/thesis/images/stateOfArt/CuboidMatrix.png>]
-<images/stateOfArt/Alexandru_EvoClock.png, id=479, 2201.22375pt x 1152.305pt>
+<images/stateOfArt/Alexandru_EvoClock.png, id=501, 2201.22375pt x 1152.305pt>
 File: images/stateOfArt/Alexandru_EvoClock.png Graphic file (type png)
 <use images/stateOfArt/Alexandru_EvoClock.png>
 Package pdftex.def Info: images/stateOfArt/Alexandru_EvoClock.png  used on input line 312.
 (pdftex.def)             Requested size: 460.93153pt x 241.28787pt.
-<images/stateOfArt/RHDB.png, id=481, 667.49374pt x 281.05pt>
+<images/stateOfArt/RHDB.png, id=503, 667.49374pt x 281.05pt>
 File: images/stateOfArt/RHDB.png Graphic file (type png)
 <use images/stateOfArt/RHDB.png>
 Package pdftex.def Info: images/stateOfArt/RHDB.png  used on input line 338.
 (pdftex.def)             Requested size: 460.93153pt x 194.07909pt.
  [10 </Users/gianlo/Develop/thesis/images/stateOfArt/Alexandru_EvoClock.png>]
-<images/stateOfArt/Salis2019.png, id=494, 873.2625pt x 233.87375pt>
+<images/stateOfArt/Salis2019.png, id=517, 873.2625pt x 233.87375pt>
 File: images/stateOfArt/Salis2019.png Graphic file (type png)
 <use images/stateOfArt/Salis2019.png>
 Package pdftex.def Info: images/stateOfArt/Salis2019.png  used on input line 369.
 (pdftex.def)             Requested size: 460.93153pt x 123.44574pt.
  [11 </Users/gianlo/Develop/thesis/images/stateOfArt/RHDB.png> </Users/gianlo/Develop/thesis/images/stateOfArt/Salis2019.png>]
-<images/stateOfArt/CocoViz.png, id=514, 2400.97pt x 1356.06625pt>
+<images/stateOfArt/CocoViz.png, id=536, 2400.97pt x 1356.06625pt>
 File: images/stateOfArt/CocoViz.png Graphic file (type png)
 <use images/stateOfArt/CocoViz.png>
 Package pdftex.def Info: images/stateOfArt/CocoViz.png  used on input line 423.
@@ -956,7 +959,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 440--459
 
 [13 </Users/gianlo/Develop/thesis/images/stateOfArt/CocoViz.png>]) (/Users/gianlo/Develop/thesis/Approach.tex [14]
 Chapter 3.
-<images/approach/EvolutionaryModel.jpg, id=539, 806.01125pt x 263.98625pt>
+<images/approach/EvolutionaryModel.jpg, id=561, 806.01125pt x 263.98625pt>
 File: images/approach/EvolutionaryModel.jpg Graphic file (type jpg)
 <use images/approach/EvolutionaryModel.jpg>
 Package pdftex.def Info: images/approach/EvolutionaryModel.jpg  used on input line 33.
@@ -984,13 +987,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--105
 
  []
 
-<images/approach/RebuildingHistory.jpg, id=552, 1207.51125pt x 675.52374pt>
+<images/approach/RebuildingHistory.jpg, id=574, 1207.51125pt x 675.52374pt>
 File: images/approach/RebuildingHistory.jpg Graphic file (type jpg)
 <use images/approach/RebuildingHistory.jpg>
 Package pdftex.def Info: images/approach/RebuildingHistory.jpg  used on input line 108.
 (pdftex.def)             Requested size: 409.72125pt x 229.21118pt.
 [17]
-<images/approach/PartialHistory.png, id=560, 1096.095pt x 891.33pt>
+<images/approach/PartialHistory.png, id=582, 1096.095pt x 891.33pt>
 File: images/approach/PartialHistory.png Graphic file (type png)
 <use images/approach/PartialHistory.png>
 Package pdftex.def Info: images/approach/PartialHistory.png  used on input line 144.
@@ -1018,7 +1021,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--181
  []
 
 [18 </Users/gianlo/Develop/thesis/images/approach/RebuildingHistory.jpg>]
-<images/approach/Taxonomy.jpg, id=570, 678.535pt x 194.7275pt>
+<images/approach/Taxonomy.jpg, id=592, 678.535pt x 194.7275pt>
 File: images/approach/Taxonomy.jpg Graphic file (type jpg)
 <use images/approach/Taxonomy.jpg>
 Package pdftex.def Info: images/approach/Taxonomy.jpg  used on input line 184.
@@ -1032,7 +1035,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `tab:taxonomyApproach' on page 19 undefined on input line 203.
 
 [19 </Users/gianlo/Develop/thesis/images/approach/PartialHistory.png> </Users/gianlo/Develop/thesis/images/approach/Taxonomy.jpg>]
-<images/approach/ApproachMatrix.jpg, id=579, 1003.75pt x 784.9325pt>
+<images/approach/ApproachMatrix.jpg, id=601, 1003.75pt x 784.9325pt>
 File: images/approach/ApproachMatrix.jpg Graphic file (type jpg)
 <use images/approach/ApproachMatrix.jpg>
 Package pdftex.def Info: images/approach/ApproachMatrix.jpg  used on input line 232.
@@ -1043,7 +1046,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 236--240
  []
 
 [20 </Users/gianlo/Develop/thesis/images/approach/ApproachMatrix.jpg>]
-<images/approach/ApproachMatrix2.png, id=587, 1460.45625pt x 978.65625pt>
+<images/approach/ApproachMatrix2.png, id=609, 1460.45625pt x 978.65625pt>
 File: images/approach/ApproachMatrix2.png Graphic file (type png)
 <use images/approach/ApproachMatrix2.png>
 Package pdftex.def Info: images/approach/ApproachMatrix2.png  used on input line 257.
@@ -1053,75 +1056,71 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 28
  (/usr/local/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [22]
-<images/approach/TimeWindow1.jpg, id=603, 1141.26375pt x 166.6225pt>
+<images/approach/TimeWindow1.jpg, id=625, 1141.26375pt x 166.6225pt>
 File: images/approach/TimeWindow1.jpg Graphic file (type jpg)
 <use images/approach/TimeWindow1.jpg>
 Package pdftex.def Info: images/approach/TimeWindow1.jpg  used on input line 302.
 (pdftex.def)             Requested size: 512.14963pt x 74.77348pt.
-<images/approach/TimeWindow2.jpg, id=604, 1188.44pt x 165.61874pt>
+<images/approach/TimeWindow2.jpg, id=626, 1188.44pt x 165.61874pt>
 File: images/approach/TimeWindow2.jpg Graphic file (type jpg)
 <use images/approach/TimeWindow2.jpg>
 Package pdftex.def Info: images/approach/TimeWindow2.jpg  used on input line 307.
 (pdftex.def)             Requested size: 512.14963pt x 71.37387pt.
-<images/approach/TimeWindow3.jpg, id=605, 1196.47pt x 190.7125pt>
+<images/approach/TimeWindow3.jpg, id=627, 1196.47pt x 190.7125pt>
 File: images/approach/TimeWindow3.jpg Graphic file (type jpg)
 <use images/approach/TimeWindow3.jpg>
 Package pdftex.def Info: images/approach/TimeWindow3.jpg  used on input line 312.
 (pdftex.def)             Requested size: 512.14963pt x 81.6352pt.
  [23 </Users/gianlo/Develop/thesis/images/approach/TimeWindow1.jpg> </Users/gianlo/Develop/thesis/images/approach/TimeWindow2.jpg> </Users/gianlo/Develop/thesis/images/approach/TimeWindow3.jpg>]
-<images/approach/Layout.png, id=615, 669.50125pt x 671.50874pt>
-File: images/approach/Layout.png Graphic file (type png)
-<use images/approach/Layout.png>
-Package pdftex.def Info: images/approach/Layout.png  used on input line 341.
-(pdftex.def)             Requested size: 512.14963pt x 513.72302pt.
-<images/approach/ColorAssociation.png, id=618, 155.58125pt x 297.11pt>
-File: images/approach/ColorAssociation.png Graphic file (type png)
-<use images/approach/ColorAssociation.png>
-Package pdftex.def Info: images/approach/ColorAssociation.png  used on input line 367.
-(pdftex.def)             Requested size: 358.50317pt x 684.7032pt.
-
-
-LaTeX Warning: Float too large for page by 43.38295pt on input line 371.
-
-<images/approach/Aging.jpg, id=619, 1756.5625pt x 151.56625pt>
+<images/approach/SpiralLayout.jpg, id=637, 2762.32pt x 2019.545pt>
+File: images/approach/SpiralLayout.jpg Graphic file (type jpg)
+<use images/approach/SpiralLayout.jpg>
+Package pdftex.def Info: images/approach/SpiralLayout.jpg  used on input line 341.
+(pdftex.def)             Requested size: 512.14963pt x 374.4112pt.
+ [24 </Users/gianlo/Develop/thesis/images/approach/SpiralLayout.jpg>]
+<images/approach/ColorMapping.jpg, id=646, 479.7925pt x 79.29625pt>
+File: images/approach/ColorMapping.jpg Graphic file (type jpg)
+<use images/approach/ColorMapping.jpg>
+Package pdftex.def Info: images/approach/ColorMapping.jpg  used on input line 367.
+(pdftex.def)             Requested size: 0.0pt x 0.0pt.
+<images/approach/Aging.jpg, id=647, 1756.5625pt x 151.56625pt>
 File: images/approach/Aging.jpg Graphic file (type jpg)
 <use images/approach/Aging.jpg>
 Package pdftex.def Info: images/approach/Aging.jpg  used on input line 375.
 (pdftex.def)             Requested size: 512.14963pt x 44.19128pt.
-[24] [25 </Users/gianlo/Develop/thesis/images/approach/Layout.png>] [26 </Users/gianlo/Develop/thesis/images/approach/ColorAssociation.png>]
-<images/approach/ApproachMapping.jpg, id=639, 1606.0pt x 803.0pt>
+<images/approach/ApproachMapping.jpg, id=649, 1606.0pt x 803.0pt>
 File: images/approach/ApproachMapping.jpg Graphic file (type jpg)
 <use images/approach/ApproachMapping.jpg>
 Package pdftex.def Info: images/approach/ApproachMapping.jpg  used on input line 403.
 (pdftex.def)             Requested size: 512.14963pt x 256.08305pt.
- [27 </Users/gianlo/Develop/thesis/images/approach/Aging.jpg> </Users/gianlo/Develop/thesis/images/approach/ApproachMapping.jpg>]) (/Users/gianlo/Develop/thesis/Implementation.tex [28]
+ [25 </Users/gianlo/Develop/thesis/images/approach/ColorMapping.jpg> </Users/gianlo/Develop/thesis/images/approach/Aging.jpg>]) (/Users/gianlo/Develop/thesis/Implementation.tex [26 </Users/gianlo/Develop/thesis/images/approach/ApproachMapping.jpg>]
 Chapter 4.
-<images/implementation/SYNArchitecture.jpg, id=652, 1089.06876pt x 616.3025pt>
+<images/implementation/SYNArchitecture.jpg, id=664, 1089.06876pt x 616.3025pt>
 File: images/implementation/SYNArchitecture.jpg Graphic file (type jpg)
 <use images/implementation/SYNArchitecture.jpg>
 Package pdftex.def Info: images/implementation/SYNArchitecture.jpg  used on input line 41.
 (pdftex.def)             Requested size: 512.14963pt x 289.82208pt.
 1: section
-[29
+[27
 
-] [30 </Users/gianlo/Develop/thesis/images/implementation/SYNArchitecture.jpg>]
-<images/implementation/UMLProject.png, id=665, 318.18875pt x 449.68pt>
+] [28 </Users/gianlo/Develop/thesis/images/implementation/SYNArchitecture.jpg>]
+<images/implementation/UMLProject.png, id=676, 318.18875pt x 449.68pt>
 File: images/implementation/UMLProject.png Graphic file (type png)
 <use images/implementation/UMLProject.png>
 Package pdftex.def Info: images/implementation/UMLProject.png  used on input line 70.
 (pdftex.def)             Requested size: 102.42836pt x 144.75136pt.
-<images/implementation/UMLHistory.png, id=666, 1020.81375pt x 668.4975pt>
+<images/implementation/UMLHistory.png, id=677, 1020.81375pt x 668.4975pt>
 File: images/implementation/UMLHistory.png Graphic file (type png)
 <use images/implementation/UMLHistory.png>
 Package pdftex.def Info: images/implementation/UMLHistory.png  used on input line 79.
 (pdftex.def)             Requested size: 102.42836pt x 67.06787pt.
- [31 </Users/gianlo/Develop/thesis/images/implementation/UMLProject.png> </Users/gianlo/Develop/thesis/images/implementation/UMLHistory.png>]
-<images/implementation/UMLChanges.png, id=675, 938.50626pt x 284.06125pt>
+ [29 </Users/gianlo/Develop/thesis/images/implementation/UMLProject.png> </Users/gianlo/Develop/thesis/images/implementation/UMLHistory.png>]
+<images/implementation/UMLChanges.png, id=687, 938.50626pt x 284.06125pt>
 File: images/implementation/UMLChanges.png Graphic file (type png)
 <use images/implementation/UMLChanges.png>
 Package pdftex.def Info: images/implementation/UMLChanges.png  used on input line 115.
 (pdftex.def)             Requested size: 256.07481pt x 77.50375pt.
- [32 </Users/gianlo/Develop/thesis/images/implementation/UMLChanges.png>] [33] [34]
+ [30 </Users/gianlo/Develop/thesis/images/implementation/UMLChanges.png>] [31] [32]
 Underfull \hbox (badness 10000) in paragraph at lines 218--223
 
  []
@@ -1146,7 +1145,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 261--264
 
  []
 
-[35]
+[33]
 Underfull \hbox (badness 10000) in paragraph at lines 266--270
 
  []
@@ -1156,239 +1155,274 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--275
 
  []
 
-<images/implementation/HistorySplit.jpg, id=709, 1537.745pt x 1183.42125pt>
+<images/implementation/HistorySplit.jpg, id=720, 1537.745pt x 1183.42125pt>
 File: images/implementation/HistorySplit.jpg Graphic file (type jpg)
 <use images/implementation/HistorySplit.jpg>
 Package pdftex.def Info: images/implementation/HistorySplit.jpg  used on input line 289.
 (pdftex.def)             Requested size: 512.14963pt x 394.14172pt.
-[36] [37 </Users/gianlo/Develop/thesis/images/implementation/HistorySplit.jpg>]
+[34] [35 </Users/gianlo/Develop/thesis/images/implementation/HistorySplit.jpg>]
 Overfull \hbox (37.66869pt too wide) in paragraph at lines 330--333
 []\T1/ppl/m/n/10.95 Therefore, the al-go-rithm takes as in-put a list of al-ready dis-cov-ered File-His-to-ries and an \T1/cmtt/m/n/10.95 ProjectAnalysisResult
  []
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 351.
-[38] [39]
+[36] [37]
 Overfull \hbox (19.76213pt too wide) in paragraph at lines 416--420
 []\T1/cmtt/m/n/10.95 partialView(projectId: Int!, viewSpecification: ViewSpecificationInput!, viewAnimationId:
  []
 
-[40]
-<images/implementation/SYNUI-settings1.png, id=748, 1896.08376pt x 910.40125pt>
+[38]
+<images/implementation/SYNUI-settings1.png, id=761, 1896.08376pt x 910.40125pt>
 File: images/implementation/SYNUI-settings1.png Graphic file (type png)
 <use images/implementation/SYNUI-settings1.png>
 Package pdftex.def Info: images/implementation/SYNUI-settings1.png  used on input line 472.
 (pdftex.def)             Requested size: 512.14963pt x 245.90886pt.
-<images/implementation/SYNUI-settings2.png, id=751, 1896.08376pt x 910.40125pt>
+<images/implementation/SYNUI-settings2.png, id=764, 1896.08376pt x 910.40125pt>
 File: images/implementation/SYNUI-settings2.png Graphic file (type png)
 <use images/implementation/SYNUI-settings2.png>
 Package pdftex.def Info: images/implementation/SYNUI-settings2.png  used on input line 490.
 (pdftex.def)             Requested size: 512.14963pt x 245.90886pt.
- [41] [42 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings1.png> </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings2.png>]
-<images/implementation/SYNUI-settings3.png, id=768, 1896.08376pt x 1067.99pt>
+ [39] [40 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings1.png> </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings2.png>]
+<images/implementation/SYNUI-settings3.png, id=779, 1896.08376pt x 1067.99pt>
 File: images/implementation/SYNUI-settings3.png Graphic file (type png)
 <use images/implementation/SYNUI-settings3.png>
 Package pdftex.def Info: images/implementation/SYNUI-settings3.png  used on input line 520.
 (pdftex.def)             Requested size: 512.14963pt x 288.47523pt.
-<images/implementation/SYNUI-settings4.png, id=770, 1896.08376pt x 910.40125pt>
+<images/implementation/SYNUI-settings4.png, id=781, 1896.08376pt x 910.40125pt>
 File: images/implementation/SYNUI-settings4.png Graphic file (type png)
 <use images/implementation/SYNUI-settings4.png>
 Package pdftex.def Info: images/implementation/SYNUI-settings4.png  used on input line 536.
 (pdftex.def)             Requested size: 512.14963pt x 245.90886pt.
- [43] [44 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings3.png> </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings4.png>]
-<images/implementation/SYNUI-settings5.png, id=785, 1896.08376pt x 1067.99pt>
+ [41] [42 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings3.png> </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings4.png>]
+<images/implementation/SYNUI-settings5.png, id=797, 1896.08376pt x 1067.99pt>
 File: images/implementation/SYNUI-settings5.png Graphic file (type png)
 <use images/implementation/SYNUI-settings5.png>
 Package pdftex.def Info: images/implementation/SYNUI-settings5.png  used on input line 555.
 (pdftex.def)             Requested size: 512.14963pt x 288.47523pt.
 
 
-LaTeX Warning: Reference `fig:SYNUIsimple' on page 45 undefined on input line 570.
+LaTeX Warning: Reference `fig:SYNUIsimple' on page 43 undefined on input line 570.
 
-[45 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings5.png>]
-<images/implementation/SYNUI-fileHistory.png, id=792, 1896.08376pt x 1191.45125pt>
+[43 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-settings5.png>]
+<images/implementation/SYNUI-fileHistory.png, id=804, 1896.08376pt x 1191.45125pt>
 File: images/implementation/SYNUI-fileHistory.png Graphic file (type png)
 <use images/implementation/SYNUI-fileHistory.png>
 Package pdftex.def Info: images/implementation/SYNUI-fileHistory.png  used on input line 598.
 (pdftex.def)             Requested size: 512.14963pt x 321.8234pt.
-<images/implementation/SYNUI-deletedshadow.png, id=793, 1896.08376pt x 1191.45125pt>
+<images/implementation/SYNUI-deletedshadow.png, id=805, 1896.08376pt x 1191.45125pt>
 File: images/implementation/SYNUI-deletedshadow.png Graphic file (type png)
 <use images/implementation/SYNUI-deletedshadow.png>
 Package pdftex.def Info: images/implementation/SYNUI-deletedshadow.png  used on input line 605.
 (pdftex.def)             Requested size: 512.14963pt x 321.8234pt.
-) (/Users/gianlo/Develop/thesis/Casestudies.tex [46] [47 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-fileHistory.png>] [48 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-deletedshadow.png>]
+) (/Users/gianlo/Develop/thesis/Casestudies.tex [44] [45 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-fileHistory.png>] [46 </Users/gianlo/Develop/thesis/images/implementation/SYNUI-deletedshadow.png>]
 Chapter 5.
-<images/casestudies/JetUML_V0E0.png, id=810, 745.78625pt x 765.86125pt>
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 37.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 41.
+
+<images/casestudies/JetUML_V0E0.png, id=821, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0E0.png Graphic file (type png)
 <use images/casestudies/JetUML_V0E0.png>
-Package pdftex.def Info: images/casestudies/JetUML_V0E0.png  used on input line 36.
+Package pdftex.def Info: images/casestudies/JetUML_V0E0.png  used on input line 44.
 (pdftex.def)             Requested size: 215.1019pt x 220.8904pt.
-<images/casestudies/JetUML_V0E1.png, id=811, 745.78625pt x 765.86125pt>
+<images/casestudies/JetUML_V0E1.png, id=822, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0E1.png Graphic file (type png)
 <use images/casestudies/JetUML_V0E1.png>
-Package pdftex.def Info: images/casestudies/JetUML_V0E1.png  used on input line 41.
+Package pdftex.def Info: images/casestudies/JetUML_V0E1.png  used on input line 49.
 (pdftex.def)             Requested size: 215.1019pt x 220.8904pt.
 1: section
-[49
+[47
 
 ]
-<images/casestudies/JetUML_V0S1.png, id=819, 745.78625pt x 765.86125pt>
+<images/casestudies/JetUML_V0S1.png, id=829, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0S1.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S1.png>
-Package pdftex.def Info: images/casestudies/JetUML_V0S1.png  used on input line 78.
+Package pdftex.def Info: images/casestudies/JetUML_V0S1.png  used on input line 80.
 (pdftex.def)             Requested size: 215.1019pt x 220.8904pt.
-<images/casestudies/JetUML_V0S1_1.png, id=820, 719.68875pt x 640.3925pt>
+<images/casestudies/JetUML_V0S1_1.png, id=830, 719.68875pt x 640.3925pt>
 File: images/casestudies/JetUML_V0S1_1.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S1_1.png>
-Package pdftex.def Info: images/casestudies/JetUML_V0S1_1.png  used on input line 84.
+Package pdftex.def Info: images/casestudies/JetUML_V0S1_1.png  used on input line 86.
 (pdftex.def)             Requested size: 215.1019pt x 191.39613pt.
- [50 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0E0.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0E1.png>] [51 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S1.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S1_1.png>]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[48 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0E0.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0E1.png>] [49 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S1.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S1_1.png>]
 File: images/casestudies/JetUML_V0S1.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S1.png>
-Package pdftex.def Info: images/casestudies/JetUML_V0S1.png  used on input line 126.
+Package pdftex.def Info: images/casestudies/JetUML_V0S1.png  used on input line 128.
 (pdftex.def)             Requested size: 163.89162pt x 168.30301pt.
-<images/casestudies/JetUML_V0S2.png, id=842, 745.78625pt x 765.86125pt>
+<images/casestudies/JetUML_V0S2.png, id=852, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0S2.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S2.png>
-Package pdftex.def Info: images/casestudies/JetUML_V0S2.png  used on input line 132.
+Package pdftex.def Info: images/casestudies/JetUML_V0S2.png  used on input line 134.
 (pdftex.def)             Requested size: 163.89162pt x 168.30301pt.
-<images/casestudies/JetUML_V0S3.png, id=843, 745.78625pt x 765.86125pt>
+<images/casestudies/JetUML_V0S3.png, id=853, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0S3.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S3.png>
-Package pdftex.def Info: images/casestudies/JetUML_V0S3.png  used on input line 138.
+Package pdftex.def Info: images/casestudies/JetUML_V0S3.png  used on input line 140.
 (pdftex.def)             Requested size: 163.89162pt x 168.30301pt.
-<images/casestudies/JetUML_V0S4.png, id=844, 745.78625pt x 765.86125pt>
+<images/casestudies/JetUML_V0S4.png, id=854, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0S4.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S4.png>
-Package pdftex.def Info: images/casestudies/JetUML_V0S4.png  used on input line 145.
+Package pdftex.def Info: images/casestudies/JetUML_V0S4.png  used on input line 147.
 (pdftex.def)             Requested size: 163.89162pt x 168.30301pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--146
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
  []\T1/ppl/m/sc/9 (d) |\T1/ppl/m/n/9 10 Jan 2015 
  []
 
-<images/casestudies/JetUML_V0S5.png, id=845, 745.78625pt x 765.86125pt>
+<images/casestudies/JetUML_V0S5.png, id=855, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0S5.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S5.png>
-Package pdftex.def Info: images/casestudies/JetUML_V0S5.png  used on input line 151.
+Package pdftex.def Info: images/casestudies/JetUML_V0S5.png  used on input line 153.
 (pdftex.def)             Requested size: 163.89162pt x 168.30301pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
  []\T1/ppl/m/sc/9 (e) |\T1/ppl/m/n/9 22 Jan 2015 
  []
 
-<images/casestudies/JetUML_V0S6.png, id=846, 745.78625pt x 765.86125pt>
+<images/casestudies/JetUML_V0S6.png, id=856, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0S6.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S6.png>
-Package pdftex.def Info: images/casestudies/JetUML_V0S6.png  used on input line 157.
+Package pdftex.def Info: images/casestudies/JetUML_V0S6.png  used on input line 159.
 (pdftex.def)             Requested size: 163.89162pt x 168.30301pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--158
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
  []\T1/ppl/m/sc/9 (f) |\T1/ppl/m/n/9 16 Oct 2015 
  []
 
-<images/casestudies/JetUML_V0S7.png, id=847, 745.78625pt x 765.86125pt>
+<images/casestudies/JetUML_V0S7.png, id=857, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0S7.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S7.png>
-Package pdftex.def Info: images/casestudies/JetUML_V0S7.png  used on input line 164.
+Package pdftex.def Info: images/casestudies/JetUML_V0S7.png  used on input line 166.
 (pdftex.def)             Requested size: 163.89162pt x 168.30301pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--165
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
  []\T1/ppl/m/sc/9 (g) |\T1/ppl/m/n/9 17 Jan 2016 
  []
 
-<images/casestudies/JetUML_V0S8.png, id=848, 745.78625pt x 765.86125pt>
+<images/casestudies/JetUML_V0S8.png, id=858, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0S8.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S8.png>
-Package pdftex.def Info: images/casestudies/JetUML_V0S8.png  used on input line 170.
+Package pdftex.def Info: images/casestudies/JetUML_V0S8.png  used on input line 172.
 (pdftex.def)             Requested size: 163.89162pt x 168.30301pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--171
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
  []\T1/ppl/m/sc/9 (h) |\T1/ppl/m/n/9 26 Nov 2017 
  []
 
-<images/casestudies/JetUML_V0S9.png, id=849, 745.78625pt x 765.86125pt>
+<images/casestudies/JetUML_V0S9.png, id=859, 745.78625pt x 765.86125pt>
 File: images/casestudies/JetUML_V0S9.png Graphic file (type png)
 <use images/casestudies/JetUML_V0S9.png>
-Package pdftex.def Info: images/casestudies/JetUML_V0S9.png  used on input line 176.
+Package pdftex.def Info: images/casestudies/JetUML_V0S9.png  used on input line 178.
 (pdftex.def)             Requested size: 163.89162pt x 168.30301pt.
 
-LaTeX Warning: Float too large for page by 15.58878pt on input line 185.
+LaTeX Warning: Float too large for page by 15.58878pt on input line 187.
 
-[52]
-<images/casestudies/JetUML_V1S1.png, id=876, 637.38126pt x 555.07375pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[50]
+<images/casestudies/JetUML_V1S1.png, id=886, 637.38126pt x 555.07375pt>
 File: images/casestudies/JetUML_V1S1.png Graphic file (type png)
 <use images/casestudies/JetUML_V1S1.png>
-Package pdftex.def Info: images/casestudies/JetUML_V1S1.png  used on input line 230.
+Package pdftex.def Info: images/casestudies/JetUML_V1S1.png  used on input line 245.
 (pdftex.def)             Requested size: 245.82962pt x 214.08095pt.
-<images/casestudies/JetUML_V1S2.png, id=877, 637.38126pt x 555.07375pt>
+<images/casestudies/JetUML_V1S2.png, id=887, 637.38126pt x 555.07375pt>
 File: images/casestudies/JetUML_V1S2.png Graphic file (type png)
 <use images/casestudies/JetUML_V1S2.png>
-Package pdftex.def Info: images/casestudies/JetUML_V1S2.png  used on input line 234.
+Package pdftex.def Info: images/casestudies/JetUML_V1S2.png  used on input line 249.
 (pdftex.def)             Requested size: 245.82962pt x 214.08095pt.
-<images/casestudies/JetUML_V1S3.png, id=878, 637.38126pt x 555.07375pt>
+<images/casestudies/JetUML_V1S3.png, id=888, 637.38126pt x 555.07375pt>
 File: images/casestudies/JetUML_V1S3.png Graphic file (type png)
 <use images/casestudies/JetUML_V1S3.png>
-Package pdftex.def Info: images/casestudies/JetUML_V1S3.png  used on input line 240.
+Package pdftex.def Info: images/casestudies/JetUML_V1S3.png  used on input line 255.
 (pdftex.def)             Requested size: 245.82962pt x 214.08095pt.
-<images/casestudies/JetUML_V1S4.png, id=879, 637.38126pt x 555.07375pt>
+<images/casestudies/JetUML_V1S4.png, id=889, 637.38126pt x 555.07375pt>
 File: images/casestudies/JetUML_V1S4.png Graphic file (type png)
 <use images/casestudies/JetUML_V1S4.png>
-Package pdftex.def Info: images/casestudies/JetUML_V1S4.png  used on input line 244.
+Package pdftex.def Info: images/casestudies/JetUML_V1S4.png  used on input line 259.
 (pdftex.def)             Requested size: 245.82962pt x 214.08095pt.
-<images/casestudies/JetUML_V1S5.png, id=880, 637.38126pt x 555.07375pt>
+<images/casestudies/JetUML_V1S5.png, id=890, 637.38126pt x 555.07375pt>
 File: images/casestudies/JetUML_V1S5.png Graphic file (type png)
 <use images/casestudies/JetUML_V1S5.png>
-Package pdftex.def Info: images/casestudies/JetUML_V1S5.png  used on input line 250.
+Package pdftex.def Info: images/casestudies/JetUML_V1S5.png  used on input line 265.
 (pdftex.def)             Requested size: 245.82962pt x 214.08095pt.
-<images/casestudies/JetUML_V1S6.png, id=881, 637.38126pt x 555.07375pt>
+<images/casestudies/JetUML_V1S6.png, id=891, 637.38126pt x 555.07375pt>
 File: images/casestudies/JetUML_V1S6.png Graphic file (type png)
 <use images/casestudies/JetUML_V1S6.png>
-Package pdftex.def Info: images/casestudies/JetUML_V1S6.png  used on input line 254.
+Package pdftex.def Info: images/casestudies/JetUML_V1S6.png  used on input line 269.
 (pdftex.def)             Requested size: 245.82962pt x 214.08095pt.
 
 
-LaTeX Warning: Float too large for page by 53.92259pt on input line 260.
-
-[53]
-<images/casestudies/JetUML_V2S1.png, id=890, 881.2925pt x 883.3pt>
-File: images/casestudies/JetUML_V2S1.png Graphic file (type png)
-<use images/casestudies/JetUML_V2S1.png>
-Package pdftex.def Info: images/casestudies/JetUML_V2S1.png  used on input line 293.
-(pdftex.def)             Requested size: 245.82962pt x 246.37885pt.
-<images/casestudies/JetUML_V2S2.png, id=891, 881.2925pt x 883.3pt>
-File: images/casestudies/JetUML_V2S2.png Graphic file (type png)
-<use images/casestudies/JetUML_V2S2.png>
-Package pdftex.def Info: images/casestudies/JetUML_V2S2.png  used on input line 297.
-(pdftex.def)             Requested size: 245.82962pt x 246.37885pt.
-<images/casestudies/JetUML_V2S3.png, id=892, 881.2925pt x 883.3pt>
-File: images/casestudies/JetUML_V2S3.png Graphic file (type png)
-<use images/casestudies/JetUML_V2S3.png>
-Package pdftex.def Info: images/casestudies/JetUML_V2S3.png  used on input line 303.
-(pdftex.def)             Requested size: 245.82962pt x 246.37885pt.
-<images/casestudies/JetUML_V2S4.png, id=893, 881.2925pt x 883.3pt>
-File: images/casestudies/JetUML_V2S4.png Graphic file (type png)
-<use images/casestudies/JetUML_V2S4.png>
-Package pdftex.def Info: images/casestudies/JetUML_V2S4.png  used on input line 307.
-(pdftex.def)             Requested size: 245.82962pt x 246.37885pt.
-<images/casestudies/JetUML_V2S5.png, id=894, 881.2925pt x 883.3pt>
-File: images/casestudies/JetUML_V2S5.png Graphic file (type png)
-<use images/casestudies/JetUML_V2S5.png>
-Package pdftex.def Info: images/casestudies/JetUML_V2S5.png  used on input line 313.
-(pdftex.def)             Requested size: 245.82962pt x 246.37885pt.
-<images/casestudies/JetUML_V2S6.png, id=895, 881.2925pt x 883.3pt>
-File: images/casestudies/JetUML_V2S6.png Graphic file (type png)
-<use images/casestudies/JetUML_V2S6.png>
-Package pdftex.def Info: images/casestudies/JetUML_V2S6.png  used on input line 317.
-(pdftex.def)             Requested size: 245.82962pt x 246.37885pt.
+LaTeX Warning: Float too large for page by 53.92259pt on input line 275.
 
 
-LaTeX Warning: Float too large for page by 150.81628pt on input line 323.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [54] (/Users/gianlo/Develop/thesis/SYN.bbl [55 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S2.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S3.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S4.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S5.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S6.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S7.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S8.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S9.png>] [56 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S1.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S2.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S3.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S4.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S5.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S6.png>] [57 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V2S1.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V2S2.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V2S3.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V2S4.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V2S5.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V2S6.png>] [58
+[51]
+<images/casestudies/JetUML_V3S1.png, id=906, 1186.4325pt x 852.18375pt>
+File: images/casestudies/JetUML_V3S1.png Graphic file (type png)
+<use images/casestudies/JetUML_V3S1.png>
+Package pdftex.def Info: images/casestudies/JetUML_V3S1.png  used on input line 308.
+(pdftex.def)             Requested size: 256.07481pt x 183.9311pt.
+<images/casestudies/JetUML_V3S2.png, id=907, 1186.4325pt x 852.18375pt>
+File: images/casestudies/JetUML_V3S2.png Graphic file (type png)
+<use images/casestudies/JetUML_V3S2.png>
+Package pdftex.def Info: images/casestudies/JetUML_V3S2.png  used on input line 313.
+(pdftex.def)             Requested size: 256.07481pt x 183.9311pt.
 
-]
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 307--317
+[]$[]$|  $[]$ 
+ []
+
+<images/casestudies/JetUML_V3S3.png, id=908, 1186.4325pt x 852.18375pt>
+File: images/casestudies/JetUML_V3S3.png Graphic file (type png)
+<use images/casestudies/JetUML_V3S3.png>
+Package pdftex.def Info: images/casestudies/JetUML_V3S3.png  used on input line 320.
+(pdftex.def)             Requested size: 245.82962pt x 176.57126pt.
+<images/casestudies/JetUML_V3S4.png, id=909, 1186.4325pt x 852.18375pt>
+File: images/casestudies/JetUML_V3S4.png Graphic file (type png)
+<use images/casestudies/JetUML_V3S4.png>
+Package pdftex.def Info: images/casestudies/JetUML_V3S4.png  used on input line 325.
+(pdftex.def)             Requested size: 245.82962pt x 176.57126pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/casestudies/JetUML_V3S5.png, id=910, 1186.4325pt x 852.18375pt>
+File: images/casestudies/JetUML_V3S5.png Graphic file (type png)
+<use images/casestudies/JetUML_V3S5.png>
+Package pdftex.def Info: images/casestudies/JetUML_V3S5.png  used on input line 336.
+(pdftex.def)             Requested size: 245.82962pt x 176.57126pt.
+<images/casestudies/JetUML_V3S6.png, id=911, 1186.4325pt x 852.18375pt>
+File: images/casestudies/JetUML_V3S6.png Graphic file (type png)
+<use images/casestudies/JetUML_V3S6.png>
+Package pdftex.def Info: images/casestudies/JetUML_V3S6.png  used on input line 341.
+(pdftex.def)             Requested size: 245.82962pt x 176.57126pt.
+<images/casestudies/JetUML_V3S7.png, id=912, 1186.4325pt x 852.18375pt>
+File: images/casestudies/JetUML_V3S7.png Graphic file (type png)
+<use images/casestudies/JetUML_V3S7.png>
+Package pdftex.def Info: images/casestudies/JetUML_V3S7.png  used on input line 348.
+(pdftex.def)             Requested size: 245.82962pt x 176.57126pt.
+<images/casestudies/JetUML_V3S8.png, id=913, 1186.4325pt x 852.18375pt>
+File: images/casestudies/JetUML_V3S8.png Graphic file (type png)
+<use images/casestudies/JetUML_V3S8.png>
+Package pdftex.def Info: images/casestudies/JetUML_V3S8.png  used on input line 353.
+(pdftex.def)             Requested size: 245.82962pt x 176.57126pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [52] (/Users/gianlo/Develop/thesis/SYN.bbl [53 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S2.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S3.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S4.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S5.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S6.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S7.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S8.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V0S9.png>] [54 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S1.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S2.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S3.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S4.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S5.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V1S6.png>] [55 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V3S1.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V3S2.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V3S3.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V3S4.png>] [56 </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V3S5.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V3S6.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V3S7.png> </Users/gianlo/Develop/thesis/images/casestudies/JetUML_V3S8.png>]
 1: section
-[59] [60] [61]) [62] (/Users/gianlo/Develop/thesis/SYN.aux)
+[57
+
+] [58] [59]) [60] (/Users/gianlo/Develop/thesis/SYN.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1396,21 +1430,21 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `SYN.out' has not changed.
-(rerunfilecheck)             Checksum: EFA2502712E4C76C3A67E9DFF16DBA3D;3008.
+(rerunfilecheck)             Checksum: 1FAAF40D0721FCBB7DA55B4D23742372;3376.
  ) 
 Here is how much of TeX's memory you used:
- 22300 strings out of 478994
- 461191 string characters out of 5858184
- 1035926 words of memory out of 5000000
- 39087 multiletter control sequences out of 15000+600000
+ 22322 strings out of 478994
+ 461830 string characters out of 5858184
+ 1036107 words of memory out of 5000000
+ 39108 multiletter control sequences out of 15000+600000
  445104 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,20n,102p,982b,995s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 98i,20n,102p,1573b,995s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on /Users/gianlo/Develop/thesis/SYN.pdf (76 pages, 14424820 bytes).
+Output written on /Users/gianlo/Develop/thesis/SYN.pdf (74 pages, 16596085 bytes).
 PDF statistics:
- 1043 PDF objects out of 1200 (max. 8388607)
- 802 compressed objects within 9 object streams
- 250 named destinations out of 1000 (max. 500000)
- 558 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1064 PDF objects out of 1200 (max. 8388607)
+ 823 compressed objects within 9 object streams
+ 249 named destinations out of 1000 (max. 500000)
+ 600 words of extra memory for PDF output out of 10000 (max. 10000000)
 
