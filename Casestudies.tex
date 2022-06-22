@@ -4,7 +4,7 @@
 
 This chapter presents an actual case use scenario of SYN applied to open-source software systems. 
 We use SYN to analyze the evolution of JetUML, the test project on which we relied during the development phase of the platform, ArgoUML, Elasticsearch, and Linux. 
-The characteristics of these systems are described in \autoref{tab:casestudies}
+\autoref{tab:casestudies} describes the characteristics of these systems.
 
 \begin{table}[ht]
     \centering
@@ -32,7 +32,7 @@ These properties are set as follow:
     \item \texttt{mapperStrategyOptions}: max height of 20.
     \item \texttt{showDeletedEntities}: false.
 \end{itemize}
-This choice is because, during the development process, we have seen that the LinearBucketValueStrategy works better than other strategies. Of course, it needs a maximum height because otherwise, the gap between entities is too broad. Therefore set this value to 20. Moreover, we believe that hiding the deleted entities is the most intuitive thing for the user. On the other hand, hiding unmapped entities might be misleading in some visualization. This is why we preferred to keep them. 
+We made this choice because, during the development process, we have seen that the LinearBucketValueStrategy works better than other strategies. Of course, it needs a maximum height because otherwise, the gap between entities is too broad. Therefore set this value to 20. Moreover, we believe that hiding the deleted entities is the most intuitive thing for the user. On the other hand, hiding the unmapped entities might be misleading in some visualization. For this reason, we preferred to keep them. 
 
 \subsection{JetUML}
 This section analyzes JetUML, an open-source desktop application to work with UML diagrams.
@@ -49,16 +49,15 @@ The main development branch is composed of 2152 commits of 24 contributors.
         \includegraphics[width=\linewidth]{JetUML_V0E1.png}
         \caption{Commit that involved numerous entities} \label{fig:JetUML_V0E1}
     \end{subfigure}
-    \caption{Comparison of comits with a low and an hight activity} 
+    \caption{Comparison of commits with a low and an high activity} 
     \label{fig:JetUML_V0E0}
 \end{figure}
 
-\textbf{Goal of this visualization} Visualize the entire repository commit by commit to see how the repository evolved and understand commits with high activity. 
-To highlight them, we use a commit aging strategy, where the next age is reached after one commit with a maximum age of two.
+\textbf{goal of this visualization} Visualize the entire repository commit by commit to see how the repository evolved and understand commits with high activity. 
+To highlight them, we use a one-commit aging strategy, maximum age of two. In other words, files modified by the displayed commit have an age of zero, whereas others have an age of one.
 Consequently, all the files not included in the depicted commit are painted with the base color (gray by default). 
 
-Figure \ref{fig:JetUML_V0E0} shows the graphical difference between commits that modified a few entities and commits that changed numerous entities. 
-To identify highly active commits, we focused our attention on commits that have involved a large number of entities. 
+Figure \ref{fig:JetUML_V0E0} shows the graphical difference between commits that modified a few entities and commits that changed numerous entities. To identify highly active commits, we focused on commits that involved a considerable amount of files part of the repository at that time.
 
 The view specification of this visualization is the following
 \begin{itemize}
@@ -92,7 +91,7 @@ The view specification of this visualization is the following
 \end{figure}
 
 Here we present some results that we found looking at the graphical evolution of JetUML. 
-To keep this section short, we report only a subset of the most active commits below. 
+To keep this section short, we report only a subset of the most active commits. 
 \bigbreak
 The repository's history starts on January 7, 2015, when Martin Robillard made the first commit. 
 This commit added three files: README, a license, and a gitingore. 
@@ -107,14 +106,14 @@ Three days later, after a series of delicate development tasks had been continuo
 Twenty-six commits later, on January 22, 2015, they moved classes from Violet and Violetta under the JetUML package. This commit, represented in figure \ref{fig:JetUML_V0S5}, was the first when JetUML was officially used; it denotes its birth. 
 \bigbreak
 After this first implementation, the system gradually grew, doubling its size in less than two years. 
-During this time interval, they have been made only small commits to solve open issues. There were some exceptions, displayed in figure \ref{fig:JetUML_V0S6} and \ref{fig:JetUML_V0S7} where many files were modified because they had to update classes copyright lines. 
+During this time interval, they have been made only small commits to solve open issues. However, some exceptions were displayed in figure \ref{fig:JetUML_V0S6} and \ref{fig:JetUML_V0S7} where many files were modified because they had to update classes copyright lines. 
 \bigbreak
 In November 2017, they removed "stg" from the path of all the Java classes part of the system. This commit is depicted in figure \ref{fig:JetUML_V0S8}, where we can observe 162 light blue entities. They represent classes moved from the "../ca/mcgill/cs/stg/jetuml/..." path to the 
 "../ca/mcgill/cs/jetuml/..." path. Moreover, this commit also had 15 modified fields, and one added. 
 \bigbreak
 One last huge refactor was done in July 2020, two years later, again to change the copyright on every class. It is represented in figure \ref{fig:JetUML_V0S9}. In this figure, we can notice that there are many blank spots in the middle. This means that entities added in the early stages of the project have been removed and are no longer part of the system. At that time, the system had 316 entities, and 241 were affected by this commit. 
 \bigbreak
-The last version of the system, created on Thu, 12 May 2022, counts 456 entities. 
+The last version of the system, created on Thu, May 12, 2022, counts 456 entities. 
 \bigbreak
 \textbf{Conclusion}
 We manually inspected 2153 frames depicting the evolution of JetUML.
@@ -200,14 +199,10 @@ View specification adopted:
     \item \texttt{colorPalette}: default.
     \item \texttt{agingGroupingStrategy}: timestamp.
     \item \texttt{agingStepSize}: 2'629'743 (1 month).
-    \item \texttt{agingSteps}: 10 steps. 
-    \item \texttt{mapperStrategy}: LinearBucketValueStrategy.
-    \item \texttt{mapperStrategyOptions}: max height of 20.
+    \item \texttt{agingSteps}: 10 steps.
     \item \texttt{mapperMetricName}: SIZE. 
-    \item \texttt{showUnmappedEntities}: true.
     \item \texttt{fileTypeShape}: all BOX. 
     \item \texttt{fileTypeOpacity}: all 1. 
-    \item \texttt{showDeletedEntities}: false.
 \end{itemize}
 
 \textbf{Results}
@@ -277,8 +272,8 @@ However, the choice of the aging strategy also played a crucial role in this vis
 \textbf{Goal of this visualization}
 In this third and last visualization that we propose, the goal is to study the entire evolution of the system, with a focus on Java files. 
 To do that, the use the shape and opacity property of a ViewFigure, to distinguish them among others. 
-To display the evoluition of the system we adopt a timestamp grouping strategy, with a timestamp of one year. 
-Furthermore, we also adop a timestamp strategy for the aging, with a total of ten steps and a time window of one month. This means that grey entities represent files that have not been received any update for the last 10 month from the time of the displayed AnimationFrame. 
+To display the evolution of the system we adopt a timestamp grouping strategy, with a timestamp of one year. 
+Furthermore, we also use a timestamp strategy for the aging, with a total of ten steps and a time window of one month. This means that grey entities represent files that have not been received any update for the last 10 month from the time of the displayed AnimationFrame. 
 \begin{itemize}
     \item \texttt{versionGroupingStrategy}: timestamp.
     \item \texttt{versionGroupingChunkSize}: 31'556'926 (1 year). 
@@ -286,19 +281,15 @@ Furthermore, we also adop a timestamp strategy for the aging, with a total of te
     \item \texttt{agingGroupingStrategy}: timestamp.
     \item \texttt{agingStepSize}: 2'629'743 (1 month).
     \item \texttt{agingSteps}: 10 steps. 
-    \item \texttt{mapperStrategy}: LinearBucketValueStrategy.
-    \item \texttt{mapperStrategyOptions}: max height of 20.
     \item \texttt{mapperMetricName}: SLOC. 
-    \item \texttt{showUnmappedEntities}: true.
     \item \texttt{fileTypeShape}: Java -> BOX, OTHERS -> SPHERE. 
     \item \texttt{fileTypeOpacity}: Java -> max, OTHERS -> low. 
-    \item \texttt{showDeletedEntities}: false.
 \end{itemize}
 
 \textbf{Results}
-The whole evolution of JetUML is depicted in \autoref{fig:JetUML_V3}. As we can notice, it is straightforward to distinguish java files from others because they have different shapes and other files are more transparent. After the first year of development, the state of the repository is shown in \autoref{fig:JetUML_V3S1}. We notice that all the Java files have more or less the same age. This means that all of them were updated after the second month because otherwise, they would be grey. The system grew at the end of the second year, shown in figure \autoref{fig:JetUML_V3S2} and now we can see some grey entities. Most of them are in the middle, meaning that the "core" files, or the files added before others, were not touched after the fourteenth month.  \autoref{fig:JetUML_V3S3} shows the state of the repository at the end of the third year. The system grew, and all the Java files were updated recently. Considering what we have seen in the first visualization, they had to change the path from all the Java files (\autoref{fig:JetUML_V0S8}). Perhaps this can be the reason why all the entities were updated, and some ViewFigures are painted with the blue color. The fourth year of development, shown in  \autoref{fig:JetUML_V3S4}, recorded a little activity in the first months because the system grew, and almost all the entities have a different color. However, it tends to be close to the base color, meaning they are old. 
-\autoref{fig:JetUML_V3S5},  \autoref{fig:JetUML_V3S6} and  \autoref{fig:JetUML_V3S7} shows how the system evolved through the fifth, sixth and seventh year. The fifth year recorded an intense activity compared to what we saw in the fourth year. Lots of files were added, and most of the classes of the system were modified. Moreover, the system's center is slowly disappearing, meaning that new ones have replaced old Java files. In the sixth and seventh years, non-Java files were added, and some Java classes were updated outside the system's core. Finally, the last year, represented by \autoref{fig:JetUML_V3S8}, did not record such a huge activity on the system. It became inactive since almost all the entities are grey, meaning that these files were not touched in the last ten months of evolution. However, in this frame, the two tallest entities of the repository exist. This means that in this last year, two java files were added (they were not present the year before), and they rapidly became the biggest files in the system.  
-
+The whole evolution of JetUML is depicted in \autoref{fig:JetUML_V3}. As we notice, it is straightforward to distinguish java files from others because they have different shapes and other files are less opaque. After the first year of development, the state of the repository is shown in \autoref{fig:JetUML_V3S1}. We notice that all the Java files have more or less the same age. This means that all of them were updated after the second month because otherwise, they would be grey. The system grew at the end of the second year, shown in figure \autoref{fig:JetUML_V3S2} and now we can see some grey entities. Most of them are in the middle, meaning that the "core" files, or the files added before others, were not touched after the fourteenth month.  \autoref{fig:JetUML_V3S3} shows the state of the repository at the end of the third year. The system grew, and all the Java files were updated recently. Considering what we have seen in the first visualization, they had to change the path from all the Java files (\autoref{fig:JetUML_V0S8}). Perhaps this can be why all the entities were updated, and some ViewFigures are painted with the blue color. The fourth year of development, shown in  \autoref{fig:JetUML_V3S4} recorded a little activity in the first months because the system grew, and almost all the entities have a different color. However, it tends to be close to the base color, meaning they are old. 
+\autoref{fig:JetUML_V3S5},  \autoref{fig:JetUML_V3S6} and  \autoref{fig:JetUML_V3S7} shows how the system evolved through the fifth, sixth and seventh year. The fifth year recorded an intense activity compared to what we saw in the fourth year. Lots of files were added, and most of the classes of the system were modified. Moreover, the system's center is slowly disappearing, meaning that new ones have replaced old Java files. In the sixth and seventh years, non-Java files were added, and some Java classes were updated outside the system's core. Finally, the last year, represented by \autoref{fig:JetUML_V3S8}, did not record such a huge activity on the system. It became inactive since almost all the entities are grey, meaning that these files were not touched in the last ten months of evolution. However, in this frame, appeared the two tallest entities of the system. This means that in this last year, two java files were added (they were not present the year before), and they rapidly became the biggest files in the repository.  
+\bigbreak
 \textbf{Conclusion}
 With this visualization, we have seen JetUML from another point of view. The year visualization works very well with systems like JetUML with a comprehensive history. In fact, with just 8 AnimationFrames, we can infer when the development process was more intense in the past. 
 
