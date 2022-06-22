@@ -7,3 +7,9 @@
 *.gz
 *.bak
 *.tmp
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.toc
+*.xdv
