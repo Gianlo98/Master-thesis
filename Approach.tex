@@ -233,39 +233,28 @@ This concept was not present in the Evolution Matrix of Lanza because its model 
     \caption{2D Representation of the structural evolution of a repository}
     \label{fig:evolutionMatrixApproach}
 \end{figure}
-\autoref{fig:evolutionMatrixApproach} depict the evolution of a repository with 11 files and 10 commits. In this figure we only show the structural evolution of a repository, without considering file's metrics as Lanza did. 
+\autoref{fig:evolutionMatrixApproach} depict the evolution of a repository with 14 files and 10 commits. In this figure we only show the structural evolution of a repository, without considering file's metrics as Lanza did. 
 Each row represents the history of a file; therefore, it is associated with a set of FileVersions represented by the squares inside each cell. Actions made on a file are labeled as: A for ADD, M for MODIFY, MV for MOVE, R for RENAME, and D for DELETE.
-As we can see, the first action made on each file is an ADD; moreover, some files end their history with a DELETE. It's essential to notice that FILE 3 and FILE 6 are represented by the same FileHistory because they represent the same logical entity in the system. In fact, on commit 3 FILE 3 was moved into FILE 6. The same thing goes for FILE 8 and FILE 11. 
-The state of the system after COMMIT 10 is represented by FileVersions painted blue. 
+As we can see, the first action made on each file is an ADD; moreover, some files end their history with a DELETE. It's essential to notice that \texttt{foo.java} and \texttt{foo/bar.java} are represented by the same FileHistory because they represent the same logical entity in the system. In fact, on commit 3 \texttt{foo.java} was moved into \texttt{foo/bar.java}. The same thing goes for \texttt{foo.java} and \texttt{foo/baz.java} represented by the seventh FileHistory.
 \bigbreak
 Based on our aim, we can read this matrix as follows:
  \begin{itemize}
      \item \textbf{by rows}, if we are interested in the history of a particular entity of our system. 
-     For example, the FileHistory represented by the first row in \autoref{fig:evolutionMatrixApproach} represents the history of FILE 1. 
-     FILE 1 was added in the first ProjectVersion (COMMIT 1) and then modified in the second, third, fourth, and ninth ProjectVersion.
-     Moreover, \autoref{fig:evolutionMatrixApproach} is an excellent example to understand why we cannot rely on the name of the file to identify a system's entity. 
-     We can notice that FILE 4, represented by the fourth FileHistory, was added with the second ProjectVersion and then renamed with the seventh from FILE 4 to FILE 13. 
-     Then, a new file called B was added in the fifth version. Nonetheless, the name of the files are the same; they must represent two different entities. 
-     Even if file B were added in version four, we would have had the same result. 
+     For example, the FileHistory represented by the first row in \autoref{fig:evolutionMatrixApproach} represents the history of \texttt{README.md}. 
+     \texttt{README.md} was added in the first ProjectVersion (COMMIT 1) and then modified in the second, third, fourth, and ninth ProjectVersion.
+     Moreover, \autoref{fig:evolutionMatrixApproach} is an excellent example to understand why we cannot only rely on the name of the file to identify a system's entity. 
+     We can notice that \texttt{foo.java}, represented by the third FileHistory, was added with the first ProjectVersion and then moved with the third into \texttt{foo/bar.java}. 
+     Then, on commit 4, a new file \texttt{foo.java} was added. Nonetheless, the name of the files are the same, they COMMIT two different entities. 
      \item \textbf{by columns}, if we are interested in which entities were updated on each ProjectVersion. 
-    For example, on the first ProjectVersion, we have added the first and the second entity. 
-    On the fourth ProjectVersion, we have renamed the second entity, we have modified both the third and the fourth, and finally, we have added the fifth entity.
+    For example, on the first ProjectVersion, we have added the \texttt{README.me} file, the \texttt{licence.md} file and the \texttt{foo.java} file. 
  \end{itemize}
 
-\begin{figure}
-    \center
-    \includegraphics[width=\textwidth]{ApproachMatrix2.png}
-    \caption{Evolution matrix of a repository}
-    \label{fig:evolutionMatrixApproach2}
-\end{figure}
-
-Figure  \ref{fig:evolutionMatrixApproach2} shows an example of how to recover evolution information from the matrix. 
-As we have seen, each version does not represent a snapshot of the system.
+In addition, \autoref{fig:evolutionMatrixApproach} also provides an example of how we reconstruct the state of the system after a commit. 
+As we have seen, each ProjectVersion does not represent a snapshot of the system.
 Instead, it represents only the difference in changes made to the previous version. 
-To recover a snapshot of a specific version, we need to consider the last changes made before that particular version.
-Under those circumstances, for each FileHistory, we need to go back in time until we find the leftmost change. Of course, if the leftmost difference was deleted, we have to ignore the related FileHistory.
-In contrast, if we have to display the evolution of a snapshot, we need to consider only the changes made after that snapshot. 
-So, each time we need to display a ProjectVersion, we have to take all its FileVersions and merge them with the current state of the snapshot. 
+To reconstruct the state of the system at a specific version, we need to consider, for each FileHistory, the last change made before that version. 
+Under those circumstances, for each FileHistory, we need to go back in time until we find the rightmost change. Of course, if the rightmost difference was a DELETE, we have to ignore the related FileHistory.
+In \autoref{fig:evolutionMatrixApproach}, the state of the system after COMMIT 10 is composed by the FileHistories that holds a row with a blue square. 
 
 
 
