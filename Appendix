@@ -1,0 +1,443 @@
+\chapter{Evolution of ArgoUML}
+\label{app:ArgoUML_Evolution}
+\graphicspath{ {images/casestudies} }
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation001.png}
+    \caption{ArgoUML in Jenuary 1999} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation002.png}
+    \caption{ArgoUML in Jenuary 2000} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation003.png}
+    \caption{ArgoUML in Jenuary 2001} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation004.png}
+    \caption{ArgoUML in Jenuary 2002} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation005.png}
+    \caption{ArgoUML in Jenuary 2003} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation006.png}
+    \caption{ArgoUML in Jenuary 2004} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation007.png}
+    \caption{ArgoUML in Jenuary 2005} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation008.png}
+    \caption{ArgoUML in Jenuary 2006} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation009.png}
+    \caption{ArgoUML in Jenuary 2007} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation010.png}
+    \caption{ArgoUML in Jenuary 2008} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation011.png}
+    \caption{ArgoUML in Jenuary 2009} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation012.png}
+    \caption{ArgoUML in Jenuary 2010} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation013.png}
+    \caption{ArgoUML in Jenuary 2011} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation014.png}
+    \caption{ArgoUML in Jenuary 2012} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation015.png}
+    \caption{ArgoUML in Jenuary 2013} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation016.png}
+    \caption{ArgoUML in Jenuary 2014} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation017.png}
+    \caption{ArgoUML in Jenuary 2015} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation018.png}
+    \caption{ArgoUML in Jenuary 2016} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation019.png}
+    \caption{ArgoUML in Jenuary 2017} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation020.png}
+    \caption{ArgoUML in Jenuary 2018} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation021.png}
+    \caption{ArgoUML in Jenuary 2019} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation022.png}
+    \caption{ArgoUML in Jenuary 2020} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation023.png}
+    \caption{ArgoUML in Jenuary 2021} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        ArgoUML/Animation024.png}
+    \caption{ArgoUML in Jenuary 2022} 
+\end{figure}
+
+\chapter{Evolution of Elasticsearch}
+\label{app:Elastic_Evolution}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Elasticsearch/Animation001.png}
+    \caption{Elasticsearch in June 2014} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Elasticsearch/Animation002.png}
+    \caption{Elasticsearch in June 2015} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Elasticsearch/Animation003.png}
+    \caption{Elasticsearch in June 2016} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Elasticsearch/Animation004.png}
+    \caption{Elasticsearch in June 2017} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Elasticsearch/Animation005.png}
+    \caption{Elasticsearch in June 2018} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Elasticsearch/Animation006.png}
+    \caption{Elasticsearch in June 2019} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Elasticsearch/Animation007.png}
+    \caption{Elasticsearch in June 2020} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Elasticsearch/Animation008.png}
+    \caption{Elasticsearch in June 2021} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Elasticsearch/Animation009.png}
+    \caption{Elasticsearch in June 2022} 
+\end{figure}
+
+
+
+
+
+\chapter{Evolution of Libreoffice}
+\label{app:Libre_Evolution}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation001.png}
+    \caption{Libreoffice in March 2003} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation002.png}
+    \caption{Libreoffice in March 2004} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation003.png}
+    \caption{Libreoffice in March 2005} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation004.png}
+    \caption{Libreoffice in March 2006} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation005.png}
+    \caption{Libreoffice in March 2007} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation006.png}
+    \caption{Libreoffice in March 2008} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation007.png}
+    \caption{Libreoffice in March 2009} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation008.png}
+    \caption{Libreoffice in March 2010} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation009.png}
+    \caption{Libreoffice in March 2011} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation010.png}
+    \caption{Libreoffice in March 2012} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation011.png}
+    \caption{Libreoffice in March 2013} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation012.png}
+    \caption{Libreoffice in March 2014} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation013.png}
+    \caption{Libreoffice in March 2015} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation014.png}
+    \caption{Libreoffice in March 2016} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation015.png}
+    \caption{Libreoffice in March 2017} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation016.png}
+    \caption{Libreoffice in March 2018} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation017.png}
+    \caption{Libreoffice in March 2019} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation018.png}
+    \caption{Libreoffice in March 2020} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation019.png}
+    \caption{Libreoffice in March 2021} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation020.png}
+    \caption{Libreoffice in March 2022} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Libreoffice/Animation021.png}
+    \caption{Libreoffice in June 2022} 
+\end{figure}
+
+
+\chapter{Evolution of Linux}
+\label{app:Linux_Evolution}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Linux/Animation001.png}
+    \caption{Linux in April 2006} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Linux/Animation002.png}
+    \caption{Linux in April 2007} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Linux/Animation003.png}
+    \caption{Linux in April 2008} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Linux/Animation004.png}
+    \caption{Linux in April 2009} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Linux/Animation005.png}
+    \caption{Linux in April 2010} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Linux/Animation006.png}
+    \caption{Linux in April 2011} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Linux/Animation007.png}
+    \caption{Linux in April 2012} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Linux/Animation008.png}
+    \caption{Linux in April 2013} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Linux/Animation009.png}
+    \caption{Linux in April 2014} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Linux/Animation010.png}
+    \caption{Linux in April 2015} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Linux/Animation011.png}
+    \caption{Linux in April 2016} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Linux/Animation012.png}
+    \caption{Linux in April 2017} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Linux/Animation013.png}
+    \caption{Linux in April 2018} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Linux/Animation014.png}
+    \caption{Linux in April 2019} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Linux/Animation015.png}
+    \caption{Linux in April 2020} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Linux/Animation016.png}
+    \caption{Linux in April 2021} 
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{
+        Linux/Animation017.png}
+    \caption{Linux in April 2022} 
+\end{figure}

@@ -1,3 +1,65 @@
+% -------------------------------------------
+% linux
+% FileHistories: 109829 
+% ProjectVersions: 997486 
+% FileVersions: 2335535 
+% First Version: 
+% 	 hash: 1da177e4c3f41524e886b7f1b8a0c1fc7321cac2 
+% 	 date: Sun Apr 17 00:20:36 CEST 2005 
+% Last Version: 
+% 	 hash: 705191b03d507744c7e097f78d583621c14988ac 
+% 	 date: Tue Apr 19 19:19:02 CEST 2022 
+% Diff: {DAYS=6, HOURS=18, MINUTES=58, SECONDS=26, MILLISECONDS=0, MICROSECONDS=0, NANOSECONDS=0, YEARS=17}
+% -------------------------------------------
+% elastic
+% FileHistories: 41043 
+% ProjectVersions: 34842 
+% FileVersions: 326543 
+% First Version: 
+% 	 hash: 222b36344f0939f12cf54358e7047239cd398463 
+% 	 date: Fri Jun 28 09:22:10 CEST 2013 
+% Last Version: 
+% 	 hash: 2cdffdce2ab35416bd5b1b7ea889cd0dede5b6c8 
+% 	 date: Thu Apr 14 14:36:03 CEST 2022 
+% Diff: {DAYS=292, HOURS=5, MINUTES=13, SECONDS=53, MILLISECONDS=0, MICROSECONDS=0, NANOSECONDS=0, YEARS=8}
+% -------------------------------------------
+% libreoffice
+% FileHistories: 213791 
+% ProjectVersions: 367996 
+% FileVersions: 1924183 
+% First Version: 
+% 	 hash: 5acbb755f3f8dedf51904b711ff78f5e1aa498cf 
+% 	 date: Thu Mar 07 16:45:23 CET 2002 
+% Last Version: 
+% 	 hash: 634f13a722dc68b7a2df7518880ce4f9d5d89f19 
+% 	 date: Sat Jun 18 16:10:53 CEST 2022 
+% Diff: {DAYS=107, HOURS=22, MINUTES=25, SECONDS=30, MILLISECONDS=0, MICROSECONDS=0, NANOSECONDS=0, YEARS=20}
+% -------------------------------------------
+% JetUML
+% FileHistories: 795 
+% ProjectVersions: 2013 
+% FileVersions: 10176 
+% First Version: 
+% 	 hash: f232d9e7386cb9a6cca62600137cd10730a6a388 
+% 	 date: Wed Jan 07 19:59:09 CET 2015 
+% Last Version: 
+% 	 hash: e47976ca608b40521a5410b0b697d5aae620858d 
+% 	 date: Thu May 12 19:32:31 CEST 2022 
+% Diff: {DAYS=126, HOURS=22, MINUTES=33, SECONDS=22, MILLISECONDS=0, MICROSECONDS=0, NANOSECONDS=0, YEARS=7}
+% -------------------------------------------
+% argouml
+% FileHistories: 11129 
+% ProjectVersions: 16672 
+% FileVersions: 91667 
+% First Version: 
+% 	 hash: 6ef818a48b453627fd282971f3f9a28e28f54390 
+% 	 date: Mon Jan 26 23:19:17 CET 1998 
+% Last Version: 
+% 	 hash: 3ddc7f94d83c4e2f439ca6fc0fe787616a1900a9 
+% 	 date: Sat May 29 23:18:44 CEST 2021 
+% Diff: {DAYS=128, HOURS=22, MINUTES=59, SECONDS=27, MILLISECONDS=0, MICROSECONDS=0, NANOSECONDS=0, YEARS=23}
+
+
 
 \chapter[Case studies]{Case studies}
 \graphicspath{ {images/casestudies} }
@@ -12,7 +74,11 @@ We use SYN to analyze the evolution of JetUML, the test project on which we reli
         \hline
         {\bf Name} & {\bf First Analyzed Commit} & {\bf Last Analyzed Commit} & {\bf \# of commits}\\ 
         \hline
-        JetUML & Wed Jan 07 2015 &  Thu May 12 2022  &  2152  
+        JetUML & 07 Jan 2015 & 12 May 2022 & 2'152 \\ 
+        ArgoUML & 26 Jan 1998 & 29 May 2021 & 16'672  \\
+        Elasticsearch & 28 Jun 2013 & 14 Apr 2022 & 34'842  \\
+        Libreoffice & 07 Mar 2002 & 18 Jun 2022 & 367'996  \\
+        Linux & 17 Apr 2005 & 19 Apr 2022 & 997'486  
     \end{tabular}
     \caption{List of analyzed projects}
     \label{tab:casestudies}
@@ -34,11 +100,25 @@ These properties are set as follow:
 \end{itemize}
 We made this choice because, during the development process, we have seen that the LinearBucketValueStrategy works better than other strategies. Of course, it needs a maximum height because otherwise, the gap between entities is too broad. Therefore set this value to 20. Moreover, we believe that hiding the deleted entities is the most intuitive thing for the user. On the other hand, hiding the unmapped entities might be misleading in some visualization. For this reason, we preferred to keep them. 
 
-\subsection{JetUML}
-This section analyzes JetUML, an open-source desktop application to work with UML diagrams.
-The main development branch is composed of 2152 commits of 24 contributors. 
 
-\subsubsection{View 1}
+% -------------------------------------------
+% JetUML
+% FileHistories: 795 
+% ProjectVersions: 2013 
+% FileVersions: 10176 
+% First Version: 
+% 	 hash: f232d9e7386cb9a6cca62600137cd10730a6a388 
+% 	 date: Wed Jan 07 19:59:09 CET 2015 
+% Last Version: 
+% 	 hash: e47976ca608b40521a5410b0b697d5aae620858d 
+% 	 date: Thu May 12 19:32:31 CEST 2022 
+% Diff: {DAYS=126, HOURS=22, MINUTES=33, SECONDS=22, MILLISECONDS=0, MICROSECONDS=0, NANOSECONDS=0, YEARS=7}
+% ------------------------------------------- 
+
+\section{JetUML}
+This section analyzes JetUML, an open-source desktop application to work with UML diagrams. It is hosted on GitHub at the following address \url{https://github.com/prmr/JetUML}. Data collected in our analysis shows that the history of the repository starts on the 07 Jan, 2015 and it ends 2'013 commits later on the 12 May, 2022. System's lifetime is over 7 years of activity; within this range we detected 795 FileHistories and more than 10K FileVersions.
+
+\subsection{View 1}
 \begin{figure}[t!]
     \begin{subfigure}{0.42\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0E0.png}
@@ -53,7 +133,7 @@ The main development branch is composed of 2152 commits of 24 contributors.
     \label{fig:JetUML_V0E0}
 \end{figure}
 
-\textbf{goal of this visualization} Visualize the entire repository commit by commit to see how the repository evolved and understand commits with high activity. 
+\textbf{Goal of this visualization} Visualize the entire repository commit by commit to see how the repository evolved and understand commits with high activity. 
 To highlight them, we use a one-commit aging strategy, maximum age of two. In other words, files modified by the displayed commit have an age of zero, whereas others have an age of one.
 Consequently, all the files not included in the depicted commit are painted with the base color (gray by default). 
 
@@ -185,7 +265,7 @@ With this grouping strategy, it was hard to understand the regularity and the sp
     \label{fig:JetUML_V0}
 \end{figure}
 
-\subsubsection{View 2}
+\subsection{View 2}
 \textbf{Goal of this visualization}
 With this visualization, we want to see how the repository evolved through its first six months. 
 The authors of JetUML, during this interval of time, made seven pre-releases of the system. 
@@ -268,7 +348,7 @@ However, the choice of the aging strategy also played a crucial role in this vis
     \caption{First six month of the JetUML evolution.} 
     \label{fig:JetUML_V1}
 \end{figure}
-\subsubsection{View 3}
+\subsection{View 3}
 \textbf{Goal of this visualization}
 In this third and last visualization that we propose, the goal is to study the entire evolution of the system, with a focus on Java files. 
 To do that, the use the shape and opacity property of a ViewFigure, to distinguish them among others. 
@@ -348,4 +428,303 @@ With this visualization, we have seen JetUML from another point of view. The yea
     
     \caption{Evolution of JetUML} 
     \label{fig:JetUML_V3}
+\end{figure}
+
+% -------------------------------------------
+% argouml
+% FileHistories: 11129 
+% ProjectVersions: 16672 
+% FileVersions: 91667 
+% First Version: 
+% 	 hash: 6ef818a48b453627fd282971f3f9a28e28f54390 
+% 	 date: Mon Jan 26 23:19:17 CET 1998 
+% Last Version: 
+% 	 hash: 3ddc7f94d83c4e2f439ca6fc0fe787616a1900a9 
+% 	 date: Sat May 29 23:18:44 CEST 2021 
+% Diff: {DAYS=128, HOURS=22, MINUTES=59, SECONDS=27, MILLISECONDS=0, MICROSECONDS=0, NANOSECONDS=0, YEARS=23}
+% -------------------------------------------
+
+\section{ArgoUML}
+This section analyzes ArgoUML, a leading open source UML modeling tool that includes support for all standard UML diagrams. 
+It is hosted on GitHub at the following address \url{https://github.com/argouml-tigris-org/argouml}. 
+This repository was born in January 1998 then it was converted from CVS to Subversion in 2006 and finally it was moved to git in 2019.
+Therefore, it has more than 23 years of history. 
+Our analysis considered 16'672 commits, 11'129 FileHistories and more than 90K FileVersions. 
+
+\subsection{View 4}
+\label{subsec:view4}
+\textbf{Goal of this visualization}
+The goal of this visualization is to see how the repository evolved through these 23 years. Therefore we decided to adopt a commit grouping strategy based on a time window of 1 year and an aging strategy of one month with a total of 12 steps. Hence, grey entities represent files that have not been updated for more than 12 months. 
+
+\bigbreak
+View specification adopted: 
+\begin{itemize}
+    \item \texttt{versionGroupingStrategy}: timestamp.
+    \item \texttt{versionGroupingChunkSize}: 31'556'926 (1 year). 
+    \item \texttt{colorPalette}: default.
+    \item \texttt{agingGroupingStrategy}: timestamp.
+    \item \texttt{agingStepSize}: 2'629'743 (1 month).
+    \item \texttt{agingSteps}: 12 steps.
+    \item \texttt{mapperMetricName}: SIZE. 
+    \item \texttt{fileTypeShape}: all BOX. 
+    \item \texttt{fileTypeOpacity}: all 1. 
+\end{itemize}
+
+\textbf{Results}
+Here we present only the relevant aspetcs of the ArgoUML evolution that we have found. However, in \autoref{app:ArgoUML_Evolution} the full evolution is depicted. \autoref{fig:JetUML_V3} shows the hot spots during the evolution of the system. \autoref{fig:ArgoUML_V3_S1} shows the state of the system after the fist year of activity. As we can notice, almost all the entities have color different than gray. This means that they were updated between April 1998 and Jenuary 1999 because otherwise they should be darker or gray. The size of the system was constantly increasing when in 2003, as \autoref{fig:ArgoUML_V3_S2} shows, the core of the system was entirely rewritten. 3 years later it had another important refactoring; in fact as we can see in figure \autoref{fig:ArgoUML_V3_S3} there are some empty rings around the center and a bigger size than the year before. Our interpretation of this event is that an entire set of consequently added files was removed and maybe later added again. It is important to underline that these files were deleted, not moved or renamed because otherwise SYN would treat them as the same logical entity. The same event happened 4 years later, when the system was 10 years old. The 2010 was the last truly active year for the repository. As depicted in \autoref{fig:ArgoUML_V3_S5}, almost all the repository files where modified and moreover, we can clearly notice more taller entities, meaning that the overall size of the files increased. The system did not grow up anymore afther that year. Sometimes some files were updated until the 2014 when it became almost dead. During the 2019 they made a commit that removed lots of files \footnote{\url{https://github.com/argouml-tigris-org/argouml/commit/62d5393eeaf08b749b17107faef255a22da55ce5}}. As a result, in Jenuary 2020, as represented in \autoref{fig:ArgoUML_V3_S6}, the visualizaion has more blank spots and since there were no activity, with the exceptions of few files, almost all the entities are painted with gray. In June 2022 the system is pretty identical to its version of 2020. 
+
+\bigbreak
+\textbf{Conclusion}
+Thanks to this analysis, we have understood the composition of JetUML and at which speed it grew. Thanks to the spiral layout, where entities are added based on their timestamp, we can understand that in the final version lots of older files were removed. They had to be rewritten somewhere else, because otherwise the system would have less features than before. Moreover, thanks to the aging strategy we have understood that there were many dead time during the development lifecycle of the repository. Nonetheless, some of them are not shown in \autoref{fig:JetUML_V3}, they can be found in \autoref{app:ArgoUML_Evolution}. The system became almost dead in 2014 and since that year most of the files was never updated. 
+
+
+
+\begin{figure}[h!]
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{ArgoUML/Animation001.png}
+        \caption{ArgoUML in Jenuary 1999 (1 year)} 
+        \label{fig:ArgoUML_V3_S1}
+    \end{subfigure}\hspace*{\fill}
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{ArgoUML/Animation005.png}
+        \caption{ArgoUML in Jenuary 2003 (5 years)} 
+        \label{fig:ArgoUML_V3_S2}
+    \end{subfigure}
+    \medskip
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{ArgoUML/Animation006.png}
+        \caption{ArgoUML in Jenuary 2006 (6 years)} 
+        \label{fig:ArgoUML_V3_S3}
+    \end{subfigure}\hspace*{\fill}
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{ArgoUML/Animation010.png}
+        \caption{ArgoUML in Jenuary 2008 (10 years)} 
+        \label{fig:ArgoUML_V3_S4}
+    \end{subfigure}
+    \medskip
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{ArgoUML/Animation012.png}
+        \caption{ArgoUML in Jenuary 2010 (12 years)} 
+        \label{fig:ArgoUML_V3_S5}
+    \end{subfigure}\hspace*{\fill}
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{ArgoUML/Animation022.png}
+        \caption{ArgoUML in Jenuary 2020 (22 years)} 
+        \label{fig:ArgoUML_V3_S6}
+    \end{subfigure}
+    
+    \caption{Hot spots during the evolution of ArgoUML} 
+    \label{fig:JetUML_V3}
+\end{figure}
+
+% -------------------------------------------
+% elastic
+% FileHistories: 41043 
+% ProjectVersions: 34842 
+% FileVersions: 326543 
+% First Version: 
+% 	 hash: 222b36344f0939f12cf54358e7047239cd398463 
+% 	 date: Fri Jun 28 09:22:10 CEST 2013 
+% Last Version: 
+% 	 hash: 2cdffdce2ab35416bd5b1b7ea889cd0dede5b6c8 
+% 	 date: Thu Apr 14 14:36:03 CEST 2022 
+% Diff: {DAYS=292, HOURS=5, MINUTES=13, SECONDS=53, MILLISECONDS=0, MICROSECONDS=0, NANOSECONDS=0, YEARS=8}
+% -------------------------------------------
+
+\section{Elasticsearch}
+This section analyzes Elasticsearch, a distributed, RESTful JSON-based search and analytics engine. 
+The project is open-souce and hosted on GitHub at \url{https://github.com/elastic/elasticsearch}. 
+The first commit was made on June 2013, even through it was not the real first commit because the project started 4 years before in 2009. 
+Our analysis comphrend almost 9 years of history, in which there are 34'843 ProjectVersions, 41'043 FileHistories and more than 300K FileVersions. 
+
+\subsection{View 5}
+\textbf{Goal of this visualization}
+The goal of this visualization is to see how the repository evolved through its last 9 years. We decided to adopt a commit grouping strategy based on a time window of 1 year and an aging strategy of one month with a total of 12 steps. Hence, grey entities represent files that have not been updated for more than 12 months. 
+
+\bigbreak
+View specification adopted: same as the one defined for the View 4 (\autoref{subsec:view4}).
+
+\textbf{Results}
+Here we present only the relevant aspetcs of the ArgoUML evolution that we have found. However, in \autoref{app:Elastic_Evolution} the full evolution is depicted. \autoref{fig:Elastic_V5} shows the hot spots during the evolution of the system. \autoref{fig:Elastic_V5_S1} shows the initial size of the system when the system became opensource and was officially moved on GitHub. After one year of inactivity, the size of the system, in June 2016, was almost the triple of 2 years before. In fact, if on June 2014 it had 2'904 files, on June 2016 it had 9'537 files. However, in figure \autoref{fig:Elastic_V5_S2} we can notice that only the entities around the center of the system were touched. This means that the initial implementation of elastic remained untouched and that any of the files added in the 2013 were modified. Pheraps the code was stable enought that it did not require any maintainance and only new features were added before June 2016. After one year of stop, in June 2018 we had another big increment of the system, as shown by \autoref{fig:Elastic_V5_S3}. Also there it doubled its size. The interesting fact is that also here the core remained untouched, with the exception of very few changes. Moreover, the height of entitites present in \autoref{fig:Elastic_V5_S2} became higher. This not only means that they were modified, but it might means that on these classes new features were added. We recorded the same growing pattern later in time until June 2022. As depicted in \autoref{fig:Elastic_V5_S4}, \autoref{fig:Elastic_V5_S5}, \autoref{fig:Elastic_V5_S6} the system incremented the number and the size of files gradually. The most important thig, is that with the exeption of the center, most of the files are painted with a bright colo, meaning that they are maintained. 
+
+
+\bigbreak
+\textbf{Conclusion} This analysis highlited many intresting aspects of the Elasticsearch evolution. Among all, the most important might be that the core of the system once developed was never touched (with the exception of very fiew entities). As we can notice from the figures shown in  \autoref{fig:Elastic_V5}, it is always depicted in gray, even if files around it are modified even in the last year of evolution. 
+
+\begin{figure}[h!]
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Elasticsearch/Animation001.png}
+        \caption{Elasticsearch in June 2014 (1 year)} 
+        \label{fig:Elastic_V5_S1}
+    \end{subfigure}\hspace*{\fill}
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Elasticsearch/Animation003.png}
+        \caption{Elasticsearch in June 2016 (3 year)} 
+        \label{fig:Elastic_V5_S2}
+    \end{subfigure}
+    \medskip
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Elasticsearch/Animation005.png}
+        \caption{Elasticsearch in June 2018 (5 year)} 
+        \label{fig:Elastic_V5_S3}
+    \end{subfigure}\hspace*{\fill}
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Elasticsearch/Animation006.png}
+        \caption{Elasticsearch in June 2019  (6 year)} 
+        \label{fig:Elastic_V5_S4}
+    \end{subfigure}
+    \medskip
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Elasticsearch/Animation008.png}
+        \caption{Elasticsearch in June 2021 (8 year)} 
+        \label{fig:Elastic_V5_S5}
+    \end{subfigure}\hspace*{\fill}
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Elasticsearch/Animation009.png}
+        \caption{Elasticsearch in June 2022 (9 year)} 
+        \label{fig:Elastic_V5_V3S6}
+    \end{subfigure}
+    
+    \caption{Hot spots during the evolution of Elasticsearch} 
+    \label{fig:Elastic_V5}
+\end{figure}
+
+
+% -------------------------------------------
+% libreoffice
+% FileHistories: 213791 
+% ProjectVersions: 367996 
+% FileVersions: 1924183 
+% First Version: 
+% 	 hash: 5acbb755f3f8dedf51904b711ff78f5e1aa498cf 
+% 	 date: Thu Mar 07 16:45:23 CET 2002 
+% Last Version: 
+% 	 hash: 634f13a722dc68b7a2df7518880ce4f9d5d89f19 
+% 	 date: Sat Jun 18 16:10:53 CEST 2022 
+% Diff: {DAYS=107, HOURS=22, MINUTES=25, SECONDS=30, MILLISECONDS=0, MICROSECONDS=0, NANOSECONDS=0, YEARS=20}
+% -------------------------------------------
+
+\section{Libreoffice}
+LibreOffice is an integrated office suite compatible with most document formats and standards. Its first commit \footnote{\url{https://github.com/LibreOffice/core/commit/5acbb755f3f8dedf51904b711ff78f5e1aa498cf}}, made on 07 March 2002 was an import of the original codebase developed by Sun Microsystems. The history of the repository is 20 years long with 327'996 commits, 213'791 FileHistories and almost 2M FileVersions. 
+
+\subsection{View 6}
+\textbf{Goal of this visualization}
+The goal of this visualization is to see how the repository evolved through its last 20 years. We decided to adopt a commit grouping strategy based on a time window of 1 year and an aging strategy of one month with a total of 12 steps. Hence, grey entities represent files that have not been updated for more than 12 months. 
+
+\bigbreak
+View specification adopted: same as the one defined for the View 4 (\autoref{subsec:view4}).
+
+\textbf{Results}
+Here we present only the relevant aspetcs of the ArgoUML evolution that we have found. However, in \autoref{app:Libre_Evolution} the full evolution is depicted. \autoref{fig:Libre_V6} shows the hot spots during the evolution of the system. The initial composition of the system is shown in \autoref{fig:Libre_V6_S1}. Between 2003 and 2011 the system 
+grew substancially: if on March 2003 it had 13'500 files, on March 2011 it had 57'520 files with an increment of over 40K files. \autoref{fig:Libre_V6_S2} shows the state of the repository on March 2011. Few entities are painted with a color meaning that only few parts of the codebase were touched. \autoref{fig:Libre_V6_S3} shows the state on March 2012. Closely to that date, the repository was involved in a big refactoring where the majority of the recenly added files were moved. Moreover, in this picure we initially start to see empty rings like the ones that we saw on the analysis of ArgoUML. Another important aspect of this picure is that the core was entirely modified. As we can see it is colored with yellow and entities are taller than the year before. The work on the repository was constant until June 2022. In all the AnimationFrames the center was always painted with yellow colors. This could mean that the core sill needs maintainance after 20 years of that the recenly developed features heavely relies on the core implementation, and thus it needs to be adapted. In the last 12 years, as it can be seen from \ref{fig:Libre_V6_S4}, \ref{fig:Libre_V6_S5} and \ref{fig:Libre_V6_S6} the system doubled its size. In June 2022 it counts 135'793 files. Moreover, empty rings around the core became thicker, suggesting a deletion of a whole part of the system that it might be reimplemented later.
+
+\bigbreak
+\textbf{Conclusion} As we saw from this analysis the evolution of Libreoffice was constant through its 20 years of history. 
+Thanks to the aging concept of SYN, we understood that they heavely rely on code that was added 20 years ago. In fact, the core of the system was always updated, and looking that the overall size of entities, the highest are in the middle. The empy bands around the core represent a pattern that we have already recognized in ArgoUML. It means that a set of files added one after another, were removed. Pheraps these files might be an entire folder that contained a feature that was later readded. One issue that this visualization raised is the size of the system begin visulized with this approach. It is hard to infer the color of some entities, since they are too small to be individually identified. 
+
+\begin{figure}[h!]
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Libreoffice/Animation001.png}
+        \caption{Libreoffice in March 2003 (1 year)} 
+        \label{fig:Libre_V6_S1}
+    \end{subfigure}\hspace*{\fill}
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Libreoffice/Animation009.png}
+        \caption{Libreoffice in March 2011 (9 year)} 
+        \label{fig:Libre_V6_S2}
+    \end{subfigure}
+    \medskip
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Libreoffice/Animation010.png}
+        \caption{Libreoffice in March 2012 (10 year)} 
+        \label{fig:Libre_V6_S3}
+    \end{subfigure}\hspace*{\fill}
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Libreoffice/Animation011.png}
+        \caption{Libreoffice in March 2013 (11 year)} 
+        \label{fig:Libre_V6_S4}
+    \end{subfigure}
+    \medskip
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Libreoffice/Animation017.png}
+        \caption{Libreoffice in March 2019 (17 year)} 
+        \label{fig:Libre_V6_S5}
+    \end{subfigure}\hspace*{\fill}
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Libreoffice/Animation021.png}
+        \caption{Libreoffice in June 2022 (21 year)} 
+        \label{fig:Libre_V6_S6}
+    \end{subfigure}
+    
+    \caption{Hot spots during the evolution of Libreoffice} 
+    \label{fig:Libre_V6}
+\end{figure}
+
+
+% -------------------------------------------
+% linux
+% FileHistories: 109829 
+% ProjectVersions: 997486 
+% FileVersions: 2335535 
+% First Version: 
+% 	 hash: 1da177e4c3f41524e886b7f1b8a0c1fc7321cac2 
+% 	 date: Sun Apr 17 00:20:36 CEST 2005 
+% Last Version: 
+% 	 hash: 705191b03d507744c7e097f78d583621c14988ac 
+% 	 date: Tue Apr 19 19:19:02 CEST 2022 
+% Diff: {DAYS=6, HOURS=18, MINUTES=58, SECONDS=26, MILLISECONDS=0, MICROSECONDS=0, NANOSECONDS=0, YEARS=17}
+% -------------------------------------------
+
+\section{Linux}
+
+
+\subsection{View 7}
+\textbf{Goal of this visualization}
+
+\bigbreak
+View specification adopted: same as the one defined for the View 4 (\autoref{subsec:view4}).
+
+\textbf{Results}
+
+
+
+\bigbreak
+\textbf{Conclusion} 
+
+\begin{figure}[h!]
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Libreoffice/Animation001.png}
+        \caption{Linux in April 2006 (1 year)} 
+        \label{fig:Linux_V7_S1}
+    \end{subfigure}\hspace*{\fill}
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Libreoffice/Animation004.png}
+        \caption{Linux in April 2009 (4 year)} 
+        \label{fig:Linux_V7_S2}
+    \end{subfigure}
+    \medskip
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Libreoffice/Animation012.png}
+        \caption{Linux in April 2017 (12 year)} 
+        \label{fig:Linux_V7_S3}
+    \end{subfigure}\hspace*{\fill}
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Libreoffice/Animation014.png}
+        \caption{Linux in April 2019  (14 year)} 
+        \label{fig:Linux_V7_S4}
+    \end{subfigure}
+    \medskip
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Libreoffice/Animation015.png}
+        \caption{Linux in April 2020 (15 year)} 
+        \label{fig:Linux_V7_S5}
+    \end{subfigure}\hspace*{\fill}
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Libreoffice/Animation017.png}
+        \caption{Linux in April 2022 (17 year)} 
+        \label{fig:Linux_V7_S6}
+    \end{subfigure}
+    
+    \caption{Hot spots during the evolution of Linux} 
+    \label{fig:Linux_V7}
 \end{figure}
