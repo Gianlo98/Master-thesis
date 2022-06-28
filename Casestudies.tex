@@ -676,51 +676,63 @@ Thanks to the aging concept of SYN, we understood that they heavely rely on code
 % -------------------------------------------
 
 \section{Linux}
-
-
+Everyone in the field of software engineering knows Linux. It does not need any presetation. Its code is published on GitHub, available at \url{https://github.com/torvalds/linux}. Even through its development started in 1991 by Linus Torvalds, the first commit published on its git repository is dated 17 April 2005. The reason is explained on the message of the first commit\footnote{\url{https://github.com/torvalds/linux/commit/1da177e4c3f41524e886b7f1b8a0c1fc7321cac2}}:
+\begin{displayquote}
+    Initial git repository build. I'm not bothering with the full history,
+    even though we have it. We can create a separate "historical" git
+    archive of that later if we want to, and in the meantime it's about
+    3.2GB when imported into git - space that would just make the early
+    git days unnecessarily complicated, when we don't have a lot of good
+    infrastructure for it.
+\end{displayquote}
+He never created a repository containing the full history of Linux. The analysis ran on this repository detected almost 1M commits, with 109'829 FileHistories and more than 2M FileVersions. 
 \subsection{View 7}
 \textbf{Goal of this visualization}
+The goal of this visualization is to see how the repository evolved through its last 17 years. We decided to adopt a commit grouping strategy based on a time window of 1 year and an aging strategy of one month with a total of 12 steps. Hence, grey entities represent files that have not been updated for more than 12 months. 
+
 
 \bigbreak
 View specification adopted: same as the one defined for the View 4 (\autoref{subsec:view4}).
 
 \textbf{Results}
-
-
+Here we present only the relevant aspetcs of the Linux evolution that we have found. However, in \autoref{app:Linux_Evolution} the full evolution is depicted. \autoref{fig:Linux_V7} shows the hot spots during the evolution of the system. \autoref{fig:Linux_V7_S1} shows the state of the system on April 2006, after the first year on git. At that time the repository had 19'709 files. For the next four years the repository activity was really active. In April 2009, as we can see from  \autoref{fig:Linux_V7_S2}, almost all the files were touched. Moreover, we can start to see a band around the core. 
+After 12 years since the first commit the system had 3 times its initial size. \autoref{fig:Linux_V7_S3} shows its state at that time. From this figure we can start to notice that the center of the spiral have less files rather than the edge. This can be interpreted as a good thing because it might means that old files are rewritten into newer ones. An intense development activity on Linux continued uninterruptly until April 2022. As we can see from \autoref{fig:Linux_V7_S4}, \autoref{fig:Linux_V7_S5} and \autoref{fig:Linux_V7_S6} during its recent grouwing process, the center slowly became rarefied. This is a sign that older files are now rewritten into newer ones. 
 
 \bigbreak
-\textbf{Conclusion} 
+\textbf{Conclusion}
+ We saw how the codebase of Linux evolved since their move on git. The development activity was constant through this 17 years. The codebase started with 19'705 files and reached 77'183 on April 2022, almost four times its original size. During this time interval not only they evolved the kernel developing new features, they also started a sort of modern process to slowly get rid off the files that were added 17 years ago. In fact as we can see the center of the spiral started to became rarefied. Nonetheless, it still hold many files and this means that the current version of Linux relies on files that were written more than 17 years ago. 
+
 
 \begin{figure}[h!]
     \begin{subfigure}{0.48\textwidth}
-        \includegraphics[width=\linewidth]{Libreoffice/Animation001.png}
+        \includegraphics[width=\linewidth]{Linux/Animation001.png}
         \caption{Linux in April 2006 (1 year)} 
         \label{fig:Linux_V7_S1}
     \end{subfigure}\hspace*{\fill}
     \begin{subfigure}{0.48\textwidth}
-        \includegraphics[width=\linewidth]{Libreoffice/Animation004.png}
+        \includegraphics[width=\linewidth]{Linux/Animation004.png}
         \caption{Linux in April 2009 (4 year)} 
         \label{fig:Linux_V7_S2}
     \end{subfigure}
     \medskip
     \begin{subfigure}{0.48\textwidth}
-        \includegraphics[width=\linewidth]{Libreoffice/Animation012.png}
+        \includegraphics[width=\linewidth]{Linux/Animation012.png}
         \caption{Linux in April 2017 (12 year)} 
         \label{fig:Linux_V7_S3}
     \end{subfigure}\hspace*{\fill}
     \begin{subfigure}{0.48\textwidth}
-        \includegraphics[width=\linewidth]{Libreoffice/Animation014.png}
+        \includegraphics[width=\linewidth]{Linux/Animation014.png}
         \caption{Linux in April 2019  (14 year)} 
         \label{fig:Linux_V7_S4}
     \end{subfigure}
     \medskip
     \begin{subfigure}{0.48\textwidth}
-        \includegraphics[width=\linewidth]{Libreoffice/Animation015.png}
+        \includegraphics[width=\linewidth]{Linux/Animation015.png}
         \caption{Linux in April 2020 (15 year)} 
         \label{fig:Linux_V7_S5}
     \end{subfigure}\hspace*{\fill}
     \begin{subfigure}{0.48\textwidth}
-        \includegraphics[width=\linewidth]{Libreoffice/Animation017.png}
+        \includegraphics[width=\linewidth]{Linux/Animation017.png}
         \caption{Linux in April 2022 (17 year)} 
         \label{fig:Linux_V7_S6}
     \end{subfigure}
