@@ -51,7 +51,7 @@ Classes inside the model of SYN Core could be partitioned into four subdomains: 
 
 \subsection*{Project}
 The first part of the model consists of the \textbf{Project} entities. 
-The diagram is shown in \autoref{fig:modelProject}. The abstract class \texttt{Project} represents a software system. It defines the following fields:
+The diagram is shown in \autoref{fig:SYNCLass}. The abstract class \texttt{Project} represents a software system. It defines the following fields:
 \begin{itemize}
     \item \texttt{name}
     \item \texttt{projectHistory}: an object that represents the project's history. It holds the results of the analysis. 
@@ -64,19 +64,12 @@ Therefore, if, on the one hand, \texttt{LocalProject} does not need any further 
 
 \begin{figure}
     \center
-    \includegraphics[width=0.2\textwidth]{UMLProject.png}
-    \caption{Model: Project entities}
-    \label{fig:modelProject}
+    \includegraphics[width=\textwidth]{SYNClass.png}
+    \caption{Class diagram of Project entities}
+    \label{fig:SYNCLass}
 \end{figure}
 
 \subsection*{History}
-
-\begin{figure}
-    \center
-    \includegraphics[width=0.2\textwidth]{UMLHistory.png}
-    \caption{Model: History entities}
-    \label{fig:modelHistory}
-\end{figure}
 
 As evidenced above, each project might hold a \textbf{ProjectHistory} object representing its history. 
 Following what we have explained in \autoref{s:EvolutionModel}, the \texttt{ProjectHistory} class holds a group of ProjectVersion and a group of FileHistories. The \texttt{FileHistory} class, which represents the history of a single file, has the following fields:
@@ -104,17 +97,12 @@ Finally, the \texttt{FileVersion} class has the following fields:
     \item \texttt{fileHistory}: represents the file being modified. 
 \end{itemize}
 
-In our approach, we have identified five different types of changes. They were implemented by extending the \texttt{Change} class, as depicted in \autoref{fig:modelChange}. The Change class declares two fields, \texttt{linesAdded} and \texttt{linesRemoved}, each one representing the number of lines added and, in turn, removed. 
+In our approach, we have identified five different types of changes. They were implemented by extending the \texttt{Change} class, as depicted in \autoref{fig:SYNCLass}. The Change class declares two fields, \texttt{linesAdded} and \texttt{linesRemoved}, each one representing the number of lines added and, in turn, removed. 
 The goal of our model is to be easily extensible. With that in mind, if in a future implementation, we want to extend the variety of metrics specifically collected for each kind of change, we need to extend the relative class, and the polymorphic mechanisms of Java will do the rest. 
 
 An example of that can be seen in the class \texttt{FileMoving} or in the class \texttt{FileRenaming}, which specifies two fields to track the previous and the next path after the change. 
 
-\begin{figure}
-    \center
-    \includegraphics[width=0.5\textwidth]{UMLChanges.png}
-    \caption{Model: Change entities}
-    \label{fig:modelChange}
-\end{figure}
+
 
 
 \subsection*{Analysis}
@@ -569,7 +557,7 @@ The last step of the setup, shown in \autoref{fig:SYNUIsettings5}, allows the us
 \end{figure}
 
 \subsection*{Project visualization}
-After having specified all the visualization preferences with the initial setup, all of them are stored in the web browser's local storage. 
+After having specified all the visualization preferences with the initial setup, they are stored in the web browser's local storage. 
 Therefore, the UI can retrieve a view from the backend server, given the project id and the view specification. 
 
 Initially, it calls the partialView query provided by the SYN-Server module. Once it gets the response, the visualization of the first AnimationFrame is automatically loaded. 
@@ -600,11 +588,11 @@ It has:
 \begin{itemize}
     \item the name and the current path of the entity. The current path is the entity's path on the last commit included in the displayed animation frame. 
     \item a table filled with all the metrics retrieved on the last commit of the displayed animation frame. The list of metrics is filtered with the one selected during the project setup. 
-    \item a table filled with all the FileVersions associated with the selected FileHistory. For each FileVersion, the commit hash (clickable, automatically redirects to GitHub) and the action made on that commit are shown. Moreover, if you hover on an action with the mouse, a tooltip with commit information appears.
+    \item a table filled with all the FileVersions associated with the selected FileHistory. For each FileVersion, the commit hash (clickable, automatically redirects to GitHub) and the action made on that commit are shown. Moreover, a tooltip with commit information appears if you hover on an action with the mouse.
     \item a contextual menu shown if you right-click on the card. With this contextual menu, you can jump on GitHub to see the raw file on the last commit of the currently displayed animation. 
 \end{itemize}
 
-\autoref{fig:deletedshadow} provides another example of the visualization where deleted entities are kept and shadows are computed. 
+\autoref{fig:deletedshadow} provides another visualization example where deleted entities are kept, and shadows are computed. 
 
 \begin{figure}
     \center
@@ -619,3 +607,6 @@ It has:
     \caption{Visualization of JetUML with shadows, deleted entities and custom shapes for non-java files.}
     \label{fig:deletedshadow}
 \end{figure}
+
+\bigbreak
+SYN Debugger is a helpful tool to understand and debug the analysis process made with SYN. However, it has performance issues in rendering large systems. The main problem comes from the programming language chosen: Javascript. Since it runs on a web browser, it has limited resources available. Even though Javascript has APIs to support a high-performance rendering of 3D graphics \footnote{\url{https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API}}, we experienced a significant FPS drop rendering large systems. To overcome this limitation and prove the versatility of our approach, we rendered large systems with POV-Ray \footnote{\url{http://www.povray.org}}. POV-Ray is an open-source tool for creating high-quality three-dimensional graphics. It works with \texttt{pov} files containing instructions to specify how the image should be rendered. We developed an extension of SYN that, given a View, produces a \texttt{pov} file for each AnimationFrame, following the same approach adopted in SYN Debugger.  

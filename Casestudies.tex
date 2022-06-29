@@ -115,10 +115,10 @@ We made this choice because, during the development process, we have seen that t
 % Diff: {DAYS=126, HOURS=22, MINUTES=33, SECONDS=22, MILLISECONDS=0, MICROSECONDS=0, NANOSECONDS=0, YEARS=7}
 % ------------------------------------------- 
 
-\section{JetUML}
-This section analyzes JetUML, an open-source desktop application to work with UML diagrams. It is hosted on GitHub at the following address \url{https://github.com/prmr/JetUML}. Data collected in our analysis shows that the history of the repository starts on the 07 Jan, 2015 and it ends 2'013 commits later on the 12 May, 2022. System's lifetime is over 7 years of activity; within this range we detected 795 FileHistories and more than 10K FileVersions.
+\section{JetUML 1}
+This section analyzes JetUML, an open-source desktop application to work with UML diagrams. It is hosted on GitHub at the following address \url{https://github.com/prmr/JetUML}. Data collected in our analysis shows that the repository's history starts on the 07 Jan 2015 and ends 2'013 commits later on the 12 May 2022. The system's lifetime is over seven years of activity; within this range, we detected 795 FileHistories and more than 10K FileVersions.
 
-\subsection{View 1}
+%\subsection{View 1}
 \begin{figure}[t!]
     \begin{subfigure}{0.42\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0E0.png}
@@ -265,7 +265,7 @@ With this grouping strategy, it was hard to understand the regularity and the sp
     \label{fig:JetUML_V0}
 \end{figure}
 
-\subsection{View 2}
+\section{JetUML 2}
 \textbf{Goal of this visualization}
 With this visualization, we want to see how the repository evolved through its first six months. 
 The authors of JetUML, during this interval of time, made seven pre-releases of the system. 
@@ -291,7 +291,7 @@ At the end of the sixth month, two entities were added and modified. However, mo
 
 \textbf{Conclusion}
 We have seen how different is the timestamp strategy compared to what we saw in the first visualization. Here, the number of frames does not depend upon the number of commits made; instead, it relies on the number of months part of the history. 
-However, the choice of the aging strategy also played a crucial role in this visualization. It highlighted updated entities without hiding the last action made on the others. Looking at \autoref{fig:JetUML_V1S6} we can immediately see that many files were added and never touched because their color looks dark green. The cause of this inactivity on the file may be related to the file type, and this limits our visualization because we cannot infer the type in any way. 
+However, the choice of the aging strategy also played a crucial role in this visualization. It highlighted updated entities without hiding the last action made on the others. Looking at \autoref{fig:JetUML_V1S6}, we can immediately see that many files were added and never touched because their color looks dark green. The cause of this inactivity on the file may be related to the file type, which limits our visualization because we cannot infer the type in any way. 
 
 
 % With this visualization, we want to see how all JetUML files evolved through time. 
@@ -348,7 +348,7 @@ However, the choice of the aging strategy also played a crucial role in this vis
     \caption{First six month of the JetUML evolution.} 
     \label{fig:JetUML_V1}
 \end{figure}
-\subsection{View 3}
+\section{JetUML 3}
 \textbf{Goal of this visualization}
 In this third and last visualization that we propose, the goal is to study the entire evolution of the system, with a focus on Java files. 
 To do that, the use the shape and opacity property of a ViewFigure, to distinguish them among others. 
@@ -368,7 +368,7 @@ Furthermore, we also use a timestamp strategy for the aging, with a total of ten
 
 \textbf{Results}
 The whole evolution of JetUML is depicted in \autoref{fig:JetUML_V3}. As we notice, it is straightforward to distinguish java files from others because they have different shapes and other files are less opaque. After the first year of development, the state of the repository is shown in \autoref{fig:JetUML_V3S1}. We notice that all the Java files have more or less the same age. This means that all of them were updated after the second month because otherwise, they would be grey. The system grew at the end of the second year, shown in figure \autoref{fig:JetUML_V3S2} and now we can see some grey entities. Most of them are in the middle, meaning that the "core" files, or the files added before others, were not touched after the fourteenth month.  \autoref{fig:JetUML_V3S3} shows the state of the repository at the end of the third year. The system grew, and all the Java files were updated recently. Considering what we have seen in the first visualization, they had to change the path from all the Java files (\autoref{fig:JetUML_V0S8}). Perhaps this can be why all the entities were updated, and some ViewFigures are painted with the blue color. The fourth year of development, shown in  \autoref{fig:JetUML_V3S4} recorded a little activity in the first months because the system grew, and almost all the entities have a different color. However, it tends to be close to the base color, meaning they are old. 
-\autoref{fig:JetUML_V3S5},  \autoref{fig:JetUML_V3S6} and  \autoref{fig:JetUML_V3S7} shows how the system evolved through the fifth, sixth and seventh year. The fifth year recorded an intense activity compared to what we saw in the fourth year. Lots of files were added, and most of the classes of the system were modified. Moreover, the system's center is slowly disappearing, meaning that new ones have replaced old Java files. In the sixth and seventh years, non-Java files were added, and some Java classes were updated outside the system's core. Finally, the last year, represented by \autoref{fig:JetUML_V3S8}, did not record such a huge activity on the system. It became inactive since almost all the entities are grey, meaning that these files were not touched in the last ten months of evolution. However, in this frame, appeared the two tallest entities of the system. This means that in this last year, two java files were added (they were not present the year before), and they rapidly became the biggest files in the repository.  
+\autoref{fig:JetUML_V3S5},  \autoref{fig:JetUML_V3S6} and  \autoref{fig:JetUML_V3S7} shows how the system evolved through the fifth, sixth and seventh year. The fifth year recorded an intense activity compared to what we saw in the fourth year. Lots of files were added, and most of the classes of the system were modified. Moreover, the system's center is slowly disappearing, meaning that new ones have replaced old Java files. In the sixth and seventh years, non-Java files were added, and some Java classes were updated outside the system's core. Finally, the last year, represented by \autoref{fig:JetUML_V3S8}, did not record such a huge activity on the system. It became inactive since almost all the entities are grey, meaning that these files were not touched in the last ten months of evolution. However, in this frame, the two tallest entities of the system appeared. This means that in this last year, two java files were added (they were not present the year before) and rapidly became the biggest files in the repository.  
 \bigbreak
 \textbf{Conclusion}
 With this visualization, we have seen JetUML from another point of view. The year visualization works very well with systems like JetUML with a comprehensive history. In fact, with just 8 AnimationFrames, we can infer when the development process was more intense in the past. 
@@ -445,16 +445,16 @@ With this visualization, we have seen JetUML from another point of view. The yea
 % -------------------------------------------
 
 \section{ArgoUML}
-This section analyzes ArgoUML, a leading open source UML modeling tool that includes support for all standard UML diagrams. 
+This section analyzes ArgoUML, a leading open source UML modeling tool that supports all standard UML diagrams. 
 It is hosted on GitHub at the following address \url{https://github.com/argouml-tigris-org/argouml}. 
-This repository was born in January 1998 then it was converted from CVS to Subversion in 2006 and finally it was moved to git in 2019.
+This repository was born in January 1998, converted from CVS to Subversion in 2006, and finally moved to git in 2019.
 Therefore, it has more than 23 years of history. 
-Our analysis considered 16'672 commits, 11'129 FileHistories and more than 90K FileVersions. 
+Our analysis considered 16'672 commits, 11'129 FileHistories, and more than 90K FileVersions. 
 
-\subsection{View 4}
+%\subsection{View 4}
 \label{subsec:view4}
 \textbf{Goal of this visualization}
-The goal of this visualization is to see how the repository evolved through these 23 years. Therefore we decided to adopt a commit grouping strategy based on a time window of 1 year and an aging strategy of one month with a total of 12 steps. Hence, grey entities represent files that have not been updated for more than 12 months. 
+This visualization aims to see how the repository evolved through these 23 years. Therefore we decided to adopt a commit grouping strategy based on a time window of 1 year and an aging strategy of one month with a total of 12 steps. Hence, grey entities represent files that have not been updated for more than 12 months. 
 
 \bigbreak
 View specification adopted: 
@@ -471,11 +471,11 @@ View specification adopted:
 \end{itemize}
 
 \textbf{Results}
-Here we present only the relevant aspetcs of the ArgoUML evolution that we have found. However, in \autoref{app:ArgoUML_Evolution} the full evolution is depicted. \autoref{fig:JetUML_V3} shows the hot spots during the evolution of the system. \autoref{fig:ArgoUML_V3_S1} shows the state of the system after the fist year of activity. As we can notice, almost all the entities have color different than gray. This means that they were updated between April 1998 and Jenuary 1999 because otherwise they should be darker or gray. The size of the system was constantly increasing when in 2003, as \autoref{fig:ArgoUML_V3_S2} shows, the core of the system was entirely rewritten. 3 years later it had another important refactoring; in fact as we can see in figure \autoref{fig:ArgoUML_V3_S3} there are some empty rings around the center and a bigger size than the year before. Our interpretation of this event is that an entire set of consequently added files was removed and maybe later added again. It is important to underline that these files were deleted, not moved or renamed because otherwise SYN would treat them as the same logical entity. The same event happened 4 years later, when the system was 10 years old. The 2010 was the last truly active year for the repository. As depicted in \autoref{fig:ArgoUML_V3_S5}, almost all the repository files where modified and moreover, we can clearly notice more taller entities, meaning that the overall size of the files increased. The system did not grow up anymore afther that year. Sometimes some files were updated until the 2014 when it became almost dead. During the 2019 they made a commit that removed lots of files \footnote{\url{https://github.com/argouml-tigris-org/argouml/commit/62d5393eeaf08b749b17107faef255a22da55ce5}}. As a result, in Jenuary 2020, as represented in \autoref{fig:ArgoUML_V3_S6}, the visualizaion has more blank spots and since there were no activity, with the exceptions of few files, almost all the entities are painted with gray. In June 2022 the system is pretty identical to its version of 2020. 
+Here we present only the relevant aspects of the ArgoUML evolution that we have found. However, in \autoref{app:ArgoUML_Evolution} the full evolution is depicted. \autoref{fig:JetUML_V3} shows the hot spots during the system's evolution. \autoref{fig:ArgoUML_V3_S1} shows the system's state after the first year of activity. As we can notice, almost all the entities have a color different than gray. This means that they were updated between April 1998 and January 1999 because they should be darker or gray otherwise. The size of the system was constantly increasing when in 2003, as \autoref{fig:ArgoUML_V3_S2} shows, the system's core was entirely rewritten. Three years later it had another important refactoring; in fact, as we can see in figure \autoref{fig:ArgoUML_V3_S3} there are some empty rings around the center and a bigger size than the year before. Our interpretation of this event is that an entire set of consequently added files was removed and maybe later added. It is important to underline that these files were deleted, not moved, or renamed because otherwise, SYN would treat them as the same logical entity. The same event happened four years later, when the system was ten years old. 2010 was the last truly active year for the repository as depicted in \autoref{fig:ArgoUML_V3_S5}; almost all the repository files were modified and we can notice more taller entities, meaning that the overall size of the files increased. The system did not grow up anymore after that year. Sometimes some files were updated until 2014 when they became almost dead. During 2019 they made a commit that removed lots of files \footnote{\url{https://github.com/argouml-tigris-org/argouml/commit/62d5393eeaf08b749b17107faef255a22da55ce5}}. As a result, in January 2020, as represented in \autoref{fig:ArgoUML_V3_S6}, the visualization has more blank spots, and since there was no activity, with the exceptions of few files, almost all the entities are painted with gray. In June 2022, the system is pretty identical to its version in 2020. 
 
 \bigbreak
 \textbf{Conclusion}
-Thanks to this analysis, we have understood the composition of JetUML and at which speed it grew. Thanks to the spiral layout, where entities are added based on their timestamp, we can understand that in the final version lots of older files were removed. They had to be rewritten somewhere else, because otherwise the system would have less features than before. Moreover, thanks to the aging strategy we have understood that there were many dead time during the development lifecycle of the repository. Nonetheless, some of them are not shown in \autoref{fig:JetUML_V3}, they can be found in \autoref{app:ArgoUML_Evolution}. The system became almost dead in 2014 and since that year most of the files was never updated. 
+Thanks to this analysis, we have understood the composition of JetUML and at which speed it grew. Thanks to the spiral layout, where entities are added based on their timestamp, we can understand that many older files were removed in the final version. They had to be rewritten elsewhere because the system would have fewer features than before. Moreover, thanks to the aging strategy, we have understood that there was much dead time during the development lifecycle of the repository. Nonetheless, some of them are not shown in \autoref{fig:JetUML_V3}, they can be found in \autoref{app:ArgoUML_Evolution}. The system became almost dead in 2014; since that year, most of the files were never updated. 
 
 
 
@@ -532,24 +532,24 @@ Thanks to this analysis, we have understood the composition of JetUML and at whi
 % -------------------------------------------
 
 \section{Elasticsearch}
-This section analyzes Elasticsearch, a distributed, RESTful JSON-based search and analytics engine. 
-The project is open-souce and hosted on GitHub at \url{https://github.com/elastic/elasticsearch}. 
-The first commit was made on June 2013, even through it was not the real first commit because the project started 4 years before in 2009. 
-Our analysis comphrend almost 9 years of history, in which there are 34'843 ProjectVersions, 41'043 FileHistories and more than 300K FileVersions. 
+This section analyzes Elasticsearch, a distributed, RESTful JSON-based search, and analytics engine. 
+The project is open-source and hosted on GitHub at \url{https://github.com/elastic/elasticsearch}. 
+The first commit was made in June 2013, even though it was not the real first one because the project started four years before in 2009. 
+Our analysis comprehends almost nine years of history, in which there are 34'843 ProjectVersions, 41'043 FileHistories, and more than 300K FileVersions. 
 
-\subsection{View 5}
+%\subsection{View 5}
 \textbf{Goal of this visualization}
-The goal of this visualization is to see how the repository evolved through its last 9 years. We decided to adopt a commit grouping strategy based on a time window of 1 year and an aging strategy of one month with a total of 12 steps. Hence, grey entities represent files that have not been updated for more than 12 months. 
+This visualization aims to see how the repository evolved through its last nine years. We decided to adopt a commit grouping strategy based on a time window of 1 year and an aging strategy of one month with 12 steps. Hence, grey entities represent files that have not been updated for more than 12 months. 
 
 \bigbreak
 View specification adopted: same as the one defined for the View 4 (\autoref{subsec:view4}).
 
 \textbf{Results}
-Here we present only the relevant aspetcs of the ArgoUML evolution that we have found. However, in \autoref{app:Elastic_Evolution} the full evolution is depicted. \autoref{fig:Elastic_V5} shows the hot spots during the evolution of the system. \autoref{fig:Elastic_V5_S1} shows the initial size of the system when the system became opensource and was officially moved on GitHub. After one year of inactivity, the size of the system, in June 2016, was almost the triple of 2 years before. In fact, if on June 2014 it had 2'904 files, on June 2016 it had 9'537 files. However, in figure \autoref{fig:Elastic_V5_S2} we can notice that only the entities around the center of the system were touched. This means that the initial implementation of elastic remained untouched and that any of the files added in the 2013 were modified. Pheraps the code was stable enought that it did not require any maintainance and only new features were added before June 2016. After one year of stop, in June 2018 we had another big increment of the system, as shown by \autoref{fig:Elastic_V5_S3}. Also there it doubled its size. The interesting fact is that also here the core remained untouched, with the exception of very few changes. Moreover, the height of entitites present in \autoref{fig:Elastic_V5_S2} became higher. This not only means that they were modified, but it might means that on these classes new features were added. We recorded the same growing pattern later in time until June 2022. As depicted in \autoref{fig:Elastic_V5_S4}, \autoref{fig:Elastic_V5_S5}, \autoref{fig:Elastic_V5_S6} the system incremented the number and the size of files gradually. The most important thig, is that with the exeption of the center, most of the files are painted with a bright colo, meaning that they are maintained. 
+Here we present only the relevant aspects of the ArgoUML evolution that we have found. However, in \autoref{app:Elastic_Evolution} the full evolution is depicted. \autoref{fig:Elastic_V5} shows the hot spots during the system's evolution. \autoref{fig:Elastic_V5_S1} shows the initial size of the system when the system became open source and was officially moved on GitHub. After one year of inactivity, the size of the system in June 2016 was almost triple of 2 years before. If on June 2014, it had 2'904 files; in June 2016, it had 9'537 files. However, in figure \autoref{fig:Elastic_V5_S2}, we notice that only the entities around the center of the system were touched. This means that the initial implementation of elastic remained untouched and that any of the files added in 2013 were modified. Perhaps the code was stable enough that it did not require any maintenance, and only new features were added before June 2016. After one year of stopping, in June 2018, we had another big increment of the system, as shown by \autoref{fig:Elastic_V5_S3}. Also, there it doubled its size. Interestingly, the core also remained untouched, except for very few changes. Moreover, the height of entities present in \autoref{fig:Elastic_V5_S2} became higher. This not only means that they were modified, but it might also mean that new features were added to these classes. We recorded the same growth pattern later in time until June 2022. As depicted in \autoref{fig:Elastic_V5_S4}, \autoref{fig:Elastic_V5_S5}, \autoref{fig:Elastic_V5_S6} the system incremented the number and the size of files gradually. The most important thing is that, except for the center, most of the files are painted with a bright color, meaning they are maintained. 
 
 
 \bigbreak
-\textbf{Conclusion} This analysis highlited many intresting aspects of the Elasticsearch evolution. Among all, the most important might be that the core of the system once developed was never touched (with the exception of very fiew entities). As we can notice from the figures shown in  \autoref{fig:Elastic_V5}, it is always depicted in gray, even if files around it are modified even in the last year of evolution. 
+\textbf{Conclusion} This analysis highlighted many interesting aspects of the Elasticsearch evolution. Among all, the most important might be that the core of the system, once developed, was never touched (except for very few entities). As we can notice from the figures shown in  \autoref{fig:Elastic_V5}, it is always depicted in gray, even if files around it are modified even in the last year of evolution. 
 
 \begin{figure}[h!]
     \begin{subfigure}{0.48\textwidth}
@@ -605,22 +605,22 @@ Here we present only the relevant aspetcs of the ArgoUML evolution that we have 
 % -------------------------------------------
 
 \section{Libreoffice}
-LibreOffice is an integrated office suite compatible with most document formats and standards. Its first commit \footnote{\url{https://github.com/LibreOffice/core/commit/5acbb755f3f8dedf51904b711ff78f5e1aa498cf}}, made on 07 March 2002 was an import of the original codebase developed by Sun Microsystems. The history of the repository is 20 years long with 327'996 commits, 213'791 FileHistories and almost 2M FileVersions. 
+LibreOffice is an integrated office suite compatible with most document formats and standards. Its first commit \footnote{\url{https://github.com/LibreOffice/core/commit/5acbb755f3f8dedf51904b711ff78f5e1aa498cf}}, made on 07 March 2002 was an import of the original codebase developed by Sun Microsystems. The repository's history is 20 years long with 327'996 commits, 213'791 FileHistories, and almost 2M FileVersions. 
 
-\subsection{View 6}
+%\subsection{View 6}
 \textbf{Goal of this visualization}
-The goal of this visualization is to see how the repository evolved through its last 20 years. We decided to adopt a commit grouping strategy based on a time window of 1 year and an aging strategy of one month with a total of 12 steps. Hence, grey entities represent files that have not been updated for more than 12 months. 
+This visualization aims to see how the repository evolved through its last 20 years. We decided to adopt a commit grouping strategy based on a time window of 1 year and an aging strategy of one month with 12 steps. Hence, grey entities represent files that have not been updated for more than 12 months. 
 
 \bigbreak
 View specification adopted: same as the one defined for the View 4 (\autoref{subsec:view4}).
 
 \textbf{Results}
-Here we present only the relevant aspetcs of the ArgoUML evolution that we have found. However, in \autoref{app:Libre_Evolution} the full evolution is depicted. \autoref{fig:Libre_V6} shows the hot spots during the evolution of the system. The initial composition of the system is shown in \autoref{fig:Libre_V6_S1}. Between 2003 and 2011 the system 
-grew substancially: if on March 2003 it had 13'500 files, on March 2011 it had 57'520 files with an increment of over 40K files. \autoref{fig:Libre_V6_S2} shows the state of the repository on March 2011. Few entities are painted with a color meaning that only few parts of the codebase were touched. \autoref{fig:Libre_V6_S3} shows the state on March 2012. Closely to that date, the repository was involved in a big refactoring where the majority of the recenly added files were moved. Moreover, in this picure we initially start to see empty rings like the ones that we saw on the analysis of ArgoUML. Another important aspect of this picure is that the core was entirely modified. As we can see it is colored with yellow and entities are taller than the year before. The work on the repository was constant until June 2022. In all the AnimationFrames the center was always painted with yellow colors. This could mean that the core sill needs maintainance after 20 years of that the recenly developed features heavely relies on the core implementation, and thus it needs to be adapted. In the last 12 years, as it can be seen from \ref{fig:Libre_V6_S4}, \ref{fig:Libre_V6_S5} and \ref{fig:Libre_V6_S6} the system doubled its size. In June 2022 it counts 135'793 files. Moreover, empty rings around the core became thicker, suggesting a deletion of a whole part of the system that it might be reimplemented later.
+Here we present only the relevant aspects of the ArgoUML evolution that we have found. However, the full evolution is depicted in \autoref{app:Libre_Evolution}. \autoref{fig:Libre_V6} shows the hot spots during the system's evolution. The initial composition of the system is shown in \autoref{fig:Libre_V6_S1}. Between 2003 and 2011, the system 
+grew substantially: if on March 2003, it had 13'500 files, and in March 2011, it had 57'520 files with an increment of over 40K files. \autoref{fig:Libre_V6_S2} shows the state of the repository in March 2011. Few entities are painted with a color, meaning that only a few parts of the codebase were touched. \autoref{fig:Libre_V6_S3} shows the state in March 2012. Closely to that date, the repository was involved in a big refactoring where most of the recently added files were moved. Moreover, in this picture, we initially start to see empty rings like the ones we saw in the analysis of ArgoUML. Another important aspect of this picture is that the core was entirely modified. As we can see, it is colored yellow, and the entities are taller than the year before. The work on the repository was constant until June 2022. In all the AnimationFrames, the center was always painted with yellow colors. This could mean that the core still needs maintenance after 20 years of the recently developed features heavily relying on the core implementation, and thus it needs to be adapted. In the last 12 years, as it can be seen from \ref{fig:Libre_V6_S4}, \ref{fig:Libre_V6_S5} and \ref{fig:Libre_V6_S6} the system doubled its size. In June 2022, it counted 135'793 files. Moreover, empty rings around the core became thicker, suggesting the deletion of a whole part of the system that it might be reimplemented later.
 
 \bigbreak
-\textbf{Conclusion} As we saw from this analysis the evolution of Libreoffice was constant through its 20 years of history. 
-Thanks to the aging concept of SYN, we understood that they heavely rely on code that was added 20 years ago. In fact, the core of the system was always updated, and looking that the overall size of entities, the highest are in the middle. The empy bands around the core represent a pattern that we have already recognized in ArgoUML. It means that a set of files added one after another, were removed. Pheraps these files might be an entire folder that contained a feature that was later readded. One issue that this visualization raised is the size of the system begin visulized with this approach. It is hard to infer the color of some entities, since they are too small to be individually identified. 
+\textbf{Conclusion} As we saw from this analysis, the evolution of LibreOffice was constant throughout its 20 years of history. 
+Thanks to the aging concept of SYN, we understood that they heavily rely on code that was added 20 years ago. The core of the system was constantly updated, and the overall size of entities the highest area in the middle. The empty bands around the core represent a pattern that we have already recognized in ArgoUML. It means that a set of files were removed one after another. Perhaps these files might be an entire folder that contained a feature that was later readded. One issue that this visualization raised is the size of the system that begins visualized with this approach. It is hard to infer the color of some entities since they are too small to be individually identified. 
 
 \begin{figure}[h!]
     \begin{subfigure}{0.48\textwidth}
@@ -676,7 +676,7 @@ Thanks to the aging concept of SYN, we understood that they heavely rely on code
 % -------------------------------------------
 
 \section{Linux}
-Everyone in the field of software engineering knows Linux. It does not need any presetation. Its code is published on GitHub, available at \url{https://github.com/torvalds/linux}. Even through its development started in 1991 by Linus Torvalds, the first commit published on its git repository is dated 17 April 2005. The reason is explained on the message of the first commit\footnote{\url{https://github.com/torvalds/linux/commit/1da177e4c3f41524e886b7f1b8a0c1fc7321cac2}}:
+Everyone in the field of software engineering knows Linux. It does not need any presentation. Its code is published on GitHub, available at \url{https://github.com/torvalds/linux}. Even though its development started in 1991 by Linus Torvalds, the first commit pushed on its git repository is dated 17 April 2005. The reason is explained on the message of the first commit\footnote{\url{https://github.com/torvalds/linux/commit/1da177e4c3f41524e886b7f1b8a0c1fc7321cac2}}:
 \begin{displayquote}
     Initial git repository build. I'm not bothering with the full history,
     even though we have it. We can create a separate "historical" git
@@ -685,22 +685,22 @@ Everyone in the field of software engineering knows Linux. It does not need any 
     git days unnecessarily complicated, when we don't have a lot of good
     infrastructure for it.
 \end{displayquote}
-He never created a repository containing the full history of Linux. The analysis ran on this repository detected almost 1M commits, with 109'829 FileHistories and more than 2M FileVersions. 
-\subsection{View 7}
+He never created a repository containing the full history of Linux. The analysis on this repository detected almost 1M commits, with 109'829 FileHistories and more than 2M FileVersions. 
+%\subsection{View 7}
 \textbf{Goal of this visualization}
-The goal of this visualization is to see how the repository evolved through its last 17 years. We decided to adopt a commit grouping strategy based on a time window of 1 year and an aging strategy of one month with a total of 12 steps. Hence, grey entities represent files that have not been updated for more than 12 months. 
+This visualization aims to see how the repository evolved through its last 17 years. We decided to adopt a commit grouping strategy based on a time window of 1 year and an aging strategy of one month with 12 steps. Hence, grey entities represent files that have not been updated for more than 12 months. 
 
 
 \bigbreak
 View specification adopted: same as the one defined for the View 4 (\autoref{subsec:view4}).
 
 \textbf{Results}
-Here we present only the relevant aspetcs of the Linux evolution that we have found. However, in \autoref{app:Linux_Evolution} the full evolution is depicted. \autoref{fig:Linux_V7} shows the hot spots during the evolution of the system. \autoref{fig:Linux_V7_S1} shows the state of the system on April 2006, after the first year on git. At that time the repository had 19'709 files. For the next four years the repository activity was really active. In April 2009, as we can see from  \autoref{fig:Linux_V7_S2}, almost all the files were touched. Moreover, we can start to see a band around the core. 
-After 12 years since the first commit the system had 3 times its initial size. \autoref{fig:Linux_V7_S3} shows its state at that time. From this figure we can start to notice that the center of the spiral have less files rather than the edge. This can be interpreted as a good thing because it might means that old files are rewritten into newer ones. An intense development activity on Linux continued uninterruptly until April 2022. As we can see from \autoref{fig:Linux_V7_S4}, \autoref{fig:Linux_V7_S5} and \autoref{fig:Linux_V7_S6} during its recent grouwing process, the center slowly became rarefied. This is a sign that older files are now rewritten into newer ones. 
+Here we present only the relevant aspects of the Linux evolution we have found. However, the whole evolution is depicted in \autoref{app:Linux_Evolution}. \autoref{fig:Linux_V7} shows the hot spots during the system's evolution. \autoref{fig:Linux_V7_S1} shows the system's state in April 2006, after the first year on git. At that time, the repository had 19'709 files. For the next four years, the repository activity was active. In April 2009, as we can see from  \autoref{fig:Linux_V7_S2}, almost all the files were touched. Moreover, we can start to see a band around the core. 
+After 12 years after the first commit, the system had three times its initial size. \autoref{fig:Linux_V7_S3} shows its state at that time. From this figure, we can start to notice that the spiral's center has fewer files than the edge. This is a good thing because it might mean that old files are rewritten into newer ones. Intense development activity on Linux continued uninterruptedly until April 2022. As we can see from \autoref{fig:Linux_V7_S4}, \autoref{fig:Linux_V7_S5} and \autoref{fig:Linux_V7_S6} during its recent growing process, the center slowly became rarefied. This is a sign that older files are now rewritten into newer ones. 
 
 \bigbreak
 \textbf{Conclusion}
- We saw how the codebase of Linux evolved since their move on git. The development activity was constant through this 17 years. The codebase started with 19'705 files and reached 77'183 on April 2022, almost four times its original size. During this time interval not only they evolved the kernel developing new features, they also started a sort of modern process to slowly get rid off the files that were added 17 years ago. In fact as we can see the center of the spiral started to became rarefied. Nonetheless, it still hold many files and this means that the current version of Linux relies on files that were written more than 17 years ago. 
+ We saw how the codebase of Linux evolved since their move to git. The development activity was constant throughout these 17 years. The codebase started with 19'705 files and reached 77'183 in April 2022, almost four times its original size. During this time, they evolved the kernel to develop new features and started a sort of modern process to slowly get rid of the files that were added 17 years ago. As we can see, the center of the spiral started to become rarefied. Nonetheless, it still holds many files, which means that the current version of Linux relies on files written more than 17 years ago. 
 
 
 \begin{figure}[h!]
@@ -739,4 +739,14 @@ After 12 years since the first commit the system had 3 times its initial size. \
     
     \caption{Hot spots during the evolution of Linux} 
     \label{fig:Linux_V7}
+\end{figure}
+
+\bigbreak
+To give to the reader an idea about the size of those systems, we took the last AnimationFrame of each project analyzed and we put them in \autoref{fig:SizeComparison}. Even though Linux was initially bigger than Libreoffice, the latter grew sharply in the last year, overtaking the biggest repository on GitHub. Furthermore, from this picture, we can appreciate the different development paths that each system took. For example, ArgoUML is the only repository that removed all the old files. In contrast, Elasticsearch seems to heavily rely on its core. As we can see it is really dense and in addition we saw during its evolution that it was updated frequently. Of course, we have to keep in mind that these two projects have a completely different histories. If on one hand, ArgoUML has commits dated 1998, on the other hand, the first commit of Elasticsearch was made in 2013. Equally important is the state of Linux and LibreOffice, both of them started to move some files from the core to the edges. However, both work with files older than 17 years. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{SizeComparison.png}
+    \caption{Size in June 2022 of analyzed projects.} 
+    \label{fig:SizeComparison}
 \end{figure}
