@@ -610,3 +610,26 @@ It has:
 
 \bigbreak
 SYN Debugger is a helpful tool to understand and debug the analysis process made with SYN. However, it has performance issues in rendering large systems. The main problem comes from the programming language chosen: Javascript. Since it runs on a web browser, it has limited resources available. Even though Javascript has APIs to support a high-performance rendering of 3D graphics \footnote{\url{https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API}}, we experienced a significant FPS drop rendering large systems. To overcome this limitation and prove the versatility of our approach, we rendered large systems with POV-Ray \footnote{\url{http://www.povray.org}}. POV-Ray is an open-source tool for creating high-quality three-dimensional graphics. It works with \texttt{pov} files containing instructions to specify how the image should be rendered. We developed an extension of SYN that, given a View, produces a \texttt{pov} file for each AnimationFrame, following the same approach adopted in SYN Debugger.  
+
+
+\section{Audio}
+SYN internally does not implement the auditorial approach presented in \autoref{sec:audioApproach}. It was implemented as an external part of the system because we decided to use an external tool to compose melodies: SonicPi. 
+\bigbreak
+SonicPi is a music creation tool, code-based, written in Ruby. Internally it defines a domain specific language to compose melodies procedurally. For example, the instructions \texttt{play 60} plays 60th note on the piano. Audio melodies are not played directly from SYN; we extract the values of the metrics that we are interested into from SYN and then we use these values directly into SonicPi. So, at the moment this system can be seen as an external service that uses SYN. However, SonicPi can be controlled through a protocol called Open Sounc Control (OSC), therefore, in the future it might be written as a module of SYN. 
+\bigbreak
+Metrics are extracted from SYN through the GraphQL server. We used Python to make POST requests to it, elaborate the received data and use them as an input for SonicPi. We developed a SonicPi script that works with three metrics: the total number of commits, the number of files added and the number of files removed. They are received as an array of integer values. All of the arrays must have the same length which is equal to the number of AnimationFrames part of the project's view. We decided to dedicate for each AnimationFrame one secon; the sounds involved in our implementation are:
+\begin{itemize}
+    \item Bass drums: to represent how many commits does an AnimationFrame holds. The value of this metric is scaled in an interval between 60 an 200, where 60 is the minimum number of commits of every AnimationFrames in that view and 200 is the maxium; it is set to the number of BPM for this sound. The amplitude is always at 1 (the maximum). As a result, AnimationFrames with higher number of commits for that view, are played with more bass drums than other with a lower number of commits.
+    \item Bass sound: to represent how many files were deleted inside an AnimationFrame. The value of this metric, sacaled in an interval between 1 and 4 defines how many times does this sound must be played. Furthermore, the value scaled in an interval between 0.1 and 0.8 is used for the amplitude. 
+    \item Eletric sound: to represent how many files were added inside an AnimationFrame. The value of this metric, sacaled in an interval between 1 and 8 defines how many times does this sound must be played. Furthermore, the value scaled in an interval between 0.2 and 0.85 is used for the amplitude. 
+\end{itemize}
+
+To debug this implementation we made some charts to follow the evolution of metric's values. Charts were build with Bokeh, a python library and they were generated before SonicPi data to ensure consistency between them. \autoref{fig:JetUMLBokeh} shows an example of a graph. It shows how many commits each AnimationFrame holds. We created the same graph for each metric involved in the auditorial representation. 
+
+\begin{figure}
+    \center
+    \includegraphics[width=\textwidth]{JetUMLBokeh.png}
+    \caption{Example of a ghaph showing the number of commtis over AnimationFrames}
+    \label{fig:JetUMLBokeh}
+\end{figure}
+

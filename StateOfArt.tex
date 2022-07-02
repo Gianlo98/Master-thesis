@@ -34,7 +34,7 @@ According to Butler et. al. \cite{Butler1993} there are three categories of visu
 	 \item Explorative visualziation. Used to discover the nature of the data being analyzed. With this visualization, the user usually does not know what he/she is looking for. 
 	 \item Analytical visualization. Adapted when we need to find something known in the available data. 
 \end{itemize}
-	Dijkstra1971a
+	% Dijkstra1971a
 All the software visualization approaches vary with respect to two dimensions: the level of abstraction and the visualized data.
 According to the type of the data, we can classify visualization as:
 \begin{itemize}
@@ -85,7 +85,7 @@ The program was domain-independent, and learners could use it with any algorithm
 Around the end of the 80s, Müller et al. \cite{Mueller1988} released Rigi, a tool used to visualize large programs.
 It exploited the graph model, augmented with abstraction mechanisms, to represent systems components and relationships. 
 
-\begin{figure}[H]
+\begin{figure}[ht]
   \minipage{0.33\textwidth}
   \centering
     \includegraphics[width=0.8\linewidth]{Nassi1973_NSD.png}
@@ -94,13 +94,11 @@ It exploited the graph model, augmented with abstraction mechanisms, to represen
   \endminipage\hfill
   \minipage{0.33\textwidth}
     \centering
-
     \includegraphics[width=\linewidth]{Brown1988_BalsaII.png}
     \caption{Balsa-II}
   \endminipage\hfill
   \minipage{0.33\textwidth}
     \centering
-
   \includegraphics[width=\linewidth]{Mueller1988_Rigi.png}
   \caption{Rigi}
 \endminipage\hfill
@@ -122,7 +120,7 @@ On their visualization, each line was mapped to a thin row. Each row was associa
 \bigbreak
 One year later, De Pauw et al. \cite{DePauw1993} introduced Jinsight, a tool able to provide animated views of object-oriented systems' behavior. 
 
-\begin{figure}[H]
+\begin{figure}[ht]
   \minipage{0.5\textwidth}
   	\centering
     \includegraphics[width=0.8\linewidth]{Eick1992_Seesoft.png}
@@ -150,7 +148,7 @@ The first technique was the Timewhell glyph, used to visualize time-oriented inf
 The second technique was the 3D wheel glyph; it encoded the same attributes of the time wheel, and additionally, it used the height to encode time. 
 Infobug glyph was the last technique, where each glyph was composed of four parts, each representing essential data of the system, such as time, code size, and the number of added, deleted, or modified code lines. \newline
 
-\begin{figure}[H]
+\begin{figure}[ht]
 \minipage{0.32\textwidth}
 \centering
   \includegraphics[width=\linewidth]{Chuan1.png}
@@ -184,7 +182,7 @@ Finally, in 1999, Jacobson et al. \cite{Jacobson1999} introduced what we now kno
 %https://www.inf.usi.ch/faculty/lanza/Downloads/Gall2006a.pdf
 \bigbreak
 At the beginning of the 21st century, thanks to the spread of version control systems and the open-source movement, 
-visualizing a software system's evolution became a more feasible activity thanks to publicly accessible system information.   
+visualizing a software system's evolution became a more feasible activity thanks to publicly accessible system information.
 As a result, many researchers focused their work on software evolution visualization.
 
 \bigbreak
@@ -196,7 +194,7 @@ Each column represented a version of the software; each row represented a differ
 Cells were filled with boxes whose size depended on evolutionary measurements. 
 The shape of the matrix could also be used to infer various evolutionary patterns.
 
-\begin{figure}[H]
+\begin{figure}[ht]
 \minipage{0.49\textwidth}
 \centering
   \includegraphics[width=\linewidth]{EvolutionMatrix1.png}
@@ -252,7 +250,7 @@ Thir visualization was supported by a tool called Evo-Streets.
 Each stage of their approach was responsible for representing a different aspect of the system with the city metaphor. 
 
 
-\begin{figure}[H]
+\begin{figure}[ht]
 \centering
   \includegraphics[width=0.9\linewidth]{Steinbrueckner2010.png} 
   \caption{Evo-Streets}
@@ -268,7 +266,7 @@ so he obtained a simple visual language that facilitated data comprehension. His
 called CodeCity. 
 
 
-\begin{figure}[H]
+\begin{figure}[ht]
 \centering
   \includegraphics[width=0.9\linewidth]{CodeCity.png} 
   \caption{CodeCity}
@@ -299,7 +297,7 @@ They introduced CityVR, a tool that displays a software system through the city 
 Working with virtual reality, they scaled the city visualization to the physically available space in the room. 
 Therefore, developers needed to walk to navigate the system. 
 
-\begin{figure}[H]
+\begin{figure}[ht]
   \minipage{0.32\textwidth}
   \centering
     \includegraphics[width=\linewidth]{CityVR.png}
@@ -328,7 +326,7 @@ Khaloo et al. \cite{Khaloo2017} revised the idea of gamification with a 3D park-
 Finally, we mention Alexandru et al., who proposed a method to visualize software structure and evolution, 
 with reduced accuracy and a fine-grained highlighting of changes in individual components \cite{Alexandru2019}. 
 
-\begin{figure}[H]
+\begin{figure}[ht]
 \centering
   \includegraphics[width=0.9\linewidth]{Alexandru_EvoClock.png} 
   \caption{Evo-Clock}
@@ -417,13 +415,13 @@ is getting even more interest in the recent years.
 \bigbreak
 Sonnenwald et al. made one of the first attempts. \cite{Sonnenwald1990}
 They tried to enhance the comprehension of complex applications by playing music and special sound effects. 
-This approach was supported by a tool called InfoSound
+This approach was supported by a tool called InfoSound.
 It was mainly adopted to understand the program's behavior. 
 
 \bigbreak
 Many other researchers followed this first technique. To cite some of them, DiGiano and Baecker \cite{DiGiano1993} made LogoMedia, a tool to associate non-speech
  audio with program events while the code is being developed. 
-Jameson \cite{Jameson1994}] developed Sonnet, audio-enhanced monitoring and debugging tool.  
+Jameson \cite{Jameson1994} developed Sonnet, audio-enhanced monitoring and debugging tool.  
 Alty and Vickers \cite{Vickers2003} had a similar idea. Using a structured musical framework, they could map the execution behavior of a program to locate and diagnose software errors. 
  
 % EXTERNAL AUDITORY REPRESENTATIONS OF PROGRAMS https://smartech.gatech.edu/bitstream/handle/1853/50854/Vickers2004a.pdf?sequence=1&
@@ -442,7 +440,7 @@ Their ambient audio software exploration approach exploited audio to describe th
 Thanks to the adoption of surround sound techniques, the observers perceived the origin of an audio source so it could adjust their navigation in the visualization.
 Each kind of entity played a different sound based on mapping criteria.
 
-\begin{figure}[H]
+\begin{figure}[ht]
 \centering
   \includegraphics[width=0.9\linewidth]{CocoViz.png} 
   \caption{CocoViz}

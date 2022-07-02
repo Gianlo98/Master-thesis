@@ -71,7 +71,7 @@ To summarize, these are the four main concepts of our model:
 
 \subsection*{Historical information retrival}
 To build the history of a repository, we need to extract the historical information from git.\\
-\bigbreak
+
 To understand better how we approached it, we have to explain how git internally represents the repository history. 
 Git works with the concept of branches; each branch can be seen as a different repository timeline.
 Usually, developers exploit branches to develop features on them and then merge the developed code in a branch that contains the stable codebase.
@@ -99,7 +99,7 @@ Git can recognize the following actions made on a file:
 
 From a commit, we could also extract additional information such as the name of the file being modified, the action made on a file, the number of lines added and removed, the path of the file before and after the changes, and many more.
 We used the commit's information to track all the paths of an entity. Therefore, we can update the entity path when it was renamed or moved to follow it during its lifecycle. \\
-\linebreak
+%\linebreak
 When we reconstruct the history of a repository, each FileHistory starts with a FileVersion representing an ADD action. Then, in the middle of the FileVersion set, we can find only three kinds of actions: MODIFY, RENAME, and MOVE. 
 During the lifecycle of a repository, sometimes, files are deleted; in this case, the last FileVersion held by a deleted FileHistory represents a DELETE action.
 \bigbreak
@@ -396,22 +396,30 @@ According to the mapping that we have presented so far, depicted in \autoref{fig
 
 
 
-\section{Auditive model}
-
-We supported our visualization approach with an auditive portrayal of ProjectVersions being displayed. The goal is to transmit information such as the number of version changes, additions, and deletions through audio notes. 
-
-We investigated several approaches to map evolutionary metrics to sound; as a result, our approach uses the following audio concepts:
+\section{Audititorial representation}
+\label{sec:audioApproach}
+Displaying lots of information on the screen might not be an efficient way to gather crucial information about the evolution of software. Our approach provides an auditorial representation of an AnimationFrame to support its understanding task. The goal is to transmit hidden information such as the number of files added or removed in an AnimationFrame through audio notes. 
+\bigbreak
+Music theory defines many concepts to study which aural phenomenons compose music. Examples are the Beats Per Minute (BPM), the pitch, or the note. We used them as a starting point to compose a sound for each AnimationFrame. In particular, in our approach, the following audio concepts are involved:
 \begin{itemize}
-	\item BPM: Beats Per Minute or tempo sets the rhythm of a song. 
+    \item Tempo: indicates the speed of a musical composition. It is measured in BPM and sets the rhythm of a song. 
+    \item Measure: a single unit of time featuring a specific number of beats. 
 	\item Note's pitch: the quality that makes it possible to judge sounds as "higher" and "lower" in a sense associated with musical melodies.
-	\item Synthesizer: a producer of audio signals. 
+	\item Amplitude: the size of the vibration of a note. It determines how loud a note is.
 \end{itemize}
-
-As we said, our visualization works over the concept of moments. We mapped each moment to a sound that is generated procedurally. 
-Each sound is composed of three different synthesizers. We used them to distinguish between the three pieces of information we want to provide: number of version changes, additions, and deletions. Moreover, the note reproduced by each synthesizer depends on the magnitude of the metric. For example, if we compose the sound of a moment with lots of additions, the note played by the synthesizer representing additions will be high. In contrast, a moment with few additions will be mapped to a note with a low pitch. Finally, the tempo depends on the number of changes in our approach. So a moment with lots of changes will sound more fierce than a moment with few changes. 
-
-
-
+\bigbreak
+As Vickerts \cite{Vickers2004} stated, an orchestral model is needed to enable engineers to distinguish between different activities on the code. Following this idea, we decided to compose an auditorial portrayal of an  AnimationFrame mapping metrics to distinguishable sounds. Many intrinsic metrics could be extracted from an AnimationFrame. We focused our attention only on metrics extracted from git data:
+\begin{itemize}
+    \item total number of commits
+    \item the number of files added/removed/modified/renamed or moved
+    \item total number of lines added/removed
+\end{itemize}
+This set can be easily extended depending on the goal of the melody. For example, we can create a new metric to play how many java files were added. The implementation must be done with a tool that provides synthesizers to create different sounds for each metric. A synthesizer is a component that generates audio signals. For example, a synthesizer can play the sound of a guitar, whereas another can play the sound of a piano. The idea is to allow the user to understand what is happening on the displayed AnimationFrame by recognizing the instrument through the sound. 
+\bigbreak
+We defined criteria on how notes should be played. The output of this approach is a piece of music representing a system's whole evolution. The evolution of a system was depicted as a sequence of AnimationFrames. Therefore, we decided to map a measure to each AnimationFrame. As a consequence, the total length of the evolution visualization depends upon the tempo and the size of a measure. 
+For example, if we display a view with 60 AnimationFrames, each one mapped to a measure long of four beats playing at 60 BPM, to visualize the view, we need four minutes ($240$ beats played at $60$ BPM). As well as notes, also the value of BPM depends upon a metric. Therefore, some visualizations might suffer from this approach because, with a high BPM value, the time between two AnimationFrames might not be sufficient. To overcome this issue, a fixed interval between such as one second two AnimationFraes can be set. Consequently, the same view of 60 AnimationFrames now needs one minute to be played. Within each second, for each chosen metric, we play sounds with an amplitude and a speed that depends upon the metric value. 
+\bigbreak
+To summarize, in our auditorial approach, we support the visualization of a project's view with a musical representation of each AnimationFraes. Metrics collected during the analysis are used in an orchestral composition to control the tempo, the note, and their amplitudes. An exemplary implementation should provide a wide range of synthesizers to play different sounds representing adopted metrics. We can choose to play one AnimationFrame every second or map it to a measure. 
 
 
 
