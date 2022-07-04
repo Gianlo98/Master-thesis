@@ -111,10 +111,10 @@ The first class that the model defines is \textbf{AnalysisWorkDescriptor}.
 As the name suggests, it is a holder of helpful information to instruct the analyzer on what it has to do. This information comprehends the project we have to run the analysis and the list of commits that must be analyzed. 
 The reason for this implementation choice is to allow multiple threads to run in parallel analyses without analyzing the same commit numerous times. 
 We described this approach in \autoref{s:partialHistoricalRepr}.
-\bigbreak
+
 
 Inside the core module we also have the \textbf{FileTypeManager} class. It is responsible for mapping a set of functions to compute evolutionary metrics. We implemented the metrics presented in \autoref{s:evolutionaryMetrics}. However, any external module could easily extend this set of functions. This choice allowed external components to increase the set of metrics computed in SYN. Therefore, the analysis can be customized to collect relevant metrics for a specific project. Once the function to extract a metric given a File is written, the developer must associate it with the corresponding FileType. For example, if in the future an engineer wants to write an  Object-Oriented (OO) metric, such as the number of parents, they can create a function to compute it and associate the function to the OO type.
-\bigbreak
+
 
 Finally, in our model, we also defined the \textbf{ProjectAnalysisResult} class. An analyzer must use it to return the results that it collected. In addition, this class made a distinction between partial and total analysis results, allowing it to be used with the partial history retrieval approach defined in \autoref{s:partialHistoricalRepr}. The fields declared in this class are:
 \begin{itemize}
@@ -197,64 +197,61 @@ In our initial implementation, we provided five different mapping strategies:
 
 \section{SYN CLI}
 SYN CLI is a command-line interface that allows developers to interact with SYN. It gives developers complete control over the system.
-\bigbreak
 \textbf{Analysis commands}
-\bigbreak
-
 \lstinline{syn analyze auto -p <project_id> -o <output_file> -t <thread_count>}\\
 \\
 This command is used to run an automatic analysis with SYN. 
 Given the project's id, the system automatically creates \texttt{thread\_count} thread workers (5 by default), runs the analysis in parallel, and joins the results in the output file. 
 Furthermore, this command ensures that each thread has a different git repository to work on. 
-\bigbreak
+
 
 \lstinline{syn analyze join -o <output_file> <...analysis_file>}\\
 \\
 This command is used to join analysis results into a single output file.
-\bigbreak
+
 \begin{lstlisting}
 syn analyze manual -p <project_id> -g <git_repo_path>
     -rc <first_commit> -lc <last_commit> -o <output_file>
 \end{lstlisting}
-\bigbreak
+
 This command is used to perform a manual analysis with SYN. This command lets the developer have the freedom to choose the repository path and both the first and the last commit of the analysis. 
 If the first commit is not specified, the analysis starts from the beginning of the history, and, in the same way, if the last commit is not specified, the study ends with the end of the history. 
-\bigbreak
+
 
 \begin{lstlisting}
 syn analyze prepare -p <project_id>  -g <git_repo_path> 
     -wn <workers_number> -of <output_folder>
 \end{lstlisting}
-\bigbreak
+
 This command is used to create a folder of workers to analyze a project.
 Based on the number of workers, the repository history is equally partitioned into chunks, each assigned to a worker. 
-\bigbreak
+
 
 \lstinline{syn analyze worker -p <project_id> -g <git_repo_path> -w <worker_file -o <output_file>}\\
 \\
 This command runs the analysis on a project given its worker file. 
 Furthermore, here the user can specify the git path because two analyzers cannot use it simultaneously, so it is up to the user to choose a free git repository. 
 
-\bigbreak
+
 \textbf{Prioject commands}
-\bigbreak
+
 
 \lstinline{syn project list}\\
 \\
 This command is used to print a list of available projects in the console.
 
-\bigbreak
+
 \lstinline{syn project create -n <project_name> -p <project_location>}\\
 \\
 This command is used to create a project given its name and its location. The location could be either a path or an URL. 
 
-\bigbreak
+
 \lstinline{syn project inspect -g <git_path> <project_id> <FileHistory_id>}\\
 \\
 This command is used to inspect all the FileVersions of the indicated FileHistory. Furthermore, if the git repository is provided, SYN performs a double check to ensure that all the FileVersions were spotted. \
 To do so, it exploits the output of the command "\lstinline{git log --full-history -- <FileHistory_path>}," keeping attention if the FileHistory's path was changed (git cannot do that).
 
-\bigbreak
+
 \lstinline{syn util csv <project_id> -o <output_file>}\\
 \\
 This command produces a CSV containing all the commit's tracked information of the selected project. 
@@ -265,7 +262,7 @@ This command produces a CSV containing all the commit's tracked information of t
 The SYN Analyzer module implements the analysis approach described in section \ref{s:EvolutionModel}.
 To walk through the git-tree, it uses a Java git adapter called JGit \footnote{\url{https://www.eclipse.org/jgit/}}. 
 To do so, we extended Git classes provided by the SYN Core module, and we created the \texttt{JGitProject}, \texttt{JGitCommit} and \texttt{JGitChange} classes. Their job is to call the JGit API and retrieve historical information. 
-\bigbreak
+
 
 To run the analysis, we need to obtain first an \texttt{AnalysisWorkDescriptor}. 
 In this module, we developed a class \texttt{JGitAnalysisWorkerDescriptorFactory} to partition the commit tree and obtain a set of workers. 
@@ -292,7 +289,7 @@ The analysis process of a single worker contemplates the following steps:
     \item once all the commits are analyzed, the analyzer returns all the discovered results within an \texttt{ProjectAnalysisResult} object. 
 \end{enumerate}
 
-\bigbreak
+
 We have to run the analysis in parallel if we want to analyze a large repository in an acceptable amount of time. Therefore, with large git repositories, we might need many workers. We have said that each worker produces a \texttt{ProjectAnalysisResult} that represents a partial history. To obtain the entire history of the repository, we have to join all these partial analysis results. 
 In SYN, each entity is identified by an id. 
 The order in which entities are created is essential because we visually sort entities based on their creation timestamp. 
@@ -382,40 +379,40 @@ GraphQL is a query language for APIs that allows clients to ask for exactly what
 This is an advantage compared to a REST API because, instead of always returning a predefined set of data, GraphQL only returns the needed information, making the communication more effective. 
 In GraphQL, endpoints are divided into queries and mutations. Queries are used to retrieve data, while modifications are used to create or alter data. 
 
-\bigbreak
+
 \textbf{Mutations}
 
 => \texttt{createProject(projectName: String!, projectLocation: String!): Project} 
 used to create and automatically analyze a new project.
 It takes as parameters the name of the project and its location (the path on the local machine or the URL) as a String. 
 
-\bigbreak
+
 \textbf{Queries}
 
 \texttt{projectList:  [PartialProjectInformation]!} \\ 
 is used to retrieve a list of projects. For performance reasons, with this query only the name and the id of a project can be retrieved. 
-\bigbreak
+
 \texttt{view(projectId: Int!, viewSpecification: ViewSpecificationInput!): View} \\
 returns a view of the project identified by the argument \texttt{projectId}, built following the directives specified in the \texttt{viewSpecification} object. 
 This query returns an object representing a view; thus, it has all the fields described in \autoref{s:view_impl}. 
-\bigbreak
+
 \texttt{partialView(projectId: Int!, viewSpecification: ViewSpecificationInput!, viewAnimationId: Int): View} \\
 returns a view with only the next 100 AnimationFrames starting from the one identified by \texttt{viewAnimationId}. 
 This endpoint was created to enable performance optimizations on clients. If the viewSpecification expected too many animations, the resulting view would be a bottleneck for the client.
 With this endpoint it can still retrieve the view, and then animation can be lazily loaded once they are effectively required. 
-\bigbreak
+
 \texttt{fileHistory(projectId: Int!, fileHistoryId: Int!): FileHistory} \\
 used to retrieve details of the FileHistory identified with \texttt{fileHistoryId} of the project identified with \texttt{projectId}.
-\bigbreak
+
 \texttt{projectVersions(projectId: Int!, projectVersionsId: [Int]!): [ProjectVersion]!} \\
 used to retrieve details of the ProjectVersion identified with \texttt{projectVersionsId} of the project identified with \texttt{projectId}.
-\bigbreak
+
 \texttt{groupingPreview(projectId: Int!, viewSpecification: ViewSpecificationInput!): Int} \\
 this endpoint is used to compute the number of AnimationFrames that are gonna be created with the given \texttt{viewSpecification}.
-\bigbreak
+
 \texttt{fileTypeCounter(projectId: Int!): [FileTypeCounter!]!} \\
 this endpoint returns a list that maps each FileType with the number of occurrences that it has in the project \texttt{projectId}.
-\bigbreak
+
 \texttt{fileTypeMetrics(projectId: Int!, fileTypeFilter: [String]): [FileTypeMetrics!]!} \\
 this endpoint returns a list that maps each FileType with a list of metrics available for it. Only the FileTypes specified in the \texttt{fileTypeFilter} list are considered. 
 
@@ -428,7 +425,7 @@ this endpoint returns a list that maps each FileType with a list of metrics avai
     \label{fig:ServertClientFlow}
 \end{figure}
 
-\bigbreak
+
 \autoref{fig:ServertClientFlow} explains how a View is retrieved through a GraphQL endpoint with a sequence diagram. Once the client, in this case, SYN Debugger, has specified a \texttt{viewSpecification}, it makes a POST request to the 
 \texttt{partialView} endpoint specifying the \texttt{projectId} requested, the \texttt{viewSpecification} and the \texttt{viewAnimationId} of the AnimationFrame needed. SYN server, in turn, makes the same request to the SYN Core module. A new View is created and retrieved from SYN Server; it is modified to include only the AnimationFrames requested from the client. When the partialView is computed, it is returned to the client. 
 
@@ -504,7 +501,7 @@ On each card user can customize:
 Furthermore, the user can also express their preferences to choose which mapper strategies SYN must use to compute the height of entities, which metric must be used by the mapper, and the maximum height of the entities. 
 The list of available metrics for the mapper comprises the metrics selected for each FileType.
 Consequently, the UI has a checkbox to specify whether FileHistories that do not have the selected metric should be rendered or not. 
-\bigbreak
+
 With all the settings available on this page, the user has complete control over how FileHistories are rendered. 
 There are a lot of possible combinations, each one with its purpose. For example, if we want a visualization that has a focus only on Java files, we can use the following settings:
 \begin{itemize}
@@ -564,7 +561,7 @@ Initially, it calls the partialView query provided by the SYN-Server module. Onc
 Since the partialView query returns only the first 100 AnimationFrames, to maximize the experience, a pre-fetcher mechanism was also implemented. 
 One-half of the retrieved AnimationFrames have been displayed; it lazily requests a new partialView containing all the following AnimationFrames of the currently displayed view. 
 In this way, the jump between a partialView and another is not subjected to network timing issues because the partial view was already prefetched. 
-\bigbreak
+
 
 The initial display of the view is represented in \autoref{fig:fileHistories}. The visualization settings of this view are:
 \begin{itemize}
@@ -608,15 +605,15 @@ It has:
     \label{fig:deletedshadow}
 \end{figure}
 
-\bigbreak
+
 SYN Debugger is a helpful tool to understand and debug the analysis process made with SYN. However, it has performance issues in rendering large systems. The main problem comes from the programming language chosen: Javascript. Since it runs on a web browser, it has limited resources available. Even though Javascript has APIs to support a high-performance rendering of 3D graphics \footnote{\url{https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API}}, we experienced a significant FPS drop rendering large systems. To overcome this limitation and prove the versatility of our approach, we rendered large systems with POV-Ray \footnote{\url{http://www.povray.org}}. POV-Ray is an open-source tool for creating high-quality three-dimensional graphics. It works with \texttt{pov} files containing instructions to specify how the image should be rendered. We developed an extension of SYN that, given a View, produces a \texttt{pov} file for each AnimationFrame, following the same approach adopted in SYN Debugger.  
 
 
 \section{Audio}
 SYN internally does not implement the auditorial approach presented in \autoref{sec:audioApproach}. It was implemented as an external part of the system because we decided to use an external tool to compose melodies: SonicPi. 
-\bigbreak
-SonicPi is a music creation tool, code-based, written in Ruby. Internally it defines a domain specific language to compose melodies procedurally. For example, the instructions \texttt{play 60} plays 60th note on the piano. Audio melodies are not played directly from SYN; we extract the values of the metrics that we are interested into from SYN and then we use these values directly into SonicPi. So, at the moment this system can be seen as an external service that uses SYN. However, SonicPi can be controlled through a protocol called Open Sounc Control (OSC), therefore, in the future it might be written as a module of SYN. 
-\bigbreak
+
+SonicPi is a music creation tool, code-based, written in Ruby. Internally it defines a domain-specific language to compose melodies procedurally. For example, the instructions \texttt{play 60} play 60th note on the piano. Audio melodies are not played directly from SYN; we extract the values of the metrics that we are interested in from SYN and then we use these values directly into SonicPi. So, at the moment this system can be seen as an external service that uses SYN. However, SonicPi can be controlled through a protocol called Open Sound Control (OSC), therefore, in the future, it might be written as a module of SYN. 
+
 Metrics are extracted from SYN through the GraphQL server. We used Python to make POST requests to it, elaborate the received data and use them as an input for SonicPi. We developed a SonicPi script that works with three metrics: the total number of commits, the number of files added and the number of files removed. They are received as an array of integer values. All of the arrays must have the same length which is equal to the number of AnimationFrames part of the project's view. We decided to dedicate for each AnimationFrame one secon; the sounds involved in our implementation are:
 \begin{itemize}
     \item Bass drums: to represent how many commits does an AnimationFrame holds. The value of this metric is scaled in an interval between 60 an 200, where 60 is the minimum number of commits of every AnimationFrames in that view and 200 is the maxium; it is set to the number of BPM for this sound. The amplitude is always at 1 (the maximum). As a result, AnimationFrames with higher number of commits for that view, are played with more bass drums than other with a lower number of commits.

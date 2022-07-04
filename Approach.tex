@@ -16,7 +16,7 @@ Internally git holds all the information that we need to reconstruct the history
 In this chapter, we present our approach for visualizing a software system using a visual and auditive depiction of the evolution of a system. 
 To fulfill this purpose, we have chosen to leverage the phenomenon of Synesthesia, the production of a sense impression relating to one sense by stimulation of another sense.
 Moreover, we also present how we reconstruct and model the history of a repository. 
-\bigbreak
+
 Our approach is composed of three parts: 
 \begin{itemize}
     \item in the first section, we model the evolution of a system; 
@@ -51,7 +51,8 @@ Initially, the Hismo model was based on three concepts:
     \item Version. An entity that adds the notion of time to a Snapshot by relating it to History. 
     \item History. An entity that holds a set of Versions.
 \end{itemize}
-\bigbreak
+
+
 Git does not have the concept of Snapshot, so we replaced it with a novel concept: FileVersion. 
 A FileVersion is essentially the version of a file at a particular point in time. 
 It has the same fashion as a Snapshot. Still, instead of being related to every version of the system, it is related only to the Versions where the file was effectively updated.
@@ -67,7 +68,6 @@ To summarize, these are the four main concepts of our model:
     \item \textbf{FileVersion}: represents the version of an entity at a particular point in time.
     It is responsible for holding all evolutionary information of an entity since it represents an evolutionary step of that entity. 
 \end{itemize}
-\bigbreak
 
 \subsection*{Historical information retrival}
 To build the history of a repository, we need to extract the historical information from git.\\
@@ -82,12 +82,12 @@ The root node represents the repository's first commit since it has no parents.
 All the other nodes instead represent the commits made during the whole lifecycle of the repository. 
 Each commit usually has only one parent, representing the previous commit made before that one.
 There is one case where a commit might have more than one parent: merges commits.
-\bigbreak
+
 Each repository should have a branch containing stable, production-ready code, as a convention. Usually, this branch is named "main" or "master". 
 In our approach, we aim to analyze the timeline of this stable branch. We start from the root of the commit tree, which represents the initial commit, and then we traverse the whole tree. 
 However, we don't consider "merge commits" during this process since they already incorporate commits previously made, and thus they would be considered twice. 
 Once we have extracted all the valid commits that reside on the stable branch, we need to take from them all the representative information that we need to represent a ProjetctVersion. \\
-\bigbreak
+
 Git can recognize the following actions made on a file:
 \begin{itemize}
     \item \textbf{ADD}. A file is added to the repository.
@@ -102,8 +102,6 @@ We used the commit's information to track all the paths of an entity. Therefore,
 %\linebreak
 When we reconstruct the history of a repository, each FileHistory starts with a FileVersion representing an ADD action. Then, in the middle of the FileVersion set, we can find only three kinds of actions: MODIFY, RENAME, and MOVE. 
 During the lifecycle of a repository, sometimes, files are deleted; in this case, the last FileVersion held by a deleted FileHistory represents a DELETE action.
-\bigbreak
-
 
 \begin{figure}
     \begin{center}
@@ -125,7 +123,7 @@ We did the same thing for ProjectVersion 2 and 3.
 
 \label{s:partialHistoricalRepr}
 \subsection*{Partial historical representation}
-One of our goals when we developed this approach was the possibility of analyzing a large repository in an acceptable amount of time. 
+One of our goals, when we developed this approach, was the possibility of analyzing a large repository in an acceptable amount of time. 
 In other words, our approach needs to be scalable.
 GitHub host the code of some notorious open-source systems, such as LibreOffice, Elastisearch, and Linux.
 They all have more than 500,000 commits in each, and thus, we cannot aim to reconstruct their histories with a single analyzer; it will take too much time.  
@@ -236,7 +234,7 @@ This concept was not present in the Evolution Matrix of Lanza because its model 
 \autoref{fig:evolutionMatrixApproach} depict the evolution of a repository with 14 files and 10 commits. In this figure we only show the structural evolution of a repository, without considering file's metrics as Lanza did. 
 Each row represents the history of a file; therefore, it is associated with a set of FileVersions represented by the squares inside each cell. Actions made on a file are labeled as: A for ADD, M for MODIFY, MV for MOVE, R for RENAME, and D for DELETE.
 As we can see, the first action made on each file is an ADD; moreover, some files end their history with a DELETE. It's essential to notice that \texttt{foo.java} and \texttt{foo/bar.java} are represented by the same FileHistory because they represent the same logical entity in the system. In fact, on commit 3 \texttt{foo.java} was moved into \texttt{foo/bar.java}. The same thing goes for \texttt{foo.java} and \texttt{foo/baz.java} represented by the seventh FileHistory.
-\bigbreak 
+
 Based on our aim, we can read this matrix as follows:
  \begin{itemize}
      \item \textbf{by rows}, if we are interested in the history of a particular entity of our system. 
@@ -263,24 +261,23 @@ In \autoref{fig:evolutionMatrixApproach}, the state of the system after COMMIT 1
 
 Software systems are hard to understand due to the complexity and the sheer size of the data to be analyzed.
 In our approach, we aim to make an interactive 3D representation to ease the comprehension task of the developer. 
-\bigbreak
 
-Not all pieces of knowledge cannot be extracted by a metric or by a non-interactive graph. This is normal because both of them are responsible for representing only one piece of information simultaneously. For example, if we look at the graph of a repository code frequency, we can never understand which file was modified; because we have only two dimensions: the time and the code. The main advantage of our approach is the possibility of having multiple sources of information simultaneously. Our 3D representation aims to make a system analysis easier for engineers by exploiting the human senses.
+Not all pieces of knowledge cannot be extracted by a metric or by a non-interactive graph. This is normal because both of them are responsible for representing only one piece of information simultaneously. For example, if we look at the graph of a repository code frequency, we can never understand which file was modified; because we have only two dimensions: the time and the code. The main advantage of our approach is the possibility of having multiple sources of information simultaneously. Our 3D representation aims to make system analysis easier for engineers by exploiting the human senses.
 To do that, we have chosen to leverage the phenomenon of \textbf{synesthesia}. The phenomenon of synesthesia occurs when stimulation of a sense or a cognitive pathway leads to the involuntary stimulation of another reason or a cognitive path. We experience synesthesia when two or more things are perceived as the same. 
 For example, synesthetic people might associate the red color with the letter D or the green color with the letter A. 
 There are many forms of synesthesia, each one representing a different type of perception, such as visual forms, auditory, tactile, etc.
-\bigbreak
+
 To visualize a project, we introduce the concept of \textbf{view}. We define a view as a way to illustrate the evolution of a project given a set of specifications. This set of specifications determines how the view must be built. For example, if we want to traverse the repository history by year, this information is part of the specification. A view holds a set of frames, called \textbf{AnimationFrame}, each representing the repository's whole state during a specific moment of its evolution. Therefore, the whole history of the repository is displayed by rendering these AnimationFrames consequently, like in a movie. 
-\bigbreak
+
 Each repository has a unique history. There are young repositories whose history is 1 year long and old repositories with more than 10 years of development activity. It is not guaranteed that the number of commits is proportional to the age of a repository. Many repositories are dead on GitHub whereas others might have a vast amount of contributors rising the total number of commits every day. Therefore, we cannot provide a static approach to traverse the history of a repository. 
 Every visualization has its own goal and its own way to traverse time. For this reason, we provide two visualization strategies to group commits into AnimationFrames. Both of them traverse the whole history from the beginning until the end.
 \begin{itemize}
     \item{Grouping by commits}: the user specifies a number of commits \texttt{n} and then one AnimationFrame is created every \texttt{n} commits. With this strategy, the concept of time is lost because we consider only the position of the commit in the commit tree. Therefore development phases cannot be identified. 
-    \item{Grouping by timestamp}: the user specifies a timestamp window \texttt{ts} and then one AnimationFrame is created every \texttt{ts} seconds. All the commits inside the time window are part of the AnimationFrame. Therefore, we might have empty AnimationFrames if on that time window were not made any commits. 
+    \item{Grouping by timestamp}: the user specifies a timestamp window \texttt{ts} and then one AnimationFrame is created every \texttt{ts} seconds. All the commits inside the time window are part of the AnimationFrame. Therefore, we might have empty AnimationFrames if in that time window were not made any commits. 
 \end{itemize}
 
 When an AnimationFrame is created, if multiple commits were made on a file, only the most recent one is considered. 
-\autoref{fig:TimeWindowExamples} shows an example of three different strategies applied over the same history. As we can notice, in \autoref{fig:TimeWindow1} we made an AnimationFrame every 3 commits; as a result, the notion of time is lost. With a commit grouping strategy, we can never have an empty AnimationFrame. With  \autoref{fig:TimeWindow2} and \autoref{fig:TimeWindow3} the thing is different. Here we have empty AnimationFrames, and with these examples, we highlight the importance of a well-designed time window. Each project has its length of history. Therefore, with this example, we can underline our need to leave to the user the choice of the time window length. To avoid the case of a view with too many AnimationFrames, younger repositories might have a daily time window. In contrast, it might be better to have weekly, monthly or yearly views for the older repository. 
+\autoref{fig:TimeWindowExamples} shows an example of three different strategies applied over the same history. As we can notice, in \autoref{fig:TimeWindow1} we made an AnimationFrame every 3 commits; as a result, the notion of time is lost. With a commit grouping strategy, we can never have an empty AnimationFrame. With  \autoref{fig:TimeWindow2} and \autoref{fig:TimeWindow3} the thing is different. Here we have empty AnimationFrames, and with these examples, we highlight the importance of a well-designed time window. Each project has its length of history. Therefore, with this example, we can underline our need to leave to the user the choice of the time window length. To avoid the case of a view with too many AnimationFrames, younger repositories might have a daily time window. In contrast, it might be better to have weekly, monthly, or yearly views for the older repository. 
 
 In any case, if we pick two repositories born at the same time, the number of AnimationFrames is always the same because it does not depends upon the number of commits made. 
 
@@ -302,7 +299,7 @@ In any case, if we pick two repositories born at the same time, the number of An
             \caption{Grouping every month.}
             \label{fig:TimeWindow3}
         \end{subfigure}
-        \caption[xample of three different grouping strategies]{Example of three different grouping strategies applied over a system whose history is 10 years long and it has 57 commits}
+        \caption[Example of three different grouping strategies]{Example of three different grouping strategies applied over a system whose history is 10 years long and it has 57 commits}
         \label{fig:TimeWindowExamples}
     \end{center}
 \end{figure}
@@ -310,19 +307,19 @@ In any case, if we pick two repositories born at the same time, the number of An
 
 
 To represent the system's state, an AnimationFrame holds a set of \textbf{ViewFigure}, each representing a file part of the system.
-\bigbreak
+
 A ViewFigure holds a set of properties used by the render process to draw a glyph representing a file. They represent abstract concepts; therefore, being understood by any 3D engine, anyone can reproduce our visualization approach. 
 
 \subsection*{Layout}
 Many tools have been proposed in the literature to depict the evolution of software with different layout strategies. 
 One of the most famous approaches is the city metaphor \cite{Wettel2007}, presented by Lanza, where the file's position depends upon the package that holds it. 
 Nonetheless, it works very well with small and medium systems; the interactivity and navigability can be substantially slowed down with large systems.
-\bigbreak
+
 Therefore, our visualization strategy's main goals are scalability and incrementality. The visualization needs to scale, even with a very large repository, and it must visualize the system's evolution incrementally. Therefore, the user can immediately distinguish older entities from newer ones.
-\bigbreak
+
 Under those circumstances, we adopted a spiral layout with an outward direction. Older entities are positioned at the center of this spiral, whereas newer entities are always close to borders. 
 \autoref{fig:layout} shows an example of how ViewFigure is laid out with an outward spiral layout.
-\bigbreak
+
 Hence, each ViewFigure has a \textit{position} to describe its position inside the 3D environment. 
 
 \begin{figure}
@@ -336,7 +333,7 @@ Hence, each ViewFigure has a \textit{position} to describe its position inside t
 
 As we said, synesthesia occurs when we experience an involuntary stimulation of a cognitive path during the stimulation of another sense. Here we present how we used color to trigger the action made on a file automatically and how much time has passed since the action was made. 
 As a result, we decided to map each git action with a color. \autoref{fig:ColorAssociation} shows how we mapped them in our approach. However, since each person has their own perception and way to reason, this mapping must be customizable by the user. Consequently, another property that a ViewFigure holds is \textit{color}.
-\bigbreak
+
 In addition to the color, each ViewFigure has another property: the \textit{age}. We define the age of a file as the amount of time elapsed between the last action made on a file. Also there we defined two strategies to compute the age of an entity:
 
 \begin{itemize}
@@ -345,10 +342,10 @@ In addition to the color, each ViewFigure has another property: the \textit{age}
 \end{itemize}
 
 When an action is made on a file its age is set to zero. 
-\bigbreak
+
 The user also specifies the maximum age. When it is reached the color of the entity must be equal to the \texttt{base color}, chosen by the user. 
 We initially set the base color equal to grey. \autoref{fig:Aging} shows how aging works with a file whose last action was an ADD and the maximum age is 10. 
-\bigbreak
+
 All the files shared the same criteria to compute the age. The main purpose of the aging is to immediately distinguish files modified recently from files modified in past AnimationFrames.
 
 \begin{figure}
@@ -370,15 +367,15 @@ All the files shared the same criteria to compute the age. The main purpose of t
 
 \subsection*{Shape and opacity}
 To easily distinguish the type of the files, we added two properties to a ViewFigure: \textit{shape} and \textit{opacity}. 
-In this way, the user can immediately understand the file type by looking at its shape. How FileTpes should be mapped to shapes must be part of the view specification because each engine works with different components. 
-\bigbreak
+In this way, the user can immediately understand the file type by looking at its shape. How FileTypes should be mapped to shapes must be part of the view specification because each engine works with different components. 
+
 Moreover, we added the opacity to allow the highlight of a FileType over the others. 
 
 \subsection*{Height}
 The last information that we want to represent is the value of a metric. Since SYN has an extensible set of metrics, we decided to give the user the freedom to decide which metric should be used to represent the height of a file and how this height must be computed. 
 To do that, we defined a mapper: a function that takes as input a metric and returns a double representing the ViewFigure height. The metric used by this mapper is the metric obtained from each file during the analysis. The set of mapper functions is extensible by the user. \bigbreak
 This information is given to the render process through the \textit{height} property of a ViewFigure.
-\bigbreak
+
 According to the mapping that we have presented so far, depicted in \autoref{fig:ApproachMapping}, the creation date of a file is mapped to the position of a ViewFigure, and the last action made on a file determines the color and the age of an entity, a chosen metric is used to compute the rendered height of the ViewFigure and finally, the type of the file is used to establish its shape and opacity. 
 
 % \begin{itemize}
@@ -390,7 +387,7 @@ According to the mapping that we have presented so far, depicted in \autoref{fig
 \begin{figure}
     \center
     \includegraphics[width=\textwidth]{ApproachMapping.jpg}
-    \caption{How properies are mapped in our approach}
+    \caption{How properties are mapped in our approach}
     \label{fig:ApproachMapping}
 \end{figure}
 
@@ -399,7 +396,7 @@ According to the mapping that we have presented so far, depicted in \autoref{fig
 \section{Evolution Auralization}
 \label{sec:audioApproach}
 Displaying lots of information on the screen might not be an efficient way to gather crucial information about the evolution of software. Our approach provides an auditorial representation of an AnimationFrame to support its understanding task. The goal is to transmit hidden information such as the number of files added or removed in an AnimationFrame through audio notes. 
-\bigbreak
+
 Music theory defines many concepts to study which aural phenomenons compose music. Examples are the Beats Per Minute (BPM), the pitch, or the note. We used them as a starting point to compose a sound for each AnimationFrame. In particular, in our approach, the following audio concepts are involved:
 \begin{itemize}
     \item Tempo: indicates the speed of a musical composition. It is measured in BPM and sets the rhythm of a song. 
@@ -407,7 +404,7 @@ Music theory defines many concepts to study which aural phenomenons compose musi
 	\item Note's pitch: the quality that makes it possible to judge sounds as "higher" and "lower" in a sense associated with musical melodies.
 	\item Amplitude: the size of the vibration of a note. It determines how loud a note is.
 \end{itemize}
-\bigbreak
+
 As Vickerts \cite{Vickers2004} stated, an orchestral model is needed to enable engineers to distinguish between different activities on the code. Following this idea, we decided to compose an auditorial portrayal of an  AnimationFrame mapping metrics to distinguishable sounds. Many intrinsic metrics could be extracted from an AnimationFrame. We focused our attention only on metrics extracted from git data:
 \begin{itemize}
     \item total number of commits
@@ -415,11 +412,11 @@ As Vickerts \cite{Vickers2004} stated, an orchestral model is needed to enable e
     \item total number of lines added/removed
 \end{itemize}
 This set can be easily extended depending on the goal of the melody. For example, we can create a new metric to play how many java files were added. The implementation must be done with a tool that provides synthesizers to create different sounds for each metric. A synthesizer is a component that generates audio signals. For example, a synthesizer can play the sound of a guitar, whereas another can play the sound of a piano. The idea is to allow the user to understand what is happening on the displayed AnimationFrame by recognizing the instrument through the sound. 
-\bigbreak
+
 We defined criteria on how notes should be played. The output of this approach is a piece of music representing a system's whole evolution. The evolution of a system was depicted as a sequence of AnimationFrames. Therefore, we decided to map a measure to each AnimationFrame. As a consequence, the total length of the evolution visualization depends upon the tempo and the size of a measure. 
-For example, if we display a view with 60 AnimationFrames, each one mapped to a measure long of four beats playing at 60 BPM, to visualize the view, we need four minutes ($240$ beats played at $60$ BPM). As well as notes, also the value of BPM depends upon a metric. Therefore, some visualizations might suffer from this approach because, with a high BPM value, the time between two AnimationFrames might not be sufficient. To overcome this issue, a fixed interval between such as one second two AnimationFraes can be set. Consequently, the same view of 60 AnimationFrames now needs one minute to be played. Within each second, for each chosen metric, we play sounds with an amplitude and a speed that depends upon the metric value. 
-\bigbreak
-To summarize, in our auditorial approach, we support the visualization of a project's view with a musical representation of each AnimationFraes. Metrics collected during the analysis are used in an orchestral composition to control the tempo, the note, and their amplitudes. An exemplary implementation should provide a wide range of synthesizers to play different sounds representing adopted metrics. We can choose to play one AnimationFrame every second or map it to a measure. 
+For example, if we display a view with 60 AnimationFrames, each one mapped to a measure long of four beats playing at 60 BPM, to visualize the view, we need four minutes ($240$ beats played at $60$ BPM). As well as notes, also the value of BPM depends upon a metric. Therefore, some visualizations might suffer from this approach because, with a high BPM value, the time between two AnimationFrames might not be sufficient. To overcome this issue, a fixed interval between such as one second or two AnimationFrames can be set. Consequently, the same view of 60 AnimationFrames now needs one minute to be played. Within each second, for each chosen metric, we play sounds with an amplitude and a speed that depends upon the metric value. 
+
+To summarize, in our auditorial approach, we support the visualization of a project's view with a musical representation of each AnimationFrames. Metrics collected during the analysis are used in an orchestral composition to control the tempo, the note, and the amplitude. An exemplary implementation should provide a wide range of synthesizers to play different sounds representing adopted metrics. We can choose to play one AnimationFrame every second or map it to a measure. 
 
 
 
