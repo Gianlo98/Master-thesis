@@ -130,14 +130,14 @@ This section analyzes JetUML, an open-source desktop application to work with UM
         \caption{Commit that involved numerous entities} \label{fig:JetUML_V0E1}
     \end{subfigure}
     \caption{Comparison of commits with a low and an high activity} 
-    \label{fig:JetUML_V0E0}
+    \label{fig:JetUML_V0E}
 \end{figure}
 
 \textbf{Goal of this visualization} Visualize the entire repository commit by commit to see how the repository evolved and understand commits with high activity. 
 To highlight them, we use a one-commit aging strategy, maximum age of two. In other words, files modified by the displayed commit have an age of zero, whereas others have an age of one.
 Consequently, all the files not included in the depicted commit are painted with the base color (gray by default). 
 
-Figure \ref{fig:JetUML_V0E0} shows the graphical difference between commits that modified a few entities and commits that changed numerous entities. To identify highly active commits, we focused on commits that involved a considerable amount of files part of the repository at that time.
+Figure \ref{fig:JetUML_V0E} shows the graphical difference between commits that modified a few entities and commits that changed numerous entities. To identify highly active commits, we focused on commits that involved a considerable amount of files part of the repository at that time.
 
 The view specification of this visualization is the following
 \begin{itemize}
@@ -405,7 +405,7 @@ We packed in a video the visualization that we presented with auditive support. 
     \label{fig:JetUML_V3}
 \end{figure}
 
-\begin{figure}[h!]    \ContinuedFloat
+\begin{figure}[ht]    \ContinuedFloat
     \begin{subfigure}{0.48\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V3S5.png}
         \caption{Year 5} 
@@ -430,7 +430,7 @@ We packed in a video the visualization that we presented with auditive support. 
     \end{subfigure}
     
     \caption{Evolution of JetUML} 
-    \label{fig:JetUML_V3}
+    \label{fig:JetUML_V3_F1}
 \end{figure}
 
 % -------------------------------------------
@@ -478,7 +478,7 @@ Here we present only the relevant aspects of the ArgoUML evolution that we have 
 
 \bigbreak
 \textbf{Conclusion}
-Thanks to this analysis, we have understood the composition of JetUML and at which speed it grew. Thanks to the spiral layout, where entities are added based on their timestamp, we can understand that many older files were removed in the final version. They had to be rewritten elsewhere because the system would have fewer features than before. Moreover, thanks to the aging strategy, we have understood that there was much dead time during the development lifecycle of the repository. Nonetheless, some of them are not shown in \autoref{fig:JetUML_V3}, they can be found in \autoref{app:ArgoUML_Evolution}. The system became almost dead in 2014; since that year, most of the files were never updated. 
+Thanks to this analysis, we have understood the composition of JetUML and at which speed it grew. Thanks to the spiral layout, where entities are added based on their timestamp, we can understand that many older files were removed in the final version. They had to be rewritten elsewhere because the system would have fewer features than before. Moreover, thanks to the aging strategy, we have understood that there was much dead time during the development lifecycle of the repository. Nonetheless, some of them are not shown in \autoref{fig:ArgoUML_V3}, they can be found in \autoref{app:ArgoUML_Evolution}. The system became almost dead in 2014; since that year, most of the files were never updated. 
 
 
 
@@ -517,7 +517,7 @@ Thanks to this analysis, we have understood the composition of JetUML and at whi
     \end{subfigure}
     
     \caption{Hot spots during the evolution of ArgoUML} 
-    \label{fig:JetUML_V3}
+    \label{fig:ArgoUML_V3}
 \end{figure}
 \clearpage
 % -------------------------------------------
@@ -585,7 +585,7 @@ Here we present only the relevant aspects of the ArgoUML evolution that we have 
     \begin{subfigure}{0.48\textwidth}
         \includegraphics[width=\linewidth]{Elasticsearch/Animation009.png}
         \caption{Elasticsearch in June 2022 (9 year)} 
-        \label{fig:Elastic_V5_V3S6}
+        \label{fig:Elastic_V5_S6}
     \end{subfigure}
     
     \caption{Hot spots during the evolution of Elasticsearch} 
@@ -750,7 +750,7 @@ We packed in a video the visualization that we presented with auditive support. 
 \clearpage
 To give to the reader an idea about the size of those systems, we took the last AnimationFrame of each project analyzed and we put them in \autoref{fig:SizeComparison}. Even though Linux was initially bigger than Libreoffice, the latter grew sharply in the last year, overtaking the biggest repository on GitHub. Furthermore, from this picture, we can appreciate the different development paths that each system took. For example, ArgoUML is the only repository that removed all the old files. In contrast, Elasticsearch seems to heavily rely on its core. As we can see it is really dense and in addition we saw during its evolution that it was updated frequently. Of course, we have to keep in mind that these two projects have a completely different histories. If on one hand, ArgoUML has commits dated 1998, on the other hand, the first commit of Elasticsearch was made in 2013. Equally important is the state of Linux and LibreOffice, both of them started to move some files from the core to the edges. However, both work with files older than 17 years. 
 
-\begin{figure}[h!]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\linewidth]{SizeComparison.png}
     \caption{Size in June 2022 of analyzed projects.} 
