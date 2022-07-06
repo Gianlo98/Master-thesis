@@ -1,4 +1,95 @@
-ht\chapter{Evolution of ArgoUML}
+
+\chapter{Sonic Pi for system's evolution auralization}
+\label{app:SonicPiLinux}
+
+\begin{lstlisting}[language=Ruby]
+commits = [4776, 4883, 7710, 6996, 6, ..., 2]
+additions = [18046, 867, 1032, 696, 794, ..., 0]
+deletions = [148, 269, 310, 238, 170, ..., 0]
+
+moments = commits.length
+print("moments", moments)
+
+bpm_min = 60
+bpm_max = 200
+
+bpm = 60
+
+commit_min = commits.min
+commit_max = commits.max
+
+add_min = additions.min
+add_max = additions.max
+
+del_min = deletions.min
+del_max = deletions.max
+
+measure = 60.0 / bpm
+
+tick_reset(:my_tick)
+
+#######################################
+### Auxiliary functions ###############
+#######################################
+define :rescale do | value, min, max, newMin, newMax |
+  result = (value - min + 0.0) / (max - min + 0.0) * (newMax - newMin + 0.0) + newMin
+  return result
+end
+
+#######################################
+### Continuously play the beat ########
+#######################################
+in_thread do
+  loop do
+    sample :bd_sone, amp: 1
+    sleep 60.0 / bpm
+    ##| sleep measure
+  end
+end
+
+in_thread do
+  moments.times do
+    
+    index = tick(:my_tick)
+    
+    ########################################################
+    ### Update the BPM with the current value of commits ###
+    ########################################################
+    bpm = rescale commits[index], commit_min, commit_max, bpm_min, bpm_max
+    ##| measure = 60.0 / bpm
+    
+    #######################################
+    ### Play additions ####################
+    #######################################
+    addTempo = rescale additions[index], add_min, add_max, 1, 8
+    addAmp = rescale additions[index], add_min, add_max, 0.2, 0.85
+    in_thread do
+      addTempo.times do
+        sample :elec_blip2, amp: addAmp
+        sleep measure / 8
+      end
+    end
+    
+    #######################################
+    ### Play deletions ####################
+    #######################################
+    delTempo = rescale deletions[index], del_min, del_max, 1, 4
+    delAmp = rescale deletions[index], del_min, del_max, 0.1, 0.8
+    in_thread do
+      delTempo.times do
+        ##| sample :perc_swash, amp: delAmp
+        sample :bass_trance_c, amp: delAmp
+        sleep measure / 4
+      end
+    end
+    sleep measure
+  end
+end
+\end{lstlisting}
+
+
+
+\chapter{Evolution of ArgoUML}
 \label{app:ArgoUML_Evolution}
 \graphicspath{ {images/casestudies} }
 

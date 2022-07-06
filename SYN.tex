@@ -17,6 +17,14 @@
 \usepackage{graphicx}
 \usepackage{csquotes}
 
+\def\sectionautorefname{Section}
+\def\subsectionautorefname{Subsection}
+
+\usepackage{tikz}
+
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)] 
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
 
 \lstdefinelanguage{algebra}
 {morekeywords={import,sort,constructors,observers,transformers,axioms,if,
@@ -26,6 +34,11 @@ morecomment=[l]{//s},
 }
 
 \newcommand{\quotes}[1]{``#1''}
+
+\usepackage{listings}
+\lstloadlanguages{Ruby}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%	MARGIN SETTINGS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

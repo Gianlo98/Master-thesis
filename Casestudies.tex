@@ -64,21 +64,21 @@
 \chapter[Case studies]{Case studies}
 \graphicspath{ {images/casestudies} }
 
-This chapter presents an actual case use scenario of SYN applied to open-source software systems. 
-We use SYN to analyze the evolution of JetUML, the test project on which we relied during the development phase of the platform, ArgoUML, Elasticsearch, and Linux. 
+This chapter presents case studies of SYN applied to open-source software systems. 
+We analyze the evolution of JetUML, ArgoUML, Elasticsearch, LibreOffice, and Linux. 
 \autoref{tab:casestudies} describes the characteristics of these systems.
 
 \begin{table}[ht]
     \centering
-    \begin{tabular}{lcrr} 
+    \begin{tabular}{lcrrr} 
         \hline
-        {\bf Name} & {\bf First Analyzed Commit} & {\bf Last Analyzed Commit} & {\bf \# of commits}\\ 
+        {\bf Name} & {\bf First Analyzed Commit} & {\bf Last Analyzed Commit} & {\bf \# of commits} & {\bf \# of files}\\ 
         \hline
-        JetUML & 07 Jan 2015 & 12 May 2022 & 2'152 \\ 
-        ArgoUML & 26 Jan 1998 & 29 May 2021 & 16'672  \\
-        Elasticsearch & 28 Jun 2013 & 14 Apr 2022 & 34'842  \\
-        Libreoffice & 07 Mar 2002 & 18 Jun 2022 & 367'996  \\
-        Linux & 17 Apr 2005 & 19 Apr 2022 & 997'486  
+        JetUML & 07 Jan 2015 & 12 May 2022 & 2,152 & 795\\ 
+        ArgoUML & 26 Jan 1998 & 29 May 2021 & 16,672 & 11,129 \\
+        Elasticsearch & 28 Jun 2013 & 14 Apr 2022 & 34,842 & 41,043 \\
+        LibreOffice & 07 Mar 2002 & 18 Jun 2022 & 367,996 & 213,791 \\
+        Linux & 17 Apr 2005 & 19 Apr 2022 & 997,486 & 109,829
     \end{tabular}
     \caption{List of analyzed projects}
     \label{tab:casestudies}
@@ -86,19 +86,18 @@ We use SYN to analyze the evolution of JetUML, the test project on which we reli
 
 
 There are many possible combinations to create a view specification; we explored them on all the projects. 
-Each visualization has its purpose. For example, we can create a visualization to see the evolution of only Java files, or we can create a visualization to see how the system evolved every day. 
-However, not all the combinations might have sense. For example, if we chose a timestamp grouping strategy, the time window must be chosen conscientiously. 
-A comprehensive time window might hide some exciting aspects of the analysis. In contrast, a short time window could cause a massive number of AnimationFrames, undermining the understandability of the view. 
+Each visualization has its purpose. For example, we can create a visualization to see the evolution of only Java files or to see how the system evolved every day. 
+However, not all the combinations might have sense. For example, if we chose a timestamp grouping strategy, a comprehensive time window might hide some exciting aspects of the analysis. In contrast, a short time window could cause a massive number of AnimationFrames, undermining the understandability of the view. 
 
 A constant factor of all our visualization is the choice not to show deleted entities, the adoption of a LinearBucketValueStrategy for the mapper with a maximum height of 20, and finally, to display files that do not have the selected metric on the visualization. 
-These properties are set as follow:
+These properties are set as follows:
 \begin{itemize}
     \item \texttt{showUnmappedEntities}: true.
     \item \texttt{mapperStrategy}: LinearBucketValueStrategy.
     \item \texttt{mapperStrategyOptions}: max height of 20.
     \item \texttt{showDeletedEntities}: false.
 \end{itemize}
-We made this choice because, during the development process, we have seen that the LinearBucketValueStrategy works better than other strategies. Of course, it needs a maximum height because otherwise, the gap between entities is too broad. Therefore set this value to 20. Moreover, we believe that hiding the deleted entities is the most intuitive thing for the user. On the other hand, hiding the unmapped entities might be misleading in some visualization. For this reason, we preferred to keep them. 
+We made this choice because, during the development process, we have seen that the \texttt{LinearBucketValueStrategy} works better than other strategies. Of course, it needs a maximum height because otherwise, the gap between entities is too broad. Therefore we set this value to 20. Moreover, we believe that hiding the deleted entities is more intuitive for the user. On the other hand, hiding the unmapped entities might be misleading in some visualizations, because the user might think that these entities were deleted. For this reason, we preferred to keep them. 
 
 
 % -------------------------------------------
@@ -116,7 +115,7 @@ We made this choice because, during the development process, we have seen that t
 % ------------------------------------------- 
 
 \section{JetUML 1}
-This section analyzes JetUML, an open-source desktop application to work with UML diagrams. It is hosted on GitHub at the following address \url{https://github.com/prmr/JetUML}. Data collected in our analysis shows that the repository's history starts on the 07 Jan 2015 and ends 2'013 commits later on the 12 May 2022. The system's lifetime is over seven years of activity; within this range, we detected 795 FileHistories and more than 10K FileVersions.
+This section analyzes JetUML, an open-source desktop application to work with UML diagrams. It is hosted on GitHub \footnote{\url{https://github.com/prmr/JetUML}}. Data collected in our analysis shows that the repository's history starts on January 7, 2015, and ends 2'013 commits later on May 12, 2022. The system's lifetime is over seven years of activity. We detected 795 FileHistories and 10K FileVersions throughout these years.
 
 %\subsection{View 1}
 \begin{figure}[t]
@@ -133,13 +132,13 @@ This section analyzes JetUML, an open-source desktop application to work with UM
     \label{fig:JetUML_V0E}
 \end{figure}
 
-\textbf{Goal of this visualization} Visualize the entire repository commit by commit to see how the repository evolved and understand commits with high activity. 
-To highlight them, we use a one-commit aging strategy, maximum age of two. In other words, files modified by the displayed commit have an age of zero, whereas others have an age of one.
-Consequently, all the files not included in the depicted commit are painted with the base color (gray by default). 
+\textbf{Visualization goal} Visualize the entire repository commit by commit to see how the repository evolved and understand commits with high activity. 
+To highlight them, we use a one-commit aging strategy, maximum age of two. In other words, files modified by the displayed commit have an age equal to zero, whereas others have an age equal to one.
+Consequently, all the files excluded in the depicted commit are painted with the base color (gray by default). 
 
-Figure \ref{fig:JetUML_V0E} shows the graphical difference between commits that modified a few entities and commits that changed numerous entities. To identify highly active commits, we focused on commits that involved a considerable amount of files part of the repository at that time.
+Figure \ref{fig:JetUML_V0E} shows the graphical difference between a commit that modified only a few entities, and another that changed numerous entities. To identify highly active commits, we focused on commits that involved a considerable percentage of files.
 
-The view specification of this visualization is the following
+The view specification of this visualization is the following:
 \begin{itemize}
     \item \texttt{versionGroupingStrategy}: commit.
     \item \texttt{versionGroupingChunkSize}: 1. 
