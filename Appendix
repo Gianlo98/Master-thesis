@@ -43,7 +43,6 @@ in_thread do
   loop do
     sample :bd_sone, amp: 1
     sleep 60.0 / bpm
-    ##| sleep measure
   end
 end
 
@@ -56,7 +55,6 @@ in_thread do
     ### Update the BPM with the current value of commits ###
     ########################################################
     bpm = rescale commits[index], commit_min, commit_max, bpm_min, bpm_max
-    ##| measure = 60.0 / bpm
     
     #######################################
     ### Play additions ####################
@@ -77,7 +75,6 @@ in_thread do
     delAmp = rescale deletions[index], del_min, del_max, 0.1, 0.8
     in_thread do
       delTempo.times do
-        ##| sample :perc_swash, amp: delAmp
         sample :bass_trance_c, amp: delAmp
         sleep measure / 4
       end
@@ -96,145 +93,145 @@ end
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation001.png}
-    \caption{ArgoUML in Jenuary 1999} 
+    \caption{ArgoUML in January 1999} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation002.png}
-    \caption{ArgoUML in Jenuary 2000} 
+    \caption{ArgoUML in January 2000} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation003.png}
-    \caption{ArgoUML in Jenuary 2001} 
+    \caption{ArgoUML in January 2001} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation004.png}
-    \caption{ArgoUML in Jenuary 2002} 
+    \caption{ArgoUML in January 2002} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation005.png}
-    \caption{ArgoUML in Jenuary 2003} 
+    \caption{ArgoUML in January 2003} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation006.png}
-    \caption{ArgoUML in Jenuary 2004} 
+    \caption{ArgoUML in January 2004} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation007.png}
-    \caption{ArgoUML in Jenuary 2005} 
+    \caption{ArgoUML in January 2005} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation008.png}
-    \caption{ArgoUML in Jenuary 2006} 
+    \caption{ArgoUML in January 2006} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation009.png}
-    \caption{ArgoUML in Jenuary 2007} 
+    \caption{ArgoUML in January 2007} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation010.png}
-    \caption{ArgoUML in Jenuary 2008} 
+    \caption{ArgoUML in January 2008} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation011.png}
-    \caption{ArgoUML in Jenuary 2009} 
+    \caption{ArgoUML in January 2009} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation012.png}
-    \caption{ArgoUML in Jenuary 2010} 
+    \caption{ArgoUML in January 2010} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation013.png}
-    \caption{ArgoUML in Jenuary 2011} 
+    \caption{ArgoUML in January 2011} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation014.png}
-    \caption{ArgoUML in Jenuary 2012} 
+    \caption{ArgoUML in January 2012} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation015.png}
-    \caption{ArgoUML in Jenuary 2013} 
+    \caption{ArgoUML in January 2013} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation016.png}
-    \caption{ArgoUML in Jenuary 2014} 
+    \caption{ArgoUML in January 2014} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation017.png}
-    \caption{ArgoUML in Jenuary 2015} 
+    \caption{ArgoUML in January 2015} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation018.png}
-    \caption{ArgoUML in Jenuary 2016} 
+    \caption{ArgoUML in January 2016} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation019.png}
-    \caption{ArgoUML in Jenuary 2017} 
+    \caption{ArgoUML in January 2017} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation020.png}
-    \caption{ArgoUML in Jenuary 2018} 
+    \caption{ArgoUML in January 2018} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation021.png}
-    \caption{ArgoUML in Jenuary 2019} 
+    \caption{ArgoUML in January 2019} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation022.png}
-    \caption{ArgoUML in Jenuary 2020} 
+    \caption{ArgoUML in January 2020} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation023.png}
-    \caption{ArgoUML in Jenuary 2021} 
+    \caption{ArgoUML in January 2021} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         ArgoUML/Animation024.png}
-    \caption{ArgoUML in Jenuary 2022} 
+    \caption{ArgoUML in January 2022} 
 \end{figure}
 
 \chapter{Evolution of Elasticsearch}
@@ -298,133 +295,133 @@ end
 
 
 
-\chapter{Evolution of Libreoffice}
+\chapter{Evolution of LibreOffice}
 \label{app:Libre_Evolution}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation001.png}
-    \caption{Libreoffice in March 2003} 
+    \caption{LibreOffice in March 2003} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation002.png}
-    \caption{Libreoffice in March 2004} 
+    \caption{LibreOffice in March 2004} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation003.png}
-    \caption{Libreoffice in March 2005} 
+    \caption{LibreOffice in March 2005} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation004.png}
-    \caption{Libreoffice in March 2006} 
+    \caption{LibreOffice in March 2006} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation005.png}
-    \caption{Libreoffice in March 2007} 
+    \caption{LibreOffice in March 2007} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation006.png}
-    \caption{Libreoffice in March 2008} 
+    \caption{LibreOffice in March 2008} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation007.png}
-    \caption{Libreoffice in March 2009} 
+    \caption{LibreOffice in March 2009} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation008.png}
-    \caption{Libreoffice in March 2010} 
+    \caption{LibreOffice in March 2010} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation009.png}
-    \caption{Libreoffice in March 2011} 
+    \caption{LibreOffice in March 2011} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation010.png}
-    \caption{Libreoffice in March 2012} 
+    \caption{LibreOffice in March 2012} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation011.png}
-    \caption{Libreoffice in March 2013} 
+    \caption{LibreOffice in March 2013} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation012.png}
-    \caption{Libreoffice in March 2014} 
+    \caption{LibreOffice in March 2014} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation013.png}
-    \caption{Libreoffice in March 2015} 
+    \caption{LibreOffice in March 2015} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation014.png}
-    \caption{Libreoffice in March 2016} 
+    \caption{LibreOffice in March 2016} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation015.png}
-    \caption{Libreoffice in March 2017} 
+    \caption{LibreOffice in March 2017} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation016.png}
-    \caption{Libreoffice in March 2018} 
+    \caption{LibreOffice in March 2018} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation017.png}
-    \caption{Libreoffice in March 2019} 
+    \caption{LibreOffice in March 2019} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation018.png}
-    \caption{Libreoffice in March 2020} 
+    \caption{LibreOffice in March 2020} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation019.png}
-    \caption{Libreoffice in March 2021} 
+    \caption{LibreOffice in March 2021} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation020.png}
-    \caption{Libreoffice in March 2022} 
+    \caption{LibreOffice in March 2022} 
 \end{figure}
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{
         Libreoffice/Animation021.png}
-    \caption{Libreoffice in June 2022} 
+    \caption{LibreOffice in June 2022} 
 \end{figure}
 
 

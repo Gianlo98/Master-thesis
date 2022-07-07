@@ -40,7 +40,7 @@ The debugger holds the GUI of SYN to represent a view graphically. Information i
     \label{fig:architecture}
 \end{figure}
 
-Having reached a low coupling between modules, the extensibility of SYN is preserved. Modules such as SYN Server or SYN Analyzer implementation could be changed without altering the codebase of other modules. 
+Having reached a low coupling between modules, the extensibility of SYN is preserved. Modules such as SYN Server or Analyzer implementation could be changed without altering the codebase of other modules. 
 
 \section{Core}
 SYN Core is the module that holds all the entities introduced in \autoref{s:EvolutionModel}. 
@@ -241,9 +241,9 @@ To do so, it exploits the output of the command \lstinline{git log --full-histor
 This command produces a CSV containing all the commits' tracked information of the selected project. 
 
 
-\section{SYN Analyzer}
+\section{Analyzer}
 \label{sec:SYNAnalyzer}
-The SYN Analyzer module implements the analysis approach described in \autoref{s:EvolutionModel}.
+The Analyzer module implements the analysis approach described in \autoref{s:EvolutionModel}.
 To walk through the git-tree, it uses a Java git adapter called JGit.\footnote{\url{https://www.eclipse.org/jgit/}} 
 We extended the Git classes provided by the Core module, and created the \texttt{JGitProject}, \texttt{JGitCommit} and \texttt{JGitChange} classes. Their job is to call the JGit API and retrieve historical information. 
 
@@ -412,6 +412,7 @@ returns a list for each file type with its metrics. Only the file types in the \
 
 
 \section{Debugger}
+\label{s:SYNDebugger}
 
 The Debugger module is a web application to interact with SYN. It is written with React.js, a popular JavaScript framework. 
 The visualization is based on Babylon.js, an open-source 3D library. 

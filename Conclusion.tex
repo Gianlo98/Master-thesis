@@ -1,39 +1,40 @@
 \chapter{Conclusion}
-In this chapter we summarize the contributions made in this thesis, discuss our approach's benefit, and present future work directions.
+In this chapter, we summarize the contributions made in this thesis, discuss our approach's benefits, and present future work directions.
 
 \subsection*{Contributions}
-This thesis presents three new approaches to mine, visualize and auralize large software repositories. The goal of this thesis was to explore new solutions to represent evolution. Therefore, we claim that our method is complete and extensible. It covers all the stages required to reconstruct the history of a git software repository, from the historical collection of information to the graphical data representation and visualization. However, it was developed with an agnostic approach against the programming language; therefore, an extension of the system is needed to collect and visualize specific kinds of information. In detail, these three approaches are so composed:
+This thesis presents three new approaches to mine, visualize and auralize large software repositories. The goal of this thesis was to explore new solutions to represent evolution. We cover all the stages required to reconstruct the history of a git repository, from the historical collection of information to the graphical data representation and visualization. We developed it with an agnostic approach against the programming language. Therefore, an extension of the system is needed to collect and visualize specific kinds of information. Our contributions can be summarized as follows:
 \begin{enumerate}
-    \item \textbf{The mining and modeling of large git repository's history}. It rebuilds the history of a git repository by traversing the repository's history. It starts from the first commit and analyzes all the subsequent commits until the end. For each commit, information about the modified files is extracted, parsed, and finally stored in the local storage. The object representing a repository in our model is called \texttt{ProjectHistory}, and it holds a set of commits represented with the \texttt{ProjectVersion} class and a set of files represented with the \texttt{FileHistory} class. An action recorded by a commit made on a file is represented with the \texttt{FileVersion} class. The main benefits provided are the following: \begin{itemize}
-        \item Logical tracking of files, each file is represented by a \texttt{FileHistory}. When a file is moved or renamed, the model keeps track of this action. 
-        \item The analysis process is completely automatic. 
+    \item \textbf{The mining and modeling of a large git repository's history}. We present an approach to rebuilding the history of a git repository by traversing the repository's history. It starts from the first commit and analyzes all the subsequent commits until the end.
+    For each commit, we extract information about the modified files, parse it and finally serialize it in a file on the local storage. The root element of our model is the history of a project that holds a set of and a set of files. An action recorded by a commit made on a file is also represented. The main benefits provided are the following: \begin{itemize}
+        \item Logical tracking of files, each file's history is represented by a separate object in the model. When a file is moved or renamed, the model keeps track of this action. 
+        \item The analysis process is automatic. 
         \item The analysis process can be scaled horizontally. 
     \end{itemize}
-    \item \textbf{The sensorial software evolution visualization}. It exploits the phenomenon of synesthesia (the production of a sense impression relating to one sense by stimulation of another sense) to represent the evolutionary process through an interactive visual depiction of evolving software artifacts. It enables the comprehension of both the structural and the evolutionary prospectives. Moreover, SYN, the tool that implemented this approach, allows the user to customize visualization properties deeply. This approach provides the following benefits:
+    \item \textbf{The sensorial software evolution visualization}. It exploits synesthesia, the production of a sense impression relating to one sense by stimulation of another. It represents the evolutionary process through an interactive visual depiction of evolving software artifacts. It enables the comprehension of both the structural and the evolutionary prospectives. Moreover, SYN, the tool that implemented this approach, allows the user to customize visualization properties deeply. This approach provides the following benefits:
     \begin{itemize}
         \item It provides an interactive way to comprehend the evolutionary process of software.
         \item It is a scalable approach. Therefore it works with every git repository. 
         \item It allows the user to customize many graphical properties such as colors, shapes, and height. Therefore, everyone can leverage a customized experience to trigger as many collateral cognitive paths as possible. 
         \item It provides two strategies to traverse the repository history: by commit or by time. This way, the comprehension of repositories with a very large history is not undermined. 
-        \item Thanks to the aging concept, the user can infer how old a file is. The moment between two ages can be expressed both with commits or with time and is useful to understand how many moments have passed since the last action was made.
+        \item Thanks to the aging concept, the user can infer how old a file is. Differences in age can be expressed both with commits or with time and are useful to understand how many moments have passed since the last action.
         \item The height of a file is mapped to the value of a pre-selected metric. We provided multiple mapper strategies. 
         \item The shapes and the opacity can be customized to highlight a type of file over others. 
-        \item The positioning strategy allows the user to understand the additional order of files immediately. This way, they can understand if the repository still holds ancient files. 
+        \item The positioning strategy allows the user to understand the additional order of files immediately. This way, they can understand if the repository still holds legacy files. 
     \end{itemize}
-    \item \textbf{Auditive portrayal of the evolution}. It consists of a guideline suggesting how to compose audio sounds representing the evolution of a project. The proposed methodology was tested with two systems and presented together with the JetUML and Linux case study analysis. The main benefit provided by this approach is the support of the visualization. It provides additional information without displaying them; consequently, the listener can infer additional aspects of the analysis passively. 
+    \item \textbf{Auditive portrayal of the evolution}. It consists of a guideline suggesting how to compose audio sounds representing the evolution of a project. The proposed methodology was tested with two systems and presented with the JetUML and Linux case study analysis. The main benefit provided by this approach is the support of the visualization. It provides additional information without displaying them. Consequently, the listener can infer additional aspects of the analysis. 
 \end{enumerate}
 
 \subsection*{Future Work}
 In this section, we discuss some possible future directions for our approaches:
 \begin{itemize}
-    \item \textit{Auditorial implementation}: the auditorial implementation is not written as an internal module of SYN. However, we believe that a module able to automatically instrument SonicPi, or any other compositional tool, could help bring the audio into the interactive visualization. 
+    \item \textit{Auditorial implementation}: the auditorial implementation is not written as an internal module of SYN. However, we believe that a module able to automatically instrument Sonic Pi, or any other compositional tool, could help bring the audio into the interactive visualization. 
     \item \textit{Computational efficiency}: we built our app within a web environment. Although it worked very well with regular repositories, it was impossible to use it with large repositories such as LibreOffice or Linux. We had to move the render process into a desktop environment losing the interaction feature.
     \item \textit{Extract more git information}: more git information can be extracted from commits. For example, we can retrieve the author of a commit and map it to a color in the visualization. As a result, we can create a new kind of visualization to understand how many authors contributed to the systems and which part of the system is covered by the development team. 
     \item \textit{New metrics}: the initial set of metrics we defined can be extended to comprehend metrics that require a source code analysis.
     \item \textit{New positional layouts}: at the moment, we implemented only one positional layout that works with an outward spiral. A future implementation could take care of the system's architecture, displaying additional information about the file's package, for example.
     \item \textit{Scalable analysis implementation}: Currently, the analysis is meant to work on a single machine. However, the approach does not have this requirement because analysis results are generated independently. We can scale this process horizontally with multiple devices to significantly cut the analysis time. 
     \item \textit{New solution for persistent storage}: at the moment, all the information is stored in JSON files. This means that they need to be deserialized every time we need them. With a database, the access time can be significantly improved.
-    \item \textit{Perform other case-studies}: the analysis of different software systems allows us to evaluate our methodology on other systems and study the growth model of other open-source systems. 
+    \item \textit{Perform other case studies}: analyzing different software systems allows us to evaluate our methodology on other systems and study the growth model of other open-source systems. 
 \end{itemize}
 
 \subsection*{Epilogue}
