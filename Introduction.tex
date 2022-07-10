@@ -1,23 +1,24 @@
 \chapter{Introduction}
 
 In 1971, Dijkstra made an analogy between computer programming and art \cite{Dijkstra1971a}.
-It stated that it is not essential to learn how to compose software but instead, it is necessary to develop its own style and implications. 
-During the lifetime of a software system, many developers work on it, each one in their manner. This is one of the multiple reasons behind software complexity. 
-Today's systems are characterized by sheer size and complexity. Software maintenance takes up most of a system's cost. It is hard to quantify the impact of software maintenance on the global cost of the software. 
-However, researchers estimated it to be between 50\% and 90\% \cite{Davis1995} \cite{Sommerville1995}\cite{Erlikh2000} \cite{seacord2003}. Many factors influence the maintenance cost; among these, there is the understanding activity needed to perform maintenance tasks \cite{Corbi1989}. The comprehension of software evolution is essential for the understandability and, consequently, maintainability of systems. However, the sheer quantity and complexity of the information generated during systems development challenge the comprehension process. Lehman and Belady, in 1985, were among the first to observe that maintaining a software system becomes a more complex activity over time. \cite{Lehman1985} The term "software evolution" was used for the first time in their set of laws.  One of the goals of its analysis is to identify potential defects in the system's logic or architecture. Numerous techniques have been presented in the literature to facilitate program comprehension. The main challenge that each visualization technique has to deal with is identifying the relevant aspects to be depicted and effectively presenting them. Visualization techniques often support software evolution analysis. Software visualization is a specialization of information visualization with a focus on software \cite{Lanza2003}. In literature, many visualization techniques have been presented to support a complex software system's analysis. Usually, a massive quantity of multivariate evolutionary data needs to be depicted. Several tools have been proposed in the literature to do that \cite{Merino2018a}. Moreover, the effectiveness of a software visualization technique could be enhanced by combining it with audio. The term \quotes{program auralization} was coined, for this reason, aiming to communicate information about the program in an auditory way.
+It stated that it is not essential to learn how to compose software; instead, it is necessary to develop its own style and implications. 
+During the evolution of a software system, many developers work on each one with its style.
+ This is one of the multiple factors that characterize software complexity. 
+Modern software systems are characterized by sheer size and complexity. Software maintenance takes up most of a system's cost. It is hard to quantify the impact of software maintenance on the global cost of the software. 
+Researchers estimated it to be between 50\% and 90\% \cite{Davis1995} \cite{Sommerville1995}\cite{Erlikh2000} \cite{seacord2003}. Many factors influence the maintenance cost; among these is the understanding activity needed to perform maintenance tasks \cite{Corbi1989}. Comprehending software evolution is essential for systems' understandability and, consequently, maintainability. However, the sheer quantity and complexity of the information generated during systems development challenge the comprehension process. Lehman and Belady, in 1985, were among the first to observe that maintaining a software system becomes a more complex activity over time \cite{Lehman1985}. The term "software evolution" was used for the first time in their set of laws.  One of the goals of software evolution analysis is to identify potential defects in the system's logic or architecture. Numerous techniques have been presented in the literature to facilitate program comprehension. The main challenge that each visualization technique has to deal with is identifying the relevant aspects to be depicted and effectively presenting them. Visualization techniques often support software evolution analysis. Software visualization is a specialization of information visualization with a focus on software \cite{Lanza2003}. In literature, many visualization techniques have been presented to support a complex software system's analysis. Usually, a massive quantity of multivariate evolutionary data needs to be depicted. Several tools have been proposed in the literature to do that \cite{Merino2018a}. Moreover, the effectiveness of a software visualization technique could be enhanced by combining it with audio. The term \quotes{program auralization} was coined, for this reason, aiming to communicate information about the program in an auditory way.
 Several studies were done to measure the advantages given by audio as a communication medium \cite{Alty1995}.
 
 In this work, our focus is an explorative visualization that depicts the evolution of a system.
 We present an approach with an evolutionary design-level visualization to facilitate the comprehension of the system's history. 
 Our technique models and mines large git repositories. We develop a visualization strategy based on synesthesia, the production of a sense impression relating to one sense by stimulation of another sense. We represent the evolutionary process through an interactive visual depiction of the evolving software artifacts complemented by an auditive portrayal of the evolution. 
 
-\section{Contribution}
+\section{Contributions}
 We can summarize the main contributions of this work as follows:
 \begin{itemize}
  \item an approach to mine and model the history of a system's evolution.
  \item an interactive, visual 3D representation of evolving software artifacts.
  \item an auralization approach to compose music based on a system's evolution.
- \item a tool implementation with Spring Boot and Babylon.js.
+ \item a supporting tool that implements our approach.
  \item case studies on open-source systems.
 \end{itemize}
 
@@ -26,8 +27,7 @@ We can summarize the main contributions of this work as follows:
 This document is organized as follows
 \begin{itemize}
  \item In Chapter 2, we describe state of the art in software visualization, repository mining, and software auralization. We look at evolution models and 2D/3D visualizations. 
- \item In Chapter 3, we describe three approaches. One to mine software repositories and model their evolution, one to visualize evolving software artifacts, and one to auralize the system's evolution. 
- \item In Chapter 4, we present SYN, a software platform that implements our approach. 
- \item In Chapter 5, we validate our approach by analyzing three open-source software systems. 
- \item In Chapter 6, we conclude the thesis with a summary and possible directions for future work.
- \end{itemize}
+ \item In Chapter 3, we describe our approach based on mining software repositories and modeling their evolution, visualizing evolving software artifacts, and auralizing the system's evolution. 
+ \item In Chapter 4, we present SYN, a supporting tool that implements our approach. 
+ \item In Chapter 5, we preliminary validate our approach by analyzing five open-source software systems and reporting our findings
+ \item In Chapter 6, we summarize our work and discuss possible directions for future work \end{itemize}

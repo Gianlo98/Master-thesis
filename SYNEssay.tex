@@ -1,0 +1,184 @@
+\documentclass[11pt,twoside,english,singlespacing,headsepline,consistentlayout]{auxiliary/si-msc-thesis}
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage{lipsum}
+\usepackage{mathpazo}
+\usepackage{setspace}
+
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{wrapfig}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{csquotes}
+
+\def\sectionautorefname{Section}
+\def\subsectionautorefname{Subsection}
+
+\usepackage{tikz}
+
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)] 
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
+
+\lstdefinelanguage{algebra}
+{morekeywords={import,sort,constructors,observers,transformers,axioms,if,
+else,end},
+sensitive=false,
+morecomment=[l]{//s},
+}
+
+\newcommand{\quotes}[1]{``#1''}
+
+\usepackage{listings}
+\lstloadlanguages{Ruby}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%	MARGIN SETTINGS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\geometry{paper=a4paper, inner=1.5cm, outer=1.5cm, bindingoffset=0cm, top=1.5cm, bottom=2.7cm, 
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%	THESIS INFORMATION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\thesistitle{Sensorial software evolution comprehension}
+
+
+
+%comment to not have subtitle
+% \thesissubtitle{Coarse-grained, Fine-grained, and Evolutionary\\ Software Visualization} 
+
+\author{Gianlorenzo Occhipinti}
+
+\monthyear{July 2022}
+
+\supervisor{Prof. Dr. Michele Lanza}
+
+% if you need to add or remove co-supervisors go into titlepage.tex and comment correspondingly
+
+\cosupervisorone{Dr. Csaba Nagy}
+\cosupervisortwo{Dr. Roberto Minelli}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%	FRONT MATTER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\frontmatter
+\pagestyle{plain}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%	CONTENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{auxiliary/titlepage}
+
+\mainmatter
+ 
+\pagestyle{thesis} 
+
+In this work, our focus is an explorative visualization that depicts the evolution of a system.
+We present an approach with an evolutionary design-level visualization to facilitate the comprehension of the system's history. 
+Our technique models and mines large git repositories. We develop a visualization strategy based on synesthesia, the production of a sense impression relating to one sense by stimulation of another sense. We represent the evolutionary process through an interactive visual depiction of the evolving software artifacts complemented by an auditive portrayal of the evolution. 
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{images/approach/EvolutionModel.jpg}
+    \end{center}
+    \caption{Evolutionary Model}
+    \label{fig:EvolutionaryModel}
+\end{figure}
+
+To model the evolution of software systems, we developed the model 
+shown in figure \ref{fig:EvolutionaryModel}. It is based on Hismo by Tudor Girba \cite{Girba2005}.
+The need to develop a novel evolutionary model comes from the fact that Hismo was designed to work with another versioning system: Subversion (SVN). 
+These are the four main concepts of our model: 
+\begin{itemize}
+    \item \textbf{ProjectHistory}: represents the history of a repository. It holds two sets: a set of FileHistories and ProjectVersions. 
+    \item \textbf{FileHistory}: represents a repository file. We consider each file as an entity of the system. Even if the entity's name or location is changed, our mode will treat it as the same. So, our approach is resilient to a renaming and moving activities. Each FileHistory holds a set of FileVersions, each representing a different version of the entity at a particular time.  
+    \item \textbf{ProjectVersion}: represents a commit or a version of the system. 
+    For each changed file inside a commit, the respective ProjectVersion contains a FileVersion representing that change.
+    A ProjectVersion holds contextual information about the commit, such as the timestamp, the hash of the commit, and its message.
+    \item \textbf{FileVersion}: represents the version of a file at a particular point in time.
+    It is responsible for holding all the evolutionary information of an entity. 
+\end{itemize}
+
+One of our goals was the possibility of analyzing a large repository in an acceptable amount of time. 
+In other words, our approach needs to be scalable. We present a scalable approach based on the concept of partial history.
+A partial history holds information about a specific range of time of the ProjectHistory. 
+It can be seen as a subset of a ProjectHistory. 
+We can split the repository's history into multiple parts, each represented by a partial record. Then when all the analyses are completed, we merge them to reconstruct the whole story of the repository.
+
+Software systems are hard to understand due to the complexity and the sheer size of the data to be analyzed.
+In our approach, we aim to make an interactive 3D representation to ease the comprehension task of a developer. 
+To visualize a project, we introduce the concept of \textbf{view}. We define a view as a way to illustrate the evolution of a project given a set of specifications. This set of specifications determines how the view must be built. For example, if we want to traverse the repository history by year, this information is part of the specification. A view holds a set of frames, called \textbf{AnimationFrame}, each representing the repository's state at a specific moment of its evolution. Therefore, the entire history of the repository is displayed by rendering these AnimationFrames consecutively, like in a movie. 
+We provide two visualization strategies to group commits into AnimationFrames: by timestamp and by commit. Both of them traverse the whole history from the beginning until the end.
+Only the most recent one is considered when an AnimationFrame is created, and multiple commits were made on a file. 
+To represent the system's state, an AnimationFrame holds a set of \textbf{ViewFigures}, each representing a system file.
+A ViewFigure holds a set of properties used by the render process to draw a glyph representing a file. The  \textit{position} property is used to describe the ViewFigure's location in the 3D environment. We adopted a spiral layout with an outward direction. Older entities are positioned at the center of this spiral, whereas newer entities are always close to borders.
+We decided to map each git action with \textit{color}. In addition, each ViewFigure has an: \textit{age} property that represents the amount of time elapsed between the last action made on a file and the currently displayed AnimationFrame. When an action is made on a file, its age is reset to zero. 
+To easily distinguish file types, we added a \textit{shape} and an \textit{opacity} property to a ViewFigure. Finally, during the analysis, we collect a set of metrics to define the \textit{height} of a ViewFigure. 
+
+Displaying lots of information on the screen might not be an efficient way to gather crucial aspects of the evolution of a software system. We want to play AnimationFrames sequentially, like in a movie. Therefore, users might not have the time to understand the differences between the current and the previously displayed AnimationFrame. To overcome this issue, we provide an auditorial representation of an AnimationFrame to support understanding its changes. The goal is to support the sight sense, combining it with hearing, by playing audio notes that are recognizable by the user, generated from similar but complementary information, to understand an AnimationFrame better. 
+
+Generated sound melodies depend upon the value of a pre-selected metric. For example, we can create a new metric to play how many Java files were added. In our approach, we assign distinct sounds to each of the metrics, e.g., the number of commits will influence the tempo of our melody (BPM) and will be represented by a sound similar to a heartbeat.
+
+The output of this approach is a piece of music representing a system's evolution. It is composed of several different sounds equal to the number of metrics used in its generation. The idea is to use these values to control BPM, pitch, and the amplitude of a note. 
+
+Therefore we designed and implemented SYN, a tool that supports the software evolution comprehension approach. 
+It is composed of a set of modules, as follows:
+\begin{itemize}
+    \item \textbf{Core}: it holds classes representing basic SYN concepts such as ProjectHistories, ProjectVersions, and FileVersions. It also provides abstract classes, open to any implementation, to achieve the extensibility goal.
+    \item \textbf{CLI}: provides a Command Line Interface (CLI) to users.
+    \item \textbf{Analyzer}: implements our scalable analysis. 
+    \item \textbf{Server}: provides GraphQL endpoints to retrieve data and display them in a user interface. 
+    \item \textbf{Debugger}: the user interface to debug and visually depict information collected during the analysis. 
+\end{itemize}
+
+The auralization approach was implemented as an external service not yet integrated with SYN. 
+
+
+In the thesis we presented an approach to mine, visualize and auralize large software repositories. The goal of this thesis was to explore new solutions to represent evolution. We cover all the stages required to reconstruct the history of a git repository, from the historical collection of information to the graphical data representation and visualization. We developed it with an agnostic approach against the programming language. Therefore, an extension of the system is needed to collect and visualize specific kinds of information. Our contributions can be summarized as follows:
+\begin{enumerate}
+    \item \textbf{The mining and modeling of a large git repository's history}. We present an approach to rebuilding the history of a git repository by traversing the repository's history. It starts from the first commit and analyzes all the subsequent commits until the end.
+    We extract information about the modified files for each commit, parse it, and finally serialize it in a file on the local storage. The root element of our model is the history of a project that holds a set of and a set of files. An action recorded by a commit made on a file is also represented. The main benefits provided are the following:
+     \begin{itemize}
+        \item Logical tracking of files, each file's history is represented by a separate object in the model. When a file is moved or renamed, the model keeps track of this action. 
+        \item The analysis process is automatic. 
+        \item The analysis process can be scaled horizontally. 
+    \end{itemize}
+    \item \textbf{The sensorial software evolution visualization}. It exploits synesthesia, the production of a sense impression relating to one sense by stimulating another. It represents the evolutionary process through an interactive visual depiction of evolving software artifacts. It enables the comprehension of both the structural and the evolutionary prospectives. Moreover, SYN, the tool that implemented this approach, allows the user to customize visualization properties deeply. This approach provides the following benefits:
+    \begin{itemize}
+        \item It provides an interactive way to comprehend the evolutionary process of software.
+        \item It is a scalable approach. Therefore it works with every git repository. 
+        \item It allows the user to customize many graphical properties such as colors, shapes, and height. Therefore, everyone can leverage a customized experience to trigger as many collateral cognitive paths as possible. 
+        \item It provides two strategies to traverse the repository history: by commit or by time. This way, the comprehension of repositories with a very large history is not undermined. 
+        \item Thanks to the aging concept, the user can infer how old a file is. Differences in age can be expressed both with commits or with time and are useful to understand how many moments have passed since the last action.
+        \item The height of a file is mapped to the value of a pre-selected metric. We provided multiple mapper strategies. 
+        \item The shapes and the opacity can be customized to highlight a type of file over others. 
+        \item The positioning strategy allows the user to understand the additional order of files immediately. This way, they can understand if the repository still holds legacy files. 
+    \end{itemize}
+    \item \textbf{Auditive portrayal of the evolution}. It consists of a guideline suggesting how to compose audio sounds representing the evolution of a project. The proposed methodology was tested with two systems and presented with the JetUML and Linux case study analysis. The main benefit provided by this approach is the support of the visualization. It provides additional information without displaying them. Consequently, the listener can infer additional aspects of the analysis.
+\end{enumerate}   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%	BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\bibliographystyle{abbrv}
+\bibliography{biblio}
+
+\end{document}

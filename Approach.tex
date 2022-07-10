@@ -396,29 +396,28 @@ According to the mapping we presented so far, depicted in \autoref{fig:ApproachM
 
 \section{Evolution Auralization}
 \label{sec:audioApproach}
-Displaying lots of information on the screen might not be an efficient way to gather crucial information about the evolution of a software system. We provide an auditorial representation of an AnimationFrame to support its understanding. The goal is to transmit hidden information such as the number of files added or removed through audio notes. 
+Displaying lots of information on the screen might not be an efficient way to gather crucial aspects of the evolution of a software system. We want to play AnimationFrames sequentially, like in a movie. Therefore, users might not have the time to understand the differences between the current and the previously displayed AnimationFrame. To overcome this issue, we provide an auditorial representation of an AnimationFrame to support understanding its changes. The goal is to support the sight sense, combining it with hearing, by playing audio notes that are recognizable by the user, generated from similar but complementary information, to understand an AnimationFrame better. 
 
-Music theory defines many concepts to study which aural phenomenons compose music, for example, beats per minute (BPM), pitch, or note.
+Music is composed of aural phenomena; music theory considers how those phenomena apply in music by defining many concepts, such as beats per minute (BPM), pitch, or note.
 We used them as a starting point to compose a sound for each AnimationFrame. In particular, in our approach, the following audio concepts are involved:
 \begin{itemize}
     \item Tempo: indicates the speed of a musical composition. It is measured in BPM. 
     \item Measure: a single unit of time featuring a specific number of beats. 
-	\item Note's pitch: the quality that makes it possible to judge sounds as \quotes{higher} and \quotes{lower} in a sense associated with musical melodies.
-	\item Amplitude: the size of the vibration of a note. It determines how loud a note is.
+	\item Note's pitch:  the lowness or highness of a sound makes it possible to judge sounds as \quotes{higher} and \quotes{lower}.
+	\item Amplitude: it determines how loud a note is (volume of a note).
 \end{itemize}
 
-As Vickerts \cite{Vickers2004} stated, an orchestral model is needed to enable engineers to distinguish between different activities on the code. Following this idea, we decided to compose an auditorial portrayal of an  AnimationFrame mapping metrics to distinguishable sounds. Many intrinsic metrics could be extracted from an AnimationFrame. We focused our attention only on metrics extracted from git data:
+As stated by Vickerts \cite{Vickers2004}, an orchestral model is needed to enable engineers to distinguish between different activities on the code. Following this idea, we decided to compose an auditorial portrayal of an  AnimationFrame mapping metrics to different sounds. We focused our attention only on metrics extracted from:
 \begin{itemize}
     \item number of commits
     \item number of files added/removed/modified/renamed or moved
     \item number of lines added/removed
 \end{itemize}
-The metrics can be easily extended depending on the goal of the melody. For example, we can create a new metric to play how many Java files were added. The implementation must be done with a tool that provides different sounds for each metric. A synthesizer is a component that generates audio signals. For example, a synthesizer can play the sound of a guitar, whereas another synthesizer can play the sound of a piano. The idea is to allow the user to help understand what is happening on the displayed AnimationFrame by recognizing the instrument through the sound. 
 
-The output of this approach is a piece of music representing a system's evolution. The evolution of a system was depicted as a sequence of AnimationFrames. Therefore, we map a measure to each AnimationFrame. The total length of the evolution visualization depends on the tempo and the size of a measure. 
-For example, if we display a view with 60 AnimationFrames, each one mapped to a measure long of four beats playing at 60 BPM, to represent the view, we need four minutes ($240$ beats played at $60$ BPM). The software system's auralization might suffer from this approach because, with a high BPM, the time between two AnimationFrames might not be sufficient. To overcome this issue, a fixed interval such as one second or two AnimationFrames can be set. Consequently, the same view of 60 AnimationFrames now needs one minute to be played. Within each second, for each chosen metric, we play sounds with an amplitude and a speed that depends upon the metric value. 
+Generated sound melodies depend upon the value of a pre-selected metric. For example, we can create a new metric to play how many Java files were added. In our approach, we assign distinct sounds to each of the metrics, e.g., the number of commits will influence the tempo of our melody (BPM) and will be represented by a sound similar to a heartbeat.
 
-To summarize, in our auditorial approach, we support the visualization of a project's view with a musical representation of each AnimationFrames. Metrics collected during the analysis are used in an orchestral composition to control the tempo, the note, and the amplitude. An exemplary implementation should provide a wide range of sounds to differentiate the adopted metric values. We can choose to play one AnimationFrame every second or map it to a measure. 
+The output of this approach is a piece of music representing a system's evolution. It is composed of a number of different sounds equal to the number of metrics used in its generation. The idea is to use these values to control BPM, pitch, and the amplitude of a note. 
+An exemplary implementation should provide a wide range of sounds to differentiate the adopted metric values. 
 
 
 
