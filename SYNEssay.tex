@@ -54,6 +54,7 @@ morecomment=[l]{//s},
 
 
 \thesistitle{Sensorial software evolution comprehension}
+\thesissubtitle{Summary} 
 
 
 
@@ -90,11 +91,17 @@ morecomment=[l]{//s},
  
 \pagestyle{thesis} 
 
-In this work, our focus is an explorative visualization that depicts the evolution of a system.
-We present an approach with an evolutionary design-level visualization to facilitate the comprehension of the system's history. 
-Our technique models and mines large git repositories. We develop a visualization strategy based on synesthesia, the production of a sense impression relating to one sense by stimulation of another sense. We represent the evolutionary process through an interactive visual depiction of the evolving software artifacts complemented by an auditive portrayal of the evolution. 
 
-\begin{figure}[H]
+
+\section*{Introduction}
+The comprehension of software evolution is essential for the understandability and maintainability of systems.
+However, the sheer quantity and complexity of the information generated during systems development make the comprehension process challenging.
+We present an approach based on the concept of synesthesia (the production of a sense impression relating to one sense by stimulation of another sense), which represents the evolutionary process through an interactive visual depiction of the evolving software artifacts complemented by an auditive portrayal of the evolution. Our technique models and mines large git repositories.
+
+
+
+\section*{Approach}
+\begin{figure}[ht]
     \begin{center}
         \includegraphics[width=0.6\textwidth]{images/approach/EvolutionModel.jpg}
     \end{center}
@@ -102,8 +109,9 @@ Our technique models and mines large git repositories. We develop a visualizatio
     \label{fig:EvolutionaryModel}
 \end{figure}
 
+
 To model the evolution of software systems, we developed the model 
-shown in figure \ref{fig:EvolutionaryModel}. It is based on Hismo by Tudor Girba \cite{Girba2005}.
+shown in \autoref{fig:EvolutionaryModel}. It is based on Hismo by Tudor Girba \cite{Girba2005}.
 The need to develop a novel evolutionary model comes from the fact that Hismo was designed to work with another versioning system: Subversion (SVN). 
 These are the four main concepts of our model: 
 \begin{itemize}
@@ -127,10 +135,14 @@ In our approach, we aim to make an interactive 3D representation to ease the com
 To visualize a project, we introduce the concept of \textbf{view}. We define a view as a way to illustrate the evolution of a project given a set of specifications. This set of specifications determines how the view must be built. For example, if we want to traverse the repository history by year, this information is part of the specification. A view holds a set of frames, called \textbf{AnimationFrame}, each representing the repository's state at a specific moment of its evolution. Therefore, the entire history of the repository is displayed by rendering these AnimationFrames consecutively, like in a movie. 
 We provide two visualization strategies to group commits into AnimationFrames: by timestamp and by commit. Both of them traverse the whole history from the beginning until the end.
 Only the most recent one is considered when an AnimationFrame is created, and multiple commits were made on a file. 
-To represent the system's state, an AnimationFrame holds a set of \textbf{ViewFigures}, each representing a system file.
-A ViewFigure holds a set of properties used by the render process to draw a glyph representing a file. The  \textit{position} property is used to describe the ViewFigure's location in the 3D environment. We adopted a spiral layout with an outward direction. Older entities are positioned at the center of this spiral, whereas newer entities are always close to borders.
-We decided to map each git action with \textit{color}. In addition, each ViewFigure has an: \textit{age} property that represents the amount of time elapsed between the last action made on a file and the currently displayed AnimationFrame. When an action is made on a file, its age is reset to zero. 
-To easily distinguish file types, we added a \textit{shape} and an \textit{opacity} property to a ViewFigure. Finally, during the analysis, we collect a set of metrics to define the \textit{height} of a ViewFigure. 
+To represent the system's state, an AnimationFrame holds a set of \textbf{ViewFigures}, each representing a system file, that uses the following visual concepts: 
+\begin{itemize}
+	\item \textbf{position}: to describe the ViewFigure's location in the 3D environment. We adopted a spiral layout with an outward direction. Older entities are positioned at the center of this spiral, whereas newer entities are always close to borders.
+	\item \textbf{color}: to describe the last action made on a file. The user can customize the mapping. 
+	\item \textbf{age}: to represent the amount of time elapsed between the last action made on a file and the currently displayed AnimationFrame.
+	\item \textbf{shape} and \textbf{opacity}: to distinguish between the different types of files (e.g. we can represent Java files with boxes and binary files with hemispheres). 
+	\item \textbf{height}: to represent the value of a metric previously selected by the user. 
+\end{itemize}
 
 Displaying lots of information on the screen might not be an efficient way to gather crucial aspects of the evolution of a software system. We want to play AnimationFrames sequentially, like in a movie. Therefore, users might not have the time to understand the differences between the current and the previously displayed AnimationFrame. To overcome this issue, we provide an auditorial representation of an AnimationFrame to support understanding its changes. The goal is to support the sight sense, combining it with hearing, by playing audio notes that are recognizable by the user, generated from similar but complementary information, to understand an AnimationFrame better. 
 
@@ -145,16 +157,77 @@ It is composed of a set of modules, as follows:
     \item \textbf{CLI}: provides a Command Line Interface (CLI) to users.
     \item \textbf{Analyzer}: implements our scalable analysis. 
     \item \textbf{Server}: provides GraphQL endpoints to retrieve data and display them in a user interface. 
-    \item \textbf{Debugger}: the user interface to debug and visually depict information collected during the analysis. 
+    \item \textbf{Visual Inspector}: shown in \autoref{fig:SYNVisual} used to debug and visually depict information collected during the analysis. It is composed of four parts
+In box \encircle{A}, a 3D environment displays FileHistories on a virtual plane. The camera is not fixed, and the view angle and the zoom level can be controlled with the mouse. 
+In box \encircle{B}, we have a card with general information about the project visualization. 
+This card includes the project's name, the animation number, the dates of the animation frame, and its commit list. The slider shows the overall progress of the display, two buttons to jump to the subsequent or previous animation, and finally, one button to jump to the following animation with the time interval previously set. 
+All the preferences specified during the project setup can be changed by clicking on the three dots in the top right corner.
+In box \encircle{C}, we have a card to inform the user of the number of entities the UI renders. 
+And finally, box \encircle{D} appears when an entity is selected with the mouse. 
 \end{itemize}
+
+
+\begin{figure}
+    \center
+    \includegraphics[width=\textwidth]{images/implementation/SYNUI-fileHistory.png}
+    \caption{SYN Visual Inspector}
+    \label{fig:SYNVisual}
+\end{figure}
+
 
 The auralization approach was implemented as an external service not yet integrated with SYN. 
 
+\section*{Results}
+\graphicspath{ {images/casestudies} }
 
-In the thesis we presented an approach to mine, visualize and auralize large software repositories. The goal of this thesis was to explore new solutions to represent evolution. We cover all the stages required to reconstruct the history of a git repository, from the historical collection of information to the graphical data representation and visualization. We developed it with an agnostic approach against the programming language. Therefore, an extension of the system is needed to collect and visualize specific kinds of information. Our contributions can be summarized as follows:
+\begin{figure}[ht]
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Linux/Animation001.png}
+        \caption{Linux in April 2006 (1 year)} 
+        \label{fig:Linux_V7_S1}
+    \end{subfigure}\hspace*{\fill}
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Linux/Animation004.png}
+        \caption{Linux in April 2009 (4 year)} 
+        \label{fig:Linux_V7_S2}
+    \end{subfigure}
+    \medskip
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Linux/Animation012.png}
+        \caption{Linux in April 2017 (12 year)} 
+        \label{fig:Linux_V7_S3}
+    \end{subfigure}\hspace*{\fill}
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Linux/Animation014.png}
+        \caption{Linux in April 2019  (14 year)} 
+        \label{fig:Linux_V7_S4}
+    \end{subfigure}
+    \medskip
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Linux/Animation015.png}
+        \caption{Linux in April 2020 (15 year)} 
+        \label{fig:Linux_V7_S5}
+    \end{subfigure}\hspace*{\fill}
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{Linux/Animation017.png}
+        \caption{Linux in April 2022 (17 year)} 
+        \label{fig:Linux_V7_S6}
+    \end{subfigure}
+    
+    \caption{Linux evolution} 
+    \label{fig:Linux_V7}
+\end{figure}
+
+We applied SYN to real-life systems and presented several insights and reflections. For example, in \autoref{fig:Linux_V7}, taken from the Linux case study, we saw how the codebase of Linux evolved since its move to git. The development activity was constant throughout these 17 years. The codebase started with 19,705 files and reached 77,183 in April 2022, almost four times its original size. During this time, they evolved the kernel to develop new features and slowly started a process to remove the files that were added 17 years ago. As we can see, the center of the spiral began to become sparse. Nonetheless, it still holds many files, which means that the current version of Linux relies on files written more than 17 years ago.
+We combined our visualization and auralization approach in a video depicting the evolution of Linux available at \url{https://workInProgress.com}. 
+
+
+\section*{Conclusions}
+
+In the thesis, we presented an approach to mine, visualize and auralize large software repositories. The goal of this thesis was to explore new solutions to represent evolution. We cover all the stages required to reconstruct the history of a git repository, from the historical collection of information to the graphical data representation and visualization. We developed it with an agnostic approach against the programming language. Therefore, an extension of the system is needed to collect and visualize specific kinds of information. Our contributions can be summarized as follows:
 \begin{enumerate}
     \item \textbf{The mining and modeling of a large git repository's history}. We present an approach to rebuilding the history of a git repository by traversing the repository's history. It starts from the first commit and analyzes all the subsequent commits until the end.
-    We extract information about the modified files for each commit, parse it, and finally serialize it in a file on the local storage. The root element of our model is the history of a project that holds a set of and a set of files. An action recorded by a commit made on a file is also represented. The main benefits provided are the following:
+    We extract information about the modified files for each commit, parse it, and finally serialize it in a file on the local storage. The root element of our model is the history of a project that holds a set of files. An action recorded by a commit made on a file is also represented. The main benefits provided are the following:
      \begin{itemize}
         \item Logical tracking of files, each file's history is represented by a separate object in the model. When a file is moved or renamed, the model keeps track of this action. 
         \item The analysis process is automatic. 

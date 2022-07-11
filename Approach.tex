@@ -4,10 +4,22 @@
 
 Comprehending the evolution of a software system is a complex activity, mainly because of the sheer amount of data and its complexity. 
 The term "software evolution" was coined for the first time by Lehman in 1985 in a set of laws \cite{Lehman1985}.
-He stated that the complexity of a system is destined to increase over time, as the system needs to be adapted to its evolutionary environments. 
-To be managed, software systems need to be comprehended by developers, and this activity can be simplified with software visualization. 
+He stated that the complexity of a system is destined to increase over time as the system needs to be adapted to its evolutionary environments. 
+To be maintained, software systems need to be comprehended by developers, and this activity can be supported with software visualization. 
 
-Over the last ten years, developers have stored their codebase in git repositories. Git has been announced in 2005. It is the most popular version control system. Millions of repositories use it on GitHub and GitLab.
+
+
+A Version Control System (VCS) is software for tracking and managing file changes. They have been widely adopted in software development for the last 40 years. RCS is one of the oldest VCS, it was introduced in 1980. Consequently, between 1990 and 200, developers introduces a new generation of control systems called Centralized VCS. The most important ones were CVS (introduced in 1990), Perforce (introduced in 1995), and Subversion (introduced in 2000). 
+
+
+The only major difference you will find here is, instead of one single repository which is the server, here every single developer or client has their own server and they will have a copy of the entire history or version of the code and all of its branches in their local server or machine.
+
+
+One of the most adopted ones is Git, introduced in 2005 by Linus Torvalds \footnote{\url{https://github.com/git/git/commit/e83c5163316f89bfbde7d9ab23ca2e25604af290}}. Millions of repositories use it on GitHub and GitLab. Before Git, many other VCS were adopted such as 
+. 
+
+In 2022 
+
 For this reason, we focused our attention on systems versioned with this protocol.
 Git is a versioning control system that tracks all the changes made to every system file. 
 Internally git holds all the information we need to reconstruct the history of a repository. 
@@ -43,7 +55,7 @@ SVN works with the concept of "snapshot" while git works with the concept of "co
 
 
 In SVN, when a file has been changed, a new revision of the whole system is created, and consequently, the number of revisions is incremented. 
-In contrast, in git, only the modified files would get committed, and thus we don't have every time a new snapshot of the system. 
+In contrast, in git, only the modified files would get committed, and thus we don't have a new snapshot of the system every time. 
 Therefore, we took Hismo as the starting point of our model and we adapted it to the git protocol. 
 Initially, the Hismo model was based on three concepts:
 \begin{itemize}
