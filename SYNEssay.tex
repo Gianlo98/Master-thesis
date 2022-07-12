@@ -94,8 +94,14 @@ morecomment=[l]{//s},
 
 
 \section*{Introduction}
-The comprehension of software evolution is essential for the understandability and maintainability of systems.
-However, the sheer quantity and complexity of the information generated during systems development make the comprehension process challenging.
+Modern software systems are characterized by sheer size and complexity. Software maintenance takes up most of a system's cost. It is hard to quantify the impact of software maintenance on the global cost of the software. 
+Researchers estimated it to be between 50\% and 90\% \cite{Davis1995, Sommerville1995, Erlikh2000, seacord2003}. Many factors influence the maintenance cost; among these is the understanding activity needed to perform maintenance tasks \cite{Corbi1989}.
+Comprehending software evolution is essential for systems' understandability and, consequently, maintainability. However, the sheer quantity and complexity of the information generated during systems development challenge the comprehension process.
+
+Numerous techniques have been presented in the literature to facilitate program comprehension.  \cite{Lanza2001, DAmbros2006, Steinbrueckner2010, Wettel2011, Alexandru2019, SoftwareEvolution}  The main challenge that each visualization technique has to deal with is identifying the relevant aspects to be depicted and effectively presenting them. Visualization techniques often support software evolution analysis.
+The effectiveness of a software visualization technique could be enhanced by combining it with audio. The term \quotes{program auralization} was coined, for this reason, aiming to communicate information about the program in an auditory way.
+Several studies were done to measure the advantages given by audio as a communication medium \cite{Alty1995}.
+
 We present an approach based on the concept of synesthesia (the production of a sense impression relating to one sense by stimulation of another sense), which represents the evolutionary process through an interactive visual depiction of the evolving software artifacts complemented by an auditive portrayal of the evolution. Our technique models and mines large git repositories.
 
 
@@ -153,7 +159,7 @@ The output of this approach is a piece of music representing a system's evolutio
 Therefore we designed and implemented SYN, a tool that supports the software evolution comprehension approach. 
 It is composed of a set of modules, as follows:
 \begin{itemize}
-    \item \textbf{Core}: it holds classes representing basic SYN concepts such as ProjectHistories, ProjectVersions, and FileVersions. It also provides abstract classes, open to any implementation, to achieve the extensibility goal.
+    \item \textbf{Core}: it holds classes representing basic SYN concepts such as ProjectHistories, ProjectVersions, and FileVersions. It also provides abstract classes, open to any implementation, to achieve the extensibility goal and it implements the auralization approach.
     \item \textbf{CLI}: provides a Command Line Interface (CLI) to users.
     \item \textbf{Analyzer}: implements our scalable analysis. 
     \item \textbf{Server}: provides GraphQL endpoints to retrieve data and display them in a user interface. 
@@ -166,6 +172,9 @@ In box \encircle{C}, we have a card to inform the user of the number of entities
 And finally, box \encircle{D} appears when an entity is selected with the mouse. 
 \end{itemize}
 
+The visual inspector is a helpful tool to understand and debug the analysis process of SYN. However, it has performance issues in rendering large systems. The main problem stems browser environment as it has limited resources. We experienced a significant frame rate drop when rendering large systems. To overcome this limitation and prove the versatility of our approach, we rendered large systems with POV-Ray, \footnote{\url{http://www.povray.org}} an open-source tool for creating high-quality three-dimensional graphics. We developed an extension of SYN that, given a View, produces a \texttt{pov} file for each AnimationFrame, following the same approach adopted in the visual inspector.  
+
+
 
 \begin{figure}
     \center
@@ -174,10 +183,7 @@ And finally, box \encircle{D} appears when an entity is selected with the mouse.
     \label{fig:SYNVisual}
 \end{figure}
 
-
-The auralization approach was implemented as an external service not yet integrated with SYN. 
-
-\section*{Results}
+\section*{Case studies}
 \graphicspath{ {images/casestudies} }
 
 \begin{figure}[ht]
@@ -227,23 +233,8 @@ We combined our visualization and auralization approach in a video depicting the
 In the thesis, we presented an approach to mine, visualize and auralize large software repositories. The goal of this thesis was to explore new solutions to represent evolution. We cover all the stages required to reconstruct the history of a git repository, from the historical collection of information to the graphical data representation and visualization. We developed it with an agnostic approach against the programming language. Therefore, an extension of the system is needed to collect and visualize specific kinds of information. Our contributions can be summarized as follows:
 \begin{enumerate}
     \item \textbf{The mining and modeling of a large git repository's history}. We present an approach to rebuilding the history of a git repository by traversing the repository's history. It starts from the first commit and analyzes all the subsequent commits until the end.
-    We extract information about the modified files for each commit, parse it, and finally serialize it in a file on the local storage. The root element of our model is the history of a project that holds a set of files. An action recorded by a commit made on a file is also represented. The main benefits provided are the following:
-     \begin{itemize}
-        \item Logical tracking of files, each file's history is represented by a separate object in the model. When a file is moved or renamed, the model keeps track of this action. 
-        \item The analysis process is automatic. 
-        \item The analysis process can be scaled horizontally. 
-    \end{itemize}
+    We extract information about the modified files for each commit, parse it, and finally serialize it in a file on the local storage. The root element of our model is the history of a project that holds a set of files. An action recorded by a commit made on a file is also represented.
     \item \textbf{The sensorial software evolution visualization}. It exploits synesthesia, the production of a sense impression relating to one sense by stimulating another. It represents the evolutionary process through an interactive visual depiction of evolving software artifacts. It enables the comprehension of both the structural and the evolutionary prospectives. Moreover, SYN, the tool that implemented this approach, allows the user to customize visualization properties deeply. This approach provides the following benefits:
-    \begin{itemize}
-        \item It provides an interactive way to comprehend the evolutionary process of software.
-        \item It is a scalable approach. Therefore it works with every git repository. 
-        \item It allows the user to customize many graphical properties such as colors, shapes, and height. Therefore, everyone can leverage a customized experience to trigger as many collateral cognitive paths as possible. 
-        \item It provides two strategies to traverse the repository history: by commit or by time. This way, the comprehension of repositories with a very large history is not undermined. 
-        \item Thanks to the aging concept, the user can infer how old a file is. Differences in age can be expressed both with commits or with time and are useful to understand how many moments have passed since the last action.
-        \item The height of a file is mapped to the value of a pre-selected metric. We provided multiple mapper strategies. 
-        \item The shapes and the opacity can be customized to highlight a type of file over others. 
-        \item The positioning strategy allows the user to understand the additional order of files immediately. This way, they can understand if the repository still holds legacy files. 
-    \end{itemize}
     \item \textbf{Auditive portrayal of the evolution}. It consists of a guideline suggesting how to compose audio sounds representing the evolution of a project. The proposed methodology was tested with two systems and presented with the JetUML and Linux case study analysis. The main benefit provided by this approach is the support of the visualization. It provides additional information without displaying them. Consequently, the listener can infer additional aspects of the analysis.
 \end{enumerate}   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
