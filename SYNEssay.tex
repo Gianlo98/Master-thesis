@@ -16,6 +16,7 @@
 \usepackage{subcaption}
 \usepackage{graphicx}
 \usepackage{csquotes}
+\usepackage{lscape}
 
 \def\sectionautorefname{Section}
 \def\subsectionautorefname{Subsection}
@@ -94,17 +95,16 @@ morecomment=[l]{//s},
 
 
 \section*{Introduction}
-Modern software systems are characterized by sheer size and complexity. Software maintenance takes up most of a system's cost. It is hard to quantify the impact of software maintenance on the global cost of the software. 
-Researchers estimated it to be between 50\% and 90\% \cite{Davis1995, Sommerville1995, Erlikh2000, seacord2003}. Many factors influence the maintenance cost; among these is the understanding activity needed to perform maintenance tasks \cite{Corbi1989}.
+Modern software systems are characterized by sheer size and complexity. As they grow, maintenance also takes a significant fraction of their life-cycle costs \cite{Davis1995, Sommerville1995, Erlikh2000, seacord2003}. The understanding activity to perform maintenance tasks (e.g., finding the causes of a bug) is a primary influencing factor of maintenance costs, among many others \cite{Corbi1989}.
 Comprehending software evolution is essential for systems' understandability and, consequently, maintainability. However, the sheer quantity and complexity of the information generated during systems development challenge the comprehension process.
 
-Numerous techniques have been presented in the literature to facilitate program comprehension.  \cite{Lanza2001, DAmbros2006, Steinbrueckner2010, Wettel2011, Alexandru2019, SoftwareEvolution}  The main challenge that each visualization technique has to deal with is identifying the relevant aspects to be depicted and effectively presenting them. Visualization techniques often support software evolution analysis.
+Numerous techniques have been presented in the literature to facilitate program comprehension \cite{Lanza2001, DAmbros2006, Steinbrueckner2010, Wettel2011, Alexandru2019, SoftwareEvolution}. The main challenge they have to deal with is identifying relevant aspects to be presented so that the user does not get lost in the myriad of information. Visualization techniques often support software evolution analysis.
 The effectiveness of a software visualization technique could be enhanced by combining it with audio. The term \quotes{program auralization} was coined, for this reason, aiming to communicate information about the program in an auditory way.
-Several studies were done to measure the advantages given by audio as a communication medium \cite{Alty1995}.
+Many researchers studied the advantages given by audio as a communication medium \cite{Alty1995}.
 
-We present an approach based on the concept of synesthesia (the production of a sense impression relating to one sense by stimulation of another sense), which represents the evolutionary process through an interactive visual depiction of the evolving software artifacts complemented by an auditive portrayal of the evolution. Our technique models and mines large git repositories.
-
-
+We present an approach based on synesthesia (the production of a sense impression relating to one sense by stimulation of another sense). The approach represents the evolutionary process through an interactive visual depiction of the evolving software artifacts complemented by an auditive portrayal of the evolution. Our technique models and mines large git repositories.
+The approach is exemplified in SYN, a web application that enables sensorial software evolution comprehension.
+We applied SYN to five real-life systems and presented several insights and reflections. SYN is developed as open-source software; a live demo is publicly available \footnote{\url{https://syn.si.usi.ch}}.
 
 \section*{Approach}
 \begin{figure}[ht]
@@ -122,7 +122,7 @@ The need to develop a novel evolutionary model comes from the fact that Hismo wa
 These are the four main concepts of our model: 
 \begin{itemize}
     \item \textbf{ProjectHistory}: represents the history of a repository. It holds two sets: a set of FileHistories and ProjectVersions. 
-    \item \textbf{FileHistory}: represents a repository file. We consider each file as an entity of the system. Even if the entity's name or location is changed, our mode will treat it as the same. So, our approach is resilient to a renaming and moving activities. Each FileHistory holds a set of FileVersions, each representing a different version of the entity at a particular time.  
+    \item \textbf{FileHistory}: represents a repository file. We consider each file as an entity of the system. Even if the entity's name or location is changed, our mode will treat it as the same. So, our approach is resilient to renaming and moving activities. Each FileHistory holds a set of FileVersions, each representing a different file version at a particular time.  
     \item \textbf{ProjectVersion}: represents a commit or a version of the system. 
     For each changed file inside a commit, the respective ProjectVersion contains a FileVersion representing that change.
     A ProjectVersion holds contextual information about the commit, such as the timestamp, the hash of the commit, and its message.
@@ -143,26 +143,26 @@ We provide two visualization strategies to group commits into AnimationFrames: b
 Only the most recent one is considered when an AnimationFrame is created, and multiple commits were made on a file. 
 To represent the system's state, an AnimationFrame holds a set of \textbf{ViewFigures}, each representing a system file, that uses the following visual concepts: 
 \begin{itemize}
-	\item \textbf{position}: to describe the ViewFigure's location in the 3D environment. We adopted a spiral layout with an outward direction. Older entities are positioned at the center of this spiral, whereas newer entities are always close to borders.
-	\item \textbf{color}: to describe the last action made on a file. The user can customize the mapping. 
-	\item \textbf{age}: to represent the amount of time elapsed between the last action made on a file and the currently displayed AnimationFrame.
-	\item \textbf{shape} and \textbf{opacity}: to distinguish between the different types of files (e.g. we can represent Java files with boxes and binary files with hemispheres). 
-	\item \textbf{height}: to represent the value of a metric previously selected by the user. 
+	\item \textbf{position}: describes the ViewFigure's location in the 3D environment. We adopted a spiral layout with an outward direction. Older entities are positioned at the center of this spiral, whereas newer entities are always close to borders.
+	\item \textbf{color}: describes the last action made on a file. The user can customize the mapping. 
+	\item \textbf{age}: represents the time elapsed between the last action on a file and the currently displayed AnimationFrame.
+	\item \textbf{shape} and \textbf{opacity}: distinguish the different file types, e.g., we can represent Java files with boxes and binary files with hemispheres). 
+	\item \textbf{height}: represents the value of a metric according to the user's configuration. 
 \end{itemize}
 
-Displaying lots of information on the screen might not be an efficient way to gather crucial aspects of the evolution of a software system. We want to play AnimationFrames sequentially, like in a movie. Therefore, users might not have the time to understand the differences between the current and the previously displayed AnimationFrame. To overcome this issue, we provide an auditorial representation of an AnimationFrame to support understanding its changes. The goal is to support the sight sense, combining it with hearing, by playing audio notes that are recognizable by the user, generated from similar but complementary information, to understand an AnimationFrame better. 
+Displaying lots of information on the screen might not be an efficient way to gather crucial aspects of the evolution of a software system. We want to play frames sequentially, like in a movie. Therefore, users might not have the time to understand the differences between the current and the previously displayed AnimationFrame. To overcome this issue, we provide an auditorial representation of an AnimationFrame to support understanding its changes. The goal is to support the sight sense, combining it with hearing, by playing audio notes that are recognizable by the user, generated from similar but complementary information, to understand an AnimationFrame better. 
 
-Generated sound melodies depend upon the value of a pre-selected metric. For example, we can create a new metric to play how many Java files were added. In our approach, we assign distinct sounds to each of the metrics, e.g., the number of commits will influence the tempo of our melody (BPM) and will be represented by a sound similar to a heartbeat.
+Generated sound melodies depend upon the value of a pre-selected metric. For example, we can create a new metric to play how many Java files were added. In our approach, we assign distinct sounds to each of the metrics, e.g., the number of commits will influence the tempo of our melody (i.e., beats per minute, BPM) and will be represented by a sound similar to a heartbeat.
 
 The output of this approach is a piece of music representing a system's evolution. It is composed of several different sounds equal to the number of metrics used in its generation. The idea is to use these values to control BPM, pitch, and the amplitude of a note. 
 
 Therefore we designed and implemented SYN, a tool that supports the software evolution comprehension approach. 
 It is composed of a set of modules, as follows:
 \begin{itemize}
-    \item \textbf{Core}: it holds classes representing basic SYN concepts such as ProjectHistories, ProjectVersions, and FileVersions. It also provides abstract classes, open to any implementation, to achieve the extensibility goal and it implements the auralization approach.
+    \item \textbf{Core}: it holds classes representing basic SYN concepts such as ProjectHistories, ProjectVersions, and FileVersions. It also provides abstract classes, open to any implementation, to achieve the extensibility goal, and it implements the auralization approach.
     \item \textbf{CLI}: provides a Command Line Interface (CLI) to users.
     \item \textbf{Analyzer}: implements our scalable analysis. 
-    \item \textbf{Server}: provides GraphQL endpoints to retrieve data and display them in a user interface. 
+    \item \textbf{Server}: provides GraphQL endpoints to retrieve data. 
     \item \textbf{Visual Inspector}: shown in \autoref{fig:SYNVisual} used to debug and visually depict information collected during the analysis. It is composed of four parts
 In box \encircle{A}, a 3D environment displays FileHistories on a virtual plane. The camera is not fixed, and the view angle and the zoom level can be controlled with the mouse. 
 In box \encircle{B}, we have a card with general information about the project visualization. 
@@ -172,7 +172,7 @@ In box \encircle{C}, we have a card to inform the user of the number of entities
 And finally, box \encircle{D} appears when an entity is selected with the mouse. 
 \end{itemize}
 
-The visual inspector is a helpful tool to understand and debug the analysis process of SYN. However, it has performance issues in rendering large systems. The main problem stems browser environment as it has limited resources. We experienced a significant frame rate drop when rendering large systems. To overcome this limitation and prove the versatility of our approach, we rendered large systems with POV-Ray, \footnote{\url{http://www.povray.org}} an open-source tool for creating high-quality three-dimensional graphics. We developed an extension of SYN that, given a View, produces a \texttt{pov} file for each AnimationFrame, following the same approach adopted in the visual inspector.  
+The visual inspector is a helpful tool for understanding and debugging SYN's analysis process. However, it has performance issues in rendering large systems. The main problem stems browser environment as it has limited resources. We experienced a significant frame rate drop when rendering large systems. To overcome this limitation and prove the versatility of our approach, we rendered large systems with POV-Ray,\footnote{\url{http://www.povray.org}} an open-source tool for creating high-quality three-dimensional graphics. We developed an extension of SYN that, given a View, produces a \texttt{pov} file for each AnimationFrame, following the same approach adopted in the visual inspector.  
 
 
 
@@ -186,47 +186,45 @@ The visual inspector is a helpful tool to understand and debug the analysis proc
 \section*{Case studies}
 \graphicspath{ {images/casestudies} }
 
-\begin{figure}[ht]
-    \begin{subfigure}{0.48\textwidth}
-        \includegraphics[width=\linewidth]{Linux/Animation001.png}
-        \caption{Linux in April 2006 (1 year)} 
-        \label{fig:Linux_V7_S1}
-    \end{subfigure}\hspace*{\fill}
-    \begin{subfigure}{0.48\textwidth}
-        \includegraphics[width=\linewidth]{Linux/Animation004.png}
-        \caption{Linux in April 2009 (4 year)} 
-        \label{fig:Linux_V7_S2}
-    \end{subfigure}
-    \medskip
-    \begin{subfigure}{0.48\textwidth}
-        \includegraphics[width=\linewidth]{Linux/Animation012.png}
-        \caption{Linux in April 2017 (12 year)} 
-        \label{fig:Linux_V7_S3}
-    \end{subfigure}\hspace*{\fill}
-    \begin{subfigure}{0.48\textwidth}
-        \includegraphics[width=\linewidth]{Linux/Animation014.png}
-        \caption{Linux in April 2019  (14 year)} 
-        \label{fig:Linux_V7_S4}
-    \end{subfigure}
-    \medskip
-    \begin{subfigure}{0.48\textwidth}
-        \includegraphics[width=\linewidth]{Linux/Animation015.png}
-        \caption{Linux in April 2020 (15 year)} 
-        \label{fig:Linux_V7_S5}
-    \end{subfigure}\hspace*{\fill}
-    \begin{subfigure}{0.48\textwidth}
-        \includegraphics[width=\linewidth]{Linux/Animation017.png}
-        \caption{Linux in April 2022 (17 year)} 
-        \label{fig:Linux_V7_S6}
-    \end{subfigure}
-    
-    \caption{Linux evolution} 
+
+
+
+
+We applied SYN to real-life systems (shown in \autoref{tab:casestudies}) and presented several insights and reflections. 
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{lcrrr} 
+        \hline
+        {\bf Name} & {\bf First Analyzed Commit} & {\bf Last Analyzed Commit} & {\bf \# of commits} & {\bf \# of files}\\ 
+        \hline
+        JetUML & 07 Jan 2015 & 12 May 2022 & 2,152 & 795\\ 
+        ArgoUML & 26 Jan 1998 & 29 May 2021 & 16,672 & 11,129 \\
+        Elasticsearch & 28 Jun 2013 & 14 Apr 2022 & 34,842 & 41,043 \\
+        LibreOffice & 07 Mar 2002 & 18 Jun 2022 & 367,996 & 213,791 \\
+        Linux & 17 Apr 2005 & 19 Apr 2022 & 997,486 & 109,829
+    \end{tabular}
+    \caption{List of analyzed projects}
+    \label{tab:casestudies}
+\end{table}
+
+The biggest project analyzed was Linux, with over 1 million commits. Its analysis, done in parallel with 45 threads, took more than three days to be accomplished. 
+We combined our visualization and auralization approach in a video depicting the evolution of Linux available at \url{https://www.youtube.com/watch?v=iXGQoO7WAA0}. 
+Overall, the video shows that the development activity was constant throughout these 17 years. The codebase started with 19,705 files in April 2005 and reached 77,183 in April 2022, almost four times its original size.
+\autoref{fig:Linux_V7} shows a visual representation of sounds generated from Linux, with some frames of its evolution. The video starts with a peak on the number of files added. As we can see from AnimationFrame 1, the size of the system became massive in the first three months of evolution. Linus Torvalds, the author of Linux and the maintainer of the repository in April 2005, created a new repository to host the Linux codebase instead of converting the existing one to Git. He explained the reasons for this choice in the first commit. \footnote{\url{https://github.com/torvalds/linux/commit/1da177e4c3f41524e886b7f1b8a0c1fc7321cac2}}
+In October 2008, as shown in AnimationFrame 14, the number of files removed peaked. Consequently, the prevalence of the sound representing deleted files is high. In this video frame, the center of the spiral starts to become sparse. As highlighted in AnimationFrame 32, the development activity was constant and very high during this 
+seventeen-year interval. In fact, this frame has many files painted with a bright color, meaning they were updated slightly before the frame's date. 
+In the end, from AnimationFrame 68, we can understand the actual size of the system. More importantly, the center of the spiral still holds some files, meaning that in Linux, files written at least 17 years ago are still employed and maintained. 
+
+\begin{landscape}
+    \Huge 
+    \begin{figure}[ht]
+    \includegraphics[width=\linewidth]{LinuxAuralization.jpg}
+    \caption{Frames of Linux's Evoltution} 
     \label{fig:Linux_V7}
 \end{figure}
 
-We applied SYN to real-life systems and presented several insights and reflections. For example, in \autoref{fig:Linux_V7}, taken from the Linux case study, we saw how the codebase of Linux evolved since its move to git. The development activity was constant throughout these 17 years. The codebase started with 19,705 files and reached 77,183 in April 2022, almost four times its original size. During this time, they evolved the kernel to develop new features and slowly started a process to remove the files that were added 17 years ago. As we can see, the center of the spiral began to become sparse. Nonetheless, it still holds many files, which means that the current version of Linux relies on files written more than 17 years ago.
-We combined our visualization and auralization approach in a video depicting the evolution of Linux available at \url{https://workInProgress.com}. 
-
+\end{landscape}
 
 \section*{Conclusions}
 
@@ -236,7 +234,9 @@ In the thesis, we presented an approach to mine, visualize and auralize large so
     We extract information about the modified files for each commit, parse it, and finally serialize it in a file on the local storage. The root element of our model is the history of a project that holds a set of files. An action recorded by a commit made on a file is also represented.
     \item \textbf{The sensorial software evolution visualization}. It exploits synesthesia, the production of a sense impression relating to one sense by stimulating another. It represents the evolutionary process through an interactive visual depiction of evolving software artifacts. It enables the comprehension of both the structural and the evolutionary prospectives. Moreover, SYN, the tool that implemented this approach, allows the user to customize visualization properties deeply. This approach provides the following benefits:
     \item \textbf{Auditive portrayal of the evolution}. It consists of a guideline suggesting how to compose audio sounds representing the evolution of a project. The proposed methodology was tested with two systems and presented with the JetUML and Linux case study analysis. The main benefit provided by this approach is the support of the visualization. It provides additional information without displaying them. Consequently, the listener can infer additional aspects of the analysis.
-\end{enumerate}   
+\end{enumerate}  
+
+The broad applicability of our approach  (on GitHub, there are more than 20M open-source systems) will allow us to study many software systems and, thanks to the gained experience, improve and specialize the techniques presented in this thesis.   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%	BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
