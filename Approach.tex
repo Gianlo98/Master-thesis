@@ -1,3 +1,4 @@
+%!TEX root = SYN.tex
 
 \chapter[Approach]{Approach}
 \graphicspath{ {images/approach} }
@@ -390,35 +391,29 @@ An important piece of information that we want to represent is the value of a me
 
 \section{Evolution Auralization}
 \label{sec:audioApproach}
-Displaying lots of information on the screen might not be an efficient way to gather crucial aspects of the evolution of a software system. Users might get lost when they have too much information to process. Furthermore, we want to play AnimationFrames sequentially, like in a movie. Therefore, users might not have the time to understand the differences between the current and the previously displayed AnimationFrame. To overcome this issue, we provide an auditorial representation of an AnimationFrame to support understanding its changes. The goal is to support the sight sense, combining it with hearing, by playing audio notes that are recognizable by the user, generated from similar but complementary information, to understand an AnimationFrame better. 
+The goal of this thesis is to enable sensorial software evolution comprehension by leveraging the concept of synesthesia, i.e., the production of a sense impression relating to one sense by stimulation of another sense. In the previous sections, we detailed our approach to visualizing the evolution of a software system. In addition to sight, our approach also wants to stimulate another sense: hearing. To complement our evolutionary visualization, we devised an approach to \emph{\quotes{auralize}} the evolution of a software system. Auralization is a term introduced to be used in analogy with visualization to describe rendering audible (imaginary) sound fields \cite{kleiner1993}. The intuition is to create a melody, starting from the evolutionary data extracted from the version control system, to augment our visualization with complementary pieces of information.
 
-Music is composed of aural phenomena; music theory considers how those phenomena apply in music by defining many concepts, such as beats per minute (BPM), pitch, or note.
-We used them as a starting point to compose a sound for each AnimationFrame. In particular, in our approach, the following audio concepts are involved:
+
+Many parameters influence a musical composition, such as beats per minute (i.e., BPM), pitch, or note. In our approach, we consider the following parameters:
+
 \begin{itemize}
-    \item Tempo: indicates the speed of a musical composition. It is measured in BPM. 
-    \item Measure: a single unit of time featuring a specific number of beats. 
-	\item Note's pitch:  the lowness or highness of a sound makes it possible to judge sounds as \quotes{higher} and \quotes{lower}.
-	\item Amplitude: it determines how loud a note is (volume of a note).
+    \item The \textbf{Tempo} indicates the speed of a musical composition. It is measured in BPM. 
+    \item The \textbf{Measure} represents a single unit of time featuring a specific number of beats. In our approach, this value is constant (i.e., 1 second). For every measure, we play a new AnimationFrame.
+	\item The \textbf{Pitch} is the quality that makes it possible to judge sounds as \quotes{higher} and \quotes{lower} in a sense associated with musical melodies.
+	\item The \textbf{Amplitude} determines how loud a note is (i.e., volume).
 \end{itemize}
 
-As stated by Vickerts \cite{Vickers2004}, an orchestral model is needed to enable engineers to distinguish between different activities on the code. Following this idea, we decided to compose an auditorial portrayal of an  AnimationFrame mapping metrics to different sounds. We focused our attention only on metrics extracted from:
+According to Vickerts \cite{Vickers2004}, to distinguish between different activities on the code, we need an \emph{\quotes{orchestral model}} where each instrument represents a certain activity. Following this idea, our approach is composed of three instruments, each representing a different aspect of the evolution of a software system:
+
 \begin{itemize}
-    \item number of commits
-    \item number of files added/removed/modified/renamed or moved
-    \item number of lines added/removed
+
+    \item \textbf{Bass drums} represent the \textbf{number of commits} in an AnimationFrame. We use this instrument also to dictate the \textbf{Tempo} of our musical composition: higher the number of commits, higher the tempo. We normalized the values in the interval $\left[60,200\right]$. The \textbf{amplitude} of this instrument is constant.
+    
+    \item \textbf{Bass sound} represent the number of \textbf{deleted files} in an AnimationFrame. We use the number of deleted files to determine the repetition and the amplitude of the sound. We divided the measure into quarters and play this instrument one to four times depending on the value of the metric represented. We linearly normalized the amplitude in the range $\left[0.1,0.8\right]$ depending on the value of the metric.
+    
+    \item \textbf{Electric sound} represent the number of \textbf{added files} in an AnimationFrame. We use the number of deleted files to determine the repetition and the amplitude of the sound. We divided the measure into octaves and play this instrument one to eight times depending on the value of the metric represented. We linearly normalized the amplitude in the range $\left[0.2,0.85\right]$ depending on the value of the metric.
+
 \end{itemize}
 
-Generated sound melodies depend upon the value of a pre-selected metric. For example, we can create a new metric to play how many Java files were added. In our approach, we assign distinct sounds to each of the metrics, e.g., the number of commits will influence the tempo of our melody (BPM) and will be represented by a sound similar to a heartbeat.
-
-The output of this approach is a piece of music representing a system's evolution. It is composed of several different sounds equal to the number of metrics used in its generation. The idea is to use these values to control BPM, pitch, and the amplitude of a note. 
-An exemplary tool to implement this approach should provide a wide range of sounds to differentiate the adopted metric values. 
-
-
-
-
-
-
-
-
-
+The output of our approach is a musical composition representing a system's evolution. It should be noted that we obtained the aforementioned parameters by tuning the musical composition to our liking. However, the approach is customized with different metrics or different thresholds. 
 

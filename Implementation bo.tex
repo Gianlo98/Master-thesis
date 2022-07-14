@@ -1,4 +1,4 @@
-
+%!TEX root = SYN.tex
 \chapter[Implementation]{Implementation}
 \graphicspath{ {images/implementation} }
 In this chapter, we present how we designed and implemented SYN, a tool that implements our approach described in the previous Chapter.
@@ -350,7 +350,7 @@ To obtain this map, it uses the following strategy:
 
 
 \section{Server}
-The server is responsible for providing the analysis results, in an intermediate language between the 
+The server is responsible for providing the analysis results in an intermediate language between the 
 front-end (Visual Inspector). We developed the server with Spring Boot, a popular Java application framework.\footnote{\url{https://spring.io/projects/spring-boot}}
 
 \subsection*{GraphQL API} 
@@ -359,39 +359,62 @@ GraphQL is a data query and manipulation language for APIs. It also provides the
 This is an advantage compared to a REST API because, instead of always returning a predefined set of data, GraphQL only returns the needed information, making the communication more effective. 
 In GraphQL, endpoints are divided into queries and mutations. Queries retrieve data, while mutations create or alter data. In the rest of this section, we present the mutations and queries defined in our GraphQL API.
 
-
-\textbf{Mutations}
-\texttt{createProject(projectName: String!, projectLocation: String!): Project} \\
-creates and initiates the analysis of a new project.
-It takes as parameters the project name and its path on the local machine or the URL as a String. 
-
-\textbf{Queries}
-\texttt{projectList:  [PartialProjectInformation]!} \\ 
-is used to retrieve a list of projects. For performance reasons, only the name and the id of a project can be retrieved. 
 \bigbreak
-\texttt{view(projectId: Int!, viewSpecification: ViewSpecificationInput!): View} \\
-returns a view of the project identified by \texttt{projectId}, built following the directives specified in the \texttt{viewSpecification} object. 
+\noindent
+\textbf{Mutations}
+
+\noindent
+\verb|createProject(projectName: String!, projectLocation: String!): Project| \\
+\indent
+Creates and initiates the analysis of a new project. It takes as parameters the project name and its path on the local machine or the URL as a String. 
+
+\bigbreak
+\noindent
+\textbf{Queries}
+
+\noindent
+\verb|projectList:  [PartialProjectInformation]!| \\ 
+\indent
+Used to retrieve a list of projects. For performance reasons, only the name and the id of a project can be retrieved. 
+
+\bigbreak
+\noindent
+\verb|view(projectId: Int!, viewSpecification: ViewSpecification!): View| \\
+\indent
+Returns a view of the project identified by \texttt{projectId}, built following the directives specified in the \\ \texttt{viewSpecification} object. 
 This query returns an object representing a view; thus, it has all the fields described in \autoref{s:view_impl}. 
 \bigbreak
-\texttt{partialView(projectId: Int!, viewSpecification: ViewSpecificationInput!, viewAnimationId: Int): View} \\
-returns a view with the next 100 AnimationFrames starting from \texttt{viewAnimationId}. 
+\noindent
+\verb|partialView(projectId: Int!, viewSpecification: ViewSpecification!, viewAnimationId: Int): View| \\
+\indent
+Returns a view with the next 100 AnimationFrames starting from \texttt{viewAnimationId}. 
 This endpoint was created to improve the clients' performance. If the viewSpecification expected too many animations, the resulting view would be a bottleneck for the client.
 With this endpoint it can still retrieve the view, and then animation can be lazily loaded when they are required. 
 \bigbreak
-\texttt{fileHistory(projectId: Int!, fileHistoryId: Int!): FileHistory} \\
-retrieves the FileHistory identified with \texttt{fileHistoryId} of the project with \texttt{projectId}.
+\noindent
+\verb|fileHistory(projectId: Int!, fileHistoryId: Int!): FileHistory| \\
+\indent
+Retrieves the FileHistory identified with \texttt{fileHistoryId} of the project with \texttt{projectId}.
 \bigbreak
-\texttt{projectVersions(projectId: Int!, projectVersionsId: [Int]!): [ProjectVersion]!} \\
-retrieves the ProjectVersion identified with \texttt{projectVersionsId} of the project with \texttt{projectId}.
+\noindent
+\verb|projectVersions(projectId: Int!, projectVersionsId: [Int]!): [ProjectVersion]!| \\
+\indent
+Retrieves the ProjectVersion identified with \texttt{projectVersionsId} of the project with \texttt{projectId}.
 \bigbreak
-\texttt{groupingPreview(projectId: Int!, viewSpecification: ViewSpecificationInput!): Int} \\
-this endpoint computes the number of AnimationFrames created with the given \texttt{viewSpecification}.
+\noindent
+\verb|groupingPreview(projectId: Int!, viewSpecification: ViewSpecification!): Int| \\
+\indent
+Computes the number of AnimationFrames created with the given \texttt{viewSpecification}.
 \bigbreak
-\texttt{fileTypeCounter(projectId: Int!): [FileTypeCounter!]!} \\
-returns a list for each file type with the number of occurrences in the project \texttt{projectId}.
+\noindent
+\verb|fileTypeCounter(projectId: Int!): [FileTypeCounter!]!| \\
+\indent
+Returns a list for each file type with the number of occurrences in the project \texttt{projectId}.
 \bigbreak
-\texttt{fileTypeMetrics(projectId: Int!, fileTypeFilter: [String]): [FileTypeMetrics!]!} \\
-returns a list for each file type with its metrics. Only the file types in the \texttt{fileTypeFilter} list are considered. 
+\noindent
+\verb|fileTypeMetrics(projectId: Int!, fileTypeFilter: [String]): [FileTypeMetrics!]!| \\
+\indent
+Returns a list for each file type with its metrics. Only the file types in the \texttt{fileTypeFilter} list are considered. 
 
 \clearpage
 \begin{figure}
@@ -590,7 +613,7 @@ The Visual Inspector is a helpful tool for understanding and debugging SYN's ana
 \end{figure}
 
 \section{Audio}
-SYN implements the auralization approach detailed in \autoref{sec:audioApproach} in its Core component. 
+SYN implements the auralization approach (see \autoref{sec:audioApproach}) in the Core component. 
 Its implementation uses Sonic Pi\footnote{\url{https://sonic-pi.net}} to compose melodies. Sonic Pi is a code-based creation tool written in Ruby. It enables you to write and modify code live to make music. To do that, it defines a domain-specific language to compose melodies procedurally. For example, the instruction \texttt{play 60} plays the 60th note on the piano (selected by default). 
 
 \begin{figure}
@@ -600,16 +623,17 @@ Its implementation uses Sonic Pi\footnote{\url{https://sonic-pi.net}} to compose
     \label{fig:sonicpi}
 \end{figure}
 
-%This implementation aims to produce a depiction of the evolution to support the 3D visualization. 
+This implementation aims to produce a depiction of the evolution to support the 3D visualization. To do that, we built our auditive approach on the ViewAnimation. Therefore, we extract from each frame the following metrics: number of files added, number of files removed, and number of commits. The idea is to use their value to generate three tracks, each depending upon a metric. We play each AnimationFrame for one second. We employed the following sounds:
+\begin{itemize}
+    \item Bass drums: to represent the number of commits in an AnimationFrame. We decided to normalize the values retrieved by this metric in the interval $\left[60,200\right]$. Consequently, when the animation with less commit in the evolution is displayed, the retrieved by this metric is 60, and the same goes for the maximum. We used this value to set the BPM of this track. The amplitude is always at 1 (the maximum). Under those circumstances, users can understand how active the period represented by the played AnimationFrame was by paying attention to the number of bass drums heard each second.
+    \item Bass sound: to represent the number of deleted files in an AnimationFrame. We use the number of deleted files to determine the repetition and the amplitude of the sound. The value is normalized to $\left[1,4\right]$ for the repetition and $\left[0.1,0.8\right]$ for the amplitude.
+    \item Electric sound: to represent the number of files added in an AnimationFrame.  We use the number of added files to determine the repetition and the amplitude of the sound. The value is normalized to $\left[1,8\right]$ for the repetition and $\left[0.2,0.85\right]$ for the amplitude.
+\end{itemize}
 
-%To do that, we built our auditive approach on the ViewAnimation. Therefore, we extract from each frame the following metrics: number of files added, number of files removed, and number of commits. The idea is to use their value to generate three tracks, each depending upon a metric. We play each AnimationFrame for one second. We employed the following sounds:
-%\begin{itemize}
-%    \item Bass drums: to represent the number of commits in an AnimationFrame. We decided to normalize the values retrieved by this metric in the interval $\left[60,200\right]$. Consequently, when the animation with less commit in the evolution is displayed, the retrieved by this metric is 60, and the same goes for the maximum. We used this value to set the BPM of this track. The amplitude is always at 1 (the maximum). Under those circumstances, users can understand how active the period represented by the played AnimationFrame was by paying attention to the number of bass drums heard each second.
-%    \item Bass sound: to represent the number of deleted files in an AnimationFrame. We use the number of deleted files to determine the repetition and the amplitude of the sound. The value is normalized to $\left[1,4\right]$ for the repetition and $\left[0.1,0.8\right]$ for the amplitude.
-%    \item Electric sound: to represent the number of files added in an AnimationFrame.  We use the number of added files to determine the repetition and the amplitude of the sound. The value is normalized to $\left[1,8\right]$ for the repetition and $\left[0.2,0.85\right]$ for the amplitude.
-%\end{itemize}
+\autoref{app:SonicPiLinux} shows the code we developed to implement this mapping. 
+%In the first three lines, there are three arrays containing the metric's values. Before being used, these values are normalized by the \texttt{rescale} function. 
 
-\autoref{app:SonicPiLinux} shows the code we developed to implement this mapping. To debug our auralization approach, we developed a Python application that queries the server and controls SonicPi. The application works as follows: first, it queries the GraphQL server to retrieve the view of a project. Once the view is returned, it extracts from each AnimationFrame the needed metric values. Then these values are sent to SonicPi through a protocol called Open Sound Protocol (OSC). Finally, it renders one graph for each metric to let us associate each metric value with a sound. To do that, we used a black dot representing the current AnimationFrame. 
+To debug our auralization approach, we developed a Python application that queries the server and controls SonicPi. The application works as follows: first, it queries the GraphQL server to retrieve the view of a project. Once the view is returned, it extracts from each AnimationFrame the needed metric values. Then these values are sent to SonicPi through a protocol called Open Sound Protocol (OSC). Finally, it renders one graph for each metric to let us associate each metric value with a sound. To do that, we used a black dot representing the current AnimationFrame. 
 
 \autoref{fig:Bokeh} shows the interface of the debugger. Each chart represents a metric, and the black dot (synchronized with SonicPi) represents the AnimationFrame being auralized. 
 
