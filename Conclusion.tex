@@ -1,8 +1,8 @@
 \chapter{Conclusion}
-In this chapter, we summarize the contributions made in this thesis, discuss our approach's benefits, and present future work directions.
+In this chapter, we summarize the contributions made in this thesis, discuss our approach's benefits, and outline possible future work.
 
 \subsection*{Contributions}
-This thesis presents three new approaches to mine, visualize and auralize large software repositories. The goal of this thesis was to explore new solutions to represent evolution. We cover all the stages required to reconstruct the history of a git repository, from the historical collection of information to the graphical data representation and visualization. We developed it with an agnostic approach against the programming language. Therefore, an extension of the system is needed to collect and visualize specific kinds of information. Our contributions can be summarized as follows:
+This thesis presents three new approaches to mine, visualize, and auralize large software repositories. The goal of this thesis was to explore new solutions to represent software evolution. We cover all the stages required to reconstruct the history of a git repository, from the historical collection of information to the graphical data representation and visualization. We developed it with a language-agnostic approach. Therefore, an extension of the system is needed to collect and visualize specific kinds of information. Our contributions can be summarized as follows:
 \begin{enumerate}
     \item \textbf{The mining and modeling of a large git repository's history}. We present an approach to rebuilding the history of a git repository by traversing the repository's history. It starts from the first commit and analyzes all the subsequent commits until the end.
     For each commit, we extract information about the modified files, parse it and finally serialize it in a file on the local storage. The root element of our model is the history of a project that holds a set of and a set of files. An action recorded by a commit made on a file is also represented. The main benefits provided are the following: \begin{itemize}
@@ -10,13 +10,13 @@ This thesis presents three new approaches to mine, visualize and auralize large 
         \item The analysis process is automatic. 
         \item The analysis process can be scaled horizontally. 
     \end{itemize}
-    \item \textbf{The sensorial software evolution visualization}. It exploits synesthesia, the production of a sense impression relating to one sense by stimulation of another. It represents the evolutionary process through an interactive visual depiction of evolving software artifacts. It enables the comprehension of both the structural and the evolutionary prospectives. Moreover, SYN, the tool that implemented this approach, allows the user to customize visualization properties deeply. This approach provides the following benefits:
+    \item \textbf{The sensorial software evolution visualization}. It exploits synesthesia, the production of a sense impression relating to one sense by stimulation of another. It represents the evolutionary process through an interactive visual depiction of evolving software artifacts. It enables the comprehension of both the structural and the evolutionary prospectives. Moreover, SYN, the tool that implemented this approach, allows the user to customize visualization properties. This approach provides the following benefits:
     \begin{itemize}
-        \item It provides an interactive way to comprehend the evolutionary process of software.
+        \item It provides an interactive way to comprehend the software evolution.
         \item It is a scalable approach. Therefore it works with every git repository. 
         \item It allows the user to customize many graphical properties such as colors, shapes, and height. Therefore, everyone can leverage a customized experience to trigger as many collateral cognitive paths as possible. 
         \item It provides two strategies to traverse the repository history: by commit or by time. This way, the comprehension of repositories with a very large history is not undermined. 
-        \item Thanks to the aging concept, the user can infer how old a file is. Differences in age can be expressed both with commits or with time and are useful to understand how many moments have passed since the last action.
+        \item Thanks to the aging concept, the user can infer how old a file is. Age differences can be expressed both with commits or with time and are useful to understand how many moments have passed since the last action.
         \item The height of a file is mapped to the value of a pre-selected metric. We provided multiple mapper strategies. 
         \item The shapes and the opacity can be customized to highlight a type of file over others. 
         \item The positioning strategy allows the user to understand the additional order of files immediately. This way, they can understand if the repository still holds legacy files. 
