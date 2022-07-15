@@ -137,7 +137,7 @@ This section analyzes JetUML, an open-source desktop application to work with UM
 To highlight them, we use a one-commit aging strategy, maximum age of two. In other words, files modified by the displayed commit have an age equal to zero, whereas others have an age equal to one.
 Consequently, all the files excluded in the depicted commit are painted with the base color (gray by default). 
 
-Figure \ref{fig:JetUML_V0E} shows the graphical difference between a commit that modified only a few entities, and another that changed numerous entities. To identify highly active commits, we focused on commits that involved a considerable percentage of files.
+\autoref{fig:JetUML_V0E} shows the graphical difference between a commit that modified only a few entities, and another that changed numerous entities. To identify highly active commits, we focused on commits that involved a considerable percentage of files.
 
 The view specification of this visualization is the following:
 \begin{itemize}
@@ -167,7 +167,7 @@ We report only a subset of the most active commits.
 
 The repository's history starts on January 7, 2015, when Martin Robillard made the first commit. 
 This commit added three files: README, a license, and a gitingore. 
-Figure \ref{fig:JetUML_V0S1} represents it with three entities. They have the same shape because we did not adopt different shapes in the specification, but the height is different. The license file is taller than other entities because of its bigger size. 
+\autoref{fig:JetUML_V0S1} represents it with three entities. They have the same shape because we did not adopt different shapes in the specification, but the height is different. The license file is taller than other entities because of its bigger size. 
 
 Fifteen minutes later, he pushed the initial codebase of a project named Violet, composed of 83 files and an updated version of the gitignore file. This commit is represented in \autoref{fig:JetUML_V0S2}, where 83 green entities represent added files, one yellow entity represents the updated gitignore files, and two gray entities, the README and the license files added before, that were not touched.
 
@@ -737,12 +737,12 @@ We present only a subset of Linux's significant evolution aspects. The full depi
     \begin{figure}[ht]
     \includegraphics[width=\linewidth]{LinuxAuralization.jpg}
     \caption{Frames of Linux's Evoltution} 
-    \label{fig:Linux_V7}
+    \label{fig:Linux_V8}
 \end{figure}
 \end{landscape}
 We combined our visualization and auralization approach in a video depicting the evolution of Linux.\footnote{\url{https://www.youtube.com/watch?v=iXGQoO7WAA0}} The video shows how the Linux repository evolved in 17 years between April 2005 and April 2022. 
 
-\autoref{fig:Linux_V7} shows a visual representation of sounds generated from Linux, with some frames of its evolution. The video starts with a peak on the number of files added. As we can see from AnimationFrame 1, the size of the system became massive in the first three months of evolution. Linus Torvalds, the author of Linux and the maintainer of the repository in April 2005, created a new repository to host the Linux codebase instead of converting the existing one to Git. He explained the reasons for this choice in the first commit.\footnote{\url{https://github.com/torvalds/linux/commit/1da177e4}}
+\autoref{fig:Linux_V8} shows a visual representation of sounds generated from Linux, with some frames of its evolution. The video starts with a peak on the number of files added. As we can see from AnimationFrame 1, the size of the system became massive in the first three months of evolution. Linus Torvalds, the author of Linux and the maintainer of the repository in April 2005, created a new repository to host the Linux codebase instead of converting the existing one to Git. He explained the reasons for this choice in the first commit.\footnote{\url{https://github.com/torvalds/linux/commit/1da177e4}}
 
 In October 2008, as shown in AnimationFrame 14, there was a peak in the number of removed files. Consequently, the prevalence of the sound representing deleted files is high. In this video frame, the center of the spiral starts to become sparse. As highlighted in AnimationFrame 32, the development activity was constant and very high during this 
 seventeen-year interval. This frame has many files painted with a bright color, meaning they were updated slightly before the frame's date. 

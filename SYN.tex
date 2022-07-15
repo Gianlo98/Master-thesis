@@ -18,8 +18,11 @@
 \usepackage{csquotes}
 \usepackage{lscape}
 
-\def\sectionautorefname{Section}
-\def\subsectionautorefname{Subsection}
+\usepackage{hyperref}
+\addto\extrasenglish{
+    \def\sectionautorefname{Section}
+    \def\subsectionautorefname{Subsection}
+}
 
 \usepackage{tikz}
 

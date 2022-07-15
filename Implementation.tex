@@ -1,4 +1,4 @@
-
+%!TEX root = SYN.tex
 \chapter[Implementation]{Implementation}
 \graphicspath{ {images/implementation} }
 In this chapter, we present how we designed and implemented SYN, a tool that implements our approach described in the previous Chapter.
@@ -350,7 +350,7 @@ To obtain this map, it uses the following strategy:
 
 
 \section{Server}
-The server is responsible for providing the analysis results, in an intermediate language between the 
+The server is responsible for providing the analysis results in an intermediate language between the 
 front-end (Visual Inspector). We developed the server with Spring Boot, a popular Java application framework.\footnote{\url{https://spring.io/projects/spring-boot}}
 
 \subsection*{GraphQL API} 
@@ -359,39 +359,62 @@ GraphQL is a data query and manipulation language for APIs. It also provides the
 This is an advantage compared to a REST API because, instead of always returning a predefined set of data, GraphQL only returns the needed information, making the communication more effective. 
 In GraphQL, endpoints are divided into queries and mutations. Queries retrieve data, while mutations create or alter data. In the rest of this section, we present the mutations and queries defined in our GraphQL API.
 
-
-\textbf{Mutations}
-\texttt{createProject(projectName: String!, projectLocation: String!): Project} \\
-creates and initiates the analysis of a new project.
-It takes as parameters the project name and its path on the local machine or the URL as a String. 
-
-\textbf{Queries}
-\texttt{projectList:  [PartialProjectInformation]!} \\ 
-is used to retrieve a list of projects. For performance reasons, only the name and the id of a project can be retrieved. 
 \bigbreak
-\texttt{view(projectId: Int!, viewSpecification: ViewSpecificationInput!): View} \\
-returns a view of the project identified by \texttt{projectId}, built following the directives specified in the \texttt{viewSpecification} object. 
+\noindent
+\textbf{Mutations}
+
+\noindent
+\verb|createProject(projectName: String!, projectLocation: String!): Project| \\
+\indent
+Creates and initiates the analysis of a new project. It takes as parameters the project name and its path on the local machine or the URL as a String. 
+
+\bigbreak
+\noindent
+\textbf{Queries}
+
+\noindent
+\verb|projectList:  [PartialProjectInformation]!| \\ 
+\indent
+Used to retrieve a list of projects. For performance reasons, only the name and the id of a project can be retrieved. 
+
+\bigbreak
+\noindent
+\verb|view(projectId: Int!, viewSpecification: ViewSpecification!): View| \\
+\indent
+Returns a view of the project identified by \texttt{projectId}, built following the directives specified in the \\ \texttt{viewSpecification} object. 
 This query returns an object representing a view; thus, it has all the fields described in \autoref{s:view_impl}. 
 \bigbreak
-\texttt{partialView(projectId: Int!, viewSpecification: ViewSpecificationInput!, viewAnimationId: Int): View} \\
-returns a view with the next 100 AnimationFrames starting from \texttt{viewAnimationId}. 
+\noindent
+\verb|partialView(projectId: Int!, viewSpecification: ViewSpecification!, viewAnimationId: Int): View| \\
+\indent
+Returns a view with the next 100 AnimationFrames starting from \texttt{viewAnimationId}. 
 This endpoint was created to improve the clients' performance. If the viewSpecification expected too many animations, the resulting view would be a bottleneck for the client.
 With this endpoint it can still retrieve the view, and then animation can be lazily loaded when they are required. 
 \bigbreak
-\texttt{fileHistory(projectId: Int!, fileHistoryId: Int!): FileHistory} \\
-retrieves the FileHistory identified with \texttt{fileHistoryId} of the project with \texttt{projectId}.
+\noindent
+\verb|fileHistory(projectId: Int!, fileHistoryId: Int!): FileHistory| \\
+\indent
+Retrieves the FileHistory identified with \texttt{fileHistoryId} of the project with \texttt{projectId}.
 \bigbreak
-\texttt{projectVersions(projectId: Int!, projectVersionsId: [Int]!): [ProjectVersion]!} \\
-retrieves the ProjectVersion identified with \texttt{projectVersionsId} of the project with \texttt{projectId}.
+\noindent
+\verb|projectVersions(projectId: Int!, projectVersionsId: [Int]!): [ProjectVersion]!| \\
+\indent
+Retrieves the ProjectVersion identified with \texttt{projectVersionsId} of the project with \texttt{projectId}.
 \bigbreak
-\texttt{groupingPreview(projectId: Int!, viewSpecification: ViewSpecificationInput!): Int} \\
-this endpoint computes the number of AnimationFrames created with the given \texttt{viewSpecification}.
+\noindent
+\verb|groupingPreview(projectId: Int!, viewSpecification: ViewSpecification!): Int| \\
+\indent
+Computes the number of AnimationFrames created with the given \texttt{viewSpecification}.
 \bigbreak
-\texttt{fileTypeCounter(projectId: Int!): [FileTypeCounter!]!} \\
-returns a list for each file type with the number of occurrences in the project \texttt{projectId}.
+\noindent
+\verb|fileTypeCounter(projectId: Int!): [FileTypeCounter!]!| \\
+\indent
+Returns a list for each file type with the number of occurrences in the project \texttt{projectId}.
 \bigbreak
-\texttt{fileTypeMetrics(projectId: Int!, fileTypeFilter: [String]): [FileTypeMetrics!]!} \\
-returns a list for each file type with its metrics. Only the file types in the \texttt{fileTypeFilter} list are considered. 
+\noindent
+\verb|fileTypeMetrics(projectId: Int!, fileTypeFilter: [String]): [FileTypeMetrics!]!| \\
+\indent
+Returns a list for each file type with its metrics. Only the file types in the \texttt{fileTypeFilter} list are considered. 
 
 \clearpage
 \begin{figure}
