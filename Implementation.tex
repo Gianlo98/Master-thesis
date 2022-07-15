@@ -53,7 +53,7 @@ The class diagram is shown in \autoref{fig:SYNCLass}. The abstract class \texttt
     \item \texttt{path}: the path of the analyzed git repository. 
 \end{itemize}
 
-We defined two additional classes: \texttt{LocalProject} to represent a project in the local storage and \texttt{RemoteProject} to describe a project that needs to be retrieved from a remote source. 
+We defined two additional classes: \texttt{LocalProject} to represent a project in the local storage and \\ \texttt{RemoteProject} to describe a project that needs to be retrieved from a remote source. 
 \texttt{LocalProject} does not need any further fields to represent a local project, \texttt{RemoteProject} has a \texttt{projectURL} field. We might add more information, such as the git branch or the remote credentials; despite that, we decided to keep the implementation as simple as possible. 
 
 
@@ -64,7 +64,7 @@ We defined two additional classes: \texttt{LocalProject} to represent a project 
     \label{fig:SYNCLass}
 \end{figure}
 
-\subsection*{History}
+\subsection{History}
 
 Each project might hold a \textbf{ProjectHistory} object representing its history. 
 The \texttt{ProjectHistory} class holds a group of ProjectVersion and a group of FileHistories. The \texttt{FileHistory} class has the following fields:
@@ -99,7 +99,7 @@ For example, \texttt{FileMoving} and \texttt{FileRenaming} extend \texttt{Change
 
 
 
-\subsection*{Analysis}
+\subsection{Analysis}
 The Core provides abstract classes to standardize the exchange of analysis results. 
 The first class that the model defines is \textbf{AnalysisWorkDescriptor}.
 It is a holder of the information to instruct the analyzer on what it has to do. Namely, the project and the list of commits to be analyzed.
@@ -125,7 +125,7 @@ This module also provides an abstraction of the core concepts of the Git protoco
 Thanks to this choice, an external module can provide a way to retrieve data from a git repository without sharing internal classes or dependencies with other modules. 
 
 
-\subsection*{View}
+\subsection{View}
 \label{s:view_impl}
 In \autoref{s:3DRepr} we explained our visual approach. The \textbf{View} class defines how the visualization should be rendered. 
 To display a repository's evolution, the user interface sequentially displays a list of AnimationFrames, each representing a state of the repository at a particular time. We designed the class \textbf{ViewAnimation} to define a frame of the view animation. This class has two properties:
@@ -179,62 +179,70 @@ In our initial implementation, we provided five different mapping strategies:
 
 \section{CLI}
 CLI is a command-line interface to interact with SYN.
-\\
-\textbf{Analysis commands}
-\lstinline{syn analyze auto -p <project_id> -o <output_file> -t <thread_count>}\\
-\\
+\bigbreak
+\noindent
+\textbf{Analysis commands}\\
+\noindent
+\verb|syn analyze auto -p <project_id> -o <output_file> -t <thread_count>|\\
+\indent
 This command is used to run an analysis with SYN. 
 Given the project id, the system automatically creates \texttt{thread\_count} thread workers (5 by default), runs the analysis in parallel, and joins the results in the output file. The command ensures that each thread has a different git repository to work on. 
-
-
-\lstinline{syn analyze join -o <output_file> <...analysis_file>}\\
-\\
+\bigbreak
+\noindent
+\verb|syn analyze join -o <output_file> <...analysis_file>|\\
+\indent
 This command joins analysis results into a single output file.
 
-\begin{lstlisting}
-syn analyze manual -p <project_id> -g <git_repo_path>
-    -rc <first_commit> -lc <last_commit> -o <output_file>
-\end{lstlisting}
-
+\bigbreak
+\noindent
+\verb|syn analyze manual -p <project_id> -g <git_repo_path> | \\
+\verb|     -rc <first_commit> -lc <last_commit> -o <output_file>|\\
+\indent
 This command performs an analysis with SYN. It lets the developer choose the repository path and the first and last commits of the analysis. 
 If the first commit is not specified, the analysis starts from the beginning of the history, and, in the same way, if the last commit is not specified, it completes with the end of the history. 
 
 
-\begin{lstlisting}
-syn analyze prepare -p <project_id>  -g <git_repo_path> 
-    -wn <workers_number> -of <output_folder>
-\end{lstlisting}
-
+\bigbreak
+\noindent
+\verb|syn analyze prepare -p <project_id>  -g <git_repo_path> |\\
+\verb|    -wn <workers_number> -of <output_folder>| \\
+\indent
 This command creates a new folder with many worker descriptors serialized into JSON files. These worker files are used to instruct the Analyzer on how it analyzes a project.
 Based on the number of workers, the repository history is equally partitioned into chunks, each assigned to a worker. 
 
 
-\lstinline{syn analyze worker -p <project_id> -g <git_repo_path> -w <worker_file> -o <output_file>}\\
-\\
+\bigbreak
+\noindent
+\verb|syn analyze worker -p <project_id> -g <git_repo_path> -w <worker_file> -o <output_file>|\\
+\indent
 This command runs the analysis on a project given its worker file. 
 Furthermore, here the user can specify the path of the repository on the local storage. This was done because a repository can be analyzed by only one worker at a time.
-
-\textbf{Project commands}
-
-
-\lstinline{syn project list}\\
-\\
+\bigbreak
+\noindent
+\textbf{Project commands}\\
+\noindent
+\verb|syn project list| \\
+\indent
 This command prints a list of available projects to the console.
 
-
-\lstinline{syn project create -n <project_name> -p <project_location>}\\
-\\
+\bigbreak
+\noindent
+\verb|syn project create -n <project_name> -p <project_location>| \\
+\indent
 This command is used to create a project given its name and its location. The location could be either a path or an URL. 
 
-
-\lstinline{syn project inspect -g <git_path> <project_id> <FileHistory_id>}\\
-\\
+\bigbreak
+\noindent
+\verb|syn project inspect -g <git_path> <project_id> <FileHistory_id>|\\
+\indent
 This command inspects all the FileVersions of the indicated FileHistory. Furthermore, if the git repository is provided, SYN performs a double check to ensure that all the FileVersions were spotted. \
-To do so, it exploits the output of the command \lstinline{git log --full-history -- <FileHistory_path>}, keeping attention if the FileHistory's path was changed (git cannot do that).
+To do so, it exploits the output of the command \verb|git log --full-history -- <FileHistory_path>|, keeping attention if the FileHistory's path was changed (git cannot do that).
 
 
-\lstinline{syn util csv <project_id> -o <output_file>}\\
-\\
+\bigbreak
+\noindent
+\verb|syn util csv <project_id> -o <output_file>|\\
+\indent
 This command produces a CSV containing all the commits' tracked information of the selected project. 
 
 
@@ -245,7 +253,7 @@ To walk through the git-tree, it uses a Java git adapter called JGit.\footnote{\
 We extended the Git classes provided by the Core module, and created the \texttt{JGitProject}, \texttt{JGitCommit} and \texttt{JGitChange} classes. Their job is to call the JGit API and retrieve historical information. 
 
 
-To run the analysis, we obtain first an \texttt{AnalysisWorkDescriptor}. 
+To run the analysis, we obtain first an \texttt{AnalysisWorkDescriptor} describing the job that the Analyzer has to do. 
 The \texttt{JGitAnalysisWorkerDescriptorFactory} class partitions the commit tree and obtains a set of workers. 
 \autoref{fig:historysplit} shows an example of a partition with three workers. First, the whole history of git is retrieved and stored in memory. Secondly, all the branches' commits are merged into a single list sorted by their timestamp. 
 Then, the merge commits are removed since the changes recorded by them are duplicated and finally the resulting list is partitioned to match the requested number of workers. 
@@ -290,7 +298,7 @@ This is the reason that brought us to add the \texttt{aliases} field in the \tex
 In the join algorithm we developed, we employ a map to keep track of FileHistories.
 As a result, the file has a different id in any analysis result, guaranteeing consistency among FileHistories. Furthermore, we can ensure the absence of duplicates in the newly built repository history. 
 
-We present an algorithm that takes as input a list of already discovered FileHistories and a \texttt{ProjectAnalysisResult}, and it returns a dictionary.
+We present an algorithm that takes as input a list of already discovered FileHistories and a \\ \texttt{ProjectAnalysisResult}, and it returns a dictionary.
 This dictionary is used to map partialFileHistories, the FileHistory of an analysis result, to definitive FileHistories, which are part of the entire history of the repository. 
 To obtain this map, it uses the following strategy:
 \begin{enumerate}
@@ -298,17 +306,6 @@ To obtain this map, it uses the following strategy:
     \item If in the partialAnalysisResult there is more than one FileHistory with the same first alias, only the first is mapped to a definitiveFileHistories, and the other partialAnalysisResult are mapped to a new FileHistory.
     \item If a partialFileHistory has not matched an alias with a previously created definitiveFileHistories, then it represents a new definitiveFileHistories.
 \end{enumerate}
-
-% \begin{algorithm}
-%     \caption{Algorithm to create a mapping between partialFileHistories and definitiveFileHistories}
-%     \label{alg:cap}
-%     \begin{algorithmic}[1]
-        
-%     \State $partialToDefinitiveMap \gets new Map()$
-%     \State $partialAliasToFileHistory \gets new Map()$
-%     \State $newFileHistories \gets new List()$
-%     \end{algorithmic}
-% \end{algorithm}
 
 \begin{algorithm}
     \caption{Algorithm to create a mapping between partialFileHistories and definitiveFileHistories}
@@ -385,11 +382,11 @@ Returns a view of the project identified by \texttt{projectId}, built following 
 This query returns an object representing a view; thus, it has all the fields described in \autoref{s:view_impl}. 
 \bigbreak
 \noindent
-\verb|partialView(projectId: Int!, viewSpecification: ViewSpecification!, viewAnimationId: Int): View| \\
+\verb|partialView(projectId: Int!, viewSpec: ViewSpecification!, viewAnimationId: Int): View| \\
 \indent
 Returns a view with the next 100 AnimationFrames starting from \texttt{viewAnimationId}. 
 This endpoint was created to improve the clients' performance. If the viewSpecification expected too many animations, the resulting view would be a bottleneck for the client.
-With this endpoint it can still retrieve the view, and then animation can be lazily loaded when they are required. 
+With this endpoint, it can still retrieve the view, and animation can be lazily loaded when required. 
 \bigbreak
 \noindent
 \verb|fileHistory(projectId: Int!, fileHistoryId: Int!): FileHistory| \\
@@ -419,7 +416,7 @@ Returns a list for each file type with its metrics. Only the file types in the \
 \clearpage
 \begin{figure}
     \center
-    \includegraphics[width=0.7\textwidth]{ServertClientFlow.jpg}
+    \includegraphics[width=0.5\textwidth]{ServertClientFlow.jpg}
     \caption{Example of the process of retrieving a view through GraphQL}
     \label{fig:ServertClientFlow}
 \end{figure}
@@ -428,7 +425,7 @@ Returns a list for each file type with its metrics. Only the file types in the \
 \autoref{fig:ServertClientFlow} explains how a View is retrieved through a GraphQL endpoint with a sequence diagram. Once the client, in this case, Visual Inspector, specified a \texttt{viewSpecification}, it makes a POST request to the 
 \texttt{partialView} endpoint with the \texttt{projectId}, the \texttt{viewSpecification} and the \texttt{viewAnimationId} of the AnimationFrame. The Server module, in turn, makes the same request to the Core module. A new View is created and retrieved from Server. It is modified to include only the AnimationFrames requested from the client. When the partialView is computed, it is returned to the client. 
 
-
+\newpage
 \section{Visual Inspector}
 \label{s:SYNDebugger}
 
@@ -440,14 +437,14 @@ These customizations are sent to the back-end server through a {\em view specifi
 The primary purpose of this application is to debug the view and explore all the possible visualization combinations of a system.
 The main page, shown in \autoref{fig:SYNUIList}, holds a list of projects analyzed with SYN.
 
-\begin{figure}
+\begin{figure}[h]
     \center
-    \includegraphics[width=\textwidth]{SYNUI-List.png}
-    \caption{SYN Visual Inspection main page}
+    \fbox{\includegraphics[width=\textwidth]{SYNUI-List.png}}
+    \caption{SYN Visual Inspector main page}
     \label{fig:SYNUIList}
 \end{figure}
 
-\subsection*{Project setup}
+\subsection{Project setup}
 When a project is selected, the UI searches for a viewSpecification object in the web browser's local storage. 
 If it is not present, the module shows the project setup. At the end of the setup, all the preferences selected are saved. 
 The project setup is a wizard to configure a project's visualization, composed of five main steps as follows:
@@ -459,22 +456,31 @@ The project setup is a wizard to configure a project's visualization, composed o
     \item View settings: to customize general settings such as the speed of the visualization, shadows, or whether deleted entities should be visualized. 
 \end{itemize}
 
-\subsubsection*{Component selection}
-\autoref{fig:SYNUIsettings1} presents the first step of the project setup. It shows a list of cards, each representing a file type. 
-We can break the visualization area into two parts: on the top, there are two cards to represent binary files and text files. 
-The sum of these two represents the total number of FileHistories in the system because each file must be either textual or binary. 
-The bottom part shows the cards for the file types identified in the project. For example, if a file is named \quotes{foo.java} the JAVA card in this area represents it. 
-The cards are sorted in descending order by their number of occurrences. This view considers all the file types present in the system. To show the complete list, users have to click on the \quotes{show more} button.
+\newpage
+\subsubsection{Component selection}
 
-\begin{figure}
+\begin{figure}[h]
     \center
     \includegraphics[width=\textwidth]{SYNUI-settings1.png}
     \caption{Project setup: component selection}
     \label{fig:SYNUIsettings1}
 \end{figure}
 
+\autoref{fig:SYNUIsettings1} presents the first step of the project setup. It shows a list of cards, each representing a file type. 
+We can break the visualization area into two parts: on the top, there are two cards to represent binary files and text files. 
+The sum of these two represents the total number of FileHistories in the system because each file must be either textual or binary. 
+The bottom part shows the cards for the file types identified in the project. For example, if a file is named \quotes{foo.java} the JAVA card in this area represents it. 
+The cards are sorted in descending order by their number of occurrences. This view considers all the file types present in the system. To show the complete list, users have to click on the \quotes{show more} button.
 
-\subsubsection*{Grouping strategy}
+\subsubsection{Grouping strategy}
+
+\begin{figure} [h]
+    \center
+    \includegraphics[width=\textwidth]{SYNUI-settings2.png}
+    \caption{Project setup: grouping strategy}
+    \label{fig:SYNUIsettings2}
+\end{figure}
+
 \autoref{fig:SYNUIsettings2} shows the second configuration step. It allows the user to choose how SYN groups ProjectVersions. 
 Following what we have presented in \autoref{s:3DRepr}, we provide two strategies to group ProjectVersions:
 \begin{itemize}
@@ -483,14 +489,16 @@ Following what we have presented in \autoref{s:3DRepr}, we provide two strategie
 \end{itemize}
 
 To ease the selection of the timestamp strategy, instead of manually computing the width of the time window, the user must only specify an amount and its time unit (i.e., hour, day, week, month, year). After the selection, the UI shows a preview of the grouping strategy to give an idea of how many animations are created with the selected settings. 
-\begin{figure}
+
+\subsubsection{Figure settings}
+
+\begin{figure}[h]
     \center
-    \includegraphics[width=\textwidth]{SYNUI-settings2.png}
-    \caption{Project setup: grouping strategy}
-    \label{fig:SYNUIsettings2}
+    \includegraphics[width=\textwidth]{SYNUI-settings3.png}
+    \caption{Project setup: figure settings}
+    \label{fig:SYNUIsettings3}
 \end{figure}
 
-\subsubsection*{Figure settings}
 The third step of the setup is shown in \autoref{fig:SYNUIsettings3}. It allows the user to express graphical preferences. 
 The view creates a card for each file type selected in the \quotes{Component selection} step.
 The user can customize each card with the followings:
@@ -507,16 +515,14 @@ The UI has a checkbox to specify whether FileHistories that do not have the sele
 With all the settings available on this page, the user has complete control over how FileHistories are rendered. 
 There are many possible combinations. For example, if we want a visualization that distinguishes between Java, text, and binary files, we can use settings shown in \autoref{fig:SYNUIsettings3}. It specifies a different shape for every file type, keeping the maximum opacity level for all of them. Furthermore, the height is computed with a bucketValueStrategy that works with the SLOC metric. As a consequence, only Java files have a height in this visualization. File types that don't have the mapper metric are called \quotes{unmapped entities}, and their height will be fixed. 
 
+\subsubsection{View color}
 
-
-\begin{figure}
+\begin{figure}[h]
     \center
-    \includegraphics[width=\textwidth]{SYNUI-settings3.png}
-    \caption{Project setup: figure settings}
-    \label{fig:SYNUIsettings3}
+    \includegraphics[width=\textwidth]{SYNUI-settings4.png}
+    \caption{Project setup: view color}
+    \label{fig:SYNUIsettings4}
 \end{figure}
-
-\subsubsection*{View color}
 
 \autoref{fig:SYNUIsettings4} shows the last setup step. It configures the remaining general UI preferences as follows:
 The user controls the way how aging is computed. 
@@ -525,14 +531,17 @@ The color transition is linear. Therefore, the user can choose the number of ste
 
 Finally, each action has a distinct original color, customizable for the user. The color palette used by default is shown in \autoref{fig:SYNUIsettings4}.
 
-\begin{figure}
+
+
+\subsubsection{View settings}
+
+\begin{figure}[h]
     \center
-    \includegraphics[width=\textwidth]{SYNUI-settings4.png}
-    \caption{Project setup: view color}
-    \label{fig:SYNUIsettings4}
+    \includegraphics[width=\textwidth]{SYNUI-settings5.png}
+    \caption{Project setup: view settings}
+    \label{fig:SYNUIsettings5}
 \end{figure}
 
-\subsubsection*{View settings}
 The last step of the setup, shown in \autoref{fig:SYNUIsettings5}, allows the user to express general preferences about the behavior of the UI.
 
 \begin{itemize}
@@ -544,19 +553,14 @@ The last step of the setup, shown in \autoref{fig:SYNUIsettings5}, allows the us
     \item Animation switching speed: the amount of time between rendering one animation and another when the autoplay mode is activated. 
 \end{itemize}
 
-\begin{figure}
-    \center
-    \includegraphics[width=\textwidth]{SYNUI-settings5.png}
-    \caption{Project setup: view settings}
-    \label{fig:SYNUIsettings5}
-\end{figure}
 
-\subsection*{Project visualization}
+
+\subsection{Project visualization}
 After having specified all the visualization preferences, they are stored in the web browser's local storage. 
 The UI can retrieve a view from the backend server, given the project id and the view specification. 
 
 Initially, it calls the \texttt{partialView} query provided by the Server module. Once it gets the response, the visualization of the first AnimationFrame is automatically loaded. 
-A pre-fetcher mechanism was also implemented, it works as follows: once half of the retrieved AnimationFrames have been displayed; it lazily requests a new partialView containing all the following AnimationFrames of the currently displayed view. 
+A pre-fetcher mechanism was also implemented. It works as follows: once half of the retrieved AnimationFrames have been displayed; it lazily requests a new partialView containing all the following AnimationFrames of the currently displayed view. 
 In this way, the jump between a partialView and another is not subjected to network timing issues because the partial view was already prefetched. 
 
 
@@ -622,15 +626,6 @@ Its implementation uses Sonic Pi\footnote{\url{https://sonic-pi.net}} to compose
     \caption{Interface of SonicPi}
     \label{fig:sonicpi}
 \end{figure}
-
-%This implementation aims to produce a depiction of the evolution to support the 3D visualization. 
-
-%To do that, we built our auditive approach on the ViewAnimation. Therefore, we extract from each frame the following metrics: number of files added, number of files removed, and number of commits. The idea is to use their value to generate three tracks, each depending upon a metric. We play each AnimationFrame for one second. We employed the following sounds:
-%\begin{itemize}
-%    \item Bass drums: to represent the number of commits in an AnimationFrame. We decided to normalize the values retrieved by this metric in the interval $\left[60,200\right]$. Consequently, when the animation with less commit in the evolution is displayed, the retrieved by this metric is 60, and the same goes for the maximum. We used this value to set the BPM of this track. The amplitude is always at 1 (the maximum). Under those circumstances, users can understand how active the period represented by the played AnimationFrame was by paying attention to the number of bass drums heard each second.
-%    \item Bass sound: to represent the number of deleted files in an AnimationFrame. We use the number of deleted files to determine the repetition and the amplitude of the sound. The value is normalized to $\left[1,4\right]$ for the repetition and $\left[0.1,0.8\right]$ for the amplitude.
-%    \item Electric sound: to represent the number of files added in an AnimationFrame.  We use the number of added files to determine the repetition and the amplitude of the sound. The value is normalized to $\left[1,8\right]$ for the repetition and $\left[0.2,0.85\right]$ for the amplitude.
-%\end{itemize}
 
 \autoref{app:SonicPiLinux} shows the code we developed to implement this mapping. To debug our auralization approach, we developed a Python application that queries the server and controls SonicPi. The application works as follows: first, it queries the GraphQL server to retrieve the view of a project. Once the view is returned, it extracts from each AnimationFrame the needed metric values. Then these values are sent to SonicPi through a protocol called Open Sound Protocol (OSC). Finally, it renders one graph for each metric to let us associate each metric value with a sound. To do that, we used a black dot representing the current AnimationFrame. 
 

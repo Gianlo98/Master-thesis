@@ -26,7 +26,7 @@ To be accomplished, our approach requires three steps:
     \item finally, complement the visualization with an auditive portrayal of evolutionary data. 
 \end{itemize}
 
-
+\newpage
 \section{Evolution Model}
 \label{s:EvolutionModel}
 
@@ -37,13 +37,9 @@ To be accomplished, our approach requires three steps:
     \caption{Evolutionary Model}
     \label{fig:EvolutionaryModel}
 \end{figure}
-Various approaches have been proposed to analyze aspects of software evolution. In 2005, Tudor Girba presented Hismo \cite{Girba2005}, a model centered around the notion of history as a first-class entity. Our approach is based on this work. 
-
-The need to develop a novel evolutionary model comes from the fact that Hismo was designed to work with another versioning system: Subversion (SVN). 
+Various approaches have been proposed to analyze aspects of software evolution. In 2005, Tudor Girba presented Hismo \cite{Girba2005}, a model centered around the notion of history as a first-class entity. Our approach is based on this work. The need to develop a novel evolutionary model comes from the fact that Hismo was designed to work with another versioning system: Subversion (SVN). 
 There are several differences between SVN and git. In terms of design, the most important is how they track changes. 
-SVN works with the concept of "snapshot" while git works with the concept of "commits".
-
-In SVN, when a file has been changed, a new revision of the whole system is created, and consequently, the number of revisions is incremented. 
+SVN works with the concept of "snapshot" while git works with the concept of "commits". In SVN, when a file has been changed, a new revision of the whole system is created, and consequently, the number of revisions is incremented. 
 In contrast, in git, only the modified files would get committed, and thus we don't have a new snapshot of the system every time. 
 Therefore, we took Hismo as the starting point of our model and adapted it to the git protocol. 
 The Hismo model was based on three concepts:
@@ -53,8 +49,7 @@ The Hismo model was based on three concepts:
     \item History. An entity that holds a set of Versions.
 \end{itemize}
 
-Git does not have the concept of Snapshot, so we replaced it with a novel concept: FileVersion. 
-A FileVersion is essentially the version of a file at a particular point in time. Instead of being related to every version of the system, it is related only to the Versions where the file was updated.
+We replaced the concept of Snapshot with a FileVersion. It represents the version of a file at a particular point in time. Instead of being related to every version of the system, it is related only to the Versions where the file was updated.
 Moreover, we made a distinction between File entities and Project entities. So, we mapped the concept of History to FileHistory and the idea of Version to ProjectVersion. 
 The entity responsible for holding both of them is called ProjectHistory. \autoref{fig:EvolutionaryModel} depicts the relationships among these concepts. 
 To summarize, these are the four main concepts of our evolutionary model: 
@@ -68,14 +63,14 @@ To summarize, these are the four main concepts of our evolutionary model:
     It is responsible for holding all the evolutionary information of an entity, such as the last action made on a file. 
 \end{itemize}
 
-\subsection*{Historical information retrieval}
+\subsection{Historical information retrieval}
 To model the history of a repository, we need to extract the historical information from git.
 Git works with the concept of branches. Each branch can be seen as a different repository timeline.
 Usually, developers use branches to develop features and merge the developed code in a branch that contains the stable codebase.
 They create a "merge commit" to do that. 
 Each time a user creates a new git commit, they deploy a new version of the system that records all the changes made to the commits' tracked files. 
 Internally, in git, all the commits are stored as nodes of a commit-tree. 
-The root node represents the repository's first commit and it has no parents. 
+The root node represents the repository's first commit and has no parents. 
 All the other nodes represent the commits made during the whole lifecycle of the repository. 
 Each commit usually has only one parent representing the previous commit.
 There is one case where a commit might have more than one parent: merges commits.
@@ -119,11 +114,18 @@ Each change was mapped to a FileVersion (FV) and consequently added to the respe
 We did the same for ProjectVersions 2 and 3. 
 
 \label{sec:partialHistoricalRepr}
-\subsection*{Partial historical representation}
+\subsection{Partial historical representation}
+\begin{figure}[ht]
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{PartialHistory.png}
+    \end{center}
+    \caption{Partial history example}
+    \label{fig:PartialHistory}
+\end{figure}
 We had as a goal to develop a scalable approach to mine software repositories. In this way, it should always be possible to analyze large repositories in an acceptable amount of time. 
 In other words, our approach needs to be scalable.
 GitHub host the code of some notorious open-source systems, such as LibreOffice, Elasticsearch, and Linux.
-They all have more than 500,000 commits in each; thus, we cannot aim to reconstruct their histories with a single analyzer; it will take too much time.  
+They all have more than 500,000 commits each; thus, we cannot aim to reconstruct their histories with a single analyzer; it will take too much time.  
 To prove that, just consider the worse case: Linux. 
 At the time of writing, the repository of Linux had 1,090,563 commits. 
 To checkout from one commit to another, we could assume that git needs one second. 
@@ -136,16 +138,8 @@ It can be seen as a subset of a ProjectHistory.
 We can split the repository's history into multiple parts, each represented by a partial record. Then when all the analyses are completed, we merge them to reconstruct the whole story of the repository.
 
 
-\begin{figure}
-    \begin{center}
-        \includegraphics[width=0.6\textwidth]{PartialHistory.png}
-    \end{center}
-    \caption{Partial history example}
-    \label{fig:PartialHistory}
-\end{figure}
-
 \autoref{fig:PartialHistory} shows an example PartialHistory representation. 
-We split the commit tree into multiple chunks and then run the analysis on each. 
+We split the commit tree into multiple chunks and then ran the analysis on each. 
 In the end, the final history will be represented by merging all the PartialHistories. 
 Nonetheless, we can build PartialHistories in parallel; we cannot do the same for the final History. 
 The final merge needs to be done sequentially. The sequence needs to follow the order of the commit tree. 
@@ -160,22 +154,6 @@ When we merge the history of a repository with a partial history, we need to pre
 In particular, if FileHistory is already present in our history, we do not have to duplicate it, but instead, we need to update it. 
 \label{s:evolutionaryMetrics}
 \subsection*{Evolutionary metrics}
-Every version of the system holds a set of files. 
-Each file is represented by a FileVersion, which is part of a FileHistory.
-For the visualization, we collect metrics representing the files' states.
-Since we aim to have a language-agnostic approach, we have selected only language-agnostic metrics. 
-However, the set of metrics can be easily extended.
-We have defined a taxonomy to classify and categorize all the files in a system. 
-Each category is then mapped to a set of metrics. Metrics can also be inherited from parent categories. 
-
-\autoref{fig:taxonomy} shows an example of a possible taxonomy definition. \autoref{table:metricsT} shows the final set of metrics associated with each file type. We compute the metric SIZE for each file type since it is inherited from the root file type. Moreover, Java FileType also inherits the metrics of the Textual FileType.  
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.6\textwidth]{Taxonomy.jpg}
-    \caption{Example of a file type's taxonomy}
-    \label{fig:taxonomy}
-\end{figure}
 
 \begin{table}[ht]
     \centering
@@ -190,6 +168,25 @@ Each category is then mapped to a set of metrics. Metrics can also be inherited 
     \caption{Example of metrics collected and inherited for each FileType}
     \label{table:metricsT}
 \end{table}
+
+Every version of the system holds a set of files. 
+Each file is represented by a FileVersion, which is part of a FileHistory.
+For the visualization, we collect metrics representing the files' states.
+Since we aim to have a language-agnostic approach, we have selected only language-agnostic metrics. 
+However, the set of metrics can be easily extended.
+We have defined a taxonomy to classify and categorize all the files in a system. 
+Each category is then mapped to a set of metrics. Metrics can also be inherited from parent categories. 
+
+\autoref{fig:taxonomy} shows an example of a possible taxonomy definition. \autoref{table:metricsT} shows the final set of metrics associated with each file type. We compute the metric SIZE for each file type since it is inherited from the root file type. Moreover, Java FileType also inherits the metrics of the Textual FileType.  
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Taxonomy.jpg}
+    \caption{Example of a file type's taxonomy}
+    \label{fig:taxonomy}
+\end{figure}
+
+
 
 We have defined a set of metrics as can be seen in \autoref{table:metricsT}. We collect the file's size, the number of Lines of Code (LOC), the number of Source Lines of Code (SLOC) by ignoring all the lines starting with //, and the number of lines added and removed. These are basic source code metrics to demonstrate our approach. The list can be extended with additional metrics depending on the purpose.
 
@@ -214,7 +211,7 @@ We can represent a ProjectHistory as a matrix with the following properties:
 An empty cell represents a FileHistory (i.e., row) that was not modified in a ProjectVersion (i.e., column). 
 This concept was not present in the Evolution Matrix of Lanza because its model worked with SVN, and thus, it worked with incremental snapshots.  
 
-\begin{figure}
+\begin{figure}[h]
     \center
     \includegraphics[width=0.6\textwidth]{2DMatrix.jpg}
     \caption{2D Representation of the structural evolution of a repository}
@@ -296,7 +293,7 @@ To represent the system's state, an AnimationFrame holds a set of \textbf{ViewFi
 
 A ViewFigure holds a set of properties used by the render process to draw a glyph representing a file. 
 
-\subsection*{Layout}
+\subsection{Layout}
 A layout is an algorithm that specifies how graphical entities should be laid out. 
 Many tools have been proposed in the literature to depict the evolution of software systems with different layout strategies. 
 One of the most famous approaches is the city metaphor \cite{Wettel2007}, presented by Wettel \& Lanza, where a file's position depends upon the package that holds it. 
@@ -316,13 +313,13 @@ We added the \textit{position} property to a ViewFigure to describe its location
     \label{fig:layout}
 \end{figure}
 
-\subsection*{Color}
+\subsection{Color}
 
 Synesthesia occurs when we experience an involuntary stimulation of a cognitive path during the stimulation of another sense.
 We present how we use color to describe file actions and simulate how time passes between actions.
 As a result, we decided to map each git action with color (see \autoref{fig:ColorAssociation}). This mapping can be personalized through the \textit{color} property of ViewFigure.
 
-In addition to the color, each ViewFigure has another property: \textit{age}. It represents the amount of time elapsed between the last action made on a file and the currently displayed AnimationFrame. 
+In addition to the color, each ViewFigure has another property: \textit{age}. It represents the time elapsed between the last action made on a file and the currently displayed AnimationFrame. 
 We selected two strategies to compute the age of an entity:
 
 \begin{itemize}
@@ -358,7 +355,7 @@ All the files shared the same criteria to compute the age. The primary purpose o
 
 
 
-\subsection*{Shape and opacity}
+\subsection{Shape and Opacity}
 To easily distinguish file types, we added a \textit{shape} and an \textit{opacity} property to a ViewFigure.
 
 We did not set a pre-defined set of shapes because we preferred to let each implementation have its own set of models. This was done because it is not guaranteed that all the visualization libraries share the same model. The idea is to map each file type with a shape previously selected by the user. 
@@ -366,7 +363,7 @@ We did not set a pre-defined set of shapes because we preferred to let each impl
 Opacity was also added to allow the user to emphasize file types if needed. 
 
 
-\subsection*{Height}
+\subsection{Height}
 An important piece of information that we want to represent is the value of a metric. SYN computes the values of a set of metrics, so we let the user choose his preference to map metrics to the files' height. 
 % We defined a mapper: a function that takes as input a metric and returns the ViewFigure height. The metric value used by this mapper is obtained for each file during the analysis. The set of mapper functions is extensible by the user. \bigbreak
 % This information is given to the render process through the \textit{height} property of a ViewFigure.
@@ -374,11 +371,6 @@ An important piece of information that we want to represent is the value of a me
 
 \autoref{fig:ApproachMapping} summarizes what we said so far. To visualize a Git repository, we use a view, a class that holds all the information needed to render it on screen. To depict the evolution, we traverse the repository's history by a group of commits (generated with a time window or every n commits). Each group is represented by an AnimationFrame, which in turn holds a set of ViewFigures representing a file. The ViewFigure's position is used to describe the creation date of a file. The last action determines the color and age. A chosen metric is used to compute the height of the ViewFigure, and finally, the file type is mapped to shape and opacity. 
 
-% \begin{itemize}
-%     \item \textbf{Color}: to describe actions made on an entity (ADD, MODIFY, RENAME, MOVE, DELETE). 
-%     \item \textbf{Shape}: to describe the type of the file. 
-%     \item \textbf{Height}: to describe the value of a metric. The choiche of the metric is up to the user because it changes from project to project. 
-% \end{itemize}
 
 \begin{figure}
     \center
@@ -388,7 +380,7 @@ An important piece of information that we want to represent is the value of a me
 \end{figure}
 
 
-
+\newpage
 \section{Evolution Auralization}
 \label{sec:audioApproach}
 The goal of this thesis is to enable sensorial software evolution comprehension by leveraging the concept of synesthesia, i.e., the production of a sense impression relating to one sense by stimulation of another sense. In the previous sections, we detailed our approach to visualizing the evolution of a software system. In addition to sight, our approach also wants to stimulate another sense: hearing. To complement our evolutionary visualization, we devised an approach to \emph{\quotes{auralize}} the evolution of a software system. Auralization is a term introduced to be used in analogy with visualization to describe rendering audible (imaginary) sound fields \cite{kleiner1993}. The intuition is to create a melody, starting from the evolutionary data extracted from the version control system, to augment our visualization with complementary pieces of information.

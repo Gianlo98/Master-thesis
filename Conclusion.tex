@@ -1,10 +1,10 @@
 \chapter{Conclusion}
 In this chapter, we summarize the contributions made in this thesis, discuss our approach's benefits, and outline possible future work.
 
-\subsection*{Contributions}
+\subsection{Contributions}
 This thesis presents three new approaches to mine, visualize, and auralize large software repositories. The goal of this thesis was to explore new solutions to represent software evolution. We cover all the stages required to reconstruct the history of a git repository, from the historical collection of information to the graphical data representation and visualization. We developed it with a language-agnostic approach. Therefore, an extension of the system is needed to collect and visualize specific kinds of information. Our contributions can be summarized as follows:
 \begin{enumerate}
-    \item \textbf{The mining and modeling of a large git repository's history}. We present an approach to rebuilding the history of a git repository by traversing the repository's history. It starts from the first commit and analyzes all the subsequent commits until the end.
+    \item \textbf{The mining and modeling of large git repositories}. We present an approach to rebuilding the history of a git repository by traversing the repository's history. It starts from the first commit and analyzes all the subsequent commits until the end.
     For each commit, we extract information about the modified files, parse it and finally serialize it in a file on the local storage. The root element of our model is the history of a project that holds a set of and a set of files. An action recorded by a commit made on a file is also represented. The main benefits provided are the following: \begin{itemize}
         \item Logical tracking of files, each file's history is represented by a separate object in the model. When a file is moved or renamed, the model keeps track of this action. 
         \item The analysis process is automatic. 
@@ -24,7 +24,7 @@ This thesis presents three new approaches to mine, visualize, and auralize large
     \item \textbf{Auditive portrayal of the evolution}. It consists of a guideline suggesting how to compose audio sounds representing the evolution of a project. The proposed methodology was tested with two systems and presented with the JetUML and Linux case study analysis. The main benefit provided by this approach is the support of the visualization. It provides additional information without displaying them. Consequently, the listener can infer additional aspects of the analysis. 
 \end{enumerate}
 
-\subsection*{Future Work}
+\subsection{Future Work}
 In this section, we discuss some possible future directions for our approaches:
 \begin{itemize}
     \item \textit{Auditorial implementation}: the auditorial implementation is not written as an internal module of SYN. However, we believe that a module able to automatically instrument Sonic Pi, or any other compositional tool, could help bring the audio into the interactive visualization. 
@@ -37,6 +37,6 @@ In this section, we discuss some possible future directions for our approaches:
     \item \textit{Perform other case studies}: analyzing different software systems allows us to evaluate our methodology on other systems and study the growth model of other open-source systems. 
 \end{itemize}
 
-\subsection*{Epilogue}
+\subsection{Epilogue}
 In this thesis, we have proposed an approach based on synesthesia to ease the comprehension task of evolving software systems with an interactive visual depiction of software artifacts complemented by an auditive portrayal of the evolution. We claim that its main benefit is understanding the structure and the development lifecycle of a git project. \\
 The broad applicability of our approach  (on GitHub, there are more than 20M open-source systems) will allow us to study many software systems and, thanks to the gained experience, improve and specialize the techniques presented in this thesis.  
