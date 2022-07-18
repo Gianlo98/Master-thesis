@@ -457,7 +457,7 @@ The project setup is a wizard to configure a project's visualization, composed o
 \end{itemize}
 
 \newpage
-\subsubsection{Component selection}
+\subsubsection*{Component selection}
 
 \begin{figure}[h]
     \center
@@ -472,7 +472,7 @@ The sum of these two represents the total number of FileHistories in the system 
 The bottom part shows the cards for the file types identified in the project. For example, if a file is named \quotes{foo.java} the JAVA card in this area represents it. 
 The cards are sorted in descending order by their number of occurrences. This view considers all the file types present in the system. To show the complete list, users have to click on the \quotes{show more} button.
 
-\subsubsection{Grouping strategy}
+\subsubsection*{Grouping strategy}
 
 \begin{figure} [h]
     \center
@@ -490,7 +490,7 @@ Following what we have presented in \autoref{s:3DRepr}, we provide two strategie
 
 To ease the selection of the timestamp strategy, instead of manually computing the width of the time window, the user must only specify an amount and its time unit (i.e., hour, day, week, month, year). After the selection, the UI shows a preview of the grouping strategy to give an idea of how many animations are created with the selected settings. 
 
-\subsubsection{Figure settings}
+\subsubsection*{Figure settings}
 
 \begin{figure}[h]
     \center
@@ -515,7 +515,7 @@ The UI has a checkbox to specify whether FileHistories that do not have the sele
 With all the settings available on this page, the user has complete control over how FileHistories are rendered. 
 There are many possible combinations. For example, if we want a visualization that distinguishes between Java, text, and binary files, we can use settings shown in \autoref{fig:SYNUIsettings3}. It specifies a different shape for every file type, keeping the maximum opacity level for all of them. Furthermore, the height is computed with a bucketValueStrategy that works with the SLOC metric. As a consequence, only Java files have a height in this visualization. File types that don't have the mapper metric are called \quotes{unmapped entities}, and their height will be fixed. 
 
-\subsubsection{View color}
+\subsubsection*{View color}
 
 \begin{figure}[h]
     \center
@@ -533,7 +533,7 @@ Finally, each action has a distinct original color, customizable for the user. T
 
 
 
-\subsubsection{View settings}
+\subsubsection*{View settings}
 
 \begin{figure}[h]
     \center
@@ -631,11 +631,15 @@ Its implementation uses Sonic Pi\footnote{\url{https://sonic-pi.net}} to compose
 
 \autoref{fig:Bokeh} shows the interface of the debugger. Each chart represents a metric, and the black dot (synchronized with SonicPi) represents the AnimationFrame being auralized. 
 
-
+\begin{landscape}
+    \Huge 
 \begin{figure}
     \center
     \includegraphics[width=\textwidth]{Bokeh.png}
     \caption{Charts used to debug the melody}
     \label{fig:Bokeh}
 \end{figure}
+\end{landscape}
+
+
 

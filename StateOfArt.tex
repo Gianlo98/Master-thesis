@@ -242,13 +242,14 @@ The metaphor was used for various purposes, e.g., reverse engineering, program c
 He claimed that the city metaphor brought visual and layout limitations; for example, not all visualization techniques fit well.
 Under those circumstances, he preferred simplicity over accuracy,
 so he obtained a simple visual language that facilitated data comprehension. His approach was implemented as a software visualization tool 
-called CodeCity. 
+called CodeCity (\autoref{fig:codecity}). 
 
 
 \begin{figure}[ht]
 \centering
   \includegraphics[width=0.9\linewidth]{CodeCity.png} 
   \caption{CodeCity}
+  \label{fig:codecity}
 \end{figure}
 
 % ChronoTwigger 2014 https://ieeexplore.ieee.org/abstract/document/6980223
@@ -417,13 +418,13 @@ Finally, Mancino and Scanniello \cite{Mancino2017} presented an approach to tran
 
 \section{Conclusion}
 
-We have seen many different techniques and tools focused on visualizing the source code of software systems, their evolution, or some metrics.
+We have seen many different techniques and tools focused on visualizing the source code of software systems, their evolution, or their metrics.
 Our approach will not consider the source code visualization. Instead, it focuses on the evolution of a software system and how its metrics change over its history. 
-In contrast to what some tools did, we do not focus on the evolution of code bugs.\\
+In contrast to what some tools did, we do not focus on the evolution of code bugs.
 
 The codebase of a system is composed of a group of files. In our approach, each file represents a system entity that mutates over time.
 It is not based on a previously identified metaphor, such as CodeCity or CityVR with the city metaphor.
-We created a new layout where the position of each entity is defined by its discovery time. \\
+We created a new layout where the position of each entity is defined by its discovery time. 
 
 At present, git has become the standard tool for version control. 
 Having this in mind, we aim to find a suitable model to represent the histories of mined git repositories.
@@ -431,7 +432,7 @@ Therefore, we created a model inspired by the EvolutionMatrix, but with adjustme
 
 As Clem and Thomson \cite{Clem2021} team did, we propose a scalable approach that works with large repositories. 
 It differs from what they did because we are not focused on a semantic analysis of the source code; instead, we extract source code metrics. 
-Moreover, our technique is purely language-agnostic.\\
+Moreover, our technique is purely language-agnostic.
 
 Finally, we extended our approach with an auralization approach to compose music based on a system’s evolution. 
 Conversely to state-of-the-art tools, we used a multithreaded environment to play the musical notes. 
