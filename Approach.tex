@@ -293,7 +293,7 @@ To represent the system's state, an AnimationFrame holds a set of \textbf{ViewFi
 
 A ViewFigure holds a set of properties used by the render process to draw a glyph representing a file. 
 
-\subsubsection{Layout}
+\subsubsection*{Layout}
 A layout is an algorithm that specifies how graphical entities should be laid out. 
 Many tools have been proposed in the literature to depict the evolution of software systems with different layout strategies. 
 One of the most famous approaches is the city metaphor \cite{Wettel2007}, presented by Wettel \& Lanza, where a file's position depends upon the package that holds it. 
@@ -313,7 +313,7 @@ We added the \textit{position} property to a ViewFigure to describe its location
     \label{fig:layout}
 \end{figure}
 
-\subsubsection{Color}
+\subsubsection*{Color}
 
 Synesthesia occurs when we experience an involuntary stimulation of a cognitive path during the stimulation of another sense.
 We present how we use color to describe file actions and simulate how time passes between actions.
@@ -355,7 +355,7 @@ All the files shared the same criteria to compute the age. The primary purpose o
 
 
 
-\subsubsection{Shape and Opacity}
+\subsubsection*{Shape and Opacity}
 To easily distinguish file types, we added a \textit{shape} and an \textit{opacity} property to a ViewFigure.
 
 We did not set a pre-defined set of shapes because we preferred to let each implementation have its own set of models. This was done because it is not guaranteed that all the visualization libraries share the same model. The idea is to map each file type with a shape previously selected by the user. 
@@ -363,7 +363,7 @@ We did not set a pre-defined set of shapes because we preferred to let each impl
 Opacity was also added to allow the user to emphasize file types if needed. 
 
 
-\subsubsection{Height}
+\subsubsection*{Height}
 An important piece of information that we want to represent is the value of a metric. SYN computes the values of a set of metrics, so we let the user choose his preference to map metrics to the files' height. 
 % We defined a mapper: a function that takes as input a metric and returns the ViewFigure height. The metric value used by this mapper is obtained for each file during the analysis. The set of mapper functions is extensible by the user. \bigbreak
 % This information is given to the render process through the \textit{height} property of a ViewFigure.
@@ -409,3 +409,12 @@ According to Vickerts \cite{Vickers2004}, to distinguish between different activ
 
 The output of our approach is a musical composition representing a system's evolution. It should be noted that we obtained the aforementioned parameters by tuning the musical composition to our liking. However, the approach is customized with different metrics or different thresholds. 
 
+
+\begin{figure}
+    \center
+    \includegraphics[width=0.5\textwidth]{AuralizationApproach.jpg}
+    \caption{Example of how the auralization approach works. }
+    \label{fig:ApproachArualization}
+\end{figure}
+
+\autoref{fig:ApproachArualization} provides an example of how this approach works. Each column represents a measure with a constant value of 1 second. Each row represents one instrument, except for the last, which represents the output composition. The number of notes played from each instrument depends upon the value of the respective metric. Therefore, in all the measures was recorded an intense activity, especially in the third one. The number of deleted files was lower in the first two measures than in the last. Consequently, the final output is composed of a few bass notes on the first two measures and four bass notes on the last measure, the most active of this example. The same rules were applied for the electric sound, representing the number of added files.    
