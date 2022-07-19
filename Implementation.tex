@@ -1,7 +1,7 @@
 %!TEX root = SYN.tex
 \chapter[Implementation]{Implementation}
 \graphicspath{ {images/implementation} }
-In this chapter, we present how we designed and implemented SYN, a tool that implements our approach described in the previous Chapter.
+In this chapter, we present how we designed and developed SYN, a tool that implements our approach described in the previous chapter.
 
 \section{Platform Overview}
 SYN is our tool to visualize and auralize a system's evolution. 
@@ -14,7 +14,6 @@ It is composed of a set of modules, as follows:
     \item \textbf{Visual Inspector}: the user interface to debug and visually depict information collected during the analysis. 
 \end{itemize}
 
-All the modules of SYN are written in Java, except the Visual Inspector, which is written with React and TypeScript. 
 
 A user has two options to interact with SYN: through the console with the commands provided by the CLI module 
 or through a web application embedded in the Visual Inspector module.
@@ -36,7 +35,7 @@ The Visual Inspector holds the Graphical User Interface (GUI) of SYN. Informatio
     \label{fig:architecture}
 \end{figure}
 
-%Having reached a low coupling between modules, the extensibility of SYN is preserved.
+All modules of SYN are written in Java, except the Visual Inspector, which is written with React and TypeScript. 
 Modules such as SYN Server or Analyzer implementation could be changed without altering the codebase of other modules. 
 
 \section{Core}
@@ -44,7 +43,7 @@ SYN Core is the module that holds all the entities introduced in \autoref{s:Evol
 All the classes of our abstraction extend the \texttt{Entity} class, composed of the field \texttt{id}, to identify an object inside our domain. 
 Classes inside the model of Core could be partitioned into four subdomains: Project, History, Analysis, and View. 
 
-\subsection*{Project}
+\subsection{Project}
 The first part of the model consists of the \textbf{Project} entities. 
 The class diagram is shown in \autoref{fig:SYNCLass}. The abstract class \texttt{Project} represents a software system. It defines the following fields:
 \begin{itemize}
@@ -100,11 +99,9 @@ For example, \texttt{FileMoving} and \texttt{FileRenaming} extend \texttt{Change
 
 
 \subsection{Analysis}
-The Core provides abstract classes to standardize the exchange of analysis results. 
-The first class that the model defines is \textbf{AnalysisWorkDescriptor}.
+The Core provides abstract classes to standardize the exchange of analysis results. The first class that the model defines is \textbf{AnalysisWorkDescriptor}.
 It is a holder of the information to instruct the analyzer on what it has to do. Namely, the project and the list of commits to be analyzed.
-The reason for this implementation choice is to allow multiple threads to run in parallel analyses without analyzing the same commit numerous times. 
-We described this approach in \autoref{s:EvolutionModel}
+The reason for this implementation choice is to allow multiple threads to run in parallel analyses without analyzing the same commit numerous times. We described this approach in \autoref{s:EvolutionModel}
 
 
 The \textbf{FileTypeManager} class is responsible for mapping a set of functions to file types. These functions are used to compute evolutionary metrics. We implemented the metrics presented in \autoref{s:EvolutionModel}. However, any external module could easily extend this set of functions. This choice allowed external components to increase the set of metrics computed in SYN. Therefore, the analysis can be customized to collect relevant metrics for a specific project. Once the function to extract a metric given a File is written, the developer must associate it with the corresponding file type. For example, if in the future an engineer wants to write an  Object-Oriented (OO) metric, such as the number of parents, they can create a function to compute it and associate the function to the OO.
@@ -116,7 +113,7 @@ Finally, the \textbf{ProjectAnalysisResult} class is used by an analyzer to retu
     \item \texttt{timestamp}: the timestamp when the analysis was done. 
     \item \texttt{firstCommit}: the first commit considered in this analysis. 
     \item \texttt{lastCommit}: the last commit considered in this analysis. 
-    \item \texttt{projectVersions}: a list of ProjectVersion founded during the analysis.
+    \item \texttt{projectVersions}: a list of ProjectVersion found during the analysis.
     \item \texttt{fileHistories}: a list of FileHistories created during the analysis.
     \item \texttt{fileVersions}: a list of FileVersions created during the analysis.
 \end{itemize}
@@ -150,8 +147,8 @@ All the views are generated from a \texttt{ViewSpecification} instance. The list
     \item \texttt{mapperStrategyOptions}: optional properties of the mapper if needed. For example, the maximum height. 
     \item \texttt{mapperMetricName}: the metric's name that the mapper should consider before applying the selected MapperStrategy. 
     \item \texttt{showUnmappedEntities}: whether the view should display entities without the selected metric.
-    \item \texttt{fileTypeShape}: the mapping to follow to associate a file type with a shape.
-    \item \texttt{fileTypeOpacity}: the mapping to follow to associate a file type with an opacity level.
+    \item \texttt{fileTypeShape}: the mapping to associate a file type with a shape.
+    \item \texttt{fileTypeOpacity}: the mapping to associate a file type with an opacity level.
     \item \texttt{figureSize}: the size of each figure representing a file.
     \item \texttt{figureSpacing}: the space between each figure representing a file.
     \item \texttt{showDeletedEntities}: whether the view should display deleted entities.
@@ -170,15 +167,15 @@ In our initial implementation, we provided five different mapping strategies:
     \item NormalizerMapperStrategy: during the generation phases, all the values are normalized in an interval between zero and one.
 
     \item BucketCountStrategy: during the generation phases, all the values are partitioned into buckets. This function calculates the number of buckets for a given value. This strategy allows the customization of the number of buckets that are created. By default, this value is set to 100. 
-    \item BucketValueStrategy: relies on the BucketCountStrategy. During the generation, duplicate values are removed to equally distribute buckets.
+    \item BucketValueStrategy: relies on the BucketCountStrategy. During the generation, duplicate values are removed to distribute buckets equally.
 
-    \item LinearBucketValueStrategy: relies on the BucketValueStrategy. During the generation phase, the maximum value of each bucket is recorded. Therefore, during the retrieved phase, it is used to make a liner proportion of the value and add them to the bucket number. For example, assuming that values of metrics are mapped to 100 buckets; the values $100, 200, 500$ are all mapped to the bucket $3$. Therefore when we need to map the number $100$ is mapped to $3 + 100/500 = 3.2$; in the same way, the value of $200$ is mapped to $3 + 200/500 = 3.4$ and the value of $500$ is mapped to $3 + 500/500 = 4$.
+    \item LinearBucketValueStrategy: relies on the BucketValueStrategy. During the generation phase, the maximum value of each bucket is recorded. Therefore, during the retrieved phase, it is used to make a liner proportion of the value and add them to the bucket number. For example, assuming that values of metrics are mapped to 100 buckets; the values $100, 200, 500$ are all mapped to the bucket $3$. Therefore when we need to map the number $100$, it is mapped to $3 + 100/500 = 3.2$; in the same way, the value of $200$ is mapped to $3 + 200/500 = 3.4$ and the value of $500$ is mapped to $3 + 500/500 = 4$.
 \end{itemize}
 
 
 
 \section{CLI}
-CLI is a command-line interface to interact with SYN.
+CLI is a command-line interface to interact with SYN. It supports commands to control the analysis and utility commands to work with the analysis results of a project. Next, we describe the available commands in more detail.
 \bigbreak
 \noindent
 \textbf{Analysis commands}\\
@@ -255,12 +252,13 @@ We extended the Git classes provided by the Core module, and created the \texttt
 
 To run the analysis, we obtain first an \texttt{AnalysisWorkDescriptor} describing the job that the Analyzer has to do. 
 The \texttt{JGitAnalysisWorkerDescriptorFactory} class partitions the commit tree and obtains a set of workers. 
+
 \autoref{fig:historysplit} shows an example of a partition with three workers. First, the whole history of git is retrieved and stored in memory. Secondly, all the branches' commits are merged into a single list sorted by their timestamp. 
 Then, the merge commits are removed since the changes recorded by them are duplicated and finally the resulting list is partitioned to match the requested number of workers. 
 \begin{figure}
     \center
     \includegraphics[width=\textwidth]{HistorySplit.jpg}
-    \caption{Partition of the commit tree with 3 workers.}
+    \caption{Example partitioning of a commit tree with three workers.}
     \label{fig:historysplit}
 \end{figure}
 
@@ -279,7 +277,7 @@ The analysis process of a single worker contemplates the following steps:
 \end{enumerate}
 
 
-The analyzer can parallelize with multiple workers the analysis of large repositories. Each worker produces a \texttt{ProjectAnalysisResult} that represents a partial history. To obtain the entire history of the repository, we join all partial analysis results. 
+The analyzer can parallelize with multiple workers the analysis of large repositories. Each worker produces a \texttt{Project\-AnalysisResults} that represents a partial history. To obtain the entire history of the repository, we join all partial analysis results. 
 In SYN, each entity is identified by an id. 
 The order in which entities are created is important because we visually sort entities based on their creation timestamp. 
 Therefore, consistency between ids of FileHistories is necessary for the join algorithm.
@@ -291,14 +289,13 @@ The challenge comes with the \texttt{FileHistories}. When the analyzer spots a f
 This sounds like a problem with merging because we might consider the same file twice. In other words, we have an issue linking FileHistories between analysis results.
 Assuming for a moment that we do not have this obstacle, another situation might happen, more complicated than the previous one.
  
-If in the middle of two analysis results, a file changed its path, in the first analysis, we have an entity with the old path, 
-and in the second analysis, we have an entity with a new path. 
+If a file changes its path in the middle of two analysis results, we have an entity with the old path in the first analysis and an entity with a new path in the second analysis. 
 Unless we would not keep track of all the possible paths of an entity, it is impossible to reconstruct a connection between these two files. 
 This is the reason that brought us to add the \texttt{aliases} field in the \texttt{FileHistory} class. 
 In the join algorithm we developed, we employ a map to keep track of FileHistories.
 As a result, the file has a different id in any analysis result, guaranteeing consistency among FileHistories. Furthermore, we can ensure the absence of duplicates in the newly built repository history. 
 
-We present an algorithm that takes as input a list of already discovered FileHistories and a \\ \texttt{ProjectAnalysisResult}, and it returns a dictionary.
+We present an algorithm (\autoref{algo:mapping}) that takes as input a list of already discovered FileHistories and a \\ \texttt{ProjectAnalysisResult}, and it returns a dictionary.
 This dictionary is used to map partialFileHistories, the FileHistory of an analysis result, to definitive FileHistories, which are part of the entire history of the repository. 
 To obtain this map, it uses the following strategy:
 \begin{enumerate}
@@ -309,6 +306,7 @@ To obtain this map, it uses the following strategy:
 
 \begin{algorithm}
     \caption{Algorithm to create a mapping between partialFileHistories and definitiveFileHistories}
+    \label{algo:mapping}
     \begin{algorithmic}[1]
     \Procedure{PartialToDefinitiveFH}{$projectAnalysisResult, partialFileHistories$}
         \State $partialToDefinitive \gets Map()$
@@ -347,7 +345,7 @@ To obtain this map, it uses the following strategy:
 
 
 \section{Server}
-The server is responsible for providing the analysis results in an intermediate language between the 
+The Server module is responsible for providing the analysis results in an intermediate language between the 
 front-end (Visual Inspector). We developed the server with Spring Boot, a popular Java application framework.\footnote{\url{https://spring.io/projects/spring-boot}}
 
 \subsection*{GraphQL API} 
@@ -422,15 +420,15 @@ Returns a list for each file type with its metrics. Only the file types in the \
 \end{figure}
 
 
-\autoref{fig:ServertClientFlow} explains how a View is retrieved through a GraphQL endpoint with a sequence diagram. Once the client, in this case, Visual Inspector, specified a \texttt{viewSpecification}, it makes a POST request to the 
+\autoref{fig:ServertClientFlow} explains how a View is retrieved through a GraphQL endpoint with a sequence diagram. Once the client, in this case, Visual Inspector, specifies a \texttt{viewSpecification}, it makes a POST request to the 
 \texttt{partialView} endpoint with the \texttt{projectId}, the \texttt{viewSpecification} and the \texttt{viewAnimationId} of the AnimationFrame. The Server module, in turn, makes the same request to the Core module. A new View is created and retrieved from Server. It is modified to include only the AnimationFrames requested from the client. When the partialView is computed, it is returned to the client. 
 
 \newpage
 \section{Visual Inspector}
 \label{s:SYNDebugger}
 
-The Visual Inspector module is a web application to interact with SYN, written with React.js, a popular JavaScript framework. 
-The visualization is based on Babylon.js, an open-source 3D library. 
+The Visual Inspector module is a web application to interact with SYN, written with React.js,\footnote{\url{https://reactjs.org}} a popular JavaScript framework. 
+The visualization is based on Babylon.js,\footnote{\url{https://www.babylonjs.com}} an open-source 3D library. 
 It provides different customizations for the visualization, such as the entities' shape and color. 
 These customizations are sent to the back-end server through a {\em view specification} file as shown in \autoref{fig:ServertClientFlow}. 
 
@@ -449,7 +447,7 @@ When a project is selected, the UI searches for a viewSpecification object in th
 If it is not present, the module shows the project setup. At the end of the setup, all the preferences selected are saved. 
 The project setup is a wizard to configure a project's visualization, composed of five main steps as follows:
 \begin{itemize}
-    \item Component selection: where the user can select which kind of file type must be considered in the visualization. To help the user, SYN presents the project's file types distribution.
+    \item Component selection: where the user can select which file types must be considered in the visualization. To help the user, SYN presents the project's file types distribution.
     \item Grouping version strategy: the user can choose how commits are grouped to create AnimatioFrames.
     \item Figure settings: to customize the shape, metrics, and opacity of each file type. The user can also choose which strategy must be used to compute the entity's height. 
     \item View color: to customize the color of each git action and how aging must act. 
@@ -488,14 +486,14 @@ Following what we have presented in \autoref{s:3DRepr}, we provide two strategie
     \item by timestamp: we create an AnimationFrame every $n$ seconds. 
 \end{itemize}
 
-To ease the selection of the timestamp strategy, instead of manually computing the width of the time window, the user must only specify an amount and its time unit (i.e., hour, day, week, month, year). After the selection, the UI shows a preview of the grouping strategy to give an idea of how many animations are created with the selected settings. 
+To support the selection of the timestamp strategy, instead of manually computing the width of the time window, the user must only specify an amount and its time unit (i.e., hour, day, week, month, year). After the selection, the UI shows a preview of the grouping strategy to give an idea of how many animations are created with the selected settings. 
 
-\subsubsection*{Figure settings}
+\subsubsection*{Shape settings}
 
 \begin{figure}[h]
     \center
     \includegraphics[width=\textwidth]{SYNUI-settings3.png}
-    \caption{Project setup: figure settings}
+    \caption{Project setup: shape settings}
     \label{fig:SYNUIsettings3}
 \end{figure}
 
@@ -512,8 +510,8 @@ The user can also configure which metrics and mapper strategies determine the he
 The list of available metrics for the mapper comprises the metrics selected for each file type.
 The UI has a checkbox to specify whether FileHistories that do not have the selected metric should be rendered or not. 
 
-With all the settings available on this page, the user has complete control over how FileHistories are rendered. 
-There are many possible combinations. For example, if we want a visualization that distinguishes between Java, text, and binary files, we can use settings shown in \autoref{fig:SYNUIsettings3}. It specifies a different shape for every file type, keeping the maximum opacity level for all of them. Furthermore, the height is computed with a bucketValueStrategy that works with the SLOC metric. As a consequence, only Java files have a height in this visualization. File types that don't have the mapper metric are called \quotes{unmapped entities}, and their height will be fixed. 
+With all the settings available on this page, the user has control over how FileHistories are rendered. 
+There are many possible combinations. For example, if we want a visualization that distinguishes between Java, text, and binary files, we can use the settings shown in \autoref{fig:SYNUIsettings3}. It specifies a different shape for every file type, keeping the maximum opacity level for all of them. Furthermore, the height is computed with a bucketValueStrategy that works with the SLOC metric. As a consequence, only Java files have a height in this visualization. File types that don't have the mapper metric are called \quotes{unmapped entities}, and their height will be fixed. 
 
 \subsubsection*{View color}
 
@@ -524,8 +522,8 @@ There are many possible combinations. For example, if we want a visualization th
     \label{fig:SYNUIsettings4}
 \end{figure}
 
-\autoref{fig:SYNUIsettings4} shows the last setup step. It configures the remaining general UI preferences as follows:
-The user controls the way how aging is computed. 
+\autoref{fig:SYNUIsettings4} shows the color setup step. It configures the coloring preferences as follows:
+The user controls how aging is computed. 
 As with grouping versions, aging can be done following two possible strategies: one by timestamp and one by commits. 
 The color transition is linear. Therefore, the user can choose the number of steps between the original color of the entity and the base color. 
 
@@ -560,8 +558,8 @@ After having specified all the visualization preferences, they are stored in the
 The UI can retrieve a view from the backend server, given the project id and the view specification. 
 
 Initially, it calls the \texttt{partialView} query provided by the Server module. Once it gets the response, the visualization of the first AnimationFrame is automatically loaded. 
-A pre-fetcher mechanism was also implemented. It works as follows: once half of the retrieved AnimationFrames have been displayed; it lazily requests a new partialView containing all the following AnimationFrames of the currently displayed view. 
-In this way, the jump between a partialView and another is not subjected to network timing issues because the partial view was already prefetched. 
+A pre-fetcher mechanism was also implemented. It works as follows: once half of the retrieved AnimationFrames have been displayed, it lazily requests a new partialView containing all the following AnimationFrames of the currently displayed view. 
+This way, the jump between a partialView and another is not subjected to network timing issues because the partial view was already prefetched. 
 
 
 The initial display of the view is represented in \autoref{fig:fileHistories}. The visualization settings of this view are:
@@ -612,13 +610,13 @@ The Visual Inspector is a helpful tool for understanding and debugging SYN's ana
 \begin{figure}
     \center
     \includegraphics[width=\textwidth]{LibreOfficeTeaser.png}
-    \caption{Example of a system rendered with POV-Ray}
+    \caption{Example of a system rendered with POV-Ray (LibreOffice). }
     \label{fig:povteaser}
 \end{figure}
 
 \section{Audio}
 SYN implements the auralization approach detailed in \autoref{sec:audioApproach} in its Core component. 
-Its implementation uses Sonic Pi\footnote{\url{https://sonic-pi.net}} to compose melodies. Sonic Pi is a code-based creation tool written in Ruby. It enables you to write and modify code live to make music. To do that, it defines a domain-specific language to compose melodies procedurally. For example, the instruction \texttt{play 60} plays the 60th note on the piano (selected by default). 
+Its implementation uses Sonic Pi\footnote{\url{https://sonic-pi.net}} to compose melodies. Sonic Pi (\autoref{fig:sonicpi}) is a code-based creation tool written in Ruby. It enables you to write and modify code live to make music. To do that, it defines a domain-specific language to compose melodies procedurally. For example, the instruction \texttt{play 60} plays the 60th note on the piano (selected by default). 
 
 \begin{figure}
     \center

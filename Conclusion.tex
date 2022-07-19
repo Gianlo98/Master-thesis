@@ -1,5 +1,5 @@
 \chapter{Conclusion}
-In this chapter, we summarize the contributions made in this thesis, discuss our approach's benefits, and outline possible future work.
+In this chapter, we summarize the contributions of this thesis, discuss our approach's benefits, and outline possible future work.
 
 \section{Contributions}
 This thesis presents three new approaches to mine, visualize, and auralize large software repositories. The goal of this thesis was to explore new solutions to represent software evolution. We cover all the stages required to reconstruct the history of a git repository, from the historical collection of information to the graphical data representation and visualization. We developed it with a language-agnostic approach. Therefore, an extension of the system is needed to collect and visualize specific kinds of information. Our contributions can be summarized as follows:
@@ -10,18 +10,18 @@ This thesis presents three new approaches to mine, visualize, and auralize large
         \item The analysis process is automatic. 
         \item The analysis process can be scaled horizontally. 
     \end{itemize}
-    \item \textbf{The sensorial software evolution visualization}. It exploits synesthesia, the production of a sense impression relating to one sense by stimulation of another. It represents the evolutionary process through an interactive visual depiction of evolving software artifacts. It enables the comprehension of both the structural and the evolutionary prospectives. Moreover, SYN, the tool that implemented this approach, allows the user to customize visualization properties. This approach provides the following benefits:
+    \item \textbf{The sensorial software evolution visualization}. It exploits synesthesia, the production of a sense impression relating to one sense by stimulating another. It represents the evolutionary process through an interactive visual depiction of evolving software artifacts. It enables the comprehension of both the structural and the evolutionary prospectives. Moreover, SYN, the tool that implemented this approach, allows the user to customize visualization properties. This approach provides the following benefits:
     \begin{itemize}
-        \item It provides an interactive way to comprehend the software evolution.
-        \item It is a scalable approach. Therefore it works with every git repository. 
-        \item It allows the user to customize many graphical properties such as colors, shapes, and height. Therefore, everyone can leverage a customized experience to trigger as many collateral cognitive paths as possible. 
+        \item It provides an interactive way to comprehend software evolution.
+        \item It is a scalable approach. Therefore it works with large git repositories like Linux and LibreOffice.
+        \item It allows the user to customize many graphical properties such as colors, shapes, and height. Therefore, the user can leverage a customized experience to trigger as many collateral cognitive paths as possible. 
         \item It provides two strategies to traverse the repository history: by commit or by time. This way, the comprehension of repositories with a very large history is not undermined. 
         \item Thanks to the aging concept, the user can infer how old a file is. Age differences can be expressed both with commits or with time and are useful to understand how many moments have passed since the last action.
         \item The height of a file is mapped to the value of a pre-selected metric. We provided multiple mapper strategies. 
-        \item The shapes and the opacity can be customized to highlight a type of file over others. 
+        \item The shapes and the opacity can be customized to highlight a file type over others. 
         \item The positioning strategy allows the user to understand the additional order of files immediately. This way, they can understand if the repository still holds legacy files. 
     \end{itemize}
-    \item \textbf{Auditive portrayal of the evolution}. It consists of a guideline suggesting how to compose audio sounds representing the evolution of a project. The proposed methodology was tested with two systems and presented with the JetUML and Linux case study analysis. The main benefit provided by this approach is the support of the visualization. It provides additional information without displaying them. Consequently, the listener can infer additional aspects of the analysis. 
+    \item \textbf{Auditive portrayal of the evolution}. It consists of a guideline suggesting how to compose audio sounds representing the evolution of a project. The proposed methodology was tested with one system and presented with the Linux case study analysis. The main benefit provided by this approach is the support of the visualization. It provides additional information without displaying them. Consequently, the listener can infer additional aspects of the analysis, such as the number of commits and the number of files added/removed from each AnimationFrame.  
 \end{enumerate}
 
 \section{Future Work}
@@ -39,4 +39,4 @@ In this section, we discuss some possible future directions for our approaches:
 
 \section{Epilogue}
 In this thesis, we have proposed an approach based on synesthesia to ease the comprehension task of evolving software systems with an interactive visual depiction of software artifacts complemented by an auditive portrayal of the evolution. We claim that its main benefit is understanding the structure and the development lifecycle of a git project. \\
-The broad applicability of our approach  (on GitHub, there are more than 20M open-source systems) will allow us to study many software systems and, thanks to the gained experience, improve and specialize the techniques presented in this thesis.  
+The broad applicability of our approach  (on GitHub, there are more than 20M open-source systems) allows us to study the evolution of software systems and, thanks to the gained experience, improve and specialize the techniques presented in this thesis.  
