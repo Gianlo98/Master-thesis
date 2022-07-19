@@ -89,7 +89,7 @@ We analyze the evolution of JetUML, ArgoUML, Elasticsearch, LibreOffice, and Lin
 \end{table}
 
 For all the visualizations in this Chapter, we decided to hide deleted entities, adopt a mapper with a LinearBucketValueStrategy with a maximum height of 20, and display files that do not have the selected metric on the visualization. 
-These properties are set as follows:
+\autoref{tab:sharedSettings} presents an overview of these properties.
 
 \begin{table}[h]
 	\small
@@ -102,9 +102,11 @@ These properties are set as follows:
 		mapperStrategyOptions & max height of 20\\
 		showDeletedEntities & false \\\bottomrule
     \end{tabular}
+    \caption{Settings shared among all case studies}
+    \label{tab:sharedSettings}
 \end{table}
 
-We made this choice because, during the development process, we have seen that the LinearBucketValueStrategy works better than other strategies. Of course, it needs a maximum height because otherwise, the gap between entities is too broad. Therefore we set this value to 20. Moreover, we believe that hiding the deleted entities is more intuitive for the user. On the other hand, hiding the unmapped entities might be misleading in some visualizations because the user might think that these entities were deleted. For this reason, we preferred to keep them. 
+We made this choice because, during the development process, we have seen that the LinearBucketValueStrategy works better than other strategies. Of course, it needs a maximum height because otherwise, the gap between entities is too broad. Therefore we set this value to 20. Moreover, we believe that hiding the deleted entities is more intuitive for the user. On the other hand, hiding the unmapped entities might be misleading in some visualizations because the user might think these entities were deleted. For this reason, we preferred to keep them. 
 
 
 % -------------------------------------------
@@ -146,7 +148,7 @@ Consequently, all the files excluded in the depicted commit are painted with the
 
 \autoref{fig:JetUML_V0E} shows the graphical difference between a commit that modified only a few entities and another that changed numerous entities. To identify highly active commits, we focused on commits that involved a considerable percentage of files.
 
-The view specification of this visualization is the following:
+The view specification of this visualization is shown in \autoref{tab:ViewSpecification1}.
 \begin{table}[h]
 	\small
     \centering
@@ -163,6 +165,8 @@ The view specification of this visualization is the following:
 		fileTypeShape & all BOX \\
 		fileTypeOpacity & all 1 \\\bottomrule
     \end{tabular}
+    \caption{View Specification of JetUML – Evolution Overview}
+    \label{tab:ViewSpecification1}
 \end{table}
 
 \bigbreak
@@ -204,57 +208,57 @@ With this grouping strategy, it was hard to understand the regularity and the sp
 \begin{figure}[ht]
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S1.png}
-        \caption{07 Jan 2015, 18:59 \linebreak Initial commit} 
+        \caption{\mbox{07 Jan 2015, 18:59}  \hfill  \linebreak Initial commit} 
         \label{fig:JetUML_V0S1}
     \end{subfigure}
     \hspace*{\fill}
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S2.png}
-        \caption{07 Jan 2015, 19:14 \linebreak  Initial Revision} 
+        \caption{\mbox{07 Jan 2015, 19:14}  \hfill  \linebreak  Initial Revision} 
         \label{fig:JetUML_V0S2}
     \end{subfigure}
     \hspace*{\fill}
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S3.png}
-        \caption{07 Jan 2015, 19:57 \linebreak  \#1 Move all fields} 
+        \caption{\mbox{07 Jan 2015, 19:57}  \hfill  \linebreak  \#1 Move all fields} 
         \label{fig:JetUML_V0S3}
     \end{subfigure}
     \hspace*{\fill}
     \medskip
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S4.png}
-        \caption{10 Jan 2015 \linebreak  \#8 Moved to a dedicated ...} 
+        \caption{\mbox{10 Jan 2015}  \hfill  \linebreak  \#8 Moved to a dedicated ...} 
         \label{fig:JetUML_V0S4}
     \end{subfigure}
     \hspace*{\fill}
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S5.png}
-        \caption{22 Jan 2015 \linebreak  \#27 Renamed the packages} 
+        \caption{\mbox{22 Jan 2015}  \hfill  \linebreak  \#27 Renamed the packages} 
         \label{fig:JetUML_V0S5}
     \end{subfigure}
     \hspace*{\fill}
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S6.png}
-        \caption{16 Oct 2015 \linebreak  \#3 New copyright block on ...} 
+        \caption{\mbox{16 Oct 2015}  \hfill  \linebreak  \#3 New copyright block on ...} 
         \label{fig:JetUML_V0S6}
     \end{subfigure}
     \hspace*{\fill}
     \medskip
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S7.png}
-        \caption{17 Jan 2016 \linebreak  \#146 Updated the copyright ...}
+        \caption{\mbox{17 Jan 2016} \hfill \linebreak  \#146 Updated the copyright ...}
          \label{fig:JetUML_V0S7}
     \end{subfigure}
     \hspace*{\fill}
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S8.png}
-        \caption{26 Nov 2017 \linebreak  \#212 Remove stg from name} 
+        \caption{\mbox{26 Nov 2017}  \hfill  \linebreak  \#212 Remove stg from name} 
         \label{fig:JetUML_V0S8}
     \end{subfigure}
     \hspace*{\fill}
     \begin{subfigure}{0.32\textwidth}
         \includegraphics[width=\linewidth]{JetUML_V0S9.png}
-        \caption{22 Jul 2020 \linebreak  \#374 Fix copyrights} 
+        \caption{\mbox{22 Jul 2020}  \hfill  \linebreak  \#374 Fix copyrights} 
         \label{fig:JetUML_V0S9}
     \end{subfigure}
     \hspace*{\fill}
@@ -273,8 +277,7 @@ With this visualization, we present how the repository evolved through its first
 The authors of JetUML made seven pre-releases of the system during this interval of time.
 We want to demonstrate the effectiveness of aging by showing what a strategy of one month with ten steps looks like. 
 
-
-View specification adopted: 
+The view specification of this visualization is shown in \autoref{tab:ViewSpecification2}.
 \begin{table}[h]
 	\small
     \centering
@@ -291,6 +294,8 @@ View specification adopted:
 		fileTypeShape & all BOX \\
 		fileTypeOpacity & all 1 \\\bottomrule
     \end{tabular}
+    \caption{View Specification of JetUML – The Beginnings}
+    \label{tab:ViewSpecification2}
 \end{table}
 
 
@@ -347,7 +352,7 @@ The choice of the aging strategy played a crucial role in this visualization. It
 In this third and last visualization of JetUML, we study the entire evolution of the system, with a focus on Java files. 
 We use the shape and opacity property of a ViewFigure to distinguish Java files from others.
 We adopt a timestamp grouping strategy with one year to display the evolution. We also use a timestamp strategy for the aging, with ten steps and one month time window. This means that grey entities represent files that have not been updated in the last 10 months from the time of the displayed AnimationFrame. 
-View specification adopted:
+The view specification of this visualization is shown in \autoref{tab:ViewSpecification3}.
 \begin{table}[h]
 	\small
     \centering
@@ -364,6 +369,8 @@ View specification adopted:
 		fileTypeShape & Java -> BOX, OTHERS -> SPHERE \\
 		fileTypeOpacity & Java -> max, OTHERS -> low \\\bottomrule
     \end{tabular}
+    \caption{View Specification of JetUML – Year by Year}
+    \label{tab:ViewSpecification3}
 \end{table}
 
 \bigbreak
@@ -463,7 +470,7 @@ Our analysis considered 16,672 commits, 11,129 FileHistories, and more than 90K 
 This visualization aims to understand how the repository evolved through these 23 years. Therefore we adopt a commit grouping strategy based on a time window of one year and an aging strategy of one month with a total of 12 steps. Hence, grey entities represent files that have not been updated for more than 12 months. 
 
 
-View specification adopted: 
+The view specification of this visualization is shown in \autoref{tab:ViewSpecification4}.
 \begin{table}[h]
 	\small
     \centering
@@ -480,6 +487,8 @@ View specification adopted:
 		fileTypeShape & all BOX \\
 		fileTypeOpacity & all 1 \\\bottomrule
     \end{tabular}
+    \caption{View Specification of ArgoUML – 23 Years of History}
+    \label{tab:ViewSpecification4}
 \end{table}
 
 \bigbreak
@@ -558,7 +567,7 @@ Our analysis includes almost nine years of history, in which there are 34,843 Pr
 This visualization aims to see how the repository evolved through its last nine years. We adopt a commit grouping strategy based on a time window of one year and an aging strategy of one month with 12 steps. Hence, grey entities represent files that have not been updated for more than 12 months. 
 
 
-View specification adopted: 
+The view specification of this visualization is shown in \autoref{tab:ViewSpecification5}.
 \begin{table}[h]
 	\small
     \centering
@@ -575,6 +584,8 @@ View specification adopted:
 		fileTypeShape & all BOX \\
 		fileTypeOpacity & all 1 \\\bottomrule
     \end{tabular}
+        \caption{View Specification of Elasticsearch – Forty Thousand File Histories}
+    \label{tab:ViewSpecification5}
 \end{table}
 
 \bigbreak
@@ -649,7 +660,7 @@ LibreOffice is an integrated office suite compatible with most document formats 
 This visualization aims to see how the repository evolved through its last 20 years. We adopt a commit grouping strategy based on a time window of one year and an aging strategy of one month with 12 steps. Hence, grey entities represent files that have not been updated for more than 12 months. 
 
 
-View specification adopted: 
+The view specification of this visualization is shown in \autoref{tab:ViewSpecification6}.
 \begin{table}[h]
 	\small
     \centering
@@ -666,6 +677,8 @@ View specification adopted:
 		fileTypeShape & all BOX \\
 		fileTypeOpacity & all 1 \\\bottomrule
     \end{tabular}
+            \caption{View Specification of LibreOffice – 200K Files in 20 Years}
+    \label{tab:ViewSpecification6}
 \end{table}
 
 \bigbreak
@@ -750,7 +763,7 @@ He never created a repository containing the full history of Linux. The analysis
 This visualization aims to see how the repository evolved through its last 17 years. We decided to adopt a commit grouping strategy based on a time window of one year and an aging strategy of one month with 12 steps. Hence, grey entities represent files that have not been updated for more than 12 months. 
 
 
-View specification adopted: 
+The view specification of this visualization is shown in \autoref{tab:ViewSpecification7}.
 \begin{table}[h]
 	\small
     \centering
@@ -767,6 +780,8 @@ View specification adopted:
 		fileTypeShape & all BOX \\
 		fileTypeOpacity & all 1 \\\bottomrule
     \end{tabular}
+            \caption{View Specification of Linux – Over a Million Commits}
+    \label{tab:ViewSpecification7}
 \end{table}
 
 \noindent
