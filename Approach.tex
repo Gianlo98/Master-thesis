@@ -157,13 +157,14 @@ In particular, if FileHistory is already present in our history, we do not have 
 
 \begin{table}[ht]
     \centering
-    \begin{tabular}{lcr} \hline
-        {\bf FileType} & {\bf Metrics}\\ \hline
+        \begin{tabular}{@{}ll@{}} 
+        \toprule
+        \textbf{FileType} & \textbf{Metrics} \\\midrule
         File    & SIZE      \\
         Textual & LOC, LinesAdded, LinesRemoved, SIZE \\
         Binary  & SIZE         \\
         Java    & SLOC, LOC, LinesAdded, LinesRemoved, SIZE \\
-        JPEG    & SIZE \\
+        JPEG    & SIZE \\\bottomrule
     \end{tabular}
     \caption{Example of metrics collected and inherited for each FileType}
     \label{table:metricsT}

@@ -6,7 +6,7 @@ In 1971, Dijkstra made an analogy between computer programming and art \cite{Dij
 It stated that it is not essential to learn how to compose software; instead, it is necessary to develop its own style and implications. 
 Software development is a complex process involving many people and development tools and their interactions. This is one of the multiple factors that characterize software complexity. 
 Modern software systems are characterized by sheer size and complexity. Software maintenance takes up most of a system's cost. It is hard to quantify the impact of software maintenance on the global cost of the software. 
-Researchers estimated it to be between 50\% and 90\% \cite{Davis1995, Sommerville1995, Erlikh2000, seacord2003}. Many factors influence the maintenance cost; among these is the understanding activity needed to perform maintenance tasks \cite{Corbi1989}. Comprehending software evolution is essential for systems' understandability and, consequently, maintainability. However, the sheer quantity and complexity of the information generated during systems development challenge the comprehension process. Lehman and Belady, in 1985, were among the first to observe that maintaining a software system becomes a more complex activity over time \cite{Lehman1985}. The term "software evolution" was used for the first time in their set of laws.  One of the goals of software evolution analysis is to identify potential defects in the system's logic or architecture. 
+Researchers estimated it to be between 50\% and 90\% \cite{Davis1995, Sommerville1995, Erlikh2000, seacord2003}. Many factors influence the maintenance cost; among these is the understanding activity needed to perform maintenance tasks \cite{Corbi1989}. Comprehending software evolution is essential for systems' understandability and, consequently, maintainability. However, the sheer quantity and complexity of the information generated during systems development challenge the comprehension process. Lehman and Belady, in 1985, were among the first to observe that maintaining a software system becomes a more complex activity over time \cite{Lehman1985}. The term \quotes{software evolution} was used for the first time in their set of laws.  One goal of software evolution analysis is to identify potential defects in the system's logic or architecture. 
 
 Numerous techniques have been presented in the literature to facilitate program comprehension \cite{Lanza2001, DAmbros2006, Steinbrueckner2010, Wettel2011, Alexandru2019, SoftwareEvolution}. The main challenge they have to deal with is identifying relevant aspects to be presented so that the user does not get lost in the myriad of information. 
 Software visualization is a specialization of information visualization with a focus on software \cite{Lanza2003}. 
@@ -21,21 +21,22 @@ The approach is exemplified in SYN, a web application that enables sensorial sof
 \newpage
 
 \section{Contributions}
-We can summarize the main contributions of this work as follows:
+We summarize the main contributions of this work as follows:
 \begin{itemize}
- \item an approach to mine and model the history of a system's evolution.
- \item an interactive, visual 3D representation of evolving software artifacts.
- \item an auralization approach to compose music based on a system's evolution.
- \item a supporting tool that implements our approach.
+ \item an approach to mine and model the history of a system's evolution;
+ \item an interactive, visual 3D representation of evolving software artifacts;
+ \item an auralization approach to compose music based on a system's evolution;
+ \item a supporting tool that implements our approach;
  \item case studies on open-source systems.
 \end{itemize}
 
 
 \section{Document Structure}
-This document is organized as follows
+This document is organized as follows:
 \begin{itemize}
  \item In Chapter 2, we describe state of the art in software visualization, repository mining, and software auralization. We look at evolution models and 2D/3D visualizations. 
  \item In Chapter 3, we describe our approach based on mining software repositories and modeling their evolution, visualizing evolving software artifacts, and auralizing the system's evolution. 
  \item In Chapter 4, we present SYN, a supporting tool that implements our approach. 
- \item In Chapter 5, we preliminary validate our approach by analyzing five open-source software systems and reporting our findings
- \item In Chapter 6, we summarize our work and discuss possible directions for future work \end{itemize}
+ \item In Chapter 5, we preliminary validate our approach by analyzing five open-source software systems and reporting our findings.
+ \item In Chapter 6, we summarize our work and discuss possible directions for future work.
+ \end{itemize}

@@ -74,24 +74,19 @@ We analyze the evolution of JetUML, ArgoUML, Elasticsearch, LibreOffice, and Lin
 \begin{table}[ht]
 	\small
     \centering
-    \begin{tabular}{lrrrr} 
-        \hline
+    \begin{tabular}{@{}lllll@{}} 
+		\toprule
         {\bf Name} & {\bf First Analyzed Commit} & {\bf Last Analyzed Commit} & {\bf \# Of Commits Considered} & {\bf \# Of Files}\\ 
-        \hline
+        \midrule
         JetUML & 07 Jan 2015 & 12 May 2022 & 2,152 & 795\\ 
         ArgoUML & 26 Jan 1998 & 29 May 2021 & 16,672 & 11,129 \\
         Elasticsearch & 28 Jun 2013 & 14 Apr 2022 & 34,842 & 41,043 \\
         LibreOffice & 07 Mar 2002 & 18 Jun 2022 & 367,996 & 213,791 \\
-        Linux & 17 Apr 2005 & 19 Apr 2022 & 997,486 & 109,829
+        Linux & 17 Apr 2005 & 19 Apr 2022 & 997,486 & 109,829 \\\bottomrule
     \end{tabular}
     \caption{List of analyzed projects}
     \label{tab:casestudies}
 \end{table}
-
-
-%There are many possible combinations to create a view specification; we explored them on all the projects. 
-%Each visualization has its purpose. For example, we can create a visualization to see the evolution of only Java files or to see how the system evolved every day. 
-%However, not all the combinations might have sense. For example, if we chose a timestamp grouping strategy, a comprehensive time window might hide some exciting aspects of the analysis. In contrast, a short time window could cause a massive number of AnimationFrames, undermining the understandability of the view. 
 
 For all the visualizations in this Chapter, we decided to hide deleted entities, adopt a mapper with a LinearBucketValueStrategy with a maximum height of 20, and display files that do not have the selected metric on the visualization. 
 These properties are set as follows:
@@ -99,20 +94,15 @@ These properties are set as follows:
 \begin{table}[h]
 	\small
     \centering
-    \begin{tabular}{|l|l|} 
-        \hline
+    \begin{tabular}{@{}ll@{}} 
+        \toprule
+        \textbf{Property} & \textbf{Value} \\\midrule
         showUnmappedEntities & true\\ 
-        \hline
 		mapperStrategy & LinearBucketValueStrategy\\
-		\hline
 		mapperStrategyOptions & max height of 20\\
-		\hline
-		showDeletedEntities & false \\
-		\hline
+		showDeletedEntities & false \\\bottomrule
     \end{tabular}
 \end{table}
-
-
 
 We made this choice because, during the development process, we have seen that the LinearBucketValueStrategy works better than other strategies. Of course, it needs a maximum height because otherwise, the gap between entities is too broad. Therefore we set this value to 20. Moreover, we believe that hiding the deleted entities is more intuitive for the user. On the other hand, hiding the unmapped entities might be misleading in some visualizations because the user might think that these entities were deleted. For this reason, we preferred to keep them. 
 
@@ -160,26 +150,18 @@ The view specification of this visualization is the following:
 \begin{table}[h]
 	\small
     \centering
-    \begin{tabular}{|l|l|} 
-        \hline
+    \begin{tabular}{@{}ll@{}} 
+        \toprule
+        \textbf{Property} & \textbf{Value} \\\midrule
         versionGroupingStrategy & commit\\ 
-        \hline
 		versionGroupingChunkSize & 1\\
-		\hline
 		colorPalette & default\\
-		\hline
 		agingGroupingStrategy & commit \\
-		\hline
 		agingStepSize & 1 \\
-		\hline
 		agingSteps & 2 \\
-		\hline
 		mapperMetricName & SIZE \\
-		\hline
 		fileTypeShape & all BOX \\
-		\hline
-		fileTypeOpacity & all 1 \\
-		\hline
+		fileTypeOpacity & all 1 \\\bottomrule
     \end{tabular}
 \end{table}
 
@@ -296,28 +278,22 @@ View specification adopted:
 \begin{table}[h]
 	\small
     \centering
-    \begin{tabular}{|l|l|} 
-        \hline
+    \begin{tabular}{@{}ll@{}} 
+        \toprule
+        \textbf{Property} & \textbf{Value} \\\midrule
         versionGroupingStrategy & timestamp\\ 
-        \hline
 		versionGroupingChunkSize & 2,629,743 (1 month)\\
-		\hline
 		colorPalette & default\\
-		\hline
 		agingGroupingStrategy & timestamp \\
-		\hline
 		agingStepSize & 2,629,743 (1 month) \\
-		\hline
 		agingSteps & 10 \\
-		\hline
 		mapperMetricName & SIZE \\
-		\hline
 		fileTypeShape & all BOX \\
-		\hline
-		fileTypeOpacity & all 1 \\
-		\hline
+		fileTypeOpacity & all 1 \\\bottomrule
     \end{tabular}
 \end{table}
+
+
 \bigbreak
 \noindent
 \textbf{Results:}
@@ -375,28 +351,21 @@ View specification adopted:
 \begin{table}[h]
 	\small
     \centering
-    \begin{tabular}{|l|l|} 
-        \hline
+    \begin{tabular}{@{}ll@{}} 
+        \toprule
+        \textbf{Property} & \textbf{Value} \\\midrule
         versionGroupingStrategy & timestamp\\ 
-        \hline
 		versionGroupingChunkSize & 31,556,926 (1 year)\\
-		\hline
 		colorPalette & default\\
-		\hline
 		agingGroupingStrategy & timestamp \\
-		\hline
 		agingStepSize & 2,629,743 (1 month) \\
-		\hline
 		agingSteps & 10 \\
-		\hline
 		mapperMetricName & SIZE \\
-		\hline
 		fileTypeShape & Java -> BOX, OTHERS -> SPHERE \\
-		\hline
-		fileTypeOpacity & Java -> max, OTHERS -> low \\
-		\hline
+		fileTypeOpacity & Java -> max, OTHERS -> low \\\bottomrule
     \end{tabular}
 \end{table}
+
 \bigbreak
 \noindent
 \textbf{Results:}
@@ -498,32 +467,25 @@ View specification adopted:
 \begin{table}[h]
 	\small
     \centering
-    \begin{tabular}{|l|l|} 
-        \hline
+    \begin{tabular}{@{}ll@{}} 
+        \toprule
+        \textbf{Property} & \textbf{Value} \\\midrule
         versionGroupingStrategy & timestamp\\ 
-        \hline
 		versionGroupingChunkSize & 31,556,926 (1 year)\\
-		\hline
 		colorPalette & default\\
-		\hline
 		agingGroupingStrategy & timestamp \\
-		\hline
 		agingStepSize & 2,629,743 (1 month) \\
-		\hline
 		agingSteps & 12 \\
-		\hline
 		mapperMetricName & SIZE \\
-		\hline
 		fileTypeShape & all BOX \\
-		\hline
-		fileTypeOpacity & all 1 \\
-		\hline
+		fileTypeOpacity & all 1 \\\bottomrule
     \end{tabular}
 \end{table}
+
 \bigbreak
 \noindent
 \textbf{Results:}
-Here we present an interesting summary of ArgoUML's evolution. The full evolution is depicted in  \autoref{app:ArgoUML_Evolution}. \autoref{fig:JetUML_V3} shows the hotspots during the system's evolution. \autoref{fig:ArgoUML_V3_S1} shows the system's state after the first year of development. As we can notice, almost all the entities have a color different than gray. This means they were updated between April 1998 and January 1999 otherwise they should be darker or gray. The size of the system was constantly increasing in 2003. As \autoref{fig:ArgoUML_V3_S2} shows, the system's core was entirely rewritten. Three years later it had another important refactoring. As shown in \autoref{fig:ArgoUML_V3_S3} there are empty rings around the center and a bigger size than the previous year. Our interpretation is that an entire set of consequently added files was removed and maybe later added. It is important to underline that these files were deleted, not moved, or renamed because otherwise, SYN would treat them as the same logical entity. The same event happened four years later, when the system became ten years old. 2010 was the last truly active year for the repository as depicted in \autoref{fig:ArgoUML_V3_S5}. Almost all the repository files were modified and we can notice taller entities, meaning that the overall size of the files increased. The system did not grow anymore after that year. Sometimes some files were updated until 2014 when they became almost inactive. In 2019 they made a commit that removed lots of files.\footnote{\url{https://github.com/argouml-tigris-org/argouml/commit/62d5393eeaf08b749b17107faef255a22da55ce5}} As a result, in January 2020, as represented in \autoref{fig:ArgoUML_V3_S6}, the visualization has more blank spots. Since there was no activity, except for a few files, almost all the entities are painted gray. In June 2022, the system is nearly identical to its version in 2020. 
+Here we present an interesting summary of ArgoUML's evolution. The full evolution is depicted in  \autoref{app:ArgoUML_Evolution}. \autoref{fig:JetUML_V3} shows the hotspots during the system's evolution. \autoref{fig:ArgoUML_V3_S1} shows the system's state after the first year of development. As we can notice, almost all the entities have a color different than gray. This means they were updated between April 1998 and January 1999 otherwise, they should be darker or gray. The size of the system was constantly increasing in 2003. As \autoref{fig:ArgoUML_V3_S2} shows, the system's core was entirely rewritten. Three years later, it had another important refactoring. As shown in \autoref{fig:ArgoUML_V3_S3} there are empty rings around the center and a bigger size than the previous year. Our interpretation is that an entire set of consequently added files was removed and maybe later added. It is important to underline that these files were deleted, not moved, or renamed because otherwise, SYN would treat them as the same logical entity. The same event happened four years later when the system became ten years old. 2010 was the last truly active year for the repository, as depicted in \autoref{fig:ArgoUML_V3_S5}. Almost all the repository files were modified, and we can notice taller entities, meaning that the overall size of the files increased. The system did not grow anymore after that year. Sometimes some files were updated until 2014, when they became almost inactive. In 2019 they made a commit that removed lots of files.\footnote{\url{https://github.com/argouml-tigris-org/argouml/commit/62d5393eeaf08b749b17107faef255a22da55ce5}} As a result, in January 2020, as represented in \autoref{fig:ArgoUML_V3_S6}, the visualization has more blank spots. Since there was no activity, except for a few files, almost all the entities are painted gray. In June 2022, the system is nearly identical to its version in 2020. 
 
 \bigbreak
 \noindent
@@ -600,29 +562,21 @@ View specification adopted:
 \begin{table}[h]
 	\small
     \centering
-    \begin{tabular}{|l|l|} 
-        \hline
+    \begin{tabular}{@{}ll@{}} 
+        \toprule
+        \textbf{Property} & \textbf{Value} \\\midrule
         versionGroupingStrategy & timestamp\\ 
-        \hline
 		versionGroupingChunkSize & 31,556,926 (1 year)\\
-		\hline
 		colorPalette & default\\
-		\hline
 		agingGroupingStrategy & timestamp \\
-		\hline
 		agingStepSize & 2,629,743 (1 month) \\
-		\hline
 		agingSteps & 12 \\
-		\hline
 		mapperMetricName & SIZE \\
-		\hline
 		fileTypeShape & all BOX \\
-		\hline
-		fileTypeOpacity & all 1 \\
-		\hline
+		fileTypeOpacity & all 1 \\\bottomrule
     \end{tabular}
 \end{table}
-\bigbreak
+
 \bigbreak
 \noindent
 \textbf{Results:}
@@ -690,7 +644,6 @@ Here we present only the relevant aspects of ArgoUML's evolution that we have fo
 LibreOffice is an integrated office suite compatible with most document formats and standards. Its first commit,\footnote{\url{https://github.com/LibreOffice/core/commit/5acbb755f3f8dedf51904b711ff78f5e1aa498cf}} made on March 7, 2002, was an import of the original codebase developed by Sun Microsystems. The repository's history is 20 years long, with 327,996 commits, 213,791 FileHistories, and almost 2M FileVersions. 
 
 \bigbreak
-%\subsection{View 6}
 \noindent
 \textbf{Visualization goal:}
 This visualization aims to see how the repository evolved through its last 20 years. We adopt a commit grouping strategy based on a time window of one year and an aging strategy of one month with 12 steps. Hence, grey entities represent files that have not been updated for more than 12 months. 
@@ -700,33 +653,26 @@ View specification adopted:
 \begin{table}[h]
 	\small
     \centering
-    \begin{tabular}{|l|l|} 
-        \hline
+    \begin{tabular}{@{}ll@{}} 
+        \toprule
+        \textbf{Property} & \textbf{Value} \\\midrule
         versionGroupingStrategy & timestamp\\ 
-        \hline
 		versionGroupingChunkSize & 31,556,926 (1 year)\\
-		\hline
 		colorPalette & default\\
-		\hline
 		agingGroupingStrategy & timestamp \\
-		\hline
 		agingStepSize & 2,629,743 (1 month) \\
-		\hline
 		agingSteps & 12 \\
-		\hline
 		mapperMetricName & SIZE \\
-		\hline
 		fileTypeShape & all BOX \\
-		\hline
-		fileTypeOpacity & all 1 \\
-		\hline
+		fileTypeOpacity & all 1 \\\bottomrule
     \end{tabular}
 \end{table}
+
 \bigbreak
 \noindent
 \textbf{Results:}
 We present only the relevant aspects of the evolution that we have found. The full evolution is depicted in \autoref{app:Libre_Evolution}. \autoref{fig:Libre_V6} shows the hot spots during the system's evolution. The initial composition of the system is shown in \autoref{fig:Libre_V6_S1}. Between 2003 and 2011, the system 
-grew substantially. In March 2003, it had 13,500 files, and in March 2011, it had 57,520 files with an increment of over 40K files. \autoref{fig:Libre_V6_S2} shows the state of the repository in March 2011. Few entities are painted with a color, meaning that only a few parts of the codebase were touched. \autoref{fig:Libre_V6_S3} shows the state in March 2012. Closely to that date, the repository undergoes a big refactoring where most of the recently added files were moved. In this picture, we initially start to see empty rings like in the analysis of ArgoUML. Another important aspect of this picture is that the core was entirely modified. As we can see, it is yellow, and the entities are taller than the year before. The work on the repository was constant until June 2022. In all the AnimationFrames, the center was always painted with yellow colors. This could mean that the core still needs maintenance after 20 years, recently developed features heavily rely on the core implementation. In the last 12 years, as can be seen in \autoref{fig:Libre_V6_S4}, \autoref{fig:Libre_V6_S5} and \autoref{fig:Libre_V6_S6} the system doubled its size. In June 2022, it counted 135,793 files. Empty rings around the core became thicker, suggesting the deletion of a significant part of the system which they probably reimplemented later.
+grew substantially. In March 2003, it had 13,500 files, and in March 2011, it had 57,520 files with an increment of over 40K files. \autoref{fig:Libre_V6_S2} shows the state of the repository in March 2011. Few entities are painted with a color, meaning that only a few parts of the codebase were touched. \autoref{fig:Libre_V6_S3} shows the state in March 2012. Closely to that date, the repository underwent a big refactoring where most of the recently added files were moved. In this picture, we initially start to see empty rings like in the analysis of ArgoUML. Another important aspect of this picture is that the core was entirely modified. As we can see, it is yellow, and the entities are taller than the year before. The work on the repository was constant until June 2022. In all the AnimationFrames, the center was always painted with yellow colors. This could mean that the core still needs maintenance after 20 years, and recently developed features heavily rely on the core implementation. In the last 12 years, as can be seen in \autoref{fig:Libre_V6_S4}, \autoref{fig:Libre_V6_S5} and \autoref{fig:Libre_V6_S6} the system doubled its size. In June 2022, it counted 135,793 files. Empty rings around the core became thicker, suggesting the deletion of a significant part of the system, which they probably reimplemented later.
 
 \bigbreak
 \noindent
@@ -808,26 +754,18 @@ View specification adopted:
 \begin{table}[h]
 	\small
     \centering
-    \begin{tabular}{|l|l|} 
-        \hline
+    \begin{tabular}{@{}ll@{}} 
+        \toprule
+        \textbf{Property} & \textbf{Value} \\\midrule
         versionGroupingStrategy & timestamp\\ 
-        \hline
 		versionGroupingChunkSize & 31,556,926 (1 year)\\
-		\hline
 		colorPalette & default\\
-		\hline
 		agingGroupingStrategy & timestamp \\
-		\hline
 		agingStepSize & 2,629,743 (1 month) \\
-		\hline
 		agingSteps & 12 \\
-		\hline
 		mapperMetricName & SIZE \\
-		\hline
 		fileTypeShape & all BOX \\
-		\hline
-		fileTypeOpacity & all 1 \\
-		\hline
+		fileTypeOpacity & all 1 \\\bottomrule
     \end{tabular}
 \end{table}
 
@@ -861,9 +799,6 @@ In the end, from AnimationFrame 68, we can understand the actual size of the sys
 \noindent
 \textbf{Conclusion:}
  We saw how the codebase of Linux evolved since their move to git. The development activity was constant throughout these 17 years. The codebase started with 19,705 files and reached 77,183 in April 2022, almost four times its original size. During this time, they evolved the kernel to develop new features and started a process to slowly remove the files that were added 17 years ago. As we can see, the center of the spiral began to become sparse. Nonetheless, it still holds many files, which means that the current version of Linux relies on files written more than 17 years ago. 
-
-
-
 
 
 \begin{figure}[ht]
