@@ -258,7 +258,7 @@ Then, the merge commits are removed since the changes recorded by them are dupli
 \begin{figure}
     \center
     \includegraphics[width=\textwidth]{HistorySplit.jpg}
-    \caption{Example partitioning of a commit tree with three workers.}
+    \caption{Example partitioning of a commit tree with three workers}
     \label{fig:historysplit}
 \end{figure}
 
@@ -295,7 +295,7 @@ This is the reason that brought us to add the \texttt{aliases} field in the \tex
 In the join algorithm we developed, we employ a map to keep track of FileHistories.
 As a result, the file has a different id in any analysis result, guaranteeing consistency among FileHistories. Furthermore, we can ensure the absence of duplicates in the newly built repository history. 
 
-We present an algorithm (\autoref{algo:mapping}) that takes as input a list of already discovered FileHistories and a \\ \texttt{ProjectAnalysisResult}, and it returns a dictionary.
+Algorithm \autoref{algo:mapping} was developed to create a mapping between FileHistories when we need to join them. It takes as input a list of already discovered FileHistories and a \\ \texttt{ProjectAnalysisResult}, and it returns a dictionary.
 This dictionary is used to map partialFileHistories, the FileHistory of an analysis result, to definitive FileHistories, which are part of the entire history of the repository. 
 To obtain this map, it uses the following strategy:
 \begin{enumerate}
@@ -593,14 +593,14 @@ It shows more details of the entity as follows:
 \begin{figure}
     \center
     \includegraphics[width=\textwidth]{SYNUI-fileHistory2.png}
-    \caption{Visualization of JetUML with the default settings.}
+    \caption{Visualization of JetUML with the default settings}
     \label{fig:fileHistories}
 \end{figure}
 
 \begin{figure}
     \center
     \includegraphics[width=\textwidth]{SYNUI-deletedshadow.png}
-    \caption{Visualization of JetUML with shadows, deleted entities and custom shapes for non-java files.}
+    \caption{Visualization of JetUML with shadows, deleted entities and custom shapes for non-java files}
     \label{fig:deletedshadow}
 \end{figure}
 
@@ -610,7 +610,7 @@ The Visual Inspector is a helpful tool for understanding and debugging SYN's ana
 \begin{figure}
     \center
     \includegraphics[width=\textwidth]{LibreOfficeTeaser.png}
-    \caption{Example of a system rendered with POV-Ray (LibreOffice). }
+    \caption{Example of a system rendered with POV-Ray (LibreOffice)}
     \label{fig:povteaser}
 \end{figure}
 

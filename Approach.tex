@@ -39,7 +39,7 @@ In this chapter, we present the three main steps of our approach as follows:
 \end{figure}
 Various approaches have been proposed to analyze aspects of software evolution. In 2005, Tudor Girba presented Hismo \cite{Girba2005}, a model centered around the notion of history as a first-class entity. Our approach is based on this work. The need to develop a novel evolutionary model comes from the fact that Hismo was designed to work with another versioning system: Subversion (SVN). 
 There are several differences between SVN and git. In terms of design, the most important is how they track changes. 
-SVN works with the concept of "snapshot" while git works with the concept of "commits". In SVN, when a file has been changed, a new revision of the whole system is created, and consequently, the number of revisions is incremented. 
+SVN works with the concept of \quotes{snapshot} while git works with the concept of \quotes{commits}. In SVN, when a file has been changed, a new revision of the whole system is created, and consequently, the number of revisions is incremented. 
 In contrast, in git, only the modified files would get committed, and thus we don't have a new snapshot of the system every time. 
 Therefore, we took Hismo as the starting point of our model and adapted it to the git protocol. 
 The Hismo model was based on three concepts:
@@ -67,7 +67,7 @@ To summarize, these are the four main concepts of our evolutionary model:
 To model the history of a repository, we need to extract the historical information from git.
 Git works with the concept of branches. Each branch can be seen as a different repository timeline.
 Usually, developers use branches to develop features and merge the developed code in a branch that contains the stable codebase.
-They create a "merge commit" to do that. 
+They create a \quotes{merge commit} to do that. 
 Each time developers create a new git commit, they deploy a new version of the system that records all the changes made to the commits' tracked files. 
 Internally, in git, all git stores all the commits as nodes of a commit-tree. 
 The root node represents the repository's first commit and has no parents. 
@@ -75,9 +75,9 @@ All the other nodes represent the commits made during the whole lifecycle of the
 Each commit usually has only one parent representing the previous commit.
 There is one case where a commit might have more than one parent: merges commits.
 
-Each repository should have a branch containing stable, production-ready code as a convention. Usually, this branch is named "main" or "master". 
+Each repository should have a branch containing stable, production-ready code as a convention. Usually, this branch is named \quotes{main} or \quotes{master}. 
 In our approach, we aim to analyze the timeline of this stable branch. We start from the root of the commit tree, which represents the initial commit, and then we traverse the whole tree. 
-We do not consider "merge commits" during this process since they already incorporate previous commits, and thus they would be considered twice. 
+We do not consider \quotes{merge commits} during this process since they already incorporate previous commits, and thus they would be considered twice. 
 Once we have extracted all the valid commits that reside on the stable branch, we need to extract all the representative information for a ProjectVersion. \\
 
 Git can recognize the following file actions:
@@ -143,16 +143,16 @@ In the end, the final history will be represented by merging all the PartialHist
 Nonetheless, we can build PartialHistories in parallel, but we cannot do the same for the final History, 
 because the final merge needs to be done sequentially. The sequence needs to follow the order of the commit tree. 
 In \autoref{fig:PartialHistory}, for example,
-PartialHistory1 represents the history from commit 1 to commit 10, 
-PartialHistory2 represents the history from commit 11 to commit 20, and 
-PartialHistory3 represents the history from commit 21 to commit 30.
+Partial History 1 represents the history from commit 1 to commit 10, 
+Partial History 2 represents the history from commit 11 to commit 20, and 
+Partial History 3 represents the history from commit 21 to commit 30.
 Therefore, the commit order is respected if we merge them in this order: 1, 2, 3. 
 The result of a single analysis and a parallel analysis must be identical. 
 To ensure that, we need to pay attention to the merge operations of our analysis.
 When we merge the history of a repository with a partial history, we need to preserve the characteristics of our model. 
 In particular, if FileHistory is already present in our history, we do not have to duplicate it, but instead, we need to update it. 
 \label{s:evolutionaryMetrics}
-\subsection*{Evolutionary metrics}
+\subsection{Evolutionary metrics}
 
 \begin{table}[ht]
     \centering
@@ -260,27 +260,27 @@ Every visualization has its own goal and its way of traversing time. For this re
     \item{Grouping by timestamp}: the user specifies a time window (\texttt{ts}) and we create one AnimationFrame for every \texttt{ts} seconds. All the commits inside the time window are part of the AnimationFrame. Therefore, we might have empty AnimationFrames if no commits are made in that time window.
 \end{itemize}
 
-\autoref{fig:TimeWindowExamples} shows an example of three strategies applied over the same history. In \autoref{fig:TimeWindow1} we made an AnimationFrame every 3 commits and as a result, the notion of time is lost. With a commit grouping strategy, we never have an empty AnimationFrame. In \autoref{fig:TimeWindow2} and \autoref{fig:TimeWindow3} the situation is different as they have empty AnimationFrames.
+\autoref{fig:TimeWindowExamples} shows an example of three strategies applied over the same history. In \autoref{fig:TimeWindow1} we made an AnimationFrame every three commits, and as a result, the notion of time is lost. With a commit grouping strategy, we never have an empty AnimationFrame. In \autoref{fig:TimeWindow2} and \autoref{fig:TimeWindow3} the situation is different as they have empty AnimationFrames.
 Overall, the examples highlight the importance of a well-designed time window and underline our need to leave the user the choice of the time window's length. For example, younger repositories might have a daily time window, while older repositories might have a weekly, monthly, or yearly view. 
 
 \begin{figure}
     \begin{center}
         \begin{subfigure}{1\textwidth}
             \includegraphics[width=\linewidth]{TimeWindow1.jpg}
-            \caption{Grouping every 3 commits.} 
+            \caption{Grouping every three commits} 
             \label{fig:TimeWindow1}
         \end{subfigure}
         \begin{subfigure}{1\textwidth}
             \includegraphics[width=\linewidth]{TimeWindow2.jpg}
-            \caption{Grouping every year.} 
+            \caption{Grouping every year} 
             \label{fig:TimeWindow2}
         \end{subfigure}
         \begin{subfigure}{1\textwidth}
             \includegraphics[width=\linewidth]{TimeWindow3.jpg}
-            \caption{Grouping every month.}
+            \caption{Grouping every month}
             \label{fig:TimeWindow3}
         \end{subfigure}
-        \caption[Example of three different grouping strategies]{Example of three different grouping strategies applied over a system whose history is 10 years long with 57 commits}
+        \caption[Example of three different grouping strategies]{Example of three different grouping strategies applied over a system whose history is ten years long with 57 commits}
         \label{fig:TimeWindowExamples}
     \end{center}
 \end{figure}
@@ -346,7 +346,7 @@ All the files shared the same criteria to compute the age. The primary purpose o
 \begin{figure}
     \center
     \includegraphics[width=\textwidth]{Aging.jpg}
-    \caption{The aging process of an entity whose last action was an ADD and the maximum age is 10. }
+    \caption{The aging process of an entity whose last action was an ADD and the maximum age is 10}
     \label{fig:Aging}
 \end{figure}
 
@@ -408,7 +408,7 @@ The output of our approach is a musical composition representing a system's evol
 \begin{figure}
     \center
     \includegraphics[width=0.5\textwidth]{AuralizationApproach.jpg}
-    \caption{Example of how the auralization approach works. }
+    \caption{Example of how the auralization approach works}
     \label{fig:ApproachArualization}
 \end{figure}
 
